@@ -27,7 +27,8 @@ from ..icons import (
 )
 from ..links import link_metadata_add, link_metadata_multiple_add
 from ..mixins import DocumentMetadataSameTypeViewMixin
-from ..models import DocumentMetadata, MetadataType
+from ..models.metadata_instance_models import DocumentMetadata
+from ..models.metadata_type_models import MetadataType
 from ..permissions import (
     permission_document_metadata_add, permission_document_metadata_edit,
     permission_document_metadata_remove, permission_document_metadata_view

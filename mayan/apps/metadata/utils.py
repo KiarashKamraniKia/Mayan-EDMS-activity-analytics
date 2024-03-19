@@ -2,7 +2,8 @@ from django.shortcuts import get_object_or_404
 
 from mayan.apps.views.http import URL
 
-from .models import DocumentMetadata, MetadataType
+from .models.metadata_instance_models import DocumentMetadata
+from .models.metadata_type_models import MetadataType
 
 
 def decode_metadata_from_query_string(query_string=None):

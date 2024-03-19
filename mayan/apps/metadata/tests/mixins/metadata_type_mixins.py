@@ -1,7 +1,7 @@
 from mayan.apps.documents.tests.mixins.document_mixins import DocumentTypeTestMixin
 from mayan.apps.testing.tests.mixins import TestMixinObjectCreationTrack
 
-from ...models import MetadataType
+from ...models.metadata_type_models import MetadataType
 
 from ..literals import (
     TEST_METADATA_TYPE_LABEL, TEST_METADATA_TYPE_LABEL_EDITED,

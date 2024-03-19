@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import MetadataType
+from .models.metadata_type_models import MetadataType
 
 
 @admin.register(MetadataType)

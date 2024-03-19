@@ -2,7 +2,7 @@ from django.db.models import Q
 
 from mayan.apps.documents.tests.mixins.document_mixins import DocumentTestMixin
 
-from ...models import DocumentMetadata
+from ...models.metadata_instance_models import DocumentMetadata
 
 from ..literals import TEST_METADATA_VALUE, TEST_METADATA_VALUE_EDITED
 

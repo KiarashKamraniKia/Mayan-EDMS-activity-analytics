@@ -4,7 +4,7 @@ from mayan.apps.common.serialization import yaml_dump
 from mayan.apps.documents.tests.mixins.document_mixins import DocumentTestMixin
 from mayan.apps.testing.tests.base import BaseTestCase
 
-from ..models import DocumentMetadata
+from ..models.metadata_instance_models import DocumentMetadata
 
 from .literals import (
     TEST_DATE_INVALID, TEST_PARSER_DATE_VALID, TEST_PARSER_PATH_DATE,

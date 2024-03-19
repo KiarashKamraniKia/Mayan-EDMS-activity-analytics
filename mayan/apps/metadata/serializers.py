@@ -15,7 +15,11 @@ from mayan.apps.rest_api.relations import (
     FilteredPrimaryKeyRelatedField, FilteredSimplePrimaryKeyRelatedField
 )
 
-from .models import DocumentMetadata, DocumentTypeMetadataType, MetadataType
+from .models.document_type_metadata_type_models import (
+    DocumentTypeMetadataType
+)
+from .models.metadata_instance_models import DocumentMetadata
+from .models.metadata_type_models import MetadataType
 from .permissions import (
     permission_document_metadata_add, permission_metadata_type_edit
 )

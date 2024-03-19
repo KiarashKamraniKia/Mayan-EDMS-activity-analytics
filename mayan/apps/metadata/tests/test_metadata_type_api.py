@@ -10,7 +10,10 @@ from ..events import (
     event_metadata_type_created, event_metadata_type_edited,
     event_metadata_type_relationship_updated
 )
-from ..models import DocumentTypeMetadataType, MetadataType
+from ..models.document_type_metadata_type_models import (
+    DocumentTypeMetadataType
+)
+from ..models.metadata_type_models import MetadataType
 from ..permissions import (
     permission_metadata_type_create, permission_metadata_type_delete,
     permission_metadata_type_edit, permission_metadata_type_view

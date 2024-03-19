@@ -1,4 +1,6 @@
-from ...models import DocumentTypeMetadataType
+from ...models.document_type_metadata_type_models import (
+    DocumentTypeMetadataType
+)
 
 from .metadata_type_mixins import MetadataTypeTestMixin
 

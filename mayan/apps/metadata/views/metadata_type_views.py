@@ -19,7 +19,7 @@ from ..icons import (
     icon_metadata_type_single_delete
 )
 from ..links import link_metadata_type_create
-from ..models import MetadataType
+from ..models.metadata_type_models import MetadataType
 from ..permissions import (
     permission_metadata_type_create, permission_metadata_type_delete,
     permission_metadata_type_edit, permission_metadata_type_view

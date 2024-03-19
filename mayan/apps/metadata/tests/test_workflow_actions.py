@@ -10,7 +10,7 @@ from ..events import (
     event_document_metadata_added, event_document_metadata_edited,
     event_document_metadata_removed
 )
-from ..models import MetadataType
+from ..models.metadata_type_models import MetadataType
 from ..workflow_actions import (
     DocumentMetadataAddAction, DocumentMetadataEditAction,
     DocumentMetadataRemoveAction

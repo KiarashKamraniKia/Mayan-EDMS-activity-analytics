@@ -7,7 +7,7 @@ from mayan.apps.documents.permissions import (
 from mayan.apps.rest_api import generics
 from mayan.apps.rest_api.api_view_mixins import ExternalObjectAPIViewMixin
 
-from .models import MetadataType
+from .models.metadata_type_models import MetadataType
 from .permissions import (
     permission_document_metadata_add, permission_document_metadata_edit,
     permission_document_metadata_remove, permission_document_metadata_view,

@@ -13,7 +13,10 @@ from mayan.apps.documents.tests.literals import (
     TEST_DOCUMENT_DESCRIPTION, TEST_DOCUMENT_DESCRIPTION_EDITED,
     TEST_DOCUMENT_LABEL_EDITED
 )
-from mayan.apps.metadata.models import DocumentTypeMetadataType, MetadataType
+from mayan.apps.metadata.models.document_type_metadata_type_models import (
+    DocumentTypeMetadataType
+)
+from mayan.apps.metadata.models.metadata_type_models import MetadataType
 
 from ..models import (
     IndexInstance, IndexInstanceNode, IndexTemplate, IndexTemplateNode

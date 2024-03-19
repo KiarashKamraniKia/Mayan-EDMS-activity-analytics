@@ -9,6 +9,7 @@
   `TEMPLATING_TAGS_DANGEROUS_ALLOW_LIST`, which defaults to allowing the
   existing tags for backward compatibility.
 - Backport AJAX template deterministic assurance code.
+- Split metadata models.
 
 4.6.13 (2026-03-07)
 ===================

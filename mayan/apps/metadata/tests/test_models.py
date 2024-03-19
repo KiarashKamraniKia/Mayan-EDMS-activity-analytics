@@ -7,7 +7,7 @@ from mayan.apps.documents.tests.literals import TEST_DOCUMENT_TYPE_2_LABEL
 from mayan.apps.documents.tests.mixins.document_mixins import DocumentTestMixin
 from mayan.apps.testing.tests.base import BaseTestCase
 
-from ..models import DocumentMetadata
+from ..models.metadata_instance_models import DocumentMetadata
 
 from .literals import (
     TEST_DEFAULT_VALUE, TEST_LOOKUP_TEMPLATE, TEST_LOOKUP_VALUE_CORRECT,

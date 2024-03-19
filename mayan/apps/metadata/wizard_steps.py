@@ -9,7 +9,7 @@ from mayan.apps.sources.classes import DocumentCreateWizardStep
 from mayan.apps.sources.wizard_steps import DocumentCreateWizardStepDocumentType
 
 from .forms import DocumentMetadataFormSet
-from .models import MetadataType
+from .models.metadata_type_models import MetadataType
 from .permissions import permission_document_metadata_add
 from .utils import decode_metadata_from_query_string, save_metadata_list
 
