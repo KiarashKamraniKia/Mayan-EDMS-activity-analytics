@@ -57,6 +57,7 @@
 - Use general purpose environment variable loader for the documentation.
 - Improve setting view return navigation.
 - Fix repeated setting edit view return link.
+- Update the version check code to use the new version of the PyPI API.
 
 4.6.12 (2025-12-14)
 ===================
