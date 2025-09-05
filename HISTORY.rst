@@ -46,6 +46,7 @@
   - Split test modules.
   - Backport setting and namespace deregistration improvements.
 
+<<<<<<< HEAD
 - Reinforce pruning of empty index instance nodes.
 - Reduce logging output.
 - Add `libfuse2` as a production dependency.
@@ -112,6 +113,7 @@
 - Change gunicorn default worker class from sync to gevent.
 - Install `setuptools` in the GitLab CI job named `job_docker_build`.
 - Add `pkg-config` as a build time dependency.
+- Prefix all GitLab CI branch with `ci`.
 
 4.6.12 (2025-12-14)
 ===================
