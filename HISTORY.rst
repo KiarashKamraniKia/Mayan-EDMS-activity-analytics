@@ -111,6 +111,7 @@
 
 - Change gunicorn default worker class from sync to gevent.
 - Install `setuptools` in the GitLab CI job named `job_docker_build`.
+- Add `pkg-config` as a build time dependency.
 
 4.6.12 (2025-12-14)
 ===================
