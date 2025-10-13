@@ -5,6 +5,7 @@
 - Refactor `generate_setup.py`.
 - Expose Django's `CACHES` setting as `MAYAN_CACHES`.
 - Remove `importlib-metadata`.
+- Remove the `removals.txt` file.
 
 4.8.10 (2025-12-13)
 ===================
