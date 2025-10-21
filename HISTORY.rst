@@ -4,6 +4,7 @@
 - Automate copyright year updates.
 - Refactor `generate_setup.py`.
 - Expose Django's `CACHES` setting as `MAYAN_CACHES`.
+- Remove `importlib-metadata`.
 
 4.8.10 (2025-12-13)
 ===================
