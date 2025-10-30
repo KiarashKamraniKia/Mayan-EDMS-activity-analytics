@@ -6,6 +6,7 @@
 - Expose Django's `CACHES` setting as `MAYAN_CACHES`.
 - Remove `importlib-metadata`.
 - Remove the `removals.txt` file.
+- Support partial app template loading for the about view.
 
 4.8.10 (2025-12-13)
 ===================
