@@ -7,6 +7,8 @@
 - Rename internal references of `DOCKER_ELASTIC_` to `DOCKER_ELASTICSEARCH_`.
 - Fix documentation build warnings.
 - Update copyright year.
+- Update the Python package target to allow the `wheel` build environment
+  to download its own dependencies.
 
 4.7.8 (2025-12-13)
 ==================
