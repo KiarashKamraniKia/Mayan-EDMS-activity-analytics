@@ -10,6 +10,50 @@ Mayan EDMS along with the information about when and in what version these
 issues were fixed.
 
 
+A call to ethical reporting
+===========================
+
+Security issues in Mayan EDMS are reported and addressed through direct technical collaboration with security researchers. In many instances however subsequent reporting by those researchers has inaccurately and disproportionately characterized the nature and impact of the issues involved.
+
+Inaccurate and exaggerated claims made by security researchers regarding the scope or impact of reported issues undermine the seriousness of disclosure practices and introduce unnecessary friction between researchers and open source software maintainers. It also creates unwarranted concern among users evaluating the security posture of an open source project.
+
+When findings are publicly described without technical substantiation or in contradiction to the actual behavior of the software, it erodes trust and risks discouraging future collaboration. This outcome is counterproductive to improving software security and places an avoidable burden on maintainers to correct the public record.
+
+
+CVE-2025-14691
+==============
+
+Description: client-side navigation validation issue introduced by a regression in the JavaScript code responsible for handling fragment-based navigation when breaking out of an AJAX container.
+
+The root cause is the insufficient restriction of URL fragments before they are interpreted by the browser as navigation targets. This issue is being reported by third parties as an
+
+This issue does not involve the authentication system, does not bypass access controls, and does not grant unauthenticated users any form of access to Mayan EDMS data or functionality. No server-side logic, permission checks, document access paths, or API endpoints are affected by this CVE.
+
+Exploitation if any is limited strictly to the user's own browser session and requires that the user voluntarily load a crafted URL which normally fails the most basic visual inspection. The behavior executes entirely within the client browser and does not allow access to documents, metadata, or configuration data beyond what the user is already authorized to view. There is no mechanism, either actual or theoretical, by which this issue could be used to steal documents, impersonate other users, or access the system without authentication. Claims stating otherwise are incorrect and conflate client-side navigation behavior with server-side authorization, which remains fully enforced.
+
+Impact: Negligible
+
+Affected Version: Between 4.7 and 4.10.1
+
+Fixed Version: 4.10.2, 4.9.7, 4.8.10, 4.7.8, 4.6.12.
+
+
+CVE-2025-14692
+==============
+
+Description: client-side open redirect condition, also caused by the same regression in fragment-based navigation handling.
+
+Under specific circumstances, an unvalidated fragment could cause the browser to navigate away from the Mayan EDMS interface. This behavior is purely client-side and does not provide access to internal routes, documents, or APIs, nor does it weaken authentication or session handling in any way. The server does not process, trust, or act upon the redirected location.
+
+As with CVE-2025-14691, exploitation if any is limited to the local browser session of the user who voluntarily and knowingly follows a crafted link which visually contains malicious and abnormal content in the URL. It cannot be used to exfiltrate data, escalate privileges, or gain unauthorized access to the application. There are no known or plausible attack chains that combine this behavior with other components of Mayan EDMS to compromise confidentiality, integrity, or availability. Assertions that this issue allows unauthenticated document access or system compromise are factually incorrect.
+
+Impact: Negligible
+
+Affected Version: Between 4.7 and 4.10.1
+
+Fixed Version: 4.10.2, 4.9.7, 4.8.10, 4.7.8, 4.6.12.
+
+
 CVE-2022-47419
 ==============
 
