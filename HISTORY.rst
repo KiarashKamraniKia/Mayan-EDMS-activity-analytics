@@ -46,7 +46,7 @@
   - safety from 3.2.13 to 3.7.0.
   - sentry-sdk from 2.45.0 to 2.46.0.
 
-- Add 'appearance/node_modules/bootswatch/docs/*' to the appearance app's
+- Add `appearance/node_modules/bootswatch/docs/*` to the appearance app's
   `static_media_ignore_patterns`.
 - Update the Docker build file to allow the `wheel` build environment to
   download its own dependencies.
@@ -491,7 +491,7 @@
 
   - Ensure the `Worker` class returns string objects for its label content.
 
-- Add 'appearance/node_modules/bootswatch/docs/*' to the appearance app's
+- Add `appearance/node_modules/bootswatch/docs/*` to the appearance app's
   `static_media_ignore_patterns`.
 - Add a makefile target to clean up all Python libraries.
 
