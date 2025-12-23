@@ -108,13 +108,17 @@ class DocumentCreateWizardStepCabinets(DocumentCreateWizardStep):
     @classmethod
     def done(cls, wizard):
         result = {}
-        cleaned_data = wizard.get_cleaned_data_for_step(step=cls.name)
-        if cleaned_data:
-            result['cabinets'] = [
-                str(cabinet.pk) for cabinet in cleaned_data['cabinets']
-            ]
+        try:
+            cleaned_data = wizard.get_cleaned_data_for_step(step=cls.name)
+        except KeyError:
+            return result
+        else:
+            if cleaned_data:
+                result['cabinets'] = [
+                    str(cabinet.pk) for cabinet in cleaned_data['cabinets']
+                ]
 
-        return result
+            return result
 
     @classmethod
     def step_post_upload_process(

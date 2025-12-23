@@ -3,6 +3,7 @@
 - Merge changes and improvements from version 4.8.10.
 - Update dependencies versions:
 
+  - django-formtools from version 2.3 to 2.5.1.
   - sentry-sdk from 2.46.0 to 2.48.0
   - pypdf from 6.4.0 to 6.5.0
 
@@ -10,6 +11,7 @@
   cabinet and tag upload wizard steps permission logic to match the
   logic of the metadata wizard steps and skip the step entirely if the user
   does not have access to any of the objects.
+- Workaround undocumented backward incompatible bug in django-formtools 2.4.0.
 
 4.9.7 (2025-12-13)
 ==================

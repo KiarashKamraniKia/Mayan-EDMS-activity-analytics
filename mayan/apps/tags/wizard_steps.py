@@ -107,13 +107,17 @@ class DocumentCreateWizardStepTags(DocumentCreateWizardStep):
     @classmethod
     def done(cls, wizard):
         result = {}
-        cleaned_data = wizard.get_cleaned_data_for_step(cls.name)
-        if cleaned_data:
-            result['tags'] = [
-                str(tag.pk) for tag in cleaned_data['tags']
-            ]
+        try:
+            cleaned_data = wizard.get_cleaned_data_for_step(step=cls.name)
+        except KeyError:
+            return result
+        else:
+            if cleaned_data:
+                result['tags'] = [
+                    str(tag.pk) for tag in cleaned_data['tags']
+                ]
 
-        return result
+            return result
 
     @classmethod
     def step_post_upload_process(

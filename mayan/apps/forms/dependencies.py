@@ -7,7 +7,7 @@ JavaScriptDependency(
 )
 
 PythonDependency(
-    module=__name__, name='django-formtools', version_string='==2.3'
+    module=__name__, name='django-formtools', version_string='==2.5.1'
 )
 PythonDependency(
     legal_text='''

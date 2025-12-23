@@ -117,18 +117,22 @@ class DocumentCreateWizardStepMetadata(DocumentCreateWizardStep):
     @classmethod
     def done(cls, wizard):
         result = {}
-        cleaned_data = wizard.get_cleaned_data_for_step(step=cls.name)
-        if cleaned_data:
-            for index, metadata_entry in enumerate(iterable=cleaned_data):
-                if metadata_entry.get('update'):
-                    result[
-                        'metadata{}_metadata_type_id'.format(index)
-                    ] = metadata_entry['metadata_type_id']
-                    result[
-                        'metadata{}_value'.format(index)
-                    ] = metadata_entry['value']
+        try:
+            cleaned_data = wizard.get_cleaned_data_for_step(step=cls.name)
+        except KeyError:
+            return result
+        else:
+            if cleaned_data:
+                for index, metadata_entry in enumerate(iterable=cleaned_data):
+                    if metadata_entry.get('update'):
+                        result[
+                            'metadata{}_metadata_type_id'.format(index)
+                        ] = metadata_entry['metadata_type_id']
+                        result[
+                            'metadata{}_value'.format(index)
+                        ] = metadata_entry['value']
 
-        return result
+            return result
 
     @classmethod
     def step_post_upload_process(
