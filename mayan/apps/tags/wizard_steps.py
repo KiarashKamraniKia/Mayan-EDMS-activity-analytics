@@ -67,9 +67,17 @@ class DocumentCreateWizardStepTags(DocumentCreateWizardStep):
 
     @classmethod
     def condition(cls, wizard):
-        Tag = apps.get_model(app_label='tags', model_name='Tag')
+        user = wizard.request.user
 
-        return Tag.objects.exists()
+        if user:
+            queryset = AccessControlList.objects.restrict_queryset(
+                permission=permission_tag_attach,
+                queryset=Tag.objects.all(), user=user
+            )
+        else:
+            queryset = Tag.objects.all()
+
+        return queryset.exists()
 
     @classmethod
     def get_form_kwargs(self, wizard):

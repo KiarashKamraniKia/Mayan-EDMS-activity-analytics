@@ -66,7 +66,17 @@ class DocumentCreateWizardStepCabinets(DocumentCreateWizardStep):
 
     @classmethod
     def condition(cls, wizard):
-        return Cabinet.objects.exists()
+        user = wizard.request.user
+
+        if user:
+            queryset = AccessControlList.objects.restrict_queryset(
+                permission=permission_cabinet_add_document,
+                queryset=Cabinet.objects.all(), user=user
+            )
+        else:
+            queryset = Cabinet.objects.all()
+
+        return queryset.exists()
 
     @classmethod
     def get_form_kwargs(self, wizard):

@@ -410,14 +410,7 @@ class CabinetStepDocumentUploadWizardTestCase(
         self._clear_events()
 
         response = self._request_document_upload_wizard_post_view()
-        self.assertNotContains(
-            response=response, status_code=200,
-            text=self._test_cabinet_list[0].label
-        )
-        self.assertNotContains(
-            response=response, status_code=200,
-            text=self._test_cabinet_list[1].label
-        )
+        self.assertEqual(response.status_code, 302)
 
         events = self._get_test_events()
         self.assertEqual(events.count(), 0)
