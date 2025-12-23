@@ -78,7 +78,7 @@ django-activity-stream==2.0.0
 django-auth-ldap==5.2.0
 django-celery-beat==2.8.1
 django-cors-headers==4.9.0
-django-formtools==2.3
+django-formtools==2.5.1
 django-mathfilters==1.0.0
 django-model-utils==4.5.1
 django-mptt==0.18.0
