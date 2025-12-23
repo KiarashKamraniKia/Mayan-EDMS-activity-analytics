@@ -26,7 +26,7 @@ PythonDependency(
     version_string='==12.0.0'
 )
 PythonDependency(
-    module=__name__, name='pypdf', version_string='==6.4.2'
+    module=__name__, name='pypdf', version_string='==6.5.0'
 )
 PythonDependency(
     module=__name__, name='qrcode', version_string='==8.2'

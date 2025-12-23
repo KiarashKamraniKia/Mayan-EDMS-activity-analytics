@@ -4,7 +4,7 @@
 - Update dependencies versions:
 
   - sentry-sdk from 2.46.0 to 2.48.0
-  - pypdf from 6.4.0 to 6.4.2
+  - pypdf from 6.4.0 to 6.5.0
 
 - Skip cabinet and tag wizard step if the user has no access. Update the
   cabinet and tag upload wizard steps permission logic to match the
