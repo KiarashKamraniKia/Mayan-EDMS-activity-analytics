@@ -1,3 +1,10 @@
+4.6.13(XXXX-XX-XX)
+==================
+- Skip cabinet and tag wizard step if the user has no access. Update the
+  cabinet and tag upload wizard steps permission logic to match the
+  logic of the metadata wizard steps and skip the step entirely if the user
+  does not have access to any of the objects.
+
 4.6.12 (2025-12-14)
 ===================
 - Backports from series 4.10, 4.9, 4.8, 4.7.
