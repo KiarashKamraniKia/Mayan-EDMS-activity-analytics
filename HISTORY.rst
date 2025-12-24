@@ -4,6 +4,8 @@
   cabinet and tag upload wizard steps permission logic to match the
   logic of the metadata wizard steps and skip the step entirely if the user
   does not have access to any of the objects.
+- Modernize `PythonDependency` class version checking. Remove use of
+  deprecated Python library `pkg_resources`.
 
 4.6.12 (2025-12-14)
 ===================
