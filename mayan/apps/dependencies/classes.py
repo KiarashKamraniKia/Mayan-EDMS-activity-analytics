@@ -1,9 +1,10 @@
 from io import BytesIO
+from importlib.metadata import PackageNotFoundError, version
 import json
 import logging
-from packaging import version
+from packaging.requirements import Requirement
+from packaging.version import Version
 from pathlib import Path
-import pkg_resources
 import shutil
 import sys
 
@@ -525,7 +526,8 @@ class BinaryDependency(Dependency):
         super().__init__(*args, **kwargs)
 
     def _check(self):
-        return Path(self.path).exists()
+        path = Path(self.path)
+        return path.exists()
 
     def get_other_data(self):
         return 'Path: {}'.format(self.path)
@@ -783,7 +785,7 @@ class JavaScriptDependency(Dependency):
 
 class PythonVersion:
     def __init__(self, string):
-        self.version = version.parse(string)
+        self.version = Version(version=string)
 
     def __lt__(self, other):
         return self.version < other.version
@@ -807,14 +809,30 @@ class PythonDependency(Dependency):
         super().__init__(*args, **kwargs)
 
     def _check(self):
+        requirement_string = '{}{}'.format(self.name, self.version_string)
+
         try:
-            return pkg_resources.get_distribution(
-                dist='{}{}'.format(self.name, self.version_string)
-            ) is not None
-        except pkg_resources.DistributionNotFound:
+            requirement = Requirement(requirement_string=requirement_string)
+        except PackageNotFoundError:
             return False
-        except pkg_resources.VersionConflict:
-            return False
+        except Exception as exception:
+            raise DependenciesException(
+                'Error processing dependency `{}`; {}'.format(
+                    requirement_string, exception
+                )
+            ) from exception
+        else:
+            try:
+                distribution_version_string = version(
+                    distribution_name=requirement.name
+                )
+                distribution_version = Version(
+                    version=distribution_version_string
+                )
+            except PackageNotFoundError:
+                return False
+            else:
+                return distribution_version in requirement.specifier
 
     def get_copyright_text(self):
         try:

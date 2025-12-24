@@ -1,6 +1,7 @@
 4.9.8 (XXXX-XX-XX)
 ==================
 - Merge changes and improvements from version 4.8.10.
+- Backport changes and improvements from version 4.10.3.
 - Update dependencies versions:
 
   - django-formtools from version 2.3 to 2.5.1.
@@ -12,6 +13,8 @@
   logic of the metadata wizard steps and skip the step entirely if the user
   does not have access to any of the objects.
 - Workaround undocumented backward incompatible bug in django-formtools 2.4.0.
+- Modernize `PythonDependency` class version checking. Remove use of
+  deprecated Python library `pkg_resources`.
 
 4.9.7 (2025-12-13)
 ==================
