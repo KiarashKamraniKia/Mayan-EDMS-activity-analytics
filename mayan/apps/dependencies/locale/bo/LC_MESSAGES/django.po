@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:28+0000\n"
+"POT-Creation-Date: 2025-12-27 20:16+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -36,11 +36,11 @@ msgstr "ནང་ཁུལ་གྱི་མིང་།"
 msgid "Description"
 msgstr "བཀོད་པ།"
 
-#: apps.py:45 classes.py:218
+#: apps.py:45 classes.py:219
 msgid "Type"
 msgstr "རིགས"
 
-#: apps.py:49 classes.py:221
+#: apps.py:49 classes.py:222
 msgid "Other data"
 msgstr "གཞི་གྲངས་གཞན།"
 
@@ -48,7 +48,7 @@ msgstr "གཞི་གྲངས་གཞན།"
 msgid "Declared by"
 msgstr "ཁྱབ་བསྒྲགས་བྱས།"
 
-#: apps.py:57 classes.py:219
+#: apps.py:57 classes.py:220
 msgid "Version"
 msgstr "པར་གཞི"
 
@@ -56,124 +56,124 @@ msgstr "པར་གཞི"
 msgid "Environment"
 msgstr "ཁོར་ཡུག"
 
-#: apps.py:64 classes.py:221
+#: apps.py:64 classes.py:222
 msgid "Check"
 msgstr "ཞིབ་བཤེར"
 
-#: classes.py:218
+#: classes.py:219
 msgid "Name"
 msgstr "མིང"
 
-#: classes.py:219
+#: classes.py:220
 msgid "App"
 msgstr "མཉེན་ཆས།"
 
-#: classes.py:220 classes.py:966
+#: classes.py:221 classes.py:984
 msgid "Environments"
 msgstr "ཁོར་ཡུག།"
 
-#: classes.py:331
+#: classes.py:332
 msgid "Need to specify at least one: app_label or module."
 msgstr "ཉུང་མཐར་ཡང་གཅིག་གསལ་བཀོད་བྱེད་དགོས། app_label ཡང་ན་ཚད་གཞི།"
 
-#: classes.py:336
+#: classes.py:337
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "རྟེན་གཞི་ &quot; %s &quot; ཐོ་འགོད་བྱས་ཟིན།"
 
-#: classes.py:387
+#: classes.py:388
 #, python-format
 msgid "Installing package: %s... "
 msgstr "ཐུམ་སྒྲིལ་སྒྲིག་འཇུག་བྱེད་བཞིན་པ། %s ... "
 
-#: classes.py:394
+#: classes.py:395
 msgid "Already installed."
 msgstr "ད་ལྟ་སྒྲིག་འཇུག་བྱས་ཟིན།"
 
-#: classes.py:399 classes.py:406 classes.py:412
+#: classes.py:400 classes.py:407 classes.py:413
 msgid "Complete."
 msgstr "ཆ་ཚང།"
 
-#: classes.py:439
+#: classes.py:440
 msgid "Installed and correct version"
 msgstr "ཐོན་རིམ་སྒྲིག་འཇུག་དང་ནོར་བཅོས་བྱས།"
 
-#: classes.py:441
+#: classes.py:442
 msgid "Missing or incorrect version"
 msgstr "ཐོན་རིམ་བརླག་པའམ་ནོར་བ།"
 
-#: classes.py:478
+#: classes.py:479
 msgid "None"
 msgstr "གང་ཡང་མེད།"
 
-#: classes.py:487
+#: classes.py:488
 msgid "Not specified"
 msgstr "གཏན་འཁེལ་བྱས་མེད།"
 
-#: classes.py:490
+#: classes.py:491
 msgid "Patching files... "
 msgstr "ཡིག་ཆ་བཅོས་སྒྲིག་བྱེད་པ། "
 
-#: classes.py:518
+#: classes.py:519
 msgid "Executables that are called directly by the code."
 msgstr "ཐད་ཀར་གསང་གྲངས་ཀྱིས་འབོད་པའི་ལག་བསྟར་བྱེད་ཐུབ་པའི་ཡིག་ཆ།"
 
-#: classes.py:520
+#: classes.py:521
 msgid "Binary"
 msgstr "གཉིས་ལྡན་ཅན།"
 
-#: classes.py:537
+#: classes.py:539
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
 msgstr ""
 "ཇ་ཝ་སི་ཁི་རིཔ་ཊི་དཔེ་མཛོད་ཁང་གིས་NPMཐོ་འགོད་ནས་ཕབ་ལེན་བྱས་ནས་མདུན་ཕྱོགས་ཀྱི་བྱེད་ནུས་ཆེད་དུ་བེད་སྤྱོད་བྱེད་ཀྱི་ཡོད།"
 
-#: classes.py:540
+#: classes.py:542
 msgid "JavaScript"
 msgstr "ཇ་ཝ་སི་ཁི་རིཔཊ།"
 
-#: classes.py:572 classes.py:869
+#: classes.py:574 classes.py:887
 msgid "Downloading... "
 msgstr "ཕབ་ལེན་བྱེད་བཞིན་པ། "
 
-#: classes.py:577
+#: classes.py:579
 msgid "Verifying... "
 msgstr "བདེན་དཔང་བྱེད་བཞིན་པ། "
 
-#: classes.py:582 classes.py:874
+#: classes.py:584 classes.py:892
 msgid "Extracting... "
 msgstr "འཐེན་འདོན་བྱེད་བཞིན་པ། "
 
-#: classes.py:795
+#: classes.py:797
 msgid "Python packages downloaded from PyPI."
 msgstr "PyPI ནས་ཕབ་ལེན་བྱས་པའི་པའེ་ཐོན་ཐུམ་བུ།"
 
-#: classes.py:797
+#: classes.py:799
 msgid "Python"
 msgstr "པའེ་ཐན།"
 
-#: classes.py:849
+#: classes.py:867
 msgid "Fonts downloaded from fonts.googleapis.com."
 msgstr "fonts.googleapis.com ནས་ཕབ་ལེན་བྱས་པའི་ཡིག་གཟུགས།"
 
-#: classes.py:851
+#: classes.py:869
 msgid "Google font"
 msgstr "གུ་གུལ་ཡིག་གཟུགས།"
 
-#: classes.py:947
+#: classes.py:965
 msgid "Declared in app"
 msgstr "མཉེན་ཆས་ནང་ཁྱབ་བསྒྲགས་བྱས།"
 
-#: classes.py:948
+#: classes.py:966
 msgid "Show dependencies by the app that declared them."
 msgstr "དེ་དག་ཁྱབ་བསྒྲགས་བྱེད་མཁན་གྱི་མཉེན་ཆས་ཀྱིས་རྟེན་གཞི་སྟོན།"
 
-#: classes.py:952
+#: classes.py:970
 msgid "Class"
 msgstr "འཛིན་གྲྭ"
 
-#: classes.py:953
+#: classes.py:971
 msgid ""
 "Show the different classes of dependencies. Classes are usually divided by "
 "language or the file types of the dependency."
@@ -181,11 +181,11 @@ msgstr ""
 "རྟེན་འབྲེལ་གྱི་སྡེ་ཚན་མི་འདྲ་བ་སྟོན། "
 "འཛིན་གྲྭ་རྣམས་རྒྱུན་དུ་སྐད་ཡིག་ཡང་ན་བརྟེན་པའི་ཡིག་ཆའི་རིགས་ལ་བརྟེན་ནས་བགོས་ཡོད།"
 
-#: classes.py:958
+#: classes.py:976
 msgid "State"
 msgstr "གནས་སྟངས"
 
-#: classes.py:959
+#: classes.py:977
 msgid ""
 "Show the different states of the dependencies. True means that the "
 "dependencies is installed and is of a correct version. False means the "
@@ -196,7 +196,7 @@ msgstr ""
 " "
 "རྫུན་མ་ཟེར་བ་ནི་བརྟེན་ས་དེ་མེད་པའམ་ཡང་ན་ཐོན་རིམ་ནོར་བ་ཞིག་ཡོད་པ་མཚོན་གྱི་ཡོད།"
 
-#: classes.py:967
+#: classes.py:985
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."

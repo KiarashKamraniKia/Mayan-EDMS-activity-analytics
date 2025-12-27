@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:28+0000\n"
+"POT-Creation-Date: 2025-12-27 20:16+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (Egypt) (https://app.transifex.com/rosarior/teams/13584/ar_EG/)\n"
@@ -41,11 +41,11 @@ msgstr "الإسم الداخلي"
 msgid "Description"
 msgstr "الوصف"
 
-#: apps.py:45 classes.py:218
+#: apps.py:45 classes.py:219
 msgid "Type"
 msgstr "النوع"
 
-#: apps.py:49 classes.py:221
+#: apps.py:49 classes.py:222
 msgid "Other data"
 msgstr "بيانات اخرى"
 
@@ -53,7 +53,7 @@ msgstr "بيانات اخرى"
 msgid "Declared by"
 msgstr "عرف من قبل"
 
-#: apps.py:57 classes.py:219
+#: apps.py:57 classes.py:220
 msgid "Version"
 msgstr "الاصدار"
 
@@ -61,140 +61,140 @@ msgstr "الاصدار"
 msgid "Environment"
 msgstr "البيئة"
 
-#: apps.py:64 classes.py:221
+#: apps.py:64 classes.py:222
 msgid "Check"
 msgstr "مراجعة"
 
-#: classes.py:218
+#: classes.py:219
 msgid "Name"
 msgstr "اسم"
 
-#: classes.py:219
+#: classes.py:220
 msgid "App"
 msgstr "التطبيقات"
 
-#: classes.py:220 classes.py:966
+#: classes.py:221 classes.py:984
 msgid "Environments"
 msgstr "البيئة"
 
-#: classes.py:331
+#: classes.py:332
 msgid "Need to specify at least one: app_label or module."
 msgstr "بحاجة الى تحديد: app_label or module."
 
-#: classes.py:336
+#: classes.py:337
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "الارتباطات \"%s\" معرفة سابقاً."
 
-#: classes.py:387
+#: classes.py:388
 #, python-format
 msgid "Installing package: %s... "
 msgstr "تم تنصيب الملفات: %s... "
 
-#: classes.py:394
+#: classes.py:395
 msgid "Already installed."
 msgstr "التنصيب معرف مسبقاً"
 
-#: classes.py:399 classes.py:406 classes.py:412
+#: classes.py:400 classes.py:407 classes.py:413
 msgid "Complete."
 msgstr "أكتمل"
 
-#: classes.py:439
+#: classes.py:440
 msgid "Installed and correct version"
 msgstr "الإصدار الصحيح"
 
-#: classes.py:441
+#: classes.py:442
 msgid "Missing or incorrect version"
 msgstr "تفتقد او إصدار غير متطابق"
 
-#: classes.py:478
+#: classes.py:479
 msgid "None"
 msgstr "لا شيء"
 
-#: classes.py:487
+#: classes.py:488
 msgid "Not specified"
 msgstr "لم يتم التحديد"
 
-#: classes.py:490
+#: classes.py:491
 msgid "Patching files... "
 msgstr "تصحيح الملفات"
 
-#: classes.py:518
+#: classes.py:519
 msgid "Executables that are called directly by the code."
 msgstr "ملفات قابلة للتنفيذ"
 
-#: classes.py:520
+#: classes.py:521
 msgid "Binary"
 msgstr "ثنائي"
 
-#: classes.py:537
+#: classes.py:539
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
 msgstr "تم تنزيل الملفات المطلوبة للتعديل"
 
-#: classes.py:540
+#: classes.py:542
 msgid "JavaScript"
 msgstr "جافا سكريبت"
 
-#: classes.py:572 classes.py:869
+#: classes.py:574 classes.py:887
 msgid "Downloading... "
 msgstr "تحميل "
 
-#: classes.py:577
+#: classes.py:579
 msgid "Verifying... "
 msgstr "تحقق..."
 
-#: classes.py:582 classes.py:874
+#: classes.py:584 classes.py:892
 msgid "Extracting... "
 msgstr "فك الضغط"
 
-#: classes.py:795
+#: classes.py:797
 msgid "Python packages downloaded from PyPI."
 msgstr "تم تنزيل ملفات البايثون"
 
-#: classes.py:797
+#: classes.py:799
 msgid "Python"
 msgstr "بايثون"
 
-#: classes.py:849
+#: classes.py:867
 msgid "Fonts downloaded from fonts.googleapis.com."
 msgstr "خطوط تم تحميلها "
 
-#: classes.py:851
+#: classes.py:869
 msgid "Google font"
 msgstr "خط قوقل"
 
-#: classes.py:947
+#: classes.py:965
 msgid "Declared in app"
 msgstr "تم اعلان التطبيق"
 
-#: classes.py:948
+#: classes.py:966
 msgid "Show dependencies by the app that declared them."
 msgstr "اظهار الارتباطات للنظام"
 
-#: classes.py:952
+#: classes.py:970
 msgid "Class"
 msgstr "الفئة"
 
-#: classes.py:953
+#: classes.py:971
 msgid ""
 "Show the different classes of dependencies. Classes are usually divided by "
 "language or the file types of the dependency."
 msgstr "يتم تقسيم الفئات حسب اللغة"
 
-#: classes.py:958
+#: classes.py:976
 msgid "State"
 msgstr "الحالة"
 
-#: classes.py:959
+#: classes.py:977
 msgid ""
 "Show the different states of the dependencies. True means that the "
 "dependencies is installed and is of a correct version. False means the "
 "dependencies is missing or an incorrect version is present."
 msgstr "يوجد خطأ في الارتباطات للتأكد من ادخال القيم الصحيحة"
 
-#: classes.py:967
+#: classes.py:985
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."

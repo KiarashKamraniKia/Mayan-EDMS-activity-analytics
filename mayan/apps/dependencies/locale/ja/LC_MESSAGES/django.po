@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:28+0000\n"
+"POT-Creation-Date: 2025-12-27 20:16+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -36,11 +36,11 @@ msgstr "内部名"
 msgid "Description"
 msgstr "説明"
 
-#: apps.py:45 classes.py:218
+#: apps.py:45 classes.py:219
 msgid "Type"
 msgstr "タイプ"
 
-#: apps.py:49 classes.py:221
+#: apps.py:49 classes.py:222
 msgid "Other data"
 msgstr "その他のデータ"
 
@@ -48,7 +48,7 @@ msgstr "その他のデータ"
 msgid "Declared by"
 msgstr "定義元"
 
-#: apps.py:57 classes.py:219
+#: apps.py:57 classes.py:220
 msgid "Version"
 msgstr "バージョン"
 
@@ -56,133 +56,133 @@ msgstr "バージョン"
 msgid "Environment"
 msgstr "環境"
 
-#: apps.py:64 classes.py:221
+#: apps.py:64 classes.py:222
 msgid "Check"
 msgstr "確認"
 
-#: classes.py:218
+#: classes.py:219
 msgid "Name"
 msgstr "名前"
 
-#: classes.py:219
+#: classes.py:220
 msgid "App"
 msgstr "App"
 
-#: classes.py:220 classes.py:966
+#: classes.py:221 classes.py:984
 msgid "Environments"
 msgstr "環境"
 
-#: classes.py:331
+#: classes.py:332
 msgid "Need to specify at least one: app_label or module."
 msgstr "少なくとも1つ指定してください: アプリラベル または モジュール"
 
-#: classes.py:336
+#: classes.py:337
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "依存関係 \"%s\" は既に登録済みです"
 
-#: classes.py:387
+#: classes.py:388
 #, python-format
 msgid "Installing package: %s... "
 msgstr "パッケージ:%sをインストール中... "
 
-#: classes.py:394
+#: classes.py:395
 msgid "Already installed."
 msgstr "すでにインストールされています。"
 
-#: classes.py:399 classes.py:406 classes.py:412
+#: classes.py:400 classes.py:407 classes.py:413
 msgid "Complete."
 msgstr "完了しました。"
 
-#: classes.py:439
+#: classes.py:440
 msgid "Installed and correct version"
 msgstr "インストール済みかつ正しいバージョン"
 
-#: classes.py:441
+#: classes.py:442
 msgid "Missing or incorrect version"
 msgstr "バージョンが存在しない、または正しくありません"
 
-#: classes.py:478
+#: classes.py:479
 msgid "None"
 msgstr "なし"
 
-#: classes.py:487
+#: classes.py:488
 msgid "Not specified"
 msgstr "未指定"
 
-#: classes.py:490
+#: classes.py:491
 msgid "Patching files... "
 msgstr "パッチ適用中…"
 
-#: classes.py:518
+#: classes.py:519
 msgid "Executables that are called directly by the code."
 msgstr "コードから直接呼び出される実行可能ファイル"
 
-#: classes.py:520
+#: classes.py:521
 msgid "Binary"
 msgstr "バイナリー"
 
-#: classes.py:537
+#: classes.py:539
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
 msgstr "フロントエンド機能で使用される、NPM レジストリからダウンロードした JavaScript ライブラリ"
 
-#: classes.py:540
+#: classes.py:542
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: classes.py:572 classes.py:869
+#: classes.py:574 classes.py:887
 msgid "Downloading... "
 msgstr "ダウンロード中..."
 
-#: classes.py:577
+#: classes.py:579
 msgid "Verifying... "
 msgstr "検証中…"
 
-#: classes.py:582 classes.py:874
+#: classes.py:584 classes.py:892
 msgid "Extracting... "
 msgstr "解凍中... "
 
-#: classes.py:795
+#: classes.py:797
 msgid "Python packages downloaded from PyPI."
 msgstr "PyPIからPythonパッケージをダウンロードしました。"
 
-#: classes.py:797
+#: classes.py:799
 msgid "Python"
 msgstr "Python"
 
-#: classes.py:849
+#: classes.py:867
 msgid "Fonts downloaded from fonts.googleapis.com."
 msgstr "fonts.googleapis.com.からフォントをダンロードしました。"
 
-#: classes.py:851
+#: classes.py:869
 msgid "Google font"
 msgstr "Googleフォント"
 
-#: classes.py:947
+#: classes.py:965
 msgid "Declared in app"
 msgstr "アプリで定義"
 
-#: classes.py:948
+#: classes.py:966
 msgid "Show dependencies by the app that declared them."
 msgstr "依存関係を定義したアプリ別に表示"
 
-#: classes.py:952
+#: classes.py:970
 msgid "Class"
 msgstr "クラス"
 
-#: classes.py:953
+#: classes.py:971
 msgid ""
 "Show the different classes of dependencies. Classes are usually divided by "
 "language or the file types of the dependency."
 msgstr "依存関係の種類を表示します。種類は通常、言語や依存関係のファイルタイプごとに分けられます。"
 
-#: classes.py:958
+#: classes.py:976
 msgid "State"
 msgstr "状態"
 
-#: classes.py:959
+#: classes.py:977
 msgid ""
 "Show the different states of the dependencies. True means that the "
 "dependencies is installed and is of a correct version. False means the "
@@ -191,7 +191,7 @@ msgstr ""
 "依存関係の状態を表示します。True は依存関係がインストール済みで正しいバージョンであることを示します。False "
 "は依存関係が存在しないか、バージョンが正しくないことを示します。"
 
-#: classes.py:967
+#: classes.py:985
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."

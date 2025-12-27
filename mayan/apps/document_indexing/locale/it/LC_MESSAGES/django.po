@@ -204,7 +204,7 @@ msgstr "Valore"
 
 #: models/index_instance_models.py:73 models/index_instance_models.py:103
 msgid "Index instance node"
-msgstr "Nodo dell'istanza indice"
+msgstr "Nodo della'istanza indice"
 
 #: models/index_instance_models.py:74
 msgid "Indexes instances node"

@@ -203,7 +203,7 @@ msgstr "Die Einbeziehung wird für das erste Element ignoriert."
 
 #: models.py:99
 msgid "Inclusion"
-msgstr ""
+msgstr "Logischer Operator"
 
 #: models.py:103
 msgid "This represents the metadata of all other documents."
@@ -215,7 +215,7 @@ msgstr "Fremddokumentattribut"
 
 #: models.py:110
 msgid "Operator"
-msgstr ""
+msgstr "Operator"
 
 #: models.py:114
 msgid ""
