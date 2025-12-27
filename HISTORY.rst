@@ -15,6 +15,8 @@
 - Workaround undocumented backward incompatible bug in django-formtools 2.4.0.
 - Modernize `PythonDependency` class version checking. Remove use of
   deprecated Python library `pkg_resources`.
+- Add target `config-env-copy`, a forward compatible alias for
+  `copy-config-env`.
 
 4.9.7 (2025-12-13)
 ==================

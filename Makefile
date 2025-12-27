@@ -287,6 +287,9 @@ check-missing-migrations: ## Make sure all models have proper migrations.
 check-missing-inits: ## Find missing __init__.py files from modules.
 	@contrib/scripts/find_missing_inits.py
 
+config-env-copy: ## Forward compatible alias for `copy-config-env`.
+config-env-copy: copy-config-env
+
 copy-config-env: ## Copy and convert `config.env` to `settings.literals.py`.
 	@contrib/scripts/copy_config_env.py > mayan/settings/literals.py
 
