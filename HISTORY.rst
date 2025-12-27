@@ -1,4 +1,4 @@
-4.9.8 (XXXX-XX-XX)
+4.9.8 (2025-12-27)
 ==================
 - Merge changes and improvements from version 4.8.10.
 - Backport changes and improvements from version 4.10.3.
