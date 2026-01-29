@@ -1,4 +1,5 @@
 from datetime import datetime
+import inspect
 
 from mayan.apps.testing.tests.base import BaseTestCase
 
@@ -91,14 +92,14 @@ class TemplateTagDangerousTestCase(TemplateTestMixin, BaseTestCase):
 
 class TemplateTagDocstringTestCase(TemplateTestMixin, BaseTestCase):
     def test_user_template_get_docstring(self):
-        result = templating_test_filter_dangerous.__doc__
-        self.assertEqual(result, '\nTest docstring dangerous filter\n')
+        result = inspect.getdoc(templating_test_filter_dangerous)
+        self.assertEqual(result, 'Test docstring dangerous filter')
 
-        result = templating_test_tag.__doc__
-        self.assertEqual(result, '\nTest docstring\n')
+        result = inspect.getdoc(templating_test_tag)
+        self.assertEqual(result, 'Test docstring')
 
-        result = templating_test_tag_dangerous.__doc__
-        self.assertEqual(result, '\nTest docstring dangerous tag\n')
+        result = inspect.getdoc(templating_test_tag_dangerous)
+        self.assertEqual(result, 'Test docstring dangerous tag')
 
 
 class TemplateTagLoadingTestCase(TemplateTestMixin, BaseTestCase):
