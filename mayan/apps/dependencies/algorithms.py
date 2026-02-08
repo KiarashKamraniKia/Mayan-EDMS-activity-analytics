@@ -31,9 +31,8 @@ class HashAlgorithm:
             self.hash_object.update(data)
 
     def get_digest(self):
-        return force_str(
-            s=self._get_digest()
-        )
+        subclass_digest = self._get_digest()
+        return force_str(s=subclass_digest)
 
 
 class SHA1Algorithm(HashAlgorithm):
