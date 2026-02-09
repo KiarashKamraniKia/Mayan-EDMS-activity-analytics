@@ -62,20 +62,20 @@ class MirrorFilesystemCache:
         self.cache.delete(key=key)
 
     def get_path(self, path):
-        key=MirrorFilesystemCache.get_path_key(path=path)
+        key = MirrorFilesystemCache.get_path_key(path=path)
         return self.cache.get(key=key)
 
     def set_path(self, path, document=None, node=None):
         # Must provide a document_pk or a node_pk
         # not both.
         if document:
-            path_key=MirrorFilesystemCache.get_path_key(path=path)
+            path_key = MirrorFilesystemCache.get_path_key(path=path)
             self.cache.set(
                 key=path_key,
                 timeout=setting_document_lookup_cache_timeout.value,
                 value={'document_pk': document.pk}
             )
-            document_key=MirrorFilesystemCache.get_document_key(
+            document_key = MirrorFilesystemCache.get_document_key(
                 document=document
             )
             self.cache.set(
@@ -84,13 +84,13 @@ class MirrorFilesystemCache:
                 value={'path': path}
             )
         elif node:
-            path_key=MirrorFilesystemCache.get_path_key(path=path)
+            path_key = MirrorFilesystemCache.get_path_key(path=path)
             self.cache.set(
                 key=path_key,
                 timeout=setting_node_lookup_cache_timeout.value,
                 value={'node_pk': node.pk}
             )
-            node_key=MirrorFilesystemCache.get_node_key(node=node)
+            node_key = MirrorFilesystemCache.get_node_key(node=node)
             self.cache.set(
                 key=node_key,
                 timeout=setting_node_lookup_cache_timeout.value,
