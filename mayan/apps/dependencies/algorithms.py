@@ -5,7 +5,7 @@ from django.utils.encoding import force_str
 
 
 class HashAlgorithm:
-    DEFAULT_BLOCK_SIZE = 65535
+    DEFAULT_BLOCK_SIZE = 65536
     _registry = {}
     hash_factory = None
 
@@ -23,12 +23,11 @@ class HashAlgorithm:
         self.hash_object = self.hash_factory()
 
     def calculate(self):
-        while (True):
-            data = self.file_object.read(self.block_size)
-            if not data:
-                break
-
-            self.hash_object.update(data)
+        iterable = iter(
+            lambda: self.file_object.read(self.block_size), b''
+        )
+        for block in iterable:
+            self.hash_object.update(block)
 
     def get_digest(self):
         subclass_digest = self._get_digest()
