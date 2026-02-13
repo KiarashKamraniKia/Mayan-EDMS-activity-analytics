@@ -8,7 +8,7 @@ from django.utils.translation import gettext_lazy as _
 from mayan.apps.smart_settings.literals import COMMAND_NAME_SETTINGS_REVERT
 from mayan.apps.smart_settings.utils import SettingNamespaceSingleton
 
-from .literals import DEFAULT_SECRET_KEY, SECRET_KEY_FILENAME, SYSTEM_DIR
+from ..literals import DEFAULT_SECRET_KEY, SECRET_KEY_FILENAME, SYSTEM_DIR
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 

@@ -13,7 +13,7 @@ from mayan.apps.backends.classes import BaseBackend
 from mayan.apps.common.menus import menu_tools
 from mayan.apps.common.serialization import yaml_dump, yaml_load
 from mayan.apps.task_manager.classes import Worker
-from mayan.settings.literals import (
+from mayan.literals import (
     DEFAULT_DATABASE_NAME, DEFAULT_DATABASE_PASSWORD, DEFAULT_DATABASE_USER,
     DEFAULT_DIRECTORY_INSTALLATION, DEFAULT_ELASTICSEARCH_PASSWORD,
     DEFAULT_KEYCLOAK_ADMIN, DEFAULT_KEYCLOAK_ADMIN_PASSWORD,

@@ -301,7 +301,7 @@ setup-dev-operating-system-packages:  ## Install the operating system packages n
 
 copy-config-env: ## Copy and convert `config.env` to `settings.literals.py`.
 copy-config-env:
-	@contrib/scripts/copy_config_env.py > mayan/settings/literals.py
+	@contrib/scripts/copy_config_env.py > mayan/literals.py
 
 # Devpi
 

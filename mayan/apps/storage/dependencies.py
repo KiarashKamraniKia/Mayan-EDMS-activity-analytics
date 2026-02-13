@@ -1,7 +1,7 @@
 from mayan.apps.dependencies.classes import PythonDependency
 from mayan.apps.dependencies.environments import environment_testing
 
-from mayan.settings.literals import PYTHON_PSUTIL_VERSION
+from mayan.literals import PYTHON_PSUTIL_VERSION
 
 PythonDependency(
     module=__name__, name='boto3', version_string='==1.33.7'

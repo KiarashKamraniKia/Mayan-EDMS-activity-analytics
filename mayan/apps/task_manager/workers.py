@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.settings.literals import (
+from mayan.literals import (
     MAYAN_WORKER_A_CONCURRENCY, MAYAN_WORKER_A_MAX_MEMORY_PER_CHILD,
     MAYAN_WORKER_A_MAX_TASKS_PER_CHILD, MAYAN_WORKER_A_NICE_LEVEL,
     MAYAN_WORKER_B_CONCURRENCY, MAYAN_WORKER_B_MAX_MEMORY_PER_CHILD,

@@ -5,9 +5,7 @@ from mayan.apps.dependencies.environments import (
     environment_build, environment_development, environment_documentation,
     environment_documentation_override
 )
-from mayan.settings.literals import (
-    PYTHON_SETUPTOOLS_VERSION, PYTHON_WHEEL_VERSION
-)
+from mayan.literals import PYTHON_SETUPTOOLS_VERSION, PYTHON_WHEEL_VERSION
 
 PythonDependency(
     legal_text='''
