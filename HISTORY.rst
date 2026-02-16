@@ -17,6 +17,7 @@
   and Google Font dependencies.
 - Move `mayan/settings/literals.py` to `mayan/literals.py` to prevent
   circular dependencies.
+- Add thousand separator to the pager.
 
 4.6.12 (2025-12-14)
 ===================
