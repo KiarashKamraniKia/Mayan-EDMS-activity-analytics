@@ -51,6 +51,8 @@
 - Replace the use of `sh` with upstream Python `subprocess` for the
   `MIMETypeBackendPerlFileMIMEInfo` class.
 - Use general purpose environment variable loader for the documentation.
+- Improve setting view return navigation.
+- Fix repeated setting edit view return link.
 
 4.6.12 (2025-12-14)
 ===================
