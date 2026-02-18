@@ -54,9 +54,10 @@ setting_indexing_chunk_size = setting_namespace.do_setting_add(
     )
 )
 setting_match_all_default_value = setting_namespace.do_setting_add(
-    global_name='SEARCH_MATCH_ALL_DEFAULT_VALUE',
-    default=DEFAULT_SEARCH_MATCH_ALL_DEFAULT_VALUE,
-    help_text=_(message='Sets the default state of the "Match all" checkbox.')
+    choices=('false', 'true'), global_name='SEARCH_MATCH_ALL_DEFAULT_VALUE',
+    default=DEFAULT_SEARCH_MATCH_ALL_DEFAULT_VALUE, help_text=_(
+        message='Sets the default state of the "Match all" checkbox.'
+    )
 )
 setting_query_results_limit = setting_namespace.do_setting_add(
     default=DEFAULT_SEARCH_QUERY_RESULTS_LIMIT,

@@ -18,6 +18,9 @@
 - Move `mayan/settings/literals.py` to `mayan/literals.py` to prevent
   circular dependencies.
 - Add thousand separator to the pager.
+- Change the default value of `SEARCH_MATCH_ALL_DEFAULT_VALUE` to be a
+  boolean.
+- Update setting `SEARCH_MATCH_ALL_DEFAULT_VALUE` to be a choice field.
 
 4.6.12 (2025-12-14)
 ===================
