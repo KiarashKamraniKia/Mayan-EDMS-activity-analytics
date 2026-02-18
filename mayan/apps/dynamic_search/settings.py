@@ -110,6 +110,7 @@ setting_saved_resultset_time_to_live_increment = setting_namespace.do_setting_ad
     )
 )
 setting_store_results_default_value = setting_namespace.do_setting_add(
+    choices=('false', 'true'),
     global_name='SEARCH_STORE_RESULTS_DEFAULT_VALUE',
     default=DEFAULT_SEARCH_STORE_RESULTS_DEFAULT_VALUE, help_text=_(
         message='Sets the default state of the "Store results" checkbox.'
