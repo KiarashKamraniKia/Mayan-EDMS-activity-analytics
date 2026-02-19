@@ -22,8 +22,8 @@ from mayan import literals  # NOQA
 from mayan.settings import BASE_DIR as mayan_base_dir  # NOQA
 
 try:
-    BUILD = sh.Command('git').bake('describe', '--tags', '--always', 'HEAD')
-    DATE = sh.Command('git').bake('--no-pager', 'log', '-1', '--format=%cd')
+    BUILD = sh.Command(path='git').bake('describe', '--tags', '--always', 'HEAD')
+    DATE = sh.Command(path='git').bake('--no-pager', 'log', '-1', '--format=%cd')
 except sh.CommandNotFound:
     BUILD = None
     DATE = None

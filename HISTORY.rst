@@ -21,6 +21,7 @@
 - Change the default value of `SEARCH_MATCH_ALL_DEFAULT_VALUE` to be a
   boolean.
 - Update setting `SEARCH_MATCH_ALL_DEFAULT_VALUE` to be a choice field.
+- Add kwargs to `sh.Command`.
 
 4.6.12 (2025-12-14)
 ===================
