@@ -414,18 +414,17 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
                 detected_pages = converter.get_page_count()
         except PageCountError as exception:
             """Converter backend doesn't understand the format."""
+            error_log_text = _(
+                message='Error updating page count; %(exception)s'
+            ) % {'exception': exception}
+
             self.error_log.create(
-                domain_name=ERROR_LOG_DOMAIN_NAME, text=exception
+                domain_name=ERROR_LOG_DOMAIN_NAME, text=error_log_text
             )
         else:
             DocumentFilePage = apps.get_model(
                 app_label='documents', model_name='DocumentFilePage'
             )
-
-            queryset_error_logs = self.error_log.filter(
-                domain_name=ERROR_LOG_DOMAIN_NAME
-            )
-            queryset_error_logs.delete()
 
             for page in self.pages.all():
                 page._event_actor = user

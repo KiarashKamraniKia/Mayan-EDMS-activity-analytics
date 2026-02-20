@@ -5,6 +5,7 @@ import traceback
 from django.apps import apps
 from django.conf import settings
 from django.db import models, transaction
+from django.utils.translation import gettext_lazy as _
 
 from .events import (
     event_parsing_document_file_content_deleted,
@@ -52,7 +53,9 @@ class DocumentFilePageContentManager(models.Manager):
 
                 error_log_text = '\n'.join(result)
             else:
-                error_log_text = exception
+                error_log_text = _(
+                    message='Error attempting to parse text; %(exception)s'
+                ) % {'exception': exception}
 
             document_file.error_log.create(
                 domain_name=ERROR_LOG_DOMAIN_NAME, text=error_log_text
@@ -61,11 +64,6 @@ class DocumentFilePageContentManager(models.Manager):
             logger.debug(
                 'Parsing complete for document file: %s', document_file
             )
-            queryset_error_logs = document_file.error_log.filter(
-                domain_name=ERROR_LOG_DOMAIN_NAME
-            )
-            queryset_error_logs.delete()
-
             event_parsing_document_file_finished.commit(
                 action_object=document_file.document, actor=user,
                 target=document_file

@@ -2,6 +2,7 @@ import logging
 
 from django.apps import apps
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 from mayan.apps.converter.settings import setting_image_generation_timeout
 from mayan.apps.lock_manager.backends.base import LockingBackend
@@ -32,9 +33,7 @@ class DocumentVersionPageOCRContentManager(models.Manager):
             target=document_version
         )
 
-    def process_document_version_page(
-        self, document_version_page, user=None
-    ):
+    def process_document_version_page(self, document_version_page, user=None):
         logger.debug(
             'Processing page: %d of document version: %s',
             document_version_page.page_number,
@@ -66,26 +65,28 @@ class DocumentVersionPageOCRContentManager(models.Manager):
 
                 with document_version_page.cache_partition.get_file(filename=cache_filename).open() as file_object:
                     try:
-                        ocr_content = OCRBackendBase.get_instance().execute(
+                        backend_instance = OCRBackendBase.get_instance()
+                        ocr_content = backend_instance.execute(
                             file_object=file_object,
                             language=document_version_page.document_version.document.language
                         )
                     except OCRError as exception:
+                        error_log_text = _(
+                            message='Error calling OCR backend for page: '
+                            '%(page_number)d; %(exception)s'
+                        ) % {
+                            'exception': exception,
+                            'page_number': document_version_page.page_number
+                        }
                         document_version_page.error_log.create(
                             domain_name=ERROR_LOG_DOMAIN_NAME,
-                            text=str(exception)
+                            text=error_log_text
                         )
                     else:
                         DocumentVersionPageOCRContent.objects.update_or_create(
                             document_version_page=document_version_page,
-                            defaults={
-                                'content': ocr_content
-                            }
+                            defaults={'content': ocr_content}
                         )
-                        queryset_error_logs = document_version_page.error_log.filter(
-                            domain_name=ERROR_LOG_DOMAIN_NAME
-                        )
-                        queryset_error_logs.delete()
             except Exception as exception:
                 logger.error(
                     'OCR error for document version page: %d; %s',

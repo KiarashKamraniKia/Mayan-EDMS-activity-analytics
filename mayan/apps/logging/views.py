@@ -99,6 +99,10 @@ class ObjectErrorLogEntryListView(
                 message='There are no error log entries'
             ),
             'object': self.external_object,
+            'subtitle': _(
+                message='Maximum number of entries kept for this object '
+                'type: %s'
+            ) % self.external_object.error_log_instance.limit,
             'title': _(
                 message='Error log entries for: %s' % self.external_object
             )

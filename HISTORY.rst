@@ -1,6 +1,17 @@
 4.9.9 (XXXX-XX-XX)
 ==================
 - Merge changes and improvements from version 4.7.11.
+- Backport smart settings app views split and view class rename.
+- Backport error logging changes from series 4.11:
+
+  - Add more descriptive module error log messages.
+  - Make error log messages translatable.
+  - Error logs are now no longer cleared on success. Users must clear past
+    error logs. This prevents a successful operation from clearing out still
+    valid error logs from a previous operation.
+  - Increase the default error log retention per object from 3 to 15 entries.
+  - Add a subtitle to the object error log view showing the number of entries
+    being retained for the specific object.
 
 4.9.8 (2025-12-27)
 ==================

@@ -214,9 +214,12 @@ class DocumentFilePageBusinessLogicMixin:
                     '"%s" failed to be created; %s', cache_filename,
                     exception, exc_info=True
                 )
-                error_log_text = '''
-                Cannot generate document file page {page_number}; {exception}
-                '''.format(exception=exception, page_number=self.page_number)
+                error_log_text = _(
+                    message='Error generating image for page '
+                    '%(page_number)d; %(exception)s') % {
+                    'exception': exception, 'page_number': self.page_number
+                }
+
                 self.document_file.error_log.create(
                     domain_name=ERROR_LOG_DOMAIN_NAME, text=error_log_text
                 )

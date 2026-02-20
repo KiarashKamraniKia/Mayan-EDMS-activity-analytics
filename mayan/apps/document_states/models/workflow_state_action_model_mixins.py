@@ -68,17 +68,13 @@ class WorkflowStateActionBusinessLogicMixin:
                 backend_instance = self.get_backend_instance()
                 backend_instance.execute(context=context)
             except Exception as exception:
+                error_log_text = '{}; {}'.format(
+                    exception.__class__.__name__, exception
+                )
+
                 self.error_log.create(
-                    domain_name=ERROR_LOG_DOMAIN_NAME,
-                    text='{}; {}'.format(
-                        exception.__class__.__name__, exception
-                    )
+                    domain_name=ERROR_LOG_DOMAIN_NAME, text=error_log_text
                 )
 
                 if settings.DEBUG or settings.TESTING:
                     raise
-            else:
-                queryset_error_logs = self.error_log.filter(
-                    domain_name=ERROR_LOG_DOMAIN_NAME
-                )
-                queryset_error_logs.delete()

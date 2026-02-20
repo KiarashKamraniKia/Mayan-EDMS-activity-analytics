@@ -30,9 +30,8 @@ class OCRTaskTestCase(
         self.assertEqual(
             self._test_document_version_page.error_log.count(), 1
         )
-        self.assertEqual(
-            self._test_document_version_page.error_log.first().text,
-            TEST_EXCEPTION_TEXT
+        self.assertTrue(
+            TEST_EXCEPTION_TEXT in self._test_document_version_page.error_log.first().text
         )
 
         events = self._get_test_events()

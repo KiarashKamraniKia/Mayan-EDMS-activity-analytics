@@ -13,7 +13,7 @@ class ErrorLoggingModelTestCase(ErrorLogPartitionEntryTestMixin, BaseTestCase):
         self._create_test_error_log_entry()
 
     def test_entries_limit(self):
-        self.error_log.limit = 3
+        self._test_object.error_log_instance.limit = 3
         self._test_object.error_log.create(text='1')
         self._test_object.error_log.create(text='2')
         self._test_object.error_log.create(text='3')
