@@ -36,12 +36,22 @@ setting_namespace = setting_cluster.do_namespace_add(
 )
 
 setting_display_height = setting_namespace.do_setting_add(
+<<<<<<< HEAD
     default=DEFAULT_DOCUMENTS_DISPLAY_HEIGHT,
-    global_name='DOCUMENTS_DISPLAY_HEIGHT'
+    global_name='DOCUMENTS_DISPLAY_HEIGHT', help_text=_(
+        message='Optional height in pixels of the document page image used '
+        'for interactive display. Leave empty to calculate the height from '
+        '`DOCUMENTS_DISPLAY_WIDTH` while preserving the aspect ratio.'
+    )
 )
 setting_display_width = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENTS_DISPLAY_WIDTH,
-    global_name='DOCUMENTS_DISPLAY_WIDTH'
+    global_name='DOCUMENTS_DISPLAY_WIDTH',
+    help_text=_(
+        message='Width in pixels of the document page image used for '
+        'interactive display. Larger values improve quality but increase '
+        'processing time and cache storage.'
+    )
 )
 setting_document_file_page_image_cache_maximum_size = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENTS_FILE_PAGE_IMAGE_CACHE_MAXIMUM_SIZE,
@@ -127,19 +137,39 @@ setting_document_version_page_image_cache_storage_backend_arguments = setting_na
 )
 setting_preview_height = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENTS_PREVIEW_HEIGHT,
-    global_name='DOCUMENTS_PREVIEW_HEIGHT'
+    global_name='DOCUMENTS_PREVIEW_HEIGHT',
+    help_text=_(
+        message='Optional height in pixels of the document preview image. '
+        'Leave empty to calculate the height from `DOCUMENTS_PREVIEW_WIDTH` '
+        'while preserving the aspect ratio.'
+    )
 )
 setting_preview_width = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENTS_PREVIEW_WIDTH,
-    global_name='DOCUMENTS_PREVIEW_WIDTH'
+    global_name='DOCUMENTS_PREVIEW_WIDTH',
+    help_text=_(
+        message='Width in pixels of the document preview image. '
+        'Larger values improve quality but increase processing time and '
+        'cache storage.'
+    )
 )
 setting_print_height = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENTS_PRINT_HEIGHT,
-    global_name='DOCUMENTS_PRINT_HEIGHT'
+    global_name='DOCUMENTS_PRINT_HEIGHT',
+    help_text=_(
+        message='Optional height in pixels of the document page image '
+        'generated for printing. Leave empty to calculate the height from '
+        '`DOCUMENTS_PRINT_WIDTH` while preserving the aspect ratio.'
+    )
 )
 setting_print_width = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENTS_PRINT_WIDTH,
-    global_name='DOCUMENTS_PRINT_WIDTH'
+    global_name='DOCUMENTS_PRINT_WIDTH',
+    help_text=_(
+        message='Width in pixels of the document page image generated for '
+        'printing. Larger values improve quality but increase processing '
+        'time and cache storage.'
+    )
 )
 setting_recently_accessed_document_count = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENTS_RECENTLY_ACCESSED_COUNT,

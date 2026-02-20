@@ -22,6 +22,14 @@
   boolean.
 - Update setting `SEARCH_MATCH_ALL_DEFAULT_VALUE` to be a choice field.
 - Add kwargs to `sh.Command`.
+- Add help text to settings:
+
+  - DOCUMENTS_DISPLAY_HEIGHT
+  - DOCUMENTS_DISPLAY_WIDTH
+  - DOCUMENTS_PREVIEW_HEIGHT
+  - DOCUMENTS_PREVIEW_WIDTH
+  - DOCUMENTS_PRINT_HEIGHT
+  - DOCUMENTS_PRINT_WIDTH
 
 4.6.12 (2025-12-14)
 ===================
