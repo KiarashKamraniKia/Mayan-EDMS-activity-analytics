@@ -214,6 +214,34 @@ class TemplateTagMathTestCase(TemplateTestMixin, BaseTestCase):
             )
         )
 
+    def test_math_subtract_float(self):
+        value_1 = 50
+        value_2 = 2
+        result = self._render_test_template(
+            template_string='{{{{ {} | math_subtract:{} }}}}'.format(
+                value_1, value_2
+            )
+        )
+        self.assertEqual(
+            result, str(
+                value_1 - value_2
+            )
+        )
+
+    def test_math_subtract_integer(self):
+        value_1 = 60.5
+        value_2 = 2
+        result = self._render_test_template(
+            template_string='{{{{ {} | math_subtract:{} }}}}'.format(
+                value_1, value_2
+            )
+        )
+        self.assertEqual(
+            result, str(
+                value_1 - value_2
+            )
+        )
+
     def test_math_substract_float(self):
         value_1 = 50
         value_2 = 2

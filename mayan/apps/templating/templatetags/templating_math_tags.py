@@ -108,8 +108,8 @@ def filter_math_square_root(value):
     return square_root
 
 
-@register.filter(name='math_substract')
-def filter_math_substract(value, argument):
+@register.filter(name='math_subtract')
+def filter_math_subtract(value, argument):
     """
     Mathematical subtraction.
     """
@@ -118,3 +118,12 @@ def filter_math_substract(value, argument):
     subtrahend = _process_value(value=argument)
     difference = minuend - subtrahend
     return difference
+
+
+@register.filter(name='math_substract')
+def filter_math_substract(parser, token):
+    """
+    Mathematical subtraction (compatibility alias)
+    """
+
+    return filter_math_subtract(parser, token)

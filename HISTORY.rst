@@ -12,6 +12,10 @@
   - Increase the default error log retention per object from 3 to 15 entries.
   - Add a subtitle to the object error log view showing the number of entries
     being retained for the specific object.
+- Fix the math template tag name `math_substract` to `math_subtract`. Update
+  your existing templates if you use this template tag. An alias named
+  `math_substract` was added for backwards compatibility but will be removed
+  in a following minor version.
 
 4.9.8 (2025-12-27)
 ==================
