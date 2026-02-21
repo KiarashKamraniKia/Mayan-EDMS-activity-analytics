@@ -31,18 +31,20 @@ class WorkflowInstance(
     _ordering_fields = ('datetime',)
 
     workflow = models.ForeignKey(
-        help_text=_('The workflow template.'), on_delete=models.CASCADE,
+        help_text=_(message='The workflow template.'),
+        on_delete=models.CASCADE,
         related_name='instances', to=Workflow,
         verbose_name=_(message='Workflow')
     )
     datetime = models.DateTimeField(
-        auto_now_add=True, db_index=True, help_text=_(
-            message='Workflow instance creation date time.'
-        ), verbose_name=_(message='Datetime')
+        auto_now_add=True, db_index=True,
+        help_text=_(message='Workflow instance creation date time.'),
+        verbose_name=_(message='Datetime')
     )
     document = models.ForeignKey(
         help_text=_(
-            'The document to which the workflow instance is attached.'
+            message='The document to which the workflow instance is '
+            'attached.'
         ), on_delete=models.CASCADE, related_name='workflows', to=Document,
         verbose_name=_(message='Document')
     )
@@ -50,7 +52,9 @@ class WorkflowInstance(
         blank=True, verbose_name=_(message='Context')
     )
     state_active = models.ForeignKey(
-        help_text=_('The currently active state of the workflow instance.'),
+        help_text=_(
+            message='The currently active state of the workflow instance.'
+        ),
         on_delete=models.CASCADE, related_name='workflow_instances',
         to=WorkflowState, verbose_name=_(message='Active state')
     )

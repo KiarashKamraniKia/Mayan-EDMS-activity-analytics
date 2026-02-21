@@ -19,7 +19,7 @@ class DocumentFileSourceMetadataSerializer(
         label=_(message='Document file'), read_only=True
     )
     url = MultiKwargHyperlinkedIdentityField(
-        label=_('URL'), view_kwargs=(
+        label=_(message='URL'), view_kwargs=(
             {
                 'lookup_field': 'document_file.document_id',
                 'lookup_url_kwarg': 'document_id'

@@ -220,7 +220,7 @@ class SearchField:
 
 
 class SearchFieldConcrete(SearchField):
-    class_label = _('Concrete')
+    class_label = _(message='Concrete')
     concrete = True
 
     def _do_field_name_verify(self):
@@ -242,7 +242,7 @@ class SearchFieldDirect(SearchFieldConcrete):
     SearchModel.
     """
 
-    class_label = _('Direct')
+    class_label = _(message='Direct')
     collection = False
     priority = 0
 
@@ -264,7 +264,7 @@ class SearchFieldDirect(SearchFieldConcrete):
 
 
 class SearchFieldRelated(SearchFieldConcrete):
-    class_label = _('Related')
+    class_label = _(message='Related')
     collection = True
     priority = 1
 
@@ -322,7 +322,7 @@ class SearchFieldVirtual(SearchField):
     model instance indexing.
     """
 
-    class_label = _('Virtual')
+    class_label = _(message='Virtual')
     collection = False
     concrete = False
     priority = 2

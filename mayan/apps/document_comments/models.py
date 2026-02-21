@@ -31,12 +31,12 @@ class Comment(CommentBusinessLogicMixin, ExtraDataModelMixin, models.Model):
     )
     user = models.ForeignKey(
         editable=False,
-        help_text=_('The user account that made the comment.'),
+        help_text=_(message='The user account that made the comment.'),
         on_delete=models.CASCADE, related_name='comments',
         to=settings.AUTH_USER_MODEL, verbose_name=_(message='User')
     )
     text = models.TextField(
-        help_text=_('Actual text content of the comment.'),
+        help_text=_(message='Actual text content of the comment.'),
         verbose_name=_(message='Text')
     )
     submit_date = models.DateTimeField(

@@ -84,18 +84,18 @@ class ModelAttribute:
     def get_description(self):
         return self.description
 
-    get_description.short_description = _('Description')
+    get_description.short_description = _(message='Description')
 
     def get_label(self):
         return self.label
 
-    get_label.short_description = _('Label')
+    get_label.short_description = _(message='Label')
 
     def get_name(self):
         return self.name
 
-    get_name.help_text = _('Example usage of the property.')
-    get_name.short_description = _('Name')
+    get_name.help_text = _(message='Example usage of the property.')
+    get_name.short_description = _(message='Name')
 
 
 class ModelField(ModelAttribute):
@@ -261,25 +261,27 @@ class ModelWrapper:
     def get_app_label(self):
         return self.app_config.verbose_name
 
-    get_app_label.help_text = _('Name of the app where the model is defined.')
-    get_app_label.short_description = _('App')
+    get_app_label.help_text = _(
+        message='Name of the app where the model is defined.'
+    )
+    get_app_label.short_description = _(message='App')
 
     def get_name_full(self):
         return '{}.{}'.format(self.app_config.label, self.model_name)
 
-    get_name_full.help_text = _('Complete unique name of the model.')
-    get_name_full.short_description = _('Full name')
+    get_name_full.help_text = _(message='Complete unique name of the model.')
+    get_name_full.short_description = _(message='Full name')
 
     def get_label(self):
         return self.verbose_name
 
-    get_label.help_text = _('Human readable name of the model.')
-    get_label.short_description = _('Label')
+    get_label.help_text = _(message='Human readable name of the model.')
+    get_label.short_description = _(message='Label')
 
     def get_name(self):
         return self.model_name
 
-    get_name.short_description = _('Name')
+    get_name.short_description = _(message='Name')
 
 
 class QuerysetParametersSerializer:
@@ -315,10 +317,10 @@ class QuerysetParametersSerializer:
         return {
             'kwargs': serialized_kwargs,
             'manager_name': _manager_name,
+            'method_name': _method_name,
             'model_content_type_id': ContentType.objects.get_for_model(
                 model=_model
-            ).pk,
-            'method_name': _method_name
+            ).pk
         }
 
     @staticmethod

@@ -19,7 +19,7 @@ class DocumentTypeDriverConfigurationSerializer(serializers.ModelSerializer):
         label=_(message='Stored driver'), read_only=True
     )
     url = MultiKwargHyperlinkedIdentityField(
-        label=_('URL'), view_kwargs=(
+        label=_(message='URL'), view_kwargs=(
             {
                 'lookup_field': 'document_type_id',
                 'lookup_url_kwarg': 'document_type_id'

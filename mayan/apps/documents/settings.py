@@ -203,24 +203,24 @@ setting_task_document_type_document_trash_periods_check_interval = setting_names
     default=DEFAULT_DOCUMENTS_TRASH_PERIOD_CHECK_TASK_INTERVAL,
     global_name='DOCUMENTS_TRASH_PERIOD_CHECK_TASK_INTERVAL',
     help_text=_(
-        'Time interval in seconds, at which the document trashing task will '
-        'execute.'
+        message='Interval in seconds between runs of the document trashing '
+        'check task.'
     )
 )
 setting_task_document_type_document_stubs_delete_interval = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENTS_STUBS_DELETE_TASK_INTERVAL,
     global_name='DOCUMENTS_STUBS_DELETE_TASK_INTERVAL',
     help_text=_(
-        'Time interval in seconds, at which the document stub prune task '
-        'will execute.'
+        message='Interval in seconds between runs of the document stub '
+        'prune task.'
     )
 )
 setting_task_trashed_document_delete_periods_check_interval = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENTS_TRASHED_DELETE_PERIODS_CHECK_TASK_INTERVAL,
     global_name='DOCUMENTS_TRASHED_DOCUMENT_DELETE_PERIODS_CHECK_TASK_INTERVAL',
     help_text=_(
-        'Time interval in seconds, at which the trashed document deletion '
-        'task will execute.'
+        message='Interval in seconds between runs of the trashed document '
+        'deletion task.'
     )
 )
 setting_thumbnail_height = setting_namespace.do_setting_add(

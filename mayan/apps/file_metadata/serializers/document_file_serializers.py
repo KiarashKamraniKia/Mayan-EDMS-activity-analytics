@@ -18,7 +18,7 @@ class DocumentFileMetadataDriverEntrySerializer(
         label=_(message='Document file'), read_only=True
     )
     entries_url = MultiKwargHyperlinkedIdentityField(
-        label=_('URL'), view_kwargs=(
+        label=_(message='URL'), view_kwargs=(
             {
                 'lookup_field': 'document_file.document_id',
                 'lookup_url_kwarg': 'document_id'
@@ -37,7 +37,7 @@ class DocumentFileMetadataDriverEntrySerializer(
         label=_(message='Stored driver'), read_only=True, source='driver'
     )
     url = MultiKwargHyperlinkedIdentityField(
-        label=_('URL'), view_kwargs=(
+        label=_(message='URL'), view_kwargs=(
             {
                 'lookup_field': 'document_file.document_id',
                 'lookup_url_kwarg': 'document_id'
@@ -67,7 +67,7 @@ class DocumentFileMetadataEntrySerializer(
     serializers.HyperlinkedModelSerializer
 ):
     url = MultiKwargHyperlinkedIdentityField(
-        label=_('URL'), view_kwargs=(
+        label=_(message='URL'), view_kwargs=(
             {
                 'lookup_field': 'document_file_driver_entry.document_file.document_id',
                 'lookup_url_kwarg': 'document_id'

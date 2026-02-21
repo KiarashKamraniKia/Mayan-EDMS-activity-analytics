@@ -23,7 +23,7 @@ class UserConfirmView(ModelMixinUserConfirmViewBusinessLogic, models.Model):
     )
     remember = models.BooleanField(
         default=False,
-        help_text=_('Remember the last confirmation of the view.'),
+        help_text=_(message='Remember the last confirmation of the view.'),
         verbose_name=_(message='Remember')
     )
 
@@ -52,7 +52,8 @@ class UserViewMode(ModelMixinUserViewModeBusinessLogic, models.Model):
     )
     value = models.CharField(
         db_index=True, help_text=_(
-            'Stored value used to identify the display mode of the view.'
+            message='Stored value used to identify the display mode of the '
+            'view.'
         ), max_length=5, verbose_name=_(message='Value')
     )
 

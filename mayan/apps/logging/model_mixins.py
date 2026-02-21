@@ -8,7 +8,9 @@ class ErrorLogPartitionEntryBusinessLogicMixin:
         try:
             error_log_domain = ErrorLogDomain.get(name=self.domain_name)
         except KeyError:
-            return _('Unknown domain name: %s' % self.domain_name)
+            return _(message='Unknown domain name: %(domain_name)s') % {
+                'domain_name': self.domain_name
+            }
         else:
             return error_log_domain.label
 

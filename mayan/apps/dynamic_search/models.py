@@ -31,7 +31,7 @@ class SavedResultset(
         ), verbose_name=_(message='Timestamp')
     )
     epoch = models.PositiveBigIntegerField(
-        verbose_name=_('Epoch')
+        verbose_name=_(message='Epoch')
     )
     app_label = models.CharField(
         max_length=64, verbose_name=_(message='App label')
