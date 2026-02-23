@@ -45,6 +45,7 @@
 
 - Reinforce pruning of empty index instance nodes.
 - Reduce logging output.
+- Add `libfuse2` as a production dependency.
 
 4.6.12 (2025-12-14)
 ===================
