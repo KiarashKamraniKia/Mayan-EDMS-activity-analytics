@@ -15,9 +15,11 @@ logger = logging.getLogger(name=__name__)
 
 class IndexInstanceBusinessLogicMixin:
     def _delete_empty_nodes(self):
-        self.index_instance_root_node.get_children().filter(
+        queryset_children = self.index_instance_root_node.get_children()
+        queryset_children_filtered = queryset_children.filter(
             children=None, documents=None
-        ).delete()
+        )
+        queryset_children_filtered.delete()
 
     def _document_add(self, document, index_instance_node_parent):
         for index_template_node in index_instance_node_parent.index_template_node.get_children().filter(enabled=True):
@@ -55,6 +57,23 @@ class IndexInstanceBusinessLogicMixin:
                         document=document,
                         index_instance_node_parent=index_instance_node
                     )
+
+    def delete_empty_nodes(self):
+        if not self.enabled:
+            return
+
+        try:
+            locking_backend = LockingBackend.get_backend()
+            lock_name = self.get_lock_string()
+            lock_index_instance = locking_backend.acquire_lock(name=lock_name)
+        except LockError:
+            raise
+        else:
+            try:
+                self.initialize_index_instance_root_node_node()
+                self._delete_empty_nodes()
+            finally:
+                lock_index_instance.release()
 
     def document_nodes_delete(self, document):
         IndexInstanceNode = apps.get_model(

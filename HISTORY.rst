@@ -43,6 +43,8 @@
   - Split test modules.
   - Backport setting and namespace deregistration improvements.
 
+- Reinforce pruning of empty index instance nodes.
+
 4.6.12 (2025-12-14)
 ===================
 - Backports from series 4.10, 4.9, 4.8, 4.7.
