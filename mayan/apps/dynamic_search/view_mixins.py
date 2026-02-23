@@ -1,5 +1,3 @@
-import logging
-
 from django.conf import settings
 from django.contrib import messages
 from django.http import Http404
@@ -12,8 +10,6 @@ from .mixins import QuerysetSearchModelMixin
 from .search_backends import SearchBackend
 from .search_interpreters import SearchInterpreter
 from .search_models import SearchModel
-
-logger = logging.getLogger(name=__name__)
 
 
 class SearchQueryViewMixin:
@@ -115,11 +111,6 @@ class SearchFilterEnabledListViewMixin(
         except DynamicSearchException as exception:
             if settings.DEBUG or settings.TESTING:
                 raise
-
-            logger.error(
-                'Error performing queryset search filtering; %s',
-                exception
-            )
 
             messages.error(message=exception, request=self.request)
 

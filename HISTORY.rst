@@ -44,6 +44,7 @@
   - Backport setting and namespace deregistration improvements.
 
 - Reinforce pruning of empty index instance nodes.
+- Reduce logging output.
 
 4.6.12 (2025-12-14)
 ===================

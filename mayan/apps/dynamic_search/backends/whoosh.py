@@ -223,7 +223,7 @@ class WhooshSearchBackend(SearchBackend):
     def _do_query_resolve(self, index, limit, query):
         with index.searcher() as searcher:
             results = searcher.search(q=query, limit=limit)
-            logger.debug('results: %s', results)
+
             return [
                 int(
                     result['id']
