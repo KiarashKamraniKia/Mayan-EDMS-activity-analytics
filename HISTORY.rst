@@ -2,6 +2,8 @@
 ===================
 - Merge and improvements from versions 4.6.14 which in turn
   include backports from series 4.9, 4.10 and 4.11.
+- Add default makefile target that does nothing and instructs to use the
+  `help` target instead.
 
 4.7.9 (2026-03-10)
 ==================

@@ -54,7 +54,11 @@ CONTAINER_NAME_TEST_ORACLE = mayan-test-oracle
 CONTAINER_NAME_TEST_POSTGRESQL = mayan-test-postgresql
 CONTAINER_NAME_TEST_REDIS = mayan-test-redis
 
-.PHONY: clean clean-pyc clean-build test
+.PHONY: clean clean-pyc clean-build default help test
+
+default:
+	@echo "No default target."
+	@echo "Run: make help for a list of targets."
 
 help:
 	@echo "Usage: make <target>\n"
