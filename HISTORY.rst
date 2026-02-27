@@ -5,6 +5,7 @@
 - Update setting `SEARCH_STORE_RESULTS_DEFAULT_VALUE` to be a choice field.
 - Rename internal references of `DOCKER_ELASTIC_` to `DOCKER_ELASTICSEARCH_`.
 - Fix documentation build warnings.
+- Update copyright year.
 
 4.7.8 (2025-12-13)
 ==================
