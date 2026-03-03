@@ -29,6 +29,7 @@ from mayan.apps.storage.utils import (
 from .algorithms import HashAlgorithm
 from .environments import environment_production
 from .exceptions import DependenciesException
+from .literals import DEFAULT_HTTP_TIMEOUT
 
 logger = logging.getLogger(name=__name__)
 
@@ -652,7 +653,7 @@ class JavaScriptDependency(Dependency):
     def download(self):
         self.path_cache = mkdtemp()
 
-        with requests.get(self.version_metadata['dist']['tarball'], stream=True) as response:
+        with requests.get(stream=True, timeout=DEFAULT_HTTP_TIMEOUT, url=self.version_metadata['dist']['tarball']) as response:
             response.raise_for_status()
             with self.get_tar_file_path().open(mode='wb') as file_object:
                 shutil.copyfileobj(fsrc=response.raw, fdst=file_object)
@@ -719,9 +720,9 @@ class JavaScriptDependency(Dependency):
         return result
 
     def get_metadata(self):
-        response = requests.get(
-            url=self.get_url()
-        )
+        url = self.get_url()
+        response = requests.get(timeout=DEFAULT_HTTP_TIMEOUT, url=url)
+        response.raise_for_status()
         self.package_metadata = response.json()
         self.versions = self.package_metadata['versions'].keys()
         self.version_best = self.get_best_version()
@@ -839,7 +840,8 @@ class PythonDependency(Dependency):
 
     def get_latest_version(self):
         url = 'https://pypi.python.org/pypi/{}/json'.format(self.name)
-        response = requests.get(url=url)
+        response = requests.get(timeout=DEFAULT_HTTP_TIMEOUT, url=url)
+        response.raise_for_status()
         versions = list(
             response.json()['releases']
         )
@@ -904,12 +906,12 @@ class GoogleFontDependency(Dependency):
 
         with self.path_import_file.open(mode='w') as file_object:
             for agent_name, agent_string in self.user_agents.items():
+                headers = {'User-Agent': agent_string}
                 response = requests.get(
-                    self.url, headers={
-                        'User-Agent': agent_string
-                    }
+                    headers=headers, timeout=DEFAULT_HTTP_TIMEOUT,
+                    url=self.url
                 )
-
+                response.raise_for_status()
                 import_file = response.text
 
                 for line in import_file.split('\n'):
@@ -919,11 +921,12 @@ class GoogleFontDependency(Dependency):
                         font_filename = url.path.segments[-1]
                         path_font_filename = self.path_cache / font_filename
                         with path_font_filename.open(mode='wb') as font_file_object:
-                            with requests.get(font_url, stream=True) as response:
+                            with requests.get(stream=True, timeout=DEFAULT_HTTP_TIMEOUT, url=font_url) as response:
                                 # Use response.content instead of response.raw
                                 # to allow requests to handle gzip and deflate
                                 # content.
                                 # https://2.python-requests.org/en/master/user/quickstart/#binary-response-content
+                                response.raise_for_status()
                                 shutil.copyfileobj(
                                     fsrc=BytesIO(
                                         initial_bytes=response.content

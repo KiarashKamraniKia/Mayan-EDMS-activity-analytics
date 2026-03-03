@@ -58,6 +58,13 @@
 - Improve setting view return navigation.
 - Fix repeated setting edit view return link.
 - Update the version check code to use the new version of the PyPI API.
+- Harden outbound HTTP requests, add timeouts defaults:
+
+    - Add a timeout of 10 seconds for initial connection and 30 seconds for
+      initial data transfer for dependency downloads.
+    - Add the `oidc_discovery_timeout` keyword argument to
+      `AuthenticationBackendOIDC`. Defaults to 5 seconds for connection and 15
+      seconds for data response.
 
 4.6.12 (2025-12-14)
 ===================
