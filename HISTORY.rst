@@ -12,6 +12,8 @@
 - Backport `forms` app to increase forward compatibility.
 - Add test to ensure all setting namespaces render correctly.
 - Use the TLS version of NPM to download JavaScript packages.
+- Update password reset form to navigate to the login URL instead of the
+  logout URL.
 - Add a reusable chunked hashing function optimized for large files.
 - Default chunked hashing block size to 65536 bytes for better alignment with
   memory allocation, file system buffers, and CPU cache lines.
