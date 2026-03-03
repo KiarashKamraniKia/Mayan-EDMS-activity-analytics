@@ -10,6 +10,7 @@
 - Workaround undocumented backward incompatible bug in django-formtools 2.4.0.
 - Backport settings class split and duplicate namespace detection.
 - Backport `forms` app to increase forward compatibility.
+- Add test to ensure all setting namespaces render correctly.
 - Add a reusable chunked hashing function optimized for large files.
 - Default chunked hashing block size to 65536 bytes for better alignment with
   memory allocation, file system buffers, and CPU cache lines.

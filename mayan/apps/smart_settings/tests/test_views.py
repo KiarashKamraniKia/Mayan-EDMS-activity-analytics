@@ -1,6 +1,7 @@
 from mayan.apps.testing.tests.base import GenericViewTestCase
 
 from ..permissions import permission_settings_edit, permission_settings_view
+from ..setting_clusters import setting_cluster
 
 from .literals import (
     TEST_SETTING_VALIDATION_BAD_VALUE, TEST_SETTING_VALIDATION_GOOD_VALUE
@@ -40,6 +41,16 @@ class SettingNamespaceViewTestCase(
 
         response = self._request_namespace_detail_view()
         self.assertEqual(response.status_code, 200)
+
+    def test_all_namespace_detail_view_with_permission(self):
+        self.grant_permission(permission=permission_settings_view)
+
+        namespace_list = setting_cluster.get_namespace_list()
+        for namespace in namespace_list:
+            response = self._request_namespace_detail_view(
+                namespace_name=namespace.name
+            )
+            self.assertEqual(response.status_code, 200)
 
     def test_namespace_list_view_no_permission(self):
         response = self._request_namespace_list_view()
