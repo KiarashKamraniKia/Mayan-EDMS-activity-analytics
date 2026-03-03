@@ -46,7 +46,7 @@ class GoogleFontsProvider(Provider):
 
 
 class NPMRegistryRespository(Provider):
-    url = 'http://registry.npmjs.com'
+    url = 'https://registry.npmjs.com'
 
 
 class OperatingSystemProvider(Provider):
