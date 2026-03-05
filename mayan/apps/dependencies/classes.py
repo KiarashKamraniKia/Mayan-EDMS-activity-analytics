@@ -21,7 +21,6 @@ from django.utils.translation import gettext, gettext_lazy as _
 from mayan.apps.common.class_mixins import AppsModuleLoaderMixin
 from mayan.apps.common.exceptions import ResolverPipelineError
 from mayan.apps.common.utils import ResolverPipelineObjectAttribute
-from mayan.apps.storage.compat import Path
 from mayan.apps.storage.compressed_files import TarArchive
 from mayan.apps.storage.utils import (
     TemporaryDirectory, mkdtemp, patch_files as storage_patch_files
