@@ -6,7 +6,7 @@ from django.conf import settings
 from django.test import override_settings
 from django.urls import reverse
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 from mayan.apps.testing.tests.base import GenericViewTestCase
 from mayan.apps.user_management.events import event_user_edited
 

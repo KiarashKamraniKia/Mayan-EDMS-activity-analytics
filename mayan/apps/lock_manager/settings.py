@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_LOCK_MANAGER_BACKEND, DEFAULT_LOCK_MANAGER_BACKEND_ARGUMENTS,

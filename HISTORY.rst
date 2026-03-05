@@ -8,6 +8,7 @@
   deprecated Python library `pkg_resources`.
 - Update django-formtools from version 2.3 to 2.5.1.
 - Workaround undocumented backward incompatible bug in django-formtools 2.4.0.
+- Backport settings class split and duplicate namespace detection.
 
 4.6.12 (2025-12-14)
 ===================

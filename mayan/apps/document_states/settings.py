@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_GRAPHVIZ_DOT_PATH, DEFAULT_WORKFLOWS_IMAGE_CACHE_MAXIMUM_SIZE,
