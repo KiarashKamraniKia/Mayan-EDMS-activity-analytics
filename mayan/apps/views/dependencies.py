@@ -1,6 +1,4 @@
-from mayan.apps.dependencies.classes import (
-    JavaScriptDependency, PythonDependency
-)
+from mayan.apps.dependencies.classes import PythonDependency
 
 PythonDependency(
     module=__name__, name='django-stronghold', version_string='==0.4.0'

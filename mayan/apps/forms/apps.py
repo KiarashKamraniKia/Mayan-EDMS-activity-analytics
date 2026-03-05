@@ -15,4 +15,3 @@ class FormsApp(MayanAppConfig):
         'mayan_forms/node_modules/dropzone/component.json'
     )
     verbose_name = _(message='Forms')
-
