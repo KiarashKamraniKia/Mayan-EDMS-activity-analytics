@@ -37,6 +37,11 @@
   `STORAGE_DOWNLOAD_FILE_STORAGE_ARGUMENTS`.
 - Missing `message=` keyword argument.
 - Improve and simplify help text wording.
+- Backport settings updates:
+
+  - Split class modules.
+  - Split test modules.
+  - Backport setting and namespace deregistration improvements.
 
 4.6.12 (2025-12-14)
 ===================

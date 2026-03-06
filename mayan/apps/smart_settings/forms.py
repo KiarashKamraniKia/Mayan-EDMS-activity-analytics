@@ -29,7 +29,7 @@ class SettingForm(forms.Form):
 
         self.fields['value'].label = _(message='Value')
         self.fields['value'].help_text = self.setting.help_text or _(
-            'Enter the new setting value.'
+            message='Enter the new setting value.'
         )
         self.fields['value'].initial = self.setting.get_value_current()
 
@@ -41,7 +41,7 @@ class SettingForm(forms.Form):
         except yaml.YAMLError:
             raise ValidationError(
                 message=_(
-                    '"%s" not a valid entry.'
+                    message='"%s" not a valid entry.'
                 ) % self.cleaned_data['value']
             )
         else:

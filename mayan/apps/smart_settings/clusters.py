@@ -114,10 +114,15 @@ class SettingCluster(AppsModuleLoaderMixin):
         setting_namespace = SettingNamespace(cluster=self, **kwargs)
         return setting_namespace
 
-    def do_namespace_remove(self, name):
-        setting_namespace = self.get_namespace(name=name)
+    def do_namespace_join(self, namespace):
+        self.namespace_dict[namespace.name] = namespace
 
-        self.namespace_dict.pop(setting_namespace.name)
+    def do_namespace_remove(self, namespace):
+        for setting in namespace.get_setting_list():
+            self.setting_dict.pop(setting.global_name, None)
+
+        self.namespace_dict.pop(namespace.name)
+        SettingNamespace.unregister(instance=namespace)
 
     def do_post_edit_function_call(self):
         ContentType = apps.get_model(

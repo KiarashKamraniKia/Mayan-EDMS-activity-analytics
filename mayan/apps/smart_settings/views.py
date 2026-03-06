@@ -95,7 +95,7 @@ class SettingValueEditView(FormView):
         if self.object.get_is_overridden():
             messages.warning(
                 message=_(
-                    'This setting is overridden by an environment '
+                    message='This setting is overridden by an environment '
                     'variable, changing its value will have no effect.'
                 ), request=self.request
             )
@@ -183,8 +183,8 @@ class SettingNamespaceDetailView(SingleObjectListView):
             'hide_object': True,
             'object': namespace,
             'subtitle': _(
-                'Settings inherited from an environment variable take '
-                'precedence and cannot be changed in this view. '
+                message='Settings inherited from an environment variable '
+                'take precedence and cannot be changed in this view. '
             ),
             'title': _(message='Settings in namespace: %s') % namespace
         }

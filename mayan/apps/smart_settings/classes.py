@@ -5,6 +5,7 @@ import yaml
 
 from django.apps import apps
 from django.conf import settings
+from django.core.exceptions import ImproperlyConfigured
 from django.utils.encoding import force_str
 from django.utils.functional import Promise
 from django.utils.translation import gettext_lazy as _
@@ -16,7 +17,28 @@ from .exceptions import SettingsException, SettingsExceptionRevert
 logger = logging.getLogger(name=__name__)
 
 
-class Setting:
+class SettingMetaclass(type):
+    _registry = {}
+
+    def __call__(mcls, namespace, global_name, **kwargs):
+        if global_name in mcls._registry:
+            raise ImproperlyConfigured(
+                'Setting `{}` already exists.'.format(global_name)
+            )
+        else:
+            instance = super().__call__(
+                namespace=namespace, global_name=global_name, **kwargs
+            )
+            mcls._registry[global_name] = instance
+
+        return instance
+
+    @classmethod
+    def unregister(mcls, instance):
+        mcls._registry.pop(instance.global_name, None)
+
+
+class Setting(metaclass=SettingMetaclass):
     @staticmethod
     def deserialize_value(value):
         return yaml_load(stream=value)
@@ -135,7 +157,7 @@ class Setting:
 
     get_value_choices.short_description = _(message='Choices')
     get_value_choices.help_text = _(
-        'Possible values allowed for this setting.'
+        message='Possible values allowed for this setting.'
     )
 
     def do_value_raw_set(self, raw_value):
@@ -156,8 +178,8 @@ class Setting:
         if not self.get_has_value_new():
             raise SettingsExceptionRevert(
                 _(
-                    'Cannot revert setting. Setting value has not been '
-                    'updated.'
+                    message='Cannot revert setting. Setting value has not '
+                    'been updated.'
                 )
             )
 
@@ -208,7 +230,8 @@ class Setting:
 
     get_has_value_new.short_description = _(message='Modified')
     get_has_value_new.help_text = _(
-        'The value of this setting being modified since the last restart.'
+        message='The value of this setting being modified since the last '
+        'restart.'
     )
 
     def get_is_overridden(self):
@@ -216,8 +239,8 @@ class Setting:
 
     get_is_overridden.short_description = _(message='Overridden')
     get_is_overridden.help_text = _(
-        'The value of the setting is being overridden by an environment '
-        'variable.'
+        message='The value of the setting is being overridden by an '
+        'environment variable.'
     )
 
     def get_value_current(self):

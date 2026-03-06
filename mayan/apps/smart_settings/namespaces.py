@@ -44,12 +44,18 @@ class SettingNamespace(metaclass=SettingNamespaceMetaclass):
         self.setting_dict = {}
         self.version = version
 
+        self.do_cluster_join()
+
     def __str__(self):
         return force_str(s=self.label)
 
     def do_cache_invalidate(self):
         for setting in self.setting_dict.values():
             setting.do_cache_invalidate()
+
+    def do_cluster_join(self):
+        cluster = self.get_cluster()
+        cluster.do_namespace_join(namespace=self)
 
     def do_post_edit_function_call(self):
         for setting in self.setting_dict.values():
@@ -73,13 +79,13 @@ class SettingNamespace(metaclass=SettingNamespaceMetaclass):
 
         return setting
 
-    def do_setting_remove(self, global_name):
-        setting = self.setting_dict.get(global_name)
-
+    def do_setting_remove(self, setting):
         self.setting_dict.pop(setting.global_name)
-        self.cluster.setting_dict.pop(setting.global_name)
+        cluster = self.get_cluster()
+        cluster.do_setting_remove(setting=setting)
 
-        return setting
+    def get_cluster(self):
+        return self.cluster
 
     def get_configuration_file_version(self):
         return self.cluster.get_namespace_configuration(name=self.name).get(

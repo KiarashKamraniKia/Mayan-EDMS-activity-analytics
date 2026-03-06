@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 class UpdatedSetting(models.Model):
     global_name = models.CharField(
         db_index=True, help_text=_(
-            'A short text used as the tag name.'
+            message='A short text used as the tag name.'
         ), max_length=255, unique=True, verbose_name=_(message='Global name')
     )
     value_new = models.TextField(
