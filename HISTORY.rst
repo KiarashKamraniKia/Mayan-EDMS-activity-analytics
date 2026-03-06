@@ -36,7 +36,6 @@
   - DOCUMENTS_PRINT_WIDTH
 
 - Translation code update
-
 - Add help text for `SIGNATURES_BACKEND_ARGUMENTS` and
   `STORAGE_DOWNLOAD_FILE_STORAGE_ARGUMENTS`.
 - Missing `message=` keyword argument.
@@ -111,6 +110,7 @@
   - whitenoise from 6.11.0 to 6.12.0
 
 - Change gunicorn default worker class from sync to gevent.
+- Install `setuptools` in the GitLab CI job named `job_docker_build`.
 
 4.6.12 (2025-12-14)
 ===================
