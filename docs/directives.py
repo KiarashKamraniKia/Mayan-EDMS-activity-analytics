@@ -3,7 +3,8 @@ from docutils.statemachine import ViewList
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.nodes import nested_parse_with_titles
 
-from mayan.apps.smart_settings.classes import SettingCluster, Setting
+from mayan.apps.smart_settings.classes import Setting
+from mayan.apps.smart_settings.clusters import SettingCluster
 from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 

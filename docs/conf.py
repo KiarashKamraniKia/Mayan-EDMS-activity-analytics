@@ -287,7 +287,9 @@ def setup(app):
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mayan.settings')
     django.setup()
 
-    environment_variables = utils.load_env_file()
+    environment_variables = mayan.apps.platform.utils.load_env_file(
+        filename='../config.env'
+    )
 
     MAYAN_PYTHON_BIN_DIR = os.path.join(
         environment_variables['DEFAULT_DIRECTORY_INSTALLATION'], 'bin'
