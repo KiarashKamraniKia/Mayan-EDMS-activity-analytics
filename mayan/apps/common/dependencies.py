@@ -36,7 +36,7 @@ PythonDependency(
         ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
         (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
         SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-    ''', module=__name__, name='django', version_string='==4.2.27'
+    ''', module=__name__, name='django', version_string='==4.2.29'
 )
 PythonDependency(
     legal_text='''
@@ -91,7 +91,7 @@ PythonDependency(
         THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
         (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
         OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-    ''', module=__name__, name='django-model-utils', version_string='==4.5.1'
+    ''', module=__name__, name='django-model-utils', version_string='==5.0.0'
 )
 PythonDependency(
     legal_text='''
@@ -125,10 +125,10 @@ PythonDependency(
     legal_text='''
         Author: Christian Theune
         License: LGPL 2.1
-    ''', module=__name__, name='pycountry', version_string='==24.6.1'
+    ''', module=__name__, name='pycountry', version_string='==26.2.16'
 )
 PythonDependency(
-    module=__name__, name='requests', version_string='==2.31.0'
+    module=__name__, name='requests', version_string='==2.32.5'
 )
 PythonDependency(
     legal_text='''

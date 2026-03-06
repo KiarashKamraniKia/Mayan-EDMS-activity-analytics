@@ -60,11 +60,55 @@
 - Update the version check code to use the new version of the PyPI API.
 - Harden outbound HTTP requests, add timeouts defaults:
 
-    - Add a timeout of 10 seconds for initial connection and 30 seconds for
-      initial data transfer for dependency downloads.
-    - Add the `oidc_discovery_timeout` keyword argument to
-      `AuthenticationBackendOIDC`. Defaults to 5 seconds for connection and 15
-      seconds for data response.
+  - Add a timeout of 10 seconds for initial connection and 30 seconds for
+    initial data transfer for dependency downloads.
+  - Add the `oidc_discovery_timeout` keyword argument to
+    `AuthenticationBackendOIDC`. Defaults to 5 seconds for connection and 15
+    seconds for data response.
+
+- Update Docker image tags:
+
+  - docker from 23.0.6 to 28.2.2
+  - debian from 12.12-slim to 12.13-slim
+  - postgresql from 13.22-alpine to 13.23
+  - python from 3.11.13-slim to 3.11.15-slim
+  - rabbitmq from 3.12.14-management-alpine to 3.13.7-management
+  - redis from 7.0.15-alpine to 7.0.15
+  - forge base from noble-20250910 to noble-20260210.1
+
+- Update Python dependency versions:
+
+  - amqp from 5.2.0 to 5.3.1
+  - boto3 from 1.33.7 to 1.40.24
+  - dateparser from 1.2.0 to 1.3.0
+  - django from 4.2.27 to 4.2.29
+  - django-auth-ldap from 5.2.0 to 5.3.0
+  - django-model-utils from 4.5.1 to 5.0.0
+  - django-solo from 2.4.0 to 2.5.1
+  - django-test-migrations from 1.3.0 to 1.4.0
+  - django-widget-tweaks from 1.5.0 to 1.5.1
+  - drf-yasg from 1.21.1 to 1.21.15
+  - fancycomplete from 0.8 to 0.11.1
+  - gevent from 23.9.1 to 25.9.1
+  - greenlet from 3.0.3 to 3.3.2
+  - gunicorn from 21.2.0 to 25.1.0
+  - jsonschema from 4.25.1 to 4.26.0
+  - mozilla-django-oidc from 4.0.1 to 5.0.2
+  - mysql from 2.0.3 to 2.2.7
+  - pillow from 10.4.0 to 12.1.1
+  - pip from 25.3 to 26.0.1
+  - psutil from 5.9.8 to 6.1.1
+  - psycopg from 3.1.20 to 3.3.3
+  - pycountry from 24.6.1 to 26.2.16
+  - pypdf from 6.1.3 to 6.7.5
+  - python_gnupg from 0.5.5 to 0.5.6
+  - pytz from 2025.2 to 2026.1.post1
+  - redis from 5.0.8 to 7.2.1
+  - requests from 2.31.0 to 2.32.5
+  - sentry-sdk from 2.43.0 to 2.54.0
+  - setuptools from 69.5.1 to 80.9.0
+  - wheel from 0.45.1 to 0.46.3
+  - whitenoise from 6.11.0 to 6.12.0
 
 4.6.12 (2025-12-14)
 ===================

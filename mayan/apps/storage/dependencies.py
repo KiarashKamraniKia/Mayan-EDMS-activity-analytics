@@ -4,7 +4,7 @@ from mayan.apps.dependencies.environments import environment_testing
 from mayan.literals import PYTHON_PSUTIL_VERSION
 
 PythonDependency(
-    module=__name__, name='boto3', version_string='==1.33.7'
+    module=__name__, name='boto3', version_string='==1.40.24'
 )
 PythonDependency(
     module=__name__, name='django-storages', version_string='==1.14.6'
