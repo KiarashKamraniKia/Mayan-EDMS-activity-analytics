@@ -10,6 +10,10 @@
 - Workaround undocumented backward incompatible bug in django-formtools 2.4.0.
 - Backport settings class split and duplicate namespace detection.
 - Backport `forms` app to increase forward compatibility.
+- Move the DropZone widget from the views to the forms app.
+- Remove dropzone hard coded icons.
+- Breaking change: the setting `VIEWS_SHOW_DROPZONE_SUBMIT_BUTTON`
+  is now named `FORMS_SHOW_DROPZONE_SUBMIT_BUTTON`.
 - Add test to ensure all setting namespaces render correctly.
 - Use the TLS version of NPM to download JavaScript packages.
 - Update password reset form to navigate to the login URL instead of the
@@ -46,7 +50,6 @@
   - Split test modules.
   - Backport setting and namespace deregistration improvements.
 
-<<<<<<< HEAD
 - Reinforce pruning of empty index instance nodes.
 - Reduce logging output.
 - Add `libfuse2` as a production dependency.
