@@ -114,6 +114,8 @@
 - Install `setuptools` in the GitLab CI job named `job_docker_build`.
 - Add `pkg-config` as a build time dependency.
 - Prefix all GitLab CI branch with `ci`.
+- Backport Dockerfile improvements.
+- Remove older aarch64 and armv7l compatibility.
 
 4.6.12 (2025-12-14)
 ===================
