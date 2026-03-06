@@ -3,7 +3,6 @@ import hashlib
 from django.core import serializers
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.common.serialization import yaml_load
 from mayan.apps.templating.classes import Template
 
 
@@ -51,20 +50,6 @@ class WorkflowTransitionBusinessLogicMixin:
         'return value.'
     )
     has_condition.short_description = _(message='Has a condition?')
-
-
-class WorkflowTransitionFieldBusinessLogicMixin:
-    def get_hash(self):
-        return hashlib.sha256(
-            string=serializers.serialize(
-                format='json', queryset=(self,)
-            ).encode()
-        ).hexdigest()
-
-    def get_widget_kwargs(self):
-        return yaml_load(
-            stream=self.widget_kwargs or '{}'
-        )
 
 
 class WorkflowTransitionTriggerEventBusinessLogicMixin:

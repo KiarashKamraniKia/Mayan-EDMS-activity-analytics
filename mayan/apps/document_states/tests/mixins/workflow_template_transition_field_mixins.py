@@ -1,4 +1,4 @@
-from ...models.workflow_transition_models import WorkflowTransitionField
+from ...models.workflow_transition_field_models import WorkflowTransitionField
 
 from ..literals import (
     TEST_WORKFLOW_TEMPLATE_TRANSITION_FIELD_HELP_TEXT,

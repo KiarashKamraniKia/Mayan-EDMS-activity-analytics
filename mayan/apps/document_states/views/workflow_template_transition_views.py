@@ -32,7 +32,9 @@ from ..links import (
     link_workflow_template_transition_create,
     link_workflow_template_transition_field_create
 )
-from ..models import Workflow, WorkflowTransition, WorkflowTransitionField
+from ..models.workflow_models import Workflow
+from ..models.workflow_transition_field_models import WorkflowTransitionField
+from ..models.workflow_transition_models import WorkflowTransition
 from ..permissions import (
     permission_workflow_template_edit, permission_workflow_template_view
 )

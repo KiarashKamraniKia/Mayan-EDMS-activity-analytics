@@ -10,12 +10,14 @@ from mayan.apps.rest_api.relations import (
     FilteredPrimaryKeyRelatedField, MultiKwargHyperlinkedIdentityField
 )
 
+from ..models.workflow_transition_field_models import WorkflowTransitionField
 from ..models.workflow_transition_models import (
-    WorkflowTransition, WorkflowTransitionField,
-    WorkflowTransitionTriggerEvent
+    WorkflowTransition, WorkflowTransitionTriggerEvent
 )
 
-from .workflow_template_state_serializers import WorkflowTemplateStateSerializer
+from .workflow_template_state_serializers import (
+    WorkflowTemplateStateSerializer
+)
 
 
 class WorkflowTransitionFieldSerializer(
