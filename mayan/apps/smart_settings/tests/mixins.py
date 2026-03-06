@@ -114,9 +114,7 @@ class SettingNamespaceViewTestMixin(SettingNamespaceTestMixin):
         }
 
         return self.get(
-            viewname='settings:setting_namespace_detail', kwargs={
-                'namespace_name': self._test_setting_namespace.name
-            }
+            viewname='settings:setting_namespace_detail', kwargs=kwargs
         )
 
     def _request_namespace_list_view(self):
