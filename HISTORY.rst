@@ -110,6 +110,8 @@
   - wheel from 0.45.1 to 0.46.3
   - whitenoise from 6.11.0 to 6.12.0
 
+- Change gunicorn default worker class from sync to gevent.
+
 4.6.12 (2025-12-14)
 ===================
 - Backports from series 4.10, 4.9, 4.8, 4.7.
