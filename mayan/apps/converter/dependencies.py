@@ -13,13 +13,14 @@ BinaryDependency(
 )
 BinaryDependency(
     label='PDF Info', help_text=_(
-        'Utility from the poppler-utils package used to inspect PDF files.'
+        message='Utility from the poppler-utils package used to inspect PDF '
+        'files.'
     ), module=__name__, name='pdfinfo', path=pdfinfo_path
 )
 BinaryDependency(
     label='PDF to PPM', help_text=_(
-        'Utility from the popper-utils package used to extract pages '
-        'from PDF files into PPM format images.'
+        message='Utility from the popper-utils package used to extract '
+        'pages from PDF files into PPM format images.'
     ), module=__name__, name='pdftoppm', path=pdftoppm_path
 )
 PythonDependency(

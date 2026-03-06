@@ -8,6 +8,6 @@ clamscan = ClamScanDriver(auto_initialize=False)
 clamscan.read_settings()
 
 BinaryDependency(
-    help_text=_('Command line anti-virus scanner.'), module=__name__,
+    help_text=_(message='Command line anti-virus scanner.'), module=__name__,
     name='clamscan', path=clamscan.path_clamscan
 )

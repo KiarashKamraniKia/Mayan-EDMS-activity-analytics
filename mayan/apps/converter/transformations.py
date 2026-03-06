@@ -586,12 +586,12 @@ class TransformationResize(BaseTransformation):
     class Form(Form):
         width = forms.IntegerField(
             help_text=_(
-                'New width in pixels.'
+                message='New width in pixels.'
             ), label=_(message='Width'), required=True
         )
         height = forms.IntegerField(
             help_text=_(
-                'New height in pixels.'
+                message='New height in pixels.'
             ), label=_(message='Height'), required=False
         )
 
@@ -630,13 +630,14 @@ class TransformationRotate(BaseTransformation):
     class Form(Form):
         degrees = forms.IntegerField(
             help_text=_(
-                'Number of degrees to rotate the image counter clockwise '
-                'around its center.'
+                message='Number of degrees to rotate the image counter '
+                'clockwise around its center.'
             ), label=_(message='Degrees'), required=True
         )
         fillcolor = forms.CharField(
             help_text=_(
-                'Color to be used for area outside of the rotated image.'
+                message='Color to be used for area outside of the rotated '
+                'image.'
             ), label=_(message='Fill color'), required=False,
             widget=ColorWidget()
         )
@@ -714,7 +715,7 @@ class TransformationUnsharpMask(BaseTransformation):
         )
         threshold = forms.IntegerField(
             initial=3, help_text=_(
-                'Minimum brightness change that will be sharpened.'
+                message='Minimum brightness change that will be sharpened.'
             ), label=_(message='Tthreshold'), required=True
         )
 

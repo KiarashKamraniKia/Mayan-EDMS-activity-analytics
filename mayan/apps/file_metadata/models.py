@@ -44,7 +44,8 @@ class DocumentTypeSettings(models.Model):
     )
     auto_process = models.BooleanField(
         default=True, help_text=_(
-            'Automatically queue newly created documents for processing.'
+            message='Automatically queue newly created documents for '
+            'processing.'
         ), verbose_name=_(message='Auto process')
     )
 

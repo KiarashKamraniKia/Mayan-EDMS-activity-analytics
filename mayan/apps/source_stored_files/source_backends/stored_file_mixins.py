@@ -34,8 +34,8 @@ class SourceBackendMixinStoredFileUploadBase:
                 'delete_after_upload': {
                     'class': 'django.forms.BooleanField',
                     'help_text': _(
-                        'Delete the file after is has been successfully '
-                        'uploaded.'
+                        message='Delete the file after is has been '
+                        'successfully uploaded.'
                     ),
                     'label': _(message='Delete after upload'),
                     'required': False
@@ -69,7 +69,7 @@ class SourceBackendMixinStoredFileUploadBase:
         except Exception as exception:
             messages.error(
                 message=_(
-                    'Unable get list of files; %s'
+                    message='Unable get list of files; %s'
                 ) % exception, request=request
             )
             source_stored_file_list = ()
@@ -87,8 +87,8 @@ class SourceBackendMixinStoredFileUploadBase:
             'hide_link': True,
             'no_results_icon': self.icon,
             'no_results_text': _(
-                'This could mean that the source file list is empty. It '
-                'could also mean that the operating system user account '
+                message='This could mean that the source file list is empty. '
+                'It could also mean that the operating system user account '
                 'being used for Mayan EDMS doesn\'t have the necessary '
                 'file system permissions to access the source files.'
             ),
@@ -187,7 +187,8 @@ class SourceBackendMixinStoredFileImage:
                 'preview_width': {
                     'class': 'django.forms.IntegerField',
                     'help_text': _(
-                        'Width value to be passed to the converter backend.'
+                        message='Width value to be passed to the converter '
+                        'backend.'
                     ),
                     'kwargs': {
                         'min_value': 0
@@ -198,7 +199,8 @@ class SourceBackendMixinStoredFileImage:
                 'preview_height': {
                     'class': 'django.forms.IntegerField',
                     'help_text': _(
-                        'Height value to be passed to the converter backend.'
+                        message='Height value to be passed to the converter '
+                        'backend.'
                     ),
                     'kwargs': {
                         'min_value': 0
@@ -210,8 +212,8 @@ class SourceBackendMixinStoredFileImage:
                     'class': 'django.forms.IntegerField',
                     'default': SourceStoredFile.DEFAULT_PREVIEW_MAX_SIZE,
                     'help_text': _(
-                        'Maximum size in bytes for which previews will be '
-                        'generated. Example: 20000 = 20KB.'
+                        message='Maximum size in bytes for which previews '
+                        'will be generated. Example: 20000 = 20KB.'
                     ),
                     'label': _(message='Max size preview'),
                     'required': True

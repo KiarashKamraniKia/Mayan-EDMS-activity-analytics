@@ -38,7 +38,8 @@ class DocumentCheckout(ExtraDataModelMixin, models.Model):
     )
     expiration_datetime = models.DateTimeField(
         help_text=_(
-            'Amount of time to hold the document checked out in minutes.'
+            message='Amount of time to hold the document checked out in '
+            'minutes.'
         ), verbose_name=_(message='Check out expiration date and time')
     )
     user = models.ForeignKey(
@@ -47,7 +48,7 @@ class DocumentCheckout(ExtraDataModelMixin, models.Model):
     )
     block_new_file = models.BooleanField(
         default=True, help_text=_(
-            'Do not allow new file of this document to be uploaded.'
+            message='Do not allow new file of this document to be uploaded.'
         ), verbose_name=_(message='Block new file upload')
     )
 
@@ -66,7 +67,7 @@ class DocumentCheckout(ExtraDataModelMixin, models.Model):
         if self.expiration_datetime < now():
             raise ValidationError(
                 message=_(
-                    'Check out expiration date and time must be in '
+                    message='Check out expiration date and time must be in '
                     'the future.'
                 )
             )

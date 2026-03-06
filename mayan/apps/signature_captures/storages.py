@@ -11,7 +11,7 @@ from .settings import (
 storage_signature_captures_cache = DefinedStorage(
     dotted_path=setting_signature_capture_cache_storage_backend.value,
     error_message=_(
-        'Unable to initialize the converter signature capture cache'
+        message='Unable to initialize the converter signature capture cache'
         'storage. Check the settings {} and {} for formatting '
         'errors.'.format(
             setting_signature_capture_cache_storage_backend.global_name,

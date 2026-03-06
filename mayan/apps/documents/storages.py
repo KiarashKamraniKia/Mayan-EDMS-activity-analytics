@@ -18,7 +18,7 @@ from .settings import (
 storage_document_files = DefinedStorage(
     dotted_path=setting_document_file_storage_backend.value,
     error_message=_(
-        'Unable to initialize the document file storage. Check '
+        message='Unable to initialize the document file storage. Check '
         'the settings {} and {} for formatting errors.'.format(
             setting_document_file_storage_backend.global_name,
             setting_document_file_storage_backend_arguments.global_name
@@ -32,7 +32,7 @@ storage_document_files = DefinedStorage(
 storage_document_file_image_cache = DefinedStorage(
     dotted_path=setting_document_file_page_image_cache_storage_backend.value,
     error_message=_(
-        'Unable to initialize the document file image storage. Check '
+        message='Unable to initialize the document file image storage. Check '
         'the settings {} and {} for formatting errors.'.format(
             setting_document_file_page_image_cache_storage_backend.global_name,
             setting_document_file_page_image_cache_storage_backend_arguments.global_name
@@ -46,8 +46,8 @@ storage_document_file_image_cache = DefinedStorage(
 storage_document_version_image_cache = DefinedStorage(
     dotted_path=setting_document_version_page_image_cache_storage_backend.value,
     error_message=_(
-        'Unable to initialize the document version image storage. Check '
-        'the settings {} and {} for formatting errors.'.format(
+        message='Unable to initialize the document version image storage. '
+        'Check the settings {} and {} for formatting errors.'.format(
             setting_document_version_page_image_cache_storage_backend.global_name,
             setting_document_version_page_image_cache_storage_backend_arguments.global_name
         )

@@ -21,7 +21,7 @@ from .workflow_template_transition_serializers import WorkflowTemplateTransition
 class WorkflowInstanceLaunchSerializer(serializers.Serializer):
     workflow_template_id = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the workflow template to launch.'
+            message='Primary key of the workflow template to launch.'
         ), label=_(message='Workflow template ID'),
         source_permission=permission_workflow_tools
     )
@@ -46,7 +46,7 @@ class WorkflowInstanceLogEntrySerializer(serializers.ModelSerializer):
     )
     transition_id = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the transition to be added.'
+            message='Primary key of the transition to be added.'
         ), label=_(message='Transition ID'),
         source_queryset_method='get_workflow_instance_transition_queryset',
         write_only=True
@@ -137,7 +137,7 @@ class WorkflowInstanceSerializer(serializers.ModelSerializer):
     )
     log_entries_url = serializers.SerializerMethodField(
         label=_(message='Log entries URL'), help_text=_(
-            'A link to the entire history of this workflow.'
+            message='A link to the entire history of this workflow.'
         )
     )
     log_entry_transitions_url = serializers.SerializerMethodField(
@@ -149,7 +149,7 @@ class WorkflowInstanceSerializer(serializers.ModelSerializer):
     )
     url = serializers.SerializerMethodField(
         label=_(message='URL'), help_text=_(
-            'API URL pointing to a workflow in relation to the '
+            message='API URL pointing to a workflow in relation to the '
             'document to which it is attached. This URL is different than '
             'the canonical workflow URL.'
         )

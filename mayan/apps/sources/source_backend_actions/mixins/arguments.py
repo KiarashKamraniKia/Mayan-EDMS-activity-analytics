@@ -26,7 +26,7 @@ argument_document_language = SourceBackendActionInterfaceArgument(
 )
 argument_document_id = SourceBackendActionInterfaceArgument(
     help_text=_(
-        'ID of the document to which a new file will be uploaded to.'
+        message='ID of the document to which a new file will be uploaded to.'
     )
 )
 argument_document_id_optional = SourceBackendActionInterfaceArgument(
@@ -71,12 +71,12 @@ argument_immediate_mode_required = SourceBackendActionInterfaceArgument(
 
 argument_user = SourceBackendActionInterfaceArgument(
     default=None, help_text=_(
-        'User that will feature as the actor in the events.'
+        message='User that will feature as the actor in the events.'
     ), required=False
 )
 argument_user_id = SourceBackendActionInterfaceArgument(
     default=None, help_text=_(
-        'ID of the user that will feature as the actor in '
+        message='ID of the user that will feature as the actor in '
         'the events.'
     ), required=False
 )

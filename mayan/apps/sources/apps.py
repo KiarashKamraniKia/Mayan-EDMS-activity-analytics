@@ -103,9 +103,9 @@ class SourcesApp(MayanAppConfig):
         MissingItem(
             label=_(message='Create a document source'),
             description=_(
-                'Document sources are the way in which new documents are '
-                'feed to Mayan EDMS, create at least a web form source to '
-                'be able to upload documents from a browser.'
+                message='Document sources are the way in which new documents '
+                'are feed to Mayan EDMS, create at least a web form source '
+                'to be able to upload documents from a browser.'
             ),
             condition=lambda: not Source.objects.exists(),
             view='sources:source_list'
@@ -127,7 +127,7 @@ class SourcesApp(MayanAppConfig):
 
         ModelProperty(
             description=_(
-                'Return the value of a specific source metadata for '
+                message='Return the value of a specific source metadata for '
                 'the document\'s latest file.'
             ), label=_(message='Source metadata value of'), model=Document,
             name='source_metadata_value_of.< key >'
@@ -135,7 +135,7 @@ class SourcesApp(MayanAppConfig):
 
         ModelProperty(
             description=_(
-                'Return the value of a specific source metadata.'
+                message='Return the value of a specific source metadata.'
             ), label=_(message='Source metadata value of'), model=DocumentFile,
             name='source_metadata_value_of.< key >'
         )

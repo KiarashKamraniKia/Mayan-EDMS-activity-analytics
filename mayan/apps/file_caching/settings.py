@@ -14,7 +14,7 @@ setting_namespace = setting_cluster.do_namespace_add(
 setting_maximum_failed_prune_attempts = setting_namespace.do_setting_add(
     default=DEFAULT_MAXIMUM_FAILED_PRUNE_ATTEMPTS,
     global_name='FILE_CACHING_MAXIMUM_FAILED_PRUNE_ATTEMPTS', help_text=_(
-        'Number of times a cache will retry failed attempts to prune '
+        message='Number of times a cache will retry failed attempts to prune '
         'files to free up space for new a file being requested, before '
         'giving up.'
     )
@@ -22,7 +22,7 @@ setting_maximum_failed_prune_attempts = setting_namespace.do_setting_add(
 setting_maximum_normal_prune_attempts = setting_namespace.do_setting_add(
     default=DEFAULT_MAXIMUM_NORMAL_PRUNE_ATTEMPTS,
     global_name='FILE_CACHING_MAXIMUM_NORMAL_PRUNE_ATTEMPTS', help_text=_(
-        'Number of times a cache will attempt to prune files to free up '
-        'space for new a file being requested, before giving up.'
+        message='Number of times a cache will attempt to prune files to free '
+        'up space for new a file being requested, before giving up.'
     )
 )

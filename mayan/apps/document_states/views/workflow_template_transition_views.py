@@ -51,7 +51,7 @@ class WorkflowTemplateTransitionCreateView(
         return {
             'object': self.external_object,
             'title': _(
-                'Create transitions for workflow: %s'
+                message='Create transitions for workflow: %s'
             ) % self.external_object,
             'workflow': self.external_object
         }
@@ -92,7 +92,7 @@ class WorkflowTemplateTransitionDeleteView(SingleObjectDeleteView):
             'object': self.object,
             'navigation_object_list': ('object', 'workflow'),
             'title': _(
-                'Delete workflow transition: %s?'
+                message='Delete workflow transition: %s?'
             ) % self.object,
             'workflow': self.object.workflow
         }
@@ -121,7 +121,7 @@ class WorkflowTemplateTransitionEditView(SingleObjectEditView):
             'navigation_object_list': ('object', 'workflow'),
             'object': self.object,
             'title': _(
-                'Edit workflow transition: %s'
+                message='Edit workflow transition: %s'
             ) % self.object,
             'workflow': self.object.workflow
         }
@@ -163,15 +163,15 @@ class WorkflowTemplateTransitionListView(
                 )
             ),
             'no_results_text': _(
-                'Create a transition and use it to move a workflow from '
-                ' one state to another.'
+                message='Create a transition and use it to move a workflow '
+                'from one state to another.'
             ),
             'no_results_title': _(
-                'This workflow doesn\'t have any transitions'
+                message='This workflow doesn\'t have any transitions'
             ),
             'object': self.external_object,
             'title': _(
-                'Transitions of workflow: %s'
+                message='Transitions of workflow: %s'
             ) % self.external_object,
             'workflow': self.external_object
         }
@@ -197,7 +197,7 @@ class WorkflowTemplateTransitionFieldCreateView(
             'navigation_object_list': ('transition', 'workflow'),
             'transition': self.external_object,
             'title': _(
-                'Create a field for workflow transition: %s'
+                message='Create a field for workflow transition: %s'
             ) % self.external_object,
             'workflow': self.external_object.workflow
         }
@@ -307,17 +307,17 @@ class WorkflowTemplateTransitionFieldListView(
                 )
             ),
             'no_results_text': _(
-                'Workflow transition fields allow adding data to the '
+                message='Workflow transition fields allow adding data to the '
                 'workflow\'s context. This additional context data can then '
                 'be used by other elements of the workflow system like the '
                 'workflow state actions.'
             ),
             'no_results_title': _(
-                'There are no fields for this workflow transition'
+                message='There are no fields for this workflow transition'
             ),
             'object': self.external_object,
             'title': _(
-                'Fields for workflow transition: %s'
+                message='Fields for workflow transition: %s'
             ) % self.external_object,
             'workflow': self.external_object.workflow
         }
@@ -346,14 +346,16 @@ class WorkflowTemplateTransitionTriggerEventListView(
         except Exception as exception:
             messages.error(
                 message=_(
-                    'Error updating workflow transition trigger events; %s'
+                    message='Error updating workflow transition trigger '
+                    'events; %s'
                 ) % exception, request=self.request
 
             )
         else:
             messages.success(
                 message=_(
-                    'Workflow transition trigger events updated successfully'
+                    message='Workflow transition trigger events updated '
+                    'successfully'
                 ), request=self.request
             )
 
@@ -365,11 +367,11 @@ class WorkflowTemplateTransitionTriggerEventListView(
             'navigation_object_list': ('object', 'workflow'),
             'object': self.external_object,
             'subtitle': _(
-                'Triggers are events that cause this transition to execute '
-                'automatically.'
+                message='Triggers are events that cause this transition to '
+                'execute automatically.'
             ),
             'title': _(
-                'Workflow transition trigger events for: %s'
+                message='Workflow transition trigger events for: %s'
             ) % self.external_object,
             'workflow': self.external_object.workflow
         }

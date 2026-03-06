@@ -187,7 +187,7 @@ class MayanLoginView(StrongholdPublicMixin, LoginView):
     extra_context = {
         'appearance_type': 'plain',
         'submit_icon': icon_login,
-        'submit_label': _('Sign in')
+        'submit_label': _(message='Sign in')
     }
     redirect_authenticated_user = True
     template_name = 'authentication/login.html'

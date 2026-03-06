@@ -97,7 +97,7 @@ class CachePartitionPurgeView(
         return {
             'object': self.external_object,
             'title': _(
-                'Purge cache partitions of "%s"?'
+                message='Purge cache partitions of "%s"?'
             ) % self.external_object
         }
 
@@ -114,7 +114,7 @@ class CachePartitionPurgeView(
 
         messages.success(
             message=_(
-                'Object cache partitions submitted for purging.'
+                message='Object cache partitions submitted for purging.'
             ), request=self.request
         )
 

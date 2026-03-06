@@ -223,15 +223,15 @@ class DocumentStatesApp(MayanAppConfig):
             model=Document,
             name='workflow.< workflow internal name >.get_current_state',
             label=_(message='Current state of a workflow'), description=_(
-                'Return the current state of the selected workflow.'
+                message='Return the current state of the selected workflow.'
             )
         )
         ModelProperty(
             model=Document,
             name='workflow.< workflow internal name >.get_current_state.completion',
             label=_(message='Current state of a workflow'), description=_(
-                'Return the completion value of the current state of the '
-                'selected workflow.'
+                message='Return the completion value of the current state '
+                'of the selected workflow.'
             )
         )
 
@@ -288,7 +288,7 @@ class DocumentStatesApp(MayanAppConfig):
 
         ModelProperty(
             description=_(
-                'Return the last workflow instance log entry. The '
+                message='Return the last workflow instance log entry. The '
                 'log entry itself has the following fields: datetime, '
                 'transition, user, and comment.'
             ), label=_(message='Get last log entry'), model=WorkflowInstance,
@@ -296,14 +296,14 @@ class DocumentStatesApp(MayanAppConfig):
         )
         ModelProperty(
             description=_(
-                'Return the current context dictionary which includes '
-                'runtime data from the workflow transition fields.'
+                message='Return the current context dictionary which '
+                'includes runtime data from the workflow transition fields.'
             ), label=_(message='Get the context'), model=WorkflowInstance,
             name='get_runtime_context'
         )
         ModelProperty(
             description=_(
-                'Return the transition of the workflow instance.'
+                message='Return the transition of the workflow instance.'
             ), label=_(message='Get last transition'), model=WorkflowInstance,
             name='get_last_transition'
         )
@@ -484,8 +484,8 @@ class DocumentStatesApp(MayanAppConfig):
             func=lambda context: widget_transition_events(
                 transition=context['object']
             ), help_text=_(
-                'Triggers are system events that will cause the transition '
-                'to be applied.'
+                message='Triggers are system events that will cause the '
+                'transition to be applied.'
             ), include_label=True, label=_(message='Triggers'),
             source=WorkflowTransition
         )

@@ -78,7 +78,7 @@ class ObjectCopyView(
         }
 
         context['title'] = _(
-            'Make a copy of %(object_name)s "%(object)s"?'
+            message='Make a copy of %(object_name)s "%(object)s"?'
         ) % {
             'object_name': self.get_object_name(context=context),
             'object': self.external_object
@@ -107,7 +107,7 @@ class SetupListView(SimpleView):
         return {
             'no_results_icon': icon_setup,
             'no_results_text': _(
-                'No results here means that don\'t have the required '
+                message='No results here means that don\'t have the required '
                 'permissions to perform administrative task.'
             ),
             'no_results_title': _(message='No setup options available.'),
@@ -115,7 +115,7 @@ class SetupListView(SimpleView):
                 request=self.request, sort_results=True
             ),
             'subtitle': _(
-                'Here you can configure all aspects of the system.'
+                message='Here you can configure all aspects of the system.'
             ),
             'title': _(message='Setup items')
         }
@@ -131,7 +131,7 @@ class ToolsListView(SimpleView):
                 request=self.request, sort_results=True
             ),
             'subtitle': _(
-                'These modules are used to do system maintenance.'
+                message='These modules are used to do system maintenance.'
             ),
             'title': _(message='Tools')
         }

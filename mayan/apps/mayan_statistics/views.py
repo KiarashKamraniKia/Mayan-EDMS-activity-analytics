@@ -20,7 +20,8 @@ class StatisticNamespaceListView(SingleObjectListView):
         'hide_link': True,
         'no_results_icon': icon_statistic_namespace_list,
         'no_results_text': _(
-            'Statistics namespaces group statistics into logical units. '
+            message='Statistics namespaces group statistics into logical '
+            'units. '
         ),
         'no_results_title': _(message='No statistic namespaces available'),
         'title': _(message='Statistics namespaces')
@@ -46,7 +47,7 @@ class StatisticNamespaceDetailView(SingleObjectListView):
             'hide_link': True,
             'no_results_icon': icon_statistic_namespace_detail,
             'no_results_text': _(
-                'Statistics are metrics and chart representations of '
+                message='Statistics are metrics and chart representations of '
                 'existing data.'
             ),
             'no_results_title': _(message='No statistic available'),
@@ -94,7 +95,7 @@ class StatisticTypeQueueView(StatisticTypeViewMixin, ConfirmView):
             # (to send to the queue) a statistic for it to be update ahead
             # of schedule
             'title': _(
-                'Queue statistic "%s" to be updated?'
+                message='Queue statistic "%s" to be updated?'
             ) % self.object
         }
 
@@ -102,6 +103,6 @@ class StatisticTypeQueueView(StatisticTypeViewMixin, ConfirmView):
         task_execute_statistic.delay(slug=self.object.slug)
         messages.success(
             message=_(
-                'Statistic "%s" queued successfully for update.'
+                message='Statistic "%s" queued successfully for update.'
             ) % self.object.label, request=self.request
         )

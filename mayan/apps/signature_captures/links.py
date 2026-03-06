@@ -31,6 +31,6 @@ link_signature_capture_edit = Link(
 link_signature_capture_list = Link(
     args='resolved_object.pk', icon=icon_signature_capture_list,
     permission=permission_signature_capture_view, text=_(
-        'Signature captures'
+        message='Signature captures'
     ), view='signature_captures:signature_capture_list'
 )

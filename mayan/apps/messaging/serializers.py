@@ -22,7 +22,7 @@ class MessageSerializer(serializers.HyperlinkedModelSerializer):
     )
     user = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the recipient user of this message.'
+            message='Primary key of the recipient user of this message.'
         ), label=_(message='User ID'), source_queryset=get_user_queryset()
     )
 

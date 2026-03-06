@@ -10,7 +10,7 @@ from .settings import (
 storage_document_signatures_detached = DefinedStorage(
     dotted_path=setting_storage_backend.value,
     error_message=_(
-        'Unable to initialize the detached signatures '
+        message='Unable to initialize the detached signatures '
         'storage. Check the settings {} and {} for formatting '
         'errors.'.format(
             setting_storage_backend.global_name,

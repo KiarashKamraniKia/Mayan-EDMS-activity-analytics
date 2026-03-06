@@ -35,8 +35,8 @@ class DocumentVersionPage(
     )
     page_number = models.PositiveIntegerField(
         db_index=True, default=1, help_text=_(
-            'Unique integer number for the page. Pages are ordered by '
-            'this number.'
+            message='Unique integer number for the page. Pages are ordered '
+            'by this number.'
         ), verbose_name=_(message='Page number')
     )
     content_type = models.ForeignKey(

@@ -49,7 +49,7 @@ class DocumentTypeMetadataTypeSerializer(
     )
     metadata_type_id = FilteredSimplePrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the metadata type to be added.'
+            message='Primary key of the metadata type to be added.'
         ), label=_(message='Metadata type ID'), source_model=MetadataType,
         source_permission=permission_metadata_type_edit, write_only=True
     )
@@ -97,7 +97,8 @@ class DocumentMetadataSerializer(
 ):
     metadata_type_id = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the metadata type to be added to the document.'
+            message='Primary key of the metadata type to be added to the '
+            'document.'
         ), label=_(message='Metadata type ID'), source_model=MetadataType,
         source_permission=permission_document_metadata_add, write_only=True
     )

@@ -31,6 +31,13 @@
   - DOCUMENTS_PRINT_HEIGHT
   - DOCUMENTS_PRINT_WIDTH
 
+- Translation code update
+
+- Add help text for `SIGNATURES_BACKEND_ARGUMENTS` and
+  `STORAGE_DOWNLOAD_FILE_STORAGE_ARGUMENTS`.
+- Missing `message=` keyword argument.
+- Improve and simplify help text wording.
+
 4.6.12 (2025-12-14)
 ===================
 - Backports from series 4.10, 4.9, 4.8, 4.7.

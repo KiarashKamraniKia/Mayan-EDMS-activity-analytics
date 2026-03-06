@@ -28,12 +28,12 @@ class SignatureCapture(
     )
     data = models.TextField(
         blank=True, help_text=_(
-            'Data representing the handwritten signature.'
+            message='Data representing the handwritten signature.'
         ), verbose_name=_(message='Signature capture data')
     )
     svg = models.TextField(
         blank=True, help_text=_(
-            'Vector representation of the handwritten signature.'
+            message='Vector representation of the handwritten signature.'
         ), verbose_name=_(message='SVG signature capture data')
     )
     text = models.CharField(
@@ -54,7 +54,7 @@ class SignatureCapture(
     )
     internal_name = models.CharField(
         db_index=True, help_text=_(
-            'This value will be used when referencing this signature '
+            message='This value will be used when referencing this signature '
             'capture in relationship to the document. Can only contain '
             'letters, numbers, and underscores.'
         ), max_length=255, validators=[validate_internal_name],

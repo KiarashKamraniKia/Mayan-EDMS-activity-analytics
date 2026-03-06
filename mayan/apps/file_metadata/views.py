@@ -50,18 +50,18 @@ class DocumentFileMetadataDriverListView(
                 )
             ),
             'no_results_text': _(
-                'File metadata are the attributes of the document\'s file. '
-                'They can range from camera information used to take a photo '
-                'to the author that created a file. File metadata are set '
-                'when the document\'s file was first created. File metadata '
-                'attributes reside in the file itself. They are not the '
-                'same as the document metadata, which are user defined and '
-                'reside in the database.'
+                message='File metadata are the attributes of the document\'s '
+                'file. They can range from camera information used to take a '
+                'photo to the author that created a file. File metadata are '
+                'set when the document\'s file was first created. File '
+                'metadata attributes reside in the file itself. They are not '
+                'the same as the document metadata, which are user defined '
+                'and reside in the database.'
             ),
             'no_results_title': _(message='No file metadata available.'),
             'object': self.external_object,
             'title': _(
-                'File metadata drivers for: %s'
+                message='File metadata drivers for: %s'
             ) % self.external_object
         }
 
@@ -88,16 +88,17 @@ class DocumentFileMetadataDriverAttributeListView(
                 )
             ),
             'no_results_text': _(
-                'This could mean that the file metadata detection has not '
-                'completed or that the driver does not support '
+                message='This could mean that the file metadata detection '
+                'has not completed or that the driver does not support '
                 'any metadata field for the file type of this document.'
             ),
             'no_results_title': _(
-                'No file metadata available for this driver.'
+                message='No file metadata available for this driver.'
             ),
             'object': self.external_object.document_file,
             'title': _(
-                'File metadata attributes for: %(document_file)s with driver: %(driver)s'
+                message='File metadata attributes for: %(document_file)s '
+                'with driver: %(driver)s'
             ) % {
                 'document_file': self.external_object.document_file,
                 'driver': self.external_object.driver
@@ -119,10 +120,12 @@ class DocumentFileMetadataSubmitView(MultipleObjectConfirmActionView):
     pk_url_kwarg = 'document_file_id'
     source_queryset = DocumentFile.valid.all()
     success_message_plural = _(
-        '%(count)d documents files submitted to the file metadata queue.'
+        message='%(count)d documents files submitted to the file metadata '
+        'queue.'
     )
     success_message_singular = _(
-        '%(count)d document file submitted to the file metadata queue.'
+        message='%(count)d document file submitted to the file metadata '
+        'queue.'
     )
     view_icon = icon_document_file_metadata_single_submit
 
@@ -162,7 +165,7 @@ class DocumentTypeFileMetadataSettingsEditView(
         return {
             'object': self.external_object,
             'title': _(
-                'Edit file metadata settings for document type: %s'
+                message='Edit file metadata settings for document type: %s'
             ) % self.external_object
         }
 
@@ -173,7 +176,8 @@ class DocumentTypeFileMetadataSettingsEditView(
 class DocumentTypeFileMetadataSubmitView(FormView):
     extra_context = {
         'title': _(
-            'Submit all documents of a type for file metadata processing.'
+            message='Submit all documents of a type for file metadata '
+            'processing.'
         )
     }
     form_class = DocumentTypeFilteredSelectForm
@@ -200,8 +204,8 @@ class DocumentTypeFileMetadataSubmitView(FormView):
 
         messages.success(
             message=_(
-                '%(count)d documents added to the file metadata processing '
-                'queue.'
+                message='%(count)d documents added to the file metadata '
+                'processing queue.'
             ) % {
                 'count': count
             }, request=self.request
@@ -221,15 +225,15 @@ class FileMetadataDriverListView(SingleObjectListView):
             'hide_object': True,
             'no_results_icon': icon_file_metadata,
             'no_results_text': _(
-                'File metadata drivers extract embedded information '
+                message='File metadata drivers extract embedded information '
                 'from document files. File metadata drivers are configure '
                 'in code only.'
             ),
             'no_results_title': _(
-                'No file metadata drivers available.'
+                message='No file metadata drivers available.'
             ),
             'title': _(
-                'File metadata drivers'
+                message='File metadata drivers'
             )
         }
 

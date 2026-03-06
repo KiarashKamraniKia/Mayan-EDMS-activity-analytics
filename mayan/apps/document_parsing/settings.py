@@ -15,13 +15,14 @@ setting_auto_parsing = setting_namespace.do_setting_add(
     choices=('false', 'true'),
     default=DEFAULT_DOCUMENT_PARSING_AUTO_PARSING,
     global_name='DOCUMENT_PARSING_AUTO_PARSING', help_text=_(
-        'Set new document types to perform parsing automatically by default.'
+        message='Set new document types to perform parsing automatically by '
+        'default.'
     )
 )
 setting_pdftotext_path = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENT_PARSING_PDFTOTEXT_PATH,
     global_name='DOCUMENT_PARSING_PDFTOTEXT_PATH', help_text=_(
-        'File path to poppler\'s pdftotext program used to extract text '
-        'from PDF files.'
+        message='File path to poppler\'s pdftotext program used to extract '
+        'text from PDF files.'
     ), is_path=True
 )

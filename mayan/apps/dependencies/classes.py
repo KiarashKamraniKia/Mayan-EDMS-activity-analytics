@@ -23,8 +23,7 @@ from mayan.apps.common.exceptions import ResolverPipelineError
 from mayan.apps.common.utils import ResolverPipelineObjectAttribute
 from mayan.apps.storage.compressed_files import TarArchive
 from mayan.apps.storage.utils import (
-    TemporaryDirectory, fs_cleanup, mkdtemp,
-    patch_files as storage_patch_files
+    TemporaryDirectory, mkdtemp, patch_files as storage_patch_files
 )
 
 from .algorithms import HashAlgorithm
@@ -310,15 +309,6 @@ class Dependency(AppsModuleLoaderMixin):
             else:
                 dependency.install(force=force)
 
-    @classmethod
-    def uninstall_multiple(cls, app_label=None, subclass_only=False):
-        for dependency in cls.get_all(subclass_only=subclass_only):
-            if app_label:
-                if app_label == dependency.app_label:
-                    dependency.uninstall()
-            else:
-                dependency.uninstall()
-
     def __init__(
         self, name, environment=environment_production, app_label=None,
         environments=None, help_text=None, label=None, legal_text=None,
@@ -394,9 +384,8 @@ class Dependency(AppsModuleLoaderMixin):
         return ''
 
     def install(self, force=False):
-        label_full = self.get_label_full()
         print(
-            _(message='Installing package: %s... ') % label_full, end=''
+            _(message='Installing package: %s... ') % self.get_label_full(), end=''
         )
         sys.stdout.flush()
 
@@ -424,18 +413,6 @@ class Dependency(AppsModuleLoaderMixin):
                 _(message='Complete.')
             )
             sys.stdout.flush()
-
-    def uninstall(self):
-        label_full = self.get_label_full()
-        print(
-            _(message='Uninstalling package: %s... ') % label_full, end=''
-        )
-        sys.stdout.flush()
-        self._uninstall()
-        print(
-            _(message='Complete.')
-        )
-        sys.stdout.flush()
 
     def _install(self):
         raise NotImplementedError
@@ -539,7 +516,7 @@ class Dependency(AppsModuleLoaderMixin):
 class BinaryDependency(Dependency):
     class_name = 'binary'
     class_name_help_text = _(
-        'Executables that are called directly by the code.'
+        message='Executables that are called directly by the code.'
     )
     class_name_verbose_name = _(message='Binary')
     provider_class = OperatingSystemProvider
@@ -559,8 +536,8 @@ class BinaryDependency(Dependency):
 class JavaScriptDependency(Dependency):
     class_name = 'javascript'
     class_name_help_text = _(
-        'JavaScript libraries downloaded the from NPM registry and used for '
-        'front-end functionality.'
+        message='JavaScript libraries downloaded the from NPM registry and '
+        'used for front-end functionality.'
     )
     class_name_verbose_name = _(message='JavaScript')
     provider_class = NPMRegistryRespository
@@ -610,31 +587,11 @@ class JavaScriptDependency(Dependency):
         self.extract()
 
         if include_dependencies:
-            dependency_dict = self.version_metadata.get('dependencies', {})
-            for name, version_string in dependency_dict.items():
+            for name, version_string in self.version_metadata.get('dependencies', {}).items():
                 dependency = JavaScriptDependency(
                     name=name, version_string=version_string
                 )
                 dependency.install(include_dependencies=False)
-
-    def _uninstall(self, include_dependencies=False):
-        print(
-            _(message='Uninstalling... '), end=''
-        )
-        sys.stdout.flush()
-        self.delete()
-
-        if include_dependencies:
-            dependency_dict = self.version_metadata.get('dependencies', {})
-            for name, version_string in dependency_dict.items():
-                dependency = JavaScriptDependency(
-                    name=name, version_string=version_string
-                )
-                dependency.uninstall(include_dependencies=False)
-
-    def delete(self):
-        path_install = self.get_install_path()
-        fs_cleanup(filename=path_install)
 
     def extract(self, replace_list=None):
         with TemporaryDirectory() as temporary_directory:
@@ -834,7 +791,7 @@ class PythonVersion:
 class PythonDependency(Dependency):
     class_name = 'python'
     class_name_help_text = _(
-        'Python packages downloaded from PyPI.'
+        message='Python packages downloaded from PyPI.'
     )
     class_name_verbose_name = _(message='Python')
     provider_class = PyPIRespository
@@ -904,7 +861,7 @@ class PythonDependency(Dependency):
 class GoogleFontDependency(Dependency):
     class_name = 'google_font'
     class_name_help_text = _(
-        'Fonts downloaded from fonts.googleapis.com.'
+        message='Fonts downloaded from fonts.googleapis.com.'
     )
     class_name_verbose_name = _(message='Google font')
     provider_class = GoogleFontsProvider
@@ -920,8 +877,7 @@ class GoogleFontDependency(Dependency):
         super().__init__(*args, **kwargs)
 
     def _check(self):
-        path = self.get_install_path()
-        return path.exists()
+        return self.get_install_path().exists()
 
     def _install(self):
         print(
@@ -934,17 +890,6 @@ class GoogleFontDependency(Dependency):
         )
         sys.stdout.flush()
         self.extract()
-
-    def _uninstall(self):
-        print(
-            _(message='Uninstalling... '), end=''
-        )
-        sys.stdout.flush()
-        self.delete()
-
-    def delete(self):
-        path_install = self.get_install_path()
-        fs_cleanup(filename=path_install)
 
     def download(self):
         self.path_cache = Path(
@@ -1015,26 +960,28 @@ class GoogleFontDependency(Dependency):
 
 DependencyGroup(
     attribute_name='app_label', label=_(message='Declared in app'), help_text=_(
-        'Show dependencies by the app that declared them.'
+        message='Show dependencies by the app that declared them.'
     ), name='app'
 )
 DependencyGroup(
     attribute_name='class_name', label=_(message='Class'), help_text=_(
-        'Show the different classes of dependencies. Classes are usually '
-        'divided by language or the file types of the dependency.'
+        message='Show the different classes of dependencies. Classes are '
+        'usually divided by language or the file types of the dependency.'
     ), name='class'
 )
 DependencyGroup(
     attribute_name='check_string', label=_(message='State'), help_text=_(
-        'Show the different states of the dependencies. True means that the '
-        'dependencies is installed and is of a correct version. False means '
-        'the dependencies is missing or an incorrect version is present.'
+        message='Show the different states of the dependencies. True means '
+        'that the dependencies is installed and is of a correct version. '
+        'False means the dependencies is missing or an incorrect version is '
+        'present.'
     ), name='state'
 )
 DependencyGroup(
     allow_multiple=True, attribute_name='get_environments',
     label=_(message='Environments'), help_text=_(
-        'Dependencies required for an environment might not be required for '
-        'another. Example environments: Production, Development.'
+        message='Dependencies required for an environment might not be '
+        'required for another. Example environments: Production, '
+        'Development.'
     ), name='environment'
 )

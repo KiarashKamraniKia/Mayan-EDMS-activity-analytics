@@ -242,19 +242,19 @@ class QuerysetParametersSerializer:
             else:
                 serialized_kwargs.append(
                     {
-                        'name': name,
                         'content_type_id': content_type.pk,
+                        'name': name,
                         'object_id': value.pk
                     }
                 )
 
         return {
+            'kwargs': serialized_kwargs,
+            'manager_name': _manager_name,
             'model_content_type_id': ContentType.objects.get_for_model(
                 model=_model
             ).pk,
-            'manager_name': _manager_name,
-            'method_name': _method_name,
-            'kwargs': serialized_kwargs
+            'method_name': _method_name
         }
 
     @staticmethod

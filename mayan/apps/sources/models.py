@@ -28,7 +28,7 @@ class DocumentFileSourceMetadata(models.Model):
     )
     value = models.TextField(
         blank=True, help_text=_(
-            'The actual value stored in the source metadata for '
+            message='The actual value stored in the source metadata for '
             'the document file.'
         ), null=True, verbose_name=_(message='Value')
     )

@@ -48,7 +48,8 @@ class SourceBackendActionSerializer(serializers.Serializer):
     )
     arguments = serializers.JSONField(
         help_text=_(
-            'Optional arguments for the action. Must be JSON formatted.'
+            message='Optional arguments for the action. Must be JSON '
+            'formatted.'
         ), initial={}, label=_(message='Arguments'), required=False,
         write_only=True
     )

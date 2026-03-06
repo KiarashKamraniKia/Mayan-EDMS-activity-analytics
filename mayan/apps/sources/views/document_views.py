@@ -50,7 +50,7 @@ class DocumentUploadView(ExternalObjectViewMixin, UploadBaseView):
             )
         except Exception as exception:
             message = _(
-                'Error processing source document upload; '
+                message='Error processing source document upload; '
                 '%(exception)s'
             ) % {
                 'exception': exception,
@@ -71,7 +71,7 @@ class DocumentUploadView(ExternalObjectViewMixin, UploadBaseView):
         else:
             messages.success(
                 message=_(
-                    'New document queued for upload and will be '
+                    message='New document queued for upload and will be '
                     'available shortly.'
                 ), request=self.request
             )
@@ -91,7 +91,7 @@ class DocumentUploadView(ExternalObjectViewMixin, UploadBaseView):
             {
                 'document_type': self.external_object,
                 'title': _(
-                    'Upload a document of type "%(document_type)s" from '
+                    message='Upload a document of type "%(document_type)s" from '
                     'source: %(source)s'
                 ) % {
                     'document_type': self.external_object,

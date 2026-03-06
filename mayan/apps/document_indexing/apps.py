@@ -171,7 +171,7 @@ class DocumentIndexingApp(MayanAppConfig):
                 user=context['request'].user
             ), include_label=True, label=_(message='Total documents'),
             help_text=_(
-                'Number of unique documents this item contains.'
+                message='Number of unique documents this item contains.'
             ), source=IndexInstance
         )
 
@@ -210,7 +210,7 @@ class DocumentIndexingApp(MayanAppConfig):
                 user=context['request'].user
             ), include_label=True, label=_(message='Documents'),
             help_text=_(
-                'Number of unique documents this item contains.'
+                message='Number of unique documents this item contains.'
             ), source=IndexInstanceNode
         )
         column_index_instance_node_document_count.add_exclude(

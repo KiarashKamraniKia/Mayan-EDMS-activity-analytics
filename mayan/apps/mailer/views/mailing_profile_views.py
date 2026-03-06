@@ -65,7 +65,7 @@ class MailingProfileCreateView(ViewSingleObjectDynamicFormModelBackendCreate):
 
         return {
             'title': _(
-                'Create a "%s" mailing profile'
+                message='Create a "%s" mailing profile'
             ) % backend_class.label
         }
 
@@ -130,7 +130,7 @@ class MailingProfileListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'Mailing profiles are email configurations. '
+                message='Mailing profiles are email configurations. '
                 'Mailing profiles allow sending documents as '
                 'attachments or as links via email.'
             ),

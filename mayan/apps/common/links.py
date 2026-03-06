@@ -49,7 +49,7 @@ link_forum = Link(
 )
 link_knowledge_base = Link(
     icon=icon_knowledge_base, tags='new_window',
-    text=_('Knowledge base'), url=URL_KNOWLEDGE_BASE
+    text=_(message='Knowledge base'), url=URL_KNOWLEDGE_BASE
 )
 link_license = Link(
     icon=icon_license, text=_(message='License'), view='common:license_view'

@@ -25,7 +25,7 @@ class EventExportBaseView(ConfirmView):
     def get_extra_context(self):
         return {
             'message': _(
-                'The process will be performed in the background. '
+                message='The process will be performed in the background. '
                 'The exported events will be available in the downloads '
                 'area.'
             )
@@ -48,7 +48,7 @@ class EventExportBaseView(ConfirmView):
 
         messages.success(
             message=_(
-                'Event list export task queued successfully.'
+                message='Event list export task queued successfully.'
             ), request=self.request
         )
 
@@ -101,7 +101,7 @@ class VerbEventExportView(VerbEventViewMixin, EventExportBaseView):
         context.update(
             {
                 'title': _(
-                    'Export events of type: %s'
+                    message='Export events of type: %s'
                 ) % self.event_type
             }
         )

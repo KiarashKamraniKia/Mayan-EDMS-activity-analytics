@@ -30,8 +30,8 @@ class NewDocumentFileForm(forms.Form):
     )
     action_name = forms.ChoiceField(
         label=_(message='Action'), help_text=_(
-            'The action to take in regards to the pages of the new file '
-            'being uploaded.'
+            message='The action to take in regards to the pages of the new '
+            'file being uploaded.'
         )
     )
 
@@ -51,7 +51,7 @@ class UploadBaseForm(forms.Form):
 class SourceBackendSelectionForm(forms.Form):
     backend = forms.ChoiceField(
         choices=(), help_text=_(
-            'The backend used to create the new source.'
+            message='The backend used to create the new source.'
         ), label=_(message='Backend')
     )
 

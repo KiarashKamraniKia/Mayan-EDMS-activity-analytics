@@ -121,8 +121,8 @@ class MessageListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'Here you will find text messages from other users or from '
-                'the system.'
+                message='Here you will find text messages from other users '
+                'or from the system.'
             ),
             'no_results_title': _(message='There are no messages'),
             'title': _(message='Messages')
@@ -134,19 +134,19 @@ class MessageListView(SingleObjectListView):
 
 class MessageMarkReadView(MultipleObjectConfirmActionView):
     error_message = _(
-        'Error marking message "%(instance)s" as read; %(exception)s'
+        message='Error marking message "%(instance)s" as read; %(exception)s'
     )
     object_permission = permission_message_edit
     pk_url_kwarg = 'message_id'
     post_action_redirect = reverse_lazy(viewname='messaging:message_list')
     success_message_plural = _(
-        '%(count)d messages marked as read successfully.'
+        message='%(count)d messages marked as read successfully.'
     )
     success_message_single = _(
-        'Message "%(object)s" marked as read successfully.'
+        message='Message "%(object)s" marked as read successfully.'
     )
     success_message_singular = _(
-        '%(count)d message marked as read successfully.'
+        message='%(count)d message marked as read successfully.'
     )
     title_plural = _(message='Mark the %(count)d selected messages as read.')
     title_single = _(message='Mark the message "%(object)s" as read.')
@@ -201,19 +201,20 @@ class MessageMarkReadAllView(ConfirmView):
 
 class MessageMarkUnReadView(MultipleObjectConfirmActionView):
     error_message = _(
-        'Error marking message "%(instance)s" as unread; %(exception)s'
+        message='Error marking message "%(instance)s" as unread; '
+        '%(exception)s'
     )
     object_permission = permission_message_edit
     pk_url_kwarg = 'message_id'
     post_action_redirect = reverse_lazy(viewname='messaging:message_list')
     success_message_plural = _(
-        '%(count)d messages marked as unread successfully.'
+        message='%(count)d messages marked as unread successfully.'
     )
     success_message_single = _(
-        'Message "%(object)s" marked as unread successfully.'
+        message='Message "%(object)s" marked as unread successfully.'
     )
     success_message_singular = _(
-        '%(count)d message marked as unread successfully.'
+        message='%(count)d message marked as unread successfully.'
     )
     title_plural = _(message='Mark the %(count)d selected messages as unread.')
     title_single = _(message='Mark the message "%(object)s" as unread.')

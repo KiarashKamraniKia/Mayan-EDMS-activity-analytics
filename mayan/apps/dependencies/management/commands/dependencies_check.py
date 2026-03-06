@@ -10,7 +10,8 @@ class Command(management.BaseCommand):
     def add_arguments(self, parser):
         parser.add_argument(
             '--csv', action='store_true', dest='csv', help=_(
-                'Outputs the dependencies as a comma delimited values list.'
+                message='Outputs the dependencies as a comma delimited '
+                'values list.'
             ),
         )
 

@@ -24,7 +24,7 @@ class EventClearBaseView(ConfirmView):
     def get_extra_context(self):
         return {
             'message': _(
-                'This action is not reversible. The process will be '
+                message='This action is not reversible. The process will be '
                 'performed in the background. '
             )
         }
@@ -50,7 +50,7 @@ class EventClearBaseView(ConfirmView):
 
         messages.success(
             message=_(
-                'Event list clear task queued successfully.'
+                message='Event list clear task queued successfully.'
             ), request=self.request
         )
 
@@ -108,7 +108,7 @@ class VerbEventClearView(VerbEventViewMixin, EventClearBaseView):
         context.update(
             {
                 'title': _(
-                    'Clear events of type: %s'
+                    message='Clear events of type: %s'
                 ) % self.event_type
             }
         )

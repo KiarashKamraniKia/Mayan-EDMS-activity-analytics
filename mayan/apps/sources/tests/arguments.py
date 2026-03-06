@@ -7,6 +7,6 @@ argument_file_object = SourceBackendActionInterfaceArgument(
 )
 argument_shared_uploaded_file_id = SourceBackendActionInterfaceArgument(
     help_text=_(
-        'ID of the shared uploaded file to be processed.'
+        message='ID of the shared uploaded file to be processed.'
     )
 )

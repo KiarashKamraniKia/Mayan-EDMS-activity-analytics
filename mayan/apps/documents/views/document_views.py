@@ -41,7 +41,7 @@ class DocumentListView(SingleObjectListView):
         except Exception as exception:
             messages.error(
                 message=_(
-                    'Error retrieving document list: %(exception)s.'
+                    message='Error retrieving document list: %(exception)s.'
                 ) % {
                     'exception': exception
                 }, request=self.request
@@ -63,9 +63,9 @@ class DocumentListView(SingleObjectListView):
             'list_as_items': True,
             'no_results_icon': icon_document_list,
             'no_results_text': _(
-                'This could mean that no documents have been uploaded or '
-                'that your user account has not been granted the view '
-                'permission for any document or document type.'
+                message='This could mean that no documents have been '
+                'uploaded or that your user account has not been granted '
+                'the view permission for any document or document type.'
             ),
             'no_results_title': _(message='No documents available'),
             'title': _(message='All documents')
@@ -82,10 +82,11 @@ class DocumentTypeChangeView(MultipleObjectFormActionView):
     pk_url_kwarg = 'document_id'
     source_queryset = Document.valid.all()
     success_message = _(
-        'Document type change request performed on %(count)d document'
+        message='Document type change request performed on %(count)d document'
     )
     success_message_plural = _(
-        'Document type change request performed on %(count)d documents'
+        message='Document type change request performed on %(count)d '
+        'documents'
     )
     view_icon = icon_document_type_change
 
@@ -103,7 +104,7 @@ class DocumentTypeChangeView(MultipleObjectFormActionView):
                 {
                     'object': self.object_list.first(),
                     'title': _(
-                        'Change the type of the document: %s'
+                        message='Change the type of the document: %s'
                     ) % self.object_list.first()
                 }
             )
@@ -131,7 +132,7 @@ class DocumentTypeChangeView(MultipleObjectFormActionView):
 
         messages.success(
             message=_(
-                'Document type for "%s" changed successfully.'
+                message='Document type for "%s" changed successfully.'
             ) % instance, request=self.request
         )
 

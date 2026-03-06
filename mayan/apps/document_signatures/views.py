@@ -108,7 +108,7 @@ class DocumentFileDetachedSignatureCreateView(
         return {
             'object': self.external_object,
             'title': _(
-                'Sign document file "%s" with a detached signature'
+                message='Sign document file "%s" with a detached signature'
             ) % self.external_object
         }
 
@@ -185,7 +185,7 @@ class DocumentFileEmbeddedSignatureCreateView(
         return {
             'object': self.external_object,
             'title': _(
-                'Sign document file "%s" with a embedded signature'
+                message='Sign document file "%s" with a embedded signature'
             ) % self.external_object
         }
 
@@ -254,7 +254,7 @@ class DocumentFileDetachedSignatureUploadView(
         return {
             'object': self.external_object,
             'title': _(
-                'Upload detached signature for document file: %s'
+                message='Upload detached signature for document file: %s'
             ) % self.external_object
         }
 
@@ -284,7 +284,7 @@ class DocumentFileSignatureDetailView(SingleObjectDetailView):
             'object': self.object.document_file,
             'signature': self.object,
             'title': _(
-                'Details for signature: %s'
+                message='Details for signature: %s'
             ) % self.object
         }
 
@@ -309,8 +309,8 @@ class DocumentFileSignatureListView(
             'hide_object': True,
             'no_results_icon': icon_document_file_signature_list,
             'no_results_text': _(
-                'Signatures help provide authorship evidence and tamper '
-                'detection. They are very secure and hard to '
+                message='Signatures help provide authorship evidence and '
+                'tamper detection. They are very secure and hard to '
                 'forge. A signature can be embedded as part of the document '
                 'itself or uploaded as a separate file.'
             ),
@@ -338,11 +338,11 @@ class DocumentFileSignatureListView(
                 )
             ],
             'no_results_title': _(
-                'There are no signatures for this document file.'
+                message='There are no signatures for this document file.'
             ),
             'object': self.external_object,
             'title': _(
-                'Signatures for document file: %s'
+                message='Signatures for document file: %s'
             ) % self.external_object
         }
 
@@ -353,7 +353,7 @@ class DocumentFileSignatureListView(
 class AllDocumentSignatureRefreshView(ConfirmView):
     extra_context = {
         'message': _(
-            'On large databases this operation may take some time '
+            message='On large databases this operation may take some time '
             'to execute.'
         ), 'title': _(message='Refresh all signatures information?')
     }
@@ -375,8 +375,8 @@ class AllDocumentSignatureRefreshView(ConfirmView):
 class AllDocumentSignatureVerifyView(ConfirmView):
     extra_context = {
         'message': _(
-            'On large databases this operation may take some time to '
-            'execute.'
+            message='On large databases this operation may take some time '
+            'to execute.'
         ), 'title': _(message='Verify all document for signatures?')
     }
     view_icon = icon_document_file_all_signature_verify

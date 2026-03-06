@@ -27,8 +27,8 @@ class SourceBackendMixinPeriodic:
                     'class': 'django.forms.ChoiceField',
                     'default': '',
                     'help_text': _(
-                        'Assign a document type to documents uploaded from this '
-                        'source.'
+                        message='Assign a document type to documents '
+                        'uploaded from this source.'
                     ),
                     'kwargs': {
                         'choices': [
@@ -42,7 +42,7 @@ class SourceBackendMixinPeriodic:
                     'class': 'django.forms.IntegerField',
                     'default': DEFAULT_PERIOD_INTERVAL,
                     'help_text': _(
-                        'Interval in seconds between checks for new '
+                        message='Interval in seconds between checks for new '
                         'documents.'
                     ),
                     'kwargs': {

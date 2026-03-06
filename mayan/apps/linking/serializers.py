@@ -46,7 +46,8 @@ class SmartLinkConditionSerializer(serializers.HyperlinkedModelSerializer):
 class SmartLinkDocumentTypeAddSerializer(serializers.Serializer):
     document_type = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the document type to add to the smart link.'
+            message='Primary key of the document type to add to the smart '
+            'link.'
         ), label=_(message='Document type ID'), source_model=DocumentType,
         source_permission=permission_document_type_edit
     )
@@ -55,7 +56,8 @@ class SmartLinkDocumentTypeAddSerializer(serializers.Serializer):
 class SmartLinkDocumentTypeRemoveSerializer(serializers.Serializer):
     document_type = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the document type to remove from the smart link.'
+            message='Primary key of the document type to remove from the '
+            'smart link.'
         ), label=_(message='Document type ID'), source_model=DocumentType,
         source_permission=permission_document_type_edit
     )

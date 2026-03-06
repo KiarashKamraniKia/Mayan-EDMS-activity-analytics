@@ -20,7 +20,7 @@ class DocumentMetadataSameTypeViewMixin:
         if document_type_count > 1:
             messages.error(
                 message=_(
-                    'Selected documents must be of the same type.'
+                    message='Selected documents must be of the same type.'
                 ), request=request
             )
             return HttpResponseRedirect(redirect_to=self.previous_url)

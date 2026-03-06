@@ -36,8 +36,8 @@ class MetadataType(
     name = models.CharField(
         max_length=48,
         help_text=_(
-            'Name used by other apps to reference this metadata type. '
-            'Do not use python reserved words, or spaces.'
+            message='Name used by other apps to reference this metadata '
+            'type. Do not use python reserved words, or spaces.'
         ),
         unique=True, verbose_name=_(message='Name')
     )
@@ -47,41 +47,41 @@ class MetadataType(
     )
     default = models.CharField(
         blank=True, max_length=128, null=True, help_text=_(
-            'Enter a template to render.'
+            message='Enter a template to render.'
         ), verbose_name=_(message='Default')
     )
     lookup = models.TextField(
         blank=True, null=True, help_text=_(
-            'Enter a template to render. Must result in a comma delimited '
-            'string.'
+            message='Enter a template to render. Must result in a comma '
+            'delimited string.'
         ), verbose_name=_(message='Lookup')
     )
     validation = models.CharField(
         blank=True, help_text=_(
-            'The validator will reject data entry if the value entered does '
-            'not conform to the expected format.'
+            message='The validator will reject data entry if the value '
+            'entered does not conform to the expected format.'
         ), max_length=224, verbose_name=_(message='Validator')
     )
     validation_arguments = models.TextField(
         blank=True, help_text=_(
-            'Enter the arguments for the validator in YAML format.'
+            message='Enter the arguments for the validator in YAML format.'
         ), validators=[YAMLValidator()], verbose_name=_(
-            'Validator arguments'
+            message='Validator arguments'
         )
     )
     parser = models.CharField(
         blank=True, help_text=_(
-            'The parser will reformat the value entered to conform to the '
-            'expected format.'
+            message='The parser will reformat the value entered to conform '
+            'to the expected format.'
         ), max_length=224, verbose_name=_(message='Parser')
     )
     parser_arguments = models.TextField(
         blank=True, help_text=_(
-            'Enter the arguments for the parser in YAML format.'
+            message='Enter the arguments for the parser in YAML format.'
         ), validators=[
             YAMLValidator()
         ], verbose_name=_(
-            'Parser arguments'
+            message='Parser arguments'
         )
     )
 
@@ -127,7 +127,7 @@ class MetadataType(
         if not value and self.get_required_for(document_type=document_type):
             raise ValidationError(
                 message=_(
-                    '"%s" is required for this document type.'
+                    message='"%s" is required for this document type.'
                 ) % self.label
             )
 
@@ -150,7 +150,8 @@ class MetadataType(
             except ValidationError as exception:
                 raise ValidationError(
                     message=_(
-                        'Metadata type validation error; %(exception)s'
+                        message='Metadata type validation error; '
+                        '%(exception)s'
                     ) % {
                         'exception': ','.join(exception)
                     }
@@ -183,7 +184,7 @@ class DocumentMetadata(
     )
     value = models.TextField(
         blank=True, help_text=_(
-            'The actual value stored in the metadata type field for '
+            message='The actual value stored in the metadata type field for '
             'the document.'
         ), null=True, verbose_name=_(message='Value')
     )
@@ -228,7 +229,8 @@ class DocumentMetadata(
         if is_required_for_document_type:
             raise ValidationError(
                 message=_(
-                    'Metadata type is required for this document type.'
+                    message='Metadata type is required for this document '
+                    'type.'
                 )
             )
 
@@ -261,7 +263,8 @@ class DocumentMetadata(
         if is_not_valid_for_document_type:
             raise ValidationError(
                 message=_(
-                    'Metadata type is not valid for this document type.'
+                    message='Metadata type is not valid for this document '
+                    'type.'
                 )
             )
 

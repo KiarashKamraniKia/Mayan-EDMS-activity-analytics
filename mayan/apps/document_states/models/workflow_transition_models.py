@@ -47,7 +47,7 @@ class WorkflowTransition(
     )
     condition = models.TextField(
         blank=True, help_text=_(
-            'The condition that will determine if this transition '
+            message='The condition that will determine if this transition '
             'is enabled or not. The condition is evaluated against the '
             'workflow instance. Conditions that do not return any value, '
             'that return the Python logical None, or an empty string (\'\') '
@@ -106,35 +106,36 @@ class WorkflowTransitionField(
     )
     name = models.CharField(
         help_text=_(
-            'The name that will be used to identify this field in other '
-            'parts of the workflow system.'
+            message='The name that will be used to identify this field in '
+            'other parts of the workflow system.'
         ), max_length=128, verbose_name=_(message='Internal name')
     )
     label = models.CharField(
         help_text=_(
-            'The field name that will be shown on the user interface.'
+            message='The field name that will be shown on the user interface.'
         ), max_length=128, verbose_name=_(message='Label')
     )
     help_text = models.TextField(
         blank=True, help_text=_(
-            'An optional message that will help users better understand the '
-            'purpose of the field and data to provide.'
+            message='An optional message that will help users better '
+            'understand the purpose of the field and data to provide.'
         ), verbose_name=_(message='Help text')
     )
     required = models.BooleanField(
         default=False, help_text=_(
-            'Whether this field needs to be filled out or not to proceed.'
-        ), verbose_name=_('Required')
+            message='Whether this field needs to be filled out or not to '
+            'proceed.'
+        ), verbose_name=_(message='Required')
     )
     widget = models.PositiveIntegerField(
         blank=True, choices=WIDGET_CLASS_CHOICES, help_text=_(
-            'An optional class to change the default presentation of the '
-            'field.'
+            message='An optional class to change the default presentation '
+            'of the field.'
         ), null=True, verbose_name=_(message='Widget class')
     )
     widget_kwargs = models.TextField(
         blank=True, help_text=_(
-            'A group of keyword arguments to customize the widget. '
+            message='A group of keyword arguments to customize the widget. '
             'Use YAML format.'
         ), validators=[
             YAMLValidator()

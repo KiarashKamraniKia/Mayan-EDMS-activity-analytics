@@ -81,7 +81,7 @@ class DocumentMetadataForm(forms.Form):
                     )
                 except Exception as exception:
                     self.fields['value'].initial = _(
-                        'Lookup value error: %s'
+                        message='Lookup value error: %s'
                     ) % exception
                     self.fields['value'].widget = forms.TextInput(
                         attrs={'readonly': 'readonly'}
@@ -94,7 +94,7 @@ class DocumentMetadataForm(forms.Form):
                     ].initial = self.metadata_type.get_default_value()
                 except Exception as exception:
                     self.fields['value'].initial = _(
-                        'Default value error: %s'
+                        message='Default value error: %s'
                     ) % exception
                     self.fields['value'].widget = forms.TextInput(
                         attrs={'readonly': 'readonly'}
@@ -115,7 +115,8 @@ class DocumentMetadataForm(forms.Form):
                     raise ValidationError(
                         message={
                             'value': _(
-                                '"%s" is required for this document type.'
+                                message='"%s" is required for this document '
+                                'type.'
                             ) % metadata_type.label
                         }
                     )

@@ -73,7 +73,7 @@ class SourceActionView(
         except SourceActionException as exception:
             messages.error(
                 message=_(
-                    'Unable to execute action; %s.'
+                    message='Unable to execute action; %s.'
                 ) % exception, request=self.request
             )
             if settings.DEBUG:
@@ -152,7 +152,7 @@ class SourceActionView(
             )
         except Exception as exception:
             message = _(
-                'Error processing source action; '
+                message='Error processing source action; '
                 '%(exception)s'
             ) % {
                 'exception': exception,
@@ -167,7 +167,7 @@ class SourceActionView(
         else:
             messages.success(
                 message=_(
-                    'Source action executed successfully.'
+                    message='Source action executed successfully.'
                 ), request=self.request
             )
 
@@ -204,7 +204,7 @@ class SourceCreateView(ViewSingleObjectDynamicFormModelBackendCreate):
         backend_class = self.get_backend_class()
         return {
             'title': _(
-                'Create a "%s" source'
+                message='Create a "%s" source'
             ) % backend_class.label
         }
 
@@ -276,7 +276,7 @@ class SourceListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'Sources provide the means to upload documents. '
+                message='Sources provide the means to upload documents. '
                 'Some sources are interactive and require user input to '
                 'operate. Others are automatic and run in the background '
                 'without user intervention.'
@@ -306,7 +306,7 @@ class SourceTestView(ExternalObjectViewMixin, ConfirmView):
         if not action.confirmation:
             messages.error(
                 message=_(
-                    'The selected action "%s" does not require '
+                    message='The selected action "%s" does not require '
                     'confirmation and cannot be tested.'
                 ) % action_name, request=self.request
             )
@@ -328,13 +328,13 @@ class SourceTestView(ExternalObjectViewMixin, ConfirmView):
         return {
             'object': self.external_object,
             'subtitle': _(
-                'This will execute the source code even if the source '
-                'is not enabled. Sources that delete content after '
+                message='This will execute the source code even if the '
+                'source is not enabled. Sources that delete content after '
                 'downloading will not do so while being tested. Check the '
                 'source\'s error log for information during testing. A '
                 'successful test will clear the error log.'
             ), 'title': _(
-                'Trigger check for source "%s"?'
+                message='Trigger check for source "%s"?'
             ) % self.external_object
         }
 
@@ -350,7 +350,7 @@ class SourceTestView(ExternalObjectViewMixin, ConfirmView):
 
         messages.success(
             message=_(
-                'Source test queued. Check for newly created documents '
-                'or for error log entries.'
+                message='Source test queued. Check for newly created '
+                'documents or for error log entries.'
             ), request=self.request
         )

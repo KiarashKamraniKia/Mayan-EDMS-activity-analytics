@@ -7,14 +7,14 @@ argument_encoded_filename = SourceBackendActionInterfaceArgument(
 )
 argument_file_cleanup = SourceBackendActionInterfaceArgument(
     default=None, help_text=_(
-        'Execute source backend specific, built-in post '
+        message='Execute source backend specific, built-in post '
         'processing clean up code.'
     ), required=False
 )
 argument_file_identifier = SourceBackendActionInterfaceArgument(
     help_text=_(
-        'Unique identifier to select which source backend stored file to '
-        'process.'
+        message='Unique identifier to select which source backend stored '
+        'file to process.'
     )
 )
 argument_maximum_layer_order = SourceBackendActionInterfaceArgument(

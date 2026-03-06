@@ -19,12 +19,12 @@ class BackendModelMixin(models.Model):
 
     backend_path = models.CharField(
         max_length=128, help_text=_(
-            'The dotted Python path to the backend class.'
+            message='The dotted Python path to the backend class.'
         ), verbose_name=_(message='Backend path')
     )
     backend_data = models.TextField(
         blank=True, help_text=_(
-            'JSON encoded data for the backend class.'
+            message='JSON encoded data for the backend class.'
         ), verbose_name=_(message='Backend data')
     )
 

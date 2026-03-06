@@ -29,17 +29,18 @@ class DocumentVersion(
     )
     timestamp = models.DateTimeField(
         auto_now_add=True, db_index=True, help_text=_(
-            'The server date and time when the document version was created.'
+            message='The server date and time when the document version was '
+            'created.'
         ), verbose_name=_(message='Timestamp')
     )
     comment = models.TextField(
         blank=True, default='', help_text=_(
-            'An optional short text describing the document version.'
+            message='An optional short text describing the document version.'
         ), verbose_name=_(message='Comment')
     )
     active = models.BooleanField(
         default=False, help_text=_(
-            'Determines the active version of the document.'
+            message='Determines the active version of the document.'
         ), verbose_name=_(message='Active')
     )
 

@@ -30,12 +30,12 @@ class Workflow(
     """
     auto_launch = models.BooleanField(
         default=True, help_text=_(
-            'Launch workflow when document is created.'
+            message='Launch workflow when document is created.'
         ), verbose_name=_(message='Auto launch')
     )
     internal_name = models.CharField(
         db_index=True, help_text=_(
-            'This value will be used by other apps to reference this '
+            message='This value will be used by other apps to reference this '
             'workflow. Can only contain letters, numbers, and underscores.'
         ), max_length=255, unique=True, validators=[validate_internal_name],
         verbose_name=_(message='Internal name')
@@ -46,7 +46,7 @@ class Workflow(
     )
     document_types = models.ManyToManyField(
         related_name='workflows', to=DocumentType, verbose_name=_(
-            'Document types'
+            message='Document types'
         )
     )
 

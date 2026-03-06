@@ -13,7 +13,7 @@ from .models import Quota
 class QuotaBackendSelectionForm(forms.Form):
     backend = forms.ChoiceField(
         choices=(), label=_(message='Backend'), help_text=_(
-            'The quota driver for this entry.'
+            message='The quota driver for this entry.'
         )
     )
 

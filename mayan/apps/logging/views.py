@@ -27,11 +27,11 @@ class GlobalErrorLogEntryList(SingleObjectListView):
             'hide_object': True,
             'no_results_icon': icon_object_errors,
             'no_results_text': _(
-                'This view displays the error log of different objects. '
-                'An empty list is a good thing.'
+                message='This view displays the error log of different '
+                'objects. An empty list is a good thing.'
             ),
             'no_results_title': _(
-                'There are no error log entries'
+                message='There are no error log entries'
             ),
             'title': _(message='Global error log')
         }
@@ -94,11 +94,11 @@ class ObjectErrorLogEntryListView(
             'hide_object': True,
             'no_results_icon': icon_object_errors,
             'no_results_text': _(
-                'This view displays the error log of an object. '
+                message='This view displays the error log of an object. '
                 'An empty list is a good thing.'
             ),
             'no_results_title': _(
-                'There are no error log entries'
+                message='There are no error log entries'
             ),
             'object': self.external_object,
             'title': _(

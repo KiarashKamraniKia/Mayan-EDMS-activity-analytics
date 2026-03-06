@@ -28,8 +28,8 @@ queue_search.add_task_type(
 queue_search.add_task_type(
     dotted_path='mayan.apps.dynamic_search.tasks.task_index_related_instance_m2m',
     label=_(
-        'Index all related instances of a search model after a many to many '
-        'event.'
+        message='Index all related instances of a search model after a many '
+        'to many event.'
     ),
     name='task_index_related_instance_m2m'
 )

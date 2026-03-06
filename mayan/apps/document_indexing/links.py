@@ -56,7 +56,7 @@ link_index_instances_rebuild = Link(
         app_label='document_indexing', model_name='IndexTemplate',
         object_permission=permission_index_template_rebuild,
     ), description=_(
-        'Deletes and creates from scratch all the document indexes.'
+        message='Deletes and creates from scratch all the document indexes.'
     ), icon=icon_index_instances_rebuild, text=_(message='Rebuild indexes'),
     view='indexing:rebuild_index_instances'
 )
@@ -65,7 +65,7 @@ link_index_instances_reset = Link(
         app_label='document_indexing', model_name='IndexTemplate',
         object_permission=permission_index_template_rebuild,
     ), description=_(
-        'Deletes and creates from scratch all the document indexes.'
+        message='Deletes and creates from scratch all the document indexes.'
     ), icon=icon_index_instances_reset, text=_(message='Reset indexes'),
     view='indexing:index_instances_reset'
 )

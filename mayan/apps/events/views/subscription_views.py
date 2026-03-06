@@ -35,7 +35,7 @@ class EventTypeSubscriptionListView(FormView):
         except Exception as exception:
             messages.error(
                 message=_(
-                    'Error updating event subscription; %s'
+                    message='Error updating event subscription; %s'
                 ) % exception, request=self.request
             )
         else:
@@ -51,7 +51,7 @@ class EventTypeSubscriptionListView(FormView):
             'form_display_mode_table': True,
             'object': self.get_object(),
             'title': _(
-                'Event subscriptions'
+                message='Event subscriptions'
             ) % self.get_object()
         }
 
@@ -114,13 +114,13 @@ class ObjectEventTypeSubscriptionListView(
         except Exception as exception:
             messages.error(
                 message=_(
-                    'Error updating object event subscription; %s'
+                    message='Error updating object event subscription; %s'
                 ) % exception, request=self.request
             )
         else:
             messages.success(
                 message=_(
-                    'Object event subscriptions updated successfully'
+                    message='Object event subscriptions updated successfully'
                 ), request=self.request
             )
 
@@ -131,7 +131,7 @@ class ObjectEventTypeSubscriptionListView(
             'form_display_mode_table': True,
             'object': self.external_object,
             'title': _(
-                'Event subscriptions for: %s'
+                message='Event subscriptions for: %s'
             ) % self.external_object
         }
 
@@ -161,7 +161,7 @@ class UserObjectSubscriptionList(SingleObjectListView):
             'hide_object': True,
             'no_results_icon': icon_user_object_subscriptions_list,
             'no_results_text': _(
-                'Subscribe to the events of an object to receive '
+                message='Subscribe to the events of an object to receive '
                 'notifications when those events occur.'
             ),
             'no_results_title': _(message='There are no object event subscriptions'),

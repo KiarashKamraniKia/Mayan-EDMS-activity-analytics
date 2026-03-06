@@ -34,7 +34,7 @@ class IndexInstanceListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'This could mean that no index templates have been '
+                message='This could mean that no index templates have been '
                 'created or that there are index templates '
                 'but they are no properly defined.'
             ),
@@ -83,7 +83,7 @@ class IndexInstanceNodeView(DocumentListView):
                 ),
                 'object': self.index_instance_node,
                 'title': _(
-                    'Contents for index: %s'
+                    message='Contents for index: %s'
                 ) % self.index_instance_node.get_full_path()
             }
         )
@@ -139,16 +139,16 @@ class DocumentIndexInstanceNodeListView(
             'hide_object': True,
             'no_results_icon': icon_index,
             'no_results_text': _(
-                'Assign the document type of this document '
+                message='Assign the document type of this document '
                 'to an index to have it appear in instances of '
                 'those indexes organization units. '
             ),
             'no_results_title': _(
-                'This document is not in any index'
+                message='This document is not in any index'
             ),
             'object': self.external_object,
             'title': _(
-                'Indexes nodes containing document: %s'
+                message='Indexes nodes containing document: %s'
             ) % self.external_object
         }
 

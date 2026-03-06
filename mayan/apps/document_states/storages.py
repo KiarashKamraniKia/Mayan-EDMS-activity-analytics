@@ -11,7 +11,7 @@ from .settings import (
 storage_workflow_image = DefinedStorage(
     dotted_path=setting_workflow_image_cache_storage_backend.value,
     error_message=_(
-        'Unable to initialize the workflow preview '
+        message='Unable to initialize the workflow preview '
         'storage. Check the settings {} and {} for formatting '
         'errors.'.format(
             setting_workflow_image_cache_storage_backend.global_name,

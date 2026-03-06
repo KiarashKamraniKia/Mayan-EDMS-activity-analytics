@@ -13,7 +13,7 @@ from .querysets import get_user_queryset
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     users_url = serializers.HyperlinkedIdentityField(
         help_text=_(
-            'URL of the API endpoint showing the list users of this '
+            message='URL of the API endpoint showing the list users of this '
             'group.'
         ), label=_(message='Users URL'), lookup_url_kwarg='group_id',
         view_name='rest_api:group-user-list'
@@ -45,7 +45,7 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class GroupUserAddSerializer(serializers.Serializer):
     user = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the user to add to the group.'
+            message='Primary key of the user to add to the group.'
         ), label=_(message='User ID'), source_permission=permission_user_edit,
         source_queryset=get_user_queryset()
     )
@@ -54,7 +54,7 @@ class GroupUserAddSerializer(serializers.Serializer):
 class GroupUserRemoveSerializer(serializers.Serializer):
     user = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the user to remove from the group.'
+            message='Primary key of the user to remove from the group.'
         ), label=_(message='User ID'), source_permission=permission_user_edit,
         source_queryset=get_user_queryset()
     )
@@ -63,7 +63,7 @@ class GroupUserRemoveSerializer(serializers.Serializer):
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     groups_url = serializers.HyperlinkedIdentityField(
         help_text=_(
-            'URL of the API endpoint showing the list groups this '
+            message='URL of the API endpoint showing the list groups this '
             'user belongs to.'
         ), label=_(message='Groups URL'), lookup_url_kwarg='user_id',
         view_name='rest_api:user-group-list'

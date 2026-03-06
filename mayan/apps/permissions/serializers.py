@@ -57,7 +57,7 @@ class RolePermissionAddSerializer(serializers.Serializer):
 class RolePermissionRemoveSerializer(serializers.Serializer):
     permission = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the permission to remove from the role.'
+            message='Primary key of the permission to remove from the role.'
         ), label=_(message='Permission ID'), source_queryset=Permission.all()
     )
 

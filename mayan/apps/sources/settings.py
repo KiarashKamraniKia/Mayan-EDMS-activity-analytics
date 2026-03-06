@@ -16,13 +16,13 @@ setting_namespace = setting_cluster.do_namespace_add(
 setting_backend_arguments = setting_namespace.do_setting_add(
     default=DEFAULT_SOURCES_BACKEND_ARGUMENTS,
     global_name='SOURCES_BACKEND_ARGUMENTS', help_text=_(
-        'Arguments to use when creating source backends.'
+        message='Arguments to use when creating source backends.'
     )
 )
 setting_source_cache_storage_backend = setting_namespace.do_setting_add(
     global_name='SOURCES_CACHE_STORAGE_BACKEND',
     default=DEFAULT_SOURCES_CACHE_STORAGE_BACKEND, help_text=_(
-        'Path to the Storage subclass used to store cached '
+        message='Path to the Storage subclass used to store cached '
         'source image files.'
     )
 )
@@ -30,6 +30,7 @@ setting_source_cache_storage_backend_arguments = setting_namespace.do_setting_ad
     global_name='SOURCES_CACHE_STORAGE_BACKEND_ARGUMENTS',
     default=DEFAULT_SOURCES_CACHE_STORAGE_BACKEND_ARGUMENTS,
     help_text=_(
-        'Arguments to pass to the SOURCES_SOURCE_CACHE_STORAGE_BACKEND.'
+        message='Arguments to pass to the '
+        '`SOURCES_SOURCE_CACHE_STORAGE_BACKEND`.'
     )
 )

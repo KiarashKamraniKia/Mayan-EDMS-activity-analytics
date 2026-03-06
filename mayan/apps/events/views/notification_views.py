@@ -26,7 +26,7 @@ class NotificationListView(NotificationViewMixin, SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'Subscribe to global or object events to receive '
+                message='Subscribe to global or object events to receive '
                 'notifications.'
             ),
             'no_results_title': _(message='There are no notifications'),

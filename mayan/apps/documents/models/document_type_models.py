@@ -42,18 +42,18 @@ class DocumentType(
     )
     filename_generator_backend = models.CharField(
         default=BaseDocumentFilenameGenerator.get_default(), help_text=_(
-            'The class responsible for producing the actual filename used '
-            'to store the uploaded documents.'
+            message='The class responsible for producing the actual filename '
+            'used to store the uploaded documents.'
         ), max_length=224, verbose_name=_(message='Filename generator backend')
     )
     filename_generator_backend_arguments = models.TextField(
         blank=True, help_text=_(
-            'The arguments for the filename generator backend as a '
+            message='The arguments for the filename generator backend as a '
             'YAML dictionary.'
         ), validators=[
             YAMLValidator()
         ], verbose_name=_(
-            'Filename generator backend arguments'
+            message='Filename generator backend arguments'
         )
     )
 
@@ -61,8 +61,8 @@ class DocumentType(
 
     trash_time_period = models.PositiveIntegerField(
         blank=True, help_text=_(
-            'Amount of time after which documents of this type will be '
-            'moved to the trash.'
+            message='Amount of time after which documents of this type will '
+            'be moved to the trash.'
         ), null=True, verbose_name=_(message='Trash time period')
     )
     trash_time_unit = models.CharField(
@@ -71,8 +71,8 @@ class DocumentType(
     )
     delete_time_period = models.PositiveIntegerField(
         blank=True, default=DEFAULT_DELETE_PERIOD, help_text=_(
-            'Amount of time after which documents of this type in the trash '
-            'will be deleted.'
+            message='Amount of time after which documents of this type in '
+            'the trash will be deleted.'
         ), null=True, verbose_name=_(message='Delete time period')
     )
     delete_time_unit = models.CharField(
@@ -82,13 +82,13 @@ class DocumentType(
     )
     document_stub_pruning_enabled = models.BooleanField(
         default=True, help_text=_(
-            'Delete documents that do not contain any files after a '
+            message='Delete documents that do not contain any files after a '
             'configured expiration interval.'
         ), verbose_name=_(message='Document stub pruning')
     )
     document_stub_expiration_interval = models.PositiveBigIntegerField(
         default=DEFAULT_DOCUMENT_STUB_EXPIRATION_INTERVAL, help_text=_(
-            'Time (in seconds) after which a document stub will be '
+            message='Time (in seconds) after which a document stub will be '
             'considered invalid and deleted, if pruning is enabled. This '
             'an optimization setting and should only be changed for '
             'specific circumstances.'

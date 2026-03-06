@@ -15,7 +15,7 @@ class DocumentVersionForm(forms.ModelForm):
 class DocumentVersionModificationBackendForm(forms.Form):
     backend = forms.ChoiceField(
         choices=(), help_text=_(
-            'The backend that will be executed against the selected '
+            message='The backend that will be executed against the selected '
             'document version.'
         ), label=_(message='Backend')
     )

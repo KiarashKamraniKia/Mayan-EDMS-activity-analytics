@@ -30,7 +30,7 @@ class UploadBaseView(
         if not self.queryset_source_valid.exists():
             messages.error(
                 message=_(
-                    'There are no enabled sources that support this '
+                    message='There are no enabled sources that support this '
                     'operation. Create a new one or enable and existing one.'
                 ), request=request
             )

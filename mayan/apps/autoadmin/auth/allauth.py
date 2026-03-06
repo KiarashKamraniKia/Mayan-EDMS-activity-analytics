@@ -48,7 +48,7 @@ class AutoadminAccountAdapter(DefaultAccountAdapter):
 
             messages.info(
                 request=request, message=_(
-                    'Welcome Admin! You have been given super user '
+                    message='Welcome Admin! You have been given super user '
                     'privileges. Use them with caution.'
                 )
             )

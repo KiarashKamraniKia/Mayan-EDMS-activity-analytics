@@ -34,13 +34,13 @@ class DocumentTrashView(MultipleObjectConfirmActionView):
     pk_url_kwarg = 'document_id'
     source_queryset = Document.valid.all()
     success_message_single = _(
-        'Document "%(object)s" moved to trash.'
+        message='Document "%(object)s" moved to trash.'
     )
     success_message_singular = _(
-        '%(count)d document moved to the trash.'
+        message='%(count)d document moved to the trash.'
     )
     success_message_plural = _(
-        '%(count)d documents moved to the trash.'
+        message='%(count)d documents moved to the trash.'
     )
     title_single = _(message='Move the document "%(object)s" to trash?')
     title_singular = _(message='Move the selected document to the trash?')
@@ -98,13 +98,13 @@ class TrashedDocumentDeleteView(MultipleObjectConfirmActionView):
     object_permission = permission_trashed_document_delete
     pk_url_kwarg = 'document_id'
     success_message_plural = _(
-        '%(count)d trashed documents submitted for deletion.'
+        message='%(count)d trashed documents submitted for deletion.'
     )
     success_message_single = _(
-        'Trash document "%(object)s" submitted for deletion.'
+        message='Trash document "%(object)s" submitted for deletion.'
     )
     success_message_singular = _(
-        '%(count)d trashed document submitted for deletion.'
+        message='%(count)d trashed document submitted for deletion.'
     )
     title_plural = _(message='Delete the %(count)d selected trashed documents?')
     title_single = _(message='Delete the trashed document "%(object)s"?')
@@ -146,12 +146,12 @@ class TrashedDocumentListView(DocumentListView):
                 'hide_link': True,
                 'no_results_icon': icon_trashed_document_list,
                 'no_results_text': _(
-                    'To avoid loss of data, documents are not deleted '
+                    message='To avoid loss of data, documents are not deleted '
                     'instantly. First, they are placed in the trash can. '
                     'From here they can be then finally deleted or restored.'
                 ),
                 'no_results_title': _(
-                    'There are no documents in the trash can'
+                    message='There are no documents in the trash can'
                 ),
                 'title': _(message='Documents in trash')
             }
@@ -164,13 +164,13 @@ class TrashedDocumentRestoreView(MultipleObjectConfirmActionView):
     object_permission = permission_trashed_document_restore
     pk_url_kwarg = 'document_id'
     success_message_plural = _(
-        '%(count)d trashed documents restored.'
+        message='%(count)d trashed documents restored.'
     )
     success_message_single = _(
-        'Trashed document "%(object)s" restored.'
+        message='Trashed document "%(object)s" restored.'
     )
     success_message_singular = _(
-        '%(count)d trashed document restored.'
+        message='%(count)d trashed document restored.'
     )
     title_plural = _(message='Restore the %(count)d selected trashed documents?')
     title_single = _(message='Restore the trashed document: %(object)s')

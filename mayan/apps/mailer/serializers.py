@@ -29,7 +29,7 @@ class MailingProfileActionSerializer(serializers.Serializer):
     )
     mailing_profile = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the mailing profile to use.'
+            message='Primary key of the mailing profile to use.'
         ), label=_(message='Mailing profile ID'),
         source_queryset=UserMailer.objects.filter(enabled=True),
         source_permission=permission_mailing_profile_use

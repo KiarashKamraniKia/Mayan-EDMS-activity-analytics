@@ -17,7 +17,7 @@ logger = logging.getLogger(name=__name__)
 
 
 class EXIFToolDriver(FileMetadataDriver):
-    description = _('Read meta information stored in files.')
+    description = _(message='Read meta information stored in files.')
     label = _(message='EXIF Tool')
     internal_name = 'exiftool'
     mime_type_list = ('*',)

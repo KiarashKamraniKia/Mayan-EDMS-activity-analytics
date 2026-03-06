@@ -36,7 +36,7 @@ class CacheBusinessLogicMixin:
             )
         except KeyError:
             defined_storage_class = DefinedStorage(
-                dotted_path='', label=_('Unknown'), name='unknown'
+                dotted_path='', label=_(message='Unknown'), name='unknown'
             )
 
         return defined_storage_class
@@ -54,7 +54,7 @@ class CacheBusinessLogicMixin:
         return filesizeformat(bytes_=self.maximum_size)
 
     get_maximum_size_display.help_text = _(
-        'Size at which the cache will start deleting old entries.'
+        message='Size at which the cache will start deleting old entries.'
     )
     get_maximum_size_display.short_description = _(message='Maximum size')
 
@@ -323,7 +323,7 @@ class CachePartitionBusinessLogicMixin:
 
     get_total_size_display.short_description = _(message='Current size')
     get_total_size_display.help_text = _(
-        'Current size of the cache partition.'
+        message='Current size of the cache partition.'
     )
 
     @method_event(

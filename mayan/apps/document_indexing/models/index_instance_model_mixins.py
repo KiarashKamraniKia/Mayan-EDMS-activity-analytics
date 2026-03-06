@@ -31,8 +31,8 @@ class IndexInstanceBusinessLogicMixin:
             except Exception as exception:
                 logger.error('Evaluating error: %s', exception)
                 error_message = _(
-                    'Error indexing document: %(document)s; expression: '
-                    '%(expression)s; %(exception)s'
+                    message='Error indexing document: %(document)s; '
+                    'expression: %(expression)s; %(exception)s'
                 ) % {
                     'document': document,
                     'exception': exception,
@@ -152,7 +152,7 @@ class IndexInstanceBusinessLogicMixin:
         return self.index_instance_root_node.get_descendants_count()
 
     get_descendants_count.help_text = _(
-        'Total number of nodes with unique values this item contains.'
+        message='Total number of nodes with unique values this item contains.'
     )
 
     def get_descendants_document_count(self, user):
@@ -161,7 +161,7 @@ class IndexInstanceBusinessLogicMixin:
         )
 
     get_descendants_document_count.help_text = _(
-        'Total number of unique documents this item contains.'
+        message='Total number of unique documents this item contains.'
     )
 
     def get_lock_string(self):
@@ -171,7 +171,7 @@ class IndexInstanceBusinessLogicMixin:
         return self.index_instance_root_node.get_level_count()
 
     get_level_count.help_text = _(
-        'Total number of node levels this item contains.'
+        message='Total number of node levels this item contains.'
     )
 
     def get_root(self):
@@ -240,7 +240,7 @@ class IndexInstanceNodeBusinessLogicMixin:
 
         return ' / '.join(result)
     get_full_path.help_text = _(
-        'The path to the index including all ancestors.'
+        message='The path to the index including all ancestors.'
     )
     get_full_path.short_description = _(message='Full path')
 

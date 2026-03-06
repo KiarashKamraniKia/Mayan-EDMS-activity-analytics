@@ -16,8 +16,8 @@ class Command(management.BaseCommand):
         parser.add_argument(
             '--log', action='store', dest='log_file',
             help=_(
-                'Path of the database (.dbm) file that will be created/read '
-                'to keep track of items processed.'
+                message='Path of the database (.dbm) file that will be '
+                'created/read to keep track of items processed.'
             ),
             required=True
         )
@@ -29,7 +29,7 @@ class Command(management.BaseCommand):
         parser.add_argument(
             '--reverse', action='store_true', dest='reverse',
             help=_(
-                'Process the files in reverse to undo the storage '
+                message='Process the files in reverse to undo the storage '
                 'pipeline transformations.'
             )
         )

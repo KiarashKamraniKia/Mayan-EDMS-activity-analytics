@@ -244,7 +244,7 @@ class IndexTemplateNodeWriteSerializer(serializers.ModelSerializer):
 class IndexTemplateSerializer(serializers.HyperlinkedModelSerializer):
     document_types_url = serializers.HyperlinkedIdentityField(
         help_text=_(
-            'URL of the API endpoint showing the list document types '
+            message='URL of the API endpoint showing the list document types '
             'associated with this index template.'
         ), label=_(message='Document types URL'),
         lookup_url_kwarg='index_template_id',
@@ -252,7 +252,7 @@ class IndexTemplateSerializer(serializers.HyperlinkedModelSerializer):
     )
     document_types_add_url = serializers.HyperlinkedIdentityField(
         help_text=_(
-            'URL of the API endpoint to add document types '
+            message='URL of the API endpoint to add document types '
             'to this index template.'
         ), label=_(message='Document types add URL'),
         lookup_url_kwarg='index_template_id',
@@ -260,7 +260,7 @@ class IndexTemplateSerializer(serializers.HyperlinkedModelSerializer):
     )
     document_types_remove_url = serializers.HyperlinkedIdentityField(
         help_text=_(
-            'URL of the API endpoint to remove document types '
+            message='URL of the API endpoint to remove document types '
             'from this index template.'
         ), label=_(message='Document types remove URL'),
         lookup_url_kwarg='index_template_id',
@@ -324,7 +324,8 @@ class IndexTemplateSerializer(serializers.HyperlinkedModelSerializer):
 class DocumentTypeAddSerializer(serializers.Serializer):
     document_type = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the document type to add to the index template.'
+            message='Primary key of the document type to add to the index '
+            'template.'
         ), label=_(message='Document type ID'), source_model=DocumentType,
         source_permission=permission_document_type_edit
     )
@@ -333,7 +334,8 @@ class DocumentTypeAddSerializer(serializers.Serializer):
 class DocumentTypeRemoveSerializer(serializers.Serializer):
     document_type = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the document type to remove from the index template.'
+            message='Primary key of the document type to remove from the '
+            'index template.'
         ), label=_(message='Document type ID'), source_model=DocumentType,
         source_permission=permission_document_type_edit
     )

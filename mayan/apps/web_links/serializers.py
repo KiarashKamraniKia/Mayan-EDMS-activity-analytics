@@ -13,7 +13,8 @@ from .models import ResolvedWebLink, WebLink
 class WebLinkDocumentTypeAddSerializer(serializers.Serializer):
     document_type = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the document type to add to the web link.'
+            message='Primary key of the document type to add to the web '
+            'link.'
         ), label=_(message='Document type ID'), source_model=DocumentType,
         source_permission=permission_document_type_edit
     )
@@ -22,7 +23,8 @@ class WebLinkDocumentTypeAddSerializer(serializers.Serializer):
 class WebLinkDocumentTypeRemoveSerializer(serializers.Serializer):
     document_type = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the document type to remove from the web link.'
+            message='Primary key of the document type to remove from the web '
+            'link.'
         ), label=_(message='Document type ID'), source_model=DocumentType,
         source_permission=permission_document_type_edit
     )

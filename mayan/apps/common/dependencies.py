@@ -189,7 +189,7 @@ PythonDependency(
 )
 PythonDependency(
     environment=environment_development, help_text=_(
-        'Used to allow offline translation of the code text strings.'
+        message='Used to allow offline translation of the code text strings.'
     ), module=__name__, name='django-rosetta', version_string='==0.10.0'
 )
 PythonDependency(
@@ -198,12 +198,12 @@ PythonDependency(
 )
 PythonDependency(
     environment=environment_development, help_text=_(
-        'Provides style checking.'
+        message='Provides style checking.'
     ), module=__name__, name='flake8', version_string='==7.0.0'
 )
 PythonDependency(
     environment=environment_development, help_text=_(
-        'Command line environment with autocompletion.'
+        message='Command line environment with autocompletion.'
     ), module=__name__, name='ipython', version_string='==9.5.0'
 )
 PythonDependency(
@@ -212,7 +212,7 @@ PythonDependency(
 )
 PythonDependency(
     environment=environment_development, help_text=_(
-        'Checks proper formatting of the README file.'
+        message='Checks proper formatting of the README file.'
     ), module=__name__, name='readme', version_string='==0.7.1'
 )
 PythonDependency(

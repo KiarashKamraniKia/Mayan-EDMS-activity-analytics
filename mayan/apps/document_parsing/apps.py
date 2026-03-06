@@ -104,7 +104,8 @@ class DocumentParsingApp(MayanAppConfig):
 
         ModelProperty(
             description=_(
-                'A generator returning the document file\'s pages parsed content.'
+                message='A generator returning the document file\'s pages '
+                'parsed content.'
             ), label=_(message='Content'), model=Document,
             name='content'
         )

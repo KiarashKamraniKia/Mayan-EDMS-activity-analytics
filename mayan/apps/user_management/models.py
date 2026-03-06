@@ -21,7 +21,7 @@ class UserOptions(models.Model):
     )
     block_password_change = models.BooleanField(
         default=False, verbose_name=_(
-            'Forbid this user from changing their password.'
+            message='Forbid this user from changing their password.'
         )
     )
 

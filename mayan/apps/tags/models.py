@@ -18,7 +18,7 @@ class Tag(ExtraDataModelMixin, TagBusinessLogicMixin, models.Model):
     """
     label = models.CharField(
         db_index=True, help_text=_(
-            'A short text used as the tag name.'
+            message='A short text used as the tag name.'
         ), max_length=128, unique=True, verbose_name=_(message='Label')
     )
     color = models.CharField(

@@ -125,9 +125,10 @@ class TaskManagerApp(MayanAppConfig):
         )
         SourceColumn(
             attribute='transient', help_text=_(
-                'Transient queues are not persistent. Tasks in a transient '
-                'queue are lost if the broker is restarted. Transient '
-                'queues use less resources and managed non critical tasks.'
+                message='Transient queues are not persistent. Tasks in a '
+                'transient queue are lost if the broker is restarted. '
+                'Transient queues use less resources and managed non '
+                'critical tasks.'
             ), include_label=True, label=_(message='Is transient?'),
             source=CeleryQueue, widget=TwoStateWidget
         )
@@ -187,26 +188,26 @@ class TaskManagerApp(MayanAppConfig):
         )
         SourceColumn(
             attribute='maximum_memory_per_child', help_text=_(
-                'Maximum amount of resident memory a worker can execute '
-                'before it\'s replaced by a new process.'
+                message='Maximum amount of resident memory a worker can '
+                'execute before it\'s replaced by a new process.'
             ), label=_(message='Maximum memory per child'), source=Worker
         )
         SourceColumn(
             attribute='maximum_tasks_per_child', help_text=_(
-                'Maximum number of tasks a worker can execute before it\'s '
-                'replaced by a new process.'
+                message='Maximum number of tasks a worker can execute before '
+                'it\'s replaced by a new process.'
             ), label=_(message='Maximum tasks per child'), source=Worker
         )
         SourceColumn(
             attribute='concurrency', help_text=_(
-                'The number of worker processes/threads to launch. '
+                message='The number of worker processes/threads to launch. '
                 'Defaults to the number of CPUs available on the machine.'
             ), label=_(message='Concurrency'), source=Worker
         )
         SourceColumn(
             attribute='nice_level', help_text=_(
-                'The nice value determines the priority of the process. '
-                'A higher value lowers the priority. The default '
+                message='The nice value determines the priority of the '
+                'process. A higher value lowers the priority. The default '
                 'value is 0.'
             ), label=_(message='Nice level'), source=Worker
         )

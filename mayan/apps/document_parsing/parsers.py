@@ -129,7 +129,7 @@ class PopplerParser(Parser):
         self.pdftotext_path = setting_pdftotext_path.value
         if not os.path.exists(self.pdftotext_path):
             error_message = _(
-                'Cannot find pdftotext executable at: %s'
+                message='Cannot find pdftotext executable at: %s'
             ) % self.pdftotext_path
             logger.error(error_message)
             raise ParserError(error_message)

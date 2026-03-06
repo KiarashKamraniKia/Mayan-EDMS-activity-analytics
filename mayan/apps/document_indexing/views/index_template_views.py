@@ -62,12 +62,12 @@ class DocumentTypeIndexTemplateAddRemoveView(AddRemoveView):
         return {
             'object': self.main_object,
             'subtitle': _(
-                'Documents of this type will appear in the indexes linked '
-                'when these are updated. Events of the documents of this '
-                'type will trigger updates in the linked indexes.'
+                message='Documents of this type will appear in the indexes '
+                'linked when these are updated. Events of the documents of '
+                'this type will trigger updates in the linked indexes.'
             ),
             'title': _(
-                'Indexes linked to document type: %s'
+                message='Indexes linked to document type: %s'
             ) % self.main_object
         }
 
@@ -85,7 +85,7 @@ class IndexTemplateListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'Indexes group document automatically into levels. '
+                message='Indexes group document automatically into levels. '
                 'Indexes are defined using template whose markers are '
                 'replaced with direct properties of documents like label '
                 'or description, or that of extended properties like '
@@ -148,12 +148,13 @@ class IndexTemplateDocumentTypeAddRemoveView(AddRemoveView):
         return {
             'object': self.main_object,
             'subtitle': _(
-                'Only the documents of the types selected will be shown '
-                'in the index when built. Only the events of the documents '
-                'of the types select will trigger updates in the index.'
+                message='Only the documents of the types selected will be '
+                'shown in the index when built. Only the events of the '
+                'documents of the types select will trigger updates in the '
+                'index.'
             ),
             'title': _(
-                'Document types linked to index: %s'
+                message='Document types linked to index: %s'
             ) % self.main_object
         }
 
@@ -215,7 +216,7 @@ class IndexTemplateEventTriggerListView(ExternalObjectViewMixin, FormView):
         except Exception as exception:
             messages.error(
                 message=_(
-                    'Error updating index template event trigger; %s'
+                    message='Error updating index template event trigger; %s'
                 ) % exception, request=self.request
 
             )
@@ -224,7 +225,8 @@ class IndexTemplateEventTriggerListView(ExternalObjectViewMixin, FormView):
         else:
             messages.success(
                 message=_(
-                    'Index template event triggers updated successfully.'
+                    message='Index template event triggers updated '
+                    'successfully.'
                 ), request=self.request
             )
 
@@ -234,12 +236,12 @@ class IndexTemplateEventTriggerListView(ExternalObjectViewMixin, FormView):
         return {
             'form_display_mode_table': True,
             'subtitle': _(
-                'Triggers are document events that cause instances of this '
-                'index template to be updated.'
+                message='Triggers are document events that cause instances '
+                'of this index template to be updated.'
             ),
             'object': self.external_object,
             'title': _(
-                'Index template event triggers for: %s'
+                message='Index template event triggers for: %s'
             ) % self.external_object
         }
 
@@ -284,7 +286,7 @@ class IndexTemplateNodeListView(
             'hide_object': True,
             'object': self.external_object,
             'title': _(
-                'Tree template nodes for index: %s'
+                message='Tree template nodes for index: %s'
             ) % self.external_object
         }
 
@@ -337,7 +339,7 @@ class IndexTemplateNodeDeleteView(SingleObjectDeleteView):
             'navigation_object_list': ('index', 'node'),
             'node': self.object,
             'title': _(
-                'Delete the index template node: %s?'
+                message='Delete the index template node: %s?'
             ) % self.object
         }
 
@@ -362,7 +364,7 @@ class IndexTemplateNodeEditView(SingleObjectEditView):
             'navigation_object_list': ('index', 'node'),
             'node': self.object,
             'title': _(
-                'Edit the index template node: %s'
+                message='Edit the index template node: %s'
             ) % self.object
         }
 
@@ -476,7 +478,8 @@ class IndexTemplateResetView(FormView):
     def get_form_extra_kwargs(self):
         return {
             'help_text': _(
-                'Index templates for which their instances will be deleted.'
+                message='Index templates for which their instances will be '
+                'deleted.'
             ),
             'user': self.request.user
         }

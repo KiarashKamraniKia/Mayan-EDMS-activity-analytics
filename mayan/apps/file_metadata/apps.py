@@ -133,13 +133,13 @@ class FileMetadataApp(MayanAppConfig):
 
         ModelProperty(
             description=_(
-                'Return the value of a specific file metadata.'
+                message='Return the value of a specific file metadata.'
             ), label=_(message='File metadata value of'), model=Document,
             name='file_metadata_value_of.< underscore separated driver name and property name >'
         )
         ModelProperty(
             description=_(
-                'Return the value of a specific file metadata.'
+                message='Return the value of a specific file metadata.'
             ), label=_(message='File metadata value of'), model=DocumentFile,
             name='file_metadata_value_of.< underscore separated driver name and property name >'
         )
@@ -165,21 +165,21 @@ class FileMetadataApp(MayanAppConfig):
             source=DocumentFileDriverEntry
         )
         SourceColumn(
-            attribute='label', include_label=True, label=_('Label'),
+            attribute='label', include_label=True, label=_(message='Label'),
             source=FileMetadataDriver
         )
         SourceColumn(
             attribute='get_mime_type_list_display', include_label=True,
-            label=_('MIME types'),
+            label=_(message='MIME types'),
             source=FileMetadataDriver
         )
         SourceColumn(
             attribute='internal_name', include_label=True,
-            label=_('Internal name'), source=FileMetadataDriver
+            label=_(message='Internal name'), source=FileMetadataDriver
         )
         SourceColumn(
             attribute='description', include_label=True,
-            label=_('Description'), source=FileMetadataDriver
+            label=_(message='Description'), source=FileMetadataDriver
         )
 
         menu_tools.bind_links(

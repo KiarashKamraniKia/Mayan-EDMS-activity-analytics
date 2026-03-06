@@ -58,12 +58,13 @@ class DocumentFile(
     )
     timestamp = models.DateTimeField(
         auto_now_add=True, db_index=True, help_text=_(
-            'The server date and time when the document file was processed.'
+            message='The server date and time when the document file was '
+            'processed.'
         ), verbose_name=_(message='Timestamp')
     )
     comment = models.TextField(
         blank=True, default='', help_text=_(
-            'An optional short text describing the document file.'
+            message='An optional short text describing the document file.'
         ), verbose_name=_(message='Comment')
     )
     # File related fields.
@@ -76,7 +77,7 @@ class DocumentFile(
     )
     mimetype = models.CharField(
         blank=True, editable=False, help_text=_(
-            'The document file\'s file mimetype. MIME types are a '
+            message='The document file\'s file mimetype. MIME types are a '
             'standard way to describe the format of a file, in this case '
             'the file format of the document. Some examples: "text/plain" '
             'or "image/jpeg". '
@@ -84,8 +85,8 @@ class DocumentFile(
     )
     encoding = models.CharField(
         blank=True, editable=False, help_text=_(
-            'The document file file encoding. binary 7-bit, binary 8-bit, '
-            'text, base64, etc.'
+            message='The document file file encoding. binary 7-bit, binary '
+            '8-bit, text, base64, etc.'
         ), max_length=64, null=True, verbose_name=_(message='Encoding')
     )
     checksum = models.CharField(

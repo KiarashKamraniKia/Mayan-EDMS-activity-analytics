@@ -38,12 +38,12 @@ class WorkflowStateAction(
     when = models.PositiveIntegerField(
         choices=WORKFLOW_ACTION_WHEN_CHOICES,
         default=WORKFLOW_ACTION_ON_ENTRY, help_text=_(
-            'At which moment of the state this action will execute.'
+            message='At which moment of the state this action will execute.'
         ), verbose_name=_(message='When')
     )
     condition = models.TextField(
         blank=True, help_text=_(
-            'The condition that will determine if this state action '
+            message='The condition that will determine if this state action '
             'is executed or not. The condition is evaluated against the '
             'workflow instance. Conditions that do not return any value, '
             'that return the Python logical None, or an empty string (\'\') '

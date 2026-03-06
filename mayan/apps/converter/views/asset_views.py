@@ -49,7 +49,7 @@ class AssetDeleteView(MultipleObjectConfirmActionView):
     post_action_redirect = reverse_lazy(viewname='converter:asset_list')
     success_asset = _(message='Delete request performed on %(count)d asset')
     success_asset_plural = _(
-        'Delete request performed on %(count)d assets'
+        message='Delete request performed on %(count)d assets'
     )
     view_icon = icon_asset_delete
 
@@ -80,7 +80,7 @@ class AssetDeleteView(MultipleObjectConfirmActionView):
             instance.delete()
             messages.success(
                 message=_(
-                    'Asset "%s" deleted successfully.'
+                    message='Asset "%s" deleted successfully.'
                 ) % instance, request=self.request
             )
         except Exception as exception:
@@ -141,8 +141,8 @@ class AssetListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'Assets are files that can be used in conjunction with '
-                'certain transformations.'
+                message='Assets are files that can be used in conjunction '
+                'with certain transformations.'
             ),
             'no_results_title': _(message='No assets available'),
             'title': _(message='Assets')

@@ -35,32 +35,33 @@ class WorkflowStateEscalation(
     )
     priority = models.IntegerField(
         blank=True, db_index=True, default=0, help_text=_(
-            'Determine the order in which the escalations will be '
+            message='Determine the order in which the escalations will be '
             'evaluated. Escalations with a lower priority number are '
             'executed before escalations with a higher priority number.'
         ), verbose_name=_(message='Priority')
     )
     enabled = models.BooleanField(
         default=True, help_text=_(
-            'Enable automatic transition the workflow after a specified '
-            'amount of time has elapsed in the state without change.'
+            message='Enable automatic transition the workflow after a '
+            'specified amount of time has elapsed in the state without '
+            'change.'
         ), verbose_name=_(message='Enabled')
     )
     unit = models.CharField(
         blank=True, choices=TIME_DELTA_UNIT_CHOICES,
         default=TIME_DELTA_UNIT_DAYS, max_length=32, verbose_name=_(
-            'Time unit'
+            message='Time unit'
         )
     )
     amount = models.PositiveIntegerField(
         blank=True, default=1, help_text=_(
-            'Amount of the selected escalation units of time.'
+            message='Amount of the selected escalation units of time.'
         ), verbose_name=_(message='Amount')
     )
     comment = models.TextField(
         blank=True, help_text=_(
-            'Comment to save to the workflow instance when the escalation '
-            'is executed.'
+            message='Comment to save to the workflow instance when the '
+            'escalation is executed.'
         ), verbose_name=_(message='Comment')
     )
 

@@ -44,7 +44,7 @@ class SignatureBaseModel(SignatureBaseModelBusinessLogicMixin, models.Model):
     # Basic fields
     date_time = models.DateTimeField(
         blank=True, editable=False, null=True, verbose_name=_(
-            'Date and time signed'
+            message='Date and time signed'
         )
     )
     key_id = models.CharField(
@@ -83,7 +83,7 @@ class SignatureBaseModel(SignatureBaseModelBusinessLogicMixin, models.Model):
 class DetachedSignature(ExtraDataModelMixin, SignatureBaseModel):
     signature_file = models.FileField(
         blank=True, help_text=_(
-            'Signature file previously generated.'
+            message='Signature file previously generated.'
         ), null=True, storage=DefinedStorageLazy(
             name=STORAGE_NAME_DOCUMENT_SIGNATURES_DETACHED_SIGNATURE
         ), upload_to=upload_to, verbose_name=_(message='Signature file')

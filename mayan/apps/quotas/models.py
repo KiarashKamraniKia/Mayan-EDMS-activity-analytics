@@ -13,7 +13,7 @@ from .model_mixins import QuotaBusinessModelMixin
 class Quota(ExtraDataModelMixin, QuotaBusinessModelMixin, models.Model):
     backend_path = models.CharField(
         max_length=255, help_text=_(
-            'The dotted Python path to the backend class.'
+            message='The dotted Python path to the backend class.'
         ), verbose_name=_(message='Backend path')
     )
     backend_data = models.TextField(
@@ -21,7 +21,7 @@ class Quota(ExtraDataModelMixin, QuotaBusinessModelMixin, models.Model):
     )
     enabled = models.BooleanField(
         default=True, help_text=_(
-            'Allow quick disable or enable of the quota.'
+            message='Allow quick disable or enable of the quota.'
         ), verbose_name=_(message='Enabled')
     )
 

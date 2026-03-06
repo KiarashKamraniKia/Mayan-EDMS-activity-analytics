@@ -49,19 +49,19 @@ logger = logging.getLogger(name=__name__)
 
 class DocumentFileDeleteView(MultipleObjectDeleteView):
     error_message = _(
-        'Error deleting document file "%(instance)s"; %(exception)s'
+        message='Error deleting document file "%(instance)s"; %(exception)s'
     )
     object_permission = permission_document_file_delete
     pk_url_kwarg = 'document_file_id'
     source_queryset = DocumentFile.valid.all()
     success_message_single = _(
-        'Document file "%(object)s" deletion queued successfully.'
+        message='Document file "%(object)s" deletion queued successfully.'
     )
     success_message_singular = _(
-        '%(count)d document file deletion queued successfully.'
+        message='%(count)d document file deletion queued successfully.'
     )
     success_message_plural = _(
-        '%(count)d document files deletions queued successfully.'
+        message='%(count)d document files deletions queued successfully.'
     )
     title_single = _(message='Delete document file: %(object)s.')
     title_singular = _(message='Delete the %(count)d selected document file.')
@@ -71,9 +71,10 @@ class DocumentFileDeleteView(MultipleObjectDeleteView):
     def get_extra_context(self):
         context = {
             'message': _(
-                'All document files pages from this document file and the '
-                'document version pages linked to them will be deleted too. '
-                'The process will be performed in the background.'
+                message='All document files pages from this document file '
+                'and the document version pages linked to them will be '
+                'deleted too. The process will be performed in the '
+                'background.'
             )
         }
 
@@ -132,10 +133,10 @@ class DocumentFileIntrospectView(MultipleObjectConfirmActionView):
     pk_url_kwarg = 'document_file_id'
     source_queryset = DocumentFile.valid.all()
     success_message = _(
-        '%(count)d document file queued for introspection.'
+        message='%(count)d document file queued for introspection.'
     )
     success_message_plural = _(
-        '%(count)d document files queued for introspection.'
+        message='%(count)d document files queued for introspection.'
     )
     view_icon = icon_document_file_introspect
 
@@ -155,14 +156,14 @@ class DocumentFileIntrospectView(MultipleObjectConfirmActionView):
                 {
                     'object': queryset.first(),
                     'title': _(
-                        'Introspect the document file: %s?'
+                        message='Introspect the document file: %s?'
                     ) % queryset.first()
                 }
             )
 
         result['message'] = _(
-            'The document file will be re-examined for file size, page '
-            'count, checksum, and its related document version pages '
+            message='The document file will be re-examined for file size, '
+            'page count, checksum, and its related document version pages '
             're-created. All transformations will be lost.'
         )
 
@@ -190,9 +191,9 @@ class DocumentFileListView(ExternalObjectViewMixin, SingleObjectListView):
         context = {
             'no_results_icon': icon_document_file_list,
             'no_results_text': _(
-                'File are the actual files that were uploaded for each '
-                'document. Their contents needs to be mapped to a version '
-                'before it can be used.'
+                message='File are the actual files that were uploaded for '
+                'each document. Their contents needs to be mapped to a '
+                'version before it can be used.'
             ),
             'no_results_title': _(message='No files available')
         }
@@ -324,10 +325,12 @@ class DocumentFileTransformationsClearView(MultipleObjectConfirmActionView):
     pk_url_kwarg = 'document_file_id'
     source_queryset = DocumentFile.valid.all()
     success_message = _(
-        'Transformation clear request processed for %(count)d document file.'
+        message='Transformation clear request processed for %(count)d '
+        'document file.'
     )
     success_message_plural = _(
-        'Transformation clear request processed for %(count)d document files.'
+        message='Transformation clear request processed for %(count)d '
+        'document files.'
     )
     view_icon = icon_document_file_transformation_list_clear
 
@@ -345,7 +348,7 @@ class DocumentFileTransformationsClearView(MultipleObjectConfirmActionView):
                 {
                     'object': self.object_list.first(),
                     'title': _(
-                        'Clear all the page transformations for the '
+                        message='Clear all the page transformations for the '
                         'document file: %s?'
                     ) % self.object_list.first()
                 }
@@ -362,7 +365,7 @@ class DocumentFileTransformationsClearView(MultipleObjectConfirmActionView):
         except Exception as exception:
             messages.error(
                 message=_(
-                    'Error deleting the page transformations for '
+                    message='Error deleting the page transformations for '
                     'document file: %(document_file)s; %(error)s.'
                 ) % {
                     'document_file': instance, 'error': exception
@@ -399,7 +402,7 @@ class DocumentFileTransformationsCloneView(ExternalObjectViewMixin, FormView):
             else:
                 messages.error(
                     message=_(
-                        'Error cloning the page transformations for '
+                        message='Error cloning the page transformations for '
                         'document file: %(document_file)s; %(error)s.'
                     ) % {
                         'document_file': self.external_object,
@@ -423,7 +426,7 @@ class DocumentFileTransformationsCloneView(ExternalObjectViewMixin, FormView):
         context = {
             'object': self.external_object,
             'title': _(
-                'Clone page transformations of document file: %s'
+                message='Clone page transformations of document file: %s'
             ) % self.external_object
         }
 

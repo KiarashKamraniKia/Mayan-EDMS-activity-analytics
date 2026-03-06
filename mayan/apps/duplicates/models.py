@@ -36,7 +36,7 @@ class DuplicateBackendEntry(models.Model):
     )
     documents = models.ManyToManyField(
         related_name='as_duplicate', to=Document, verbose_name=_(
-            'Duplicated documents'
+            message='Duplicated documents'
         )
     )
 

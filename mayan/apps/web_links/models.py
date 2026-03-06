@@ -25,8 +25,8 @@ class WebLink(ExtraDataModelMixin, WebLinkBusinessLogicMixin, models.Model):
     )
     template = models.TextField(
         help_text=_(
-            'Template that will be used to craft the final URL of the '
-            'web link.'
+            message='Template that will be used to craft the final URL of '
+            'the web link.'
         ), verbose_name=_(message='Template')
     )
     enabled = models.BooleanField(

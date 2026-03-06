@@ -56,8 +56,8 @@ class SearchBackendReindexView(ConfirmView):
     def get_extra_context(self):
         context = {
             'subtitle': _(
-                'This tool erases and populates the search backend\'s '
-                'internal index.'
+                message='This tool erases and populates the search '
+                'backend\'s internal index.'
             ),
             'title': _(message='Reindex search backend')
         }
@@ -66,14 +66,14 @@ class SearchBackendReindexView(ConfirmView):
 
         if search_backend_class.feature_reindex:
             context['message'] = _(
-                'This tool is required only for some search backends. '
-                'Search results will be affected while the backend is '
-                'being reindexed.'
+                message='This tool is required only for some search '
+                'backends. Search results will be affected while the backend '
+                'is being reindexed.'
             )
         else:
             context['message'] = _(
-                'The currently selected search backend does not support or '
-                'requires reindexing.'
+                message='The currently selected search backend does not '
+                'support or requires reindexing.'
             )
 
         return context
@@ -136,7 +136,7 @@ class SearchAdvancedView(SearchSimpleView):
         context.update(
             {
                 'title': _(
-                    'Advanced search for: %s'
+                    message='Advanced search for: %s'
                 ) % self.search_model.label
             }
         )
@@ -171,12 +171,12 @@ class SearchResultsView(
                 )
             ),
             'no_results_text': _(
-                'Try again using different terms. '
+                message='Try again using different terms. '
             ),
             'no_results_title': _(message='No search results'),
             'search_model': self.search_model,
             'subtitle': _(
-                'Search query: %s'
+                message='Search query: %s'
             ) % self.search_interpreter.to_explain(),
             'title': _(message='Search results for: %s') % self.search_model.label
         }

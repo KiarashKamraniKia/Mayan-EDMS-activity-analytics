@@ -71,7 +71,7 @@ class DocumentResolvedSmartLinkDocumentListView(
             else:
                 messages.error(
                     message=_(
-                        'Resolved smart link query error: %s' % exception
+                        message='Resolved smart link query error: %s' % exception
                     ), request=self.request
                 )
 
@@ -98,13 +98,13 @@ class DocumentResolvedSmartLinkDocumentListView(
             else:
                 messages.error(
                     message=_(
-                        'Resolved smart link dynamic label error: %s' % exception
+                        message='Resolved smart link dynamic label error: %s' % exception
                     ), request=self.request
                 )
 
         title = _(
-            'Documents in resolved smart link "%(resolved_smart_link)s" for '
-            '"%(document)s"'
+            message='Documents in resolved smart link '
+            '"%(resolved_smart_link)s" for "%(document)s"'
         ) % {
             'document': self.external_object,
             'resolved_smart_link': resolved_smart_link_label
@@ -145,14 +145,14 @@ class SmartLinkListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'Indexes group documents into units, usually with similar '
-                'properties and of equal or similar types. Smart links '
-                'allow defining relationships between documents even '
+                message='Indexes group documents into units, usually with '
+                'similar properties and of equal or similar types. Smart '
+                'links allow defining relationships between documents even '
                 'if they are in different indexes and are of different '
                 'types.'
             ),
             'no_results_title': _(
-                'There are no smart links'
+                message='There are no smart links'
             ),
             'title': _(message='Smart links')
         }
@@ -174,16 +174,16 @@ class DocumentResolvedSmartLinkListView(
             'hide_object': True,
             'no_results_icon': icon_smart_link_setup,
             'no_results_text': _(
-                'Smart links allow defining relationships between '
+                message='Smart links allow defining relationships between '
                 'documents even if they are in different indexes and '
                 'are of different types.'
             ),
             'no_results_title': _(
-                'There are no resolved smart links for this document'
+                message='There are no resolved smart links for this document'
             ),
             'object': self.external_object,
             'title': _(
-                'Resolved smart links for document: %s'
+                message='Resolved smart links for document: %s'
             ) % self.external_object
         }
 
@@ -213,7 +213,7 @@ class DocumentTypeSmartLinkAddRemoveView(AddRemoveView):
         return {
             'object': self.main_object,
             'title': _(
-                'Smart links to enable for document type: %s'
+                message='Smart links to enable for document type: %s'
             ) % self.main_object
         }
 
@@ -238,7 +238,7 @@ class SmartLinkDocumentTypeAddRemoveView(AddRemoveView):
         return {
             'object': self.main_object,
             'title': _(
-                'Document type for which to enable smart link: %s'
+                message='Document type for which to enable smart link: %s'
             ) % self.main_object
         }
 

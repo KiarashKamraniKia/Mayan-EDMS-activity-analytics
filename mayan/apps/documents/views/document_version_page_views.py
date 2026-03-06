@@ -53,8 +53,8 @@ class DocumentVersionPageDeleteView(SingleObjectDeleteView):
     def get_extra_context(self):
         return {
             'message': _(
-                'The page number of this page will be skipped. If you '
-                'want to achieve sequential page numbering, use the '
+                message='The page number of this page will be skipped. If '
+                'you want to achieve sequential page numbering, use the '
                 'page remap action instead.'
             ),
             'object': self.object,
@@ -99,16 +99,16 @@ class DocumentVersionPageListView(
                 ),
             ),
             'no_results_text': _(
-                'Document version pages are links to actual content pages. '
-                'Create them using the page remap actions or the version '
-                'modification action.'
+                message='Document version pages are links to actual content '
+                'pages. Create them using the page remap actions or the '
+                'version modification action.'
             ),
             'no_results_title': _(
                 message='No document version pages available'
             ),
             'object': self.external_object,
             'title': _(
-                'Pages of document version: %s'
+                message='Pages of document version: %s'
             ) % self.external_object
         }
 
@@ -187,13 +187,13 @@ class DocumentVersionPageListRemapView(ExternalObjectViewMixin, FormView):
             'list_as_items': True,
             'no_results_icon': icon_document_version_page_list_remap,
             'no_results_text': _(
-                'There are no sources available to remap for this document '
-                'version.'
+                message='There are no sources available to remap for this '
+                'document version.'
             ),
             'no_results_title': _(message='No page sources available'),
             'object': self.external_object,
             'title': _(
-                'Remap pages of document version: %s'
+                message='Remap pages of document version: %s'
             ) % self.external_object
         }
 
@@ -312,7 +312,7 @@ class DocumentVersionPageNavigationNext(DocumentVersionPageNavigationBase):
         else:
             messages.warning(
                 message=_(
-                    'There are no more pages in this document'
+                    message='There are no more pages in this document'
                 ), request=self.request
             )
             return {'document_version_page_id': self.external_object.pk}
@@ -328,7 +328,7 @@ class DocumentVersionPageNavigationPrevious(DocumentVersionPageNavigationBase):
         else:
             messages.warning(
                 message=_(
-                    'You are already at the first page of this document'
+                    message='You are already at the first page of this document'
                 ), request=self.request
             )
             return {'document_version_page_id': self.external_object.pk}

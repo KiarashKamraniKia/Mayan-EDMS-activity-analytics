@@ -38,12 +38,13 @@ class Message(ExtraDataModelMixin, MessageBusinessLogicMixin, models.Model):
     )
     read = models.BooleanField(
         default=False, help_text=_(
-            'This field determines if the message has been read or not.'
+            message='This field determines if the message has been read or '
+            'not.'
         ), verbose_name=_(message='Read')
     )
     date_time = models.DateTimeField(
         auto_now_add=True, help_text=_(
-            'Date and time of the message creation.'
+            message='Date and time of the message creation.'
         ), verbose_name=_(message='Creation date and time')
     )
 

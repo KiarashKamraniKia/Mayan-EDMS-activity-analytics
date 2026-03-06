@@ -18,7 +18,7 @@ from .model_mixins import (
 class Cache(CacheBusinessLogicMixin, ValueChangeModelMixin, models.Model):
     defined_storage_name = models.CharField(
         db_index=True, help_text=_(
-            'Internal name of the defined storage for this cache.'
+            message='Internal name of the defined storage for this cache.'
         ), max_length=96, unique=True, verbose_name=_(
             message='Defined storage name'
         )
@@ -117,7 +117,7 @@ class CachePartitionFile(CachePartitionFileBusinessLogicMixin, models.Model):
     )
     hits = models.PositiveIntegerField(
         db_index=True, default=0, help_text=_(
-            'Times this cache partition file has been accessed.'
+            message='Times this cache partition file has been accessed.'
         ), verbose_name='Hits'
     )
 

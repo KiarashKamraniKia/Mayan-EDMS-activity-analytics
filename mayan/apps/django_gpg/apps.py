@@ -71,7 +71,7 @@ class DjangoGPGApp(MayanAppConfig):
         )
         SourceColumn(
             func=lambda context: context['object'].expires or _(
-                'No expiration'
+                message='No expiration'
             ), include_label=True, label=_(message='Expiration date'),
             source=KeyStub
         )

@@ -11,7 +11,7 @@ from .settings import (
 storage_source_cache = DefinedStorage(
     dotted_path=setting_source_cache_storage_backend.value,
     error_message=_(
-        'Unable to initialize the staging folder file image '
+        message='Unable to initialize the staging folder file image '
         'storage. Check the settings {} and {} for formatting '
         'errors.'.format(
             setting_source_cache_storage_backend.global_name,

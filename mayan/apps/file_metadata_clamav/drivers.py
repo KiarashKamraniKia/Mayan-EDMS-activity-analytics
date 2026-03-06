@@ -16,7 +16,7 @@ logger = logging.getLogger(name=__name__)
 
 
 class ClamScanDriver(FileMetadataDriver):
-    description = _('Command line anti-virus scanner.')
+    description = _(message='Command line anti-virus scanner.')
     label = _(message='ClamScan')
     internal_name = 'clamscan'
     mime_type_list = ('*',)

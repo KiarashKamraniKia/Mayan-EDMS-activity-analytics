@@ -76,7 +76,7 @@ class TransformationCreateView(
             'layer_name': self.layer.name,
             'navigation_object_list': ('content_object',),
             'title': _(
-                'Create layer "%(layer)s" transformation '
+                message='Create layer "%(layer)s" transformation '
                 '"%(transformation)s" for: %(object)s'
             ) % {
                 'layer': self.layer,
@@ -128,7 +128,7 @@ class TransformationDeleteView(
             'navigation_object_list': ('content_object', 'transformation'),
             'previous': self.get_post_action_redirect(),
             'title': _(
-                'Delete transformation "%(transformation)s" for: '
+                message='Delete transformation "%(transformation)s" for: '
                 '%(content_object)s?'
             ) % {
                 'transformation': self.object,
@@ -190,7 +190,7 @@ class TransformationEditView(
             'layer_name': self.layer.name,
             'navigation_object_list': ('content_object', 'transformation'),
             'title': _(
-                'Edit transformation "%(transformation)s" '
+                message='Edit transformation "%(transformation)s" '
                 'for: %(content_object)s'
             ) % {
                 'transformation': self.object,
@@ -246,10 +246,10 @@ class TransformationListView(
             ),
             'no_results_text': self.layer.get_empty_results_text(),
             'no_results_title': _(
-                'There are no entries for layer "%(layer_name)s"'
+                message='There are no entries for layer "%(layer_name)s"'
             ) % {'layer_name': self.layer.label},
             'title': _(
-                'Layer "%(layer)s" transformations for: %(object)s'
+                message='Layer "%(layer)s" transformations for: %(object)s'
             ) % {
                 'layer': self.layer,
                 'object': self.external_object
@@ -321,7 +321,7 @@ class TransformationSelectView(
             'navigation_object_list': ('content_object',),
             'submit_label': _(message='Select'),
             'title': _(
-                'Select new layer "%(layer)s" transformation '
+                message='Select new layer "%(layer)s" transformation '
                 'for: %(object)s'
             ) % {
                 'layer': self.layer,

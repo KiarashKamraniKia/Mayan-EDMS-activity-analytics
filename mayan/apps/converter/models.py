@@ -38,7 +38,7 @@ class Asset(AssetBusinessLogicMixin, ExtraDataModelMixin, models.Model):
     )
     internal_name = models.CharField(
         db_index=True, help_text=_(
-            'This value will be used when referencing this asset. '
+            message='This value will be used when referencing this asset. '
             'Can only contain letters, numbers, and underscores.'
         ), max_length=255, unique=True, validators=[validate_internal_name],
         verbose_name=_(message='Internal name')
@@ -153,8 +153,8 @@ class LayerTransformation(
     )
     order = models.PositiveIntegerField(
         blank=True, db_index=True, default=0, help_text=_(
-            'Order in which the transformations will be executed. If left '
-            'unchanged, an automatic order value will be assigned.'
+            message='Order in which the transformations will be executed. '
+            'If left unchanged, an automatic order value will be assigned.'
         ), verbose_name=_(message='Order')
     )
     name = models.CharField(
@@ -162,7 +162,7 @@ class LayerTransformation(
     )
     arguments = models.TextField(
         blank=True, help_text=_(
-            'Enter the arguments for the transformation as a YAML '
+            message='Enter the arguments for the transformation as a YAML '
             'dictionary. ie: {"degrees": 180}'
         ), validators=[
             YAMLValidator()

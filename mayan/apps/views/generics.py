@@ -165,12 +165,12 @@ class AddRemoveView(
 ):
     form_classes = {'form_available': ChoiceForm, 'form_added': ChoiceForm}
     list_added_help_text = _(
-        'Select entries to be removed. Hold Control to select multiple '
-        'entries. Once the selection is complete, click the button below '
-        'or double click the list to activate the action.'
+        message='Select entries to be removed. Hold Control to select '
+        'multiple entries. Once the selection is complete, click the button '
+        'below or double click the list to activate the action.'
     )
     list_available_help_text = _(
-        'Select entries to be added. Hold Control to select multiple '
+        message='Select entries to be added. Hold Control to select multiple '
         'entries. Once the selection is complete, click the button below '
         'or double click the list to activate the action.'
     )
@@ -578,7 +578,7 @@ class RelationshipView(FormView):
         except Exception as exception:
             messages.error(
                 message=_(
-                    'Error updating relationship; %s'
+                    message='Error updating relationship; %s'
                 ) % exception, request=self.request
             )
             if settings.DEBUG or settings.TESTING:
@@ -648,7 +648,7 @@ class SingleObjectCreateView(
             context = self.get_context_data()
 
             error_message = self.get_error_message_duplicate() or _(
-                'Duplicate data error: %(error)s'
+                message='Duplicate data error: %(error)s'
             ) % {
                 'error': '\n'.join(exception.messages)
             }
@@ -678,7 +678,7 @@ class SingleObjectCreateView(
 
             messages.success(
                 message=_(
-                    '%(object)s created successfully.'
+                    message='%(object)s created successfully.'
                 ) % {
                     'object': self.get_object_name(context=context)
                 }, request=self.request
@@ -722,7 +722,7 @@ class SingleObjectDeleteView(
         except Exception as exception:
             messages.error(
                 message=_(
-                    '%(object)s not deleted, error: %(error)s.'
+                    message='%(object)s not deleted, error: %(error)s.'
                 ) % {
                     'error': exception,
                     'object': object_name
@@ -732,7 +732,7 @@ class SingleObjectDeleteView(
         else:
             messages.success(
                 message=_(
-                    '%(object)s deleted successfully.'
+                    message='%(object)s deleted successfully.'
                 ) % {
                     'object': object_name
                 }, request=self.request
@@ -795,7 +795,7 @@ class SingleObjectDetailView(
             else:
                 messages.error(
                     message=_(
-                        'Error retrieving %(object)s; %(error)s'
+                        message='Error retrieving %(object)s; %(error)s'
                     ) % {
                         'error': exception,
                         'object': self.get_object_name(
@@ -907,7 +907,7 @@ class SingleObjectEditView(
             else:
                 messages.error(
                     message=_(
-                        '%(object)s not updated, error: %(error)s.'
+                        message='%(object)s not updated, error: %(error)s.'
                     ) % {
                         'error': exception,
                         'object': object_name
@@ -917,7 +917,7 @@ class SingleObjectEditView(
         else:
             messages.success(
                 message=_(
-                    '%(object)s updated successfully.'
+                    message='%(object)s updated successfully.'
                 ) % {
                     'object': object_name
                 }, request=self.request

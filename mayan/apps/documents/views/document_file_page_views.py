@@ -52,9 +52,9 @@ class DocumentFilePageListView(
                 request=self.request, resolved_object=self.external_object
             ),
             'no_results_text': _(
-                'This could mean that the document file is of a format that '
-                'is not supported, that it is corrupted, or that the upload '
-                'process was interrupted. Use the document file '
+                message='This could mean that the document file is of a '
+                'format that is not supported, that it is corrupted, or that '
+                'the upload process was interrupted. Use the document file '
                 'introspection link to attempt detection the page '
                 'count again.'
             ),
@@ -141,7 +141,7 @@ class DocumentFilePageNavigationNext(DocumentFilePageNavigationBase):
         else:
             messages.warning(
                 message=_(
-                    'There are no more pages in this document'
+                    message='There are no more pages in this document'
                 ), request=self.request
             )
             return {'document_file_page_id': self.external_object.pk}
@@ -157,7 +157,8 @@ class DocumentFilePageNavigationPrevious(DocumentFilePageNavigationBase):
         else:
             messages.warning(
                 message=_(
-                    'You are already at the first page of this document'
+                    message='You are already at the first page of this '
+                    'document'
                 ), request=self.request
             )
             return {'document_file_page_id': self.external_object.pk}

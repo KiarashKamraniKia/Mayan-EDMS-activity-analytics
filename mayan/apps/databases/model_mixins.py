@@ -23,7 +23,7 @@ class ExtraDataModelMixin:
 class ModelMixinConditionField(models.Model):
     condition = models.TextField(
         blank=True, help_text=_(
-            'The condition that will determine if this object '
+            message='The condition that will determine if this object '
             'is executed or not. Conditions that do not return any value, '
             'that return the Python logical None, or an empty string (\'\') '
             'are considered to be logical false, any other value is '
@@ -49,7 +49,7 @@ class ModelMixinConditionField(models.Model):
         else:
             return False
     has_condition.help_text = _(
-        'The object will be executed, depending on the condition '
+        message='The object will be executed, depending on the condition '
         'return value.'
     )
     has_condition.short_description = _(message='Has a condition?')

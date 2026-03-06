@@ -17,8 +17,8 @@ class ImagePasteTransformationMixin:
     class Form(Form):
         rotation = forms.IntegerField(
             help_text=_(
-                'Number of degrees to rotate the image counter clockwise '
-                'around its center.'
+                message='Number of degrees to rotate the image counter '
+                'clockwise around its center.'
             ), label=_(message='Rotation'), required=False
         )
         transparency = forms.FloatField(
@@ -226,7 +226,7 @@ class ImageWatermarkPercentTransformationMixin(
     class Form(ImagePasteTransformationMixin.Form):
         left = forms.IntegerField(
             help_text=_(
-                'Horizontal start position in pixels from the left.'
+                message='Horizontal start position in pixels from the left.'
             ), label=_(message='Left'), required=False
         )
         right = forms.IntegerField(

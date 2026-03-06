@@ -25,7 +25,7 @@ class UserOTPDataDetailView(
         return {
             'object': self.object,
             'title': _(
-                'One time pad details for user: %s'
+                message='One time pad details for user: %s'
             ) % self.object
         }
 
@@ -42,7 +42,7 @@ class UserOTPDataDisableView(OTPBackendEnabledViewMixin, ConfirmView):
         return {
             'object': self.object,
             'title': _(
-                'Disable one time pad for user: %s'
+                message='Disable one time pad for user: %s'
             ) % self.object
         }
 
@@ -102,7 +102,7 @@ class UserOTPDataVerifyTokenView(OTPBackendEnabledViewMixin, FormView):
         return {
             'object': self.object,
             'title': _(
-                'Enable one time pad for user: %s'
+                message='Enable one time pad for user: %s'
             ) % self.object
         }
 
@@ -114,7 +114,7 @@ class UserOTPDataVerifyTokenView(OTPBackendEnabledViewMixin, FormView):
         except BadSignature:
             messages.error(
                 message=_(
-                    'OTP secret validation error.'
+                    message='OTP secret validation error.'
                 ), request=self.request
             )
             secret = None

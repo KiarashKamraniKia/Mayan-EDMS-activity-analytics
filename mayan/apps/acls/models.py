@@ -51,7 +51,8 @@ class AccessControlList(
     )
     role = models.ForeignKey(
         help_text=_(
-            'Role to which the access is granted for the specified object.'
+            message='Role to which the access is granted for the specified '
+            'object.'
         ), on_delete=models.CASCADE, related_name='acls', to=Role,
         verbose_name=_(message='Role')
     )
@@ -66,7 +67,7 @@ class AccessControlList(
 
     def __str__(self):
         return _(
-            'Role "%(role)s" permission\'s for "%(object)s"'
+            message='Role "%(role)s" permission\'s for "%(object)s"'
         ) % {
             'object': self.content_object,
             'role': self.role

@@ -46,7 +46,8 @@ class WorkflowTemplateStateEscalationSerializer(serializers.HyperlinkedModelSeri
     )
     workflow_template_transition_id = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the workflow template transition to be added.'
+            message='Primary key of the workflow template transition to be '
+            'added.'
         ), label=_(message='Workflow template transition ID'),
         source='transition_id',
         source_queryset_method='get_workflow_template_transition_queryset'

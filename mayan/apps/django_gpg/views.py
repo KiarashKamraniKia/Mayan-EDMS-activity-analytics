@@ -106,7 +106,7 @@ class KeyReceive(ConfirmView):
         except Exception as exception:
             messages.error(
                 message=_(
-                    'Unable to import key: %(key_id)s; %(error)s'
+                    message='Unable to import key: %(key_id)s; %(error)s'
                 ) % {
                     'key_id': self.kwargs['key_id'],
                     'error': exception,
@@ -132,11 +132,11 @@ class KeyQueryResultView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'Use names, last names, key ids or emails to search '
+                message='Use names, last names, key ids or emails to search '
                 'public keys to import from the keyserver.'
             ),
             'no_results_title': _(
-                'No results returned'
+                message='No results returned'
             ),
             'title': _(message='Key query results')
         }
@@ -205,12 +205,12 @@ class PrivateKeyListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'Private keys are used to signed documents. '
+                message='Private keys are used to signed documents. '
                 'Private keys can only be uploaded by the user. '
                 'The view to upload private and public keys is the same.'
             ),
             'no_results_title': _(
-                'There no private keys'
+                message='There no private keys'
             ),
             'title': _(message='Private keys')
         }
@@ -229,13 +229,13 @@ class PublicKeyListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                'Public keys are used to verify signed documents. '
+                message='Public keys are used to verify signed documents. '
                 'Public keys can be uploaded by the user or downloaded '
                 'from keyservers. The view to upload private and public '
                 'keys is the same.'
             ),
             'no_results_title': _(
-                'There no public keys'
+                message='There no public keys'
             ),
             'title': _(message='Public keys')
         }

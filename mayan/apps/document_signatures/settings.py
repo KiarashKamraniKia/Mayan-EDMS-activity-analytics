@@ -17,13 +17,13 @@ setting_namespace = setting_cluster.do_namespace_add(
 setting_storage_backend = setting_namespace.do_setting_add(
     default=DEFAULT_SIGNATURES_STORAGE_BACKEND,
     global_name='SIGNATURES_STORAGE_BACKEND', help_text=_(
-        'Path to the Storage subclass to use when storing detached '
+        message='Path to the Storage subclass to use when storing detached '
         'signatures.'
     )
 )
 setting_storage_backend_arguments = setting_namespace.do_setting_add(
     default=DEFAULT_SIGNATURES_STORAGE_BACKEND_ARGUMENTS,
     global_name='SIGNATURES_STORAGE_BACKEND_ARGUMENTS', help_text=_(
-        'Arguments to pass to the SIGNATURE_STORAGE_BACKEND.'
+        message='Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`.'
     )
 )

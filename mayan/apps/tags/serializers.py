@@ -30,7 +30,7 @@ class TagSerializer(serializers.HyperlinkedModelSerializer):
 class DocumentTagAttachSerializer(serializers.Serializer):
     tag = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the tag to add to the document.'
+            message='Primary key of the tag to add to the document.'
         ), label=_(message='Tag ID'), source_model=Tag,
         source_permission=permission_tag_attach
     )
@@ -39,7 +39,7 @@ class DocumentTagAttachSerializer(serializers.Serializer):
 class DocumentTagRemoveSerializer(serializers.Serializer):
     tag = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the tag to remove from the document.'
+            message='Primary key of the tag to remove from the document.'
         ), label=_(message='Tag ID'), source_model=Tag,
         source_permission=permission_tag_remove
     )

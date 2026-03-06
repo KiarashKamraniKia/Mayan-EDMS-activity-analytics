@@ -24,7 +24,7 @@ class DocumentVersionModificationSerializer(serializers.Serializer):
 class DocumentVersionModificationExecuteSerializer(serializers.Serializer):
     backend_id = serializers.ChoiceField(
         choices=(), label=_(message='Backend ID'), help_text=_(
-            'Primary key of the modification backend to execute.'
+            message='Primary key of the modification backend to execute.'
         )
     )
 

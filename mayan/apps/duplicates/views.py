@@ -33,15 +33,15 @@ class DocumentDuplicatesListView(ExternalObjectViewMixin, DocumentListView):
             {
                 'no_results_icon': icon_duplicated_document_list,
                 'no_results_text': _(
-                    'Only exact copies of this document will be shown in the '
-                    'this list.'
+                    message='Only exact copies of this document will be '
+                    'shown in the this list.'
                 ),
                 'no_results_title': _(
-                    'There are no duplicates for this document'
+                    message='There are no duplicates for this document'
                 ),
                 'object': self.external_object,
                 'title': _(
-                    'Duplicates for document: %s'
+                    message='Duplicates for document: %s'
                 ) % self.external_object
             }
         )
@@ -67,14 +67,14 @@ class DuplicatedDocumentListView(DocumentListView):
             {
                 'no_results_icon': icon_duplicated_document_list,
                 'no_results_text': _(
-                    'Duplicates are documents that are composed of the exact '
-                    'same file, down to the last byte. Files that have the '
-                    'same text or OCR but are not identical or were saved '
-                    'using a different file format will not appear as '
+                    message='Duplicates are documents that are composed of '
+                    'the exact same file, down to the last byte. Files that '
+                    'have the same text or OCR but are not identical or were '
+                    'saved using a different file format will not appear as '
                     'duplicates.'
                 ),
                 'no_results_title': _(
-                    'There are no duplicated documents'
+                    message='There are no duplicated documents'
                 ),
                 'title': _(message='Duplicated documents')
             }

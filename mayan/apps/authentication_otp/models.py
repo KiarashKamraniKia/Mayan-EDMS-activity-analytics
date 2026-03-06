@@ -18,7 +18,7 @@ class UserOTPData(models.Model):
     )
     secret = models.CharField(
         blank=True, max_length=96, verbose_name=_(
-            '16 character, base32 encoded random string.'
+            message='16 character, base32 encoded random string.'
         )
     )
 

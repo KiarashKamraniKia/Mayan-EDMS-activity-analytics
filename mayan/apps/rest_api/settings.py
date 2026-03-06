@@ -14,18 +14,18 @@ setting_namespace = setting_cluster.do_namespace_add(
 setting_disable_links = setting_namespace.do_setting_add(
     choices=('false', 'true'), default=DEFAULT_REST_API_DISABLE_LINKS,
     global_name='REST_API_DISABLE_LINKS', help_text=_(
-        'Disable the REST API links in the tools menu.'
+        message='Disable the REST API links in the tools menu.'
     )
 )
 setting_maximum_page_size = setting_namespace.do_setting_add(
     default=DEFAULT_REST_API_MAXIMUM_PAGE_SIZE,
     global_name='REST_API_MAXIMUM_PAGE_SIZE', help_text=_(
-        'The maximum page size that can be requested.'
+        message='The maximum page size that can be requested.'
     )
 )
 setting_page_size = setting_namespace.do_setting_add(
     default=DEFAULT_REST_API_PAGE_SIZE,
     global_name='REST_API_PAGE_SIZE', help_text=_(
-        'The default page size if none is specified.'
+        message='The default page size if none is specified.'
     )
 )

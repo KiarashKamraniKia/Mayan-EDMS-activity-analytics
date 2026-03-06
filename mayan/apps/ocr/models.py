@@ -23,7 +23,7 @@ class DocumentTypeOCRSettings(ExtraDataModelMixin, models.Model):
     )
     auto_ocr = models.BooleanField(
         default=True, help_text=_(
-            'Automatically queue newly created documents for OCR.'
+            message='Automatically queue newly created documents for OCR.'
         ), verbose_name=_(message='Auto OCR')
     )
 
@@ -48,7 +48,7 @@ class DocumentVersionPageOCRContent(models.Model):
     )
     content = models.TextField(
         blank=True, help_text=_(
-            'The actual text content extracted by the OCR backend.'
+            message='The actual text content extracted by the OCR backend.'
         ), verbose_name=_(message='Content')
     )
 

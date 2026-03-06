@@ -121,9 +121,9 @@ class ActionExporter:
                 user=user,
                 subject=_(message='Events exported.'),
                 body=_(
-                    'The event list has been exported and is available '
-                    'for download using the link: %(download_url)s or from '
-                    'the downloads area (%(download_list_url)s).'
+                    message='The event list has been exported and is '
+                    'available for download using the link: %(download_url)s '
+                    'or from the downloads area (%(download_list_url)s).'
                 ) % {
                     'download_list_url': download_list_url,
                     'download_url': download_url

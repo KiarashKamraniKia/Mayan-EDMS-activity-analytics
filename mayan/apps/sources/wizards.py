@@ -65,8 +65,8 @@ class DocumentCreateWizard(ViewIconMixin, SessionWizardView):
 
         messages.error(
             message=_(
-                'No interactive document sources have been defined or '
-                'none have been enabled, create one before proceeding.'
+                message='No interactive document sources have been defined '
+                'or none have been enabled, create one before proceeding.'
             ), request=request
         )
         return HttpResponseRedirect(
@@ -82,7 +82,7 @@ class DocumentCreateWizard(ViewIconMixin, SessionWizardView):
             {
                 'form_css_classes': 'form-hotkey-enter form-hotkey-double-click',
                 'step_title': _(
-                    'Step %(step)d of %(total_steps)d: %(step_label)s'
+                    message='Step %(step)d of %(total_steps)d: %(step_label)s'
                 ) % {
                     'step': self.steps.step1,
                     'step_label': wizard_step.label,

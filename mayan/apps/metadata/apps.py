@@ -136,7 +136,7 @@ class MetadataApp(MayanAppConfig):
         ModelProperty(
             model=Document, name='metadata_value_of.< metadata type name >',
             description=_(
-                'Return the value of a specific document metadata.'
+                message='Return the value of a specific document metadata.'
             ), label=_(message='Metadata value of')
         )
 

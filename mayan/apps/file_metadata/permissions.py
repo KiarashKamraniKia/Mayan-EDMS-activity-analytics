@@ -12,7 +12,7 @@ permission_document_type_file_metadata_setup = namespace.add_permission(
 )
 permission_file_metadata_submit = namespace.add_permission(
     label=_(
-        'Submit document for file metadata processing'
+        message='Submit document for file metadata processing'
     ), name='file_metadata_submit'
 )
 permission_file_metadata_view = namespace.add_permission(

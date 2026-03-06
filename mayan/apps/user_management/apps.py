@@ -155,7 +155,7 @@ class UserManagementApp(MayanAppConfig):
         )
 
         User.has_usable_password.short_description = _(
-            'Has usable password?'
+            message='Has usable password?'
         )
 
         EventModelRegistry.register(model=Group)

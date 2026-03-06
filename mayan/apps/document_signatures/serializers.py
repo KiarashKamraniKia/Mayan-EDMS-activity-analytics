@@ -56,15 +56,15 @@ class BaseSignatureSerializer(serializers.HyperlinkedModelSerializer):
 class BaseSignSerializer(serializers.HyperlinkedModelSerializer):
     key = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the secret key used to sign the document '
-            'file.'
+            message='Primary key of the secret key used to sign the '
+            'document file.'
         ), label=_(message='Key ID'), source_queryset=Key.objects.private_keys(),
         source_permission=permission_key_sign
     )
     passphrase = serializers.CharField(
         help_text=_(
-            'The passphrase to unlock the key and allow it to be used to '
-            'sign the document file.'
+            message='The passphrase to unlock the key and allow it to be '
+            'used to sign the document file.'
         ), label=_(message='Passphrase'), required=False, write_only=True
     )
 

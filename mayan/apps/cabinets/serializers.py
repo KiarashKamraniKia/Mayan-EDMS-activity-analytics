@@ -20,15 +20,15 @@ class CabinetSerializer(serializers.ModelSerializer):
     )
     documents_url = serializers.HyperlinkedIdentityField(
         help_text=_(
-            'URL of the API endpoint showing the list documents inside this '
-            'cabinet.'
+            message='URL of the API endpoint showing the list documents '
+            'inside this cabinet.'
         ), label=_(message='Documents URL'), lookup_url_kwarg='cabinet_id',
         view_name='rest_api:cabinet-document-list'
     )
     full_path = serializers.SerializerMethodField(
         help_text=_(
-            'The name of this cabinet level appended to the names of its '
-            'ancestors.'
+            message='The name of this cabinet level appended to the names '
+            'of its ancestors.'
         ), label=_(message='Full path'), read_only=True
     )
     parent_url = serializers.SerializerMethodField(
@@ -81,7 +81,7 @@ class CabinetSerializer(serializers.ModelSerializer):
 class CabinetDocumentAddSerializer(serializers.Serializer):
     document = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the document to add to the cabinet.'
+            message='Primary key of the document to add to the cabinet.'
         ), label=_(message='Document ID'), source_queryset=Document.valid.all(),
         source_permission=permission_cabinet_add_document
     )
@@ -90,7 +90,7 @@ class CabinetDocumentAddSerializer(serializers.Serializer):
 class CabinetDocumentRemoveSerializer(serializers.Serializer):
     document = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            'Primary key of the document to remove from the cabinet.'
+            message='Primary key of the document to remove from the cabinet.'
         ), label=_(message='Document ID'), source_queryset=Document.valid.all(),
         source_permission=permission_cabinet_remove_document
     )

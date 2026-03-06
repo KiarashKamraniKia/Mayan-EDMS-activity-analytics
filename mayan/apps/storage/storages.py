@@ -12,7 +12,7 @@ from .settings import (
 storage_download_files = DefinedStorage(
     dotted_path=setting_download_file_storage.value,
     error_message=_(
-        'Unable to initialize the download file '
+        message='Unable to initialize the download file '
         'storage. Check the settings {} and {} for formatting '
         'errors.'.format(
             setting_download_file_storage.global_name,
@@ -26,7 +26,7 @@ storage_download_files = DefinedStorage(
 storage_shared_uploaded_files = DefinedStorage(
     dotted_path=setting_shared_storage.value,
     error_message=_(
-        'Unable to initialize the shared uploaded file '
+        message='Unable to initialize the shared uploaded file '
         'storage. Check the settings {} and {} for formatting '
         'errors.'.format(
             setting_shared_storage.global_name,

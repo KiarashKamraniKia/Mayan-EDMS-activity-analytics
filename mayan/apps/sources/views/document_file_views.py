@@ -40,15 +40,15 @@ class DocumentFileSourceMetadataList(
             'hide_object': True,
             'no_results_icon': icon_document_file_source_metadata_list,
             'no_results_text': _(
-                'This means that the sources system did not record any '
-                'information about the creation of the document file.'
+                message='This means that the sources system did not record '
+                'any information about the creation of the document file.'
             ),
             'no_results_title': _(
-                'No source metadata available for this document file.'
+                message='No source metadata available for this document file.'
             ),
             'object': self.external_object,
             'title': _(
-                'Source metadata for: %(document_file)s'
+                message='Source metadata for: %(document_file)s'
             ) % {
                 'document_file': self.external_object
             }
@@ -93,7 +93,7 @@ class DocumentFileUploadView(ExternalObjectViewMixin, UploadBaseView):
         except Exception as exception:
             messages.error(
                 message=_(
-                    'Unable to upload new files for document '
+                    message='Unable to upload new files for document '
                     '"%(document)s". %(exception)s'
                 ) % {'document': self.external_object, 'exception': exception},
                 request=self.request
@@ -138,7 +138,7 @@ class DocumentFileUploadView(ExternalObjectViewMixin, UploadBaseView):
             )
         except Exception as exception:
             message = _(
-                'Error executing document file upload task; '
+                message='Error executing document file upload task; '
                 '%(exception)s'
             ) % {
                 'exception': exception,
@@ -159,7 +159,7 @@ class DocumentFileUploadView(ExternalObjectViewMixin, UploadBaseView):
         else:
             messages.success(
                 message=_(
-                    'New document file queued for upload and will be '
+                    message='New document file queued for upload and will be '
                     'available shortly.'
                 ), request=self.request
             )
@@ -184,7 +184,7 @@ class DocumentFileUploadView(ExternalObjectViewMixin, UploadBaseView):
                 ),
                 'object': self.external_object,
                 'title': _(
-                    'Upload a new file for document "%(document)s" '
+                    message='Upload a new file for document "%(document)s" '
                     'from source: %(source)s'
                 ) % {
                     'document': self.external_object,

@@ -17,7 +17,7 @@ class AdvancedSearchForm(Form):
         self.fields[MATCH_ALL_FIELD_NAME] = forms.ChoiceField(
             choices=MATCH_ALL_FIELD_CHOICES, widget=forms.RadioSelect,
             label=_(message='Match all'), help_text=_(
-                'Return only results that match all fields.'
+                message='Return only results that match all fields.'
             ), required=False
         )
 

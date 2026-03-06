@@ -79,7 +79,7 @@ class UserImpersonationOptionsForm(forms.Form):
         super().__init__(*args, **kwargs)
         self.fields['permanent'] = forms.BooleanField(
             label=_(message='Permanent'), help_text=_(
-                'If selected, disables ending impersonation.'
+                message='If selected, disables ending impersonation.'
             ), required=False
         )
 
