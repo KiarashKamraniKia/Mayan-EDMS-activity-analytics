@@ -126,6 +126,9 @@
 - Refactor `ContentTypeCheckTestCaseMixin`.
 - Add note so that users don't break their installations when attempting to
   bypass localization.
+- Update series support chart. Series 4.6 is now End-Of-Life. Series 4.6
+  was supported since January 2024 up until March 2026 for a total of 2 years
+  and 2 months. Series 4.6 users must upgrade to at least series 4.7.
 
 4.6.12 (2025-12-14)
 ===================
