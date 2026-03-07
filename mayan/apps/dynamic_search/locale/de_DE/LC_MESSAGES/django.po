@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-23 17:54+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Mathias Behrle <mathiasb@m9s.biz>, 2025\n"
 "Language-Team: German (Germany) (https://app.transifex.com/rosarior/teams/13584/de_DE/)\n"
@@ -239,14 +239,14 @@ msgstr ""
 msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr "Setzt den Vorgabewert für die \"Alle Felder\" Checkbox."
 
-#: settings.py:65
+#: settings.py:66
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "Maximale Anzahl von Suchergebnissen, die pro Suchanfrage geholt und "
 "angezeigt werden sollen."
 
-#: settings.py:72
+#: settings.py:73
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."
@@ -254,7 +254,7 @@ msgstr ""
 "Eine Fehlermeldung anzeigen, wenn die Anzahl der Suchergebnisse den Wert von"
 " `SEARCH_QUERY_RESULTS_LIMIT`überschreitet."
 
-#: settings.py:78
+#: settings.py:79
 msgid "Maximum number of search results to fetch and display."
 msgstr ""
 "Maximale Anzahl von Suchergebnissen, die geholt und angezeigt werden sollen."

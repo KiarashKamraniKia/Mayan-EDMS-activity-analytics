@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 13:48+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -49,7 +49,7 @@ msgstr "ファイルメタデータの値"
 msgid "MIME types"
 msgstr "MIMEタイプ"
 
-#: apps.py:178 models.py:71 models.py:122
+#: apps.py:178 models.py:72 models.py:123
 msgid "Internal name"
 msgstr "内部名"
 
@@ -103,7 +103,7 @@ msgstr "ファイルのメタデータを設定"
 msgid "File metadata processing per type"
 msgstr "文書タイプ別ファイルメタデータ処理"
 
-#: links.py:65 views.py:232
+#: links.py:65 views.py:236
 msgid "File metadata drivers"
 msgstr "ファイルメタデータドライバー"
 
@@ -115,7 +115,7 @@ msgstr "指定された文書ファイルのファイルメタデータ項目を
 msgid "Attribute count"
 msgstr "属性数"
 
-#: models.py:20 models.py:127
+#: models.py:20 models.py:128
 msgid "Driver"
 msgstr "ドライバー"
 
@@ -123,7 +123,7 @@ msgstr "ドライバー"
 msgid "Document file"
 msgstr "文書ファイル"
 
-#: models.py:30 models.py:66
+#: models.py:30 models.py:67
 msgid "Document file driver entry"
 msgstr "文書ファイルドライバー項目"
 
@@ -139,51 +139,51 @@ msgstr "文書タイプ"
 msgid "Automatically queue newly created documents for processing."
 msgstr ""
 
-#: models.py:48
+#: models.py:49
 msgid "Auto process"
 msgstr "自動処理"
 
-#: models.py:54
+#: models.py:55
 msgid "Document type settings"
 msgstr "文書タイプ設定"
 
-#: models.py:55
+#: models.py:56
 msgid "Document types settings"
 msgstr "文書タイプ設定（複数形だがUIでは同一表現で可）"
 
-#: models.py:70
+#: models.py:71
 msgid "Normalized name of the file metadata entry."
 msgstr "ファイルメタデータ項目の正規化名"
 
-#: models.py:75
+#: models.py:76
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr "ドライバーが提供するファイルメタデータ項目名"
 
-#: models.py:77
+#: models.py:78
 msgid "Key"
 msgstr "技"
 
-#: models.py:80
+#: models.py:81
 msgid "Value of the file metadata entry."
 msgstr "ファイルメタデータ項目の値"
 
-#: models.py:81
+#: models.py:82
 msgid "Value"
 msgstr "値"
 
-#: models.py:87
+#: models.py:88
 msgid "File metadata entry"
 msgstr "ファイルメタデータ項目"
 
-#: models.py:88
+#: models.py:89
 msgid "File metadata entries"
 msgstr "ファイルメタデータエントリ一覧"
 
-#: models.py:118
+#: models.py:119
 msgid "Driver path"
 msgstr "ドライバーパス"
 
-#: models.py:128
+#: models.py:129
 msgid "Drivers"
 msgstr "ドライバー"
 
@@ -261,41 +261,41 @@ msgid ""
 "File metadata attributes for: %(document_file)s with driver: %(driver)s"
 msgstr "%(driver)s ドライバーによる %(document_file)s のファイルメタデータ属性"
 
-#: views.py:122
+#: views.py:123
 #, python-format
 msgid "%(count)d documents files submitted to the file metadata queue."
 msgstr "%(count)d 件の文書ファイルをファイルメタデータキューに送信"
 
-#: views.py:125
+#: views.py:127
 #, python-format
 msgid "%(count)d document file submitted to the file metadata queue."
 msgstr "%(count)d 件の文書ファイルをファイルメタデータキューに送信"
 
-#: views.py:134
+#: views.py:137
 msgid "Submit the selected document file to the file metadata queue?"
 msgid_plural "Submit the selected documents files to the file metadata queue?"
 msgstr[0] "選択された文書ファイルをファイルメタデータキューに送信しますか？"
 
-#: views.py:165
+#: views.py:168
 #, python-format
 msgid "Edit file metadata settings for document type: %s"
 msgstr ""
 
-#: views.py:176
+#: views.py:179
 msgid "Submit all documents of a type for file metadata processing."
 msgstr "指定タイプのすべての文書をファイルメタデータ処理に送信"
 
-#: views.py:203
+#: views.py:207
 #, python-format
 msgid "%(count)d documents added to the file metadata processing queue."
 msgstr "%(count)d 件の文書をファイルメタデータ処理キューに追加"
 
-#: views.py:224
+#: views.py:228
 msgid ""
 "File metadata drivers extract embedded information from document files. File"
 " metadata drivers are configure in code only."
 msgstr "ファイルメタデータドライバーは文書ファイルから埋め込み情報を抽出します。ドライバーはコード内でのみ設定可能です。"
 
-#: views.py:229
+#: views.py:233
 msgid "No file metadata drivers available."
 msgstr "ァイルメタデータドライバーはありません"

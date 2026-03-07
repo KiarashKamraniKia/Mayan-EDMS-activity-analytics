@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 18:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Spanish (Mexico) (https://app.transifex.com/rosarior/teams/13584/es_MX/)\n"
@@ -56,7 +56,7 @@ msgstr "El documento ya está reservado."
 msgid "Document status"
 msgstr "Estatus del documento"
 
-#: forms.py:37 model_mixins.py:9 models.py:46 serializers.py:20
+#: forms.py:37 model_mixins.py:9 models.py:47 serializers.py:20
 msgid "User"
 msgstr "Usuario"
 
@@ -128,27 +128,27 @@ msgstr "Fecha y hora de la reservación"
 msgid "Amount of time to hold the document checked out in minutes."
 msgstr "Cantidad de tiempo para mantener el documento reservado, en minutos."
 
-#: models.py:42
+#: models.py:43
 msgid "Check out expiration date and time"
 msgstr "Fecha y hora de la expiración de la reserva."
 
-#: models.py:50
+#: models.py:51
 msgid "Do not allow new file of this document to be uploaded."
 msgstr "No permitir que se carguen un nuevo archivo a este documento."
 
-#: models.py:51
+#: models.py:52
 msgid "Block new file upload"
 msgstr "Bloquear la carga de archivos nuevos"
 
-#: models.py:59 permissions.py:6
+#: models.py:60 permissions.py:6
 msgid "Document checkout"
 msgstr "Reserva de documentos"
 
-#: models.py:60
+#: models.py:61
 msgid "Document checkouts"
 msgstr "Reservaciones de documentos"
 
-#: models.py:69
+#: models.py:70
 msgid "Check out expiration date and time must be in the future."
 msgstr "Fecha y hora de la expiración de la reserva deben ser en el futuro."
 

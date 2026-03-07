@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -109,11 +109,11 @@ msgstr "མཚོ་ཁ"
 msgid "Store the body of the email as a text document."
 msgstr "གློག་འཕྲིན་གྱི་ནང་དོན་ཡིག་ཆའི་ཡིག་ཆ་ལྟར་ཉར་ཚགས་བྱེད།"
 
-#: source_backends/mixins.py:60
+#: source_backends/mixins.py:61
 msgid "Store email body"
 msgstr "གློག་འཕྲིན་གྱི་ཕུང་པོ་ཉར་ཚགས།"
 
-#: source_backends/mixins.py:74
+#: source_backends/mixins.py:75
 msgid "Common email options"
 msgstr "སྤྱིར་བཏང་གི་གློག་འཕྲིན་གདམ་ག།"
 

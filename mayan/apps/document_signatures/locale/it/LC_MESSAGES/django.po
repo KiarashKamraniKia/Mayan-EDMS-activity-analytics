@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: piera.daraio, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
@@ -36,11 +36,11 @@ msgstr "Data e ora"
 msgid "Key ID"
 msgstr "ID chiave"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "Nessuno"
 
-#: apps.py:119 forms.py:65 models.py:57
+#: apps.py:119 forms.py:66 models.py:57
 msgid "Signature ID"
 msgstr "ID Firma"
 
@@ -82,47 +82,47 @@ msgstr "Passphrase"
 msgid "Private key that will be used to sign this document file."
 msgstr ""
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "La firma è integrata?"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "Data firma"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "ID chiave di firma"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "La chiave di firma è presente?"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "Impronta della chiave"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "Data di creazione chiave"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "Data scadenza chiave"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "Lunghezza chiave"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "Algoritmo chiave"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "ID chiave utente"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "Tipo chiave"
 
@@ -297,8 +297,8 @@ msgstr ""
 "separate."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Argomenti da passare a SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

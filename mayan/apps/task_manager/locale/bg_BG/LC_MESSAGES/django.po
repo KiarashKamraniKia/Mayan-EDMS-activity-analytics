@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 04:29+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Lyudmil Antonov <lantonov.here@gmail.com>, 2024\n"
 "Language-Team: Bulgarian (Bulgaria) (https://app.transifex.com/rosarior/teams/13584/bg_BG/)\n"
@@ -25,11 +25,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Управление на задачите"
 
-#: apps.py:114 apps.py:139 apps.py:182
+#: apps.py:114 apps.py:140 apps.py:183
 msgid "Label"
 msgstr "Етикет"
 
-#: apps.py:118 apps.py:142 apps.py:186
+#: apps.py:118 apps.py:143 apps.py:187
 msgid "Name"
 msgstr "Име"
 
@@ -47,43 +47,43 @@ msgstr ""
 "ако брокерът се рестартира. Временните опашки използват по-малко ресурси и "
 "управлявани некритични задачи."
 
-#: apps.py:131
+#: apps.py:132
 msgid "Is transient?"
 msgstr "Преходен ли е?"
 
-#: apps.py:145
+#: apps.py:146
 msgid "Dotted path"
 msgstr "Пунктирана пътека"
 
-#: apps.py:149
+#: apps.py:150
 msgid "Schedule"
 msgstr "План"
 
-#: apps.py:155
+#: apps.py:156
 msgid "Type"
 msgstr "Тип"
 
-#: apps.py:160
+#: apps.py:161
 msgid "Start time"
 msgstr "Начален час"
 
-#: apps.py:164
+#: apps.py:165
 msgid "Host"
 msgstr "Хост"
 
-#: apps.py:168
+#: apps.py:169
 msgid "Arguments"
 msgstr "Аргументи"
 
-#: apps.py:172
+#: apps.py:173
 msgid "Keyword arguments"
 msgstr "Аргументи на ключови думи"
 
-#: apps.py:177
+#: apps.py:178
 msgid "Worker process ID"
 msgstr "Идентификационен номер на работния процес"
 
-#: apps.py:190
+#: apps.py:191
 msgid ""
 "Maximum amount of resident memory a worker can execute before it's replaced "
 "by a new process."
@@ -91,11 +91,11 @@ msgstr ""
 "Максимален обем резидентна памет, който работник може да изпълни, преди да "
 "бъде заменен от нов процес."
 
-#: apps.py:192
+#: apps.py:193
 msgid "Maximum memory per child"
 msgstr "Максимална памет на вторичен процес"
 
-#: apps.py:196
+#: apps.py:197
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
@@ -103,11 +103,11 @@ msgstr ""
 "Максимален брой задачи, които даден работник може да изпълни, преди да бъде "
 "заменен от нов процес."
 
-#: apps.py:198
+#: apps.py:199
 msgid "Maximum tasks per child"
 msgstr "Максимален брой задачи на вторичен процес"
 
-#: apps.py:202
+#: apps.py:203
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
@@ -115,11 +115,11 @@ msgstr ""
 "Брой работни процеси/нишки за стартиране. По подразбиране е броят процесори,"
 " налични в компютъра."
 
-#: apps.py:204
+#: apps.py:205
 msgid "Concurrency"
 msgstr "Паралелност"
 
-#: apps.py:208
+#: apps.py:209
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
@@ -127,7 +127,7 @@ msgstr ""
 "Стойността nice определя приоритета на процеса. По-високата стойност "
 "намалява приоритета. Стойността по подразбиране е 0."
 
-#: apps.py:211
+#: apps.py:212
 msgid "Nice level"
 msgstr "Ниво на \"хубост\""
 
@@ -178,7 +178,7 @@ msgstr ""
 "частта от схемата (transport://), останалото е по избор и по подразбиране "
 "към конкретните стойности на транспортиране по подразбиране."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -187,7 +187,7 @@ msgstr ""
 "връзка с брокера и настройките на SSL. Валидните стойности за тази опция "
 "варират в зависимост от транспорта."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

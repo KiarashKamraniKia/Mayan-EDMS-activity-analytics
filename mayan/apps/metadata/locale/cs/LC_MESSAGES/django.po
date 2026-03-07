@@ -4,18 +4,18 @@
 # 
 # Translators:
 # Translators:
-# Jiří Podhorecký <jirka.p@volny.cz>, 2024
 # Sebastian Fait <seba.fait@gmail.com>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
 # Jiri Fait <fait@orkasolutions.cz>, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-03 22:28+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
-"Last-Translator: Jiri Fait <fait@orkasolutions.cz>, 2024\n"
+"Last-Translator: Jiří Podhorecký <jirka.p@volny.cz>, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/rosarior/teams/13584/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -77,7 +77,7 @@ msgstr "ID"
 msgid "Name"
 msgstr "název"
 
-#: forms.py:27 models.py:188 workflow_actions.py:109
+#: forms.py:27 models.py:189 workflow_actions.py:109
 msgid "Value"
 msgstr "Hodnota"
 
@@ -85,7 +85,7 @@ msgstr "Hodnota"
 msgid "Update"
 msgstr "Aktualizace"
 
-#: forms.py:52 forms.py:236 models.py:285
+#: forms.py:52 forms.py:237 models.py:288
 msgid "Required"
 msgstr "Požadované"
 
@@ -104,44 +104,44 @@ msgstr "Chyba výchozí hodnoty: %s"
 msgid "\"%s\" is required for this document type."
 msgstr "&quot;%s&quot; je vyžadován pro tento typ dokumentu."
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr "Typy metadat, které se mohou přidat do vybraných dokumentů."
 
-#: forms.py:138 models.py:92 models.py:282 search.py:11 serializers.py:48
-#: serializers.py:108 workflow_actions.py:145
+#: forms.py:139 models.py:92 models.py:285 search.py:11 serializers.py:48
+#: serializers.py:109 workflow_actions.py:145
 msgid "Metadata type"
 msgstr "Typ metadat"
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Odstranit"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
-msgstr ""
+msgstr "Základní"
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr ""
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr ""
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr "Analýza"
 
-#: forms.py:210
+#: forms.py:211
 msgid " Available template context variables: "
 msgstr "Dostupné kontextové proměnné šablony:"
 
-#: forms.py:234
+#: forms.py:235
 msgid "None"
 msgstr "Žádný"
 
-#: forms.py:235
+#: forms.py:236
 msgid "Optional"
 msgstr "Volitelný"
 
@@ -305,39 +305,39 @@ msgstr "Hodnota není jednou z nabízených možností."
 msgid "Metadata type validation error; %(exception)s"
 msgstr ""
 
-#: models.py:179 serializers.py:105
+#: models.py:180 serializers.py:106
 msgid "Document"
 msgstr "Dokument"
 
-#: models.py:182
+#: models.py:183
 msgid "Type"
 msgstr "Typ"
 
-#: models.py:186
+#: models.py:187
 msgid "The actual value stored in the metadata type field for the document."
 msgstr "Skutečná hodnota uložená v poli typu metadat dokumentu."
 
-#: models.py:194 models.py:195
+#: models.py:195 models.py:196
 msgid "Document metadata"
 msgstr "Metadata dokumentu"
 
-#: models.py:231
+#: models.py:232
 msgid "Metadata type is required for this document type."
 msgstr "Pro tento typ dokumentu lsou vyžadována metadata."
 
-#: models.py:264
+#: models.py:266
 msgid "Metadata type is not valid for this document type."
 msgstr "Tento typ metadat není pro tento typ dokumentu platný."
 
-#: models.py:278 serializers.py:45
+#: models.py:281 serializers.py:45
 msgid "Document type"
 msgstr "Typ dokumentu"
 
-#: models.py:293
+#: models.py:296
 msgid "Document type metadata type options"
 msgstr "Možnosti typu dokumentu typu metadat"
 
-#: models.py:294
+#: models.py:297
 msgid "Document type metadata types options"
 msgstr "Možnosti typu metadat typu dokumentu"
 
@@ -381,7 +381,7 @@ msgstr "Odebrat typ metadat"
 msgid "Add required metadata type"
 msgstr "Přidejte požadovaný typ metadat"
 
-#: serializers.py:28 serializers.py:57 serializers.py:111
+#: serializers.py:28 serializers.py:57 serializers.py:112
 msgid "URL"
 msgstr "URL"
 
@@ -389,7 +389,7 @@ msgstr "URL"
 msgid "Primary key of the metadata type to be added."
 msgstr "Primární klíč typu metadat, který se má přidat."
 
-#: serializers.py:53 serializers.py:101
+#: serializers.py:53 serializers.py:102
 msgid "Metadata type ID"
 msgstr ""
 
@@ -539,7 +539,7 @@ msgstr ""
 "Metadata typu „%(metadata_type)s“ byla úspěšně odstraněna z dokumentu: "
 "%(document)s."
 
-#: views/document_views.py:497
+#: views/document_views.py:498
 #, python-format
 msgid ""
 "Error removing metadata type \"%(metadata_type)s\" from document: "
@@ -629,7 +629,7 @@ msgstr ""
 msgid "Enter document metadata"
 msgstr "Zadejte metadata dokumentu"
 
-#: wizard_steps.py:201
+#: wizard_steps.py:205
 msgid ""
 "One of more metadata types that are required for this document type are not "
 "available."

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-03 22:29+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Csaba Tarjányi, 2024\n"
 "Language-Team: Hungarian (https://app.transifex.com/rosarior/teams/13584/hu/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:21 settings.py:11
+#: apps.py:15 settings.py:10
 msgid "Views"
 msgstr "Nézetek"
 
@@ -158,21 +158,13 @@ msgstr "\"%(object)s\" törlése."
 msgid "Delete %(count)d object."
 msgstr "%(count)d objektum törlése."
 
-#: settings.py:17
+#: settings.py:16
 msgid "The number objects that will be displayed per page."
 msgstr "Az oldalanként megjelenített objektumok száma."
 
-#: settings.py:23
+#: settings.py:22
 msgid "A string specifying the name to use for the paging parameter."
 msgstr "A lapozási paraméterhez használandó nevet meghatározó karakterlánc."
-
-#: settings.py:29
-msgid ""
-"Display a submit button and wait for the submit button to be pressed before "
-"processing up the upload."
-msgstr ""
-"Megjeleníti meg a küldés gombot, és megvárja, amíg megnyomja a küldés "
-"gombot, mielőtt feldolgozná a feltöltést."
 
 #: templatetags/views_tags.py:30
 msgid "Confirm delete"

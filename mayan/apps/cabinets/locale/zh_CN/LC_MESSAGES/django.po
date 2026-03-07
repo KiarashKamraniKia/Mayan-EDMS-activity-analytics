@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/rosarior/teams/13584/zh_CN/)\n"
@@ -355,7 +355,7 @@ msgstr "将从中删除所选文档的文档柜。"
 msgid "Select cabinets"
 msgstr "选择文件柜"
 
-#: wizard_steps.py:77 workflow_actions.py:33
+#: wizard_steps.py:87 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "文件将添加到的文件柜。"
 

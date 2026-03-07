@@ -261,6 +261,20 @@ source_lang   = en
 resource_name = v4.6 Mailer
 type          = PO
 
+[o:rosarior:p:mayan-edms:r:mayan_forms-4-6]
+file_filter   = mayan/apps/forms/locale/<lang>/LC_MESSAGES/django.po
+source_file   = mayan/apps/forms/locale/en/LC_MESSAGES/django.po
+source_lang   = en
+resource_name = v4.6 Forms
+type          = PO
+
+[o:rosarior:p:mayan-edms:r:mayan_forms-4-6-javascript]
+file_filter   = mayan/apps/forms/locale/<lang>/LC_MESSAGES/djangojs.po
+source_file   = mayan/apps/forms/locale/en/LC_MESSAGES/djangojs.po
+source_lang = en
+resource_name = v4.6 Forms (JavaScript)
+type          = PO
+
 [o:rosarior:p:mayan-edms:r:mayan_statistics-4-6]
 file_filter   = mayan/apps/mayan_statistics/locale/<lang>/LC_MESSAGES/django.po
 source_file   = mayan/apps/mayan_statistics/locale/en/LC_MESSAGES/django.po
@@ -511,13 +525,6 @@ file_filter   = mayan/apps/views/locale/<lang>/LC_MESSAGES/django.po
 source_file   = mayan/apps/views/locale/en/LC_MESSAGES/django.po
 source_lang   = en
 resource_name = v4.6 Views
-type          = PO
-
-[o:rosarior:p:mayan-edms:r:views-4-6-javascript]
-file_filter   = mayan/apps/views/locale/<lang>/LC_MESSAGES/djangojs.po
-source_file   = mayan/apps/views/locale/en/LC_MESSAGES/djangojs.po
-source_lang = en
-resource_name = v4.6 Views (JavaScript)
 type          = PO
 
 [o:rosarior:p:mayan-edms:r:web_links-4-6]

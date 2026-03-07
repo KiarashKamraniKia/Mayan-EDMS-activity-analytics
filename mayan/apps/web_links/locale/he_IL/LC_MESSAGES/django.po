@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Ovadia Ovadia, 2024\n"
 "Language-Team: Hebrew (Israel) (https://app.transifex.com/rosarior/teams/13584/he_IL/)\n"
@@ -113,31 +113,31 @@ msgstr "View web link instances"
 msgid "Primary key of the document type to add to the web link."
 msgstr "מפתח ראשי של סוג המסמך להוספה לקישור האינטרנט"
 
-#: serializers.py:17 serializers.py:26
+#: serializers.py:18 serializers.py:28
 msgid "Document type ID"
 msgstr "Document type ID"
 
-#: serializers.py:25
+#: serializers.py:26
 msgid "Primary key of the document type to remove from the web link."
 msgstr "מפתח ראשי של סוג המסמך להסרה מקישור האינטרנט"
 
-#: serializers.py:33
+#: serializers.py:35
 msgid "Document types add URL"
 msgstr "כתובת URL להוספת סוגי מסמכים"
 
-#: serializers.py:37
+#: serializers.py:39
 msgid "Document types remove URL"
 msgstr "כתובת URL להסרת סוגי מסמכים"
 
-#: serializers.py:41
+#: serializers.py:43
 msgid "Document types URL"
 msgstr "כתובת (URL) לסוגי מסמכים"
 
-#: serializers.py:48 serializers.py:63
+#: serializers.py:50 serializers.py:65
 msgid "URL"
 msgstr "כתובת אתר (URL)"
 
-#: serializers.py:66
+#: serializers.py:68
 msgid "Navigation URL"
 msgstr "כתובת אתר (URL) לניווט"
 

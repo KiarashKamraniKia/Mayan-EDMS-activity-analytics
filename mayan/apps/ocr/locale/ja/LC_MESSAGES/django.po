@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -166,9 +166,13 @@ msgstr "文書バージョンのOCR"
 msgid "Set new document types to perform OCR automatically by default."
 msgstr "新しい文書タイプに対して、既定で自動的にOCRを実行するよう設定します。"
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr "使用するOCRバックエンドのフルパス"
+
+#: settings.py:30
+msgid "Arguments to pass to `OCR_BACKEND`."
+msgstr ""
 
 #: views.py:57
 #, python-format
@@ -189,62 +193,62 @@ msgstr "%(count)d件の文書をOCRキューに追加しました。"
 msgid "Error deleting document version OCR \"%(instance)s\"; %(exception)s"
 msgstr "文書バージョンOCR「%(instance)s」の削除中にエラーが発生しました：%(exception)s"
 
-#: views.py:117
+#: views.py:118
 #, python-format
 msgid "OCR content of %(count)d document versions deleted successfully."
 msgstr "%(count)d件の文書バージョンのOCR内容を削除しました"
 
-#: views.py:120
+#: views.py:122
 #, python-format
 msgid "OCR content of \"%(object)s\" deleted successfully."
 msgstr "「%(object)s」のOCR内容を削除しました。"
 
-#: views.py:123
+#: views.py:125
 #, python-format
 msgid "OCR content of %(count)d document version deleted successfully."
 msgstr "%(count)d件の文書バージョンのOCR内容を削除しました。"
 
-#: views.py:126
+#: views.py:129
 #, python-format
 msgid "Delete the OCR content of the %(count)d selected document versions."
 msgstr "選択した%(count)d件の文書バージョンのOCR内容を削除します。"
 
-#: views.py:128
+#: views.py:132
 #, python-format
 msgid "Delete the OCR content of: %(object)s."
 msgstr "OCR内容を削除：%(object)s"
 
-#: views.py:130
+#: views.py:134
 #, python-format
 msgid "Delete the OCR content of the %(count)d selected document version."
 msgstr "選択した%(count)d件の文書バージョンのOCR内容を削除します。"
 
-#: views.py:161
+#: views.py:166
 #, python-format
 msgid "OCR result for document: %s"
 msgstr "文書のOCR結果: %s"
 
-#: views.py:183
+#: views.py:188
 #, python-format
 msgid "%(count)d document version submitted to the OCR queue."
 msgstr "%(count)d件の文書バージョンをOCRキューに送信しました。"
 
-#: views.py:186
+#: views.py:191
 #, python-format
 msgid "%(count)d document versions submitted to the OCR queue."
 msgstr "%(count)d件の文書バージョンをOCRキューに送信しました。"
 
-#: views.py:195
+#: views.py:200
 msgid "Submit the selected document version to the OCR queue?"
 msgid_plural "Submit the selected document versions to the OCR queue?"
 msgstr[0] "選択した文書バージョンをOCRキューに送信しますか？"
 
-#: views.py:231
+#: views.py:236
 #, python-format
 msgid "OCR result for document version page: %s"
 msgstr "文書バージョンページのOCR結果: %s"
 
-#: views.py:259
+#: views.py:264
 #, python-format
 msgid "Edit OCR for document version page: %s"
 msgstr "文書バージョンページ「%s」のOCRを編集"

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (Egypt) (https://app.transifex.com/rosarior/teams/13584/ar_EG/)\n"
@@ -37,11 +37,11 @@ msgstr "الوقت والتاريخ"
 msgid "Key ID"
 msgstr "مفتاح"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "لا شيء"
 
-#: apps.py:119 forms.py:65 models.py:57
+#: apps.py:119 forms.py:66 models.py:57
 msgid "Signature ID"
 msgstr "معرف التوقيع"
 
@@ -83,47 +83,47 @@ msgstr "عبارة المرور"
 msgid "Private key that will be used to sign this document file."
 msgstr "المفتاح الخاص الذي سيتم استخدامه لتوقيع ملف المستند هذا."
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "التوقيع مضمن؟"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "تاريخ التوقيع"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "مفتاح التوقيع"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "مفتاح التوقيع موجود؟"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "مفتاح البصمة"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "تاريخ انشاء المفتاح "
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "تاريخ انتهاء المفتاح"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "طول المفتاح"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "الخوارزمية الرئيسية"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "معرف مفتاح المستخدم "
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "نوع المفتاح"
 
@@ -299,8 +299,8 @@ msgstr ""
 "المسار إلى فئة التخزين الفرعية لاستخدامها عند تخزين التوقيعات المنفصلة."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "تفعيل المتغيرات"
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

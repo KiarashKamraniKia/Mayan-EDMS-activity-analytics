@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-03 22:28+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Bosnian (https://app.transifex.com/rosarior/teams/13584/bs/)\n"
@@ -74,7 +74,7 @@ msgstr "ID"
 msgid "Name"
 msgstr "Ime"
 
-#: forms.py:27 models.py:188 workflow_actions.py:109
+#: forms.py:27 models.py:189 workflow_actions.py:109
 msgid "Value"
 msgstr "Vrijednost"
 
@@ -82,7 +82,7 @@ msgstr "Vrijednost"
 msgid "Update"
 msgstr "Update"
 
-#: forms.py:52 forms.py:236 models.py:285
+#: forms.py:52 forms.py:237 models.py:288
 msgid "Required"
 msgstr "Obavezno"
 
@@ -101,44 +101,44 @@ msgstr "Default vrijednost greške: %s"
 msgid "\"%s\" is required for this document type."
 msgstr "Za ovaj tip dokumenta potreban je \"%s\"."
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr "Tipovi metapodataka koji se dodaju odabranim dokumentima."
 
-#: forms.py:138 models.py:92 models.py:282 search.py:11 serializers.py:48
-#: serializers.py:108 workflow_actions.py:145
+#: forms.py:139 models.py:92 models.py:285 search.py:11 serializers.py:48
+#: serializers.py:109 workflow_actions.py:145
 msgid "Metadata type"
 msgstr "Metadata tip"
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Ukloni"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr ""
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr ""
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr ""
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr "Gramatička analiza"
 
-#: forms.py:210
+#: forms.py:211
 msgid " Available template context variables: "
 msgstr " Dostupne varijable konteksta predložaka:"
 
-#: forms.py:234
+#: forms.py:235
 msgid "None"
 msgstr "Nijedno"
 
-#: forms.py:235
+#: forms.py:236
 msgid "Optional"
 msgstr "Neobavezno"
 
@@ -299,39 +299,39 @@ msgstr "Vrednost nije jedna od predloženih opcija."
 msgid "Metadata type validation error; %(exception)s"
 msgstr ""
 
-#: models.py:179 serializers.py:105
+#: models.py:180 serializers.py:106
 msgid "Document"
 msgstr "Dokument"
 
-#: models.py:182
+#: models.py:183
 msgid "Type"
 msgstr "Tip"
 
-#: models.py:186
+#: models.py:187
 msgid "The actual value stored in the metadata type field for the document."
 msgstr ""
 
-#: models.py:194 models.py:195
+#: models.py:195 models.py:196
 msgid "Document metadata"
 msgstr "Metapodaci dokumenta"
 
-#: models.py:231
+#: models.py:232
 msgid "Metadata type is required for this document type."
 msgstr "Tip metapodataka je potreban za ovaj tip dokumenta."
 
-#: models.py:264
+#: models.py:266
 msgid "Metadata type is not valid for this document type."
 msgstr "Tip metapodataka nije važeći za ovaj tip dokumenta."
 
-#: models.py:278 serializers.py:45
+#: models.py:281 serializers.py:45
 msgid "Document type"
 msgstr "Tip dokumenta"
 
-#: models.py:293
+#: models.py:296
 msgid "Document type metadata type options"
 msgstr "Opcije tipa metapodataka tipa dokumenta"
 
-#: models.py:294
+#: models.py:297
 msgid "Document type metadata types options"
 msgstr "Opcije tipova metapodataka tipa dokumenta"
 
@@ -375,7 +375,7 @@ msgstr "Uklonite tip metapodataka"
 msgid "Add required metadata type"
 msgstr "Dodajte traženi tip metapodataka"
 
-#: serializers.py:28 serializers.py:57 serializers.py:111
+#: serializers.py:28 serializers.py:57 serializers.py:112
 msgid "URL"
 msgstr "URL"
 
@@ -383,7 +383,7 @@ msgstr "URL"
 msgid "Primary key of the metadata type to be added."
 msgstr "Primarni ključ tipa metapodataka koji treba dodati."
 
-#: serializers.py:53 serializers.py:101
+#: serializers.py:53 serializers.py:102
 msgid "Metadata type ID"
 msgstr ""
 
@@ -526,7 +526,7 @@ msgstr ""
 "Uspješno uklonite metapodatke tipa \"%(metadata_type)s\" iz dokumenta: "
 "%(document)s."
 
-#: views/document_views.py:497
+#: views/document_views.py:498
 #, python-format
 msgid ""
 "Error removing metadata type \"%(metadata_type)s\" from document: "
@@ -616,7 +616,7 @@ msgstr ""
 msgid "Enter document metadata"
 msgstr "Unesite metapodatke dokumenata"
 
-#: wizard_steps.py:201
+#: wizard_steps.py:205
 msgid ""
 "One of more metadata types that are required for this document type are not "
 "available."

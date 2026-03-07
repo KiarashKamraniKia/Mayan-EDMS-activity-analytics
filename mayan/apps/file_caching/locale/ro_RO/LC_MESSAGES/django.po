@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Harald Ersch, 2024\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -87,7 +87,7 @@ msgstr "Număr de fișiere de partiție"
 msgid "Total cached files."
 msgstr "Numărul total de fișiere stocate în cache."
 
-#: model_mixins.py:113 model_mixins.py:324
+#: model_mixins.py:113 model_mixins.py:323
 msgid "Current size"
 msgstr "Dimensiunea curentă"
 
@@ -95,7 +95,7 @@ msgstr "Dimensiunea curentă"
 msgid "Current size of the cache."
 msgstr "Dimensiunea actuală a memoriei cache."
 
-#: model_mixins.py:326
+#: model_mixins.py:325
 msgid "Current size of the cache partition."
 msgstr "Dimensiunea actuală a partiției cache."
 

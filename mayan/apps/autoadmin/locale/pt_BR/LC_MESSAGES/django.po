@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: 425fe09b3064b9f906f637fff94056ae_a00ea56 <0fa3588fa89906bfcb3a354600956e0e_308047>, 2024\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/rosarior/teams/13584/pt_BR/)\n"
@@ -55,7 +55,7 @@ msgstr "Propriedades do Administador do Sistema"
 msgid "Sets the email of the automatically created super user account."
 msgstr "Define o e-mail da conta de super usuário criada automaticamente."
 
-#: settings.py:18
+#: settings.py:19
 msgid ""
 "The password of the automatically created super user account. If it is equal"
 " to None, the password is randomly generated."
@@ -63,7 +63,7 @@ msgstr ""
 "A senha da conta de super-usuário criada automaticamente. Se for igual a "
 "None, a senha será gerada aleatoriamente."
 
-#: settings.py:24
+#: settings.py:26
 msgid "The username of the automatically created super user account."
 msgstr "O nome de usuário da conta de super-usuário criada automaticamente."
 

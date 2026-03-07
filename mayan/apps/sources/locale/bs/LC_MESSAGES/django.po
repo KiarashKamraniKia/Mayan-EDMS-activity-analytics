@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-23 04:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Bosnian (https://app.transifex.com/rosarior/teams/13584/bs/)\n"
@@ -218,7 +218,7 @@ msgstr "Ime"
 msgid "Required"
 msgstr "Obavezno"
 
-#: serializers.py:37 serializers.py:52
+#: serializers.py:37 serializers.py:53
 msgid "Arguments"
 msgstr "Argumenti"
 
@@ -230,35 +230,35 @@ msgstr ""
 msgid "Optional arguments for the action. Must be JSON formatted."
 msgstr ""
 
-#: serializers.py:56
+#: serializers.py:57
 msgid "Confirmation"
 msgstr ""
 
-#: serializers.py:59
+#: serializers.py:60
 msgid "Execute URL"
 msgstr ""
 
-#: serializers.py:62
+#: serializers.py:63
 msgid "Interfaces"
 msgstr ""
 
-#: serializers.py:66
+#: serializers.py:67
 msgid "name"
 msgstr ""
 
-#: serializers.py:69
+#: serializers.py:70
 msgid "Permission"
 msgstr "Permisija"
 
-#: serializers.py:74
+#: serializers.py:75
 msgid "URL"
 msgstr "URL"
 
-#: serializers.py:85
+#: serializers.py:86
 msgid "Binary content for the new file."
 msgstr ""
 
-#: serializers.py:121
+#: serializers.py:122
 msgid "Actions URL"
 msgstr ""
 
@@ -271,7 +271,7 @@ msgid "Path to the Storage subclass used to store cached source image files."
 msgstr ""
 
 #: settings.py:33
-msgid "Arguments to pass to the SOURCES_SOURCE_CACHE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SOURCES_SOURCE_CACHE_STORAGE_BACKEND`."
 msgstr ""
 
 #: source_backend_actions/interfaces.py:161

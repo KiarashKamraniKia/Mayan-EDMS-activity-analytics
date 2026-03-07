@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Csaba Tarjányi, 2024\n"
 "Language-Team: Hungarian (Hungary) (https://app.transifex.com/rosarior/teams/13584/hu_HU/)\n"
@@ -86,7 +86,7 @@ msgstr "Partíció fájlok száma"
 msgid "Total cached files."
 msgstr "Összes gyorsítótárazott fájl."
 
-#: model_mixins.py:113 model_mixins.py:324
+#: model_mixins.py:113 model_mixins.py:323
 msgid "Current size"
 msgstr "Jelenlegi méret"
 
@@ -94,7 +94,7 @@ msgstr "Jelenlegi méret"
 msgid "Current size of the cache."
 msgstr "A gyorsítótár jelenlegi mérete."
 
-#: model_mixins.py:326
+#: model_mixins.py:325
 msgid "Current size of the cache partition."
 msgstr "A gyorsítótár-partíció jelenlegi mérete."
 

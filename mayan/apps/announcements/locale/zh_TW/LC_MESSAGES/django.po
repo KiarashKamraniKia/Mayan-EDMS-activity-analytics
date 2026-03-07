@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Leon Chu, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/rosarior/teams/13584/zh_TW/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: zh_TW\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:46
+#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:48
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:127
 msgid "Announcements"
 msgstr "公告欄"
@@ -75,19 +75,19 @@ msgstr "啟用"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "此公告將被公布的日期˙與時間"
 
-#: models.py:33
+#: models.py:34
 msgid "Start date time"
 msgstr "開始日期與時間"
 
-#: models.py:37
+#: models.py:38
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "此公告將被終止公布的日期與時間"
 
-#: models.py:38
+#: models.py:40
 msgid "End date time"
 msgstr "結束的日期與時間"
 
-#: models.py:45
+#: models.py:47
 msgid "Announcement"
 msgstr "公告"
 

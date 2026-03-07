@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 18:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Harald Ersch, 2024\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -57,7 +57,7 @@ msgstr "Document deja consemnat ca ieșit."
 msgid "Document status"
 msgstr "Starea documentului"
 
-#: forms.py:37 model_mixins.py:9 models.py:46 serializers.py:20
+#: forms.py:37 model_mixins.py:9 models.py:47 serializers.py:20
 msgid "User"
 msgstr "Utilizator"
 
@@ -131,27 +131,27 @@ msgstr ""
 "Total timp alocat  în minute pentru a deține documentul în mod consemnat ca "
 "ieșit."
 
-#: models.py:42
+#: models.py:43
 msgid "Check out expiration date and time"
 msgstr "Data și ora expirării consemnării ieșirii"
 
-#: models.py:50
+#: models.py:51
 msgid "Do not allow new file of this document to be uploaded."
 msgstr "Nu permiteți încărcarea unui fișier nou din acest document."
 
-#: models.py:51
+#: models.py:52
 msgid "Block new file upload"
 msgstr "Blocați încărcarea de fișiere noi"
 
-#: models.py:59 permissions.py:6
+#: models.py:60 permissions.py:6
 msgid "Document checkout"
 msgstr "Document consemnat ca ieșit"
 
-#: models.py:60
+#: models.py:61
 msgid "Document checkouts"
 msgstr "Consemnări de ieșiri de documente"
 
-#: models.py:69
+#: models.py:70
 msgid "Check out expiration date and time must be in the future."
 msgstr "Data și ora expirării consemnării de ieșire trebuie să fie in viitor."
 

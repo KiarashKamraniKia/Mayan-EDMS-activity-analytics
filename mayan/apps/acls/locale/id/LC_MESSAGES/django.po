@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Faiqul Azmi <kasempurnaningurip@gmail.com>, 2024\n"
 "Language-Team: Indonesian (https://app.transifex.com/rosarior/teams/13584/id/)\n"
@@ -51,7 +51,7 @@ msgstr ""
 msgid "ACL edited"
 msgstr "Daftar akses kontrol diubah"
 
-#: forms.py:13 models.py:56 serializers.py:79 views.py:73
+#: forms.py:13 models.py:57 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "Peranan"
 
@@ -97,15 +97,15 @@ msgstr "ID objek"
 msgid "Role to which the access is granted for the specified object."
 msgstr ""
 
-#: models.py:64
+#: models.py:65
 msgid "Access entry"
 msgstr "Akses masuk"
 
-#: models.py:65
+#: models.py:66
 msgid "Access entries"
 msgstr "Akses masuk"
 
-#: models.py:69
+#: models.py:70
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Peran \"%(role)s\" diizinkan untuk \"%(object)s\""

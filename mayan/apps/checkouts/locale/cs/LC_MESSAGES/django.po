@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 18:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Jiří Podhorecký <jirka.p@volny.cz>, 2024\n"
 "Language-Team: Czech (https://app.transifex.com/rosarior/teams/13584/cs/)\n"
@@ -57,7 +57,7 @@ msgstr "Dokument již byl odhlášen."
 msgid "Document status"
 msgstr "Stav dokumentu"
 
-#: forms.py:37 model_mixins.py:9 models.py:46 serializers.py:20
+#: forms.py:37 model_mixins.py:9 models.py:47 serializers.py:20
 msgid "User"
 msgstr "Uživatel"
 
@@ -129,27 +129,27 @@ msgstr "Datum a čas odhlášení"
 msgid "Amount of time to hold the document checked out in minutes."
 msgstr "Doba, po kterou je dokument odhlášený, v minutách."
 
-#: models.py:42
+#: models.py:43
 msgid "Check out expiration date and time"
 msgstr "Vypršení data a času odhlášení"
 
-#: models.py:50
+#: models.py:51
 msgid "Do not allow new file of this document to be uploaded."
 msgstr "Nepovolit nahrání nového souboru tohoto dokumentu."
 
-#: models.py:51
+#: models.py:52
 msgid "Block new file upload"
 msgstr "Blokovat nahrávání nového souboru"
 
-#: models.py:59 permissions.py:6
+#: models.py:60 permissions.py:6
 msgid "Document checkout"
 msgstr "Odhlášení dokumentu"
 
-#: models.py:60
+#: models.py:61
 msgid "Document checkouts"
 msgstr "Odhlášení dokumentů"
 
-#: models.py:69
+#: models.py:70
 msgid "Check out expiration date and time must be in the future."
 msgstr "Vypršení data a času odhlášení musí být v budoucnosti"
 

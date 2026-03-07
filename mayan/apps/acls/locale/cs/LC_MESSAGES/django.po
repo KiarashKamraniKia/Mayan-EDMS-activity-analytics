@@ -6,15 +6,15 @@
 # Translators:
 # Jiri Fait <fait@orkasolutions.cz>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
-# Jiří Podhorecký <jirka.p@volny.cz>, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
-"Last-Translator: Jiří Podhorecký <jirka.p@volny.cz>, 2024\n"
+"Last-Translator: Jiří Podhorecký <jirka.p@volny.cz>, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/rosarior/teams/13584/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,7 +54,7 @@ msgstr "ACL smazán"
 msgid "ACL edited"
 msgstr "ACL upraven"
 
-#: forms.py:13 models.py:56 serializers.py:79 views.py:73
+#: forms.py:13 models.py:57 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "Role"
 
@@ -101,15 +101,15 @@ msgstr "ID objektu"
 msgid "Role to which the access is granted for the specified object."
 msgstr "Role, ke které je pro zadaný objekt udělen přístup."
 
-#: models.py:64
+#: models.py:65
 msgid "Access entry"
 msgstr "Přístup k záznamu"
 
-#: models.py:65
+#: models.py:66
 msgid "Access entries"
 msgstr "Přístup k položkám"
 
-#: models.py:69
+#: models.py:70
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Role „%(role)s“ má oprávnění „%(object)s“"
@@ -124,15 +124,15 @@ msgstr "Zobrazit seznamy ACL"
 
 #: serializers.py:19
 msgid "Permissions add URL"
-msgstr ""
+msgstr "Oprávnění přidat URL"
 
 #: serializers.py:39
 msgid "Permissions remove URL"
-msgstr ""
+msgstr "Oprávnění odebrat URL"
 
 #: serializers.py:59
 msgid "Permissions URL"
-msgstr ""
+msgstr "URL oprávnění"
 
 #: serializers.py:82
 msgid "Role ID"
@@ -257,7 +257,7 @@ msgstr "Udělte přístup k objektům"
 
 #: workflow_actions.py:133 workflow_actions.py:232
 msgid "Access"
-msgstr ""
+msgstr "Přístup"
 
 #: workflow_actions.py:171
 msgid "Revoke object access"

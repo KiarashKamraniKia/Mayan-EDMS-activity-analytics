@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Māris Teivāns <maris.teivans@gmail.com>, 2024\n"
 "Language-Team: Latvian (https://app.transifex.com/rosarior/teams/13584/lv/)\n"
@@ -50,7 +50,7 @@ msgstr ""
 msgid "ACL edited"
 msgstr "PKS rediģēts"
 
-#: forms.py:13 models.py:56 serializers.py:79 views.py:73
+#: forms.py:13 models.py:57 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "Loma"
 
@@ -96,15 +96,15 @@ msgstr "Objekta ID"
 msgid "Role to which the access is granted for the specified object."
 msgstr ""
 
-#: models.py:64
+#: models.py:65
 msgid "Access entry"
 msgstr "Piekļuves ieraksts"
 
-#: models.py:65
+#: models.py:66
 msgid "Access entries"
 msgstr "Piekļuves ieraksti"
 
-#: models.py:69
+#: models.py:70
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Lomas \"%(role)s\" atļaujas priekš \"%(object)s\""

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Harald Ersch, 2024\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -175,13 +175,22 @@ msgstr ""
 "Un backend de stocare pe care toți lucrătorii îl pot folosi pentru a genera "
 "și păstra fișiere pentru descărcare."
 
-#: settings.py:38
+#: settings.py:35
+msgid ""
+"Keyword arguments to pass to the `STORAGE_DOWNLOAD_FILE_STORAGE` backend."
+msgstr ""
+
+#: settings.py:42
 msgid "A storage backend that all workers can use to share files."
 msgstr ""
 "Un backend de stocare pe care toți lucrătorii îl pot folosi pentru "
 "partajarea fișierelor."
 
-#: settings.py:48
+#: settings.py:49
+msgid "Keyword arguments to pass to the `STORAGE_SHARED_STORAGE` backend."
+msgstr ""
+
+#: settings.py:56
 msgid ""
 "Temporary directory used site wide to store thumbnails, previews and "
 "temporary files."
@@ -189,7 +198,7 @@ msgstr ""
 "Directorul temporar a folosit în server pentru a stoca miniaturi, "
 "previzualizări și fișiere temporare."
 
-#: settings.py:55
+#: settings.py:63
 msgid "Time in seconds, after which temporary uploaded files will be deleted."
 msgstr ""
 "Timp în secunde, după care fișierele temporare încărcate vor fi șterse."

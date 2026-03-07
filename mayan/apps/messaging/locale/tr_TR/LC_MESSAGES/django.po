@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 11:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: serhatcan77 <serhat_can@yahoo.com>, 2024\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
@@ -100,23 +100,23 @@ msgstr "Mesajın halihazırdaki içeriği."
 msgid "This field determines if the message has been read or not."
 msgstr "Bu alan mesajın okunup okunmadığını belirler."
 
-#: models.py:42
+#: models.py:43
 msgid "Read"
 msgstr "Oku"
 
-#: models.py:46
+#: models.py:47
 msgid "Date and time of the message creation."
 msgstr "Mesajın oluşturulma tarihi ve saati."
 
-#: models.py:47
+#: models.py:48
 msgid "Creation date and time"
 msgstr "Oluşturma tarihi ve saati"
 
-#: models.py:52
+#: models.py:53
 msgid "Message"
 msgstr "Mesaj"
 
-#: models.py:53 views.py:128
+#: models.py:54 views.py:128
 msgid "Messages"
 msgstr "Mesajlar"
 
@@ -261,32 +261,32 @@ msgstr ""
 "\"%(instance)s\" mesajı için, okunmadı olarak işaretleme hatası; "
 "%(exception)s"
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)d mesajları başarıyla okunmadı olarak işaretlendi."
 
-#: views.py:213
+#: views.py:214
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "\"%(object)s\" mesajı başarıyla okunmadı olarak işaretlendi."
 
-#: views.py:216
+#: views.py:217
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "%(count)d mesajı başarıyla okunmadı olarak işaretlendi."
 
-#: views.py:218
+#: views.py:219
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "%(count)d seçilen mesajları okunmamış olarak işaretle."
 
-#: views.py:219
+#: views.py:220
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "\"%(object)s\" mesajını okunmadı olarak işaretle."
 
-#: views.py:220
+#: views.py:221
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "%(count)d seçilen mesajı okunmadı olarak işaretle."

@@ -6,15 +6,15 @@
 # Translators:
 # molnars <szabolcs.molnar@gmail.com>, 2024
 # Dezső József <dejo60@gmail.com>, 2024
-# Csaba Tarjányi, 2024
+# Csaba Tarjányi, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-06 21:21+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
-"Last-Translator: Csaba Tarjányi, 2024\n"
+"Last-Translator: Csaba Tarjányi, 2026\n"
 "Language-Team: Hungarian (Slovakia) (https://app.transifex.com/rosarior/teams/13584/hu_SK/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -126,7 +126,7 @@ msgstr ""
 msgid "Triggers"
 msgstr "Eseményindítók"
 
-#: apps.py:503 models/workflow_transition_models.py:105
+#: apps.py:503 models/workflow_transition_field_models.py:31
 msgid "Type"
 msgstr "Típus"
 
@@ -174,8 +174,8 @@ msgstr "A következő lépésben végrehajtandó átvezetés kiválasztása."
 #: forms/workflow_instance_forms.py:18 links.py:293
 #: models/workflow_instance_models.py:96
 #: models/workflow_state_escalation_models.py:34
-#: models/workflow_transition_models.py:102
-#: models/workflow_transition_models.py:184
+#: models/workflow_transition_field_models.py:28
+#: models/workflow_transition_models.py:96
 #: serializers/workflow_instance_serializers.py:45
 msgid "Transition"
 msgstr "Átvezetés"
@@ -198,8 +198,9 @@ msgstr "Névtér"
 
 #: forms/workflow_template_transition_forms.py:45 models/workflow_models.py:45
 #: models/workflow_state_action_models.py:33
-#: models/workflow_state_models.py:39 models/workflow_transition_models.py:38
-#: models/workflow_transition_models.py:116
+#: models/workflow_state_models.py:39
+#: models/workflow_transition_field_models.py:42
+#: models/workflow_transition_models.py:32
 msgid "Label"
 msgstr "Cimke"
 
@@ -213,7 +214,7 @@ msgstr "Igen"
 
 #: forms/workflow_template_transition_forms.py:54
 #: models/workflow_state_action_models.py:36
-#: models/workflow_state_escalation_models.py:47
+#: models/workflow_state_escalation_models.py:48
 msgid "Enabled"
 msgstr "Engedélyezve"
 
@@ -292,7 +293,7 @@ msgstr "Munkafolyamatok indítása"
 msgid "Create field"
 msgstr "Mező létrehozása"
 
-#: links.py:272 models/workflow_transition_model_mixins.py:27
+#: links.py:272 models/workflow_transition_model_mixins.py:26
 msgid "Fields"
 msgstr "Mezők"
 
@@ -347,7 +348,7 @@ msgid "On exit"
 msgstr "Kilépéskor"
 
 #: models/workflow_instance_models.py:31 models/workflow_models.py:57
-#: models/workflow_state_models.py:35 models/workflow_transition_models.py:34
+#: models/workflow_state_models.py:35 models/workflow_transition_models.py:28
 msgid "Workflow"
 msgstr "Munkafolyamat"
 
@@ -377,7 +378,7 @@ msgid "Workflow instances"
 msgstr "Munkafolyamat-példányok"
 
 #: models/workflow_instance_models.py:103
-#: models/workflow_state_escalation_models.py:64
+#: models/workflow_state_escalation_models.py:65
 #: views/workflow_instance_views.py:162
 msgid "Comment"
 msgstr "Hozzászólás"
@@ -418,7 +419,7 @@ msgstr ""
 "Más alkalmazások ezt az értéket fogják használni a munkafolyamat "
 "hivatkozására. Csak betűket, számokat és aláhúzásjeleket tartalmazhat."
 
-#: models/workflow_models.py:41 models/workflow_transition_models.py:111
+#: models/workflow_models.py:41 models/workflow_transition_field_models.py:37
 msgid "Internal name"
 msgstr "Belső név"
 
@@ -440,7 +441,7 @@ msgid ""
 msgstr ""
 
 #: models/workflow_state_action_model_mixins.py:57
-#: models/workflow_transition_model_mixins.py:53
+#: models/workflow_transition_model_mixins.py:52
 msgid "Has a condition?"
 msgstr "Van feltétele?"
 
@@ -477,7 +478,7 @@ msgstr ""
 "vissza, logikai false-nak, minden más érték logikai true-nak minősül."
 
 #: models/workflow_state_action_models.py:52
-#: models/workflow_transition_models.py:56
+#: models/workflow_transition_models.py:50
 msgid "Condition"
 msgstr "Feltétel"
 
@@ -515,30 +516,30 @@ msgstr ""
 "Engedélyezi a munkafolyamat automatikus átvezetését, miután meghatározott "
 "idő eltelt a változás nélküli állapotban."
 
-#: models/workflow_state_escalation_models.py:52
+#: models/workflow_state_escalation_models.py:53
 msgid "Time unit"
 msgstr "Időegység"
 
-#: models/workflow_state_escalation_models.py:57
+#: models/workflow_state_escalation_models.py:58
 msgid "Amount of the selected escalation units of time."
 msgstr "A kiválasztott eszkalációs időegységek mennyisége."
 
-#: models/workflow_state_escalation_models.py:58
+#: models/workflow_state_escalation_models.py:59
 msgid "Amount"
 msgstr "Mennyiség"
 
-#: models/workflow_state_escalation_models.py:62
+#: models/workflow_state_escalation_models.py:63
 msgid ""
 "Comment to save to the workflow instance when the escalation is executed."
 msgstr ""
 "Megjegyzés a munkafolyamat-példányba mentéshez, amikor az eszkaláció "
 "végrehajtódik."
 
-#: models/workflow_state_escalation_models.py:70
+#: models/workflow_state_escalation_models.py:71
 msgid "Workflow state escalation"
 msgstr "Munkafolyamat állapotának eszkalációja"
 
-#: models/workflow_state_escalation_models.py:71
+#: models/workflow_state_escalation_models.py:72
 msgid "Workflow state escalations"
 msgstr "Munkafolyamat állapotának eszkalációi"
 
@@ -578,27 +579,86 @@ msgstr "Munkafolyamat állapot futásidejű proxy"
 msgid "Workflow state runtime proxies"
 msgstr "Munkafolyamat állapot futásidejű proxyk"
 
-#: models/workflow_transition_model_mixins.py:50
+#: models/workflow_transition_field_models.py:35
+msgid ""
+"The name that will be used to identify this field in other parts of the "
+"workflow system."
+msgstr ""
+"A mező azonosítására szolgáló név a munkafolyamat-rendszer más részein."
+
+#: models/workflow_transition_field_models.py:41
+msgid "The field name that will be shown on the user interface."
+msgstr "A felhasználói felületen megjelenő mezőnév."
+
+#: models/workflow_transition_field_models.py:46
+msgid ""
+"An optional message that will help users better understand the purpose of "
+"the field and data to provide."
+msgstr ""
+"Opcionális üzenet, amely segít a felhasználóknak jobban megérteni a mező "
+"célját és a megadandó adatokat."
+
+#: models/workflow_transition_field_models.py:48
+msgid "Help text"
+msgstr "Súgó szöveg"
+
+#: models/workflow_transition_field_models.py:52
+msgid "Whether this field needs to be filled out or not to proceed."
+msgstr "A folytatáshoz ki kell-e tölteni ezt a mezőt vagy sem."
+
+#: models/workflow_transition_field_models.py:54
+msgid "Required"
+msgstr "Kívánt"
+
+#: models/workflow_transition_field_models.py:58
+msgid "An optional class to change the default presentation of the field."
+msgstr ""
+"Egy opcionális osztály a mező alapértelmezett megjelenítésének "
+"megváltoztatásához."
+
+#: models/workflow_transition_field_models.py:60
+msgid "Widget class"
+msgstr "Widget osztály"
+
+#: models/workflow_transition_field_models.py:64
+msgid "A group of keyword arguments to customize the widget. Use YAML format."
+msgstr ""
+"Kulcsszó-argumentumok csoportja a widget testreszabásához. Használjon YAML "
+"formátumot."
+
+#: models/workflow_transition_field_models.py:68
+msgid "Widget keyword arguments"
+msgstr "Widget kulcsszó argumentumok"
+
+#: models/workflow_transition_field_models.py:73
+msgid "Workflow transition field"
+msgstr "Munkafolyamat átvezetési mező"
+
+#: models/workflow_transition_field_models.py:74
+msgid "Workflow transition fields"
+msgstr "Munkafolyamat átvezetési mezői"
+
+#: models/workflow_transition_model_mixins.py:49
 msgid ""
 "The transition will be available, depending on the condition return value."
 msgstr ""
 "Az átvezetés elérhető lesz, a feltétel visszatérési értékétől függően."
 
-#: models/workflow_transition_models.py:37
+#: models/workflow_transition_models.py:31
 msgid "A short text to describe the transition."
 msgstr "Egy rövid szöveg az átvezetés leírására."
 
-#: models/workflow_transition_models.py:42
-#: serializers/workflow_template_transition_serializers.py:95
+#: models/workflow_transition_models.py:36
+#: serializers/workflow_template_transition_serializers.py:97
 msgid "Origin state"
 msgstr "Származási állapot"
 
-#: models/workflow_transition_models.py:46
-#: serializers/workflow_template_transition_serializers.py:82
+#: models/workflow_transition_models.py:40
+#: serializers/workflow_template_transition_serializers.py:84
 msgid "Destination state"
 msgstr "Cél állapot"
 
-#: models/workflow_transition_models.py:50
+#: models/workflow_transition_models.py:44
 msgid ""
 "The condition that will determine if this transition is enabled or not. The "
 "condition is evaluated against the workflow instance. Conditions that do not"
@@ -612,83 +672,24 @@ msgstr ""
 "logikai None-t vagy egy üres karakterláncot (''') adnak vissza, logikai "
 "false-nak, minden más érték logikai true-nak minősül."
 
-#: models/workflow_transition_models.py:64
+#: models/workflow_transition_models.py:58
 msgid "Workflow transition"
 msgstr "Munkafolyamat átvezetés"
 
-#: models/workflow_transition_models.py:65
+#: models/workflow_transition_models.py:59
 msgid "Workflow transitions"
 msgstr "Munkafolyamat átvezetések"
 
-#: models/workflow_transition_models.py:109
-msgid ""
-"The name that will be used to identify this field in other parts of the "
-"workflow system."
-msgstr ""
-"A mező azonosítására szolgáló név a munkafolyamat-rendszer más részein."
-
-#: models/workflow_transition_models.py:115
-msgid "The field name that will be shown on the user interface."
-msgstr "A felhasználói felületen megjelenő mezőnév."
-
-#: models/workflow_transition_models.py:120
-msgid ""
-"An optional message that will help users better understand the purpose of "
-"the field and data to provide."
-msgstr ""
-"Opcionális üzenet, amely segít a felhasználóknak jobban megérteni a mező "
-"célját és a megadandó adatokat."
-
-#: models/workflow_transition_models.py:122
-msgid "Help text"
-msgstr "Súgó szöveg"
-
-#: models/workflow_transition_models.py:126
-msgid "Whether this field needs to be filled out or not to proceed."
-msgstr "A folytatáshoz ki kell-e tölteni ezt a mezőt vagy sem."
-
-#: models/workflow_transition_models.py:127
-msgid "Required"
-msgstr "Kívánt"
-
-#: models/workflow_transition_models.py:131
-msgid "An optional class to change the default presentation of the field."
-msgstr ""
-"Egy opcionális osztály a mező alapértelmezett megjelenítésének "
-"megváltoztatásához."
-
-#: models/workflow_transition_models.py:133
-msgid "Widget class"
-msgstr "Widget osztály"
-
-#: models/workflow_transition_models.py:137
-msgid "A group of keyword arguments to customize the widget. Use YAML format."
-msgstr ""
-"Kulcsszó-argumentumok csoportja a widget testreszabásához. Használjon YAML "
-"formátumot."
-
-#: models/workflow_transition_models.py:141
-msgid "Widget keyword arguments"
-msgstr "Widget kulcsszó argumentumok"
-
-#: models/workflow_transition_models.py:146
-msgid "Workflow transition field"
-msgstr "Munkafolyamat átvezetési mező"
-
-#: models/workflow_transition_models.py:147
-msgid "Workflow transition fields"
-msgstr "Munkafolyamat átvezetési mezői"
-
-#: models/workflow_transition_models.py:188
-#: serializers/workflow_template_transition_serializers.py:195
+#: models/workflow_transition_models.py:100
+#: serializers/workflow_template_transition_serializers.py:197
 msgid "Event type"
 msgstr "Esemény típus"
 
-#: models/workflow_transition_models.py:194
+#: models/workflow_transition_models.py:106
 msgid "Workflow transition trigger event"
 msgstr "Munkafolyamat átvezetési eseményindító esemény"
 
-#: models/workflow_transition_models.py:196
+#: models/workflow_transition_models.py:108
 msgid "Workflow transitions trigger events"
 msgstr "A munkafolyamat átvezetések eseményeket indítanak el"
 
@@ -760,7 +761,7 @@ msgstr "Az indítandó munkafolyamat-sablon elsődleges kulcsa."
 
 #: serializers/workflow_instance_serializers.py:25
 #: serializers/workflow_template_state_serializers.py:47
-#: serializers/workflow_template_transition_serializers.py:111
+#: serializers/workflow_template_transition_serializers.py:113
 msgid "Workflow template ID"
 msgstr "Munkafolyamat-sablon azonosító"
 
@@ -783,9 +784,9 @@ msgstr "Átvezetés azonosító"
 #: serializers/workflow_template_state_escalation_serializers.py:16
 #: serializers/workflow_template_state_serializers.py:35
 #: serializers/workflow_template_state_serializers.py:71
-#: serializers/workflow_template_transition_serializers.py:25
-#: serializers/workflow_template_transition_serializers.py:108
-#: serializers/workflow_template_transition_serializers.py:202
+#: serializers/workflow_template_transition_serializers.py:27
+#: serializers/workflow_template_transition_serializers.py:110
+#: serializers/workflow_template_transition_serializers.py:204
 #: workflow_actions.py:175
 msgid "URL"
 msgstr "URL"
@@ -797,9 +798,9 @@ msgstr "Munkafolyamat-példány URL-je"
 #: serializers/workflow_instance_serializers.py:86
 #: serializers/workflow_instance_serializers.py:148
 #: serializers/workflow_template_state_serializers.py:50
-#: serializers/workflow_template_transition_serializers.py:41
-#: serializers/workflow_template_transition_serializers.py:114
-#: serializers/workflow_template_transition_serializers.py:218
+#: serializers/workflow_template_transition_serializers.py:43
+#: serializers/workflow_template_transition_serializers.py:116
+#: serializers/workflow_template_transition_serializers.py:220
 msgid "Workflow template URL"
 msgstr "Munkafolyamat-sablon URL-je"
 
@@ -860,7 +861,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr "A munkafolyamathoz hozzáadandó dokumentumtípus elsődleges kulcsa."
 
 #: serializers/workflow_template_serializers.py:66
-#: serializers/workflow_template_serializers.py:75
+#: serializers/workflow_template_serializers.py:76
 msgid "Document type ID"
 msgstr "Dokumentumtípus azonosító"
 
@@ -882,11 +883,11 @@ msgstr "Munkafolyamat-sablon állapot URL"
 msgid "Primary key of the workflow template transition to be added."
 msgstr "A munkafolyamat-sablon átvezetés hozzáadandó elsődleges kulcsa."
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "Munkafolyamat-sablon átvezetési azonosítója"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "Munkafolyamat-sablon átvezetés URL-je"
 
@@ -898,45 +899,45 @@ msgstr "Műveletek URL-je"
 msgid "Escalations URL"
 msgstr "Eszkalációk URL-je"
 
-#: serializers/workflow_template_transition_serializers.py:49
-#: serializers/workflow_template_transition_serializers.py:226
+#: serializers/workflow_template_transition_serializers.py:51
+#: serializers/workflow_template_transition_serializers.py:228
 msgid "Workflow transition ID"
 msgstr "Munkafolyamat átvezetés azonosító"
 
-#: serializers/workflow_template_transition_serializers.py:53
-#: serializers/workflow_template_transition_serializers.py:230
+#: serializers/workflow_template_transition_serializers.py:55
+#: serializers/workflow_template_transition_serializers.py:232
 msgid "Workflow transition URL"
 msgstr "Munkafolyamat átvezetés azonosító"
 
-#: serializers/workflow_template_transition_serializers.py:86
+#: serializers/workflow_template_transition_serializers.py:88
 msgid "Primary key of the destination state to be added."
 msgstr "A hozzáadandó célállapot elsődleges kulcsa."
 
-#: serializers/workflow_template_transition_serializers.py:87
+#: serializers/workflow_template_transition_serializers.py:89
 msgid "Destination state ID"
 msgstr "Cél állapot azonosítója"
 
-#: serializers/workflow_template_transition_serializers.py:92
+#: serializers/workflow_template_transition_serializers.py:94
 msgid "Field list URL"
 msgstr "Mezőlista URL-je"
 
-#: serializers/workflow_template_transition_serializers.py:99
+#: serializers/workflow_template_transition_serializers.py:101
 msgid "Primary key of the origin state to be added."
 msgstr "Hozzáadandó származási állapot elsődleges kulcsa."
 
-#: serializers/workflow_template_transition_serializers.py:100
+#: serializers/workflow_template_transition_serializers.py:102
 msgid "Origin state ID"
 msgstr "Származási állapot azonosítója"
 
-#: serializers/workflow_template_transition_serializers.py:105
+#: serializers/workflow_template_transition_serializers.py:107
 msgid "Trigger list URL"
 msgstr "Eseményindító lista URL-je"
 
-#: serializers/workflow_template_transition_serializers.py:198
+#: serializers/workflow_template_transition_serializers.py:200
 msgid "Event Type ID"
 msgstr "Eseménytípus azonosítója"
 
-#: serializers/workflow_template_transition_serializers.py:291
+#: serializers/workflow_template_transition_serializers.py:293
 #, python-format
 msgid "Unknown or invalid event type ID `%s`"
 msgstr "Ismeretlen vagy érvénytelen eseménytípus-azonosító ` %s `"
@@ -950,12 +951,10 @@ msgstr ""
 
 #: settings.py:28
 msgid ""
-"The threshold at which the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND will start "
-"deleting the oldest workflow image cache files. Specify the size in bytes."
+"The threshold at which the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will "
+"start deleting the oldest workflow image cache files. Specify the size in "
+"bytes."
 msgstr ""
-"Az a küszöbérték, amelynél a WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND megkezdi "
-"a munkafolyamat legrégebbi kép-gyorsítótár-fájljainak törlését. Adja meg a "
-"méretet bájtban."
 
 #: settings.py:37
 msgid ""
@@ -966,10 +965,10 @@ msgstr ""
 "tárolásakor."
 
 #: settings.py:45
-msgid "Arguments to pass to the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "A WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND-be továbbítandó argumentumok."
+msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."
@@ -1039,11 +1038,11 @@ msgstr ""
 msgid "Optional comment to attach to the transition."
 msgstr "Csatolandó opcionális megjegyzés az átvezetéshez."
 
-#: views/workflow_instance_views.py:233
+#: views/workflow_instance_views.py:234
 msgid "Select"
 msgstr "Kiválasztás"
 
-#: views/workflow_instance_views.py:235
+#: views/workflow_instance_views.py:236
 #, python-format
 msgid "Select transition for workflow \"%(workflow)s\" of document \"%(document)s\""
 msgstr ""
@@ -1195,54 +1194,53 @@ msgstr "Munkafolyamat-állapot szerkesztése: %s"
 msgid "This workflow doesn't have any states"
 msgstr "Ennek a munkafolyamatnak nincsenek állapotai"
 
-#: views/workflow_template_transition_views.py:54
+#: views/workflow_template_transition_views.py:56
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "Átvezetések létrehozása a munkafolyamathoz: %s"
 
-#: views/workflow_template_transition_views.py:95
+#: views/workflow_template_transition_views.py:97
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "Munkafolyamat átvezetés törlése: %s ?"
 
-#: views/workflow_template_transition_views.py:124
+#: views/workflow_template_transition_views.py:126
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "Munkafolyamat átvezetés szerkesztése: %s"
 
-#: views/workflow_template_transition_views.py:166
+#: views/workflow_template_transition_views.py:168
 msgid ""
-"Create a transition and use it to move a workflow from  one state to "
-"another."
+"Create a transition and use it to move a workflow from one state to another."
 msgstr ""
 "Hozzon létre egy átvezetést, és használja azt a munkafolyamat egyik "
-"állapotból a másikba való átvezetéséhez."
+"állapotból a másikba való áthelyezéséhez."
 
-#: views/workflow_template_transition_views.py:170
+#: views/workflow_template_transition_views.py:172
 msgid "This workflow doesn't have any transitions"
 msgstr "Ez a munkafolyamat nem tartalmaz átvezetéseket"
 
-#: views/workflow_template_transition_views.py:174
+#: views/workflow_template_transition_views.py:176
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "A munkafolyamat átvezetései %s"
 
-#: views/workflow_template_transition_views.py:200
+#: views/workflow_template_transition_views.py:202
 #, python-format
 msgid "Create a field for workflow transition: %s"
 msgstr "Mezőt létrehozása a munkafolyamat átvezetéshez: %s"
 
-#: views/workflow_template_transition_views.py:235
+#: views/workflow_template_transition_views.py:237
 #, python-format
 msgid "Delete workflow transition field: %s"
 msgstr "Munkafolyamat átvezetési mező törlése: %s"
 
-#: views/workflow_template_transition_views.py:270
+#: views/workflow_template_transition_views.py:272
 #, python-format
 msgid "Edit workflow transition field: %s"
 msgstr "Munkafolyamat átvezetési mező szerkesztése: %s"
 
-#: views/workflow_template_transition_views.py:310
+#: views/workflow_template_transition_views.py:312
 msgid ""
 "Workflow transition fields allow adding data to the workflow's context. This"
 " additional context data can then be used by other elements of the workflow "
@@ -1253,34 +1251,34 @@ msgstr ""
 "munkafolyamat-rendszer más elemei, például a munkafolyamat-állapot műveletek"
 " felhasználhatják."
 
-#: views/workflow_template_transition_views.py:316
+#: views/workflow_template_transition_views.py:318
 msgid "There are no fields for this workflow transition"
 msgstr "Nincsenek mezők ehhez a munkafolyamat átvezetéshez"
 
-#: views/workflow_template_transition_views.py:320
+#: views/workflow_template_transition_views.py:322
 #, python-format
 msgid "Fields for workflow transition: %s"
 msgstr "A munkafolyamat átvezetési mezői: %s"
 
-#: views/workflow_template_transition_views.py:349
+#: views/workflow_template_transition_views.py:351
 #, python-format
 msgid "Error updating workflow transition trigger events; %s"
 msgstr ""
 "Hiba a munkafolyamat átvezetési eseményindító események frissítése során; %s"
 
-#: views/workflow_template_transition_views.py:356
+#: views/workflow_template_transition_views.py:359
 msgid "Workflow transition trigger events updated successfully"
 msgstr ""
 "A munkafolyamat átvezetési eseményindító eseményei sikeresen frissítve"
 
-#: views/workflow_template_transition_views.py:368
+#: views/workflow_template_transition_views.py:372
 msgid ""
 "Triggers are events that cause this transition to execute automatically."
 msgstr ""
 "Az eseményindítók olyan események, amelyek hatására ez az átállás "
 "automatikusan végrehajtódik."
 
-#: views/workflow_template_transition_views.py:372
+#: views/workflow_template_transition_views.py:376
 #, python-format
 msgid "Workflow transition trigger events for: %s"
 msgstr "Munkafolyamat átvezetési eseményindító események a következőhöz: %s"

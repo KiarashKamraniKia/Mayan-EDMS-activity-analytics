@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -114,32 +114,32 @@ msgid "Primary key of the document type to add to the web link."
 msgstr ""
 "དྲ་རྒྱའི་འབྲེལ་མཐུད་ལ་ཁ་སྣོན་བྱེད་པའི་ཡིག་ཆའི་རིགས་ཀྱི་ལྡེ་མིག་གཙོ་བོ།"
 
-#: serializers.py:17 serializers.py:26
+#: serializers.py:18 serializers.py:28
 msgid "Document type ID"
 msgstr "ཡིག་ཆའི་རིགས་ཀྱི་ཨང་རྟགས།"
 
-#: serializers.py:25
+#: serializers.py:26
 msgid "Primary key of the document type to remove from the web link."
 msgstr ""
 "དྲ་རྒྱའི་འབྲེལ་མཐུད་ནས་མེད་པར་བཟོ་བའི་ཡིག་ཆའི་རིགས་ཀྱི་ལྡེ་མིག་གཙོ་བོ།"
 
-#: serializers.py:33
+#: serializers.py:35
 msgid "Document types add URL"
 msgstr "ཡིག་ཆའི་རིགས་URLཁ་སྣོན་བྱེད།"
 
-#: serializers.py:37
+#: serializers.py:39
 msgid "Document types remove URL"
 msgstr "ཡིག་ཆའི་རིགས་URLམེད་པར་བཟོས།"
 
-#: serializers.py:41
+#: serializers.py:43
 msgid "Document types URL"
 msgstr "ཡིག་ཆའི་རིགས་URL།"
 
-#: serializers.py:48 serializers.py:63
+#: serializers.py:50 serializers.py:65
 msgid "URL"
 msgstr "URL །"
 
-#: serializers.py:66
+#: serializers.py:68
 msgid "Navigation URL"
 msgstr "འགྲིམ་འགྲུལ་URL"
 

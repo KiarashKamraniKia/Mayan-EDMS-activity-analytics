@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-23 17:54+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -222,18 +222,18 @@ msgstr "バルクインデックス処理時の対象オブジェクト数 "
 msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr "「すべて一致」チェックボックスの初期状態を設定"
 
-#: settings.py:65
+#: settings.py:66
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr "1回の検索クエリで取得・表示する最大検索結果数"
 
-#: settings.py:72
+#: settings.py:73
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."
 msgstr "検索結果が SEARCH_QUERY_RESULTS_LIMIT を超えた場合にエラーを発生させます"
 
-#: settings.py:78
+#: settings.py:79
 msgid "Maximum number of search results to fetch and display."
 msgstr " 取得・表示する最大検索結果数"
 

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -20,55 +20,51 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: apps.py:27 permissions.py:6
+#: apps.py:29 permissions.py:6
 msgid "Smart settings"
 msgstr "スマート設定"
 
-#: apps.py:37
+#: apps.py:39
 msgid "Setting count"
 msgstr "設定数"
 
-#: apps.py:43
+#: apps.py:45
 msgid "Name"
 msgstr "名前"
 
-#: apps.py:47 forms.py:30
+#: apps.py:49 forms.py:30
 msgid "Value"
 msgstr "値"
 
-#: classes.py:318
-msgid "Settings namespace"
-msgstr "設定の名前空間"
-
-#: classes.py:496
+#: classes.py:158
 msgid "Choices"
 msgstr "選択肢"
 
-#: classes.py:498
+#: classes.py:160
 msgid "Possible values allowed for this setting."
 msgstr "この設定で許可されている値の一覧です。"
 
-#: classes.py:519
+#: classes.py:181
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr "設定を元に戻せません。値は更新されていません。"
 
-#: classes.py:556
+#: classes.py:218
 msgid "Default"
 msgstr "デフォルト"
 
-#: classes.py:569
+#: classes.py:231
 msgid "Modified"
 msgstr "変更済み"
 
-#: classes.py:571
+#: classes.py:233
 msgid "The value of this setting being modified since the last restart."
 msgstr "最後の再起動以降に変更された設定値です。"
 
-#: classes.py:577
+#: classes.py:240
 msgid "Overridden"
 msgstr "上書きされています"
 
-#: classes.py:579
+#: classes.py:242
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr "この設定値は環境変数によって上書きされています。"
@@ -86,7 +82,7 @@ msgstr "\"%s\"は有効な入力ではありません。"
 msgid "Save"
 msgstr "保存"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "設定"
 
@@ -98,7 +94,7 @@ msgstr "編集"
 msgid "Revert"
 msgstr "元に戻す"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "名前空間"
 
@@ -132,6 +128,10 @@ msgstr "更新された設定"
 msgid "Updated settings"
 msgstr "更新された設定"
 
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "設定の名前空間"
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr "設定を編集"
@@ -140,11 +140,11 @@ msgstr "設定を編集"
 msgid "View settings"
 msgstr "設定を表示"
 
-#: settings.py:29
+#: settings.py:24
 msgid "Django"
 msgstr "Django"
 
-#: settings.py:34
+#: settings.py:29
 msgid ""
 "A list of strings representing the host/domain names that this site can "
 "serve. This is a security measure to prevent HTTP Host header attacks, which"
@@ -164,7 +164,7 @@ msgstr ""
 "example.com や www.example.com などを許可）。* "
 "を指定するとすべてのホストが許可されますが、この場合は独自にヘッダー検証を行う必要があります。"
 
-#: settings.py:51
+#: settings.py:46
 msgid ""
 "When set to True, if the request URL does not match any of the patterns in "
 "the URLconf and it doesn't end in a slash, an HTTP redirect is issued to the"
@@ -176,19 +176,19 @@ msgstr ""
 "有効にすると、URL がスラッシュで終わらず URLconf のどのパターンにも一致しない場合に、末尾にスラッシュを追加してリダイレクトします。POST"
 " リクエストではデータが失われる可能性があります。CommonMiddleware が有効な場合のみ使用されます。"
 
-#: settings.py:63
+#: settings.py:58
 msgid ""
 "The list of validators that are used to check the strength of user's "
 "passwords."
 msgstr "利用者のパスワード強度を確認するための検証ルールの一覧です。"
 
-#: settings.py:70
+#: settings.py:65
 msgid ""
 "A list of authentication backend classes (as strings) to use when attempting"
 " to authenticate a user."
 msgstr "利用者認証に使用する認証バックエンドクラス（文字列）の一覧です。"
 
-#: settings.py:77
+#: settings.py:72
 msgid ""
 "Whether to use a secure cookie for the CSRF cookie. If this is set to True, "
 "the cookie will be marked as \"secure\", which means browsers may ensure "
@@ -200,7 +200,7 @@ msgstr ""
 "に設定すると、クッキーに「secure」属性が付与され、ブラウザーはそのクッキーをHTTPS接続でのみ送信するようになります。参照：https://docs.djangoproject.com/en/4.2/ref/settings/#std-"
 "setting-CSRF_COOKIE_SECURE"
 
-#: settings.py:87
+#: settings.py:82
 msgid ""
 "A list of trusted origins for unsafe requests (e.g. POST). "
 "https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-"
@@ -209,7 +209,7 @@ msgstr ""
 "安全でないリクエスト（例：POST）を許可する信頼済みオリジンの一覧です。参照：https://docs.djangoproject.com/en/4.2/ref/settings/#std-"
 "setting-CSRF_TRUSTED_ORIGINS"
 
-#: settings.py:94
+#: settings.py:89
 msgid ""
 "Whether to store the CSRF token in the user's session instead of in a "
 "cookie. https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-"
@@ -218,7 +218,7 @@ msgstr ""
 "CSRFトークンをクッキーではなく、ユーザーのセッション内に保存するかどうかを指定します。参照：https://docs.djangoproject.com/en/4.2/ref/settings/#std-"
 "setting-CSRF_USE_SESSIONS"
 
-#: settings.py:101
+#: settings.py:96
 msgid ""
 "A dictionary containing the settings for all databases to be used with "
 "Django. It is a nested dictionary whose contents map a database alias to a "
@@ -229,7 +229,7 @@ msgstr ""
 "Djangoで使用するすべてのデータベースの設定を含む辞書です。これはネストされた辞書で、外側の辞書ではデータベースエイリアスをキーとし、各データベースの設定オプションを含む辞書を値とします。DATABASES"
 " 設定では、少なくとも1つのデフォルトデータベースを構成する必要があります。追加のデータベースを任意の数だけ指定することも可能です。"
 
-#: settings.py:112
+#: settings.py:107
 msgid ""
 "Default: 2621440 (i.e. 2.5 MB). The maximum size in bytes that a request "
 "body may be before a SuspiciousOperation (RequestDataTooBig) is raised. The "
@@ -250,7 +250,7 @@ msgstr ""
 "POST "
 "ディクショナリを生成するために必要なメモリ量に相関します。大きなリクエストを無制限に許可すると、サービス拒否（DoS）攻撃の原因になる可能性があります。Webサーバーでは通常、リクエストの内容を詳細に検査しないため、このレベルで同様の検証を行うことはできません。参考：FILE_UPLOAD_MAX_MEMORY_SIZE"
 
-#: settings.py:131
+#: settings.py:126
 msgid ""
 "Default: 'webmaster@localhost' Default email address to use for various "
 "automated correspondence from the site manager(s). This doesn't include "
@@ -259,7 +259,7 @@ msgstr ""
 "既定値：webmaster@localhost サイト管理者から送信される自動通知などに使用される既定のメールアドレスです。ただし、ADMINS および"
 " MANAGERS へのエラーメッセージ送信には含まれません。これらについては SERVER_EMAIL を参照してください。"
 
-#: settings.py:140
+#: settings.py:135
 msgid ""
 "Default: [] (Empty list). List of compiled regular expression objects "
 "representing User-Agent strings that are not allowed to visit any page, "
@@ -270,18 +270,18 @@ msgstr ""
 "Agent文字列を表す、コンパイル済みの正規表現オブジェクトのリストです。します。この設定は CommonMiddleware "
 "がインストールされている場合のみ有効です（詳細は Middleware を参照）。"
 
-#: settings.py:149
+#: settings.py:144
 msgid ""
 "Default: 'django.core.mail.backends.smtp.EmailBackend'. The backend to use "
 "for sending emails."
 msgstr ""
 "既定値：django.core.mail.backends.smtp.EmailBackendメール送信に使用するバックエンドを指定します。"
 
-#: settings.py:155
+#: settings.py:150
 msgid "Default: 'localhost'. The host to use for sending email."
 msgstr "既定値：localhostメール送信に使用するSMTPホスト名を指定します。"
 
-#: settings.py:161
+#: settings.py:156
 msgid ""
 "Default: '' (Empty string). Password to use for the SMTP server defined in "
 "EMAIL_HOST. This setting is used in conjunction with EMAIL_HOST_USER when "
@@ -291,7 +291,7 @@ msgstr ""
 "既定値：''（空文字列）EMAIL_HOST で指定されたSMTPサーバーに接続する際のパスワードを指定します。この設定は "
 "EMAIL_HOST_USER と併用して認証に使用されます。どちらかが空の場合、Djangoは認証を試みません。"
 
-#: settings.py:171
+#: settings.py:166
 msgid ""
 "Default: '' (Empty string). Username to use for the SMTP server defined in "
 "EMAIL_HOST. If empty, Django won't attempt authentication."
@@ -299,17 +299,17 @@ msgstr ""
 "既定値：''（空文字列）EMAIL_HOST "
 "で指定されたSMTPサーバーに接続する際のユーザー名を指定します。空の場合、Djangoは認証を試みません。"
 
-#: settings.py:178
+#: settings.py:173
 msgid "Default: 25. Port to use for the SMTP server defined in EMAIL_HOST."
 msgstr "既定値：25  EMAIL_HOST で指定されたSMTPサーバーのポート番号を指定します。"
 
-#: settings.py:183
+#: settings.py:179
 msgid ""
 "Default: None. Specifies a timeout in seconds for blocking operations like "
 "the connection attempt."
 msgstr "既定値：None : 接続試行などのブロッキング操作に対するタイムアウト時間（秒単位）を指定します。"
 
-#: settings.py:189
+#: settings.py:185
 msgid ""
 "Default: False. Whether to use an implicit TLS (secure) connection when "
 "talking to the SMTP server. In most email documentation this type of TLS "
@@ -323,7 +323,7 @@ msgstr ""
 " EMAIL_USE_TLS を確認してください。なお、EMAIL_USE_TLS と EMAIL_USE_SSL は相互に排他的であり、同時に "
 "True に設定することはできません。"
 
-#: settings.py:199
+#: settings.py:196
 msgid ""
 "Default: False. Whether to use a TLS (secure) connection when talking to the"
 " SMTP server. This is used for explicit TLS connections, generally on port "
@@ -334,7 +334,7 @@ msgstr ""
 "SMTPサーバーとの通信でTLS（セキュア）接続を使用するかどうかを指定します。これは明示的TLS接続であり、一般的にポート587で使用されます。接続がハングする場合は、暗黙的TLS設定である"
 " EMAIL_USE_SSL を確認してください。"
 
-#: settings.py:208
+#: settings.py:205
 msgid ""
 "Default: 2621440 (i.e. 2.5 MB). The maximum size (in bytes) that an upload "
 "will be before it gets streamed to the file system. See Managing files for "
@@ -343,7 +343,7 @@ msgstr ""
 "既定値：2621440（2.5MB） : "
 "アップロードがこのサイズ（バイト単位）を超えると、ファイルシステムへストリーミングされる上限値です。詳細は「ファイルの管理」を参照してください。関連項目：DATA_UPLOAD_MAX_MEMORY_SIZE"
 
-#: settings.py:216
+#: settings.py:213
 msgid ""
 "Default: '/accounts/login/' The URL where requests are redirected for login,"
 " especially when using the login_required() decorator. This setting also "
@@ -355,7 +355,7 @@ msgstr ""
 "ログインが必要なページへアクセスした際にリクエストがリダイレクトされるURLを指定します（例：login_required() "
 "デコレーター使用時）。この設定は、名前付きURLパターンも受け付けるため、設定とURLconfの重複を避けることができます。"
 
-#: settings.py:227
+#: settings.py:224
 msgid ""
 "Default: '/accounts/profile/' The URL where requests are redirected after "
 "login when the contrib.auth.login view gets no next parameter. This is used "
@@ -367,7 +367,7 @@ msgstr ""
 "パラメータを受け取らなかった場合にリダイレクトされるURLです。login_required() "
 "デコレーターなどで使用されます。この設定も名前付きURLパターンを受け付け、設定とURLconfの重複を減らすことができます。"
 
-#: settings.py:238
+#: settings.py:235
 msgid ""
 "Default: None. The URL where requests are redirected after a user logs out "
 "using LogoutView (if the view doesn't get a next_page argument). If None, no"
@@ -379,7 +379,7 @@ msgstr ""
 "既定値: None\n"
 "LogoutView を使用してユーザーがログアウトした際にリクエストがリダイレクトされるURLです（ビューが next_page 引数を受け取らなかった場合）。None の場合、リダイレクトは行われず、ログアウトビューがそのまま表示されます。この設定には名前付きURLパターンを指定することもでき、URLを2か所（settings and URLconf）で定義する必要を減らすことができます。"
 
-#: settings.py:249
+#: settings.py:246
 msgid ""
 "A list of IP addresses, as strings, that: Allow the debug() context "
 "processor to add some variables to the template context. Can use the "
@@ -391,7 +391,7 @@ msgstr ""
 "スタッフユーザーとしてログインしていなくても、admindocsブックマークレットを使用できる。\n"
 "AdminEmailHandler で送信されるメール内で「内部（internal）」として扱われる（「外部（EXTERNAL）」ではない）。"
 
-#: settings.py:258
+#: settings.py:255
 msgid ""
 "A list of all available languages. The list is a list of two-tuples in the "
 "format (language code, language name) for example, ('ja', 'Japanese'). This "
@@ -403,7 +403,7 @@ msgstr ""
 "'Japanese')。この設定により、ユーザーが選択可能な言語を指定できます。通常はデフォルト値で十分です。Django "
 "が提供する言語の一部に制限したい場合のみ設定してください。"
 
-#: settings.py:269
+#: settings.py:266
 msgid ""
 "A string representing the language code for this installation. This should "
 "be in standard language ID format. For example, U.S. English is \"en-us\". "
@@ -417,20 +417,20 @@ msgstr ""
 "このインストールで使用する言語コードを表す文字列。標準的な言語ID形式で指定します。例：米国英語は \"en-"
 "us\"。ロケールミドルウェアを使用していない場合は、全ユーザーに提供される翻訳を決定します。ロケールミドルウェアを使用している場合は、ユーザーの希望する言語が判別できない、またはサポートされていない場合のフォールバック言語として使用されます。また、特定の文字列に対する翻訳がユーザーの希望する言語で存在しない場合もフォールバック翻訳として使用されます。"
 
-#: settings.py:283
+#: settings.py:280
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
-msgstr "既定値: 'sessionid'。セッションで使用するクッキーの名前です。他のクッキー名と重複しなければ、任意の名前を設定できます。"
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
+msgstr ""
 
-#: settings.py:291
+#: settings.py:288
 msgid ""
 "Default: 'django.contrib.sessions.backends.db'. Controls where Django stores"
 " session data."
 msgstr "既定値: 'django.contrib.sessions.backends.db'. : "
 
-#: settings.py:298
+#: settings.py:295
 msgid ""
 "A tuple representing a HTTP header/value combination that signifies a "
 "request is secure. This controls the behavior of the request object’s "
@@ -440,7 +440,7 @@ msgstr ""
 "HTTP ヘッダーと値の組み合わせを表すタプルで、リクエストが安全であることを示します。これは request オブジェクトの is_secure() メソッドの挙動に影響します。\n"
 "警告: この設定を変更するとサイトのセキュリティが損なわれる可能性があります。変更する前に、設定内容を十分に理解していることを確認してください。"
 
-#: settings.py:307
+#: settings.py:304
 msgid ""
 "URL to use when referring to static files located in STATIC_ROOT. Example: "
 "\"/static/\" or \"http://static.example.com/\" If not None, this will be "
@@ -451,7 +451,7 @@ msgstr ""
 "\"http://static.example.com/\"None でない場合、この URL がアセット定義（Media クラス）および "
 "staticfiles アプリの基準パスとして使用されます。値を設定する場合は、末尾にスラッシュ / を付ける必要があります。"
 
-#: settings.py:317
+#: settings.py:314
 msgid ""
 "A dictionary containing the settings for all storages to be used with "
 "Django. It is a nested dictionary whose contents map a storage alias to a "
@@ -460,7 +460,7 @@ msgstr ""
 "Django "
 "で使用されるすべてのストレージの設定を格納する辞書。内容はネストされた辞書で、ストレージのエイリアスをキーとして、個々のストレージのオプションを格納した辞書に対応しています。"
 
-#: settings.py:325
+#: settings.py:322
 msgid ""
 "A string representing the time zone for this installation. Note that this "
 "isn't necessarily the time zone of the server. For example, one server may "
@@ -469,7 +469,7 @@ msgstr ""
 "このインストールで使用するタイムゾーンを表す文字列。サーバーのタイムゾーンとは限りません。たとえば、1台のサーバーで複数の Django "
 "サイトを運用している場合、それぞれ別のタイムゾーン設定を持つことがあります。"
 
-#: settings.py:334
+#: settings.py:331
 msgid ""
 "A boolean that specifies whether to use the X-Forwarded-Host header in "
 "preference to the Host header. This should only be enabled if a proxy which "
@@ -478,7 +478,7 @@ msgstr ""
 "X-Forwarded-Host ヘッダーを Host "
 "ヘッダーより優先して使用するかどうかを指定するブール値。このヘッダーを設定するプロキシを使用している場合にのみ有効にしてください。"
 
-#: settings.py:342
+#: settings.py:339
 msgid ""
 "A boolean that specifies whether to use the X-Forwarded-Port header in "
 "preference to the SERVER_PORT META variable. This should only be enabled if "
@@ -489,7 +489,7 @@ msgstr ""
 "変数より優先して使用するかどうかを指定するブール値。このヘッダーを設定するプロキシを使用している場合にのみ有効にしてください。USE_X_FORWARDED_HOST"
 " の設定が優先されます。"
 
-#: settings.py:351
+#: settings.py:349
 msgid ""
 "The full Python path of the WSGI application object that Django's built-in "
 "servers (e.g. runserver) will use. The django-admin startproject management "
@@ -510,7 +510,7 @@ msgid ""
 "effect."
 msgstr "設定が更新されました。変更を反映させるには、インストールを保存して再起動してください。"
 
-#: tests/test_classes.py:190
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "英語"
 

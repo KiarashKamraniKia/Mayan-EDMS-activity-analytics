@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -104,11 +104,11 @@ msgstr "ポート"
 msgid "Store the body of the email as a text document."
 msgstr "メール本文をテキスト文書として保存"
 
-#: source_backends/mixins.py:60
+#: source_backends/mixins.py:61
 msgid "Store email body"
 msgstr "メール本文を保存"
 
-#: source_backends/mixins.py:74
+#: source_backends/mixins.py:75
 msgid "Common email options"
 msgstr "メールの一般オプション"
 

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 18:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Chinese Simplified (https://app.transifex.com/rosarior/teams/13584/zh-Hans/)\n"
@@ -58,7 +58,7 @@ msgstr "文档已经签出。"
 msgid "Document status"
 msgstr "文档状态"
 
-#: forms.py:37 model_mixins.py:9 models.py:46 serializers.py:20
+#: forms.py:37 model_mixins.py:9 models.py:47 serializers.py:20
 msgid "User"
 msgstr "用户"
 
@@ -130,27 +130,27 @@ msgstr "查看日期和时间"
 msgid "Amount of time to hold the document checked out in minutes."
 msgstr "签出文件需要几分钟的时间"
 
-#: models.py:42
+#: models.py:43
 msgid "Check out expiration date and time"
 msgstr "查看到期日期和时间"
 
-#: models.py:50
+#: models.py:51
 msgid "Do not allow new file of this document to be uploaded."
 msgstr "不允許此文件有新的檔案被上傳"
 
-#: models.py:51
+#: models.py:52
 msgid "Block new file upload"
 msgstr "阻止新檔案上傳"
 
-#: models.py:59 permissions.py:6
+#: models.py:60 permissions.py:6
 msgid "Document checkout"
 msgstr "文档签出"
 
-#: models.py:60
+#: models.py:61
 msgid "Document checkouts"
 msgstr "文档签出"
 
-#: models.py:69
+#: models.py:70
 msgid "Check out expiration date and time must be in the future."
 msgstr "签出到期时间必须是当前时间之后"
 

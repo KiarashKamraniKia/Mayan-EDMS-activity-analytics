@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 13:48+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Hany salah, 2025\n"
 "Language-Team: Arabic (Egypt) (https://app.transifex.com/rosarior/teams/13584/ar_EG/)\n"
@@ -54,7 +54,7 @@ msgstr "قيم وصف بيانات الملف"
 msgid "MIME types"
 msgstr "أنواع"
 
-#: apps.py:178 models.py:71 models.py:122
+#: apps.py:178 models.py:72 models.py:123
 msgid "Internal name"
 msgstr "الإسم الداخلي"
 
@@ -110,7 +110,7 @@ msgstr "إعدادت ملف البيانات الوصفية"
 msgid "File metadata processing per type"
 msgstr "معالج البيانات الوصفية حسب النوع"
 
-#: links.py:65 views.py:232
+#: links.py:65 views.py:236
 msgid "File metadata drivers"
 msgstr "مشغلات بيانات وصفية للملف"
 
@@ -122,7 +122,7 @@ msgstr "إرجاع إدخال بيانات تعريف ملف المستند ال
 msgid "Attribute count"
 msgstr "عدد الصفات"
 
-#: models.py:20 models.py:127
+#: models.py:20 models.py:128
 msgid "Driver"
 msgstr "المسار"
 
@@ -130,7 +130,7 @@ msgstr "المسار"
 msgid "Document file"
 msgstr "ملف المستند"
 
-#: models.py:30 models.py:66
+#: models.py:30 models.py:67
 msgid "Document file driver entry"
 msgstr "إدخال برنامج تشغيل ملف المستند"
 
@@ -146,51 +146,51 @@ msgstr "نوع الوثيقة"
 msgid "Automatically queue newly created documents for processing."
 msgstr "الوثائق المضافة حديثاً قيد المعالجة"
 
-#: models.py:48
+#: models.py:49
 msgid "Auto process"
 msgstr "المعالجة التلقائية"
 
-#: models.py:54
+#: models.py:55
 msgid "Document type settings"
 msgstr "اعدادات نوع الوثيقة"
 
-#: models.py:55
+#: models.py:56
 msgid "Document types settings"
 msgstr "اعدادات انواع الوثائق"
 
-#: models.py:70
+#: models.py:71
 msgid "Normalized name of the file metadata entry."
 msgstr "الاسم الموحد لإدخال البيانات الوصفية للملف."
 
-#: models.py:75
+#: models.py:76
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr "اسم إدخال البيانات الوصفية للملف كما هو مُقدم من المشغل."
 
-#: models.py:77
+#: models.py:78
 msgid "Key"
 msgstr "مفتاح"
 
-#: models.py:80
+#: models.py:81
 msgid "Value of the file metadata entry."
 msgstr "قيمة إدخال البيانات الوصفية"
 
-#: models.py:81
+#: models.py:82
 msgid "Value"
 msgstr "قيمة"
 
-#: models.py:87
+#: models.py:88
 msgid "File metadata entry"
 msgstr "أدخال البيانات الوصفية للملف"
 
-#: models.py:88
+#: models.py:89
 msgid "File metadata entries"
 msgstr "إدخال البيانات الوصفية للملفات"
 
-#: models.py:118
+#: models.py:119
 msgid "Driver path"
 msgstr "تحديد المسار"
 
-#: models.py:128
+#: models.py:129
 msgid "Drivers"
 msgstr "المسارات"
 
@@ -268,17 +268,17 @@ msgid ""
 msgstr ""
 "سمات بيانات تعريف الملف لـ: %(document_file)s مع برنامج التشغيل: %(driver)s"
 
-#: views.py:122
+#: views.py:123
 #, python-format
 msgid "%(count)d documents files submitted to the file metadata queue."
 msgstr "تم إرسال %(count)d ملفات مستندات إلى قائمة انتظار بيانات تعريف الملف."
 
-#: views.py:125
+#: views.py:127
 #, python-format
 msgid "%(count)d document file submitted to the file metadata queue."
 msgstr "تم إرسال %(count)d ملف مستند إلى قائمة انتظار بيانات تعريف الملف."
 
-#: views.py:134
+#: views.py:137
 msgid "Submit the selected document file to the file metadata queue?"
 msgid_plural "Submit the selected documents files to the file metadata queue?"
 msgstr[0] "إرسال المستند المحدد إلى قائمة انتظار البيانات الوصفية للملف؟"
@@ -288,21 +288,21 @@ msgstr[3] "إرسال المستندات المحددة إلى قائمة انت
 msgstr[4] "إرسال المستندات المحددة إلى قائمة انتظار البيانات الوصفية للملف؟"
 msgstr[5] "إرسال المستندات المحددة إلى قائمة انتظار البيانات الوصفية للملف؟"
 
-#: views.py:165
+#: views.py:168
 #, python-format
 msgid "Edit file metadata settings for document type: %s"
 msgstr "تعديل البيانات الاساسية للملف : %s"
 
-#: views.py:176
+#: views.py:179
 msgid "Submit all documents of a type for file metadata processing."
 msgstr "تم ارسال جميع الوثائق للمعالجة"
 
-#: views.py:203
+#: views.py:207
 #, python-format
 msgid "%(count)d documents added to the file metadata processing queue."
 msgstr "%(count)d تم إضافة الملف للمعالجة"
 
-#: views.py:224
+#: views.py:228
 msgid ""
 "File metadata drivers extract embedded information from document files. File"
 " metadata drivers are configure in code only."
@@ -310,6 +310,6 @@ msgstr ""
 "تقوم برامج تشغيل بيانات وصفية للملف باستخراج المعلومات المضمنة من ملفات "
 "الوثائق. يتم تكوين برامج تشغيل بيانات وصفية للملف في الكود فقط"
 
-#: views.py:229
+#: views.py:233
 msgid "No file metadata drivers available."
 msgstr "لا تتوفر برامج تشغيل بيانات وصفية للملف"

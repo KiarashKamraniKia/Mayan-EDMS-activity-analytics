@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -113,31 +113,31 @@ msgstr "Webリンクのインスタンスを表示"
 msgid "Primary key of the document type to add to the web link."
 msgstr "Webリンクに追加する文書タイプの主キー"
 
-#: serializers.py:17 serializers.py:26
+#: serializers.py:18 serializers.py:28
 msgid "Document type ID"
 msgstr "文書タイプ ID"
 
-#: serializers.py:25
+#: serializers.py:26
 msgid "Primary key of the document type to remove from the web link."
 msgstr "Webリンクから削除する文書タイプの主キー"
 
-#: serializers.py:33
+#: serializers.py:35
 msgid "Document types add URL"
 msgstr "文書タイプ追加用 URL"
 
-#: serializers.py:37
+#: serializers.py:39
 msgid "Document types remove URL"
 msgstr "ｖ"
 
-#: serializers.py:41
+#: serializers.py:43
 msgid "Document types URL"
 msgstr "文書タイプ URL"
 
-#: serializers.py:48 serializers.py:63
+#: serializers.py:50 serializers.py:65
 msgid "URL"
 msgstr "URL"
 
-#: serializers.py:66
+#: serializers.py:68
 msgid "Navigation URL"
 msgstr "ナビゲーション URL"
 

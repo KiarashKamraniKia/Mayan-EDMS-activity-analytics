@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Marvin Haschker <marvin@haschker.me>, 2024\n"
 "Language-Team: German (Germany) (https://app.transifex.com/rosarior/teams/13584/de_DE/)\n"
@@ -178,11 +178,20 @@ msgstr ""
 "Ein Speicherbackend, dass alle Worker für die Generierung und Speicherung "
 "von Downloaddateien verwenden können."
 
-#: settings.py:38
+#: settings.py:35
+msgid ""
+"Keyword arguments to pass to the `STORAGE_DOWNLOAD_FILE_STORAGE` backend."
+msgstr ""
+
+#: settings.py:42
 msgid "A storage backend that all workers can use to share files."
 msgstr "Datenbackend, das alle Worker benutzen können, um Dateien zu teilen."
 
-#: settings.py:48
+#: settings.py:49
+msgid "Keyword arguments to pass to the `STORAGE_SHARED_STORAGE` backend."
+msgstr ""
+
+#: settings.py:56
 msgid ""
 "Temporary directory used site wide to store thumbnails, previews and "
 "temporary files."
@@ -190,7 +199,7 @@ msgstr ""
 "Temporäres Verzeichnis zum systemweiten Speichern von Miniaturbildern, "
 "Vorschauen und temporären Dateien."
 
-#: settings.py:55
+#: settings.py:63
 msgid "Time in seconds, after which temporary uploaded files will be deleted."
 msgstr ""
 "Zeit in Sekunden, nach der temporär hochgeladene Dateien gelöscht werden."

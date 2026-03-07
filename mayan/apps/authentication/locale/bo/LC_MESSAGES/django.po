@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -93,7 +93,7 @@ msgid "Dotted path to the backend used to process user authentication."
 msgstr ""
 "བཀོལ་སྤྱོད་པའི་བདེན་དཔང་ལས་སྣོན་བྱེད་པར་བེད་སྤྱོད་བྱེད་པའི་རྒྱབ་ཕྱོགས་ལ་ཚག་ཡོད་པའི་འགྲོ་ལམ།"
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "AUTHENTICATION_BACKEND དོན་གྱི་ཨར་གུ་མེན་ཊི་ (Arguments) ཁག"
 

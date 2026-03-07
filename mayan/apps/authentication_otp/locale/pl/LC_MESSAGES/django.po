@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: edasmax <edasmax@gmail.com>, 2024\n"
 "Language-Team: Polish (https://app.transifex.com/rosarior/teams/13584/pl/)\n"
@@ -63,22 +63,22 @@ msgstr ""
 "Skanuj kod QR lub wprowadź sekret w swoim urządzeniu uwierzytelniającym. Nie"
 " udostępniaj tego sekretu, traktuj go jak hasło."
 
-#: forms.py:106 forms.py:111
+#: forms.py:107 forms.py:112
 msgid "Secret"
 msgstr "Sekret"
 
-#: forms.py:117
+#: forms.py:118
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 "Wprowadź odpowiedni token, aby potwierdzić, że sekret został poprawnie "
 "zapisany."
 
-#: forms.py:120
+#: forms.py:121
 msgid "Token"
 msgstr "Token"
 
-#: forms.py:155
+#: forms.py:156
 msgid "Token is incorrect for the specified secret."
 msgstr "Token jest nieprawidłowy dla określonego sekretu."
 

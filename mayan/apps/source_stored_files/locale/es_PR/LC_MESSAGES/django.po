@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Spanish (Puerto Rico) (https://app.transifex.com/rosarior/teams/13584/es_PR/)\n"
@@ -173,19 +173,19 @@ msgstr "No hay archivos de fuente de origien disponibles"
 msgid "Width value to be passed to the converter backend."
 msgstr "Valor de la anchura que se pasa al backend convertidor."
 
-#: source_backends/stored_file_mixins.py:195
+#: source_backends/stored_file_mixins.py:196
 msgid "Preview width"
 msgstr "Ancho de muestra"
 
-#: source_backends/stored_file_mixins.py:201
+#: source_backends/stored_file_mixins.py:202
 msgid "Height value to be passed to the converter backend."
 msgstr "Valor de la altura que se pasa al backend convertidor."
 
-#: source_backends/stored_file_mixins.py:206
+#: source_backends/stored_file_mixins.py:208
 msgid "Preview height"
 msgstr "Alto de muestra"
 
-#: source_backends/stored_file_mixins.py:213
+#: source_backends/stored_file_mixins.py:215
 msgid ""
 "Maximum size in bytes for which previews will be generated. Example: 20000 ="
 " 20KB."
@@ -193,11 +193,11 @@ msgstr ""
 "Tamaño máximo en bytes para el que se generarán previsualizaciones. Ejemplo:"
 " 20000 = 20 KB."
 
-#: source_backends/stored_file_mixins.py:216
+#: source_backends/stored_file_mixins.py:218
 msgid "Max size preview"
 msgstr "Tamaño máximo a previsualizar"
 
-#: source_backends/stored_file_mixins.py:230
+#: source_backends/stored_file_mixins.py:232
 msgid "File images"
 msgstr "Imágenes de archivo"
 

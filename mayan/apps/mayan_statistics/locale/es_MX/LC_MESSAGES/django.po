@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Spanish (Mexico) (https://app.transifex.com/rosarior/teams/13584/es_MX/)\n"
@@ -122,40 +122,40 @@ msgstr ""
 "Los espacios de nombres de estadísticas agrupan estadísticas en unidades "
 "lógicas."
 
-#: views.py:25
+#: views.py:26
 msgid "No statistic namespaces available"
 msgstr "No hay espacios de nombres de estadísticas disponibles"
 
-#: views.py:26
+#: views.py:27
 msgid "Statistics namespaces"
 msgstr "Grupos de estadísticas"
 
-#: views.py:49
+#: views.py:50
 msgid "Statistics are metrics and chart representations of existing data."
 msgstr ""
 "Las estadísticas son métricas y representaciones gráficas de datos "
 "existentes."
 
-#: views.py:52
+#: views.py:53
 msgid "No statistic available"
 msgstr "No hay estadísticas disponibles"
 
-#: views.py:54
+#: views.py:55
 #, python-format
 msgid "Namespace details for: %s"
 msgstr "Detalles para grupo: %s"
 
-#: views.py:77
+#: views.py:78
 #, python-format
 msgid "Results for: %s"
 msgstr "Resultados para: %s"
 
-#: views.py:97
+#: views.py:98
 #, python-format
 msgid "Queue statistic \"%s\" to be updated?"
 msgstr "¿Someter estadística \"%s\" para ser actualizada?"
 
-#: views.py:105
+#: views.py:106
 #, python-format
 msgid "Statistic \"%s\" queued successfully for update."
 msgstr "La estadística \"%s\" fue sometida para la actualización."

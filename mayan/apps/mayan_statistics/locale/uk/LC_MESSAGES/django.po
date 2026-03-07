@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Leo Lado, 2024\n"
 "Language-Team: Ukrainian (https://app.transifex.com/rosarior/teams/13584/uk/)\n"
@@ -120,38 +120,38 @@ msgstr "Статистика \"%s\" не знайдена."
 msgid "Statistics namespaces group statistics into logical units. "
 msgstr "Простори імен статистики групують статистику в логічні одиниці."
 
-#: views.py:25
+#: views.py:26
 msgid "No statistic namespaces available"
 msgstr "Немає доступних просторів імен статистики"
 
-#: views.py:26
+#: views.py:27
 msgid "Statistics namespaces"
 msgstr "Простори імен статистики"
 
-#: views.py:49
+#: views.py:50
 msgid "Statistics are metrics and chart representations of existing data."
 msgstr "Статистика – це показники та діаграми, що відображають наявні дані."
 
-#: views.py:52
+#: views.py:53
 msgid "No statistic available"
 msgstr "Немає статистики"
 
-#: views.py:54
+#: views.py:55
 #, python-format
 msgid "Namespace details for: %s"
 msgstr "Деталі простору імен для: %s"
 
-#: views.py:77
+#: views.py:78
 #, python-format
 msgid "Results for: %s"
 msgstr "Результати для: %s"
 
-#: views.py:97
+#: views.py:98
 #, python-format
 msgid "Queue statistic \"%s\" to be updated?"
 msgstr "Чи потрібно оновити статистику черги \"%s\"?"
 
-#: views.py:105
+#: views.py:106
 #, python-format
 msgid "Statistic \"%s\" queued successfully for update."
 msgstr "Статистика \"%s\" успішно поставлена в чергу для оновлення."

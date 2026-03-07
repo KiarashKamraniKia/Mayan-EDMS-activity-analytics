@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-23 17:54+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: piera.daraio, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
@@ -242,14 +242,14 @@ msgstr ""
 "Imposta lo stato predefinito della casella di controllo \\\"Corrisponde a "
 "tutti\\\"."
 
-#: settings.py:65
+#: settings.py:66
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "Numero massimo di risultati di ricerca da recuperare e visualizzare per "
 "singola query di ricerca."
 
-#: settings.py:72
+#: settings.py:73
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."
@@ -257,7 +257,7 @@ msgstr ""
 "Genera un errore quando il numero di risultati di ricerca supera il valore "
 "di `SEARCH_QUERY_RESULTS_LIMIT`."
 
-#: settings.py:78
+#: settings.py:79
 msgid "Maximum number of search results to fetch and display."
 msgstr "Numero massimo di risultati di ricerca da recuperare e visualizzare."
 

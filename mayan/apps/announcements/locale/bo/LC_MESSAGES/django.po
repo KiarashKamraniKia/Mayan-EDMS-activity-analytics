@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: bo\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:46
+#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:48
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:127
 msgid "Announcements"
 msgstr "གསལ་བསྒྲགས།"
@@ -73,20 +73,20 @@ msgstr "བེད་སྤྱོད་ཆོག་པ།"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "གསལ་བསྒྲགས་འདི་མངོན་པའི་ཚེས་གྲངས་དང་དུས་ཚོད།"
 
-#: models.py:33
+#: models.py:34
 msgid "Start date time"
 msgstr "འགོ་འཛུགས་ཚེས་གྲངས་དུས་ཚོད།"
 
-#: models.py:37
+#: models.py:38
 msgid "Date and time until when this announcement is to be displayed."
 msgstr ""
 "གསལ་བསྒྲགས་འདི་ག་དུས་འགྲེམས་སྟོན་བྱེད་དགོས་མིན་གྱི་ཚེས་གྲངས་དང་དུས་ཚོད།"
 
-#: models.py:38
+#: models.py:40
 msgid "End date time"
 msgstr "མཇུག་བསྡུའི་ཚེས་གྲངས་དུས་ཚོད།"
 
-#: models.py:45
+#: models.py:47
 msgid "Announcement"
 msgstr "གསལ་བསྒྲགས"
 

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: pyrotech <anastasios@tutamail.com>, 2024\n"
 "Language-Team: Greek (Greece) (https://app.transifex.com/rosarior/teams/13584/el_GR/)\n"
@@ -360,7 +360,7 @@ msgstr "Ερμάρια από τα οποία τα επιλεγμένα έγγρ
 msgid "Select cabinets"
 msgstr "Επιλογή ερμαρίων"
 
-#: wizard_steps.py:77 workflow_actions.py:33
+#: wizard_steps.py:87 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Ερμάρια στα οποία το έγγραφο θα προστεθεί."
 

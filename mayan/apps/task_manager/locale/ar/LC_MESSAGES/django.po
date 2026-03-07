@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 04:29+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/rosarior/teams/13584/ar/)\n"
@@ -29,11 +29,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "مدير المهام "
 
-#: apps.py:114 apps.py:139 apps.py:182
+#: apps.py:114 apps.py:140 apps.py:183
 msgid "Label"
 msgstr "العنوان"
 
-#: apps.py:118 apps.py:142 apps.py:186
+#: apps.py:118 apps.py:143 apps.py:187
 msgid "Name"
 msgstr "اسم"
 
@@ -50,43 +50,43 @@ msgstr ""
 "طوابير المؤقتة غير دائمة. يتم فقدان المهام في الطابور المؤقت إذا تم إعادة "
 "تشغيل الوسيط. تستخدم الطوابير المؤقتة موارد أقل وتدير المهام غير الحرجة."
 
-#: apps.py:131
+#: apps.py:132
 msgid "Is transient?"
 msgstr "هل تم الإضافة؟"
 
-#: apps.py:145
+#: apps.py:146
 msgid "Dotted path"
 msgstr "مسار منقوط"
 
-#: apps.py:149
+#: apps.py:150
 msgid "Schedule"
 msgstr "جدولة"
 
-#: apps.py:155
+#: apps.py:156
 msgid "Type"
 msgstr "النوع"
 
-#: apps.py:160
+#: apps.py:161
 msgid "Start time"
 msgstr "وقت البداية"
 
-#: apps.py:164
+#: apps.py:165
 msgid "Host"
 msgstr "مضيف"
 
-#: apps.py:168
+#: apps.py:169
 msgid "Arguments"
 msgstr "المحددات"
 
-#: apps.py:172
+#: apps.py:173
 msgid "Keyword arguments"
 msgstr "المحددات الرئيسية"
 
-#: apps.py:177
+#: apps.py:178
 msgid "Worker process ID"
 msgstr "رقم العمل للعميل"
 
-#: apps.py:190
+#: apps.py:191
 msgid ""
 "Maximum amount of resident memory a worker can execute before it's replaced "
 "by a new process."
@@ -94,22 +94,22 @@ msgstr ""
 "الحد الأقصى لذاكرة الوصول العشوائي التي يمكن للعامل تنفيذها قبل استبداله "
 "بعملية جديدة."
 
-#: apps.py:192
+#: apps.py:193
 msgid "Maximum memory per child"
 msgstr "الحد الأقصى للذاكرة لكل عملية فرعية"
 
-#: apps.py:196
+#: apps.py:197
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
 msgstr ""
 "الحد الأقصى لعدد المهام التي يمكن للعامل تنفيذها قبل استبداله بعملية جديدة."
 
-#: apps.py:198
+#: apps.py:199
 msgid "Maximum tasks per child"
 msgstr "الحد الأقصى للمهام لكل عملية فرعية"
 
-#: apps.py:202
+#: apps.py:203
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
@@ -117,11 +117,11 @@ msgstr ""
 "عدد عمليات/خيوط العامل التي سيتم تشغيلها. القيمة الافتراضية هي عدد وحدات "
 "المعالجة المتاحة في الجهاز."
 
-#: apps.py:204
+#: apps.py:205
 msgid "Concurrency"
 msgstr "التزامن"
 
-#: apps.py:208
+#: apps.py:209
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
@@ -129,7 +129,7 @@ msgstr ""
 "تحدد قيمة nice أولوية العملية. كلما زادت القيمة انخفضت الأولوية. القيمة "
 "الافتراضية هي 0."
 
-#: apps.py:211
+#: apps.py:212
 msgid "Nice level"
 msgstr "مستوى nice"
 
@@ -176,13 +176,13 @@ msgstr ""
 "URL in the form of: transport://userid:password@hostname:port/virtual_host "
 "Only the scheme part (transport://) ."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
 msgstr "الغاء التفعيل الخيار الإفتراضي."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

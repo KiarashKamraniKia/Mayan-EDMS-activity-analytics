@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Māris Teivāns <maris.teivans@gmail.com>, 2024\n"
 "Language-Team: Latvian (https://app.transifex.com/rosarior/teams/13584/lv/)\n"
@@ -50,7 +50,7 @@ msgstr "Autoadmin iestatījumi"
 msgid "Sets the email of the automatically created super user account."
 msgstr "Iestata automātiski izveidotā super lietotāja konta e-pastu."
 
-#: settings.py:18
+#: settings.py:19
 msgid ""
 "The password of the automatically created super user account. If it is equal"
 " to None, the password is randomly generated."
@@ -58,7 +58,7 @@ msgstr ""
 "Automātiski izveidotā super lietotāja konta parole. Ja tā ir vienāds ar "
 "Neko, parole tiek ģenerēta automātiski."
 
-#: settings.py:24
+#: settings.py:26
 msgid "The username of the automatically created super user account."
 msgstr "Automātiski izveidotā super lietotāja konta lietotājvārds."
 

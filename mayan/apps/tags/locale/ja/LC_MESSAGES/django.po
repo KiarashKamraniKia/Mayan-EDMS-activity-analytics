@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 04:29+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -220,7 +220,7 @@ msgstr "文書にタグを付ける: %(object)s"
 msgid "Attach tags to %(count)d document."
 msgstr "%(count)d 件の文書にタグを付ける"
 
-#: views.py:69 wizard_steps.py:80
+#: views.py:69 wizard_steps.py:87
 msgid "Tags to be attached."
 msgstr "添付するタグ"
 
@@ -330,7 +330,7 @@ msgstr "%(count)d 件の文書からタグを削除"
 msgid "Tags to be removed."
 msgstr "削除するタグ"
 
-#: wizard_steps.py:19
+#: wizard_steps.py:18
 msgid "Select tags"
 msgstr "タグを選択"
 

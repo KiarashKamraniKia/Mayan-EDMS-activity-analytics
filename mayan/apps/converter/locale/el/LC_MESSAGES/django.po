@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Hmayag Antonian <hmayag@freemail.gr>, 2024\n"
 "Language-Team: Greek (https://app.transifex.com/rosarior/teams/13584/el/)\n"
@@ -62,7 +62,7 @@ msgstr ""
 "Βοηθητικό πρόγραμμα από το πακέτο poppler-utils που χρησιμοποιείται για τον "
 "έλεγχο αρχείων PDF."
 
-#: dependencies.py:21
+#: dependencies.py:22
 msgid ""
 "Utility from the popper-utils package used to extract pages from PDF files "
 "into PPM format images."
@@ -135,7 +135,7 @@ msgstr "Μετασχηματισμοί"
 msgid "Select new transformation"
 msgstr "Επιλογή νέου μετασχηματισμού"
 
-#: model_mixins.py:124 models.py:169
+#: model_mixins.py:123 models.py:169
 msgid "Arguments"
 msgstr "Ορίσματα"
 
@@ -346,7 +346,7 @@ msgstr ""
 msgid "Assets cache"
 msgstr ""
 
-#: transformation_mixins.py:20 transformations.py:634
+#: transformation_mixins.py:20 transformations.py:633
 msgid ""
 "Number of degrees to rotate the image counter clockwise around its center."
 msgstr ""
@@ -380,8 +380,8 @@ msgid "Horizontal position in pixels from the left."
 msgstr ""
 
 #: transformation_mixins.py:120 transformation_mixins.py:165
-#: transformation_mixins.py:230 transformations.py:237 transformations.py:339
-#: transformations.py:437
+#: transformation_mixins.py:230 transformations.py:236 transformations.py:338
+#: transformations.py:436
 msgid "Left"
 msgstr ""
 
@@ -390,8 +390,8 @@ msgid "Vertical position in pixels from the top."
 msgstr ""
 
 #: transformation_mixins.py:124 transformation_mixins.py:170
-#: transformation_mixins.py:240 transformations.py:241 transformations.py:343
-#: transformations.py:441
+#: transformation_mixins.py:240 transformations.py:240 transformations.py:342
+#: transformations.py:440
 msgid "Top"
 msgstr ""
 
@@ -407,7 +407,7 @@ msgstr ""
 msgid "Vertical position in percent from the top."
 msgstr ""
 
-#: transformation_mixins.py:223 transformations.py:225
+#: transformation_mixins.py:223 transformations.py:224
 msgid "Paste an asset as watermark"
 msgstr "Επικόλληση ενός στοιχείου ως υδατογράφημα"
 
@@ -419,8 +419,8 @@ msgstr ""
 msgid "Horizontal end position in pixels from the right."
 msgstr ""
 
-#: transformation_mixins.py:235 transformations.py:246 transformations.py:347
-#: transformations.py:445
+#: transformation_mixins.py:235 transformations.py:245 transformations.py:346
+#: transformations.py:444
 msgid "Right"
 msgstr ""
 
@@ -432,8 +432,8 @@ msgstr ""
 msgid "Vertical end position in pixels from the top."
 msgstr ""
 
-#: transformation_mixins.py:245 transformations.py:251 transformations.py:351
-#: transformations.py:449
+#: transformation_mixins.py:245 transformations.py:250 transformations.py:350
+#: transformations.py:448
 msgid "Bottom"
 msgstr ""
 
@@ -489,123 +489,123 @@ msgstr ""
 msgid "Outline width"
 msgstr ""
 
-#: transformations.py:209
+#: transformations.py:208
 msgid "Paste an asset (absolute coordinates)"
 msgstr ""
 
-#: transformations.py:217
+#: transformations.py:216
 msgid "Paste an asset (percent coordinates)"
 msgstr ""
 
-#: transformations.py:231
+#: transformations.py:230
 msgid "Crop"
 msgstr "Περικοπή"
 
-#: transformations.py:236
+#: transformations.py:235
 msgid "Number of pixels to remove from the left."
 msgstr ""
 
-#: transformations.py:240
+#: transformations.py:239
 msgid "Number of pixels to remove from the top."
 msgstr ""
 
-#: transformations.py:245
+#: transformations.py:244
 msgid "Number of pixels to remove from the right."
 msgstr ""
 
-#: transformations.py:250
+#: transformations.py:249
 msgid "Number of pixels to remove from the bottom."
 msgstr ""
 
-#: transformations.py:333
+#: transformations.py:332
 msgid "Draw rectangle"
 msgstr "Σχεδίαση ορθογωνίου"
 
-#: transformations.py:338
+#: transformations.py:337
 msgid "Left side location in pixels."
 msgstr ""
 
-#: transformations.py:342
+#: transformations.py:341
 msgid "Top side location in pixels."
 msgstr ""
 
-#: transformations.py:346
+#: transformations.py:345
 msgid "Right side location in pixels."
 msgstr ""
 
-#: transformations.py:350
+#: transformations.py:349
 msgid "Bottom side location in pixels."
 msgstr ""
 
-#: transformations.py:431
+#: transformations.py:430
 msgid "Draw rectangle (percent coordinates)"
 msgstr ""
 
-#: transformations.py:436
+#: transformations.py:435
 msgid "Left side location in percent."
 msgstr ""
 
-#: transformations.py:440
+#: transformations.py:439
 msgid "Top side location in percent."
 msgstr ""
 
-#: transformations.py:444
+#: transformations.py:443
 msgid "Right side location in percent."
 msgstr ""
 
-#: transformations.py:448
+#: transformations.py:447
 msgid "Bottom side location in percent."
 msgstr ""
 
-#: transformations.py:531
+#: transformations.py:530
 msgid "Flip"
 msgstr "Αναστροφή"
 
-#: transformations.py:542
+#: transformations.py:541
 msgid "Gaussian blur"
 msgstr "Γκαουσιανό θάμπωμα"
 
-#: transformations.py:547 transformations.py:710
+#: transformations.py:546 transformations.py:710
 msgid "Radius"
 msgstr ""
 
-#: transformations.py:559
+#: transformations.py:558
 msgid "Line art"
 msgstr "Γραμμικό σχέδιο"
 
-#: transformations.py:573
+#: transformations.py:572
 msgid "Mirror"
 msgstr "Αντικατοπτρισμός"
 
-#: transformations.py:584
+#: transformations.py:583
 msgid "Resize"
 msgstr "Αλλαγή μεγέθους"
 
-#: transformations.py:590
+#: transformations.py:589
 msgid "New width in pixels."
 msgstr ""
 
-#: transformations.py:591
+#: transformations.py:590
 msgid "Width"
 msgstr ""
 
-#: transformations.py:595
+#: transformations.py:594
 msgid "New height in pixels."
 msgstr ""
 
-#: transformations.py:596
+#: transformations.py:595
 msgid "Height"
 msgstr ""
 
-#: transformations.py:628
+#: transformations.py:627
 msgid "Rotate"
 msgstr "Περιστροφή"
 
-#: transformations.py:636
+#: transformations.py:635
 msgid "Degrees"
 msgstr ""
 
-#: transformations.py:640
+#: transformations.py:639
 msgid "Color to be used for area outside of the rotated image."
 msgstr ""
 

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Bedreddin Şahbaz, 2024\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
@@ -39,11 +39,11 @@ msgstr "Dahili adı"
 msgid "Description"
 msgstr "Açıklama"
 
-#: apps.py:45 classes.py:218
+#: apps.py:45 classes.py:220
 msgid "Type"
 msgstr "Tür"
 
-#: apps.py:49 classes.py:221
+#: apps.py:49 classes.py:223
 msgid "Other data"
 msgstr "Diğer veri"
 
@@ -51,7 +51,7 @@ msgstr "Diğer veri"
 msgid "Declared by"
 msgstr "Tarafından beyan edildi"
 
-#: apps.py:57 classes.py:219
+#: apps.py:57 classes.py:221
 msgid "Version"
 msgstr "Versiyon"
 
@@ -59,73 +59,73 @@ msgstr "Versiyon"
 msgid "Environment"
 msgstr "Çevresel değişken"
 
-#: apps.py:64 classes.py:221
+#: apps.py:64 classes.py:223
 msgid "Check"
 msgstr "Kontrol"
 
-#: classes.py:218
+#: classes.py:220
 msgid "Name"
 msgstr "İsim"
 
-#: classes.py:219
+#: classes.py:221
 msgid "App"
 msgstr "Uygulama"
 
-#: classes.py:220 classes.py:963
+#: classes.py:222 classes.py:985
 msgid "Environments"
 msgstr "Çevresel değişkenler"
 
-#: classes.py:331
+#: classes.py:333
 msgid "Need to specify at least one: app_label or module."
 msgstr "En az birini belirtmeniz gerekiyor: app_label veya modül."
 
-#: classes.py:336
+#: classes.py:338
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "Bağımlılık \"%s\" zaten yüklü."
 
-#: classes.py:387
+#: classes.py:389
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Paket yükleniyor: %s..."
 
-#: classes.py:394
+#: classes.py:396
 msgid "Already installed."
 msgstr "Zaten yüklenmiş."
 
-#: classes.py:399 classes.py:406 classes.py:412
+#: classes.py:401 classes.py:408 classes.py:414
 msgid "Complete."
 msgstr "Tamamlandı."
 
-#: classes.py:439
+#: classes.py:441
 msgid "Installed and correct version"
 msgstr "Yüklü ve doğru sürüm"
 
-#: classes.py:441
+#: classes.py:443
 msgid "Missing or incorrect version"
 msgstr "Eksik veya yanlış sürüm"
 
-#: classes.py:478
+#: classes.py:480
 msgid "None"
 msgstr "Yok"
 
-#: classes.py:487
+#: classes.py:489
 msgid "Not specified"
 msgstr "Belirtilmemiş"
 
-#: classes.py:490
+#: classes.py:492
 msgid "Patching files... "
 msgstr "Dosyalar ekleniyor..."
 
-#: classes.py:518
+#: classes.py:520
 msgid "Executables that are called directly by the code."
 msgstr "Doğrudan kod tarafından çağrılan yürütülebilir dosyalar."
 
-#: classes.py:520
+#: classes.py:522
 msgid "Binary"
 msgstr "Binary"
 
-#: classes.py:537
+#: classes.py:540
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
@@ -133,51 +133,51 @@ msgstr ""
 "JavaScript kitaplıkları, NPM kayıt defterinden indirilir ve front-end işlevi"
 " için kullanılır."
 
-#: classes.py:540
+#: classes.py:543
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: classes.py:572 classes.py:866
+#: classes.py:575 classes.py:886
 msgid "Downloading... "
 msgstr "İndiriliyor..."
 
-#: classes.py:577
+#: classes.py:580
 msgid "Verifying... "
 msgstr "Doğrulanıyor..."
 
-#: classes.py:582 classes.py:871
+#: classes.py:585 classes.py:891
 msgid "Extracting... "
 msgstr "Ayıklanıyor..."
 
-#: classes.py:792
+#: classes.py:795
 msgid "Python packages downloaded from PyPI."
 msgstr "Python paketleri PyPI'den indirildi."
 
-#: classes.py:794
+#: classes.py:797
 msgid "Python"
 msgstr "Python"
 
-#: classes.py:846
+#: classes.py:866
 msgid "Fonts downloaded from fonts.googleapis.com."
 msgstr "fonts.googleapis.com adresinden indirilen yazı tipleri."
 
-#: classes.py:848
+#: classes.py:868
 msgid "Google font"
 msgstr "Google yazı tipi"
 
-#: classes.py:944
+#: classes.py:965
 msgid "Declared in app"
 msgstr "Uygulamada bildirildi"
 
-#: classes.py:945
+#: classes.py:966
 msgid "Show dependencies by the app that declared them."
 msgstr "Bağımlılıkları, bunları bildiren uygulamaya göre gösterin."
 
-#: classes.py:949
+#: classes.py:970
 msgid "Class"
 msgstr "Sınıf"
 
-#: classes.py:950
+#: classes.py:971
 msgid ""
 "Show the different classes of dependencies. Classes are usually divided by "
 "language or the file types of the dependency."
@@ -185,11 +185,11 @@ msgstr ""
 "Farklı bağımlılık sınıflarını göster. Sınıflar genellikle dile veya "
 "bağımlılığın dosya türlerine göre bölünür."
 
-#: classes.py:955
+#: classes.py:976
 msgid "State"
 msgstr "Durum"
 
-#: classes.py:956
+#: classes.py:977
 msgid ""
 "Show the different states of the dependencies. True means that the "
 "dependencies is installed and is of a correct version. False means the "
@@ -199,7 +199,7 @@ msgstr ""
 "olduğu ve doğru bir sürüm olduğu anlamına gelir. False, bağımlılıkların "
 "eksik olduğu veya yanlış bir sürümün mevcut olduğu anlamına gelir."
 
-#: classes.py:964
+#: classes.py:986
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."
@@ -262,11 +262,11 @@ msgstr ""
 "Son kullanıcılar için normal çevre. Bu çevre altında eksik bir bağımlılık, "
 "normal kullanım sırasında sorunlara ve hatalara neden olur."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Production"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -275,7 +275,7 @@ msgstr ""
 "Kodun işlevselliğini doğrulamak için test takımının çalıştığı çevre. Normal "
 "production kullanımı için bu çevredeki bağımlılıklara gerek yoktur."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Test ediliyor"
 
@@ -299,25 +299,25 @@ msgstr "Ayrıntılar"
 msgid "Dependencies licenses"
 msgstr "Bağımlılıkların lisansları"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
 "(%(version_server)s)."
 msgstr ""
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
 "version is %(version_server)s."
 msgstr ""
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr ""
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"
@@ -344,6 +344,7 @@ msgstr ""
 "ayrılmış adları."
 
 #: management/commands/dependencies_install.py:13
+#: management/commands/dependencies_uninstall.py:13
 msgid "Process a specific app."
 msgstr "Belirli bir uygulamayı işleyin."
 

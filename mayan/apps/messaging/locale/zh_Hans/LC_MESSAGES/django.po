@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 11:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Chinese Simplified (https://app.transifex.com/rosarior/teams/13584/zh-Hans/)\n"
@@ -100,23 +100,23 @@ msgstr "消息的实际内容。"
 msgid "This field determines if the message has been read or not."
 msgstr "此字段确定消息是否已读。"
 
-#: models.py:42
+#: models.py:43
 msgid "Read"
 msgstr "读取"
 
-#: models.py:46
+#: models.py:47
 msgid "Date and time of the message creation."
 msgstr "消息创建的日期和时间。"
 
-#: models.py:47
+#: models.py:48
 msgid "Creation date and time"
 msgstr "创建日期和时间"
 
-#: models.py:52
+#: models.py:53
 msgid "Message"
 msgstr "消息"
 
-#: models.py:53 views.py:128
+#: models.py:54 views.py:128
 msgid "Messages"
 msgstr "消息"
 
@@ -256,32 +256,32 @@ msgstr "所有消息都已标记为读。"
 msgid "Error marking message \"%(instance)s\" as unread; %(exception)s"
 msgstr ""
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr ""
 
-#: views.py:213
+#: views.py:214
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr ""
 
-#: views.py:216
+#: views.py:217
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr ""
 
-#: views.py:218
+#: views.py:219
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr ""
 
-#: views.py:219
+#: views.py:220
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr ""
 
-#: views.py:220
+#: views.py:221
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr ""

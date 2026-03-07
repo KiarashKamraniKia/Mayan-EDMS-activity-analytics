@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 18:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: j jacobs <j.jacobs@rijnlandslyceum-rls.nl>, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/rosarior/teams/13584/nl/)\n"
@@ -58,7 +58,7 @@ msgstr "Document reeds uitgecheckt."
 msgid "Document status"
 msgstr "Documentstatus"
 
-#: forms.py:37 model_mixins.py:9 models.py:46 serializers.py:20
+#: forms.py:37 model_mixins.py:9 models.py:47 serializers.py:20
 msgid "User"
 msgstr "Gebruiker"
 
@@ -130,27 +130,27 @@ msgstr "Uitcheckdatum en tijd"
 msgid "Amount of time to hold the document checked out in minutes."
 msgstr "Hoelang in minuten uitgedrukt het document uitgecheckt houden. "
 
-#: models.py:42
+#: models.py:43
 msgid "Check out expiration date and time"
 msgstr "Uitcheck verloopdatum en tijd"
 
-#: models.py:50
+#: models.py:51
 msgid "Do not allow new file of this document to be uploaded."
 msgstr "Sta niet toe dat een nieuw bestand van dit document wordt geüpload."
 
-#: models.py:51
+#: models.py:52
 msgid "Block new file upload"
 msgstr "Nieuwe bestandsupload blokkeren"
 
-#: models.py:59 permissions.py:6
+#: models.py:60 permissions.py:6
 msgid "Document checkout"
 msgstr "Document check-out"
 
-#: models.py:60
+#: models.py:61
 msgid "Document checkouts"
 msgstr "Document check-outs"
 
-#: models.py:69
+#: models.py:70
 msgid "Check out expiration date and time must be in the future."
 msgstr "Uitcheck verloopdatum en -tijd moet in de toekomst liggen."
 

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (Egypt) (https://app.transifex.com/rosarior/teams/13584/ar_EG/)\n"
@@ -169,30 +169,30 @@ msgstr "لا توجد ملفات مصدرية متاحة"
 msgid "Width value to be passed to the converter backend."
 msgstr "قيمة العرض لتمريرها إلى نظام المعالجة"
 
-#: source_backends/stored_file_mixins.py:195
+#: source_backends/stored_file_mixins.py:196
 msgid "Preview width"
 msgstr "عرض المعاينة"
 
-#: source_backends/stored_file_mixins.py:201
+#: source_backends/stored_file_mixins.py:202
 msgid "Height value to be passed to the converter backend."
 msgstr "قيمة الارتفاع لتمريرها إلى نظام المعالجة"
 
-#: source_backends/stored_file_mixins.py:206
+#: source_backends/stored_file_mixins.py:208
 msgid "Preview height"
 msgstr "معاينة الارتفاع"
 
-#: source_backends/stored_file_mixins.py:213
+#: source_backends/stored_file_mixins.py:215
 msgid ""
 "Maximum size in bytes for which previews will be generated. Example: 20000 ="
 " 20KB."
 msgstr ""
 "الحجم الأقصى بالبايت الذي سيتم إنشاء معاينات له. مثال: 20000 = 20 كيلوبايت."
 
-#: source_backends/stored_file_mixins.py:216
+#: source_backends/stored_file_mixins.py:218
 msgid "Max size preview"
 msgstr "الحجم الأقصى للمعاينة"
 
-#: source_backends/stored_file_mixins.py:230
+#: source_backends/stored_file_mixins.py:232
 msgid "File images"
 msgstr "صور الملفات"
 

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 18:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Ovadia Ovadia, 2024\n"
 "Language-Team: Hebrew (Israel) (https://app.transifex.com/rosarior/teams/13584/he_IL/)\n"
@@ -56,7 +56,7 @@ msgstr "המסמך כבר הוצא מהארכיון."
 msgid "Document status"
 msgstr ""
 
-#: forms.py:37 model_mixins.py:9 models.py:46 serializers.py:20
+#: forms.py:37 model_mixins.py:9 models.py:47 serializers.py:20
 msgid "User"
 msgstr "משתמש"
 
@@ -128,27 +128,27 @@ msgstr "תאריך ושעה של הוצאה מהארכיון"
 msgid "Amount of time to hold the document checked out in minutes."
 msgstr "משך הזמן להוצאת המסמך מהארכיון, בדקות."
 
-#: models.py:42
+#: models.py:43
 msgid "Check out expiration date and time"
 msgstr "תאריך ושעת תפוגה של הוצאה מהארכיון"
 
-#: models.py:50
+#: models.py:51
 msgid "Do not allow new file of this document to be uploaded."
 msgstr "לא לאפשר להעלות קובץ תוכן חדש של מסמך זה."
 
-#: models.py:51
+#: models.py:52
 msgid "Block new file upload"
 msgstr "חסימת העלאת קובץ חדש"
 
-#: models.py:59 permissions.py:6
+#: models.py:60 permissions.py:6
 msgid "Document checkout"
 msgstr "הוצאת מסמך מהארכיון"
 
-#: models.py:60
+#: models.py:61
 msgid "Document checkouts"
 msgstr "הוצאות מסמך מהארכיון"
 
-#: models.py:69
+#: models.py:70
 msgid "Check out expiration date and time must be in the future."
 msgstr "תאריך ושעת התפוגה חייבים להיות בעתיד."
 

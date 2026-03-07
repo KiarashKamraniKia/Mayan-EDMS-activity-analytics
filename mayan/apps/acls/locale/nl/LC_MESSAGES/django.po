@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: bwakkie <bwakkie@gmail.com>, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/rosarior/teams/13584/nl/)\n"
@@ -54,7 +54,7 @@ msgstr "Toegangscontrolelijst verwijderd"
 msgid "ACL edited"
 msgstr "Authorisatie Controle Lijst bewerkt"
 
-#: forms.py:13 models.py:56 serializers.py:79 views.py:73
+#: forms.py:13 models.py:57 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "Gebruikersrol"
 
@@ -100,15 +100,15 @@ msgstr "Object ID"
 msgid "Role to which the access is granted for the specified object."
 msgstr "Rol waartoe de toegang wordt verleend voor het opgegeven object."
 
-#: models.py:64
+#: models.py:65
 msgid "Access entry"
 msgstr "Authorisatie invoer"
 
-#: models.py:65
+#: models.py:66
 msgid "Access entries"
 msgstr "Authorisatie invoer"
 
-#: models.py:69
+#: models.py:70
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Rol \"%(role)s\" permissies voor \"%(object)s\""

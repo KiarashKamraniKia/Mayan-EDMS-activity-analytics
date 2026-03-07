@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 04:28+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Lyudmil Antonov <lantonov.here@gmail.com>, 2025\n"
 "Language-Team: Bulgarian (Bulgaria) (https://app.transifex.com/rosarior/teams/13584/bg_BG/)\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: apps.py:218 apps.py:655 events.py:6 menus.py:8
-#: models/document_models.py:116 permissions.py:6 settings.py:34
+#: models/document_models.py:117 permissions.py:6 settings.py:34
 #: statistics.py:286
 msgid "Documents"
 msgstr "Документи"
@@ -58,7 +58,7 @@ msgid "File timestamps"
 msgstr "Файлови времеви печати"
 
 #: apps.py:412 links/document_file_page_links.py:77
-#: models/document_file_models.py:106 models/document_file_page_models.py:26
+#: models/document_file_models.py:107 models/document_file_page_models.py:26
 #: search.py:49
 msgid "Document file"
 msgstr "Файл на документа"
@@ -83,7 +83,7 @@ msgstr "Върнете екземпляра на документа."
 #: apps.py:427 links/document_file_links.py:71
 #: links/document_file_page_links.py:71 links/document_version_links.py:73
 #: links/document_version_page_links.py:90 models/document_file_models.py:57
-#: models/document_models.py:115 models/document_version_models.py:28
+#: models/document_models.py:116 models/document_version_models.py:28
 #: models/favorite_document_models.py:30
 #: models/recently_accessed_document_models.py:25 search.py:14
 #: serializers/favorite_document_serializers.py:13
@@ -316,15 +316,15 @@ msgstr ""
 msgid "Date added"
 msgstr "Дата на добавяне"
 
-#: forms/document_file_forms.py:66 models/document_file_models.py:83
+#: forms/document_file_forms.py:66 models/document_file_models.py:84
 msgid "MIME type"
 msgstr "MIME тип"
 
-#: forms/document_file_forms.py:70 models/document_file_models.py:89
+#: forms/document_file_forms.py:70 models/document_file_models.py:90
 msgid "Encoding"
 msgstr "Кодиране"
 
-#: forms/document_file_forms.py:74 models/document_file_models.py:101
+#: forms/document_file_forms.py:74 models/document_file_models.py:102
 msgid "Size"
 msgstr "Размер"
 
@@ -336,7 +336,7 @@ msgstr "Съществува в хранилището"
 msgid "Path in storage"
 msgstr "Път запазен"
 
-#: forms/document_file_forms.py:86 models/document_file_models.py:96
+#: forms/document_file_forms.py:86 models/document_file_models.py:97
 msgid "Checksum"
 msgstr "Контролна сума"
 
@@ -361,7 +361,7 @@ msgstr ""
 msgid "Date created"
 msgstr "Дата на създаване"
 
-#: forms/document_forms.py:113 models/document_models.py:82
+#: forms/document_forms.py:113 models/document_models.py:83
 msgid "Language"
 msgstr "Език"
 
@@ -577,7 +577,7 @@ msgid "Remap pages"
 msgstr "Презапис на страници"
 
 #: links/document_version_page_links.py:96
-#: models/document_version_models.py:51
+#: models/document_version_models.py:52
 #: models/document_version_page_models.py:34 search.py:116
 msgid "Document version"
 msgstr "Версия на документа"
@@ -676,9 +676,9 @@ msgstr "Декември"
 msgid "All pages"
 msgstr "Всички страници"
 
-#: models/document_file_model_mixins.py:299
+#: models/document_file_model_mixins.py:296
 #: models/document_file_page_model_mixins.py:244
-#: models/document_model_mixins.py:176 models/document_models.py:67
+#: models/document_model_mixins.py:176 models/document_models.py:68
 #: models/document_type_models.py:41 models/document_type_models.py:153
 #: models/document_version_model_mixins.py:128
 #: models/document_version_page_model_mixins.py:290
@@ -687,7 +687,7 @@ msgstr "Всички страници"
 msgid "Label"
 msgstr "Етикет"
 
-#: models/document_file_model_mixins.py:457
+#: models/document_file_model_mixins.py:454
 msgid "Controls what happens when a new document file is uploaded."
 msgstr ""
 
@@ -695,27 +695,27 @@ msgstr ""
 msgid "The server date and time when the document file was processed."
 msgstr "Дата и час на сървъра, когато файлът на документа е бил обработен."
 
-#: models/document_file_models.py:62 models/document_version_models.py:33
+#: models/document_file_models.py:63 models/document_version_models.py:34
 msgid "Timestamp"
 msgstr "Времева марка"
 
-#: models/document_file_models.py:66
+#: models/document_file_models.py:67
 msgid "An optional short text describing the document file."
 msgstr "Незадължителен кратък текст, описващ файла на документа."
 
-#: models/document_file_models.py:67 models/document_version_models.py:38
+#: models/document_file_models.py:68 models/document_version_models.py:39
 msgid "Comment"
 msgstr "Коментар"
 
-#: models/document_file_models.py:72 serializers/document_serializers.py:93
+#: models/document_file_models.py:73 serializers/document_serializers.py:93
 msgid "File"
 msgstr "Файл"
 
-#: models/document_file_models.py:75
+#: models/document_file_models.py:76
 msgid "Filename"
 msgstr "Име на файл"
 
-#: models/document_file_models.py:79
+#: models/document_file_models.py:80
 msgid ""
 "The document file's file mimetype. MIME types are a standard way to describe"
 " the format of a file, in this case the file format of the document. Some "
@@ -725,7 +725,7 @@ msgstr ""
 "описване на формата на файл, в този случай файловия формат на документа. "
 "Някои примери: &quot;text / plain&quot; или &quot;image / jpeg&quot;."
 
-#: models/document_file_models.py:87
+#: models/document_file_models.py:88
 msgid ""
 "The document file file encoding. binary 7-bit, binary 8-bit, text, base64, "
 "etc."
@@ -733,7 +733,7 @@ msgstr ""
 "Кодиране на файла на документа. двоичен 7-битов, двоичен 8-битов, текст, "
 "base64 и др."
 
-#: models/document_file_models.py:107 storages.py:27
+#: models/document_file_models.py:108 storages.py:27
 msgid "Document files"
 msgstr "Файлове на документи"
 
@@ -776,43 +776,43 @@ msgstr ""
 "Кратък текст, идентифициращ документа. По подразбиране ще бъде зададено "
 "името на първия файл, качен в документа."
 
-#: models/document_models.py:71
+#: models/document_models.py:72
 msgid "An optional short text describing a document."
 msgstr "Незадължителен кратък текст, описващ документ."
 
-#: models/document_models.py:72 serializers/document_version_serializers.py:20
+#: models/document_models.py:73 serializers/document_version_serializers.py:20
 msgid "Description"
 msgstr "Описание"
 
-#: models/document_models.py:76
+#: models/document_models.py:77
 msgid "The date and time of the document creation."
 msgstr "Датата и часът на създаване на документа."
 
-#: models/document_models.py:77
+#: models/document_models.py:78
 msgid "Created"
 msgstr "Създаден"
 
-#: models/document_models.py:81
+#: models/document_models.py:82
 msgid "The primary language in the document."
 msgstr "Основният език в документа."
 
-#: models/document_models.py:86
+#: models/document_models.py:87
 msgid "Whether or not this document is in the trash."
 msgstr "Дали този документ е в кошчето или не."
 
-#: models/document_models.py:87
+#: models/document_models.py:88
 msgid "In trash?"
 msgstr "В кошчето ли е?"
 
-#: models/document_models.py:91
+#: models/document_models.py:92
 msgid "The server date and time when the document was moved to the trash."
 msgstr "Дата и час на сървъра, когато документът е преместен в кошчето."
 
-#: models/document_models.py:93
+#: models/document_models.py:94
 msgid "Date and time trashed"
 msgstr "Дата и час на изхвърляне в кошчето"
 
-#: models/document_models.py:97
+#: models/document_models.py:98
 msgid ""
 "A document stub is a document with an entry on the database but no file "
 "uploaded. This could be an interrupted upload or a deferred upload via the "
@@ -821,11 +821,11 @@ msgstr ""
 "Кочан на документ е документ със запис в базата данни, но не е качен файл. "
 "Това може да бъде прекъснато качване или отложено качване чрез API."
 
-#: models/document_models.py:100
+#: models/document_models.py:101
 msgid "Is stub?"
 msgstr "Кочан ли е?"
 
-#: models/document_models.py:105
+#: models/document_models.py:106
 msgid "Active document version"
 msgstr ""
 
@@ -920,19 +920,19 @@ msgstr "Кратък етикет"
 msgid "The server date and time when the document version was created."
 msgstr "Дата и час на сървъра, когато е създадена версията на документа."
 
-#: models/document_version_models.py:37
+#: models/document_version_models.py:38
 msgid "An optional short text describing the document version."
 msgstr "Незадължителен кратък текст, описващ версията на документа."
 
-#: models/document_version_models.py:42
+#: models/document_version_models.py:43
 msgid "Determines the active version of the document."
 msgstr "Определя активната версия на документа."
 
-#: models/document_version_models.py:43
+#: models/document_version_models.py:44
 msgid "Active"
 msgstr "Активен"
 
-#: models/document_version_models.py:52
+#: models/document_version_models.py:53
 msgid "Document versions"
 msgstr "Версии на документа"
 
@@ -1348,129 +1348,152 @@ msgstr ""
 msgid "Restore URL"
 msgstr ""
 
+#: settings.py:41
+msgid ""
+"Optional height in pixels of the document page image used for interactive "
+"display. Leave empty to calculate the height from `DOCUMENTS_DISPLAY_WIDTH` "
+"while preserving the aspect ratio."
+msgstr ""
+
 #: settings.py:50
 msgid ""
-"The threshold at which the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"will start deleting the oldest document file page image cache files. Specify"
-" the size in bytes."
+"Width in pixels of the document page image used for interactive display. "
+"Larger values improve quality but increase processing time and cache "
+"storage."
 msgstr ""
-"Прагът, при който DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND ще започне"
-" да изтрива най-старите файлове с кеш на изображения на страница на "
-"документ. Посочете размера в байтове."
 
-#: settings.py:58
-msgid "Path to the Storage subclass to use when storing document files."
-msgstr ""
-"Път към подклас Storage, който да се използва при съхранение на файлове с "
-"документи."
-
-#: settings.py:65
-msgid "Arguments to pass to the DOCUMENT_FILE_STORAGE_BACKEND."
-msgstr "Аргументи за предаване към DOCUMENT_FILE_STORAGE_BACKEND."
-
-#: settings.py:71
+#: settings.py:59
 msgid ""
-"Path to the Storage subclass to use when storing the cached document file "
-"page image files."
+"Maximum size in bytes of the "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached page "
+"images."
 msgstr ""
-"Път към подкласа Storage, който да се използва при съхраняване на кешираните"
-" файлове с изображения на страницата на файла на документа."
 
-#: settings.py:79
+#: settings.py:68
+msgid "Dotted path to the storage subclass to used to store document files."
+msgstr ""
+
+#: settings.py:75
+msgid "Keyword arguments to pass to `DOCUMENTS_FILE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:82
 msgid ""
-"Arguments to pass to the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store the cached document file "
+"page images."
 msgstr ""
-"Аргументи за предаване към DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
 
-#: settings.py:85
+#: settings.py:90
+msgid ""
+"Keyword arguments to pass to "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:97
 msgid "Maximum number of favorite documents to remember per user."
 msgstr "Максимален брой предпочитани документи за запомняне на потребител."
 
-#: settings.py:91
+#: settings.py:103
 msgid ""
-"Size of blocks to use when calculating the document file's checksum. A value"
-" of 0 disables the block calculation and the entire file will be loaded into"
-" memory."
+"Block size in bytes used when calculating a document file checksum. Use 0 to"
+" disable block reads and hash the entire file in a single pass (loads the "
+"file into memory)."
 msgstr ""
-"Размер на блоковете, които да се използват при изчисляване на контролната "
-"сума на файла на документа. Стойност 0 деактивира изчислението на блока и "
-"целият файл ще бъде зареден в паметта."
 
-#: settings.py:98
+#: settings.py:110
 msgid "Default documents language (in ISO639-3 format)."
 msgstr "Език на документи по подразбиране (във формат ISO639-3)."
 
-#: settings.py:102
-msgid "List of supported document languages. In ISO639-3 format."
-msgstr "Списък на поддържаните езици на документи. Във формат ISO639-3"
-
-#: settings.py:108
-msgid ""
-"The threshold at which the DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND"
-" will start deleting the oldest document version page image cache versions. "
-"Specify the size in bytes."
+#: settings.py:115
+msgid "List of supported document languages (in ISO639-3 format)."
 msgstr ""
-"Прагът, при който DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND ще "
-"започне да изтрива най-старите версии на кешираните изображения на "
-"страницата на документа. Посочете размера в байтове."
 
-#: settings.py:117
+#: settings.py:122
 msgid ""
-"Path to the Storage subclass to use when storing the cached document version"
-" page image versions."
+"Maximum size in bytes of the "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached version "
+"page images."
 msgstr ""
-"Път към подкласа Storage, който да се използва при съхранение на кешираните "
-"версии на изображението на страницата на версията на документа."
 
-#: settings.py:125
+#: settings.py:132
 msgid ""
-"Arguments to pass to the DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store cached document version "
+"page images."
 msgstr ""
-"Аргументи за предаване към "
-"DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
 
-#: settings.py:147
+#: settings.py:140
 msgid ""
-"Maximum number of recently accessed documents (created, edited, viewed) to "
-"remember per user."
+"Keyword arguments to pass to "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"Максимален брой наскоро достъпни документи (създадени, редактирани, "
-"прегледани) за запомняне на потребител."
 
-#: settings.py:154
+#: settings.py:148
+msgid ""
+"Optional height in pixels of the document preview image. Leave empty to "
+"calculate the height from `DOCUMENTS_PREVIEW_WIDTH` while preserving the "
+"aspect ratio."
+msgstr ""
+
+#: settings.py:157
+msgid ""
+"Width in pixels of the document preview image. Larger values improve quality"
+" but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:166
+msgid ""
+"Optional height in pixels of the document page image generated for printing."
+" Leave empty to calculate the height from `DOCUMENTS_PRINT_WIDTH` while "
+"preserving the aspect ratio."
+msgstr ""
+
+#: settings.py:175
+msgid ""
+"Width in pixels of the document page image generated for printing. Larger "
+"values improve quality but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:183
+msgid ""
+"Maximum number of recently accessed documents to remember per user (viewed, "
+"created, or edited)."
+msgstr ""
+
+#: settings.py:190
 msgid "Maximum number of recently created documents to show."
 msgstr "Максимален брой наскоро създадени документи за показване."
 
-#: settings.py:160
-msgid "Amount in degrees to rotate a document page per user interaction."
+#: settings.py:196
+msgid "Rotation step in degrees applied each time the user rotates a page."
 msgstr ""
-"Градуси на завъртане на страница от документ, при потребителско действие"
 
-#: settings.py:166
+#: settings.py:203
 msgid "Height in pixels of the document thumbnail image."
 msgstr "Височина в пиксели на миниатюрното изображение на документа."
 
-#: settings.py:185
-msgid ""
-"Maximum amount in percent (%) to allow user to zoom in a document page "
-"interactively."
+#: settings.py:209
+msgid "Width in pixels of the document thumbnail image."
 msgstr ""
-"Максимален процент (%) допустим за интерактивно увеличаване страницата от "
-"потребителя"
 
-#: settings.py:192
+#: settings.py:215
 msgid ""
-"Minimum amount in percent (%) to allow user to zoom out a document page "
-"interactively."
+"Width in pixels of the document thumbnail image when shown in list view "
+"mode."
 msgstr ""
-"Минимален процент (%) допустим за интерактивно смаляване страницата от "
-"потребителя"
 
-#: settings.py:199
-msgid "Amount in percent zoom in or out a document page per user interaction."
+#: settings.py:222
+msgid "Maximum zoom level (percent) allowed when viewing a document page."
 msgstr ""
-"Процент приближаване или отдалечаване на страницата на документа, приложен "
-"за потребителя"
+
+#: settings.py:229
+msgid "Minimum zoom level (percent) allowed when viewing a document page."
+msgstr ""
+
+#: settings.py:236
+msgid "Zoom step (percent) applied each time the user zooms in or out."
+msgstr ""
 
 #: statistics.py:291
 msgid "New documents per month"
@@ -1606,7 +1629,7 @@ msgstr "Няма повече страници в този документ"
 msgid "You are already at the first page of this document"
 msgstr "Вече сте на първа страница на този документ"
 
-#: views/document_file_page_views.py:195
+#: views/document_file_page_views.py:196
 #: views/document_version_page_views.py:370
 #, python-format
 msgid "Image of: %s"
@@ -1654,40 +1677,40 @@ msgid ""
 "the background."
 msgstr ""
 
-#: views/document_file_views.py:114
+#: views/document_file_views.py:115
 #, python-format
 msgid "Edit document file: %s"
 msgstr "Редактиране на файл с документ: %s"
 
-#: views/document_file_views.py:135
+#: views/document_file_views.py:136
 #, python-format
 msgid "%(count)d document file queued for introspection."
 msgstr ""
 
-#: views/document_file_views.py:138
+#: views/document_file_views.py:139
 #, python-format
 msgid "%(count)d document files queued for introspection."
 msgstr ""
 
-#: views/document_file_views.py:147
+#: views/document_file_views.py:148
 msgid "Introspect the selected document file?"
 msgid_plural "Introspect the selected document files?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: views/document_file_views.py:158
+#: views/document_file_views.py:159
 #, python-format
 msgid "Introspect the document file: %s?"
 msgstr ""
 
-#: views/document_file_views.py:164
+#: views/document_file_views.py:165
 msgid ""
 "The document file will be re-examined for file size, page count, checksum, "
 "and its related document version pages re-created. All transformations will "
 "be lost."
 msgstr ""
 
-#: views/document_file_views.py:193
+#: views/document_file_views.py:194
 msgid ""
 "File are the actual files that were uploaded for each document. Their "
 "contents needs to be mapped to a version before it can be used."
@@ -1696,36 +1719,36 @@ msgstr ""
 "Съдържанието им трябва да бъде прехвърлено във версия, преди да може да се "
 "използва."
 
-#: views/document_file_views.py:197
+#: views/document_file_views.py:198
 msgid "No files available"
 msgstr "Няма налични файлове"
 
-#: views/document_file_views.py:222
+#: views/document_file_views.py:223
 #, python-format
 msgid "Files of document: %s"
 msgstr "Файлове на документа: %s"
 
-#: views/document_file_views.py:258
+#: views/document_file_views.py:259
 #, python-format
 msgid "Preview of document file: %s"
 msgstr "Преглед на файл с документ: %s"
 
-#: views/document_file_views.py:318
+#: views/document_file_views.py:319
 #, python-format
 msgid "Properties of document file: %s"
 msgstr "Свойства на файл с документи: %s"
 
-#: views/document_file_views.py:327
+#: views/document_file_views.py:328
 #, python-format
 msgid "Transformation clear request processed for %(count)d document file."
 msgstr "Заявка за изчистване преобразуването на %(count)dфайл с документи."
 
-#: views/document_file_views.py:330
+#: views/document_file_views.py:332
 #, python-format
 msgid "Transformation clear request processed for %(count)d document files."
 msgstr "Заявка за изчистване преобразуването на %(count)dфайлове с документи."
 
-#: views/document_file_views.py:337
+#: views/document_file_views.py:340
 msgid "Clear all the page transformations for the selected document file?"
 msgid_plural ""
 "Clear all the page transformations for the selected document files?"
@@ -1735,13 +1758,13 @@ msgstr[1] ""
 "Изчистване на всички трансформации на страници за избраните файлове с "
 "документи?"
 
-#: views/document_file_views.py:348
+#: views/document_file_views.py:351
 #, python-format
 msgid "Clear all the page transformations for the document file: %s?"
 msgstr ""
 "Изчистване на всички трансформации на страници за файла на документа: %s?"
 
-#: views/document_file_views.py:365
+#: views/document_file_views.py:368
 #, python-format
 msgid ""
 "Error deleting the page transformations for document file: "
@@ -1750,7 +1773,7 @@ msgstr ""
 "Грешка при изтриването на трансформациите на страници за файл на документ: "
 "%(document_file)s; %(error)s."
 
-#: views/document_file_views.py:402
+#: views/document_file_views.py:405
 #, python-format
 msgid ""
 "Error cloning the page transformations for document file: %(document_file)s;"
@@ -1759,11 +1782,11 @@ msgstr ""
 "Грешка при клонирането на трансформациите на страницата за файл на документ:"
 " %(document_file)s; %(error)s."
 
-#: views/document_file_views.py:411 views/document_version_views.py:412
+#: views/document_file_views.py:414 views/document_version_views.py:414
 msgid "Transformations cloned successfully."
 msgstr "Трансформациите клонирани успешно."
 
-#: views/document_file_views.py:426
+#: views/document_file_views.py:429
 #, python-format
 msgid "Clone page transformations of document file: %s"
 msgstr "Клониране на трансформации на страница на файл с документи: %s"
@@ -1976,37 +1999,37 @@ msgstr ""
 "Версиите са изгледи, които могат да показват страници на файлове с документи"
 " такива, каквито са, да ги пренастроят или обединят в различни оформления."
 
-#: views/document_version_views.py:203
+#: views/document_version_views.py:204
 msgid "No versions available"
 msgstr "Няма налични версии"
 
-#: views/document_version_views.py:206
+#: views/document_version_views.py:207
 #, python-format
 msgid "Versions of document: %s"
 msgstr "Версии на документа: %s"
 
-#: views/document_version_views.py:238
+#: views/document_version_views.py:239
 msgid "Document version modification backend queued successfully."
 msgstr ""
 
-#: views/document_version_views.py:248
+#: views/document_version_views.py:250
 #, python-format
 msgid "Execute version modification action for document version: %s"
 msgstr ""
 
-#: views/document_version_views.py:279
+#: views/document_version_views.py:281
 #, python-format
 msgid "Preview of document version: %s"
 msgstr "Визуализация на версията на документа: %s"
 
-#: views/document_version_views.py:326
+#: views/document_version_views.py:328
 #, python-format
 msgid "Transformation clear request processed for %(count)d document version."
 msgstr ""
 "Обработена заявка за изчистване на преобразуване за версия на документ "
 "%(count)d."
 
-#: views/document_version_views.py:330
+#: views/document_version_views.py:332
 #, python-format
 msgid ""
 "Transformation clear request processed for %(count)d document versions."
@@ -2014,7 +2037,7 @@ msgstr ""
 "Обработена заявка за изчистване на преобразуване, за версии на документ "
 "%(count)d."
 
-#: views/document_version_views.py:338
+#: views/document_version_views.py:340
 msgid "Clear all the page transformations for the selected document version?"
 msgid_plural ""
 "Clear all the page transformations for the selected document version?"
@@ -2025,14 +2048,14 @@ msgstr[1] ""
 "Изчистване на всички трансформации на страници за избраната версия на "
 "документ?"
 
-#: views/document_version_views.py:349
+#: views/document_version_views.py:351
 #, python-format
 msgid "Clear all the page transformations for the document version: %s?"
 msgstr ""
 "Да изчистите ли  всички преобразувания на страници за версията на документа:"
 " %s?"
 
-#: views/document_version_views.py:366
+#: views/document_version_views.py:368
 #, python-format
 msgid ""
 "Error deleting the page transformations for document version: "
@@ -2041,7 +2064,7 @@ msgstr ""
 "Грешка при изтриването на трансформациите на страници за версия на "
 "документа: %(document_version)s; %(error)s."
 
-#: views/document_version_views.py:403
+#: views/document_version_views.py:405
 #, python-format
 msgid ""
 "Error cloning the page transformations for document version: "
@@ -2050,7 +2073,7 @@ msgstr ""
 "Грешка при клонирането на трансформациите на страницата за версия на "
 "документа: %(document_version)s; %(error)s."
 
-#: views/document_version_views.py:427
+#: views/document_version_views.py:429
 #, python-format
 msgid "Clone page transformations of document version: %s"
 msgstr "Клониране на трансформации на страница на версия на документа: %s"
@@ -2084,33 +2107,33 @@ msgstr "Заявка за промяна на типа документ, изв�
 msgid "Document type change request performed on %(count)d documents"
 msgstr "Заявка за промяна на типа документ, извършена за %(count)d документи"
 
-#: views/document_views.py:95
+#: views/document_views.py:96
 msgid "Change the type of the selected document"
 msgid_plural "Change the type of the selected documents"
 msgstr[0] "Променете типа на избрания документ"
 msgstr[1] "Променете типа на избраните документи"
 
-#: views/document_views.py:106
+#: views/document_views.py:107
 #, python-format
 msgid "Change the type of the document: %s"
 msgstr "Променете типа на документа: %s"
 
-#: views/document_views.py:134
+#: views/document_views.py:135
 #, python-format
 msgid "Document type for \"%s\" changed successfully."
 msgstr "Типът на документа за &quot;%s&quot; е променен успешно."
 
-#: views/document_views.py:160
+#: views/document_views.py:161
 #, python-format
 msgid "Preview of document: %s"
 msgstr "Визуализация на документа: %s"
 
-#: views/document_views.py:179
+#: views/document_views.py:180
 #, python-format
 msgid "Edit properties of document: %s"
 msgstr "Редактиране на свойствата на документ: %s"
 
-#: views/document_views.py:211
+#: views/document_views.py:212
 #, python-format
 msgid "Properties of document: %s"
 msgstr "Свойства на документа: %s"

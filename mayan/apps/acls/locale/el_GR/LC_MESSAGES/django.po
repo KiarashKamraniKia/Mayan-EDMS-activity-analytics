@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Hmayag Antonian <hmayag@freemail.gr>, 2024\n"
 "Language-Team: Greek (Greece) (https://app.transifex.com/rosarior/teams/13584/el_GR/)\n"
@@ -51,7 +51,7 @@ msgstr ""
 msgid "ACL edited"
 msgstr "Τροποποιήθηκε ΛΕΠ"
 
-#: forms.py:13 models.py:56 serializers.py:79 views.py:73
+#: forms.py:13 models.py:57 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "Ρόλος"
 
@@ -99,15 +99,15 @@ msgstr "Αναγνωριστικό αντικειμένου"
 msgid "Role to which the access is granted for the specified object."
 msgstr ""
 
-#: models.py:64
+#: models.py:65
 msgid "Access entry"
 msgstr "Πρόσβαση στην εγγραφή"
 
-#: models.py:65
+#: models.py:66
 msgid "Access entries"
 msgstr "Πρόσβαση στις εγγραφές"
 
-#: models.py:69
+#: models.py:70
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Δικαιώματα Ρόλου \"%(role)s\" για \"%(object)s\""

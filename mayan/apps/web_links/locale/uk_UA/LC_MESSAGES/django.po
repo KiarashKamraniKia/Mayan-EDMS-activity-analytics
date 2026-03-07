@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Leo Lado, 2024\n"
 "Language-Team: Ukrainian (Ukraine) (https://app.transifex.com/rosarior/teams/13584/uk_UA/)\n"
@@ -118,32 +118,32 @@ msgstr "Перегляд екземплярів веб-посилань"
 msgid "Primary key of the document type to add to the web link."
 msgstr "Первинний ключ типу документа, який потрібно додати до веб-посилання."
 
-#: serializers.py:17 serializers.py:26
+#: serializers.py:18 serializers.py:28
 msgid "Document type ID"
 msgstr "ID типу документа"
 
-#: serializers.py:25
+#: serializers.py:26
 msgid "Primary key of the document type to remove from the web link."
 msgstr ""
 "Первинний ключ типу документа, який потрібно видалити з веб-посилання."
 
-#: serializers.py:33
+#: serializers.py:35
 msgid "Document types add URL"
 msgstr "Додати URL типів документа"
 
-#: serializers.py:37
+#: serializers.py:39
 msgid "Document types remove URL"
 msgstr "Видалити URL типів документа"
 
-#: serializers.py:41
+#: serializers.py:43
 msgid "Document types URL"
 msgstr "URL типів документів "
 
-#: serializers.py:48 serializers.py:63
+#: serializers.py:50 serializers.py:65
 msgid "URL"
 msgstr "URL"
 
-#: serializers.py:66
+#: serializers.py:68
 msgid "Navigation URL"
 msgstr "URL навігації"
 

@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 11:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Aline Freitas <aline@alinefreitas.com.br>, 2024\n"
 "Language-Team: Portuguese (Brazil) (https://app.transifex.com/rosarior/teams/13584/pt_BR/)\n"
@@ -103,23 +103,23 @@ msgstr "O conteúdo real da mensagem"
 msgid "This field determines if the message has been read or not."
 msgstr "Este campo determina se a mensagem foi lida ou não"
 
-#: models.py:42
+#: models.py:43
 msgid "Read"
 msgstr "Ler"
 
-#: models.py:46
+#: models.py:47
 msgid "Date and time of the message creation."
 msgstr "Data e hora da criação da mensagem"
 
-#: models.py:47
+#: models.py:48
 msgid "Creation date and time"
 msgstr "Data e hora de criação"
 
-#: models.py:52
+#: models.py:53
 msgid "Message"
 msgstr "Mensagem"
 
-#: models.py:53 views.py:128
+#: models.py:54 views.py:128
 msgid "Messages"
 msgstr "Mensagens"
 
@@ -260,32 +260,32 @@ msgstr "Todas as mensagens marcadas como lidas."
 msgid "Error marking message \"%(instance)s\" as unread; %(exception)s"
 msgstr "Erro ao marcar mensagem \"%(instance)s\" como não lida; %(exception)s"
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)dmensagens marcadas como não lidas com sucesso"
 
-#: views.py:213
+#: views.py:214
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "Mensagem \"%(object)s\" marcada como não lida com sucesso"
 
-#: views.py:216
+#: views.py:217
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "%(count)dmensagem marcada como não lida com sucesso"
 
-#: views.py:218
+#: views.py:219
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "Marcar %(count)dmensagens selecionadas como não lidas."
 
-#: views.py:219
+#: views.py:220
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "Marcar a mensagem \"%(object)s\" como não lida"
 
-#: views.py:220
+#: views.py:221
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "Marcar %(count)dmensagem selecionada como não lida."

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 04:29+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/rosarior/teams/13584/ar/)\n"
@@ -224,7 +224,7 @@ msgstr "إرفاق علامات بالوثيقة: %(object)s"
 msgid "Attach tags to %(count)d document."
 msgstr "إرفاق علامات بـ %(count)d وثيقة"
 
-#: views.py:69 wizard_steps.py:80
+#: views.py:69 wizard_steps.py:87
 msgid "Tags to be attached."
 msgstr "الدلالات المراد ارفاقها"
 
@@ -334,7 +334,7 @@ msgstr "إزالة العلامات من %(count)d وثيقة."
 msgid "Tags to be removed."
 msgstr "الدلالات التي سيتم الغائها"
 
-#: wizard_steps.py:19
+#: wizard_steps.py:18
 msgid "Select tags"
 msgstr "تحديد الدلالات"
 

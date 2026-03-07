@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/rosarior/teams/13584/ar/)\n"
@@ -64,21 +64,21 @@ msgstr ""
 "امسح رمز الاستجابة السريعة QR أو أدخل المفتاح السري في جهاز المصادقة الخاص "
 "بك. لا تشارك هذا المفتاح السري، تعامل معه ككلمة مرور."
 
-#: forms.py:106 forms.py:111
+#: forms.py:107 forms.py:112
 msgid "Secret"
 msgstr "خاص"
 
-#: forms.py:117
+#: forms.py:118
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 "أدخل الرمز المميز المطابق للتحقق من أن المفتاح السري قد تم حفظه بشكل صحيح."
 
-#: forms.py:120
+#: forms.py:121
 msgid "Token"
 msgstr "الرمز"
 
-#: forms.py:155
+#: forms.py:156
 msgid "Token is incorrect for the specified secret."
 msgstr "الرمز غير صحيح للمفتاح السري المحدد."
 

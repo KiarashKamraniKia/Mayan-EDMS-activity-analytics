@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 04:29+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Harald Ersch, 2024\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -223,7 +223,7 @@ msgstr "Atașați etichete la document: %(object)s"
 msgid "Attach tags to %(count)d document."
 msgstr "Atașați etichete la documentul %(count)d."
 
-#: views.py:69 wizard_steps.py:80
+#: views.py:69 wizard_steps.py:87
 msgid "Tags to be attached."
 msgstr "Etichetele trebuie atașate."
 
@@ -336,7 +336,7 @@ msgstr "Eliminați etichetele din documentul %(count)d."
 msgid "Tags to be removed."
 msgstr "Etichete ce trebuie eliminate."
 
-#: wizard_steps.py:19
+#: wizard_steps.py:18
 msgid "Select tags"
 msgstr "Selectați etichete"
 

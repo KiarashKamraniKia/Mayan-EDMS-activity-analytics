@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (Egypt) (https://app.transifex.com/rosarior/teams/13584/ar_EG/)\n"
@@ -188,15 +188,12 @@ msgstr "URL"
 #: settings.py:21
 msgid ""
 "The threshold at which the "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND will start "
+"`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND` will start "
 "deleting the oldest signature capture cache files. Specify the size in "
 "bytes."
 msgstr ""
-"الحد الذي يبدأ عنده "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND بحذف أقدم ملفات "
-"ذاكرة التخزين المؤقت لالتقاط التوقيع. حدد الحجم بالبايت."
 
-#: settings.py:30
+#: settings.py:31
 msgid ""
 "Path to the Storage subclass to use when storing the cached signature "
 "capture files."
@@ -204,13 +201,11 @@ msgstr ""
 "المسار إلى الفئة الفرعية للتخزين التي سيتم استخدامها عند تخزين ملفات التقاط "
 "التوقيع المخزنة مؤقتًا."
 
-#: settings.py:38
+#: settings.py:39
 msgid ""
 "Arguments to pass to the "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND."
+"`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"الوسائط التي سيتم تمريرها إلى "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND."
 
 #: storages.py:14
 msgid ""

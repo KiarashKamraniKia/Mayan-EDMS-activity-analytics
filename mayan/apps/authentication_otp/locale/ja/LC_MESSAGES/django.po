@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -58,20 +58,20 @@ msgid ""
 "share this secret, treat it like a password."
 msgstr "QRコードをスキャンするか認証デバイスに秘密キーを入力してください。この秘密キーはパスワードと同様に扱い、他人と共有しないでください"
 
-#: forms.py:106 forms.py:111
+#: forms.py:107 forms.py:112
 msgid "Secret"
 msgstr "シークレット"
 
-#: forms.py:117
+#: forms.py:118
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr "対応するトークンを入力して、秘密キーが正しく保存されたか確認してください"
 
-#: forms.py:120
+#: forms.py:121
 msgid "Token"
 msgstr "トークン"
 
-#: forms.py:155
+#: forms.py:156
 msgid "Token is incorrect for the specified secret."
 msgstr "指定された秘密キーに対するトークンが無効です。"
 

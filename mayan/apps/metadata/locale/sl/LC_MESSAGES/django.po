@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-03 22:28+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Slovenian (https://app.transifex.com/rosarior/teams/13584/sl/)\n"
@@ -75,7 +75,7 @@ msgstr ""
 msgid "Name"
 msgstr "Ime"
 
-#: forms.py:27 models.py:188 workflow_actions.py:109
+#: forms.py:27 models.py:189 workflow_actions.py:109
 msgid "Value"
 msgstr ""
 
@@ -83,7 +83,7 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: forms.py:52 forms.py:236 models.py:285
+#: forms.py:52 forms.py:237 models.py:288
 msgid "Required"
 msgstr ""
 
@@ -102,44 +102,44 @@ msgstr ""
 msgid "\"%s\" is required for this document type."
 msgstr ""
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr ""
 
-#: forms.py:138 models.py:92 models.py:282 search.py:11 serializers.py:48
-#: serializers.py:108 workflow_actions.py:145
+#: forms.py:139 models.py:92 models.py:285 search.py:11 serializers.py:48
+#: serializers.py:109 workflow_actions.py:145
 msgid "Metadata type"
 msgstr ""
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Odstrani"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr ""
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr ""
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr ""
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr ""
 
-#: forms.py:210
+#: forms.py:211
 msgid " Available template context variables: "
 msgstr ""
 
-#: forms.py:234
+#: forms.py:235
 msgid "None"
 msgstr "Nobenega"
 
-#: forms.py:235
+#: forms.py:236
 msgid "Optional"
 msgstr ""
 
@@ -296,39 +296,39 @@ msgstr ""
 msgid "Metadata type validation error; %(exception)s"
 msgstr ""
 
-#: models.py:179 serializers.py:105
+#: models.py:180 serializers.py:106
 msgid "Document"
 msgstr "Dokument"
 
-#: models.py:182
+#: models.py:183
 msgid "Type"
 msgstr ""
 
-#: models.py:186
+#: models.py:187
 msgid "The actual value stored in the metadata type field for the document."
 msgstr ""
 
-#: models.py:194 models.py:195
+#: models.py:195 models.py:196
 msgid "Document metadata"
 msgstr ""
 
-#: models.py:231
+#: models.py:232
 msgid "Metadata type is required for this document type."
 msgstr ""
 
-#: models.py:264
+#: models.py:266
 msgid "Metadata type is not valid for this document type."
 msgstr ""
 
-#: models.py:278 serializers.py:45
+#: models.py:281 serializers.py:45
 msgid "Document type"
 msgstr "Vrsta dokumenta"
 
-#: models.py:293
+#: models.py:296
 msgid "Document type metadata type options"
 msgstr ""
 
-#: models.py:294
+#: models.py:297
 msgid "Document type metadata types options"
 msgstr ""
 
@@ -372,7 +372,7 @@ msgstr ""
 msgid "Add required metadata type"
 msgstr ""
 
-#: serializers.py:28 serializers.py:57 serializers.py:111
+#: serializers.py:28 serializers.py:57 serializers.py:112
 msgid "URL"
 msgstr ""
 
@@ -380,7 +380,7 @@ msgstr ""
 msgid "Primary key of the metadata type to be added."
 msgstr ""
 
-#: serializers.py:53 serializers.py:101
+#: serializers.py:53 serializers.py:102
 msgid "Metadata type ID"
 msgstr ""
 
@@ -520,7 +520,7 @@ msgid ""
 "%(document)s."
 msgstr ""
 
-#: views/document_views.py:497
+#: views/document_views.py:498
 #, python-format
 msgid ""
 "Error removing metadata type \"%(metadata_type)s\" from document: "
@@ -608,7 +608,7 @@ msgstr ""
 msgid "Enter document metadata"
 msgstr ""
 
-#: wizard_steps.py:201
+#: wizard_steps.py:205
 msgid ""
 "One of more metadata types that are required for this document type are not "
 "available."

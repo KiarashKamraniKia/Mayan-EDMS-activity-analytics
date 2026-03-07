@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Dutch (https://app.transifex.com/rosarior/teams/13584/nl/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: nl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:46
+#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:48
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:127
 msgid "Announcements"
 msgstr "Aankondiging"
@@ -75,19 +75,19 @@ msgstr "Ingeschakeld"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "Datum en tijd waarna deze aankondiging word getoond"
 
-#: models.py:33
+#: models.py:34
 msgid "Start date time"
 msgstr "Starttijdstip"
 
-#: models.py:37
+#: models.py:38
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "Datum en tijd tot waneer deze aankondiging word getoond"
 
-#: models.py:38
+#: models.py:40
 msgid "End date time"
 msgstr "Eindtijdstip"
 
-#: models.py:45
+#: models.py:47
 msgid "Announcement"
 msgstr "Aankondiging"
 

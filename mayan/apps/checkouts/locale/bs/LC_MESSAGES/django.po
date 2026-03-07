@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 18:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Bosnian (https://app.transifex.com/rosarior/teams/13584/bs/)\n"
@@ -56,7 +56,7 @@ msgstr "Dokument je već odjavljen."
 msgid "Document status"
 msgstr "Status dokumenta"
 
-#: forms.py:37 model_mixins.py:9 models.py:46 serializers.py:20
+#: forms.py:37 model_mixins.py:9 models.py:47 serializers.py:20
 msgid "User"
 msgstr "Korisnik"
 
@@ -128,27 +128,27 @@ msgstr "Datum i vrijeme odjave"
 msgid "Amount of time to hold the document checked out in minutes."
 msgstr "Vrijeme zadržavanja odjavljenog dokumenta u minutama "
 
-#: models.py:42
+#: models.py:43
 msgid "Check out expiration date and time"
 msgstr "Datum i vrijeme istjecanja odjave"
 
-#: models.py:50
+#: models.py:51
 msgid "Do not allow new file of this document to be uploaded."
 msgstr ""
 
-#: models.py:51
+#: models.py:52
 msgid "Block new file upload"
 msgstr ""
 
-#: models.py:59 permissions.py:6
+#: models.py:60 permissions.py:6
 msgid "Document checkout"
 msgstr "Odjava dokumenta"
 
-#: models.py:60
+#: models.py:61
 msgid "Document checkouts"
 msgstr "Provera dokumenta"
 
-#: models.py:69
+#: models.py:70
 msgid "Check out expiration date and time must be in the future."
 msgstr "Provera datuma i vremena isteka."
 

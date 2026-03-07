@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Spanish (https://app.transifex.com/rosarior/teams/13584/es/)\n"
@@ -32,11 +32,11 @@ msgstr "Fecha y hora"
 msgid "Key ID"
 msgstr "Identificador de llave"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "Ninguno"
 
-#: apps.py:119 forms.py:65 models.py:57
+#: apps.py:119 forms.py:66 models.py:57
 msgid "Signature ID"
 msgstr "ID de firma"
 
@@ -80,47 +80,47 @@ msgstr "Contraseña"
 msgid "Private key that will be used to sign this document file."
 msgstr "Llave privada que se utilizará para firmar este archivo de documento."
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "¿Firma integrada?"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "Fecha de la firma"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "ID de llave de firma"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "¿Llave de la firma esta presente?"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "Huella de la llave"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "Fecha de creación de la llave"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "Fecha de expiración de la llave"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "Tamaño de la llave"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "Algoritmo de la llave"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "ID de usuario de la llave"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "Tipo de llave"
 
@@ -296,8 +296,8 @@ msgstr ""
 "Ruta a la subclase Storage para usar cuando se almacenan firmas separadas."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Argumentos para pasar al SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

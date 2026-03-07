@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 04:29+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -221,7 +221,7 @@ msgstr "ཡིག་ཆ་ལ་མཚོན་རྟགས་མཉམ་སྦ
 msgid "Attach tags to %(count)d document."
 msgstr "ཡིག་ཆ་ %(count)d ལ་མིང་རྟགས་སྦྲེལ་དགོས།"
 
-#: views.py:69 wizard_steps.py:80
+#: views.py:69 wizard_steps.py:87
 msgid "Tags to be attached."
 msgstr "མཐུད་དགོས་པའི་མིང་བྱང་།"
 
@@ -334,7 +334,7 @@ msgstr "ཡིག་ཆ་ %(count)d ནས་མིང་རྟགས་མེ�
 msgid "Tags to be removed."
 msgstr "མེད་པར་བཟོ་དགོས་པའི་མིང་བྱང་།"
 
-#: wizard_steps.py:19
+#: wizard_steps.py:18
 msgid "Select tags"
 msgstr "མིང་རྟགས་འདེམས།"
 

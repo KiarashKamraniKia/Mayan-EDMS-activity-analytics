@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Chinese Simplified (https://app.transifex.com/rosarior/teams/13584/zh-Hans/)\n"
@@ -121,38 +121,38 @@ msgstr "统计“%s”未找到。"
 msgid "Statistics namespaces group statistics into logical units. "
 msgstr ""
 
-#: views.py:25
+#: views.py:26
 msgid "No statistic namespaces available"
 msgstr ""
 
-#: views.py:26
+#: views.py:27
 msgid "Statistics namespaces"
 msgstr "统计命名空间"
 
-#: views.py:49
+#: views.py:50
 msgid "Statistics are metrics and chart representations of existing data."
 msgstr ""
 
-#: views.py:52
+#: views.py:53
 msgid "No statistic available"
 msgstr ""
 
-#: views.py:54
+#: views.py:55
 #, python-format
 msgid "Namespace details for: %s"
 msgstr "命名空间详细信息：%s"
 
-#: views.py:77
+#: views.py:78
 #, python-format
 msgid "Results for: %s"
 msgstr "结果：%s"
 
-#: views.py:97
+#: views.py:98
 #, python-format
 msgid "Queue statistic \"%s\" to be updated?"
 msgstr "队列统计“%s”有待更新？"
 
-#: views.py:105
+#: views.py:106
 #, python-format
 msgid "Statistic \"%s\" queued successfully for update."
 msgstr "统计“%s”已成功排队等待更新。"

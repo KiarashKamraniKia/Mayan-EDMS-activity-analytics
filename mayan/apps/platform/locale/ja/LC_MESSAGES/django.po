@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-23 17:55+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -24,31 +24,31 @@ msgstr ""
 msgid "Platform"
 msgstr "プラットフォーム"
 
-#: classes.py:242
+#: classes.py:245
 msgid "Template for entrypoint.sh file inside a Docker image."
 msgstr "Dockerイメージ内の entrypoint.sh ファイル用テンプレート"
 
-#: classes.py:257
+#: classes.py:260
 msgid "Template that generates the Docker Compose file."
 msgstr "Docker Compose ファイルを生成するテンプレート"
 
-#: classes.py:417
+#: classes.py:420
 msgid "Template for Supervisord inside a Docker image."
 msgstr "Dockerイメージ内の Supervisord 用テンプレート"
 
-#: classes.py:435
+#: classes.py:438
 msgid "Template that generates a Dockerfile file."
 msgstr "Dockerfile を生成するテンプレート"
 
-#: classes.py:450
+#: classes.py:462
 msgid "Template that generates a GitLab CI config file."
 msgstr "GitLab CI の設定ファイルを生成するテンプレート"
 
-#: classes.py:609
+#: classes.py:631
 msgid "Template for Supervisord."
 msgstr "Supervisord 用テンプレート"
 
-#: classes.py:683
+#: classes.py:705
 msgid "Template showing the queues of a worker."
 msgstr "ワーカーのキューを表示するテンプレー"
 

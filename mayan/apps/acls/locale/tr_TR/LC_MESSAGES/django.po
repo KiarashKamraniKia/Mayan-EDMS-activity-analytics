@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Emine Öztürk <oemine075@gmail.com>, 2024\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
@@ -57,7 +57,7 @@ msgstr "Erişim Kontrol Listesi silindi"
 msgid "ACL edited"
 msgstr "Erişim Kontrol Listesi düzenlendi"
 
-#: forms.py:13 models.py:56 serializers.py:79 views.py:73
+#: forms.py:13 models.py:57 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "Rol"
 
@@ -103,15 +103,15 @@ msgstr "Nesne ID"
 msgid "Role to which the access is granted for the specified object."
 msgstr "Belirtilen nesne için erişim yetkisinin verildiği rol."
 
-#: models.py:64
+#: models.py:65
 msgid "Access entry"
 msgstr "Erişim Girişi"
 
-#: models.py:65
+#: models.py:66
 msgid "Access entries"
 msgstr "Erişim Girişleri"
 
-#: models.py:69
+#: models.py:70
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Rol \"%(role)s\" izni \"%(object)s\" için"

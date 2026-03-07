@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Ovadia Ovadia, 2024\n"
 "Language-Team: Hebrew (Israel) (https://app.transifex.com/rosarior/teams/13584/he_IL/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: he_IL\n"
 "Plural-Forms: nplurals=3; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: 2;\n"
 
-#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:46
+#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:48
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:127
 msgid "Announcements"
 msgstr "הכרזות"
@@ -73,19 +73,19 @@ msgstr "מופעל/מאופשר"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "תאריך ושעה שאחריה הכרזה זו תוצג."
 
-#: models.py:33
+#: models.py:34
 msgid "Start date time"
 msgstr "תאריך ושעת התחלה"
 
-#: models.py:37
+#: models.py:38
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "תאריך ושעה לתוקף תצוגה של הכרזה זו."
 
-#: models.py:38
+#: models.py:40
 msgid "End date time"
 msgstr "תאריך ושעת סיום"
 
-#: models.py:45
+#: models.py:47
 msgid "Announcement"
 msgstr "הכרזה"
 

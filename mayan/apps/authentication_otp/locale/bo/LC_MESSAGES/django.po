@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -60,21 +60,21 @@ msgstr ""
 "ཁྱེད་རང་གི་བདེན་དཔང་འཕྲུལ་ཆས་ནང་QRཨང་རྟགས་པར་བཤུས་བྱེད་པའམ་ཡང་ན་གསང་བ་དེ་བླུགས།"
 " གསང་བ་འདི་མཉམ་སྤྱོད་མ་བྱེད། གསང་གྲངས་ལྟར་འཛིན་དགོས།"
 
-#: forms.py:106 forms.py:111
+#: forms.py:107 forms.py:112
 msgid "Secret"
 msgstr "གསང་བ"
 
-#: forms.py:117
+#: forms.py:118
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 "གསང་བ་དེ་བདེན་པ་ཡིན་མིན་བདེན་དཔང་བྱེད་པར་འབྲེལ་ཡོད་ཀྱི་རྟགས་མཚན་བླུགས།"
 
-#: forms.py:120
+#: forms.py:121
 msgid "Token"
 msgstr "བརྡ་རྟགས།"
 
-#: forms.py:155
+#: forms.py:156
 msgid "Token is incorrect for the specified secret."
 msgstr "གསལ་བཀོད་བྱས་པའི་གསང་བའི་ཆེད་དུ་ཊོ་ཀེན་ནོར་འཁྲུལ་ཅན་རེད།"
 

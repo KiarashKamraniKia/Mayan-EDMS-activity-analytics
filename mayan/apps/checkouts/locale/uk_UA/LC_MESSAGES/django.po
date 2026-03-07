@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 18:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Leo Lado, 2024\n"
 "Language-Team: Ukrainian (Ukraine) (https://app.transifex.com/rosarior/teams/13584/uk_UA/)\n"
@@ -57,7 +57,7 @@ msgstr "Документ уже перевірено."
 msgid "Document status"
 msgstr "Статус документа"
 
-#: forms.py:37 model_mixins.py:9 models.py:46 serializers.py:20
+#: forms.py:37 model_mixins.py:9 models.py:47 serializers.py:20
 msgid "User"
 msgstr "Користувач"
 
@@ -131,27 +131,27 @@ msgstr ""
 "Кількість часу у хвилинах, протягом якого документ буде утримуватися "
 "перевіреним."
 
-#: models.py:42
+#: models.py:43
 msgid "Check out expiration date and time"
 msgstr "Перевірте дату та час закінчення дії."
 
-#: models.py:50
+#: models.py:51
 msgid "Do not allow new file of this document to be uploaded."
 msgstr "Не дозволяти завантажувати новий файл цього документа."
 
-#: models.py:51
+#: models.py:52
 msgid "Block new file upload"
 msgstr "Блокувати завантаження нового файлу"
 
-#: models.py:59 permissions.py:6
+#: models.py:60 permissions.py:6
 msgid "Document checkout"
 msgstr "Документ перевірено"
 
-#: models.py:60
+#: models.py:61
 msgid "Document checkouts"
 msgstr "Документи перевірено"
 
-#: models.py:69
+#: models.py:70
 msgid "Check out expiration date and time must be in the future."
 msgstr "Переконайтесь, що дата та час закінчення знаходяться у майбутньому."
 

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-02 18:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/rosarior/teams/13584/ar/)\n"
@@ -59,7 +59,7 @@ msgstr "تم إستخراج الوثيقة"
 msgid "Document status"
 msgstr "حالة الوثيقة"
 
-#: forms.py:37 model_mixins.py:9 models.py:46 serializers.py:20
+#: forms.py:37 model_mixins.py:9 models.py:47 serializers.py:20
 msgid "User"
 msgstr "مستخدم"
 
@@ -131,27 +131,27 @@ msgstr "التحقق من الوقت والتاريخ"
 msgid "Amount of time to hold the document checked out in minutes."
 msgstr "المدة اللازمة للاحتفاظ بالوثيقة التي تم استخراجها بالدقائق."
 
-#: models.py:42
+#: models.py:43
 msgid "Check out expiration date and time"
 msgstr "التحقق من تاريخ انتهاء الصلاحية للوقت والتاريخ"
 
-#: models.py:50
+#: models.py:51
 msgid "Do not allow new file of this document to be uploaded."
 msgstr "لا تسمح بتحميل ملف جديد لهذا المستند."
 
-#: models.py:51
+#: models.py:52
 msgid "Block new file upload"
 msgstr "حظر تحميل ملف جديد"
 
-#: models.py:59 permissions.py:6
+#: models.py:60 permissions.py:6
 msgid "Document checkout"
 msgstr "الوثيقة النهائية"
 
-#: models.py:60
+#: models.py:61
 msgid "Document checkouts"
 msgstr "إستخراج الوثيقة"
 
-#: models.py:69
+#: models.py:70
 msgid "Check out expiration date and time must be in the future."
 msgstr "التحقق من صلاحية الوقت والتاريخ، يجب ان يكون في المستقبل "
 

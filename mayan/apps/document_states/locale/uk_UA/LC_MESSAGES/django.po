@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-06 21:21+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Leo Lado, 2024\n"
 "Language-Team: Ukrainian (Ukraine) (https://app.transifex.com/rosarior/teams/13584/uk_UA/)\n"
@@ -123,7 +123,7 @@ msgstr "Тригери – це системні події, які спричи
 msgid "Triggers"
 msgstr "Тригери"
 
-#: apps.py:503 models/workflow_transition_models.py:105
+#: apps.py:503 models/workflow_transition_field_models.py:31
 msgid "Type"
 msgstr "Тип"
 
@@ -171,8 +171,8 @@ msgstr "Виберіть перехід для виконання на наст�
 #: forms/workflow_instance_forms.py:18 links.py:293
 #: models/workflow_instance_models.py:96
 #: models/workflow_state_escalation_models.py:34
-#: models/workflow_transition_models.py:102
-#: models/workflow_transition_models.py:184
+#: models/workflow_transition_field_models.py:28
+#: models/workflow_transition_models.py:96
 #: serializers/workflow_instance_serializers.py:45
 msgid "Transition"
 msgstr "Перехід"
@@ -195,8 +195,9 @@ msgstr "Простір імен"
 
 #: forms/workflow_template_transition_forms.py:45 models/workflow_models.py:45
 #: models/workflow_state_action_models.py:33
-#: models/workflow_state_models.py:39 models/workflow_transition_models.py:38
-#: models/workflow_transition_models.py:116
+#: models/workflow_state_models.py:39
+#: models/workflow_transition_field_models.py:42
+#: models/workflow_transition_models.py:32
 msgid "Label"
 msgstr "Мітка"
 
@@ -210,7 +211,7 @@ msgstr "Так"
 
 #: forms/workflow_template_transition_forms.py:54
 #: models/workflow_state_action_models.py:36
-#: models/workflow_state_escalation_models.py:47
+#: models/workflow_state_escalation_models.py:48
 msgid "Enabled"
 msgstr "Активовано"
 
@@ -289,7 +290,7 @@ msgstr "Запуск робочих процесів"
 msgid "Create field"
 msgstr "Створити поле"
 
-#: links.py:272 models/workflow_transition_model_mixins.py:27
+#: links.py:272 models/workflow_transition_model_mixins.py:26
 msgid "Fields"
 msgstr "Поля"
 
@@ -344,7 +345,7 @@ msgid "On exit"
 msgstr "На виході"
 
 #: models/workflow_instance_models.py:31 models/workflow_models.py:57
-#: models/workflow_state_models.py:35 models/workflow_transition_models.py:34
+#: models/workflow_state_models.py:35 models/workflow_transition_models.py:28
 msgid "Workflow"
 msgstr "Робочий процес"
 
@@ -374,7 +375,7 @@ msgid "Workflow instances"
 msgstr "Робочі екземпляри"
 
 #: models/workflow_instance_models.py:103
-#: models/workflow_state_escalation_models.py:64
+#: models/workflow_state_escalation_models.py:65
 #: views/workflow_instance_views.py:162
 msgid "Comment"
 msgstr "Коментар"
@@ -415,7 +416,7 @@ msgstr ""
 "Це значення використовуватиметься іншими програмами для посилання на цей "
 "робочий процес. Може містити лише літери, цифри та підкреслення."
 
-#: models/workflow_models.py:41 models/workflow_transition_models.py:111
+#: models/workflow_models.py:41 models/workflow_transition_field_models.py:37
 msgid "Internal name"
 msgstr "Внутрішнє ім'я"
 
@@ -437,7 +438,7 @@ msgid ""
 msgstr "Виконуватиметься дія залежно від значення повернення умови."
 
 #: models/workflow_state_action_model_mixins.py:57
-#: models/workflow_transition_model_mixins.py:53
+#: models/workflow_transition_model_mixins.py:52
 msgid "Has a condition?"
 msgstr "Є умова?"
 
@@ -474,7 +475,7 @@ msgstr ""
 " істинним."
 
 #: models/workflow_state_action_models.py:52
-#: models/workflow_transition_models.py:56
+#: models/workflow_transition_models.py:50
 msgid "Condition"
 msgstr "Умова"
 
@@ -511,28 +512,28 @@ msgstr ""
 "Увімкнути автоматичний перехід робочого циклу після закінчення певного часу "
 "в стані без змін."
 
-#: models/workflow_state_escalation_models.py:52
+#: models/workflow_state_escalation_models.py:53
 msgid "Time unit"
 msgstr "Одиниця часу"
 
-#: models/workflow_state_escalation_models.py:57
+#: models/workflow_state_escalation_models.py:58
 msgid "Amount of the selected escalation units of time."
 msgstr "Кількість обраних одиниць часу ескалації."
 
-#: models/workflow_state_escalation_models.py:58
+#: models/workflow_state_escalation_models.py:59
 msgid "Amount"
 msgstr "Сума"
 
-#: models/workflow_state_escalation_models.py:62
+#: models/workflow_state_escalation_models.py:63
 msgid ""
 "Comment to save to the workflow instance when the escalation is executed."
 msgstr "Коментар для збереження в екземпляр робочого циклу під час ескалації."
 
-#: models/workflow_state_escalation_models.py:70
+#: models/workflow_state_escalation_models.py:71
 msgid "Workflow state escalation"
 msgstr "Стан ескалації робочого процесу"
 
-#: models/workflow_state_escalation_models.py:71
+#: models/workflow_state_escalation_models.py:72
 msgid "Workflow state escalations"
 msgstr "Стан ескалацій робочого процесу"
 
@@ -572,26 +573,84 @@ msgstr "Проксі-сервер середовища виконання ста
 msgid "Workflow state runtime proxies"
 msgstr "Проксі-сервери середовища виконання стану робочого процесу"
 
-#: models/workflow_transition_model_mixins.py:50
+#: models/workflow_transition_field_models.py:35
+msgid ""
+"The name that will be used to identify this field in other parts of the "
+"workflow system."
+msgstr ""
+"Ім’я, яке використовуватиметься для ідентифікації цього поля в інших "
+"частинах системи робочого процесу."
+
+#: models/workflow_transition_field_models.py:41
+msgid "The field name that will be shown on the user interface."
+msgstr "Назва поля, яке відображатиметься в інтерфейсі користувача."
+
+#: models/workflow_transition_field_models.py:46
+msgid ""
+"An optional message that will help users better understand the purpose of "
+"the field and data to provide."
+msgstr ""
+"Додаткове повідомлення, яке допоможе користувачам краще зрозуміти "
+"призначення поля та дані, які потрібно надати."
+
+#: models/workflow_transition_field_models.py:48
+msgid "Help text"
+msgstr "Текст довідки"
+
+#: models/workflow_transition_field_models.py:52
+msgid "Whether this field needs to be filled out or not to proceed."
+msgstr ""
+
+#: models/workflow_transition_field_models.py:54
+msgid "Required"
+msgstr "Обов'язково"
+
+#: models/workflow_transition_field_models.py:58
+msgid "An optional class to change the default presentation of the field."
+msgstr "Додатковий клас для зміни представлення поля за замовчуванням."
+
+#: models/workflow_transition_field_models.py:60
+msgid "Widget class"
+msgstr "Клас віджету"
+
+#: models/workflow_transition_field_models.py:64
+msgid "A group of keyword arguments to customize the widget. Use YAML format."
+msgstr ""
+"Група ключових аргументів для налаштування віджета. Використовуйте формат "
+"YAML."
+
+#: models/workflow_transition_field_models.py:68
+msgid "Widget keyword arguments"
+msgstr "Аргументи ключового слова віджету"
+
+#: models/workflow_transition_field_models.py:73
+msgid "Workflow transition field"
+msgstr "Поле переходу робочого процесу"
+
+#: models/workflow_transition_field_models.py:74
+msgid "Workflow transition fields"
+msgstr "Поля переходу робочого процесу"
+
+#: models/workflow_transition_model_mixins.py:49
 msgid ""
 "The transition will be available, depending on the condition return value."
 msgstr "Перехід буде доступний, залежно від значення, що повертається."
 
-#: models/workflow_transition_models.py:37
+#: models/workflow_transition_models.py:31
 msgid "A short text to describe the transition."
 msgstr "Короткий текст для опису переходу."
 
-#: models/workflow_transition_models.py:42
-#: serializers/workflow_template_transition_serializers.py:95
+#: models/workflow_transition_models.py:36
+#: serializers/workflow_template_transition_serializers.py:97
 msgid "Origin state"
 msgstr "Початковий стан"
 
-#: models/workflow_transition_models.py:46
-#: serializers/workflow_template_transition_serializers.py:82
+#: models/workflow_transition_models.py:40
+#: serializers/workflow_template_transition_serializers.py:84
 msgid "Destination state"
 msgstr "Кінцевий стан"
 
-#: models/workflow_transition_models.py:50
+#: models/workflow_transition_models.py:44
 msgid ""
 "The condition that will determine if this transition is enabled or not. The "
 "condition is evaluated against the workflow instance. Conditions that do not"
@@ -605,82 +664,24 @@ msgstr ""
 " рядок (''), вважаються логічним хибним, будь-яке інше значення вважається "
 "логічним істинним."
 
-#: models/workflow_transition_models.py:64
+#: models/workflow_transition_models.py:58
 msgid "Workflow transition"
 msgstr "Перехід робочого процесу"
 
-#: models/workflow_transition_models.py:65
+#: models/workflow_transition_models.py:59
 msgid "Workflow transitions"
 msgstr "Переходи робочих процесів"
 
-#: models/workflow_transition_models.py:109
-msgid ""
-"The name that will be used to identify this field in other parts of the "
-"workflow system."
-msgstr ""
-"Ім’я, яке використовуватиметься для ідентифікації цього поля в інших "
-"частинах системи робочого процесу."
-
-#: models/workflow_transition_models.py:115
-msgid "The field name that will be shown on the user interface."
-msgstr "Назва поля, яке відображатиметься в інтерфейсі користувача."
-
-#: models/workflow_transition_models.py:120
-msgid ""
-"An optional message that will help users better understand the purpose of "
-"the field and data to provide."
-msgstr ""
-"Додаткове повідомлення, яке допоможе користувачам краще зрозуміти "
-"призначення поля та дані, які потрібно надати."
-
-#: models/workflow_transition_models.py:122
-msgid "Help text"
-msgstr "Текст довідки"
-
-#: models/workflow_transition_models.py:126
-msgid "Whether this field needs to be filled out or not to proceed."
-msgstr ""
-
-#: models/workflow_transition_models.py:127
-msgid "Required"
-msgstr "Обов'язково"
-
-#: models/workflow_transition_models.py:131
-msgid "An optional class to change the default presentation of the field."
-msgstr "Додатковий клас для зміни представлення поля за замовчуванням."
-
-#: models/workflow_transition_models.py:133
-msgid "Widget class"
-msgstr "Клас віджету"
-
-#: models/workflow_transition_models.py:137
-msgid "A group of keyword arguments to customize the widget. Use YAML format."
-msgstr ""
-"Група ключових аргументів для налаштування віджета. Використовуйте формат "
-"YAML."
-
-#: models/workflow_transition_models.py:141
-msgid "Widget keyword arguments"
-msgstr "Аргументи ключового слова віджету"
-
-#: models/workflow_transition_models.py:146
-msgid "Workflow transition field"
-msgstr "Поле переходу робочого процесу"
-
-#: models/workflow_transition_models.py:147
-msgid "Workflow transition fields"
-msgstr "Поля переходу робочого процесу"
-
-#: models/workflow_transition_models.py:188
-#: serializers/workflow_template_transition_serializers.py:195
+#: models/workflow_transition_models.py:100
+#: serializers/workflow_template_transition_serializers.py:197
 msgid "Event type"
 msgstr "Тип події"
 
-#: models/workflow_transition_models.py:194
+#: models/workflow_transition_models.py:106
 msgid "Workflow transition trigger event"
 msgstr "Подія запуску переходу робочого процесу"
 
-#: models/workflow_transition_models.py:196
+#: models/workflow_transition_models.py:108
 msgid "Workflow transitions trigger events"
 msgstr "Події тригерів запускаючі робочі процеси"
 
@@ -750,7 +751,7 @@ msgstr "Первинний ключ шаблону робочого процес
 
 #: serializers/workflow_instance_serializers.py:25
 #: serializers/workflow_template_state_serializers.py:47
-#: serializers/workflow_template_transition_serializers.py:111
+#: serializers/workflow_template_transition_serializers.py:113
 msgid "Workflow template ID"
 msgstr "ID шаблону робочого процесу"
 
@@ -773,9 +774,9 @@ msgstr "ID переходу"
 #: serializers/workflow_template_state_escalation_serializers.py:16
 #: serializers/workflow_template_state_serializers.py:35
 #: serializers/workflow_template_state_serializers.py:71
-#: serializers/workflow_template_transition_serializers.py:25
-#: serializers/workflow_template_transition_serializers.py:108
-#: serializers/workflow_template_transition_serializers.py:202
+#: serializers/workflow_template_transition_serializers.py:27
+#: serializers/workflow_template_transition_serializers.py:110
+#: serializers/workflow_template_transition_serializers.py:204
 #: workflow_actions.py:175
 msgid "URL"
 msgstr "URL"
@@ -787,9 +788,9 @@ msgstr "URL-адреса екземпляра робочого процесу"
 #: serializers/workflow_instance_serializers.py:86
 #: serializers/workflow_instance_serializers.py:148
 #: serializers/workflow_template_state_serializers.py:50
-#: serializers/workflow_template_transition_serializers.py:41
-#: serializers/workflow_template_transition_serializers.py:114
-#: serializers/workflow_template_transition_serializers.py:218
+#: serializers/workflow_template_transition_serializers.py:43
+#: serializers/workflow_template_transition_serializers.py:116
+#: serializers/workflow_template_transition_serializers.py:220
 msgid "Workflow template URL"
 msgstr "URL-адреса шаблону робочого процесу"
 
@@ -851,7 +852,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr "Первинний ключ типу документа, який додається до робочого процесу."
 
 #: serializers/workflow_template_serializers.py:66
-#: serializers/workflow_template_serializers.py:75
+#: serializers/workflow_template_serializers.py:76
 msgid "Document type ID"
 msgstr "ID типу документа"
 
@@ -874,11 +875,11 @@ msgstr "URL-адреса стану шаблону робочого процес
 msgid "Primary key of the workflow template transition to be added."
 msgstr "Первинний ключ переходу шаблону робочого процесу, який буде доданий."
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "ID переходу шаблону робочого процесу"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "URL-адреса переходу шаблону робочого процесу"
 
@@ -890,45 +891,45 @@ msgstr "URL-адреса дій"
 msgid "Escalations URL"
 msgstr "URL-адреса ескалацій"
 
-#: serializers/workflow_template_transition_serializers.py:49
-#: serializers/workflow_template_transition_serializers.py:226
+#: serializers/workflow_template_transition_serializers.py:51
+#: serializers/workflow_template_transition_serializers.py:228
 msgid "Workflow transition ID"
 msgstr "ID переходу робочого процесу"
 
-#: serializers/workflow_template_transition_serializers.py:53
-#: serializers/workflow_template_transition_serializers.py:230
+#: serializers/workflow_template_transition_serializers.py:55
+#: serializers/workflow_template_transition_serializers.py:232
 msgid "Workflow transition URL"
 msgstr "URL-адреса переходу робочого процесу"
 
-#: serializers/workflow_template_transition_serializers.py:86
+#: serializers/workflow_template_transition_serializers.py:88
 msgid "Primary key of the destination state to be added."
 msgstr "Додати первинний ключ стану призначення."
 
-#: serializers/workflow_template_transition_serializers.py:87
+#: serializers/workflow_template_transition_serializers.py:89
 msgid "Destination state ID"
 msgstr "ID стану призначення"
 
-#: serializers/workflow_template_transition_serializers.py:92
+#: serializers/workflow_template_transition_serializers.py:94
 msgid "Field list URL"
 msgstr "URL-адреса списку полів"
 
-#: serializers/workflow_template_transition_serializers.py:99
+#: serializers/workflow_template_transition_serializers.py:101
 msgid "Primary key of the origin state to be added."
 msgstr "Первинний ключ початкового стану, який треба додати."
 
-#: serializers/workflow_template_transition_serializers.py:100
+#: serializers/workflow_template_transition_serializers.py:102
 msgid "Origin state ID"
 msgstr "ID країни походження"
 
-#: serializers/workflow_template_transition_serializers.py:105
+#: serializers/workflow_template_transition_serializers.py:107
 msgid "Trigger list URL"
 msgstr "URL-адреса списку тригерів"
 
-#: serializers/workflow_template_transition_serializers.py:198
+#: serializers/workflow_template_transition_serializers.py:200
 msgid "Event Type ID"
 msgstr "ID типу події"
 
-#: serializers/workflow_template_transition_serializers.py:291
+#: serializers/workflow_template_transition_serializers.py:293
 #, python-format
 msgid "Unknown or invalid event type ID `%s`"
 msgstr "Невідомий або недійсний ідентифікатор типу події `%s`"
@@ -942,12 +943,10 @@ msgstr ""
 
 #: settings.py:28
 msgid ""
-"The threshold at which the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND will start "
-"deleting the oldest workflow image cache files. Specify the size in bytes."
+"The threshold at which the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will "
+"start deleting the oldest workflow image cache files. Specify the size in "
+"bytes."
 msgstr ""
-"Порогове значення, за якого WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND почне "
-"видаляти найстаріші файли кешу зображень робочого процесу. Вкажіть розмір у "
-"байтах."
 
 #: settings.py:37
 msgid ""
@@ -958,10 +957,10 @@ msgstr ""
 "файлів зображень робочого процесу."
 
 #: settings.py:45
-msgid "Arguments to pass to the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "Аргументи для передачі в WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."
@@ -1029,11 +1028,11 @@ msgstr "Виконати перехід \"%(transition)s\" для робочог
 msgid "Optional comment to attach to the transition."
 msgstr "Необов’язковий коментар, який потрібно додати до переходу."
 
-#: views/workflow_instance_views.py:233
+#: views/workflow_instance_views.py:234
 msgid "Select"
 msgstr "Вибрати"
 
-#: views/workflow_instance_views.py:235
+#: views/workflow_instance_views.py:236
 #, python-format
 msgid "Select transition for workflow \"%(workflow)s\" of document \"%(document)s\""
 msgstr ""
@@ -1183,54 +1182,51 @@ msgstr "Редагувати стан робочого процесу: %s"
 msgid "This workflow doesn't have any states"
 msgstr "Цей робочий процес не має станів"
 
-#: views/workflow_template_transition_views.py:54
+#: views/workflow_template_transition_views.py:56
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "Створити переходи для робочого процесу: %s"
 
-#: views/workflow_template_transition_views.py:95
+#: views/workflow_template_transition_views.py:97
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "Видалити перехід робочого процесу: %s ?"
 
-#: views/workflow_template_transition_views.py:124
+#: views/workflow_template_transition_views.py:126
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "Редагувати перехід робочого процесу: %s"
 
-#: views/workflow_template_transition_views.py:166
+#: views/workflow_template_transition_views.py:168
 msgid ""
-"Create a transition and use it to move a workflow from  one state to "
-"another."
+"Create a transition and use it to move a workflow from one state to another."
 msgstr ""
-"Створіть перехід і використовуйте його для переміщення робочого процесу з "
-"одного стану в інший."
 
-#: views/workflow_template_transition_views.py:170
+#: views/workflow_template_transition_views.py:172
 msgid "This workflow doesn't have any transitions"
 msgstr "Цей робочий процес не має жодних переходів"
 
-#: views/workflow_template_transition_views.py:174
+#: views/workflow_template_transition_views.py:176
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "Переходи робочого процесу: %s"
 
-#: views/workflow_template_transition_views.py:200
+#: views/workflow_template_transition_views.py:202
 #, python-format
 msgid "Create a field for workflow transition: %s"
 msgstr "Створити поле для переходу робочого процесу: %s"
 
-#: views/workflow_template_transition_views.py:235
+#: views/workflow_template_transition_views.py:237
 #, python-format
 msgid "Delete workflow transition field: %s"
 msgstr "Видалити поле переходу робочого процесу: %s"
 
-#: views/workflow_template_transition_views.py:270
+#: views/workflow_template_transition_views.py:272
 #, python-format
 msgid "Edit workflow transition field: %s"
 msgstr "Редагувати поле переходу робочого процесу: %s"
 
-#: views/workflow_template_transition_views.py:310
+#: views/workflow_template_transition_views.py:312
 msgid ""
 "Workflow transition fields allow adding data to the workflow's context. This"
 " additional context data can then be used by other elements of the workflow "
@@ -1240,31 +1236,31 @@ msgstr ""
 "робочого процесу. Ці додаткові дані контексту можуть бути використані іншими"
 " елементами системи робочого процесу, такими як дії стану робочого процесу."
 
-#: views/workflow_template_transition_views.py:316
+#: views/workflow_template_transition_views.py:318
 msgid "There are no fields for this workflow transition"
 msgstr "Немає полів для цього переходу робочого процесу"
 
-#: views/workflow_template_transition_views.py:320
+#: views/workflow_template_transition_views.py:322
 #, python-format
 msgid "Fields for workflow transition: %s"
 msgstr "Поля для переходу робочого процесу: %s"
 
-#: views/workflow_template_transition_views.py:349
+#: views/workflow_template_transition_views.py:351
 #, python-format
 msgid "Error updating workflow transition trigger events; %s"
 msgstr "Помилка оновлення події тригера переходу робочого процесу; %s"
 
-#: views/workflow_template_transition_views.py:356
+#: views/workflow_template_transition_views.py:359
 msgid "Workflow transition trigger events updated successfully"
 msgstr "Робочий процес спрацювання тригера подій оновлено успішно"
 
-#: views/workflow_template_transition_views.py:368
+#: views/workflow_template_transition_views.py:372
 msgid ""
 "Triggers are events that cause this transition to execute automatically."
 msgstr ""
 "Тригери - це події, які спричиняють автоматичне виконання цього переходу."
 
-#: views/workflow_template_transition_views.py:372
+#: views/workflow_template_transition_views.py:376
 #, python-format
 msgid "Workflow transition trigger events for: %s"
 msgstr "Події запуску переходу робочого процесу для: %s"

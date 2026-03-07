@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (Egypt) (https://app.transifex.com/rosarior/teams/13584/ar_EG/)\n"
@@ -30,7 +30,7 @@ msgstr "تحليل الوثيقة "
 msgid "A generator returning the document file's pages parsed content."
 msgstr "مولد يقوم بإرجاع محتوى صفحات ملف المستند الذي تم تحليله."
 
-#: apps.py:108 links.py:26 links.py:49 models.py:25 search.py:18
+#: apps.py:109 links.py:26 links.py:49 models.py:25 search.py:18
 msgid "Content"
 msgstr "المحتوى"
 
@@ -156,7 +156,7 @@ msgstr "محتوى ملف المستند"
 msgid "Set new document types to perform parsing automatically by default."
 msgstr "معالجة الوثائق الجديدة تلقائياً"
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."
@@ -172,52 +172,52 @@ msgstr "خطأ في حذف محتوى إصدار المستند \"%(instance)s\"
 msgid "Content of %(count)d document versions deleted successfully."
 msgstr "تم حذف %(count)d من محتوى إصدارات المستند بنجاح."
 
-#: views.py:45
+#: views.py:46
 #, python-format
 msgid "Content of \"%(object)s\" deleted successfully."
 msgstr "تم حذف \"%(object)s\" محتوى بنجاح."
 
-#: views.py:48
+#: views.py:49
 #, python-format
 msgid "Content of %(count)d document version deleted successfully."
 msgstr "تم حذف %(count)d من محتوى إصدار المستند بنجاح."
 
-#: views.py:50
+#: views.py:51
 #, python-format
 msgid "Delete the content of: %(object)s."
 msgstr "حذف محتوى: %(object)s."
 
-#: views.py:52
+#: views.py:53
 #, python-format
 msgid "Delete the content of the %(count)d selected document version."
 msgstr "حذف %(count)d من محتوى إصدار المستند المحدد."
 
-#: views.py:55
+#: views.py:57
 #, python-format
 msgid "Delete the content of the %(count)d selected document versions."
 msgstr "حذف %(count)d من محتوى إصدارات المستند المحددة."
 
-#: views.py:96
+#: views.py:99
 #, python-format
 msgid "Content for document file: %s"
 msgstr "محتوى ملف المستند: %s"
 
-#: views.py:118
+#: views.py:121
 #, python-format
 msgid "Content for document file page: %s"
 msgstr "محتوى صفحة ملف المستند: %s"
 
-#: views.py:133
+#: views.py:136
 #, python-format
 msgid "%(count)d document file added to the parsing queue"
 msgstr " تمت إضافة %(count)d ملف المستند إلى قائمة التحليل"
 
-#: views.py:136
+#: views.py:139
 #, python-format
 msgid "%(count)d documents files added to the parsing queue"
 msgstr "%(count)d ملفات المستندات المضافة إلى قائمة التحليل"
 
-#: views.py:145
+#: views.py:148
 #, python-format
 msgid "Submit %(count)d document file to the parsing queue?"
 msgid_plural "Submit %(count)d documents files to the parsing queue?"
@@ -228,21 +228,21 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#: views.py:158
+#: views.py:161
 #, python-format
 msgid "Submit document file \"%s\" to the parsing queue"
 msgstr "إرسال ملف الوثيقة \"%s\" إلى طابور التحليل"
 
-#: views.py:188
+#: views.py:192
 #, python-format
 msgid "Edit parsing settings for document type: %s."
 msgstr "تحرير إعدادات التحليل لنوع المستند: %s."
 
-#: views.py:198
+#: views.py:202
 msgid "Submit all documents of a type for parsing"
 msgstr "قم بإرسال كافة المستندات من نوع ما للتحليل"
 
-#: views.py:220
+#: views.py:224
 #, python-format
 msgid "%(count)d documents added to the parsing queue."
 msgstr "تمت إضافة وثائق %(count)d إلى قائمة انتظار التحليل."

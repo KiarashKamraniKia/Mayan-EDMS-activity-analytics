@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Csaba Tarjányi, 2024\n"
 "Language-Team: Hungarian (Slovakia) (https://app.transifex.com/rosarior/teams/13584/hu_SK/)\n"
@@ -106,11 +106,11 @@ msgstr "Portszám"
 msgid "Store the body of the email as a text document."
 msgstr "Az e-mail szövegtörzsét szöveges dokumentumként tárolja."
 
-#: source_backends/mixins.py:60
+#: source_backends/mixins.py:61
 msgid "Store email body"
 msgstr "Az e-mail szövegtörzsének tárolása"
 
-#: source_backends/mixins.py:74
+#: source_backends/mixins.py:75
 msgid "Common email options"
 msgstr "Általános email beállítások"
 

@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Translators:
-# lockdlock, 2025
+# lockdlock, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-06 21:21+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
-"Last-Translator: lockdlock, 2025\n"
+"Last-Translator: lockdlock, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -115,7 +115,7 @@ msgstr "トリガーはシステムイベントであり、遷移を適用する
 msgid "Triggers"
 msgstr "トリガー"
 
-#: apps.py:503 models/workflow_transition_models.py:105
+#: apps.py:503 models/workflow_transition_field_models.py:31
 msgid "Type"
 msgstr "タイプ"
 
@@ -163,8 +163,8 @@ msgstr "次のステップで実行する遷移を選択してください"
 #: forms/workflow_instance_forms.py:18 links.py:293
 #: models/workflow_instance_models.py:96
 #: models/workflow_state_escalation_models.py:34
-#: models/workflow_transition_models.py:102
-#: models/workflow_transition_models.py:184
+#: models/workflow_transition_field_models.py:28
+#: models/workflow_transition_models.py:96
 #: serializers/workflow_instance_serializers.py:45
 msgid "Transition"
 msgstr "遷移"
@@ -187,8 +187,9 @@ msgstr "名前空間"
 
 #: forms/workflow_template_transition_forms.py:45 models/workflow_models.py:45
 #: models/workflow_state_action_models.py:33
-#: models/workflow_state_models.py:39 models/workflow_transition_models.py:38
-#: models/workflow_transition_models.py:116
+#: models/workflow_state_models.py:39
+#: models/workflow_transition_field_models.py:42
+#: models/workflow_transition_models.py:32
 msgid "Label"
 msgstr "ラベル"
 
@@ -202,7 +203,7 @@ msgstr "はい"
 
 #: forms/workflow_template_transition_forms.py:54
 #: models/workflow_state_action_models.py:36
-#: models/workflow_state_escalation_models.py:47
+#: models/workflow_state_escalation_models.py:48
 msgid "Enabled"
 msgstr "有効"
 
@@ -281,7 +282,7 @@ msgstr "ワークフローを開始"
 msgid "Create field"
 msgstr "フィールドを作成"
 
-#: links.py:272 models/workflow_transition_model_mixins.py:27
+#: links.py:272 models/workflow_transition_model_mixins.py:26
 msgid "Fields"
 msgstr "フィールド"
 
@@ -332,7 +333,7 @@ msgid "On exit"
 msgstr "出力時"
 
 #: models/workflow_instance_models.py:31 models/workflow_models.py:57
-#: models/workflow_state_models.py:35 models/workflow_transition_models.py:34
+#: models/workflow_state_models.py:35 models/workflow_transition_models.py:28
 msgid "Workflow"
 msgstr "ワークフロー"
 
@@ -362,7 +363,7 @@ msgid "Workflow instances"
 msgstr "ワークフローインスタンス一覧"
 
 #: models/workflow_instance_models.py:103
-#: models/workflow_state_escalation_models.py:64
+#: models/workflow_state_escalation_models.py:65
 #: views/workflow_instance_views.py:162
 msgid "Comment"
 msgstr "コメント"
@@ -401,7 +402,7 @@ msgid ""
 "contain letters, numbers, and underscores."
 msgstr "この値は他のアプリからこのワークフローを参照する際に使用されます。文字、数字、アンダースコアのみ使用可能です。"
 
-#: models/workflow_models.py:41 models/workflow_transition_models.py:111
+#: models/workflow_models.py:41 models/workflow_transition_field_models.py:37
 msgid "Internal name"
 msgstr "内部名"
 
@@ -423,7 +424,7 @@ msgid ""
 msgstr ""
 
 #: models/workflow_state_action_model_mixins.py:57
-#: models/workflow_transition_model_mixins.py:53
+#: models/workflow_transition_model_mixins.py:52
 msgid "Has a condition?"
 msgstr "条件はありますか？"
 
@@ -457,7 +458,7 @@ msgstr ""
 " または空文字列 ('') を返す場合は偽とみなされ、それ以外の値は真とみなされます。"
 
 #: models/workflow_state_action_models.py:52
-#: models/workflow_transition_models.py:56
+#: models/workflow_transition_models.py:50
 msgid "Condition"
 msgstr "条件"
 
@@ -490,28 +491,28 @@ msgid ""
 "has elapsed in the state without change."
 msgstr "状態が変化せずに指定時間経過後、自動的にワークフローを遷移させる"
 
-#: models/workflow_state_escalation_models.py:52
+#: models/workflow_state_escalation_models.py:53
 msgid "Time unit"
 msgstr "時間単位"
 
-#: models/workflow_state_escalation_models.py:57
+#: models/workflow_state_escalation_models.py:58
 msgid "Amount of the selected escalation units of time."
 msgstr "選択したエスカレーション時間単位の量"
 
-#: models/workflow_state_escalation_models.py:58
+#: models/workflow_state_escalation_models.py:59
 msgid "Amount"
 msgstr "数量（量）"
 
-#: models/workflow_state_escalation_models.py:62
+#: models/workflow_state_escalation_models.py:63
 msgid ""
 "Comment to save to the workflow instance when the escalation is executed."
 msgstr "エスカレーション実行時にワークフローインスタンスに保存するコメント"
 
-#: models/workflow_state_escalation_models.py:70
+#: models/workflow_state_escalation_models.py:71
 msgid "Workflow state escalation"
 msgstr "ワークフロー状態エスカレーション"
 
-#: models/workflow_state_escalation_models.py:71
+#: models/workflow_state_escalation_models.py:72
 msgid "Workflow state escalations"
 msgstr "ワークフロー状態エスカレーション一覧"
 
@@ -547,26 +548,78 @@ msgstr "ワークフロー状態実行時プロキシ"
 msgid "Workflow state runtime proxies"
 msgstr "ワークフロー状態実行時プロキシ一覧"
 
-#: models/workflow_transition_model_mixins.py:50
+#: models/workflow_transition_field_models.py:35
+msgid ""
+"The name that will be used to identify this field in other parts of the "
+"workflow system."
+msgstr "ワークフローシステム内でこのフィールドを識別するための名前"
+
+#: models/workflow_transition_field_models.py:41
+msgid "The field name that will be shown on the user interface."
+msgstr "ユーザーインターフェースに表示されるフィールド名"
+
+#: models/workflow_transition_field_models.py:46
+msgid ""
+"An optional message that will help users better understand the purpose of "
+"the field and data to provide."
+msgstr "ユーザーがフィールドの目的や入力データを理解するための補足メッセージ（任意）"
+
+#: models/workflow_transition_field_models.py:48
+msgid "Help text"
+msgstr "ヘルプテキスト"
+
+#: models/workflow_transition_field_models.py:52
+msgid "Whether this field needs to be filled out or not to proceed."
+msgstr "このフィールドの入力必須かどうか"
+
+#: models/workflow_transition_field_models.py:54
+msgid "Required"
+msgstr "必須"
+
+#: models/workflow_transition_field_models.py:58
+msgid "An optional class to change the default presentation of the field."
+msgstr "フィールドの表示スタイルを変更するオプションクラス"
+
+#: models/workflow_transition_field_models.py:60
+msgid "Widget class"
+msgstr "ウィジェットクラス"
+
+#: models/workflow_transition_field_models.py:64
+msgid "A group of keyword arguments to customize the widget. Use YAML format."
+msgstr "ウィジェットをカスタマイズするキーワード引数群（YAML形式）"
+
+#: models/workflow_transition_field_models.py:68
+msgid "Widget keyword arguments"
+msgstr "ウィジェット用キーワード引数"
+
+#: models/workflow_transition_field_models.py:73
+msgid "Workflow transition field"
+msgstr "ワークフロー遷移フィールド"
+
+#: models/workflow_transition_field_models.py:74
+msgid "Workflow transition fields"
+msgstr "ワークフロー遷移フィールド一覧"
+
+#: models/workflow_transition_model_mixins.py:49
 msgid ""
 "The transition will be available, depending on the condition return value."
 msgstr ""
 
-#: models/workflow_transition_models.py:37
+#: models/workflow_transition_models.py:31
 msgid "A short text to describe the transition."
 msgstr "遷移の簡単な説明"
 
-#: models/workflow_transition_models.py:42
-#: serializers/workflow_template_transition_serializers.py:95
+#: models/workflow_transition_models.py:36
+#: serializers/workflow_template_transition_serializers.py:97
 msgid "Origin state"
 msgstr "開始状態"
 
-#: models/workflow_transition_models.py:46
-#: serializers/workflow_template_transition_serializers.py:82
+#: models/workflow_transition_models.py:40
+#: serializers/workflow_template_transition_serializers.py:84
 msgid "Destination state"
 msgstr "遷移先状態"
 
-#: models/workflow_transition_models.py:50
+#: models/workflow_transition_models.py:44
 msgid ""
 "The condition that will determine if this transition is enabled or not. The "
 "condition is evaluated against the workflow instance. Conditions that do not"
@@ -577,76 +630,24 @@ msgstr ""
 "この遷移を有効にするかどうかを決定する条件です。条件はワークフローインスタンスに対して評価されます。値を返さない場合、Python の None "
 "または空文字列 ('') を返す場合は偽、それ以外は真とみなされます。"
 
-#: models/workflow_transition_models.py:64
+#: models/workflow_transition_models.py:58
 msgid "Workflow transition"
 msgstr "ワークフロー遷移"
 
-#: models/workflow_transition_models.py:65
+#: models/workflow_transition_models.py:59
 msgid "Workflow transitions"
 msgstr "ワークフロー遷移一覧"
 
-#: models/workflow_transition_models.py:109
-msgid ""
-"The name that will be used to identify this field in other parts of the "
-"workflow system."
-msgstr "ワークフローシステム内でこのフィールドを識別するための名前"
-
-#: models/workflow_transition_models.py:115
-msgid "The field name that will be shown on the user interface."
-msgstr "ユーザーインターフェースに表示されるフィールド名"
-
-#: models/workflow_transition_models.py:120
-msgid ""
-"An optional message that will help users better understand the purpose of "
-"the field and data to provide."
-msgstr "ユーザーがフィールドの目的や入力データを理解するための補足メッセージ（任意）"
-
-#: models/workflow_transition_models.py:122
-msgid "Help text"
-msgstr "ヘルプテキスト"
-
-#: models/workflow_transition_models.py:126
-msgid "Whether this field needs to be filled out or not to proceed."
-msgstr "このフィールドの入力必須かどうか"
-
-#: models/workflow_transition_models.py:127
-msgid "Required"
-msgstr "必須"
-
-#: models/workflow_transition_models.py:131
-msgid "An optional class to change the default presentation of the field."
-msgstr "フィールドの表示スタイルを変更するオプションクラス"
-
-#: models/workflow_transition_models.py:133
-msgid "Widget class"
-msgstr "ウィジェットクラス"
-
-#: models/workflow_transition_models.py:137
-msgid "A group of keyword arguments to customize the widget. Use YAML format."
-msgstr "ウィジェットをカスタマイズするキーワード引数群（YAML形式）"
-
-#: models/workflow_transition_models.py:141
-msgid "Widget keyword arguments"
-msgstr "ウィジェット用キーワード引数"
-
-#: models/workflow_transition_models.py:146
-msgid "Workflow transition field"
-msgstr "ワークフロー遷移フィールド"
-
-#: models/workflow_transition_models.py:147
-msgid "Workflow transition fields"
-msgstr "ワークフロー遷移フィールド一覧"
-
-#: models/workflow_transition_models.py:188
-#: serializers/workflow_template_transition_serializers.py:195
+#: models/workflow_transition_models.py:100
+#: serializers/workflow_template_transition_serializers.py:197
 msgid "Event type"
 msgstr "イベントタイプ"
 
-#: models/workflow_transition_models.py:194
+#: models/workflow_transition_models.py:106
 msgid "Workflow transition trigger event"
 msgstr "ワークフロー遷移トリガーイベント"
 
-#: models/workflow_transition_models.py:196
+#: models/workflow_transition_models.py:108
 msgid "Workflow transitions trigger events"
 msgstr "ワークフロー遷移トリガーイベント一覧"
 
@@ -716,7 +717,7 @@ msgstr "開始するワークフローテンプレートの主キー"
 
 #: serializers/workflow_instance_serializers.py:25
 #: serializers/workflow_template_state_serializers.py:47
-#: serializers/workflow_template_transition_serializers.py:111
+#: serializers/workflow_template_transition_serializers.py:113
 msgid "Workflow template ID"
 msgstr "ワークフローテンプレートID"
 
@@ -739,9 +740,9 @@ msgstr "遷移 ID"
 #: serializers/workflow_template_state_escalation_serializers.py:16
 #: serializers/workflow_template_state_serializers.py:35
 #: serializers/workflow_template_state_serializers.py:71
-#: serializers/workflow_template_transition_serializers.py:25
-#: serializers/workflow_template_transition_serializers.py:108
-#: serializers/workflow_template_transition_serializers.py:202
+#: serializers/workflow_template_transition_serializers.py:27
+#: serializers/workflow_template_transition_serializers.py:110
+#: serializers/workflow_template_transition_serializers.py:204
 #: workflow_actions.py:175
 msgid "URL"
 msgstr "URL"
@@ -753,9 +754,9 @@ msgstr "ワークフローインスタンス URL"
 #: serializers/workflow_instance_serializers.py:86
 #: serializers/workflow_instance_serializers.py:148
 #: serializers/workflow_template_state_serializers.py:50
-#: serializers/workflow_template_transition_serializers.py:41
-#: serializers/workflow_template_transition_serializers.py:114
-#: serializers/workflow_template_transition_serializers.py:218
+#: serializers/workflow_template_transition_serializers.py:43
+#: serializers/workflow_template_transition_serializers.py:116
+#: serializers/workflow_template_transition_serializers.py:220
 msgid "Workflow template URL"
 msgstr "ワークフローテンプレート URL"
 
@@ -814,7 +815,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr "ワークフローに追加する文書タイプの主キー"
 
 #: serializers/workflow_template_serializers.py:66
-#: serializers/workflow_template_serializers.py:75
+#: serializers/workflow_template_serializers.py:76
 msgid "Document type ID"
 msgstr "文書タイプ ID"
 
@@ -836,11 +837,11 @@ msgstr "ワークフローテンプレート状態 URL"
 msgid "Primary key of the workflow template transition to be added."
 msgstr "追加するワークフローテンプレート遷移の主キー"
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "ワークフローテンプレート遷移 ID"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "ワークフローテンプレート遷移 URL"
 
@@ -852,45 +853,45 @@ msgstr "アクション URL"
 msgid "Escalations URL"
 msgstr "エスカレーション一覧 URL"
 
-#: serializers/workflow_template_transition_serializers.py:49
-#: serializers/workflow_template_transition_serializers.py:226
+#: serializers/workflow_template_transition_serializers.py:51
+#: serializers/workflow_template_transition_serializers.py:228
 msgid "Workflow transition ID"
 msgstr "ワークフロー遷移 ID"
 
-#: serializers/workflow_template_transition_serializers.py:53
-#: serializers/workflow_template_transition_serializers.py:230
+#: serializers/workflow_template_transition_serializers.py:55
+#: serializers/workflow_template_transition_serializers.py:232
 msgid "Workflow transition URL"
 msgstr "ワークフロー遷移 URL"
 
-#: serializers/workflow_template_transition_serializers.py:86
+#: serializers/workflow_template_transition_serializers.py:88
 msgid "Primary key of the destination state to be added."
 msgstr "追加する宛先状態の主キー"
 
-#: serializers/workflow_template_transition_serializers.py:87
+#: serializers/workflow_template_transition_serializers.py:89
 msgid "Destination state ID"
 msgstr "宛先状態 ID"
 
-#: serializers/workflow_template_transition_serializers.py:92
+#: serializers/workflow_template_transition_serializers.py:94
 msgid "Field list URL"
 msgstr "フィールド一覧 URL"
 
-#: serializers/workflow_template_transition_serializers.py:99
+#: serializers/workflow_template_transition_serializers.py:101
 msgid "Primary key of the origin state to be added."
 msgstr "追加する起点状態の主キー"
 
-#: serializers/workflow_template_transition_serializers.py:100
+#: serializers/workflow_template_transition_serializers.py:102
 msgid "Origin state ID"
 msgstr "起点状態 ID"
 
-#: serializers/workflow_template_transition_serializers.py:105
+#: serializers/workflow_template_transition_serializers.py:107
 msgid "Trigger list URL"
 msgstr "トリガー一覧 URL"
 
-#: serializers/workflow_template_transition_serializers.py:198
+#: serializers/workflow_template_transition_serializers.py:200
 msgid "Event Type ID"
 msgstr "イベントタイプ ID"
 
-#: serializers/workflow_template_transition_serializers.py:291
+#: serializers/workflow_template_transition_serializers.py:293
 #, python-format
 msgid "Unknown or invalid event type ID `%s`"
 msgstr "不明または無効なイベントタイプID  `%s `"
@@ -902,10 +903,10 @@ msgstr "ワークフロープレビュー生成に使用する graphviz dot プ�
 
 #: settings.py:28
 msgid ""
-"The threshold at which the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND will start "
-"deleting the oldest workflow image cache files. Specify the size in bytes."
+"The threshold at which the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will "
+"start deleting the oldest workflow image cache files. Specify the size in "
+"bytes."
 msgstr ""
-"WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND が最古のワークフロー画像キャッシュを削除し始める閾値（バイト単位で指定）"
 
 #: settings.py:37
 msgid ""
@@ -914,10 +915,10 @@ msgid ""
 msgstr "キャッシュされたワークフロー画像を保存する際に使用する Storage サブクラスのパス"
 
 #: settings.py:45
-msgid "Arguments to pass to the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND に渡す引数"
+msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."
@@ -977,11 +978,11 @@ msgstr "ワークフロー \"%(workflow)s\" の状態移行 \"%(transition)s\" �
 msgid "Optional comment to attach to the transition."
 msgstr "遷移に添付する任意のコメント"
 
-#: views/workflow_instance_views.py:233
+#: views/workflow_instance_views.py:234
 msgid "Select"
 msgstr "選択"
 
-#: views/workflow_instance_views.py:235
+#: views/workflow_instance_views.py:236
 #, python-format
 msgid "Select transition for workflow \"%(workflow)s\" of document \"%(document)s\""
 msgstr "文書 \"%(document)s\" のワークフロー \"%(workflow)s\" の遷移を選択"
@@ -1119,52 +1120,51 @@ msgstr "ワークフロー状態を編集: %s"
 msgid "This workflow doesn't have any states"
 msgstr "このワークフローには状態がありません。"
 
-#: views/workflow_template_transition_views.py:54
+#: views/workflow_template_transition_views.py:56
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "ワークフロー用の遷移を作成: %s"
 
-#: views/workflow_template_transition_views.py:95
+#: views/workflow_template_transition_views.py:97
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "ワークフロー遷移を削除: %s?"
 
-#: views/workflow_template_transition_views.py:124
+#: views/workflow_template_transition_views.py:126
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "ワークフロー遷移を編集: %s"
 
-#: views/workflow_template_transition_views.py:166
+#: views/workflow_template_transition_views.py:168
 msgid ""
-"Create a transition and use it to move a workflow from  one state to "
-"another."
-msgstr ""
+"Create a transition and use it to move a workflow from one state to another."
+msgstr "遷移を作成し、ワークフローをある状態から別の状態へ移動させます。"
 
-#: views/workflow_template_transition_views.py:170
+#: views/workflow_template_transition_views.py:172
 msgid "This workflow doesn't have any transitions"
 msgstr "このワークフローには遷移がありません。"
 
-#: views/workflow_template_transition_views.py:174
+#: views/workflow_template_transition_views.py:176
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "ワークフローの遷移: %s"
 
-#: views/workflow_template_transition_views.py:200
+#: views/workflow_template_transition_views.py:202
 #, python-format
 msgid "Create a field for workflow transition: %s"
 msgstr "ワークフロー遷移用フィールドを作成: %s"
 
-#: views/workflow_template_transition_views.py:235
+#: views/workflow_template_transition_views.py:237
 #, python-format
 msgid "Delete workflow transition field: %s"
 msgstr "ワークフロー遷移フィールドを削除: %s"
 
-#: views/workflow_template_transition_views.py:270
+#: views/workflow_template_transition_views.py:272
 #, python-format
 msgid "Edit workflow transition field: %s"
 msgstr "ワークフロー遷移フィールドを編集: %s"
 
-#: views/workflow_template_transition_views.py:310
+#: views/workflow_template_transition_views.py:312
 msgid ""
 "Workflow transition fields allow adding data to the workflow's context. This"
 " additional context data can then be used by other elements of the workflow "
@@ -1172,30 +1172,30 @@ msgid ""
 msgstr ""
 "ワークフロー遷移フィールドは、ワークフローのコンテキストにデータを追加できます。この追加コンテキストは、ワークフロー状態アクションなど、ワークフローシステム内の他の要素で利用可能です。"
 
-#: views/workflow_template_transition_views.py:316
+#: views/workflow_template_transition_views.py:318
 msgid "There are no fields for this workflow transition"
 msgstr "このワークフロー遷移にはフィールドがありません。"
 
-#: views/workflow_template_transition_views.py:320
+#: views/workflow_template_transition_views.py:322
 #, python-format
 msgid "Fields for workflow transition: %s"
 msgstr "ワークフロー遷移のフィールド: %s"
 
-#: views/workflow_template_transition_views.py:349
+#: views/workflow_template_transition_views.py:351
 #, python-format
 msgid "Error updating workflow transition trigger events; %s"
 msgstr "ワークフロー遷移トリガーイベントの更新エラー: %s"
 
-#: views/workflow_template_transition_views.py:356
+#: views/workflow_template_transition_views.py:359
 msgid "Workflow transition trigger events updated successfully"
 msgstr "ワークフロー遷移トリガーイベントが正常に更新されました。"
 
-#: views/workflow_template_transition_views.py:368
+#: views/workflow_template_transition_views.py:372
 msgid ""
 "Triggers are events that cause this transition to execute automatically."
 msgstr "トリガーは、この遷移を自動的に実行させるイベントです。"
 
-#: views/workflow_template_transition_views.py:372
+#: views/workflow_template_transition_views.py:376
 #, python-format
 msgid "Workflow transition trigger events for: %s"
 msgstr "ワークフロー遷移トリガーイベント: %s"

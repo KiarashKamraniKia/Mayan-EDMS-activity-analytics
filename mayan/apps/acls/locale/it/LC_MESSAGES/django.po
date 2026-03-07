@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-04 17:04+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: piera.daraio, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
@@ -58,7 +58,7 @@ msgstr "ACL cancellata"
 msgid "ACL edited"
 msgstr "ACL modificata"
 
-#: forms.py:13 models.py:56 serializers.py:79 views.py:73
+#: forms.py:13 models.py:57 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "Ruolo"
 
@@ -106,15 +106,15 @@ msgstr "ID dell'oggetto"
 msgid "Role to which the access is granted for the specified object."
 msgstr "Ruolo al quale si concede l'accesso per l'oggetto specificato."
 
-#: models.py:64
+#: models.py:65
 msgid "Access entry"
 msgstr "Voce di accesso"
 
-#: models.py:65
+#: models.py:66
 msgid "Access entries"
 msgstr "Voci di accesso"
 
-#: models.py:69
+#: models.py:70
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Permessi del ruolo \"%(role)s\" per \"%(object)s\""

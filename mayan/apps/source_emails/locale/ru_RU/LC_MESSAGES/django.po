@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Ilya Pavlov <spirkaa@gmail.com>, 2024\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/rosarior/teams/13584/ru_RU/)\n"
@@ -116,11 +116,11 @@ msgstr "Порт"
 msgid "Store the body of the email as a text document."
 msgstr "Сохранять тело письма как текстовый документ."
 
-#: source_backends/mixins.py:60
+#: source_backends/mixins.py:61
 msgid "Store email body"
 msgstr "Сохранять тело письма"
 
-#: source_backends/mixins.py:74
+#: source_backends/mixins.py:75
 msgid "Common email options"
 msgstr ""
 

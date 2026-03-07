@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Spanish (Ecuador) (https://app.transifex.com/rosarior/teams/13584/es_EC/)\n"
@@ -114,32 +114,32 @@ msgstr "Ver instancias de enlaces web"
 msgid "Primary key of the document type to add to the web link."
 msgstr "Clave principal del tipo de documento para agregar al enlace web."
 
-#: serializers.py:17 serializers.py:26
+#: serializers.py:18 serializers.py:28
 msgid "Document type ID"
 msgstr "Identificador del tipo de documento"
 
-#: serializers.py:25
+#: serializers.py:26
 msgid "Primary key of the document type to remove from the web link."
 msgstr ""
 "Clave principal del tipo de documento que se eliminará del enlace web."
 
-#: serializers.py:33
+#: serializers.py:35
 msgid "Document types add URL"
 msgstr "URL para agregar tipos de documentos"
 
-#: serializers.py:37
+#: serializers.py:39
 msgid "Document types remove URL"
 msgstr "URL para eliminar tipos de documentos"
 
-#: serializers.py:41
+#: serializers.py:43
 msgid "Document types URL"
 msgstr "URL de tipos de documentos"
 
-#: serializers.py:48 serializers.py:63
+#: serializers.py:50 serializers.py:65
 msgid "URL"
 msgstr "URL"
 
-#: serializers.py:66
+#: serializers.py:68
 msgid "Navigation URL"
 msgstr "URL de navegación"
 

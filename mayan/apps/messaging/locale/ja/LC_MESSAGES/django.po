@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 11:57+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -96,23 +96,23 @@ msgstr "メッセージの内容"
 msgid "This field determines if the message has been read or not."
 msgstr "メッセージが既読かどうかを示すフィールド"
 
-#: models.py:42
+#: models.py:43
 msgid "Read"
 msgstr "読む"
 
-#: models.py:46
+#: models.py:47
 msgid "Date and time of the message creation."
 msgstr "メッセージ作成日時"
 
-#: models.py:47
+#: models.py:48
 msgid "Creation date and time"
 msgstr "作成日時"
 
-#: models.py:52
+#: models.py:53
 msgid "Message"
 msgstr "メッセージ"
 
-#: models.py:53 views.py:128
+#: models.py:54 views.py:128
 msgid "Messages"
 msgstr "メッセージ一覧"
 
@@ -252,32 +252,32 @@ msgstr "すべてのメッセージを既読にしました"
 msgid "Error marking message \"%(instance)s\" as unread; %(exception)s"
 msgstr "メッセージ \"%(instance)s\" を未読にできませんでした: %(exception)s"
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)d 件のメッセージを未読に設定しました"
 
-#: views.py:213
+#: views.py:214
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "メッセージ \"%(object)s\" を未読に設定しました"
 
-#: views.py:216
+#: views.py:217
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "選択した %(count)d 件のメッセージを未読に設定しました"
 
-#: views.py:218
+#: views.py:219
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "選択した %(count)d 件のメッセージを未読に設定する"
 
-#: views.py:219
+#: views.py:220
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "メッセージ \"%(object)s\" を未読に設定する"
 
-#: views.py:220
+#: views.py:221
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "選択した %(count)d 件のメッセージを未読に設定する"

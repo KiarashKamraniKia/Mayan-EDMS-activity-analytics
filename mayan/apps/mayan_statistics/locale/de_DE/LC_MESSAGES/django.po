@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:06+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Mathias Behrle <mathiasb@m9s.biz>, 2024\n"
 "Language-Team: German (Germany) (https://app.transifex.com/rosarior/teams/13584/de_DE/)\n"
@@ -123,40 +123,40 @@ msgstr "Statistik \"%s\" nicht gefunden."
 msgid "Statistics namespaces group statistics into logical units. "
 msgstr "Statistik-Namensräume gruppieren Statistiken in logische Einheiten."
 
-#: views.py:25
+#: views.py:26
 msgid "No statistic namespaces available"
 msgstr "Keine Statistik-Namensräume verfügbar"
 
-#: views.py:26
+#: views.py:27
 msgid "Statistics namespaces"
 msgstr "Statistiken Namensräume"
 
-#: views.py:49
+#: views.py:50
 msgid "Statistics are metrics and chart representations of existing data."
 msgstr ""
 "Statistiken sind metrische und Diagrammdarstellungen von existierenden "
 "Daten."
 
-#: views.py:52
+#: views.py:53
 msgid "No statistic available"
 msgstr "Keine Statistiken verfügbar"
 
-#: views.py:54
+#: views.py:55
 #, python-format
 msgid "Namespace details for: %s"
 msgstr "Namensraumdetails für %s"
 
-#: views.py:77
+#: views.py:78
 #, python-format
 msgid "Results for: %s"
 msgstr "Ergebnis für %s"
 
-#: views.py:97
+#: views.py:98
 #, python-format
 msgid "Queue statistic \"%s\" to be updated?"
 msgstr "Statistik \"%s\"  für die Aktualisierung vorsehen?"
 
-#: views.py:105
+#: views.py:106
 #, python-format
 msgid "Statistic \"%s\" queued successfully for update."
 msgstr ""

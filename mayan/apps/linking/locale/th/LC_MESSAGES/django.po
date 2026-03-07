@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 04:28+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Dasapich Thongnopnua <dasapich@gmail.com>, 2024\n"
 "Language-Team: Thai (https://app.transifex.com/rosarior/teams/13584/th/)\n"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Linking"
 msgstr ""
 
-#: apps.py:120 models.py:31 serializers.py:129
+#: apps.py:120 models.py:31 serializers.py:131
 msgid "Label"
 msgstr ""
 
@@ -246,11 +246,11 @@ msgstr ""
 msgid "View existing smart links"
 msgstr ""
 
-#: serializers.py:20 serializers.py:132
+#: serializers.py:20 serializers.py:134
 msgid "Smart link URL"
 msgstr ""
 
-#: serializers.py:24 serializers.py:86 serializers.py:135
+#: serializers.py:24 serializers.py:88 serializers.py:137
 msgid "URL"
 msgstr ""
 
@@ -258,35 +258,35 @@ msgstr ""
 msgid "Primary key of the document type to add to the smart link."
 msgstr ""
 
-#: serializers.py:50 serializers.py:59
+#: serializers.py:51 serializers.py:61
 msgid "Document type ID"
 msgstr ""
 
-#: serializers.py:58
+#: serializers.py:59
 msgid "Primary key of the document type to remove from the smart link."
 msgstr ""
 
-#: serializers.py:66
+#: serializers.py:68
 msgid "Conditions URL"
 msgstr ""
 
-#: serializers.py:70
+#: serializers.py:72
 msgid "Document types URL"
 msgstr ""
 
-#: serializers.py:74
+#: serializers.py:76
 msgid "Document types add URL"
 msgstr ""
 
-#: serializers.py:78
+#: serializers.py:80
 msgid "Document types remove URL"
 msgstr ""
 
-#: serializers.py:105
+#: serializers.py:107
 msgid "Resolved smart link URL"
 msgstr ""
 
-#: serializers.py:126
+#: serializers.py:128
 msgid "Documents URL"
 msgstr ""
 

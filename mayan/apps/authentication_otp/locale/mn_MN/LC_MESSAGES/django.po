@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Zoljargal Munkhjargal, 2024\n"
 "Language-Team: Mongolian (Mongolia) (https://app.transifex.com/rosarior/teams/13584/mn_MN/)\n"
@@ -60,22 +60,22 @@ msgstr ""
 "Нэвтрэх төхөөрөмж дээрээ QR кодыг уншуулах эсвэл нууц кодыг оруулна уу. Энэ "
 "нууц кодыг бусдад тараахгүй байхыг хүсье."
 
-#: forms.py:106 forms.py:111
+#: forms.py:107 forms.py:112
 msgid "Secret"
 msgstr "Нууц"
 
-#: forms.py:117
+#: forms.py:118
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 "Нууц түлхүүр зөв хадгалсан эсэхийг баталгаажуулахын тулд харгалзах токеныг "
 "оруулна уу."
 
-#: forms.py:120
+#: forms.py:121
 msgid "Token"
 msgstr "Токен"
 
-#: forms.py:155
+#: forms.py:156
 msgid "Token is incorrect for the specified secret."
 msgstr "Токен нууц түлхүүрт тохирохгүй байна."
 

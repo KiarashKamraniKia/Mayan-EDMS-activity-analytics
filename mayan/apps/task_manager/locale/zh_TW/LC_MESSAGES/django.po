@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-14 04:29+0000\n"
+"POT-Creation-Date: 2026-03-07 05:33+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/rosarior/teams/13584/zh_TW/)\n"
@@ -26,11 +26,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "任务管理器"
 
-#: apps.py:114 apps.py:139 apps.py:182
+#: apps.py:114 apps.py:140 apps.py:183
 msgid "Label"
 msgstr "標籤"
 
-#: apps.py:118 apps.py:142 apps.py:186
+#: apps.py:118 apps.py:143 apps.py:187
 msgid "Name"
 msgstr "名称"
 
@@ -45,79 +45,79 @@ msgid ""
 " critical tasks."
 msgstr ""
 
-#: apps.py:131
+#: apps.py:132
 msgid "Is transient?"
 msgstr "是临时的吗？"
 
-#: apps.py:145
+#: apps.py:146
 msgid "Dotted path"
 msgstr ""
 
-#: apps.py:149
+#: apps.py:150
 msgid "Schedule"
 msgstr "安排"
 
-#: apps.py:155
+#: apps.py:156
 msgid "Type"
 msgstr "類型"
 
-#: apps.py:160
+#: apps.py:161
 msgid "Start time"
 msgstr "开始时间"
 
-#: apps.py:164
+#: apps.py:165
 msgid "Host"
 msgstr "主机"
 
-#: apps.py:168
+#: apps.py:169
 msgid "Arguments"
 msgstr "参数"
 
-#: apps.py:172
+#: apps.py:173
 msgid "Keyword arguments"
 msgstr "关键字参数"
 
-#: apps.py:177
+#: apps.py:178
 msgid "Worker process ID"
 msgstr "工作进程ID"
 
-#: apps.py:190
+#: apps.py:191
 msgid ""
 "Maximum amount of resident memory a worker can execute before it's replaced "
 "by a new process."
 msgstr ""
 
-#: apps.py:192
+#: apps.py:193
 msgid "Maximum memory per child"
 msgstr ""
 
-#: apps.py:196
+#: apps.py:197
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
 msgstr ""
 
-#: apps.py:198
+#: apps.py:199
 msgid "Maximum tasks per child"
 msgstr ""
 
-#: apps.py:202
+#: apps.py:203
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
 msgstr ""
 
-#: apps.py:204
+#: apps.py:205
 msgid "Concurrency"
 msgstr ""
 
-#: apps.py:208
+#: apps.py:209
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
 msgstr ""
 
-#: apps.py:211
+#: apps.py:212
 msgid "Nice level"
 msgstr ""
 
@@ -163,13 +163,13 @@ msgstr ""
 "默认值：“amqp：//”。默认代理URL。这必须是以下形式的URL：transport:// userid:password @ "
 "hostname:port / virtual_host只需要方案部分（transport://），其余部分是可选的，默认为特定传输的默认值。"
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
 msgstr ""
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

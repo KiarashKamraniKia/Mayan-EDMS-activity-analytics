@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-07 13:48+0000\n"
+"POT-Creation-Date: 2026-03-07 05:32+0000\n"
 "PO-Revision-Date: 2024-01-02 18:58+0000\n"
 "Last-Translator: Ara Gasparyan, 2024\n"
 "Language-Team: Armenian (Armenia) (https://app.transifex.com/rosarior/teams/13584/hy_AM/)\n"
@@ -49,7 +49,7 @@ msgstr ""
 msgid "MIME types"
 msgstr ""
 
-#: apps.py:178 models.py:71 models.py:122
+#: apps.py:178 models.py:72 models.py:123
 msgid "Internal name"
 msgstr ""
 
@@ -103,7 +103,7 @@ msgstr ""
 msgid "File metadata processing per type"
 msgstr ""
 
-#: links.py:65 views.py:232
+#: links.py:65 views.py:236
 msgid "File metadata drivers"
 msgstr ""
 
@@ -115,7 +115,7 @@ msgstr ""
 msgid "Attribute count"
 msgstr ""
 
-#: models.py:20 models.py:127
+#: models.py:20 models.py:128
 msgid "Driver"
 msgstr ""
 
@@ -123,7 +123,7 @@ msgstr ""
 msgid "Document file"
 msgstr ""
 
-#: models.py:30 models.py:66
+#: models.py:30 models.py:67
 msgid "Document file driver entry"
 msgstr ""
 
@@ -139,51 +139,51 @@ msgstr "Փաստաթղթի տեսակ"
 msgid "Automatically queue newly created documents for processing."
 msgstr ""
 
-#: models.py:48
+#: models.py:49
 msgid "Auto process"
 msgstr ""
 
-#: models.py:54
+#: models.py:55
 msgid "Document type settings"
 msgstr ""
 
-#: models.py:55
+#: models.py:56
 msgid "Document types settings"
 msgstr ""
 
-#: models.py:70
+#: models.py:71
 msgid "Normalized name of the file metadata entry."
 msgstr ""
 
-#: models.py:75
+#: models.py:76
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr ""
 
-#: models.py:77
+#: models.py:78
 msgid "Key"
 msgstr ""
 
-#: models.py:80
+#: models.py:81
 msgid "Value of the file metadata entry."
 msgstr ""
 
-#: models.py:81
+#: models.py:82
 msgid "Value"
 msgstr ""
 
-#: models.py:87
+#: models.py:88
 msgid "File metadata entry"
 msgstr ""
 
-#: models.py:88
+#: models.py:89
 msgid "File metadata entries"
 msgstr ""
 
-#: models.py:118
+#: models.py:119
 msgid "Driver path"
 msgstr ""
 
-#: models.py:128
+#: models.py:129
 msgid "Drivers"
 msgstr ""
 
@@ -260,42 +260,42 @@ msgid ""
 "File metadata attributes for: %(document_file)s with driver: %(driver)s"
 msgstr ""
 
-#: views.py:122
+#: views.py:123
 #, python-format
 msgid "%(count)d documents files submitted to the file metadata queue."
 msgstr ""
 
-#: views.py:125
+#: views.py:127
 #, python-format
 msgid "%(count)d document file submitted to the file metadata queue."
 msgstr ""
 
-#: views.py:134
+#: views.py:137
 msgid "Submit the selected document file to the file metadata queue?"
 msgid_plural "Submit the selected documents files to the file metadata queue?"
 msgstr[0] ""
 msgstr[1] ""
 
-#: views.py:165
+#: views.py:168
 #, python-format
 msgid "Edit file metadata settings for document type: %s"
 msgstr ""
 
-#: views.py:176
+#: views.py:179
 msgid "Submit all documents of a type for file metadata processing."
 msgstr ""
 
-#: views.py:203
+#: views.py:207
 #, python-format
 msgid "%(count)d documents added to the file metadata processing queue."
 msgstr ""
 
-#: views.py:224
+#: views.py:228
 msgid ""
 "File metadata drivers extract embedded information from document files. File"
 " metadata drivers are configure in code only."
 msgstr ""
 
-#: views.py:229
+#: views.py:233
 msgid "No file metadata drivers available."
 msgstr ""
