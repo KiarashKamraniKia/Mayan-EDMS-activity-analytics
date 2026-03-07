@@ -1,7 +1,6 @@
 import datetime
 
 from django.db import migrations, models
-from django.utils.timezone import utc
 
 
 class Migration(migrations.Migration):
@@ -23,7 +22,7 @@ class Migration(migrations.Migration):
             name='deleted_date_time',
             field=models.DateTimeField(
                 default=datetime.datetime(
-                    2015, 7, 4, 0, 54, 7, 910642, tzinfo=utc
+                    2015, 7, 4, 0, 54, 7, 910642, tzinfo=datetime.timezone.utc
                 ), verbose_name='Date and time deleted', blank=True
             ),
             preserve_default=False,

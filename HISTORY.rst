@@ -122,6 +122,7 @@
 - Move the model `WorkflowTransitionField` to its own module.
 - Remove dependency on Django's `make_random_password` method.
 - Use an explicit iterator chunk size.
+- Remove dependency on Django `utils.timezone`.
 
 4.6.12 (2025-12-14)
 ===================
