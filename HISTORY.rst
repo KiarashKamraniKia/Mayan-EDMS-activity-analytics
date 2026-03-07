@@ -124,6 +124,8 @@
 - Use an explicit iterator chunk size.
 - Remove dependency on Django `utils.timezone`.
 - Refactor `ContentTypeCheckTestCaseMixin`.
+- Add note so that users don't break their installations when attempting to
+  bypass localization.
 
 4.6.12 (2025-12-14)
 ===================

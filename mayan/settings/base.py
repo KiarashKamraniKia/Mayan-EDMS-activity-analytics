@@ -214,7 +214,8 @@ AUTH_PASSWORD_VALIDATORS = [
     }
 ]
 
-# Internationalization
+# Internationalization. Do not change these, doing so will break your
+# installation.
 
 LANGUAGE_CODE = 'en-us'
 
