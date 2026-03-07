@@ -1,4 +1,4 @@
-4.6.13 (XXXX-XX-XX)
+4.6.13 (2026-03-07)
 ===================
 - Skip cabinet and tag wizard step if the user has no access. Update the
   cabinet and tag upload wizard steps permission logic to match the
