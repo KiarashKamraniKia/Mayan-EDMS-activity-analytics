@@ -1,7 +1,7 @@
 from rest_framework.test import APITestCase, APITransactionTestCase
 
 from mayan.apps.permissions.classes import Permission
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 from mayan.apps.testing.tests.base import (
     GenericTransactionViewTestCase, GenericViewTestCase
 )

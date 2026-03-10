@@ -260,32 +260,32 @@ msgstr ""
 "Помилка позначення повідомлення \"%(instance)s\" як непрочитаного; "
 "%(exception)s"
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)d повідомлень успішно позначено як непрочитані."
 
-#: views.py:213
+#: views.py:214
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "Повідомлення \"%(object)s\" успішно позначено як непрочитане."
 
-#: views.py:216
+#: views.py:217
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "%(count)d повідомлення успішно позначено як непрочитані."
 
-#: views.py:218
+#: views.py:219
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "Позначити %(count)d вибраних повідомлень як непрочитані."
 
-#: views.py:219
+#: views.py:220
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "Позначте повідомлення \"%(object)s\" як непрочитане."
 
-#: views.py:220
+#: views.py:221
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "Позначте %(count)d вибране повідомлення як непрочитане."

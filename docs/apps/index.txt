@@ -3,7 +3,6 @@ Apps
 
 - :doc:`acls/index`
 - :doc:`appearance/index`
-- :doc:`authentication/index`
 - :doc:`autoadmin/index`
 - :doc:`cabinets/index`
 - :doc:`checkouts/index`
@@ -28,7 +27,6 @@ Apps
 
     acls/index
     appearance/index
-    authentication/index
     autoadmin/index
     cabinets/index
     checkouts/index

@@ -7,6 +7,7 @@
 # Jiri Fait <fait@orkasolutions.cz>, 2024
 # Jiří Podhorecký <jirka.p@volny.cz>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2026
 # 
 msgid ""
 msgstr ""
@@ -170,15 +171,15 @@ msgstr ""
 
 #: serializers.py:79
 msgid "Permissions URL"
-msgstr ""
+msgstr "URL oprávnění"
 
 #: serializers.py:83
 msgid "Permissions add URL"
-msgstr ""
+msgstr "Oprávnění přidat URL"
 
 #: serializers.py:87
 msgid "Permissions remove URL"
-msgstr ""
+msgstr "Oprávnění odebrat URL"
 
 #: serializers.py:94
 msgid "URL"

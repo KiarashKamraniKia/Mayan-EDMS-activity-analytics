@@ -103,8 +103,9 @@ class FormUserOTPDataEdit(forms.Form):
     secret = forms.CharField(
         disabled=True,
         help_text=_(
-            message='Scan the QR code or enter the secret in your authentication '
-            'device. Do not share this secret, treat it like a password.'
+            message='Scan the QR code or enter the secret in your '
+            'authentication device. Do not share this secret, treat it like '
+            'a password.'
         ), label=_(message='Secret'), required=False, widget=forms.TextInput(
             attrs={'readonly': 'readonly'}
         )
@@ -116,8 +117,8 @@ class FormUserOTPDataEdit(forms.Form):
     )
     token = forms.CharField(
         help_text=_(
-            message='Enter the corresponding token to validate that the secret '
-            'was saved correct.'
+            message='Enter the corresponding token to validate that the '
+            'secret was saved correct.'
         ),
         label=_(message='Token'), widget=forms.TextInput(
             attrs={

@@ -172,7 +172,7 @@ msgstr ""
 "Setați tipuri noi de documente pentru a efectua automat funcția OCR în mod "
 "implicit."
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr ""
 "Calea completă spre backend-ul care trebuie utilizat pentru a face OCR."

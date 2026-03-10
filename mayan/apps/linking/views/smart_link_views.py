@@ -103,8 +103,8 @@ class DocumentResolvedSmartLinkDocumentListView(
                 )
 
         title = _(
-            message='Documents in resolved smart link "%(resolved_smart_link)s" for '
-            '"%(document)s"'
+            message='Documents in resolved smart link '
+            '"%(resolved_smart_link)s" for "%(document)s"'
         ) % {
             'document': self.external_object,
             'resolved_smart_link': resolved_smart_link_label
@@ -145,9 +145,9 @@ class SmartLinkListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                message='Indexes group documents into units, usually with similar '
-                'properties and of equal or similar types. Smart links '
-                'allow defining relationships between documents even '
+                message='Indexes group documents into units, usually with '
+                'similar properties and of equal or similar types. Smart '
+                'links allow defining relationships between documents even '
                 'if they are in different indexes and are of different '
                 'types.'
             ),

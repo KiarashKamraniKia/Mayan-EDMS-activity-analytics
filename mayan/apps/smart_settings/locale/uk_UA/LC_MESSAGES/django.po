@@ -21,57 +21,53 @@ msgstr ""
 "Language: uk_UA\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
-#: apps.py:27 permissions.py:6
+#: apps.py:29 permissions.py:6
 msgid "Smart settings"
 msgstr "Смарт налаштування"
 
-#: apps.py:37
+#: apps.py:39
 msgid "Setting count"
 msgstr "Налаштування лічильника"
 
-#: apps.py:43
+#: apps.py:45
 msgid "Name"
 msgstr "Ім'я"
 
-#: apps.py:47 forms.py:30
+#: apps.py:49 forms.py:30
 msgid "Value"
 msgstr "Значення"
 
-#: classes.py:318
-msgid "Settings namespace"
-msgstr "Налаштування простору імен"
-
-#: classes.py:496
+#: classes.py:158
 msgid "Choices"
 msgstr "Вибори"
 
-#: classes.py:498
+#: classes.py:160
 msgid "Possible values allowed for this setting."
 msgstr "Можливі значення, дозволені для цього параметра."
 
-#: classes.py:519
+#: classes.py:181
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr ""
 "Не вдається скасувати налаштування. Значення налаштування не було оновлено."
 
-#: classes.py:556
+#: classes.py:218
 msgid "Default"
 msgstr "За замовчуванням"
 
-#: classes.py:569
+#: classes.py:231
 msgid "Modified"
 msgstr "Змінено"
 
-#: classes.py:571
+#: classes.py:233
 msgid "The value of this setting being modified since the last restart."
 msgstr ""
 "Значення цього параметра змінюється з моменту останнього перезавантаження."
 
-#: classes.py:577
+#: classes.py:240
 msgid "Overridden"
 msgstr "Перевизначено"
 
-#: classes.py:579
+#: classes.py:242
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr "Значення налаштування перезаписується змінною середовища."
@@ -89,7 +85,7 @@ msgstr "\"%s\" не є дійсним записом."
 msgid "Save"
 msgstr "Зберегти"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "Налаштування"
 
@@ -101,7 +97,7 @@ msgstr "Редагувати"
 msgid "Revert"
 msgstr "Повернути"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "Простори імен"
 
@@ -137,6 +133,10 @@ msgstr "Оновлене налаштування"
 #: models.py:20
 msgid "Updated settings"
 msgstr "Оновлені налаштування"
+
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "Налаштування простору імен"
 
 #: permissions.py:10
 msgid "Edit settings"
@@ -490,13 +490,10 @@ msgstr ""
 
 #: settings.py:282
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"За замовчуванням: 'sessionid'. Назва cookie, яку використовувати для сесій. "
-"Це може бути будь-що, що ви хочете (лише відрізняється від інших назв cookie"
-" у вашому додатку)."
 
 #: settings.py:290
 msgid ""
@@ -598,7 +595,7 @@ msgstr ""
 "Налаштування оновлено. Збережіть і перезапустіть вашу установку, щоб зміни "
 "набрали чинності."
 
-#: tests/test_classes.py:190
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "Англійська"
 

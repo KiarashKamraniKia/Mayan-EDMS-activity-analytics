@@ -25,7 +25,7 @@ msgstr ""
 msgid "Authentication OIDC"
 msgstr "Uwierzytelnianie OIDC"
 
-#: authentication_backends.py:97
+#: authentication_backends.py:102
 msgid "Login via OIDC"
 msgstr "Logowanie przez OIDC"
 

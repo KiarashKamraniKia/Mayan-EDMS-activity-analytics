@@ -146,43 +146,43 @@ msgstr "نوع الوثيقة"
 msgid "Automatically queue newly created documents for processing."
 msgstr "الوثائق المضافة حديثاً قيد المعالجة"
 
-#: models.py:48
+#: models.py:49
 msgid "Auto process"
 msgstr "المعالجة التلقائية"
 
-#: models.py:54
+#: models.py:55
 msgid "Document type settings"
 msgstr "اعدادات نوع الوثيقة"
 
-#: models.py:55
+#: models.py:56
 msgid "Document types settings"
 msgstr "اعدادات انواع الوثائق"
 
-#: models.py:70
+#: models.py:71
 msgid "Normalized name of the file metadata entry."
 msgstr "الاسم الموحد لإدخال البيانات الوصفية للملف."
 
-#: models.py:75
+#: models.py:76
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr "اسم إدخال البيانات الوصفية للملف كما هو مُقدم من المشغل."
 
-#: models.py:77
+#: models.py:78
 msgid "Key"
 msgstr "مفتاح"
 
-#: models.py:80
+#: models.py:81
 msgid "Value of the file metadata entry."
 msgstr "قيمة إدخال البيانات الوصفية"
 
-#: models.py:81
+#: models.py:82
 msgid "Value"
 msgstr "قيمة"
 
-#: models.py:87
+#: models.py:88
 msgid "File metadata entry"
 msgstr "أدخال البيانات الوصفية للملف"
 
-#: models.py:88
+#: models.py:89
 msgid "File metadata entries"
 msgstr "إدخال البيانات الوصفية للملفات"
 

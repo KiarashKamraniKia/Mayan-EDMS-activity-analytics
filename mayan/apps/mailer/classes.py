@@ -75,7 +75,7 @@ class MailerBackendBaseEmail(MailerBackend):
 class MailerBackendCredentials(
     BackendMixinCredentials, MailerBackendBaseEmail
 ):
-    label = _('Null backend')
+    label = _(message='Null backend')
 
     def get_connection_kwargs(self):
         result = super().get_connection_kwargs()

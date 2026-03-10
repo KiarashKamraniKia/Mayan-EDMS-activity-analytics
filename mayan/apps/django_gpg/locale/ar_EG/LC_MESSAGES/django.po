@@ -230,7 +230,11 @@ msgid "Full path to the backend to be used to handle keys and signatures."
 msgstr ""
 "المسار الكامل للواجهة الخلفية لاستخدامه في التعامل مع المفاتيح والتوقيعات."
 
-#: settings.py:27
+#: settings.py:26
+msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
+msgstr ""
+
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "يستخدم خادم المفاتيح للاستعلام عن المفاتيح."
 

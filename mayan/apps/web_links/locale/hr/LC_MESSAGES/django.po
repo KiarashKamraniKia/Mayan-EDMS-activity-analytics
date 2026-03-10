@@ -118,7 +118,7 @@ msgstr "Primarni ključ vrste dokumenta koji treba dodati uz mrežnu poveznicu."
 msgid "Document type ID"
 msgstr "ID vrste dokumenta"
 
-#: serializers.py:25
+#: serializers.py:26
 msgid "Primary key of the document type to remove from the web link."
 msgstr ""
 "Primarni ključ vrste dokumenta koji treba ukloniti iz mrežne poveznice."

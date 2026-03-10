@@ -26,11 +26,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Gestionar de sarcini"
 
-#: apps.py:114 apps.py:139 apps.py:182
+#: apps.py:114 apps.py:140 apps.py:183
 msgid "Label"
 msgstr "Conținut etichetă"
 
-#: apps.py:118 apps.py:142 apps.py:186
+#: apps.py:118 apps.py:143 apps.py:187
 msgid "Name"
 msgstr "Nume"
 
@@ -48,43 +48,43 @@ msgstr ""
 "se pierd dacă brokerul este repornit. Cozile tranzitorii folosesc mai puține"
 " resurse și gestionează sarcini non-critice."
 
-#: apps.py:131
+#: apps.py:132
 msgid "Is transient?"
 msgstr "Este tranzitorie?"
 
-#: apps.py:145
+#: apps.py:146
 msgid "Dotted path"
 msgstr "Calea punctată"
 
-#: apps.py:149
+#: apps.py:150
 msgid "Schedule"
 msgstr "Orar"
 
-#: apps.py:155
+#: apps.py:156
 msgid "Type"
 msgstr "Tip"
 
-#: apps.py:160
+#: apps.py:161
 msgid "Start time"
 msgstr "Timpul de începere"
 
-#: apps.py:164
+#: apps.py:165
 msgid "Host"
 msgstr "Gazdă"
 
-#: apps.py:168
+#: apps.py:169
 msgid "Arguments"
 msgstr "Argumente"
 
-#: apps.py:172
+#: apps.py:173
 msgid "Keyword arguments"
 msgstr "Argumentele cuvinte cheie"
 
-#: apps.py:177
+#: apps.py:178
 msgid "Worker process ID"
 msgstr "ID-ul procesului de lucru"
 
-#: apps.py:190
+#: apps.py:191
 msgid ""
 "Maximum amount of resident memory a worker can execute before it's replaced "
 "by a new process."
@@ -92,11 +92,11 @@ msgstr ""
 "Cantitatea maximă de memorie rezidentă pe care o poate executa un lucrător "
 "înainte de a fi înlocuită cu un nou proces."
 
-#: apps.py:192
+#: apps.py:193
 msgid "Maximum memory per child"
 msgstr "Memoria maximă per copil"
 
-#: apps.py:196
+#: apps.py:197
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
@@ -104,11 +104,11 @@ msgstr ""
 "Numărul maxim de sarcini pe care un lucrător le poate executa înainte de a "
 "fi înlocuit cu un nou proces."
 
-#: apps.py:198
+#: apps.py:199
 msgid "Maximum tasks per child"
 msgstr "Sarcini maxime per copil"
 
-#: apps.py:202
+#: apps.py:203
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
@@ -116,11 +116,11 @@ msgstr ""
 "Numărul de procese/fire de execuție care sunt lansate. Implicit, numărul de "
 "procesoare disponibile pe mașină."
 
-#: apps.py:204
+#: apps.py:205
 msgid "Concurrency"
 msgstr "Concurență"
 
-#: apps.py:208
+#: apps.py:209
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
@@ -128,7 +128,7 @@ msgstr ""
 "Valoarea -nice- determină prioritatea procesului. O valoare mai mare scade "
 "prioritatea. Valoarea implicită este 0."
 
-#: apps.py:211
+#: apps.py:212
 msgid "Nice level"
 msgstr "Nivel nice"
 
@@ -177,7 +177,7 @@ msgstr ""
 "partea sistemului (transport: //), restul este opțional și are implicit "
 "valorile implicite pentru transport."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -186,7 +186,7 @@ msgstr ""
 "setările SSL. Valorile valide pentru această opțiune variază în funcție de "
 "transport."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

@@ -5,8 +5,8 @@
 # Translators:
 # Translators:
 # Jiri Fait <fait@orkasolutions.cz>, 2024
-# Jiří Podhorecký <jirka.p@volny.cz>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2026
 # 
 msgid ""
 msgstr ""
@@ -272,7 +272,7 @@ msgstr ""
 
 #: serializers.py:16 serializers.py:32
 msgid "Image URL"
-msgstr ""
+msgstr "URL obrázku"
 
 #: serializers.py:21
 msgid "Template name"

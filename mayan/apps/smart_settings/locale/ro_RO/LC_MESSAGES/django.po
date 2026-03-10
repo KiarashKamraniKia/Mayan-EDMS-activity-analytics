@@ -22,55 +22,51 @@ msgstr ""
 "Language: ro_RO\n"
 "Plural-Forms: nplurals=3; plural=(n==1?0:(((n%100>19)||((n%100==0)&&(n!=0)))?2:1));\n"
 
-#: apps.py:27 permissions.py:6
+#: apps.py:29 permissions.py:6
 msgid "Smart settings"
 msgstr "Setări inteligente"
 
-#: apps.py:37
+#: apps.py:39
 msgid "Setting count"
 msgstr "Numărul setării"
 
-#: apps.py:43
+#: apps.py:45
 msgid "Name"
 msgstr "Nume"
 
-#: apps.py:47 forms.py:30
+#: apps.py:49 forms.py:30
 msgid "Value"
 msgstr "Valoare"
 
-#: classes.py:318
-msgid "Settings namespace"
-msgstr "Setări spațiu de nume"
-
-#: classes.py:496
+#: classes.py:158
 msgid "Choices"
 msgstr "Alegeri"
 
-#: classes.py:498
+#: classes.py:160
 msgid "Possible values allowed for this setting."
 msgstr "Valori posibile permise pentru această setare."
 
-#: classes.py:519
+#: classes.py:181
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr "Nu se poate reveni la setare. Valoarea setării nu a fost actualizată."
 
-#: classes.py:556
+#: classes.py:218
 msgid "Default"
 msgstr "Implicit"
 
-#: classes.py:569
+#: classes.py:231
 msgid "Modified"
 msgstr "Modificat"
 
-#: classes.py:571
+#: classes.py:233
 msgid "The value of this setting being modified since the last restart."
 msgstr "Valoarea acestei setări a fost modificată de la ultima repornire."
 
-#: classes.py:577
+#: classes.py:240
 msgid "Overridden"
 msgstr "Suprascris"
 
-#: classes.py:579
+#: classes.py:242
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr "Valoarea setării este suprascrisă de o variabilă de mediu."
@@ -88,7 +84,7 @@ msgstr "\"%s\" nu este o intrare validă."
 msgid "Save"
 msgstr "Salvează"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "Setări"
 
@@ -100,7 +96,7 @@ msgstr "Editați"
 msgid "Revert"
 msgstr "Revenire"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "Spații de nume"
 
@@ -136,6 +132,10 @@ msgstr "Setare actualizată"
 #: models.py:20
 msgid "Updated settings"
 msgstr "Setări actualizate"
+
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "Setări spațiu de nume"
 
 #: permissions.py:10
 msgid "Edit settings"
@@ -495,13 +495,10 @@ msgstr ""
 
 #: settings.py:282
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"Implicit: „idsesiune”. Numele cookie-ului pe care îl folosiți pentru "
-"sesiuni. Acesta poate fi orice doriți (atât timp cât este diferit de "
-"celelalte nume cookie din aplicația dvs.)."
 
 #: settings.py:290
 msgid ""
@@ -607,7 +604,7 @@ msgstr ""
 "Setările aduse la zi. Salvați și reporniți instalarea pentru ca modificările"
 " să intre în vigoare."
 
-#: tests/test_classes.py:190
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "Engleză"
 

@@ -1363,13 +1363,10 @@ msgstr ""
 
 #: settings.py:49
 msgid ""
-"The threshold at which the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"will start deleting the oldest document file page image cache files. Specify"
-" the size in bytes."
+"Width in pixels of the document page image used for interactive display. "
+"Larger values improve quality but increase processing time and cache "
+"storage."
 msgstr ""
-"Прагът, при който DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND ще започне"
-" да изтрива най-старите файлове с кеш на изображения на страница на "
-"документ. Посочете размера в байтове."
 
 #: settings.py:57
 msgid "Path to the Storage subclass to use when storing document files."
@@ -1383,17 +1380,17 @@ msgstr "Аргументи за предаване към DOCUMENT_FILE_STORAGE_
 
 #: settings.py:70
 msgid ""
-"Path to the Storage subclass to use when storing the cached document file "
-"page image files."
+"Maximum size in bytes of the "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached page "
+"images."
 msgstr ""
-"Път към подкласа Storage, който да се използва при съхраняване на кешираните"
-" файлове с изображения на страницата на файла на документа."
 
 #: settings.py:78
 msgid ""
-"Arguments to pass to the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store the cached document file "
+"page images."
 msgstr ""
-"Аргументи за предаване към DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
 
 #: settings.py:84
 msgid "Maximum number of favorite documents to remember per user."
@@ -1401,13 +1398,10 @@ msgstr "Максимален брой предпочитани документ�
 
 #: settings.py:90
 msgid ""
-"Size of blocks to use when calculating the document file's checksum. A value"
-" of 0 disables the block calculation and the entire file will be loaded into"
-" memory."
+"Block size in bytes used when calculating a document file checksum. Use 0 to"
+" disable block reads and hash the entire file in a single pass (loads the "
+"file into memory)."
 msgstr ""
-"Размер на блоковете, които да се използват при изчисляване на контролната "
-"сума на файла на документа. Стойност 0 деактивира изчислението на блока и "
-"целият файл ще бъде зареден в паметта."
 
 #: settings.py:97
 msgid "Default documents language (in ISO639-3 format)."
@@ -1423,32 +1417,26 @@ msgid ""
 " will start deleting the oldest document version page image cache versions. "
 "Specify the size in bytes."
 msgstr ""
-"Прагът, при който DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND ще "
-"започне да изтрива най-старите версии на кешираните изображения на "
-"страницата на документа. Посочете размера в байтове."
 
 #: settings.py:116
 msgid ""
-"Path to the Storage subclass to use when storing the cached document version"
-" page image versions."
+"Maximum size in bytes of the "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached version "
+"page images."
 msgstr ""
-"Път към подкласа Storage, който да се използва при съхранение на кешираните "
-"версии на изображението на страницата на версията на документа."
 
 #: settings.py:124
 msgid ""
-"Arguments to pass to the DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store cached document version "
+"page images."
 msgstr ""
-"Аргументи за предаване към "
-"DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
 
 #: settings.py:146
 msgid ""
-"Maximum number of recently accessed documents (created, edited, viewed) to "
-"remember per user."
+"Keyword arguments to pass to "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"Максимален брой наскоро достъпни документи (създадени, редактирани, "
-"прегледани) за запомняне на потребител."
 
 #: settings.py:153
 msgid "Maximum number of recently created documents to show."
@@ -1457,7 +1445,6 @@ msgstr "Максимален брой наскоро създадени доку
 #: settings.py:159
 msgid "Amount in degrees to rotate a document page per user interaction."
 msgstr ""
-"Градуси на завъртане на страница от документ, при потребителско действие"
 
 #: settings.py:165
 msgid "Height in pixels of the document thumbnail image."
@@ -1468,22 +1455,16 @@ msgid ""
 "Maximum amount in percent (%) to allow user to zoom in a document page "
 "interactively."
 msgstr ""
-"Максимален процент (%) допустим за интерактивно увеличаване страницата от "
-"потребителя"
 
 #: settings.py:191
 msgid ""
-"Minimum amount in percent (%) to allow user to zoom out a document page "
-"interactively."
+"Width in pixels of the document thumbnail image when shown in list view "
+"mode."
 msgstr ""
-"Минимален процент (%) допустим за интерактивно смаляване страницата от "
-"потребителя"
 
 #: settings.py:198
 msgid "Amount in percent zoom in or out a document page per user interaction."
 msgstr ""
-"Процент приближаване или отдалечаване на страницата на документа, приложен "
-"за потребителя"
 
 #: statistics.py:291
 msgid "New documents per month"
@@ -1999,7 +1980,7 @@ msgstr ""
 "Версиите са изгледи, които могат да показват страници на файлове с документи"
 " такива, каквито са, да ги пренастроят или обединят в различни оформления."
 
-#: views/document_version_views.py:203
+#: views/document_version_views.py:204
 msgid "No versions available"
 msgstr "Няма налични версии"
 

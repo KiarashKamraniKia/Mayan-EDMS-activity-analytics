@@ -399,13 +399,13 @@ msgstr "مجموع: %(total)s"
 msgid "No results"
 msgstr "بی جواب و یا بی جواب"
 
-#: templates/appearance/partials/list/pagination.html:12
-#: templates/appearance/partials/list/pagination.html:14
+#: templates/appearance/partials/list/pagination.html:13
+#: templates/appearance/partials/list/pagination.html:15
 msgid "Previous page"
 msgstr "صفحه قبلی"
 
-#: templates/appearance/partials/list/pagination.html:30
-#: templates/appearance/partials/list/pagination.html:32
+#: templates/appearance/partials/list/pagination.html:31
+#: templates/appearance/partials/list/pagination.html:33
 msgid "Next page"
 msgstr "صفحه بعدی"
 

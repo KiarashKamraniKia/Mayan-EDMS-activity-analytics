@@ -96,7 +96,7 @@ msgstr ""
 "Pontozott elérési út a felhasználói hitelesítés feldolgozásához használt "
 "háttérrendszerhez."
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "Az AUTHENTICATION_BACKEND argumentumai."
 

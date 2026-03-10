@@ -21,55 +21,51 @@ msgstr ""
 "Language: mn_MN\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:27 permissions.py:6
+#: apps.py:29 permissions.py:6
 msgid "Smart settings"
 msgstr ""
 
-#: apps.py:37
+#: apps.py:39
 msgid "Setting count"
 msgstr ""
 
-#: apps.py:43
+#: apps.py:45
 msgid "Name"
 msgstr ""
 
-#: apps.py:47 forms.py:30
+#: apps.py:49 forms.py:30
 msgid "Value"
 msgstr ""
 
-#: classes.py:318
-msgid "Settings namespace"
-msgstr ""
-
-#: classes.py:496
+#: classes.py:158
 msgid "Choices"
 msgstr ""
 
-#: classes.py:498
+#: classes.py:160
 msgid "Possible values allowed for this setting."
 msgstr ""
 
-#: classes.py:519
+#: classes.py:181
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr ""
 
-#: classes.py:556
+#: classes.py:218
 msgid "Default"
 msgstr ""
 
-#: classes.py:569
+#: classes.py:231
 msgid "Modified"
 msgstr ""
 
-#: classes.py:571
+#: classes.py:233
 msgid "The value of this setting being modified since the last restart."
 msgstr ""
 
-#: classes.py:577
+#: classes.py:240
 msgid "Overridden"
 msgstr ""
 
-#: classes.py:579
+#: classes.py:242
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr ""
@@ -87,7 +83,7 @@ msgstr ""
 msgid "Save"
 msgstr "Хадгалах"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr ""
 
@@ -99,7 +95,7 @@ msgstr "Засах"
 msgid "Revert"
 msgstr ""
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr ""
 
@@ -131,6 +127,10 @@ msgstr ""
 
 #: models.py:20
 msgid "Updated settings"
+msgstr ""
+
+#: namespaces.py:104
+msgid "Settings namespace"
 msgstr ""
 
 #: permissions.py:10
@@ -362,9 +362,9 @@ msgstr ""
 
 #: settings.py:282
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
 
 #: settings.py:290
@@ -436,7 +436,7 @@ msgid ""
 "effect."
 msgstr ""
 
-#: tests/test_classes.py:190
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr ""
 

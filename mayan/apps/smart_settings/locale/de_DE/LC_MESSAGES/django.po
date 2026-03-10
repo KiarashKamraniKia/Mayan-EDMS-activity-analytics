@@ -26,57 +26,53 @@ msgstr ""
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:27 permissions.py:6
+#: apps.py:29 permissions.py:6
 msgid "Smart settings"
 msgstr "Einstellungen"
 
-#: apps.py:37
+#: apps.py:39
 msgid "Setting count"
 msgstr "Seitenzahl setzen"
 
-#: apps.py:43
+#: apps.py:45
 msgid "Name"
 msgstr "Name"
 
-#: apps.py:47 forms.py:30
+#: apps.py:49 forms.py:30
 msgid "Value"
 msgstr "Wert"
 
-#: classes.py:318
-msgid "Settings namespace"
-msgstr "Einstellungen Namensraum"
-
-#: classes.py:496
+#: classes.py:158
 msgid "Choices"
 msgstr "Auswahlwerte"
 
-#: classes.py:498
+#: classes.py:160
 msgid "Possible values allowed for this setting."
 msgstr "Mögliche Werte, die für diese Einstellung erlaubt sind."
 
-#: classes.py:519
+#: classes.py:181
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr ""
 "Kann Einstellung nicht zurücksetzen. Einstellungswert wurde nicht "
 "aktualisiert."
 
-#: classes.py:556
+#: classes.py:218
 msgid "Default"
 msgstr "Standard"
 
-#: classes.py:569
+#: classes.py:231
 msgid "Modified"
 msgstr "Geändert"
 
-#: classes.py:571
+#: classes.py:233
 msgid "The value of this setting being modified since the last restart."
 msgstr "Der Wert dieser seit dem letzten Neustart geänderten Einstellung."
 
-#: classes.py:577
+#: classes.py:240
 msgid "Overridden"
 msgstr "Überschrieben"
 
-#: classes.py:579
+#: classes.py:242
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr ""
@@ -95,7 +91,7 @@ msgstr "\"%s\" ist kein gültiger Eintrag."
 msgid "Save"
 msgstr "Speichern"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "Einstellungen"
 
@@ -107,7 +103,7 @@ msgstr "Bearbeiten"
 msgid "Revert"
 msgstr "Wiederherstellen"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "Namensräume"
 
@@ -143,6 +139,10 @@ msgstr "Aktualisierte Einstellung"
 #: models.py:20
 msgid "Updated settings"
 msgstr "Aktualisierte Einstellungen"
+
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "Einstellungen Namensraum"
 
 #: permissions.py:10
 msgid "Edit settings"
@@ -501,13 +501,10 @@ msgstr ""
 
 #: settings.py:282
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"Standard: 'sessionid'. Der Name des Cookies, der für Sitzungen verwendet "
-"werden soll. Dieser kann beliebig sein (sofern er sich von den anderen "
-"Cookie-Namen unterscheidet)."
 
 #: settings.py:290
 msgid ""
@@ -609,7 +606,7 @@ msgstr ""
 "Einstellungen aktualisiert. Speichern Sie und starten Sie Ihre Installation "
 "neu, damit die Änderungen wirksam werden."
 
-#: tests/test_classes.py:190
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "Englisch"
 

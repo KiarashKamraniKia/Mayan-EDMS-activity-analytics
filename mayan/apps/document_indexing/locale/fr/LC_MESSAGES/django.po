@@ -92,7 +92,7 @@ msgstr "Activé"
 msgid "Index templates to be queued for rebuilding."
 msgstr "Les modèles d'index en en file d'attente pour la reconstruction."
 
-#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "Modèles d'index"
@@ -157,7 +157,7 @@ msgstr "Non"
 msgid "Yes"
 msgstr "Oui"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
@@ -166,23 +166,23 @@ msgstr ""
 "Erreur lors de l'indexation du document : %(document)s; expression: "
 "%(expression)s; %(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr "Nombre de nœuds avec des valeurs uniques que cet élément contient."
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "Nombre de documents uniques que cet élément contient."
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "Nombre de niveaux de nœuds que cet élément contient."
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "Le chemin d'accès à l'index, y compris tous les index parents."
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "Chemin complet"
 
@@ -232,11 +232,11 @@ msgstr ""
 "Cette valeur sera utilisée par d'autres applications pour faire référence à "
 "cet index."
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "Jeton"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr ""
@@ -596,12 +596,12 @@ msgstr "Créer un nœud enfant de : %s"
 msgid "Delete the index template node: %s?"
 msgstr "Supprimer le nœud du modèle d'index : %s?"
 
-#: views/index_template_views.py:365
+#: views/index_template_views.py:367
 #, python-format
 msgid "Edit the index template node: %s"
 msgstr "Modifiez le nœud du modèle d'index: %s"
 
-#: views/index_template_views.py:386
+#: views/index_template_views.py:388
 #, python-format
 msgid "Rebuild index template: %s"
 msgstr "Reconstruction du modèle d'index: %s"

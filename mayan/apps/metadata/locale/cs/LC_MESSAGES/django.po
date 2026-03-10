@@ -120,7 +120,7 @@ msgstr "Odstranit"
 
 #: forms.py:181
 msgid "Basic"
-msgstr ""
+msgstr "Základní"
 
 #: forms.py:185
 msgid "Values"

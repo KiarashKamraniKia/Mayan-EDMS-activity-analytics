@@ -119,7 +119,7 @@ msgstr "المفتاح الأساسي لنوع المستند المراد إض�
 msgid "Document type ID"
 msgstr "مُعرِّف نوع المستند"
 
-#: serializers.py:25
+#: serializers.py:26
 msgid "Primary key of the document type to remove from the web link."
 msgstr "المفتاح الأساسي لنوع المستند المراد حذفه من رابط الويب."
 

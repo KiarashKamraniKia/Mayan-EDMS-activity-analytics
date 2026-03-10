@@ -3,6 +3,7 @@ import logging
 from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
+from mayan.apps.forms.settings import setting_show_dropzone_submit_button
 from mayan.apps.source_compressed.source_backends.mixins import (
     SourceBackendMixinCompressed
 )
@@ -15,7 +16,6 @@ from mayan.apps.source_interactive.source_backends.mixins import (
 )
 from mayan.apps.sources.forms import WebFormUploadFormHTML5
 from mayan.apps.sources.source_backends.base import SourceBackend
-from mayan.apps.views.settings import setting_show_dropzone_submit_button
 
 logger = logging.getLogger(name=__name__)
 

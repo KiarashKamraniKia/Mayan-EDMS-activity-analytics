@@ -258,32 +258,32 @@ msgstr ""
 "Hiba a \"%(instance)s\" üzenet olvasatlanként való megjelölésekor; "
 "%(exception)s"
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)d üzenet sikeresen olvasatlanként megjelölve."
 
-#: views.py:213
+#: views.py:214
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "A \"%(object)s\" üzenet sikeresen olvasatlanként megjelölve."
 
-#: views.py:216
+#: views.py:217
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr ""
 
-#: views.py:218
+#: views.py:219
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "A %(count)d kiválasztott üzenet olvasatlanként megjelölése."
 
-#: views.py:219
+#: views.py:220
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "A \"%(object)s\" üzenetet megjelölése olvasatlanként."
 
-#: views.py:220
+#: views.py:221
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "A %(count)d kiválasztott üzenetet olvasatlanként megjelölése."

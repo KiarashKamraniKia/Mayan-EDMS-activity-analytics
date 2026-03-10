@@ -1,5 +1,8 @@
+from unittest import mock
+
 from django.db.utils import IntegrityError
 
+from mayan.apps.documents.models.document_models import Document
 from mayan.apps.documents.models.trashed_document_models import (
     TrashedDocument
 )
@@ -18,6 +21,7 @@ from mayan.apps.metadata.models.metadata_type_models import MetadataType
 from ..models import (
     IndexInstance, IndexInstanceNode, IndexTemplate, IndexTemplateNode
 )
+from ..tasks import task_index_instance_document_remove
 
 from .literals import (
     TEST_INDEX_TEMPLATE_DOCUMENT_DESCRIPTION_EXPRESSION,
@@ -373,6 +377,56 @@ class IndexInstanceTestCase(IndexTemplateTestMixin, GenericDocumentTestCase):
         self.assertQuerySetEqual(
             qs=instance_node.documents.all(), values=(self._test_document,)
         )
+
+
+class IndexInstanceEmptyNodesDeleteTestCase(
+    IndexTemplateTestMixin, GenericDocumentTestCase
+):
+    _test_index_template_node_expression = TEST_INDEX_TEMPLATE_DOCUMENT_LABEL_EXPRESSION
+    auto_upload_test_document = False
+
+    def test_delete_signal_schedules_task_and_pruning_empty_nodes(self):
+        task_calls_kwargs = []
+
+        def capture_apply_async(*args, **kwargs):
+            task_kwargs = kwargs.get(
+                'kwargs', {}
+            )
+            task_calls_kwargs.append(task_kwargs)
+            return None
+
+        with mock.patch.object(
+            attribute='apply_async', side_effect=capture_apply_async,
+            target=task_index_instance_document_remove
+        ):
+            self._create_test_document_stub()
+            document_id = self._test_document.pk
+
+            self.assertTrue(
+                IndexInstanceNode.objects.filter(
+                    documents=self._test_document
+                ).exists()
+            )
+            self.assertEqual(IndexInstanceNode.objects.count(), 2)
+
+            self._test_document.delete()
+            self._test_document.delete()
+
+        self.assertTrue(task_calls_kwargs)
+        self.assertEqual(task_calls_kwargs[-1]['document_id'], document_id)
+
+        self.assertFalse(
+            Document.objects.filter(pk=document_id).exists()
+        )
+
+        self.assertEqual(IndexInstanceNode.objects.count(), 2)
+        leaf_node = IndexInstanceNode.objects.exclude(parent=None).get()
+        self.assertEqual(leaf_node.get_children().count(), 0)
+        self.assertEqual(leaf_node.documents.count(), 0)
+
+        task_index_instance_document_remove.run(document_id=document_id)
+
+        self.assertEqual(IndexInstanceNode.objects.count(), 1)
 
 
 class IndexIntegrityTestCase(

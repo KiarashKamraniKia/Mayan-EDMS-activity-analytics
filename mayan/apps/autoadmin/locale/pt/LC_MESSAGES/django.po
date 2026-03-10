@@ -52,7 +52,7 @@ msgstr "Propriedades do administrador automático"
 msgid "Sets the email of the automatically created super user account."
 msgstr "Define o email do super utilizador criado automaticamente."
 
-#: settings.py:18
+#: settings.py:19
 msgid ""
 "The password of the automatically created super user account. If it is equal"
 " to None, the password is randomly generated."
@@ -60,7 +60,7 @@ msgstr ""
 "A palavra passe do super utilizador criado automaticamente. Se for igual a "
 "nada, a palavra passe é gerada aleatoriamente."
 
-#: settings.py:24
+#: settings.py:26
 msgid "The username of the automatically created super user account."
 msgstr ""
 "O nome de utilizador da conta de super utilizador criada automaticamente."

@@ -32,7 +32,7 @@ msgstr "Fecha y hora"
 msgid "Key ID"
 msgstr "Identificación de llave"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "Ninguno"
 
@@ -80,47 +80,47 @@ msgstr "Frase de contraseña"
 msgid "Private key that will be used to sign this document file."
 msgstr "Llave privada que se utilizará para firmar este archivo de documento."
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "¿La firma es integrada?"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "Fecha de firma"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "Identificación de llave de firma"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "¿Llave de la firma esta presente?"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "Huella digital de la llave"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "Fecha de creación de la llave"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "Fecha de caducidad de la llave"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "Tamaño de la llave"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "Algoritmo de la llave"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "Identificación de usuario de la llave"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "Tipo de llave"
 
@@ -296,8 +296,8 @@ msgstr ""
 "Ruta a la subclase Storage para usar cuando se almacenan firmas separadas."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Argumentos para pasar al SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

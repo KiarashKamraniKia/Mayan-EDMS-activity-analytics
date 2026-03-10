@@ -89,7 +89,7 @@ msgstr "Ingeschakeld"
 msgid "Index templates to be queued for rebuilding."
 msgstr "Indexsjablonen in wachtrij voor opnieuw opbouwen."
 
-#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "Indexsjablonen"
@@ -154,7 +154,7 @@ msgstr "Nee"
 msgid "Yes"
 msgstr "Ja"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
@@ -163,23 +163,23 @@ msgstr ""
 "Fout bij het indexeren van document: %(document)s; uitdrukking: "
 "%(expression)s; %(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr "Totaal aantal knooppunten met unieke waarden die dit item bevat."
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "Totaal aantal unieke documenten dat dit item bevat."
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "Totaal aantal knooppuntniveaus dat dit item bevat."
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "Het pad naar de index inclusief alle subfolders."
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "Volledig pad"
 
@@ -228,11 +228,11 @@ msgid "This value will be used by other apps to reference this index."
 msgstr ""
 "Deze waarde wordt gebruikt door andere apps om naar deze index te verwijzen."
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "Slug"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr ""
@@ -605,12 +605,12 @@ msgstr "Onderliggende node aanmaken van: %s"
 msgid "Delete the index template node: %s?"
 msgstr "Verwijder de indexsjabloon node: %s?"
 
-#: views/index_template_views.py:365
+#: views/index_template_views.py:367
 #, python-format
 msgid "Edit the index template node: %s"
 msgstr "Bewerk het indexsjabloonknooppunt: %s"
 
-#: views/index_template_views.py:386
+#: views/index_template_views.py:388
 #, python-format
 msgid "Rebuild index template: %s"
 msgstr "Indexsjabloon opnieuw opbouwen: %s"

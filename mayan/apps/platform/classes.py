@@ -13,7 +13,7 @@ from mayan.apps.backends.classes import BaseBackend
 from mayan.apps.common.menus import menu_tools
 from mayan.apps.common.serialization import yaml_dump, yaml_load
 from mayan.apps.task_manager.classes import Worker
-from mayan.settings.literals import (
+from mayan.literals import (
     DEFAULT_DATABASE_NAME, DEFAULT_DATABASE_PASSWORD, DEFAULT_DATABASE_USER,
     DEFAULT_DIRECTORY_INSTALLATION, DEFAULT_ELASTICSEARCH_PASSWORD,
     DEFAULT_KEYCLOAK_ADMIN, DEFAULT_KEYCLOAK_ADMIN_PASSWORD,
@@ -47,8 +47,8 @@ from mayan.settings.literals import (
     GUNICORN_MAX_REQUESTS, GUNICORN_REQUESTS_JITTER, GUNICORN_TIMEOUT,
     GUNICORN_WORKER_CLASS, GUNICORN_WORKERS, LINUX_PACKAGES_DEBIAN_BASE,
     LINUX_PACKAGES_DEBIAN_BUILD, LINUX_PACKAGES_DEBIAN_DOCUMENTATION,
-    LINUX_PACKAGES_DEBIAN_POSTGRESQL, LINUX_PACKAGES_DEBIAN_PYTHON,
-    LINUX_PACKAGES_DEBIAN_TEST
+    LINUX_PACKAGES_DEBIAN_MYSQL, LINUX_PACKAGES_DEBIAN_POSTGRESQL,
+    LINUX_PACKAGES_DEBIAN_PYTHON, LINUX_PACKAGES_DEBIAN_TEST
 )
 
 from .settings import (
@@ -449,6 +449,15 @@ class PlatformTemplateDockerfile(PlatformTemplate):
                 environment_name='MAYAN_DOCKER_LINUX_IMAGE_VERSION'
             ),
         )
+
+    def get_context(self):
+        return {
+            'LINUX_PACKAGES_DEBIAN_BASE': LINUX_PACKAGES_DEBIAN_BASE,
+            'LINUX_PACKAGES_DEBIAN_BUILD': LINUX_PACKAGES_DEBIAN_BUILD,
+            'LINUX_PACKAGES_DEBIAN_MYSQL': LINUX_PACKAGES_DEBIAN_MYSQL,
+            'LINUX_PACKAGES_DEBIAN_POSTGRESQL': LINUX_PACKAGES_DEBIAN_POSTGRESQL,
+            'LINUX_PACKAGES_DEBIAN_PYTHON': LINUX_PACKAGES_DEBIAN_PYTHON
+        }
 
 
 class PlatformTemplateGitLabCI(PlatformTemplate):

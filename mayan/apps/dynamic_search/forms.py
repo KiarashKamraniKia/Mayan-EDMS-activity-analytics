@@ -37,7 +37,7 @@ class AdvancedSearchForm(SearchFormBase):
         self.fields[MATCH_ALL_FIELD_NAME] = forms.ChoiceField(
             choices=MATCH_ALL_FIELD_CHOICES, label=_(message='Match all'),
             help_text=_(message='Return only results that match all fields.'),
-            required=False, widget=forms.RadioSelect,
+            required=False, widget=forms.RadioSelect
         )
 
         for search_field in self.search_model.search_fields_label_sorted:

@@ -143,43 +143,43 @@ msgstr "文件類型"
 msgid "Automatically queue newly created documents for processing."
 msgstr "自动将新创建的文档排入队列以进行处理。"
 
-#: models.py:48
+#: models.py:49
 msgid "Auto process"
 msgstr ""
 
-#: models.py:54
+#: models.py:55
 msgid "Document type settings"
 msgstr "文档类型设置"
 
-#: models.py:55
+#: models.py:56
 msgid "Document types settings"
 msgstr "文档类型设置"
 
-#: models.py:70
+#: models.py:71
 msgid "Normalized name of the file metadata entry."
 msgstr ""
 
-#: models.py:75
+#: models.py:76
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr ""
 
-#: models.py:77
+#: models.py:78
 msgid "Key"
 msgstr "密钥"
 
-#: models.py:80
+#: models.py:81
 msgid "Value of the file metadata entry."
 msgstr "文件元数据条目的值。"
 
-#: models.py:81
+#: models.py:82
 msgid "Value"
 msgstr "值"
 
-#: models.py:87
+#: models.py:88
 msgid "File metadata entry"
 msgstr "文件元数据输入"
 
-#: models.py:88
+#: models.py:89
 msgid "File metadata entries"
 msgstr "文件元数据条目"
 

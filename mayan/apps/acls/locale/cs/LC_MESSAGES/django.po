@@ -6,7 +6,7 @@
 # Translators:
 # Jiri Fait <fait@orkasolutions.cz>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
-# Jiří Podhorecký <jirka.p@volny.cz>, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2026
 # 
 msgid ""
 msgstr ""
@@ -124,15 +124,15 @@ msgstr "Zobrazit seznamy ACL"
 
 #: serializers.py:19
 msgid "Permissions add URL"
-msgstr ""
+msgstr "Oprávnění přidat URL"
 
 #: serializers.py:39
 msgid "Permissions remove URL"
-msgstr ""
+msgstr "Oprávnění odebrat URL"
 
 #: serializers.py:59
 msgid "Permissions URL"
-msgstr ""
+msgstr "URL oprávnění"
 
 #: serializers.py:82
 msgid "Role ID"
@@ -257,7 +257,7 @@ msgstr "Udělte přístup k objektům"
 
 #: workflow_actions.py:133 workflow_actions.py:232
 msgid "Access"
-msgstr ""
+msgstr "Přístup"
 
 #: workflow_actions.py:171
 msgid "Revoke object access"

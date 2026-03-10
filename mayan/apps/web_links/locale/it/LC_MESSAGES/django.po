@@ -129,7 +129,7 @@ msgstr "Chiave primaria del Tipo documento da aggiungere al collegamento web."
 msgid "Document type ID"
 msgstr "ID Tipo documento"
 
-#: serializers.py:25
+#: serializers.py:26
 msgid "Primary key of the document type to remove from the web link."
 msgstr "Chiave primaria del Tipo documento da rimuovere dal collegamento web."
 

@@ -3,7 +3,7 @@ import os
 from django.utils.module_loading import import_string
 
 from mayan.apps.common.tests.mixins import ManagementCommandTestMixin
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from ..exceptions import LockError
 from ..literals import COMMAND_NAME_LOCK_MANAGER_PURGE_LOCKS

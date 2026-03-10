@@ -7,7 +7,7 @@ from mayan.apps.backends.forms import FormDynamicModelBackend
 from mayan.apps.documents.classes import DocumentFileAction
 from mayan.apps.documents.forms.document_forms import DocumentForm
 from mayan.apps.documents.literals import DEFAULT_DOCUMENT_FILE_ACTION_NAME
-from mayan.apps.views.widgets import DropzoneWidget
+from mayan.apps.forms import form_widgets
 
 from .models import Source
 from .source_backends.base import SourceBackend
@@ -30,8 +30,8 @@ class NewDocumentFileForm(forms.Form):
     )
     action_name = forms.ChoiceField(
         label=_(message='Action'), help_text=_(
-            message='The action to take in regards to the pages of the new file '
-            'being uploaded.'
+            message='The action to take in regards to the pages of the new '
+            'file being uploaded.'
         )
     )
 
@@ -72,5 +72,5 @@ class WebFormUploadFormHTML5(UploadBaseForm):
     )
 
     dropzone = forms.CharField(
-        label='', required=False, widget=DropzoneWidget
+        label='', required=False, widget=form_widgets.DropzoneWidget
     )

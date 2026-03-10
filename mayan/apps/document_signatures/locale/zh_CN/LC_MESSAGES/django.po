@@ -35,7 +35,7 @@ msgstr "日期和时间"
 msgid "Key ID"
 msgstr "密钥ID"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "无"
 
@@ -81,47 +81,47 @@ msgstr "密码"
 msgid "Private key that will be used to sign this document file."
 msgstr ""
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "签名是嵌入式的吗？"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "签名日期"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "签名密钥ID"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "签名密钥存在？"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "密钥指纹"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "密钥创建日期"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "密钥到期日期"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "密钥长度"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "密钥算法"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "密钥用户ID"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "密钥类型"
 
@@ -294,7 +294,7 @@ msgid "Path to the Storage subclass to use when storing detached signatures."
 msgstr "存储分离签名时要使用的存储子类的路径。"
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
 msgstr ""
 
 #: storages.py:13

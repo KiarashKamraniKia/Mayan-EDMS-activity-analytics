@@ -362,14 +362,14 @@ msgstr ""
 msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr "Setează starea implicită a casetei de selectare „Potriviți toate”."
 
-#: settings.py:65
+#: settings.py:66
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "Numărul maxim de rezultate de căutare de preluat și afișat per unitate de "
 "interogare de căutare."
 
-#: settings.py:72
+#: settings.py:73
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."

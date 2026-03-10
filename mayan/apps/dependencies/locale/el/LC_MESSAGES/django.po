@@ -37,11 +37,11 @@ msgstr "Όνομα εσωτερικής αναφοράς"
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: apps.py:45 classes.py:218
+#: apps.py:45 classes.py:220
 msgid "Type"
 msgstr "Τύπος"
 
-#: apps.py:49 classes.py:221
+#: apps.py:49 classes.py:223
 msgid "Other data"
 msgstr "Λοιπά δεδομένα"
 
@@ -49,7 +49,7 @@ msgstr "Λοιπά δεδομένα"
 msgid "Declared by"
 msgstr "Δηλώθηκε από"
 
-#: apps.py:57 classes.py:219
+#: apps.py:57 classes.py:221
 msgid "Version"
 msgstr "Έκδοση"
 
@@ -57,15 +57,15 @@ msgstr "Έκδοση"
 msgid "Environment"
 msgstr "Περιβάλλον"
 
-#: apps.py:64 classes.py:221
+#: apps.py:64 classes.py:223
 msgid "Check"
 msgstr "Έλεγχος"
 
-#: classes.py:218
+#: classes.py:220
 msgid "Name"
 msgstr "Όνομα"
 
-#: classes.py:219
+#: classes.py:221
 msgid "App"
 msgstr "Εφαρμογή"
 
@@ -73,57 +73,57 @@ msgstr "Εφαρμογή"
 msgid "Environments"
 msgstr ""
 
-#: classes.py:331
+#: classes.py:333
 msgid "Need to specify at least one: app_label or module."
 msgstr "Πρέπει να προσδιορίσετε τουλάχιστον ένα: app_label ή module."
 
-#: classes.py:336
+#: classes.py:338
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "Η εξάρτηση \"%s\" είναι ήδη εγγεγραμμένη."
 
-#: classes.py:387
+#: classes.py:389
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Εγκατάσταση πακέτου: %s ..."
 
-#: classes.py:394
+#: classes.py:396
 msgid "Already installed."
 msgstr "Ήδη εγκατεστημένο."
 
-#: classes.py:399 classes.py:406 classes.py:412
+#: classes.py:401 classes.py:408 classes.py:414
 msgid "Complete."
 msgstr "Ολοκληρώθηκε"
 
-#: classes.py:439
+#: classes.py:441
 msgid "Installed and correct version"
 msgstr "Εγκατεστημένη και σωστή έκδοση"
 
-#: classes.py:441
+#: classes.py:443
 msgid "Missing or incorrect version"
 msgstr "Μη εγκατεστημένη ή λανθασμένη έκδοση"
 
-#: classes.py:478
+#: classes.py:480
 msgid "None"
 msgstr "Κανένα"
 
-#: classes.py:487
+#: classes.py:489
 msgid "Not specified"
 msgstr "Μη καθορισμένο"
 
-#: classes.py:490
+#: classes.py:492
 msgid "Patching files... "
 msgstr "Επιδιόρθωση αρχείων ..."
 
-#: classes.py:518
+#: classes.py:520
 msgid "Executables that are called directly by the code."
 msgstr "Εκτελέσιμα που καλούνται απευθείας από τον κώδικα."
 
-#: classes.py:520
+#: classes.py:522
 msgid "Binary"
 msgstr "Εκτελέσιμο"
 
-#: classes.py:537
+#: classes.py:540
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
@@ -131,7 +131,7 @@ msgstr ""
 "Οι βιβλιοθήκες JavaScript ελήφθησαν από το μητρώο NPM και χρησιμοποιήθηκαν "
 "για λειτουργίες διεπαφής."
 
-#: classes.py:540
+#: classes.py:543
 msgid "JavaScript"
 msgstr "JavaScript"
 
@@ -139,7 +139,7 @@ msgstr "JavaScript"
 msgid "Downloading... "
 msgstr "Λήψη..."
 
-#: classes.py:577
+#: classes.py:580
 msgid "Verifying... "
 msgstr "Επαλήθευση..."
 
@@ -264,11 +264,11 @@ msgstr ""
 "το περιβάλλον θα έχει ως αποτέλεσμα ζητήματα και σφάλματα κατά την κανονική "
 "χρήση."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Παραγωγή"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -278,7 +278,7 @@ msgstr ""
 "την επαλήθευση της λειτουργικότητας του κώδικα. Δεν απαιτούνται εξαρτήσεις "
 "σε αυτό το περιβάλλον για κανονική χρήση παραγωγής."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Δοκιμή"
 
@@ -302,25 +302,25 @@ msgstr "Λεπτομέρειες"
 msgid "Dependencies licenses"
 msgstr "Άδειες χρήσης εξαρτήσεων"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
 "(%(version_server)s)."
 msgstr ""
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
 "version is %(version_server)s."
 msgstr ""
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr ""
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"
@@ -347,6 +347,7 @@ msgstr ""
 "αποκλείεται οποιαδήποτε άλλη."
 
 #: management/commands/dependencies_install.py:13
+#: management/commands/dependencies_uninstall.py:13
 msgid "Process a specific app."
 msgstr "Επεξεργασία συγκεκριμένης εφαρμογής."
 

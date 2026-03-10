@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Jiří Podhorecký <jirka.p@volny.cz>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2026
 # 
 msgid ""
 msgstr ""
@@ -23,7 +23,7 @@ msgstr ""
 
 #: apps.py:10
 msgid "Backends"
-msgstr ""
+msgstr "Backendy"
 
 #: model_mixins.py:22
 msgid "The dotted Python path to the backend class."

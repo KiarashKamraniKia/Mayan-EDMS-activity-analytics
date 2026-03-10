@@ -86,7 +86,7 @@ msgstr "有効"
 msgid "Index templates to be queued for rebuilding."
 msgstr "再構築用にキューに登録するインデックステンプレート"
 
-#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "インデックステンプレート"
@@ -151,30 +151,30 @@ msgstr "いいえ"
 msgid "Yes"
 msgstr "はい"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
 "%(exception)s"
 msgstr "文書 %(document)s のインデックス作成エラー: 式 %(expression)s; エラー %(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr "この項目に含まれるユニークな値を持つノードの総数"
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "この項目に含まれるユニークな文書の総数"
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "この項目に含まれるユニークな文書の総数"
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "すべての親ノードを含むインデックスへのパス"
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "フルパス"
 
@@ -222,11 +222,11 @@ msgstr "このインデックスの簡単な説明"
 msgid "This value will be used by other apps to reference this index."
 msgstr "この値は他のアプリでこのインデックスを参照する際に使用されます"
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "スラッグ"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr "文書データが変更されたときに、このインデックスを表示および更新するようにします。"
@@ -571,12 +571,12 @@ msgstr "%s の子ノードを作成"
 msgid "Delete the index template node: %s?"
 msgstr "インデックステンプレートノード を削除しますか？: %s "
 
-#: views/index_template_views.py:365
+#: views/index_template_views.py:367
 #, python-format
 msgid "Edit the index template node: %s"
 msgstr "インデックステンプレートノードを編集:%s"
 
-#: views/index_template_views.py:386
+#: views/index_template_views.py:388
 #, python-format
 msgid "Rebuild index template: %s"
 msgstr "インデックステンプレートを再構築: %s "

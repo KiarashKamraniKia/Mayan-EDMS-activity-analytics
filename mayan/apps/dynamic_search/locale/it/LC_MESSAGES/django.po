@@ -366,14 +366,14 @@ msgstr ""
 "Imposta lo stato predefinito della casella di controllo \\\"Corrisponde a "
 "tutti\\\"."
 
-#: settings.py:65
+#: settings.py:66
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "Numero massimo di risultati di ricerca da recuperare e visualizzare per "
 "singola query di ricerca."
 
-#: settings.py:72
+#: settings.py:73
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."

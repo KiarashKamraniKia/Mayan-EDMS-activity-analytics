@@ -4,7 +4,6 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Emine Öztürk <oemine075@gmail.com>, 2024
 # serhatcan77 <serhat_can@yahoo.com>, 2024
 # Bedreddin Şahbaz, 2024
 # 
@@ -22,7 +21,7 @@ msgstr ""
 "Language: tr_TR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: apps.py:21 settings.py:11
+#: apps.py:15 settings.py:10
 msgid "Views"
 msgstr "Görünümler"
 
@@ -157,21 +156,13 @@ msgstr "\"%(object)s\" sil."
 msgid "Delete %(count)d object."
 msgstr "%(count)d nesnesini sil."
 
-#: settings.py:17
+#: settings.py:16
 msgid "The number objects that will be displayed per page."
 msgstr "Sayfa başına görüntülenecek nesnelerin sayısı."
 
-#: settings.py:23
+#: settings.py:22
 msgid "A string specifying the name to use for the paging parameter."
 msgstr "Sayfalama parametresi için kullanılacak adı belirten bir dize."
-
-#: settings.py:29
-msgid ""
-"Display a submit button and wait for the submit button to be pressed before "
-"processing up the upload."
-msgstr ""
-"Bir gönder düğmesi görüntüleyin ve yüklemeyi işlemeden önce gönder düğmesine"
-" basılmasını bekleyin."
 
 #: templatetags/views_tags.py:30
 msgid "Confirm delete"

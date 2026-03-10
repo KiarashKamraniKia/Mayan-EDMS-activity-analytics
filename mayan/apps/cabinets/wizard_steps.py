@@ -66,7 +66,17 @@ class DocumentCreateWizardStepCabinets(DocumentCreateWizardStep):
 
     @classmethod
     def condition(cls, wizard):
-        return Cabinet.objects.exists()
+        user = wizard.request.user
+
+        if user:
+            queryset = AccessControlList.objects.restrict_queryset(
+                permission=permission_cabinet_add_document,
+                queryset=Cabinet.objects.all(), user=user
+            )
+        else:
+            queryset = Cabinet.objects.all()
+
+        return queryset.exists()
 
     @classmethod
     def get_form_kwargs(self, wizard):
@@ -98,13 +108,17 @@ class DocumentCreateWizardStepCabinets(DocumentCreateWizardStep):
     @classmethod
     def done(cls, wizard):
         result = {}
-        cleaned_data = wizard.get_cleaned_data_for_step(step=cls.name)
-        if cleaned_data:
-            result['cabinets'] = [
-                str(cabinet.pk) for cabinet in cleaned_data['cabinets']
-            ]
+        try:
+            cleaned_data = wizard.get_cleaned_data_for_step(step=cls.name)
+        except KeyError:
+            return result
+        else:
+            if cleaned_data:
+                result['cabinets'] = [
+                    str(cabinet.pk) for cabinet in cleaned_data['cabinets']
+                ]
 
-        return result
+            return result
 
     @classmethod
     def step_post_upload_process(

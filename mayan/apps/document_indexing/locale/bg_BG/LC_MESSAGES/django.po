@@ -91,7 +91,7 @@ msgstr ""
 "Шаблони за индексиране, които трябва да бъдат поставени на опашка за "
 "възстановяване."
 
-#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "Шаблони за индексиране"
@@ -156,7 +156,7 @@ msgstr "Не"
 msgid "Yes"
 msgstr "Да"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
@@ -165,23 +165,23 @@ msgstr ""
 "Грешка при индексиране на документ: %(document)s; израз: %(expression)s; "
 "%(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr "Общ брой възли с уникални стойности, които този елемент съдържа."
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "Общ брой уникални документи, които този елемент съдържа."
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "Общ брой нива на възли, които този елемент съдържа."
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "Път към индекса, включващ всички предци."
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "Пълен път"
 
@@ -231,11 +231,11 @@ msgstr ""
 "Тази стойност ще бъде използвана от други приложения за препратка към този "
 "индекс."
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "Калъп"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr ""
@@ -607,12 +607,12 @@ msgstr "Създайте дъщерен възел на: %s"
 msgid "Delete the index template node: %s?"
 msgstr "Изтрийте възела на шаблона на индекса: %s?"
 
-#: views/index_template_views.py:365
+#: views/index_template_views.py:367
 #, python-format
 msgid "Edit the index template node: %s"
 msgstr "Редактирайте възела на шаблонен индекс: %s"
 
-#: views/index_template_views.py:386
+#: views/index_template_views.py:388
 #, python-format
 msgid "Rebuild index template: %s"
 msgstr "Възстановяване на шаблон за индекс: %s"

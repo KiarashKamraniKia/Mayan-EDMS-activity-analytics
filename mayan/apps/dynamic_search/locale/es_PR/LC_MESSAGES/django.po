@@ -277,7 +277,7 @@ msgstr "Mayor o igual"
 
 #: search_query_types.py:195
 msgid "Less than"
-msgstr "Menos que"
+msgstr "Menor que"
 
 #: search_query_types.py:201
 msgid "Less than or equal"
@@ -362,18 +362,20 @@ msgstr ""
 "Establece el estado predeterminado de la casilla de verificación \"Coincidir"
 " con todos\"."
 
-#: settings.py:65
+#: settings.py:66
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "Número máximo de resultados de búsqueda para obtener y mostrar por unidad de"
 " consulta de búsqueda."
 
-#: settings.py:72
+#: settings.py:73
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."
 msgstr ""
+"Generar un error cuando el número de resultados de búsqueda excede el valor "
+"de `SEARCH_QUERY_RESULTS_LIMIT`."
 
 #: settings.py:79
 msgid "Maximum number of search results to fetch and display."

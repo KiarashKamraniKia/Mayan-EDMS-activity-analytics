@@ -93,7 +93,7 @@ msgstr "مفعل"
 msgid "Index templates to be queued for rebuilding."
 msgstr "يتم وضع قوالب الفهرس في قائمة الانتظار للإنشاء."
 
-#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "قوالب الفهرس"
@@ -158,7 +158,7 @@ msgstr "رفض"
 msgid "Yes"
 msgstr "قبول"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
@@ -166,23 +166,23 @@ msgid ""
 msgstr ""
 "خطأ فهرسة الوثيقة : %(document)s؛ الوصف: %(expression)s ؛ %(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr "العدد الإجمالي للعقد ذات القيم الفريدة التي يحتوي عليها هذا العنصر."
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "العدد الإجمالي للمستندات الفريدة التي يحتوي عليها هذا العنصر."
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "العدد الإجمالي لمستويات العقد التي يحتوي عليها هذا العنصر."
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "المسار إلى الفهرس."
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "مكان الوصول الكامل"
 
@@ -231,11 +231,11 @@ msgid "This value will be used by other apps to reference this index."
 msgstr ""
 "سيتم استخدام هذه القيمة من قبل التطبيقات الأخرى للإشارة إلى هذا الفهرس."
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "حجم"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr "سيقوم النظام باستعراض الفهرس عند تغير بيانات الوثيقة"
@@ -591,12 +591,12 @@ msgstr "قم بإنشاء قالب فرعية لـ: %s"
 msgid "Delete the index template node: %s?"
 msgstr "هل تريد حذف قالب الفهرس الفرعي: %s؟"
 
-#: views/index_template_views.py:365
+#: views/index_template_views.py:367
 #, python-format
 msgid "Edit the index template node: %s"
 msgstr "تعديل عقدة قالب الفهرس:%s"
 
-#: views/index_template_views.py:386
+#: views/index_template_views.py:388
 #, python-format
 msgid "Rebuild index template: %s"
 msgstr "إعادة بناء قالب الفهرس:%s"

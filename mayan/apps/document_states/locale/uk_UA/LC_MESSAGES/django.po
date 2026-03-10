@@ -897,11 +897,11 @@ msgstr "URL-адреса стану шаблону робочого процес
 msgid "Primary key of the workflow template transition to be added."
 msgstr "Первинний ключ переходу шаблону робочого процесу, який буде доданий."
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "ID переходу шаблону робочого процесу"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "URL-адреса переходу шаблону робочого процесу"
 
@@ -965,12 +965,10 @@ msgstr ""
 
 #: settings.py:28
 msgid ""
-"The threshold at which the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND will start "
-"deleting the oldest workflow image cache files. Specify the size in bytes."
+"The threshold at which the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will "
+"start deleting the oldest workflow image cache files. Specify the size in "
+"bytes."
 msgstr ""
-"Порогове значення, за якого WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND почне "
-"видаляти найстаріші файли кешу зображень робочого процесу. Вкажіть розмір у "
-"байтах."
 
 #: settings.py:37
 msgid ""
@@ -981,10 +979,10 @@ msgstr ""
 "файлів зображень робочого процесу."
 
 #: settings.py:45
-msgid "Arguments to pass to the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "Аргументи для передачі в WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."

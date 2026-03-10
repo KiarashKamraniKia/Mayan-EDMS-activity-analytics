@@ -1364,13 +1364,10 @@ msgstr "སླར་གསོ་བྱེད་པའི་ URL །"
 
 #: settings.py:49
 msgid ""
-"The threshold at which the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"will start deleting the oldest document file page image cache files. Specify"
-" the size in bytes."
+"Width in pixels of the document page image used for interactive display. "
+"Larger values improve quality but increase processing time and cache "
+"storage."
 msgstr ""
-"ཡིག་ཆའི་ཤོག་ངོས་ཀྱི་པར་གྱི་ cache "
-"ཉར་ཚགས་ཀྱི་རྒྱབ་ལྗོངས་ཀྱིས་ཡིག་ཆའི་ཤོག་ངོས་ཀྱི་པར་གྱི་ cache "
-"ཡིག་ཆ་རྙིང་ཤོས་བསུབ་འགོ་རྩོམ་པའི་ཚད་གཞི་། ཆེ་ཆུང་ Byte ནང་གསལ་བ།"
 
 #: settings.py:57
 msgid "Path to the Storage subclass to use when storing document files."
@@ -1384,19 +1381,17 @@ msgstr "ཡིག་ཆ་ཉར་ཚགས་ཀྱི་རྒྱབ་ལྗ
 
 #: settings.py:70
 msgid ""
-"Path to the Storage subclass to use when storing the cached document file "
-"page image files."
+"Maximum size in bytes of the "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached page "
+"images."
 msgstr ""
-"ཡིག་ཆའི་ཤོག་ངོས་ཀྱི་པར་གྱི་ cache "
-"ཡིག་ཆ་ཉར་ཚགས་བྱེད་པའི་སྐབས་སུ་བེད་སྤྱོད་བྱ་རྒྱུའི་ Storage "
-"རིགས་བགར་བའི་བགྲོད་ལམ།"
 
 #: settings.py:78
 msgid ""
-"Arguments to pass to the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store the cached document file "
+"page images."
 msgstr ""
-"ཡིག་ཆའི་ཤོག་ངོས་ཀྱི་པར་གྱི་ cache "
-"ཉར་ཚགས་ཀྱི་རྒྱབ་ལྗོངས་ལ་འདོན་རྒྱུའི་བགྲོ་གླེང་།"
 
 #: settings.py:84
 msgid "Maximum number of favorite documents to remember per user."
@@ -1405,13 +1400,10 @@ msgstr ""
 
 #: settings.py:90
 msgid ""
-"Size of blocks to use when calculating the document file's checksum. A value"
-" of 0 disables the block calculation and the entire file will be loaded into"
-" memory."
+"Block size in bytes used when calculating a document file checksum. Use 0 to"
+" disable block reads and hash the entire file in a single pass (loads the "
+"file into memory)."
 msgstr ""
-"ཡིག་ཆའི་དག་བཤེར་རྩིས་རྒྱག་པའི་སྐབས་སུ་བེད་སྤྱོད་བྱ་རྒྱུའི་བཅད་དུམ་གྱི་ཆེ་ཆུང་།"
-" གྲངས་ 0 ནི་བཅད་དུམ་གྱི་རྩིས་རྒྱག་པ་མཚམས་འཇོག་བྱེད་པ་ཡིན་པ་དང་། "
-"ཡིག་ཆ་ཆ་ཚང་ངེས་ཤེས་སུ་བཅུག་པར་འགྱུར་བ།"
 
 #: settings.py:97
 msgid "Default documents language (in ISO639-3 format)."
@@ -1420,41 +1412,33 @@ msgstr "ཡིག་ཆའི་སྐད་ཡིག་སྔོན་གཤི
 #: settings.py:101
 msgid "List of supported document languages. In ISO639-3 format."
 msgstr ""
-"རྒྱབ་སྐྱོར་བྱེད་པའི་ཡིག་ཆའི་སྐད་ཡིག་གི་ཐོ་གཞུང་། ISO639-3 བཟོ་དབྱིབས་ནང་།"
 
 #: settings.py:107
 msgid ""
-"The threshold at which the DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND"
-" will start deleting the oldest document version page image cache versions. "
-"Specify the size in bytes."
+"Maximum size in bytes of the "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached version "
+"page images."
 msgstr ""
-"ཡིག་ཆའི་པར་གཞིའི་ཤོག་ངོས་ཀྱི་པར་གྱི་ cache "
-"ཉར་ཚགས་ཀྱི་རྒྱབ་ལྗོངས་ཀྱིས་ཡིག་ཆའི་པར་གཞིའི་ཤོག་ངོས་ཀྱི་པར་གྱི་ cache "
-"པར་གཞི་རྙིང་ཤོས་བསུབ་འགོ་རྩོམ་པའི་ཚད་གཞི་། ཆེ་ཆུང་ Byte ནང་གསལ་བ།"
 
 #: settings.py:116
 msgid ""
-"Path to the Storage subclass to use when storing the cached document version"
-" page image versions."
+"Dotted path to the storage subclass used to store cached document version "
+"page images."
 msgstr ""
-"ཡིག་ཆའི་པར་གཞིའི་ཤོག་ངོས་ཀྱི་པར་གྱི་ cache "
-"པར་གཞི་ཉར་ཚགས་བྱེད་པའི་སྐབས་སུ་བེད་སྤྱོད་བྱ་རྒྱུའི་ Storage "
-"རིགས་བགར་བའི་བགྲོད་ལམ།"
 
 #: settings.py:124
 msgid ""
-"Arguments to pass to the DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Keyword arguments to pass to "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"ཡིག་ཆའི་པར་གཞིའི་ཤོག་ངོས་ཀྱི་པར་གྱི་ cache "
-"ཉར་ཚགས་ཀྱི་རྒྱབ་ལྗོངས་ལ་འདོན་རྒྱུའི་བགྲོ་གླེང་།"
 
 #: settings.py:146
 msgid ""
-"Maximum number of recently accessed documents (created, edited, viewed) to "
-"remember per user."
+"Optional height in pixels of the document preview image. Leave empty to "
+"calculate the height from `DOCUMENTS_PREVIEW_WIDTH` while preserving the "
+"aspect ratio."
 msgstr ""
-"བེད་སྤྱོད་པ་རེ་རེ་ལ་དྲན་པར་བྱ་རྒྱུའི་ཉེ་ཆར་བེད་སྤྱོད་བྱས་པའི་ཡིག་ཆའི་ "
-"(གསར་བཟོ་བྱས་པ། བཅོས་པ། བལྟས་པ།) ཆེ་ཤོས་ཀྱི་གྲངས་།"
 
 #: settings.py:153
 msgid "Maximum number of recently created documents to show."
@@ -1483,7 +1467,6 @@ msgstr "བེད་སྤྱོད་པས་ཡིག་ཆའི་ཤོག
 #: settings.py:198
 msgid "Amount in percent zoom in or out a document page per user interaction."
 msgstr ""
-"བེད་སྤྱོད་པ་རེ་རེས་ཡིག་ཆའི་ཤོག་ངོས་ཆེ་རུ་གཏོང་བ་དང་ཆུང་དུ་གཏོང་བའི་བརྒྱ་ཆའི་ཚད་།"
 
 #: statistics.py:291
 msgid "New documents per month"
@@ -1998,7 +1981,7 @@ msgstr ""
 "པར་གཞི་ནི་ཡིག་ཆའི་ཤོག་ངོས་དེ་དག་དངོས་ཡོད་ལྟར་མངོན་པར་བྱེད་པ་དང་། "
 "བཟོ་དབྱིབས་མི་འདྲ་བ་ཞིག་ཏུ་སླར་སྒྲིག་དང་འདྲེས་སྦྱོར་བྱེད་ཐུབ།"
 
-#: views/document_version_views.py:203
+#: views/document_version_views.py:204
 msgid "No versions available"
 msgstr "པར་གཞི་མེད།"
 

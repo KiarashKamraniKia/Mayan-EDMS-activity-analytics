@@ -1374,14 +1374,10 @@ msgstr ""
 
 #: settings.py:49
 msgid ""
-"The threshold at which the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"will start deleting the oldest document file page image cache files. Specify"
-" the size in bytes."
+"Width in pixels of the document page image used for interactive display. "
+"Larger values improve quality but increase processing time and cache "
+"storage."
 msgstr ""
-"O limite onde o "
-"DOCUMENTOS_FICHEIRO_PAGINA_IMAGEM_CACHE_ARMAZENAMENTO_BACKEND irá começar a "
-"eliminar os ficheiros de imagem de página do ficheiro do documento mais "
-"antigos. Especifique o tamanho em bytes."
 
 #: settings.py:57
 msgid "Path to the Storage subclass to use when storing document files."
@@ -1395,19 +1391,17 @@ msgstr "Argumentos a passar para o DOCUMENTO_FICHEIRO_ARMAZENAMENTO_BACKEND."
 
 #: settings.py:70
 msgid ""
-"Path to the Storage subclass to use when storing the cached document file "
-"page image files."
+"Maximum size in bytes of the "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached page "
+"images."
 msgstr ""
-"Caminho para a subclasse de armazenamento a ser utilizado a quando "
-"armazenando os ficheiros de imagem de página do ficheiro do documento em "
-"cache."
 
 #: settings.py:78
 msgid ""
-"Arguments to pass to the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store the cached document file "
+"page images."
 msgstr ""
-"Argumentos a passar para o "
-"DOCUMENTOS_FICHEIRO_PAGINA_IMAGEM_CACHE_ARMAZENAMENTO_BACKEND."
 
 #: settings.py:84
 msgid "Maximum number of favorite documents to remember per user."
@@ -1415,13 +1409,10 @@ msgstr "Número máximo de documentos favoritos por usuário."
 
 #: settings.py:90
 msgid ""
-"Size of blocks to use when calculating the document file's checksum. A value"
-" of 0 disables the block calculation and the entire file will be loaded into"
-" memory."
+"Block size in bytes used when calculating a document file checksum. Use 0 to"
+" disable block reads and hash the entire file in a single pass (loads the "
+"file into memory)."
 msgstr ""
-"Tamanhos dos blocos a serem usados ao se calcular o checksum do arquivo do "
-"documento. Um valor 0 irá desabilitar o cálculo em blocos e todo arquivo "
-"será carregado na memória."
 
 #: settings.py:97
 msgid "Default documents language (in ISO639-3 format)."
@@ -1437,32 +1428,26 @@ msgid ""
 " will start deleting the oldest document version page image cache versions. "
 "Specify the size in bytes."
 msgstr ""
-"O limite onde o DOCUMENTO_VERSAO_PAGINA_IMAGEM_CACHE_ARMAZENAMENTO_BACKEND "
-"irá começar a eliminar as versões mais antigas da imagem da página de versão"
-" do documento. Especifique o tamanho em bytes. "
 
 #: settings.py:116
 msgid ""
-"Path to the Storage subclass to use when storing the cached document version"
-" page image versions."
+"Maximum size in bytes of the "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached version "
+"page images."
 msgstr ""
-"Caminho para a subclasse de armazenamento a ser utilizado para armazenar as "
-"versões da imagem da página de versão do documento."
 
 #: settings.py:124
 msgid ""
-"Arguments to pass to the DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store cached document version "
+"page images."
 msgstr ""
-"Argumentos a passar "
-"DOCUMENTOS_VERSAO_PAGINA_IMAGEM_CACHE_ARMAZENAMENTO_BACKEND."
 
 #: settings.py:146
 msgid ""
-"Maximum number of recently accessed documents (created, edited, viewed) to "
-"remember per user."
+"Keyword arguments to pass to "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"Número máximo de documentos recentemente acedidos (criados, editados, "
-"visualizados) a serem lembrados por utilizador."
 
 #: settings.py:153
 msgid "Maximum number of recently created documents to show."
@@ -1471,7 +1456,6 @@ msgstr "Número máximo de documentos recém-criados a serem mostrados."
 #: settings.py:159
 msgid "Amount in degrees to rotate a document page per user interaction."
 msgstr ""
-"Valor em graus para girar uma página do documento por interação do usuário."
 
 #: settings.py:165
 msgid "Height in pixels of the document thumbnail image."
@@ -1482,22 +1466,16 @@ msgid ""
 "Maximum amount in percent (%) to allow user to zoom in a document page "
 "interactively."
 msgstr ""
-"Valor máximo em porcentagem (%) para permitir ao usuário aumentar o zoom em "
-"uma página do documento de forma interativa."
 
 #: settings.py:191
 msgid ""
-"Minimum amount in percent (%) to allow user to zoom out a document page "
-"interactively."
+"Width in pixels of the document thumbnail image when shown in list view "
+"mode."
 msgstr ""
-"Valor mínimo em porcentagem (%) para permitir ao usuário diminuir o zoom em "
-"uma página do documento de forma interativa."
 
 #: settings.py:198
 msgid "Amount in percent zoom in or out a document page per user interaction."
 msgstr ""
-"Quantidade em porcentagem (%) de zoom em uma página ou documento por "
-"interação do usuário."
 
 #: statistics.py:291
 msgid "New documents per month"
@@ -2018,7 +1996,7 @@ msgstr ""
 "Versões são visualizações que podem demonstrar páginas do ficheiro de "
 "documento como elas são, remapea-las ou fundi-las em diferentes layouts."
 
-#: views/document_version_views.py:203
+#: views/document_version_views.py:204
 msgid "No versions available"
 msgstr "Não há versões disponíveis. "
 

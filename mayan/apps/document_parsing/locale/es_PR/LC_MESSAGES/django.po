@@ -162,7 +162,7 @@ msgstr ""
 "Establezca nuevos tipos de documentos para realizar la extracción de texto "
 "de forma automática de forma predeterminada."
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."

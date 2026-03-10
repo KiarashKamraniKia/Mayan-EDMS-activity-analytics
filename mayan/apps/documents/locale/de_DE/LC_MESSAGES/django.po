@@ -19,6 +19,7 @@
 # Berny <berny@bernhard-marx.de>, 2024
 # Mathias Behrle <mathiasb@m9s.biz>, 2025
 # Dennis M. Pöpperl <free-software@dm-poepperl.de>, 2025
+# Mathias Behrle <mathiasb@m9s.biz>, 2025
 # 
 msgid ""
 msgstr ""
@@ -1238,7 +1239,7 @@ msgstr "Prüfsumme der Dokumentendatei"
 
 #: search.py:45
 msgid "Document file filename"
-msgstr ""
+msgstr "Dateiname der Dokumentendatei"
 
 #: search.py:48
 msgid "Document file MIME type"
@@ -1390,13 +1391,10 @@ msgstr "Wiederherstellungs URL"
 
 #: settings.py:49
 msgid ""
-"The threshold at which the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"will start deleting the oldest document file page image cache files. Specify"
-" the size in bytes."
+"Width in pixels of the document page image used for interactive display. "
+"Larger values improve quality but increase processing time and cache "
+"storage."
 msgstr ""
-"Der Grenzwert (in Bytes) ab dem das "
-"DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND mit dem Löschen der ältesten"
-" Cachedatei für Dokumentendateibilder beginnen wird."
 
 #: settings.py:57
 msgid "Path to the Storage subclass to use when storing document files."
@@ -1410,16 +1408,17 @@ msgstr "Argumente für das DOCUMENT_FILE_STORAGE_BACKEND."
 
 #: settings.py:70
 msgid ""
-"Path to the Storage subclass to use when storing the cached document file "
-"page image files."
+"Maximum size in bytes of the "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached page "
+"images."
 msgstr ""
-"Pfad zur Storage Subclass für die Speicherung der Cachedateien für Bilder "
-"von Dokumentendateiseiten."
 
 #: settings.py:78
 msgid ""
-"Arguments to pass to the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "Argumente für das DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store the cached document file "
+"page images."
+msgstr ""
 
 #: settings.py:84
 msgid "Maximum number of favorite documents to remember per user."
@@ -1427,13 +1426,10 @@ msgstr "Maximale Anzahl von Favoriten pro Benutzer."
 
 #: settings.py:90
 msgid ""
-"Size of blocks to use when calculating the document file's checksum. A value"
-" of 0 disables the block calculation and the entire file will be loaded into"
-" memory."
+"Block size in bytes used when calculating a document file checksum. Use 0 to"
+" disable block reads and hash the entire file in a single pass (loads the "
+"file into memory)."
 msgstr ""
-"Blockgröße die für die Berechnung der Dokumentenprüfsumme verwendet wird. "
-"Der Wert 0 verhindert die Berücksichtigung von Blöcken und das gesamte "
-"Dokument wird in den Speicher geladen."
 
 #: settings.py:97
 msgid "Default documents language (in ISO639-3 format)."
@@ -1449,17 +1445,14 @@ msgid ""
 " will start deleting the oldest document version page image cache versions. "
 "Specify the size in bytes."
 msgstr ""
-"Der Grenzwert (in Bytes) ab dem das "
-"DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND mit dem Löschen der "
-"ältesten Cachedatei für Dokumentenversionsseitenbilder beginnen wird."
 
 #: settings.py:116
 msgid ""
-"Path to the Storage subclass to use when storing the cached document version"
-" page image versions."
+"Maximum size in bytes of the "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached version "
+"page images."
 msgstr ""
-"Pfad zur Storage Subclass für die Speicherung der Cachedateien für Bilder "
-"von Dokumentenversionsseiten."
 
 #: settings.py:124
 msgid ""
@@ -1471,8 +1464,6 @@ msgid ""
 "Maximum number of recently accessed documents (created, edited, viewed) to "
 "remember per user."
 msgstr ""
-"Maximale Anzahl der kürzlich zugegriffenen Dokumente (erstellt, bearbeitet, "
-"betrachtet), die pro Benutzer gemerkt werden soll."
 
 #: settings.py:153
 msgid "Maximum number of recently created documents to show."
@@ -1503,7 +1494,6 @@ msgstr "Minimaler erlaubter Zoom in %, den Benutzer interaktiv wählen können."
 #: settings.py:198
 msgid "Amount in percent zoom in or out a document page per user interaction."
 msgstr ""
-"Betrag in Prozent für Ansicht vergrößern/verkleinern pro Benutzer Aktion."
 
 #: statistics.py:291
 msgid "New documents per month"
@@ -2039,7 +2029,7 @@ msgstr ""
 "Versionen sind Ansichten, die Dokumentendateiseiten darstellen können, wie "
 "sie sind oder sie in verschiedene Layouts zuordnen oder einfügen."
 
-#: views/document_version_views.py:203
+#: views/document_version_views.py:204
 msgid "No versions available"
 msgstr "Keine Versionen vorhanden"
 

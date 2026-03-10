@@ -8,7 +8,7 @@ from django.utils.translation import gettext_lazy as _
 from mayan.apps.smart_settings.literals import COMMAND_NAME_SETTINGS_REVERT
 from mayan.apps.smart_settings.utils import SettingNamespaceSingleton
 
-from .literals import DEFAULT_SECRET_KEY, SECRET_KEY_FILENAME, SYSTEM_DIR
+from ..literals import DEFAULT_SECRET_KEY, SECRET_KEY_FILENAME, SYSTEM_DIR
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -94,6 +94,7 @@ INSTALLED_APPS = (
     'mayan.apps.django_gpg.apps.DjangoGPGApp',
     'mayan.apps.dynamic_search.apps.DynamicSearchApp',
     'mayan.apps.file_caching.apps.FileCachingConfig',
+    'mayan.apps.forms.apps.FormsApp',
     'mayan.apps.locales.apps.LocalesApp',
     'mayan.apps.lock_manager.apps.LockManagerApp',
     'mayan.apps.messaging.apps.MessagingApp',
@@ -217,7 +218,8 @@ AUTH_PASSWORD_VALIDATORS = [
     }
 ]
 
-# Internationalization
+# Internationalization. Do not change these, doing so will break your
+# installation.
 
 LANGUAGE_CODE = 'en-us'
 

@@ -37,11 +37,11 @@ msgstr "Vnitřní název"
 msgid "Description"
 msgstr "Popis"
 
-#: apps.py:45 classes.py:218
+#: apps.py:45 classes.py:220
 msgid "Type"
 msgstr "Typ"
 
-#: apps.py:49 classes.py:221
+#: apps.py:49 classes.py:223
 msgid "Other data"
 msgstr "Další údaje"
 
@@ -49,7 +49,7 @@ msgstr "Další údaje"
 msgid "Declared by"
 msgstr "Deklarováno uživatelem"
 
-#: apps.py:57 classes.py:219
+#: apps.py:57 classes.py:221
 msgid "Version"
 msgstr "Verze"
 
@@ -57,15 +57,15 @@ msgstr "Verze"
 msgid "Environment"
 msgstr "Prostředí"
 
-#: apps.py:64 classes.py:221
+#: apps.py:64 classes.py:223
 msgid "Check"
 msgstr "Kontrola"
 
-#: classes.py:218
+#: classes.py:220
 msgid "Name"
 msgstr "název"
 
-#: classes.py:219
+#: classes.py:221
 msgid "App"
 msgstr "Aplikace"
 
@@ -73,57 +73,57 @@ msgstr "Aplikace"
 msgid "Environments"
 msgstr ""
 
-#: classes.py:331
+#: classes.py:333
 msgid "Need to specify at least one: app_label or module."
 msgstr "Je třeba zadat alespoň jeden: app_label nebo modul."
 
-#: classes.py:336
+#: classes.py:338
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "Závislost \"%s\" je již zaregistrována."
 
-#: classes.py:387
+#: classes.py:389
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Instalace balíčku: %s ..."
 
-#: classes.py:394
+#: classes.py:396
 msgid "Already installed."
 msgstr "Už nainstalováno."
 
-#: classes.py:399 classes.py:406 classes.py:412
+#: classes.py:401 classes.py:408 classes.py:414
 msgid "Complete."
 msgstr "Kompletní."
 
-#: classes.py:439
+#: classes.py:441
 msgid "Installed and correct version"
 msgstr "Nainstalovaná správná verze"
 
-#: classes.py:441
+#: classes.py:443
 msgid "Missing or incorrect version"
 msgstr "Chybějící nebo nesprávná verze"
 
-#: classes.py:478
+#: classes.py:480
 msgid "None"
 msgstr "Žádný"
 
-#: classes.py:487
+#: classes.py:489
 msgid "Not specified"
 msgstr "Nespecifikováno"
 
-#: classes.py:490
+#: classes.py:492
 msgid "Patching files... "
 msgstr "Opravné soubory ..."
 
-#: classes.py:518
+#: classes.py:520
 msgid "Executables that are called directly by the code."
 msgstr "Spustitelné soubory, které jsou volány přímo kódem."
 
-#: classes.py:520
+#: classes.py:522
 msgid "Binary"
 msgstr "Binární"
 
-#: classes.py:537
+#: classes.py:540
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
@@ -131,7 +131,7 @@ msgstr ""
 "Knihovny JavaScriptu stažené z registru NPM a použily se pro front-end "
 "funkce."
 
-#: classes.py:540
+#: classes.py:543
 msgid "JavaScript"
 msgstr "JavaScript"
 
@@ -139,7 +139,7 @@ msgstr "JavaScript"
 msgid "Downloading... "
 msgstr "Stahování ..."
 
-#: classes.py:577
+#: classes.py:580
 msgid "Verifying... "
 msgstr "Ověření ..."
 
@@ -260,11 +260,11 @@ msgstr ""
 "Normální prostředí pro koncové uživatele. Chybějící závislost v tomto "
 "prostředí bude mít za následek problémy a chyby při běžném používání."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Produkce"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -274,7 +274,7 @@ msgstr ""
 "kódu. Závislosti v tomto prostředí nejsou nutné pro normální využití v "
 "produkčním prostředí."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Testování"
 
@@ -298,25 +298,25 @@ msgstr "Detail"
 msgid "Dependencies licenses"
 msgstr "Licence závislostí"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
 "(%(version_server)s)."
 msgstr ""
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
 "version is %(version_server)s."
 msgstr ""
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr "Není možné určit nejnovější dostupnou verzi."
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"
@@ -343,6 +343,7 @@ msgstr ""
 " vylučují všechny ostatní."
 
 #: management/commands/dependencies_install.py:13
+#: management/commands/dependencies_uninstall.py:13
 msgid "Process a specific app."
 msgstr "Zpracovat konkrétní aplikaci."
 

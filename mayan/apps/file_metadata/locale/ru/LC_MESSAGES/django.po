@@ -145,43 +145,43 @@ msgstr ""
 "Автоматически ставить вновь созданные документы в очередь для обработки "
 "метаданных файла."
 
-#: models.py:48
+#: models.py:49
 msgid "Auto process"
 msgstr ""
 
-#: models.py:54
+#: models.py:55
 msgid "Document type settings"
 msgstr "Настройки типа документа"
 
-#: models.py:55
+#: models.py:56
 msgid "Document types settings"
 msgstr "Настройки типов документа"
 
-#: models.py:70
+#: models.py:71
 msgid "Normalized name of the file metadata entry."
 msgstr ""
 
-#: models.py:75
+#: models.py:76
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr ""
 
-#: models.py:77
+#: models.py:78
 msgid "Key"
 msgstr "Ключ"
 
-#: models.py:80
+#: models.py:81
 msgid "Value of the file metadata entry."
 msgstr "Значение записи метаданных файла."
 
-#: models.py:81
+#: models.py:82
 msgid "Value"
 msgstr "Значение"
 
-#: models.py:87
+#: models.py:88
 msgid "File metadata entry"
 msgstr "Запись метаданных файла"
 
-#: models.py:88
+#: models.py:89
 msgid "File metadata entries"
 msgstr "Записи метаданных файла"
 

@@ -20,55 +20,51 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: apps.py:27 permissions.py:6
+#: apps.py:29 permissions.py:6
 msgid "Smart settings"
 msgstr "スマート設定"
 
-#: apps.py:37
+#: apps.py:39
 msgid "Setting count"
 msgstr "設定数"
 
-#: apps.py:43
+#: apps.py:45
 msgid "Name"
 msgstr "名前"
 
-#: apps.py:47 forms.py:30
+#: apps.py:49 forms.py:30
 msgid "Value"
 msgstr "値"
 
-#: classes.py:318
-msgid "Settings namespace"
-msgstr "設定の名前空間"
-
-#: classes.py:496
+#: classes.py:158
 msgid "Choices"
 msgstr "選択肢"
 
-#: classes.py:498
+#: classes.py:160
 msgid "Possible values allowed for this setting."
 msgstr "この設定で許可されている値の一覧です。"
 
-#: classes.py:519
+#: classes.py:181
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr "設定を元に戻せません。値は更新されていません。"
 
-#: classes.py:556
+#: classes.py:218
 msgid "Default"
 msgstr "デフォルト"
 
-#: classes.py:569
+#: classes.py:231
 msgid "Modified"
 msgstr "変更済み"
 
-#: classes.py:571
+#: classes.py:233
 msgid "The value of this setting being modified since the last restart."
 msgstr "最後の再起動以降に変更された設定値です。"
 
-#: classes.py:577
+#: classes.py:240
 msgid "Overridden"
 msgstr "上書きされています"
 
-#: classes.py:579
+#: classes.py:242
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr "この設定値は環境変数によって上書きされています。"
@@ -86,7 +82,7 @@ msgstr "\"%s\"は有効な入力ではありません。"
 msgid "Save"
 msgstr "保存"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "設定"
 
@@ -98,7 +94,7 @@ msgstr "編集"
 msgid "Revert"
 msgstr "元に戻す"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "名前空間"
 
@@ -131,6 +127,10 @@ msgstr "更新された設定"
 #: models.py:20
 msgid "Updated settings"
 msgstr "更新された設定"
+
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "設定の名前空間"
 
 #: permissions.py:10
 msgid "Edit settings"
@@ -419,10 +419,10 @@ msgstr ""
 
 #: settings.py:282
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
-msgstr "既定値: 'sessionid'。セッションで使用するクッキーの名前です。他のクッキー名と重複しなければ、任意の名前を設定できます。"
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
+msgstr ""
 
 #: settings.py:290
 msgid ""
@@ -510,7 +510,7 @@ msgid ""
 "effect."
 msgstr "設定が更新されました。変更を反映させるには、インストールを保存して再起動してください。"
 
-#: tests/test_classes.py:190
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "英語"
 

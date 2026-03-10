@@ -355,13 +355,13 @@ msgstr ""
 "&quot;ཚང་མ་མཐུན་སྒྲིག་&quot; "
 "ཞིབ་བཤེར་སྒྲོམ་གྱི་སྔོན་སྒྲིག་གནས་སྟངས་སྒྲིག་བཀོད་བྱེད།"
 
-#: settings.py:65
+#: settings.py:66
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "འཚོལ་ཞིབ་འདྲི་རྩད་ཀྱི་ཆ་ཤས་རེ་ལ་འཚོལ་ཞིབ་གྲུབ་འབྲས་ཆེས་མཐོ་བའི་གྲངས་འབོར།"
 
-#: settings.py:72
+#: settings.py:73
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."

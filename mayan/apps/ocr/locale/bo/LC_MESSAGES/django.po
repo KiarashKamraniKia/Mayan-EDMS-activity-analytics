@@ -168,7 +168,7 @@ msgid "Set new document types to perform OCR automatically by default."
 msgstr ""
 "སྔོན་སྒྲིག་ལྟར་རང་འགུལ་གྱིས་OCRསྒྲུབ་པར་ཡིག་ཆའི་རིགས་གསར་པ་སྒྲིག་དགོས།"
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr "OCRབྱེད་པར་བེད་སྤྱོད་གཏོང་བའི་རྒྱབ་ཕྱོགས་ལ་འགྲོ་ལམ་ཆ་ཚང་།"
 

@@ -145,43 +145,43 @@ msgid "Automatically queue newly created documents for processing."
 msgstr ""
 "རང་འགུལ་གྱིས་གསར་དུ་བཟོས་པའི་ཡིག་ཆ་རྣམས་ལས་སྣོན་བྱེད་པར་བང་སྒྲིག་དགོས།"
 
-#: models.py:48
+#: models.py:49
 msgid "Auto process"
 msgstr "རང་འགུལ་བརྒྱུད་རིམ།"
 
-#: models.py:54
+#: models.py:55
 msgid "Document type settings"
 msgstr "ཡིག་ཆའི་རིགས་སྒྲིག་སྟངས།"
 
-#: models.py:55
+#: models.py:56
 msgid "Document types settings"
 msgstr "ཡིག་ཆའི་རིགས་སྒྲིག་སྟངས།"
 
-#: models.py:70
+#: models.py:71
 msgid "Normalized name of the file metadata entry."
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཐོ་འགོད་ཀྱི་སྤྱིར་བཏང་མིང་།"
 
-#: models.py:75
+#: models.py:76
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr "སྒུལ་གཏོང་གིས་མཁོ་སྤྲོད་བྱས་པའི་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཐོ་འགོད་ཀྱི་མིང་།"
 
-#: models.py:77
+#: models.py:78
 msgid "Key"
 msgstr "ལྡེ་མིག"
 
-#: models.py:80
+#: models.py:81
 msgid "Value of the file metadata entry."
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཐོ་འགོད་ཀྱི་རིན་ཐང་།"
 
-#: models.py:81
+#: models.py:82
 msgid "Value"
 msgstr "རིན་ཐང"
 
-#: models.py:87
+#: models.py:88
 msgid "File metadata entry"
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ནང་འཛུལ།"
 
-#: models.py:88
+#: models.py:89
 msgid "File metadata entries"
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཐོ་འགོད།"
 

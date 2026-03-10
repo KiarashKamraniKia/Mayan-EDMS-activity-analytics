@@ -235,7 +235,11 @@ msgstr ""
 "Caminho completo para o backend a ser usado para manipular chaves e "
 "assinaturas."
 
-#: settings.py:27
+#: settings.py:26
+msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
+msgstr ""
+
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "Servidor de chaves utilizado para procurar chaves."
 

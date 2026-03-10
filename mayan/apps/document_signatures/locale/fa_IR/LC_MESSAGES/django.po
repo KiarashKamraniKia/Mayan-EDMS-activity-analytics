@@ -34,7 +34,7 @@ msgstr "تاریخ و زمان"
 msgid "Key ID"
 msgstr "شناسه کلیدی"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "هیچ یک"
 
@@ -80,47 +80,47 @@ msgstr "عبارت عبور"
 msgid "Private key that will be used to sign this document file."
 msgstr ""
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "امضا جاسازی شده است؟"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "تاریخ امضاء"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "شناسه کلید امضا"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "امضای کلیدی در حال حاضر"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "اثر انگشت اصلی"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "تاریخ ایجاد کلید"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "تاریخ انقضاء کلیدی"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "طول کلید"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "الگوریتم کلیدی"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "شناسه کلیدی"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "نوع کلید"
 
@@ -293,7 +293,7 @@ msgid "Path to the Storage subclass to use when storing detached signatures."
 msgstr ""
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
 msgstr ""
 
 #: storages.py:13

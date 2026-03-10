@@ -170,7 +170,7 @@ msgstr ""
 "Varsayılan olarak, OCR işlemini otomatik olarak gerçekleştirmek için yeni "
 "belge türlerini ayarlayın."
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr "OCR yapmak için kullanılacak arka uç için tam yol."
 

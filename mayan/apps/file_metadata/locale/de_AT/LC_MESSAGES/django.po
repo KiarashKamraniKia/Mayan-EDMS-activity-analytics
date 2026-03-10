@@ -148,43 +148,43 @@ msgstr "Dokumententyp"
 msgid "Automatically queue newly created documents for processing."
 msgstr "Neu erstellte Dokumente automatisch in die Warteschlange einreihen."
 
-#: models.py:48
+#: models.py:49
 msgid "Auto process"
 msgstr "Automatisch verarbeiten"
 
-#: models.py:54
+#: models.py:55
 msgid "Document type settings"
 msgstr "Einstellungen für Dokumententyp"
 
-#: models.py:55
+#: models.py:56
 msgid "Document types settings"
 msgstr "Einstellungen für Dokumententypen"
 
-#: models.py:70
+#: models.py:71
 msgid "Normalized name of the file metadata entry."
 msgstr "Normalisierter Name des Dateimetadateneintrags."
 
-#: models.py:75
+#: models.py:76
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr "Name des Dateimetadateneintrags wie vom Treiber geliefert."
 
-#: models.py:77
+#: models.py:78
 msgid "Key"
 msgstr "Schlüssel"
 
-#: models.py:80
+#: models.py:81
 msgid "Value of the file metadata entry."
 msgstr "Wert des Dateimetadateneintrags."
 
-#: models.py:81
+#: models.py:82
 msgid "Value"
 msgstr "Wert"
 
-#: models.py:87
+#: models.py:88
 msgid "File metadata entry"
 msgstr "Dateimetadateneintrag"
 
-#: models.py:88
+#: models.py:89
 msgid "File metadata entries"
 msgstr "Dateimetadateneinträge"
 

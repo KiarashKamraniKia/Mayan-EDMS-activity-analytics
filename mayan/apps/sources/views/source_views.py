@@ -320,8 +320,8 @@ class SourceTestView(ExternalObjectViewMixin, ConfirmView):
         return {
             'object': self.external_object,
             'subtitle': _(
-                message='This will execute the source code even if the source '
-                'is not enabled. Sources that delete content after '
+                message='This will execute the source code even if the '
+                'source is not enabled. Sources that delete content after '
                 'downloading will not do so while being tested. Check the '
                 'source\'s error log for information during testing. A '
                 'successful test will clear the error log.'
@@ -342,7 +342,7 @@ class SourceTestView(ExternalObjectViewMixin, ConfirmView):
 
         messages.success(
             message=_(
-                message='Source test queued. Check for newly created documents '
-                'or for error log entries.'
+                message='Source test queued. Check for newly created '
+                'documents or for error log entries.'
             ), request=self.request
         )

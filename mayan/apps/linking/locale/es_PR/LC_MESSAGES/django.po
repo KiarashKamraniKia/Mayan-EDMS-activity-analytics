@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Translators:
-# Roberto Rosario, 2024
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
@@ -190,7 +190,7 @@ msgstr "La inclusión es ignorada para el primer artículo."
 
 #: models.py:95
 msgid "Inclusion"
-msgstr ""
+msgstr "Inclusión"
 
 #: models.py:99
 msgid "Inclusion"
@@ -206,7 +206,7 @@ msgstr "Attributo del documento foráneo"
 
 #: models.py:110
 msgid "Operator"
-msgstr ""
+msgstr "Operador"
 
 #: models.py:114
 msgid ""

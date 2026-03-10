@@ -359,14 +359,14 @@ msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr ""
 "Beállítja az „Összes egyezés” jelölőnégyzet alapértelmezett állapotát."
 
-#: settings.py:65
+#: settings.py:66
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "A lekérhető és megjeleníthető keresési eredmények maximális száma keresési "
 "lekérdezési egységenként."
 
-#: settings.py:72
+#: settings.py:73
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."

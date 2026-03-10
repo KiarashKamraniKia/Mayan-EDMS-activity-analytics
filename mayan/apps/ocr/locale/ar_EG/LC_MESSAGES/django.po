@@ -169,7 +169,7 @@ msgstr "نسخة نص الوثيقة"
 msgid "Set new document types to perform OCR automatically by default."
 msgstr "التحويل التلقائي الى النص بعد إنشاء وثائق جديدة"
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr ""
 "المسار الكامل للواجهة الخلفية لاستخدامه للقيام بالتعرف الضوئي على الحروف."

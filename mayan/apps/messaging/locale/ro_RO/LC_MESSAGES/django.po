@@ -255,32 +255,32 @@ msgstr "Toate mesajele au fost marcate ca fiind citite."
 msgid "Error marking message \"%(instance)s\" as unread; %(exception)s"
 msgstr "Eroare la marcarea mesajului „%(instance)s” ca necitit; %(exception)s"
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)d mesaje marcate ca necitite cu succes."
 
-#: views.py:213
+#: views.py:214
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "Mesajul „%(object)s” a fost marcat ca necitit."
 
-#: views.py:216
+#: views.py:217
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "%(count)d mesaj marcat ca necitit cu succes."
 
-#: views.py:218
+#: views.py:219
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "Marcați %(count)d mesaje selectate ca necitite."
 
-#: views.py:219
+#: views.py:220
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "Marcați mesajul „%(object)s” ca necitit."
 
-#: views.py:220
+#: views.py:221
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "Marcați %(count)d mesaj selectat ca necitit."

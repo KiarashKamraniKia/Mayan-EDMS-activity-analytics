@@ -169,7 +169,7 @@ msgstr ""
 "Встановити нові типи документів для автоматичного виконання OCR за "
 "замовчуванням."
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr "Повний шлях до серверної частини, яка буде використовуватися для OCR."
 

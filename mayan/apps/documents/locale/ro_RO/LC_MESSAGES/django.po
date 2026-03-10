@@ -7,7 +7,7 @@
 # Roberto Rosario, 2024
 # Stefaniu Criste <gupi@hangar.ro>, 2024
 # Badea Gabriel <gcbadea@gmail.com>, 2024
-# Harald Ersch, 2025
+# Harald Ersch, 2026
 # 
 msgid ""
 msgstr ""
@@ -1227,7 +1227,7 @@ msgstr "Suma de control a fișierului documentului"
 
 #: search.py:45
 msgid "Document file filename"
-msgstr ""
+msgstr "Numele fișierului documentului"
 
 #: search.py:48
 msgid "Document file MIME type"
@@ -1380,13 +1380,10 @@ msgstr "Adresa URL de restaurare"
 
 #: settings.py:49
 msgid ""
-"The threshold at which the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"will start deleting the oldest document file page image cache files. Specify"
-" the size in bytes."
+"Width in pixels of the document page image used for interactive display. "
+"Larger values improve quality but increase processing time and cache "
+"storage."
 msgstr ""
-"Pragul la care DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND va începe să "
-"șteargă cele mai vechi fișiere cache a imaginii din paginile fișierului de "
-"document. Specificați dimensiunea în octeți."
 
 #: settings.py:57
 msgid "Path to the Storage subclass to use when storing document files."
@@ -1400,17 +1397,17 @@ msgstr "Argumente de transmis la DOCUMENT_FILE_STORAGE_BACKEND."
 
 #: settings.py:70
 msgid ""
-"Path to the Storage subclass to use when storing the cached document file "
-"page image files."
+"Maximum size in bytes of the "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached page "
+"images."
 msgstr ""
-"Calea către subclasa Storage de utilizat atunci când stocați fișierele de "
-"imagine din pagina fișierului documentului din cache."
 
 #: settings.py:78
 msgid ""
-"Arguments to pass to the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store the cached document file "
+"page images."
 msgstr ""
-"Argumente de transmis la DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
 
 #: settings.py:84
 msgid "Maximum number of favorite documents to remember per user."
@@ -1419,13 +1416,10 @@ msgstr ""
 
 #: settings.py:90
 msgid ""
-"Size of blocks to use when calculating the document file's checksum. A value"
-" of 0 disables the block calculation and the entire file will be loaded into"
-" memory."
+"Block size in bytes used when calculating a document file checksum. Use 0 to"
+" disable block reads and hash the entire file in a single pass (loads the "
+"file into memory)."
 msgstr ""
-"Dimensiunea blocurilor de utilizat la calcularea sumelor de control ale "
-"fișierului documentului. O valoare de 0 dezactivează calculul blocului și "
-"întregul fișier va fi încărcat în memorie."
 
 #: settings.py:97
 msgid "Default documents language (in ISO639-3 format)."
@@ -1441,31 +1435,26 @@ msgid ""
 " will start deleting the oldest document version page image cache versions. "
 "Specify the size in bytes."
 msgstr ""
-"Pragul la care DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND va începe "
-"să șteargă cele mai vechi versiuni de cache a imaginilor din pagina de "
-"versiune a documentului. Specificați dimensiunea în octeți."
 
 #: settings.py:116
 msgid ""
-"Path to the Storage subclass to use when storing the cached document version"
-" page image versions."
+"Maximum size in bytes of the "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached version "
+"page images."
 msgstr ""
-"Calea către subclasa Storage de utilizat atunci când stocați versiunile de "
-"imagini ale paginii versiunii documentului stocate în cache."
 
 #: settings.py:124
 msgid ""
-"Arguments to pass to the DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store cached document version "
+"page images."
 msgstr ""
-"Argumente de transmis la DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
 
 #: settings.py:146
 msgid ""
-"Maximum number of recently accessed documents (created, edited, viewed) to "
-"remember per user."
+"Keyword arguments to pass to "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"Numărul maxim de documente accesate recent (create, editate, vizualizate) de"
-" reținut pentru fiecare utilizator."
 
 #: settings.py:153
 msgid "Maximum number of recently created documents to show."
@@ -1474,8 +1463,6 @@ msgstr "Numărul maxim de documente create recent pentru a fi afișate."
 #: settings.py:159
 msgid "Amount in degrees to rotate a document page per user interaction."
 msgstr ""
-"Ce rotaţie pentru pagină (în grade) este folosită în interacțiunea cu "
-"utilizatorul."
 
 #: settings.py:165
 msgid "Height in pixels of the document thumbnail image."
@@ -1486,22 +1473,16 @@ msgid ""
 "Maximum amount in percent (%) to allow user to zoom in a document page "
 "interactively."
 msgstr ""
-"Suma maximă în procente (%), permisă utilizatorilor pentru mărirea "
-"interactiv a unei pagini ."
 
 #: settings.py:191
 msgid ""
-"Minimum amount in percent (%) to allow user to zoom out a document page "
-"interactively."
+"Width in pixels of the document thumbnail image when shown in list view "
+"mode."
 msgstr ""
-"Suma minimă în procente (%), permisă utilizatorului pentru micșorarea "
-"interactivă a unei pagini ."
 
 #: settings.py:198
 msgid "Amount in percent zoom in or out a document page per user interaction."
 msgstr ""
-"Suma în procente folosită pentru a mării sau micşora un document interactiv "
-"cu utilizatorul."
 
 #: statistics.py:291
 msgid "New documents per month"
@@ -2047,7 +2028,7 @@ msgstr ""
 "Versiunile sunt vizualizări care pot afișa paginile fișierelor de document "
 "așa cum sunt, le pot remapa sau le pot îmbina în diferite aspecte."
 
-#: views/document_version_views.py:203
+#: views/document_version_views.py:204
 msgid "No versions available"
 msgstr "Nu există versiuni disponibile"
 

@@ -4,7 +4,6 @@
 # 
 # Translators:
 # Translators:
-# Jiří Podhorecký <jirka.p@volny.cz>, 2024
 # Filip Kuthan <filipkuthan@gmail.com>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
 # Jiri Fait <fait@orkasolutions.cz>, 2024
@@ -158,6 +157,9 @@ msgid ""
 "convey information about your organization, announcements or usage "
 "guidelines for your users."
 msgstr ""
+"Oznámení se zobrazují v přihlašovacím zobrazení. Oznámení můžete použít k "
+"sdělení informací o vaší organizaci, oznámení nebo pokynů k používání pro "
+"vaše uživatele."
 
 #: views.py:120
 msgid "No announcements available"

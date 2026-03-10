@@ -121,8 +121,8 @@ class MessageListView(SingleObjectListView):
                 context=RequestContext(request=self.request)
             ),
             'no_results_text': _(
-                message='Here you will find text messages from other users or from '
-                'the system.'
+                message='Here you will find text messages from other users '
+                'or from the system.'
             ),
             'no_results_title': _(message='There are no messages'),
             'title': _(message='Messages')
@@ -201,7 +201,8 @@ class MessageMarkReadAllView(ConfirmView):
 
 class MessageMarkUnReadView(MultipleObjectConfirmActionView):
     error_message = _(
-        message='Error marking message "%(instance)s" as unread; %(exception)s'
+        message='Error marking message "%(instance)s" as unread; '
+        '%(exception)s'
     )
     object_permission = permission_message_edit
     pk_url_kwarg = 'message_id'

@@ -1333,12 +1333,10 @@ msgstr "復元 URL"
 
 #: settings.py:49
 msgid ""
-"The threshold at which the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"will start deleting the oldest document file page image cache files. Specify"
-" the size in bytes."
+"Width in pixels of the document page image used for interactive display. "
+"Larger values improve quality but increase processing time and cache "
+"storage."
 msgstr ""
-"DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"が最も古い文書ファイルページ画像キャッシュを削除し始めるしきい値（バイト単位で指定）"
 
 #: settings.py:57
 msgid "Path to the Storage subclass to use when storing document files."
@@ -1350,14 +1348,17 @@ msgstr "DOCUMENT_FILE_STORAGE_BACKEND に渡す引数"
 
 #: settings.py:70
 msgid ""
-"Path to the Storage subclass to use when storing the cached document file "
-"page image files."
-msgstr "文書ファイルページ画像キャッシュを保存する際に使用する Storage サブクラスのパス"
+"Maximum size in bytes of the "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached page "
+"images."
+msgstr ""
 
 #: settings.py:78
 msgid ""
-"Arguments to pass to the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND に渡す引数"
+"Dotted path to the storage subclass used to store the cached document file "
+"page images."
+msgstr ""
 
 #: settings.py:84
 msgid "Maximum number of favorite documents to remember per user."
@@ -1365,10 +1366,10 @@ msgstr "ユーザーごとに記憶するお気に入り文書の最大数"
 
 #: settings.py:90
 msgid ""
-"Size of blocks to use when calculating the document file's checksum. A value"
-" of 0 disables the block calculation and the entire file will be loaded into"
-" memory."
-msgstr "文書ファイルのチェックサム計算時に使用するブロックサイズ（0 を指定するとブロック計算を無効化し、ファイル全体をメモリに読み込む）"
+"Block size in bytes used when calculating a document file checksum. Use 0 to"
+" disable block reads and hash the entire file in a single pass (loads the "
+"file into memory)."
+msgstr ""
 
 #: settings.py:97
 msgid "Default documents language (in ISO639-3 format)."
@@ -1384,25 +1385,26 @@ msgid ""
 " will start deleting the oldest document version page image cache versions. "
 "Specify the size in bytes."
 msgstr ""
-"DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"が最も古い文書バージョンページ画像キャッシュを削除し始めるしきい値（バイト単位で指定）"
 
 #: settings.py:116
 msgid ""
-"Path to the Storage subclass to use when storing the cached document version"
-" page image versions."
-msgstr "文書バージョンページ画像キャッシュを保存する際に使用する Storage サブクラスのパス"
+"Maximum size in bytes of the "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached version "
+"page images."
+msgstr ""
 
 #: settings.py:124
 msgid ""
-"Arguments to pass to the DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND に渡す引数"
+"Dotted path to the storage subclass used to store cached document version "
+"page images."
+msgstr ""
 
 #: settings.py:146
 msgid ""
-"Maximum number of recently accessed documents (created, edited, viewed) to "
-"remember per user."
-msgstr "ユーザーごとに記憶する最近アクセスした文書（作成・編集・閲覧）の最大数"
+"Keyword arguments to pass to "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
 #: settings.py:153
 msgid "Maximum number of recently created documents to show."
@@ -1424,9 +1426,9 @@ msgstr "ユーザーが文書ページをズームインできる最大倍率（
 
 #: settings.py:191
 msgid ""
-"Minimum amount in percent (%) to allow user to zoom out a document page "
-"interactively."
-msgstr "ユーザーが文書ページをズームアウトできる最小倍率（％）"
+"Width in pixels of the document thumbnail image when shown in list view "
+"mode."
+msgstr ""
 
 #: settings.py:198
 msgid "Amount in percent zoom in or out a document page per user interaction."
@@ -1908,7 +1910,7 @@ msgid ""
 "or merge them into different layouts."
 msgstr "バージョンは、ドキュメントファイルのページをそのまま表示したり、再マッピングや統合して別のレイアウトとして表示できるビューです。"
 
-#: views/document_version_views.py:203
+#: views/document_version_views.py:204
 msgid "No versions available"
 msgstr "利用可能なバージョンはありません"
 

@@ -7,7 +7,7 @@ from django.contrib.auth import authenticate
 from django.test import override_settings
 from django.urls import reverse
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 from mayan.apps.testing.tests.base import GenericViewTestCase
 
 from ..classes import AuthenticationBackend

@@ -43,8 +43,8 @@ class WorkflowState(
     initial = models.BooleanField(
         default=False,
         help_text=_(
-            message='The state at which the workflow will start in. Only one state '
-            'can be the initial state.'
+            message='The state at which the workflow will start in. Only one '
+            'state can be the initial state.'
         ), verbose_name=_(message='Initial')
     )
     completion = models.IntegerField(

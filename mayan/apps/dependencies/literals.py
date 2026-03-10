@@ -4,6 +4,8 @@ COMMAND_NAME_DEPENDENCIES_CHECK_VERSION = 'dependencies_check_version'
 COMMAND_NAME_DEPENDENCIES_INSTALL = 'dependencies_install'
 COMMAND_NAME_DEPENDENCIES_SHOW_VERSION = 'dependencies_show_version'
 
+DEFAULT_HTTP_TIMEOUT = (10, 30)
+
 MAYAN_PYPI_NAME = 'mayan-edms'
 
 MESSAGE_GREATER_THAN_SERVER = _(
@@ -24,4 +26,4 @@ MESSAGE_UNEXPECTED_ERROR = _(
 )
 MESSAGE_UP_TO_DATE = 'Your version (%(version_local)s), is up-to-date.'
 
-PYPI_URL = 'https://pypi.org'
+PYPI_URL = 'pypi.org'

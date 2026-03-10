@@ -172,7 +172,7 @@ msgstr ""
 "Az új dokumentumtípusok beállítása úgy, hogy alapértelmezés szerint "
 "automatikusan végrehajtódjon az OCR."
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr ""
 

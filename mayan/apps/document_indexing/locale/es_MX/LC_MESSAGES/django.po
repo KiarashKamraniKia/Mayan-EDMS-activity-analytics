@@ -86,7 +86,7 @@ msgstr "Habilitado"
 msgid "Index templates to be queued for rebuilding."
 msgstr "Las plantillas de índice se pondrán en cola para su reconstrucción."
 
-#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "Plantillas de índice"
@@ -151,7 +151,7 @@ msgstr "No"
 msgid "Yes"
 msgstr "Si"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
@@ -160,23 +160,23 @@ msgstr ""
 "Error indexando documento: %(document)s; expresión: %(expression)s; "
 "%(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr "Número total de nodos con valores únicos que contiene este elemento."
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "Número total de documentos únicos que contiene este elemento."
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "Número total de niveles de nodo que contiene este elemento."
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "La ruta al nodo del índice, incluidos todos los que lo contienen."
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "Ruta completa"
 
@@ -226,11 +226,11 @@ msgstr ""
 "Este valor será utilizado por otras aplicaciones para hacer referencia a "
 "este índice."
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "Identificador"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr ""
@@ -606,12 +606,12 @@ msgstr "Crear nodo hijo de: %s"
 msgid "Delete the index template node: %s?"
 msgstr "¿Borrar el nodo de plantilla de indice: %s?"
 
-#: views/index_template_views.py:365
+#: views/index_template_views.py:367
 #, python-format
 msgid "Edit the index template node: %s"
 msgstr "¿Editar el nodo de plantilla de indice: %s?"
 
-#: views/index_template_views.py:386
+#: views/index_template_views.py:388
 #, python-format
 msgid "Rebuild index template: %s"
 msgstr "Reconstruir plantilla de índice: %s"

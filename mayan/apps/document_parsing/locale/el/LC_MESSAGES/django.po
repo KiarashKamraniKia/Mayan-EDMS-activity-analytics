@@ -158,7 +158,7 @@ msgstr ""
 "Ορισμός νέων τύπων εγγράφου για τους οποίους θα εκτελείτε αυτόματα ανάλυση "
 "εξ'ορισμού."
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."

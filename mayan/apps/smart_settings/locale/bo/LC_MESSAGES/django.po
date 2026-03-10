@@ -20,56 +20,52 @@ msgstr ""
 "Language: bo\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: apps.py:27 permissions.py:6
+#: apps.py:29 permissions.py:6
 msgid "Smart settings"
 msgstr "སྒྲིག་སྟངས་རིག་པ།"
 
-#: apps.py:37
+#: apps.py:39
 msgid "Setting count"
 msgstr "གྲངས་ཀ་སྒྲིག་པ།"
 
-#: apps.py:43
+#: apps.py:45
 msgid "Name"
 msgstr "མིང"
 
-#: apps.py:47 forms.py:30
+#: apps.py:49 forms.py:30
 msgid "Value"
 msgstr "རིན་ཐང"
 
-#: classes.py:318
-msgid "Settings namespace"
-msgstr "སྒྲིག་སྟངས་མིང་བར་སྟོང་།"
-
-#: classes.py:496
+#: classes.py:158
 msgid "Choices"
 msgstr "གདམ་ག།"
 
-#: classes.py:498
+#: classes.py:160
 msgid "Possible values allowed for this setting."
 msgstr "སྒྲིག་སྟངས་འདིའི་ཆེད་དུ་འབྱུང་འགྱུར་གྱི་རིན་ཐང་ཆོག་མཆན་སྤྲད་ཡོད།"
 
-#: classes.py:519
+#: classes.py:181
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr "སྒྲིག་སྟངས་ཕྱིར་ལོག་བྱེད་མི་ཐུབ། སྒྲིག་སྟངས་རིན་ཐང་གསར་བཅོས་བྱས་མེད།"
 
-#: classes.py:556
+#: classes.py:218
 msgid "Default"
 msgstr "སྔོན་གཤིས།"
 
-#: classes.py:569
+#: classes.py:231
 msgid "Modified"
 msgstr "བཟོ་བཅོས།"
 
-#: classes.py:571
+#: classes.py:233
 msgid "The value of this setting being modified since the last restart."
 msgstr ""
 "མཐའ་མའི་བསྐྱར་འགོ་ཚུགས་རྗེས་སྒྲིག་སྟངས་འདིའི་རིན་ཐང་བསྒྱུར་བཅོས་བྱེད་བཞིན་ཡོད།"
 
-#: classes.py:577
+#: classes.py:240
 msgid "Overridden"
 msgstr "བཀག་འགོག་བྱས་པ།"
 
-#: classes.py:579
+#: classes.py:242
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr "སྒྲིག་སྟངས་ཀྱི་རིན་ཐང་དེ་ཁོར་ཡུག་འགྱུར་ལྡོག་གིས་བསྒྱུར་བཞིན་ཡོད།"
@@ -87,7 +83,7 @@ msgstr "&quot; %s &quot; ནུས་ལྡན་གྱི་ཐོ་འགོ�
 msgid "Save"
 msgstr "སྐྱོབ་པ"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "སྒྲིག་སྟངས།"
 
@@ -99,7 +95,7 @@ msgstr "བཅོས་པ།"
 msgid "Revert"
 msgstr "ཕྱིར་ལོག་པ།"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "མིང་གི་བར་སྟོང་།"
 
@@ -135,6 +131,10 @@ msgstr "སྒྲིག་གཞི་གསར་བཅོས་བྱས།"
 #: models.py:20
 msgid "Updated settings"
 msgstr "སྒྲིག་སྟངས་གསར་བཅོས་བྱས།"
+
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "སྒྲིག་སྟངས་མིང་བར་སྟོང་།"
 
 #: permissions.py:10
 msgid "Edit settings"
@@ -490,13 +490,10 @@ msgstr ""
 
 #: settings.py:282
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"སྔོན་སྒྲིག: &#39;sessionid&#39;. "
-"འདི་ཁྱེད་རང་ལ་དགོས་པ་གང་འདྲ་ཞིག་ཡིན་ནའང་འགྲིག "
-"(ཁྱེད་རང་གི་མཉེན་ཆས་ནང་ཡོད་པའི་ཀུ་ཀི་མིང་གཞན་དང་མི་འདྲ་བ་ཡིན་ན།)"
 
 #: settings.py:290
 msgid ""
@@ -600,7 +597,7 @@ msgstr ""
 "སྒྲིག་སྟངས་གསར་བརྗེ་བྱས། "
 "བསྒྱུར་བཅོས་ལ་ནུས་པ་ཐོན་པའི་ཆེད་དུ་སྒྲིག་འཇུག་ཉར་ཚགས་དང་བསྐྱར་དུ་འགོ་བཙུགས།"
 
-#: tests/test_classes.py:190
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "དབྱིན་ཡིག"
 

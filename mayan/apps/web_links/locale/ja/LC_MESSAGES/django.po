@@ -117,7 +117,7 @@ msgstr "Webリンクに追加する文書タイプの主キー"
 msgid "Document type ID"
 msgstr "文書タイプ ID"
 
-#: serializers.py:25
+#: serializers.py:26
 msgid "Primary key of the document type to remove from the web link."
 msgstr "Webリンクから削除する文書タイプの主キー"
 

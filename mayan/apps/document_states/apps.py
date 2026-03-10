@@ -239,8 +239,8 @@ class DocumentStatesApp(MayanAppConfig):
             model=Document,
             name='workflow.< workflow internal name >.get_current_state.completion',
             label=_(message='Current state of a workflow'), description=_(
-                message='Return the completion value of the current state of '
-                'the selected workflow.'
+                message='Return the completion value of the current state '
+                'of the selected workflow.'
             )
         )
 
@@ -306,8 +306,8 @@ class DocumentStatesApp(MayanAppConfig):
         )
         ModelProperty(
             description=_(
-                message='Return the current context dictionary which includes '
-                'runtime data from the workflow transition fields.'
+                message='Return the current context dictionary which '
+                'includes runtime data from the workflow transition fields.'
             ), label=_(message='Get the context'), model=WorkflowInstance,
             name='get_runtime_context'
         )

@@ -348,14 +348,14 @@ msgstr "Кількість об’єктів для обробки під час
 msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr "Встановлює стан за замовчуванням прапорця «Відповідати всім»."
 
-#: settings.py:65
+#: settings.py:66
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "Максимальна кількість результатів пошуку для отримання та відображення на "
 "одиницю пошукового запиту."
 
-#: settings.py:72
+#: settings.py:73
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."

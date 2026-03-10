@@ -261,32 +261,32 @@ msgstr "Todas as mensagens marcadas como lidas."
 msgid "Error marking message \"%(instance)s\" as unread; %(exception)s"
 msgstr "Erro ao marcar mensagem \"%(instance)s\" como não lida; %(exception)s"
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)dmensagens marcadas como não lidas com sucesso"
 
-#: views.py:213
+#: views.py:214
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "Mensagem \"%(object)s\" marcada como não lida com sucesso"
 
-#: views.py:216
+#: views.py:217
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "%(count)dmensagem marcada como não lida com sucesso"
 
-#: views.py:218
+#: views.py:219
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "Marcar %(count)dmensagens selecionadas como não lidas."
 
-#: views.py:219
+#: views.py:220
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "Marcar a mensagem \"%(object)s\" como não lida"
 
-#: views.py:220
+#: views.py:221
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "Marcar %(count)dmensagem selecionada como não lida."

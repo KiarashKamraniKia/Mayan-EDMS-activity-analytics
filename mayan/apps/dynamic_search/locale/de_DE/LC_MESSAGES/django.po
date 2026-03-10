@@ -360,14 +360,14 @@ msgstr ""
 msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr "Setzt den Vorgabewert für die \"Alle Felder\" Checkbox."
 
-#: settings.py:65
+#: settings.py:66
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "Maximale Anzahl von Suchergebnissen, die pro Suchanfrage geholt und "
 "angezeigt werden sollen."
 
-#: settings.py:72
+#: settings.py:73
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."

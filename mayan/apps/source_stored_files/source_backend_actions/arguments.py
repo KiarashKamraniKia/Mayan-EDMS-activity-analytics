@@ -15,8 +15,8 @@ argument_file_cleanup = SourceBackendActionInterfaceArgument(
 )
 argument_file_identifier = SourceBackendActionInterfaceArgument(
     help_text=_(
-        message='Unique identifier to select which source backend stored file to '
-        'process.'
+        message='Unique identifier to select which source backend stored '
+        'file to process.'
     )
 )
 argument_maximum_layer_order = SourceBackendActionInterfaceArgument(

@@ -174,7 +174,7 @@ msgstr ""
 "Neue Dokumententypen definieren, für die die OCR-Texterkennung automatisch "
 "durchgeführt werden soll."
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr ""
 "Vollständiger Pfad zum Backend, das für die OCR-Schrifterkennung verwendet "

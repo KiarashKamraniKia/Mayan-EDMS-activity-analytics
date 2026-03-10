@@ -86,7 +86,7 @@ msgstr "བེད་སྤྱོད་ཆོག་པ།"
 msgid "Index templates to be queued for rebuilding."
 msgstr "བསྐྱར་བཟོ་ཆེད་དུ་ཟུར་ཐོའི་དཔེ་སྒྲོམ་བང་སྒྲིག་དགོས།"
 
-#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "ཟུར་ཐོའི་དཔེ་སྒྲོམ།"
@@ -151,7 +151,7 @@ msgstr "མིན"
 msgid "Yes"
 msgstr "ཡིན"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
@@ -160,24 +160,24 @@ msgstr ""
 "ཡིག་ཆ་དཀར་ཆག་བཟོ་བའི་ནོར་འཁྲུལ།: %(document)s ; བརྡ་སྟོན།: %(expression)s ; "
 "%(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr ""
 "རྣམ་གྲངས་འདིའི་ནང་དུ་ཐུན་མོང་མ་ཡིན་པའི་རིན་ཐང་ཡོད་པའི་མཐུད་ཁའི་བསྡོམས་འབོར།"
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "རྣམ་གྲངས་འདིའི་ནང་དུ་ཡོད་པའི་ཐུན་མོང་མ་ཡིན་པའི་ཡིག་ཆའི་བསྡོམས་འབོར།"
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "རྣམ་གྲངས་འདིའི་ནང་དུ་ཡོད་པའི་མཐུད་ཁའི་གནས་རིམ་གྱི་བསྡོམས་འབོར།"
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "ཕ་མེས་ཚང་མ་ཚུད་པའི་དཀར་ཆག་ལ་འགྲོ་བའི་ལམ།"
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "ལམ་ཕྱོགས་ཆ་ཚང་།"
 
@@ -226,11 +226,11 @@ msgid "This value will be used by other apps to reference this index."
 msgstr ""
 "རིན་ཐང་འདི་མཉེན་ཆས་གཞན་གྱིས་ཟུར་ཐོ་འདི་ལ་གཞི་གྲངས་བྱེད་པར་བེད་སྤྱོད་གཏོང་གི་རེད།"
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "སྲུལ།"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr ""
@@ -596,12 +596,12 @@ msgstr "ཕྲུ་གུའི་མཐུད་ཁ་གསར་འཛུག
 msgid "Delete the index template node: %s?"
 msgstr "དཀར་ཆག་ཚད་གཞིའི་མཐུད་ཁ་བསུབས་དགོས། %s ?"
 
-#: views/index_template_views.py:365
+#: views/index_template_views.py:367
 #, python-format
 msgid "Edit the index template node: %s"
 msgstr "དཀར་ཆག་དཔེ་སྒྲོམ་གྱི་མཐུད་ཁ་རྩོམ་སྒྲིག་བྱོས། %s"
 
-#: views/index_template_views.py:386
+#: views/index_template_views.py:388
 #, python-format
 msgid "Rebuild index template: %s"
 msgstr "ཟུར་ཐོའི་དཔེ་སྒྲོམ་བསྐྱར་བཟོ %s"

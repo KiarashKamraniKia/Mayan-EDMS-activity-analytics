@@ -36,11 +36,11 @@ msgstr "ནང་ཁུལ་གྱི་མིང་།"
 msgid "Description"
 msgstr "བཀོད་པ།"
 
-#: apps.py:45 classes.py:218
+#: apps.py:45 classes.py:220
 msgid "Type"
 msgstr "རིགས"
 
-#: apps.py:49 classes.py:221
+#: apps.py:49 classes.py:223
 msgid "Other data"
 msgstr "གཞི་གྲངས་གཞན།"
 
@@ -48,7 +48,7 @@ msgstr "གཞི་གྲངས་གཞན།"
 msgid "Declared by"
 msgstr "ཁྱབ་བསྒྲགས་བྱས།"
 
-#: apps.py:57 classes.py:219
+#: apps.py:57 classes.py:221
 msgid "Version"
 msgstr "པར་གཞི"
 
@@ -56,15 +56,15 @@ msgstr "པར་གཞི"
 msgid "Environment"
 msgstr "ཁོར་ཡུག"
 
-#: apps.py:64 classes.py:221
+#: apps.py:64 classes.py:223
 msgid "Check"
 msgstr "ཞིབ་བཤེར"
 
-#: classes.py:218
+#: classes.py:220
 msgid "Name"
 msgstr "མིང"
 
-#: classes.py:219
+#: classes.py:221
 msgid "App"
 msgstr "མཉེན་ཆས།"
 
@@ -72,64 +72,64 @@ msgstr "མཉེན་ཆས།"
 msgid "Environments"
 msgstr "ཁོར་ཡུག།"
 
-#: classes.py:331
+#: classes.py:333
 msgid "Need to specify at least one: app_label or module."
 msgstr "ཉུང་མཐར་ཡང་གཅིག་གསལ་བཀོད་བྱེད་དགོས། app_label ཡང་ན་ཚད་གཞི།"
 
-#: classes.py:336
+#: classes.py:338
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "རྟེན་གཞི་ &quot; %s &quot; ཐོ་འགོད་བྱས་ཟིན།"
 
-#: classes.py:387
+#: classes.py:389
 #, python-format
 msgid "Installing package: %s... "
 msgstr "ཐུམ་སྒྲིལ་སྒྲིག་འཇུག་བྱེད་བཞིན་པ། %s ... "
 
-#: classes.py:394
+#: classes.py:396
 msgid "Already installed."
 msgstr "ད་ལྟ་སྒྲིག་འཇུག་བྱས་ཟིན།"
 
-#: classes.py:399 classes.py:406 classes.py:412
+#: classes.py:401 classes.py:408 classes.py:414
 msgid "Complete."
 msgstr "ཆ་ཚང།"
 
-#: classes.py:439
+#: classes.py:441
 msgid "Installed and correct version"
 msgstr "ཐོན་རིམ་སྒྲིག་འཇུག་དང་ནོར་བཅོས་བྱས།"
 
-#: classes.py:441
+#: classes.py:443
 msgid "Missing or incorrect version"
 msgstr "ཐོན་རིམ་བརླག་པའམ་ནོར་བ།"
 
-#: classes.py:478
+#: classes.py:480
 msgid "None"
 msgstr "གང་ཡང་མེད།"
 
-#: classes.py:487
+#: classes.py:489
 msgid "Not specified"
 msgstr "གཏན་འཁེལ་བྱས་མེད།"
 
-#: classes.py:490
+#: classes.py:492
 msgid "Patching files... "
 msgstr "ཡིག་ཆ་བཅོས་སྒྲིག་བྱེད་པ། "
 
-#: classes.py:518
+#: classes.py:520
 msgid "Executables that are called directly by the code."
 msgstr "ཐད་ཀར་གསང་གྲངས་ཀྱིས་འབོད་པའི་ལག་བསྟར་བྱེད་ཐུབ་པའི་ཡིག་ཆ།"
 
-#: classes.py:520
+#: classes.py:522
 msgid "Binary"
 msgstr "གཉིས་ལྡན་ཅན།"
 
-#: classes.py:537
+#: classes.py:540
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
 msgstr ""
 "ཇ་ཝ་སི་ཁི་རིཔ་ཊི་དཔེ་མཛོད་ཁང་གིས་NPMཐོ་འགོད་ནས་ཕབ་ལེན་བྱས་ནས་མདུན་ཕྱོགས་ཀྱི་བྱེད་ནུས་ཆེད་དུ་བེད་སྤྱོད་བྱེད་ཀྱི་ཡོད།"
 
-#: classes.py:540
+#: classes.py:543
 msgid "JavaScript"
 msgstr "ཇ་བ་སི་ཁི་རིཔཊ།"
 
@@ -137,7 +137,7 @@ msgstr "ཇ་བ་སི་ཁི་རིཔཊ།"
 msgid "Downloading... "
 msgstr "ཕབ་ལེན་བྱེད་བཞིན་པ། "
 
-#: classes.py:577
+#: classes.py:580
 msgid "Verifying... "
 msgstr "བདེན་དཔང་བྱེད་བཞིན་པ། "
 
@@ -264,11 +264,11 @@ msgstr ""
 "མཐའ་མའི་སྤྱོད་མཁན་གྱི་རྒྱུན་ལྡན་གྱི་ཁོར་ཡུག "
 "མཐའ་འཁོར་འདིའི་འོག་ལ་རག་ལུས་མེད་ན་སྤྱིར་བཏང་བེད་སྤྱོད་བྱེད་སྐབས་གནད་དོན་དང་ནོར་འཁྲུལ་འབྱུང་སྲིད།"
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "ཐོན་སྐྱེད"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -277,7 +277,7 @@ msgstr ""
 "མཐའ་མཚམས་ཀྱི་བྱེད་ནུས་བདེན་དཔང་བྱེད་པར་ཚོད་ལྟའི་གྱོན་ཆས་བཀོལ་སྤྱོད་བྱེད་པའི་ཁོར་ཡུག"
 " སྤྱིར་བཏང་གི་ཐོན་སྐྱེད་བེད་སྤྱོད་ལ་ཁོར་ཡུག་འདིའི་ནང་དུ་བརྟེན་དགོས་མིན།"
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "ཚོད་ལྟ་བྱེད་པ།"
 
@@ -301,7 +301,7 @@ msgstr "ཞིབ་ཆ"
 msgid "Dependencies licenses"
 msgstr "བརྟེན་སའི་ཆོག་མཆན།"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
@@ -310,7 +310,7 @@ msgstr ""
 "ཁྱེད་ཀྱི་ཐོན་རིམ་ ( %(version_local)s ) དེ་དཔེ་སྐྲུན་བྱས་པའི་ཐོན་རིམ་ ( "
 "%(version_server)s ) ལས་གསར་ཤོས་ཡིན།"
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
@@ -319,11 +319,11 @@ msgstr ""
 "ཁྱེད་ཀྱིས་བེད་སྤྱོད་བྱེད་བཞིན་པའི་ཐོན་རིམ་( %(version_local)s "
 ")དེ་དུས་ཚོད་རྙིང་པ་རེད། ཐོན་རིམ་གསར་ཤོས་དེ་ %(version_server)s ཡིན།"
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr "ཐོན་རིམ་གསར་ཤོས་ཡོད་མེད་གཏན་འབེབས་བྱེད་ཐུབ་ཀྱི་མེད།"
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"
@@ -351,6 +351,7 @@ msgstr ""
 "གཞན་ཚང་མ་བཀག་པའི་སྐབས་ཐོ་གཞུང་ནང་སྟོན་པའི་འབྲེལ་ཡོད་ཀྱི་མིང་ཚེག་གིས་དབྱེ་འབྱེད་བྱས།"
 
 #: management/commands/dependencies_install.py:13
+#: management/commands/dependencies_uninstall.py:13
 msgid "Process a specific app."
 msgstr "མཉེན་ཆས་དམིགས་བསལ་ཞིག་ལ་ལས་སྣོན་བྱེད།"
 

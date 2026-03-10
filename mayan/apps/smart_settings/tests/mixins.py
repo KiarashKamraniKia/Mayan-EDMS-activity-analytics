@@ -68,14 +68,9 @@ class SettingNamespaceTestMixin(SettingClusterTestMixin):
 
     def tearDown(self):
         for test_setting_namespace in self._test_setting_namespace_list:
-            try:
-                setting_cluster.do_namespace_remove(
-                    name=test_setting_namespace.name
-                )
-            except KeyError:
-                """
-                Test setting namespace was removed by the test itself.
-                """
+            self._test_setting_namespace_remove(
+                name=test_setting_namespace.name
+            )
 
         super().tearDown()
 
@@ -101,13 +96,25 @@ class SettingNamespaceTestMixin(SettingClusterTestMixin):
             self._test_setting_namespace
         )
 
+    def _test_setting_namespace_remove(self, name=None):
+        if name:
+            namespace = setting_cluster.get_namespace(name=name)
+        else:
+            namespace = self._test_setting_namespace
+
+        setting_cluster.do_namespace_remove(namespace=namespace)
+        index = self._test_setting_namespace_list.index(namespace)
+        self._test_setting_namespace_list.pop(index)
+
 
 class SettingNamespaceViewTestMixin(SettingNamespaceTestMixin):
-    def _request_namespace_detail_view(self):
+    def _request_namespace_detail_view(self, namespace_name=None):
+        kwargs = {
+            'namespace_name': namespace_name or self._test_setting_namespace.name
+        }
+
         return self.get(
-            viewname='settings:setting_namespace_detail', kwargs={
-                'namespace_name': self._test_setting_namespace.name
-            }
+            viewname='settings:setting_namespace_detail', kwargs=kwargs
         )
 
     def _request_namespace_list_view(self):

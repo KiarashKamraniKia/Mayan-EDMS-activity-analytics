@@ -35,7 +35,7 @@ msgstr "Data și ora"
 msgid "Key ID"
 msgstr "ID cheie"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "Nici unul"
 
@@ -84,47 +84,47 @@ msgid "Private key that will be used to sign this document file."
 msgstr ""
 "Cheie privată care va fi utilizată pentru a semna acest fișier document."
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "Semnatura este încorporată?"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "Data semnăturii"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "ID-ul cheii de semnătură"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "Cheia de semnătură prezentă?"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "Amprenta digitală a cheii"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "Data creării cheii"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "Data expirării cheii"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "Lungimea cheii"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "Algoritmul cheii"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "Cod de identificare cheie"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "Tipul cheii"
 
@@ -300,8 +300,8 @@ msgstr ""
 "semnăturilor detașate."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Parametri de transmis la SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

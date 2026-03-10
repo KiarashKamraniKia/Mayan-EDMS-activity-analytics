@@ -171,7 +171,7 @@ msgstr ""
 "Imposta i nuovi tipi documento per eseguire automaticamente l'OCR per "
 "default."
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr "Percorso completo al backend utilizzato per eseguire l'OCR."
 

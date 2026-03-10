@@ -38,8 +38,8 @@ class DocumentFileSourceMetadataList(
             'hide_object': True,
             'no_results_icon': icon_document_file_source_metadata_list,
             'no_results_text': _(
-                message='This means that the sources system did not record any '
-                'information about the creation of the document file.'
+                message='This means that the sources system did not record '
+                'any information about the creation of the document file.'
             ),
             'no_results_title': _(
                 message='No source metadata available for this document file.'

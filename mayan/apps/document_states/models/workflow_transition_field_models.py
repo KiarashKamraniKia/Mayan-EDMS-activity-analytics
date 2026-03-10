@@ -68,8 +68,8 @@ class WorkflowTransitionField(
     )
     widget = models.PositiveIntegerField(
         blank=True, choices=WIDGET_CLASS_CHOICES, help_text=_(
-            message='An optional class to change the default presentation of '
-            'the field.'
+            message='An optional class to change the default presentation '
+            'of the field.'
         ), null=True, verbose_name=_(message='Widget class')
     )
     widget_kwargs = models.TextField(

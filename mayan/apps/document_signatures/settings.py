@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_SIGNATURES_STORAGE_BACKEND,
@@ -24,6 +24,6 @@ setting_storage_backend = setting_namespace.do_setting_add(
 setting_storage_backend_arguments = setting_namespace.do_setting_add(
     default=DEFAULT_SIGNATURES_STORAGE_BACKEND_ARGUMENTS,
     global_name='SIGNATURES_STORAGE_BACKEND_ARGUMENTS', help_text=_(
-        message='Arguments to pass to the SIGNATURE_STORAGE_BACKEND.'
+        message='Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`.'
     )
 )

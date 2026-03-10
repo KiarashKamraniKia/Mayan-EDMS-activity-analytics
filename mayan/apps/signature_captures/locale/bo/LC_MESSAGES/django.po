@@ -185,26 +185,23 @@ msgstr "URL །"
 #: settings.py:21
 msgid ""
 "The threshold at which the "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND will start "
+"`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND` will start "
 "deleting the oldest signature capture cache files. Specify the size in "
 "bytes."
 msgstr ""
-"མིང་རྟགས་འཛིན་པའི་མཛོད་ཡིག་ཆ་རྙིང་ཤོས་དེ་བསུབས་འགོ་ཚུགས་པའི་ཚད་གཞི། "
-"ཚད་དེ་བཱའིཊི་ནང་གསལ་བཀོད་འབད།"
 
-#: settings.py:30
+#: settings.py:31
 msgid ""
 "Path to the Storage subclass to use when storing the cached signature "
 "capture files."
 msgstr ""
 "འདྲ་མཛོད་ཀྱི་མིང་རྟགས་འཛིན་བཟུང་ཡིག་ཆ་གསོག་འཇོག་བྱེད་སྐབས་བེད་སྤྱོད་གཏོང་བའི་གསོག་འཇོག་སྡེ་ཚན་ཆུང་བ་ལ་འགྲོ་ལམ།"
 
-#: settings.py:38
+#: settings.py:39
 msgid ""
 "Arguments to pass to the "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND."
+"`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"མཚན་རྟགས་_འཛིན་བཟུང་_མཚན་རྟགས་_འཛིན་བཟུང་_མཛོད་_དོས་ཁང་_རྒྱབ་ལྗོངས་ལ་སྤྲོད་པའི་སྒྲུབ་བྱེད།"
 
 #: storages.py:14
 msgid ""

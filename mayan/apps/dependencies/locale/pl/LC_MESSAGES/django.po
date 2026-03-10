@@ -41,11 +41,11 @@ msgstr "Nazwa wewnętrzna"
 msgid "Description"
 msgstr "Opis"
 
-#: apps.py:45 classes.py:218
+#: apps.py:45 classes.py:220
 msgid "Type"
 msgstr "Typ"
 
-#: apps.py:49 classes.py:221
+#: apps.py:49 classes.py:223
 msgid "Other data"
 msgstr "Inne dane"
 
@@ -53,7 +53,7 @@ msgstr "Inne dane"
 msgid "Declared by"
 msgstr "Deklarowany przez"
 
-#: apps.py:57 classes.py:219
+#: apps.py:57 classes.py:221
 msgid "Version"
 msgstr "Wersja"
 
@@ -61,15 +61,15 @@ msgstr "Wersja"
 msgid "Environment"
 msgstr "Środowisko"
 
-#: apps.py:64 classes.py:221
+#: apps.py:64 classes.py:223
 msgid "Check"
 msgstr "Sprawdź"
 
-#: classes.py:218
+#: classes.py:220
 msgid "Name"
 msgstr "Nazwa"
 
-#: classes.py:219
+#: classes.py:221
 msgid "App"
 msgstr "App"
 
@@ -77,57 +77,57 @@ msgstr "App"
 msgid "Environments"
 msgstr "Środowiska"
 
-#: classes.py:331
+#: classes.py:333
 msgid "Need to specify at least one: app_label or module."
 msgstr "Musisz podać co najmniej jeden: app_label lub module."
 
-#: classes.py:336
+#: classes.py:338
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "Zależność „%s” jest już zarejestrowana."
 
-#: classes.py:387
+#: classes.py:389
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Instalowanie pakietu: %s ..."
 
-#: classes.py:394
+#: classes.py:396
 msgid "Already installed."
 msgstr "Już zainstalowane."
 
-#: classes.py:399 classes.py:406 classes.py:412
+#: classes.py:401 classes.py:408 classes.py:414
 msgid "Complete."
 msgstr "Ukończono."
 
-#: classes.py:439
+#: classes.py:441
 msgid "Installed and correct version"
 msgstr "Zainstalowana i poprawna wersja"
 
-#: classes.py:441
+#: classes.py:443
 msgid "Missing or incorrect version"
 msgstr "Brakująca lub niepoprawna wersja"
 
-#: classes.py:478
+#: classes.py:480
 msgid "None"
 msgstr "Brak"
 
-#: classes.py:487
+#: classes.py:489
 msgid "Not specified"
 msgstr "Nieokreślony"
 
-#: classes.py:490
+#: classes.py:492
 msgid "Patching files... "
 msgstr "Patchowanie plików..."
 
-#: classes.py:518
+#: classes.py:520
 msgid "Executables that are called directly by the code."
 msgstr "Pliki wykonywalne wywoływane bezpośrednio przez kod."
 
-#: classes.py:520
+#: classes.py:522
 msgid "Binary"
 msgstr "Binarny"
 
-#: classes.py:537
+#: classes.py:540
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
@@ -135,7 +135,7 @@ msgstr ""
 "Biblioteki JavaScript pobrane z rejestru NPM i używane do funkcjonalności "
 "front-endu."
 
-#: classes.py:540
+#: classes.py:543
 msgid "JavaScript"
 msgstr "JavaScript"
 
@@ -143,7 +143,7 @@ msgstr "JavaScript"
 msgid "Downloading... "
 msgstr "Pobieranie..."
 
-#: classes.py:577
+#: classes.py:580
 msgid "Verifying... "
 msgstr "Weryfikacja..."
 
@@ -268,11 +268,11 @@ msgstr ""
 "Normalne środowisko dla użytkowników końcowych. Brak zależności w tym "
 "środowisku spowoduje problemy i błędy podczas normalnego użytkowania."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Produkcja"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -282,7 +282,7 @@ msgstr ""
 "funkcjonalności kodu. Zależności w tym środowisku nie są potrzebne do "
 "normalnego użytkowania produkcji."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Testowanie"
 
@@ -306,25 +306,25 @@ msgstr "Szczegóły"
 msgid "Dependencies licenses"
 msgstr "Pozostałe licencje"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
 "(%(version_server)s)."
 msgstr ""
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
 "version is %(version_server)s."
 msgstr ""
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr ""
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"
@@ -351,6 +351,7 @@ msgstr ""
 "wyłączając wszystkie pozostałe."
 
 #: management/commands/dependencies_install.py:13
+#: management/commands/dependencies_uninstall.py:13
 msgid "Process a specific app."
 msgstr "Przetwórz konkretną aplikację."
 

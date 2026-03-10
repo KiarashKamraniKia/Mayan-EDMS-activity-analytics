@@ -4,7 +4,7 @@
 # 
 # Translators:
 # Translators:
-# Roberto Rosario, 2024
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
@@ -907,11 +907,11 @@ msgstr ""
 "Llave principal de la transición de la plantilla de flujo de trabajo que se "
 "agregará."
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "ID de transición de plantilla de flujo de trabajo"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "URL de transición de plantilla de flujo de trabajo"
 
@@ -975,12 +975,10 @@ msgstr ""
 
 #: settings.py:28
 msgid ""
-"The threshold at which the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND will start "
-"deleting the oldest workflow image cache files. Specify the size in bytes."
+"The threshold at which the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will "
+"start deleting the oldest workflow image cache files. Specify the size in "
+"bytes."
 msgstr ""
-"El umbral en el que WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND comenzará a "
-"eliminar los archivos de caché de imagen de flujo de trabajo más antiguos. "
-"Especifique el tamaño en bytes."
 
 #: settings.py:37
 msgid ""
@@ -991,10 +989,10 @@ msgstr ""
 "archivos de imagen de flujo de trabajo en caché."
 
 #: settings.py:45
-msgid "Arguments to pass to the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "Argumentos para pasar a WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."

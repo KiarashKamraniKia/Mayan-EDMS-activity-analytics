@@ -95,7 +95,7 @@ msgstr ""
 "Шлях до модуля (розширення), який використовується для обробки "
 "автентифікації користувача."
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "Аргументи для AUTHENTICATION_BACKEND."
 

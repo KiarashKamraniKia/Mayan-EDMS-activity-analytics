@@ -16,8 +16,8 @@ class Command(management.BaseCommand):
         parser.add_argument(
             '--log', action='store', dest='log_file',
             help=_(
-                message='Path of the database (.dbm) file that will be created/read '
-                'to keep track of items processed.'
+                message='Path of the database (.dbm) file that will be '
+                'created/read to keep track of items processed.'
             ),
             required=True
         )

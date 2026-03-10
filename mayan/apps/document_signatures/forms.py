@@ -19,8 +19,8 @@ class DocumentFileSignatureCreateForm(FilteredSelectionForm):
 
     passphrase = forms.CharField(
         help_text=_(
-            message='The passphrase to unlock the key and allow it to be used to '
-            'sign the document file.'
+            message='The passphrase to unlock the key and allow it to be '
+            'used to sign the document file.'
         ), label=_(message='Passphrase'), required=False,
         widget=forms.widgets.PasswordInput
     )
@@ -30,7 +30,8 @@ class DocumentFileSignatureCreateForm(FilteredSelectionForm):
         field_name = 'key'
         label = _(message='Key')
         help_text = _(
-            message='Private key that will be used to sign this document file.'
+            message='Private key that will be used to sign this document '
+            'file.'
         )
         permission = permission_key_sign
         queryset = Key.objects.private_keys()

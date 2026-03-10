@@ -1,17 +1,17 @@
 from mayan.apps.dependencies.classes import PythonDependency
 
 PythonDependency(
-    module=__name__, name='gevent', version_string='==24.2.1'
+    module=__name__, name='gevent', version_string='==25.9.1'
 )
 PythonDependency(
-    module=__name__, name='greenlet', version_string='==3.0.3'
+    module=__name__, name='greenlet', version_string='==3.3.2'
 )
 PythonDependency(
-    module=__name__, name='gunicorn', version_string='==23.0.0'
+    module=__name__, name='gunicorn', version_string='==25.1.0'
 )
 PythonDependency(
-    module=__name__, name='sentry-sdk', version_string='==2.44.0'
+    module=__name__, name='sentry-sdk', version_string='==2.54.0'
 )
 PythonDependency(
-    module=__name__, name='whitenoise', version_string='==6.11.0'
+    module=__name__, name='whitenoise', version_string='==6.12.0'
 )

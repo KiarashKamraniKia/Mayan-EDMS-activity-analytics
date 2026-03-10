@@ -88,7 +88,7 @@ msgstr "Engedélyezett"
 msgid "Index templates to be queued for rebuilding."
 msgstr "Sorbaállítandó indexsablonok az újraépítéshez."
 
-#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "Indexsablonok"
@@ -153,7 +153,7 @@ msgstr "Nem"
 msgid "Yes"
 msgstr "Igen"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
@@ -162,23 +162,23 @@ msgstr ""
 "Hiba a dokumentum indexelésekor: %(document)s ; kifejezés: %(expression)s ; "
 "%(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr "Az elemben található egyedi értékű csomópontok teljes száma."
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "Az elemben található egyedi dokumentumok teljes száma."
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "Az elemben található csomópontszintek teljes száma."
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "Az index elérési útja, beleértve az összes elődöt."
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "Teljes elérési út"
 
@@ -228,11 +228,11 @@ msgstr ""
 "Más alkalmazások ezt az értéket fogják használni az indexre való "
 "hivatkozáshoz."
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "Hivatkozás"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr ""
@@ -603,12 +603,12 @@ msgstr "Gyermekcsomópont létrehozása: %s"
 msgid "Delete the index template node: %s?"
 msgstr "Az indexsablon csomópontjának törlése: %s ?"
 
-#: views/index_template_views.py:365
+#: views/index_template_views.py:367
 #, python-format
 msgid "Edit the index template node: %s"
 msgstr "Az indexsablon csomópontjának szerkesztése: %s"
 
-#: views/index_template_views.py:386
+#: views/index_template_views.py:388
 #, python-format
 msgid "Rebuild index template: %s"
 msgstr "Indexsablon újraépítése: %s"

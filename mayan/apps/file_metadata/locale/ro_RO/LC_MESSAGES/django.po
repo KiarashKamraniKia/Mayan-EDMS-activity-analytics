@@ -145,44 +145,44 @@ msgstr "Tipul documentului"
 msgid "Automatically queue newly created documents for processing."
 msgstr "Trimitere automată a documentelor nou create la procesare."
 
-#: models.py:48
+#: models.py:49
 msgid "Auto process"
 msgstr "Procesare automată"
 
-#: models.py:54
+#: models.py:55
 msgid "Document type settings"
 msgstr "Setările tipului de document"
 
-#: models.py:55
+#: models.py:56
 msgid "Document types settings"
 msgstr "Setările pentru tipurile de documente"
 
-#: models.py:70
+#: models.py:71
 msgid "Normalized name of the file metadata entry."
 msgstr "Numele normalizat al intrării de metadate ale fișierului."
 
-#: models.py:75
+#: models.py:76
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr ""
 "Numele intrării de metadate ale fișierului, așa cum este furnizat de driver."
 
-#: models.py:77
+#: models.py:78
 msgid "Key"
 msgstr "Cheie"
 
-#: models.py:80
+#: models.py:81
 msgid "Value of the file metadata entry."
 msgstr "Valoarea intrării de metadate a fișierului."
 
-#: models.py:81
+#: models.py:82
 msgid "Value"
 msgstr "Valoare"
 
-#: models.py:87
+#: models.py:88
 msgid "File metadata entry"
 msgstr "Înregistrare metadate fișier"
 
-#: models.py:88
+#: models.py:89
 msgid "File metadata entries"
 msgstr "Înregistrări de metadate în fișier"
 

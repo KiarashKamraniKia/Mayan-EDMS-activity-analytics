@@ -168,7 +168,7 @@ msgstr "Documentversie OCR"
 msgid "Set new document types to perform OCR automatically by default."
 msgstr "Automatische OCR als standaard instellen voor nieuwe documenttypes. "
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr "Volledige pad naar de backend die gebruikt wordt voor OCR."
 

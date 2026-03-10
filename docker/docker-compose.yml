@@ -139,7 +139,7 @@ services:
       POSTGRES_DB: ${MAYAN_KEYCLOAK_DATABASE_NAME:-keycloak}
       POSTGRES_PASSWORD: ${MAYAN_KEYCLOAK_DATABASE_PASSWORD:-keycloakdbpass}
       POSTGRES_USER: ${MAYAN_DATABASE_KEYCLOAK_USER:-keycloak}
-    image: ${MAYAN_DOCKER_KEYCLOAK_POSTGRESQL_IMAGE:-postgres}:${MAYAN_DOCKER_KEYCLOAK_POSTGRESQL_TAG:-13.15-alpine}
+    image: ${MAYAN_DOCKER_KEYCLOAK_POSTGRESQL_IMAGE:-postgres}:${MAYAN_DOCKER_KEYCLOAK_POSTGRESQL_TAG:-13.23}
     networks:
       - keycloak
     profiles:
@@ -254,7 +254,7 @@ services:
       - "256"
       - --requirepass
       - "${MAYAN_REDIS_PASSWORD:-mayanredispassword}"
-    image: ${MAYAN_DOCKER_REDIS_IMAGE:-redis}:${MAYAN_DOCKER_REDIS_TAG:-7.0.15-alpine}
+    image: ${MAYAN_DOCKER_REDIS_IMAGE:-redis}:${MAYAN_DOCKER_REDIS_TAG:-7.0.15}
     networks:
       - mayan
     profiles:

@@ -120,7 +120,7 @@ msgstr "要添加到Web链接的文档类型主键。"
 msgid "Document type ID"
 msgstr ""
 
-#: serializers.py:25
+#: serializers.py:26
 msgid "Primary key of the document type to remove from the web link."
 msgstr "要从Web链接中删除的文档类型主键。"
 

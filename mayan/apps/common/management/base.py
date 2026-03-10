@@ -10,7 +10,7 @@ from mayan.apps.appearance.literals import (
 from mayan.apps.autoadmin.literals import COMMAND_NAME_AUTOADMIN_CREATE
 from mayan.apps.dependencies.literals import COMMAND_NAME_DEPENDENCIES_INSTALL
 from mayan.apps.smart_settings.literals import COMMAND_NAME_SETTINGS_SAVE
-from mayan.settings.literals import (
+from mayan.literals import (
     DEFAULT_SECRET_KEY, DEFAULT_USER_SETTINGS_FOLDER, SECRET_KEY_FILENAME,
     SYSTEM_DIR
 )

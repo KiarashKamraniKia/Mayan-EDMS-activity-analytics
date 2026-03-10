@@ -59,8 +59,8 @@ class SearchBackendReindexView(ConfirmView):
     def get_extra_context(self):
         context = {
             'subtitle': _(
-                message='This tool erases and populates the search backend\'s '
-                'internal index.'
+                message='This tool erases and populates the search '
+                'backend\'s internal index.'
             ),
             'title': _(message='Reindex search backend')
         }

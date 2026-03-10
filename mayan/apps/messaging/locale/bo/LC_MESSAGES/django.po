@@ -258,34 +258,34 @@ msgstr ""
 "བརྡ་འཕྲིན་ &quot; %(instance)s &quot; མ་བཀླགས་པར་རྟགས་བཀོད་པའི་ནོར་འཁྲུལ། "
 "%(exception)s"
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)d བརྡ་འཕྲིན་དེ་དག་མཐར་ཕྱིན་ངང་མ་བཀླགས་པར་རྟགས་བཀོད་ཡོད།"
 
-#: views.py:213
+#: views.py:214
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr ""
 "བརྡ་འཕྲིན་ &quot; %(object)s &quot; "
 "མཐར་ཕྱིན་པར་ཀློག་མ་ཐུབ་པའི་རྟགས་བཀོད་ཡོད།"
 
-#: views.py:216
+#: views.py:217
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "%(count)d མཐར་ཕྱིན་ངང་མ་བཀླགས་པར་རྟགས་བཀོད་ཡོད།"
 
-#: views.py:218
+#: views.py:219
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "འདེམས་སྒྲུག་བྱས་པའི་བརྡ་འཕྲིན་དེ་ཚོ་མ་བཀླགས་པར་རྟགས་བཀོད %(count)d"
 
-#: views.py:219
+#: views.py:220
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "བརྡ་འཕྲིན་ &quot; %(object)s &quot; དེ་མ་བཀླགས་པར་རྟགས་བཀོད།"
 
-#: views.py:220
+#: views.py:221
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "འདེམས་སྒྲུག་བྱས་པའི་བརྡ་འཕྲིན་དེ་ཀློག་མ་ཐུབ་པར་རྟགས་བཀོད %(count)d"

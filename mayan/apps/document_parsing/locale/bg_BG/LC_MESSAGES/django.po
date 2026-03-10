@@ -162,7 +162,7 @@ msgstr ""
 "Задайте нови типове документи за автоматично изпълнение на анализа по "
 "подразбиране."
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."

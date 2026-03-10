@@ -160,7 +160,7 @@ msgid "Set new document types to perform parsing automatically by default."
 msgstr ""
 "Imposta nuovi tipi documento su cui eseguire automaticamente l'analisi."
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."

@@ -34,7 +34,7 @@ msgstr "Datum en tijd"
 msgid "Key ID"
 msgstr "Sleutel-ID"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "Geen"
 
@@ -80,47 +80,47 @@ msgstr "Wachtwoordzin"
 msgid "Private key that will be used to sign this document file."
 msgstr ""
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "Handtekening is ingesloten?"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "Datum van handtekening"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "Handtekening sleutel-ID"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "Handtekening sleutel aanwezig?"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "Sleutel vingerafdruk"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "Sleutel aanmaakdatum"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "Sleutelverloopdatum"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "Sleutellengte"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "Sleutelalgoritme"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "Sleutel gebruikers-ID"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "Sleuteltype"
 
@@ -295,8 +295,8 @@ msgstr ""
 "handtekeningen op te slaan."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Argumenten om door te geven aan de SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

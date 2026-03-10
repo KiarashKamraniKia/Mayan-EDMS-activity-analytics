@@ -164,7 +164,7 @@ msgstr ""
 "Включить по умолчанию автоматический запуск анализа для вновь создаваемых "
 "типов документов."
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."

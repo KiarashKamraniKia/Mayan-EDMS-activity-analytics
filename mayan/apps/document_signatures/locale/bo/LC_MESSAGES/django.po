@@ -32,7 +32,7 @@ msgstr "ཚེས་གྲངས་དང་དུས་ཚོད།"
 msgid "Key ID"
 msgstr "ལྡེ་མིག་ཨང་རྟགས་"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "གང་ཡང་མེད།"
 
@@ -80,47 +80,47 @@ msgid "Private key that will be used to sign this document file."
 msgstr ""
 "ཡིག་ཆའི་ཡིག་ཆ་འདི་ལ་མིང་རྟགས་བཀོད་པར་བེད་སྤྱོད་གཏོང་བའི་སྒེར་གྱི་ལྡེ་མིག"
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "མིང་རྟགས་བཙུགས་ཡོད་དམ།"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "མཚན་རྟགས་འགོད་པའི་ཚེས་གྲངས།"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "མིང་རྟགས་ལྡེ་མིག་ID།"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "མཚན་རྟགས་ལྡེ་མིག་ཡོད་དམ།"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "ལྡེ་མིག་གི་མཛུབ་རྟགས།"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "ལྡེ་མིག་གསར་བཟོ་ཚེས་གྲངས།"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "འགག་རྩའི་དུས་ཚོད།"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "ལྡེ་མིག་རིང་ཚད།"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "གལ་ཆེའི་རྩིས་གཞི།"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "གཙོ་གནད་སྤྱོད་མཁན་ཨང་རྟགས།"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "ལྡེ་མིག་རིགས།"
 
@@ -295,8 +295,8 @@ msgstr ""
 "མིང་རྟགས་ཁ་བྲལ་བ་གསོག་འཇོག་བྱེད་སྐབས་བེད་སྤྱོད་གཏོང་བའི་གསོག་འཇོག་སྡེ་ཚན་ཆུང་བ་ལ་འགྲོ་ལམ།"
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "མཚན་རྟགས་_དངོས་ཟོག་_རྒྱབ་ལྗོངས་ལ་སྤྲོད་པའི་སྒྲུབ་བྱེད།"
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

@@ -32,7 +32,7 @@ msgstr "日付と時刻"
 msgid "Key ID"
 msgstr "Key ID"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "なし"
 
@@ -78,47 +78,47 @@ msgstr "パスフレーズ"
 msgid "Private key that will be used to sign this document file."
 msgstr "この文書ファイルの署名に使用される秘密鍵"
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "署名は埋め込み形式ですか？"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "署名日"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "署名鍵ID"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "署名鍵は存在しますか？"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "鍵のフィンガープリント"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "鍵の作成日"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "鍵の有効期限"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "鍵の長さ"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "鍵のアルゴリズム"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "鍵のユーザーID"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "鍵の種類"
 
@@ -291,8 +291,8 @@ msgid "Path to the Storage subclass to use when storing detached signatures."
 msgstr "分離署名を保存する際に使用する Storage サブクラスのパス"
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "IGNATURE_STORAGE_BACKEND に渡す引数"
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

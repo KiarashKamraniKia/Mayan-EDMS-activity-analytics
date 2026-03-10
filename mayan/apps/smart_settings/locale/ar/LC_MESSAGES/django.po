@@ -23,55 +23,51 @@ msgstr ""
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: apps.py:27 permissions.py:6
+#: apps.py:29 permissions.py:6
 msgid "Smart settings"
 msgstr "الإعدادات الذكية"
 
-#: apps.py:37
+#: apps.py:39
 msgid "Setting count"
 msgstr "عدد الإعدادات"
 
-#: apps.py:43
+#: apps.py:45
 msgid "Name"
 msgstr "اسم"
 
-#: apps.py:47 forms.py:30
+#: apps.py:49 forms.py:30
 msgid "Value"
 msgstr "قيمة"
 
-#: classes.py:318
-msgid "Settings namespace"
-msgstr "مساحة اسم الإعدادات"
-
-#: classes.py:496
+#: classes.py:158
 msgid "Choices"
 msgstr "خيارات"
 
-#: classes.py:498
+#: classes.py:160
 msgid "Possible values allowed for this setting."
 msgstr "القيم الممكنة المسموح بها لهذا الإعداد."
 
-#: classes.py:519
+#: classes.py:181
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr "لا يمكن استعادة الإعداد. لم يتم تحديث قيمة الإعداد."
 
-#: classes.py:556
+#: classes.py:218
 msgid "Default"
 msgstr "القيمة الإفتراضية"
 
-#: classes.py:569
+#: classes.py:231
 msgid "Modified"
 msgstr "معدل"
 
-#: classes.py:571
+#: classes.py:233
 msgid "The value of this setting being modified since the last restart."
 msgstr "قيمة هذا الإعداد التي تم تعديلها منذ آخر إعادة تشغيل."
 
-#: classes.py:577
+#: classes.py:240
 msgid "Overridden"
 msgstr "تم الإلغاء"
 
-#: classes.py:579
+#: classes.py:242
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr "يتم تجاوز قيمة الإعداد بواسطة متغير بيئة."
@@ -89,7 +85,7 @@ msgstr "&quot;%s&quot; ليس إدخالاً صالحًا."
 msgid "Save"
 msgstr "حفظ"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "إعدادات"
 
@@ -101,7 +97,7 @@ msgstr "تعديل"
 msgid "Revert"
 msgstr "العودة"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "المساحة"
 
@@ -136,6 +132,10 @@ msgstr "إعداد محدث"
 #: models.py:20
 msgid "Updated settings"
 msgstr "إعدادات محدثة"
+
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "مساحة اسم الإعدادات"
 
 #: permissions.py:10
 msgid "Edit settings"
@@ -386,10 +386,10 @@ msgstr "محددات تشغيلية"
 
 #: settings.py:282
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
-msgstr "محددات تشغيلية"
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
+msgstr ""
 
 #: settings.py:290
 msgid ""
@@ -471,7 +471,7 @@ msgstr ""
 "تم تحديث الإعدادات. احفظ التغييرات وأعد تشغيل التثبيت لتصبح التغييرات نافذة "
 "المفعول."
 
-#: tests/test_classes.py:190
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "الإنجليزية"
 

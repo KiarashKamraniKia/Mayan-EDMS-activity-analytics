@@ -166,7 +166,7 @@ msgstr ""
 "Les nouveaux types de documents, par défaut, réaliseront automatiquement une"
 " analyse."
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."
@@ -219,7 +219,7 @@ msgstr "Contenu du document: %s"
 msgid "Content for document file page: %s"
 msgstr "Contenu de la page: %s"
 
-#: views.py:136
+#: views.py:139
 #, python-format
 msgid "%(count)d document file added to the parsing queue"
 msgstr "%(count)d document ajouté à la file d'analyse"

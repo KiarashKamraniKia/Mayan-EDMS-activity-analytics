@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Mathias Behrle <mathiasb@m9s.biz>, 2026
+# T W, 2026
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-07 05:42+0000\n"
+"PO-Revision-Date: 2026-03-07 05:39+0000\n"
+"Last-Translator: T W, 2026\n"
+"Language-Team: German (Austria) (https://app.transifex.com/rosarior/teams/13584/de_AT/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de_AT\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps.py:17 settings.py:8
+msgid "Forms"
+msgstr "Formulare"
+
+#: settings.py:14
+msgid ""
+"Display a submit button and wait for the submit button to be pressed before "
+"processing up the upload."
+msgstr ""
+"Anzeigen einer Senden-Schaltfläche und warten bis sie gedrückt wurde, bevor "
+"der Upload verarbeitet wird."

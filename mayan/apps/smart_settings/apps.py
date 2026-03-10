@@ -7,14 +7,16 @@ from mayan.apps.common.menus import (
 from mayan.apps.navigation.classes import SourceColumn
 from mayan.apps.views.column_widgets import TwoStateWidget
 
-from .classes import Setting, SettingCluster, SettingNamespace
+from .classes import Setting
+from .clusters import SettingCluster
 from .column_widgets import WidgetSettingValue
 from .links import (
     link_setting_cluster_configuration_save,
     link_setting_cluster_namespace_list, link_setting_edit,
-    link_setting_namespace_detail, link_setting_namespace_root_list,
+    link_setting_namespace_detail, link_setting_namespace_list,
     link_setting_revert
 )
+from .namespaces import SettingNamespace
 from .settings import setting_cluster
 from .widgets import setting_widget
 
@@ -66,9 +68,8 @@ class SmartSettingsApp(MayanAppConfig):
             ), sources=(Setting,)
         )
         menu_return.bind_links(
-            links=(link_setting_namespace_root_list,), sources=(
-                SettingNamespace, Setting,
-                'settings:setting_cluster_namespace_list'
+            links=(link_setting_namespace_list,), sources=(
+                SettingNamespace, 'settings:setting_cluster_namespace_list'
             )
         )
         menu_secondary.bind_links(

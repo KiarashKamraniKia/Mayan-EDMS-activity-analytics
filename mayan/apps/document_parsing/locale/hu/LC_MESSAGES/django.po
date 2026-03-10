@@ -164,7 +164,7 @@ msgstr ""
 "Állítsa be az új dokumentumtípusokat úgy, hogy azokon alapértelmezés szerint"
 " automatikusan végrehajtódjon az elemzés."
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."

@@ -149,45 +149,45 @@ msgstr ""
 "Poner en cola automáticamente los documentos recién creados para su "
 "procesamiento."
 
-#: models.py:48
+#: models.py:49
 msgid "Auto process"
 msgstr "Procesamiento automático"
 
-#: models.py:54
+#: models.py:55
 msgid "Document type settings"
 msgstr "Configuración del tipo de documento"
 
-#: models.py:55
+#: models.py:56
 msgid "Document types settings"
 msgstr "Configuraciones de tipos de documento"
 
-#: models.py:70
+#: models.py:71
 msgid "Normalized name of the file metadata entry."
 msgstr "Nombre normalizado de la entrada de metadatos del archivo."
 
-#: models.py:75
+#: models.py:76
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr ""
 "Nombre de la entrada de metadatos del archivo proporcionada por el "
 "controlador."
 
-#: models.py:77
+#: models.py:78
 msgid "Key"
 msgstr "Llave"
 
-#: models.py:80
+#: models.py:81
 msgid "Value of the file metadata entry."
 msgstr "Valor de la entrada de metadatos del archivo."
 
-#: models.py:81
+#: models.py:82
 msgid "Value"
 msgstr "Valor"
 
-#: models.py:87
+#: models.py:88
 msgid "File metadata entry"
 msgstr "Entrada de metadatos del archivo."
 
-#: models.py:88
+#: models.py:89
 msgid "File metadata entries"
 msgstr "Entradas de metadato de archivos"
 

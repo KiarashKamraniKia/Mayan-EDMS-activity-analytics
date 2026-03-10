@@ -7,6 +7,7 @@
 # Jiří Podhorecký <jirka.p@volny.cz>, 2024
 # Jiri Fait <fait@orkasolutions.cz>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2026
 # 
 msgid ""
 msgstr ""
@@ -46,6 +47,8 @@ msgid ""
 "Return the value of a specific source metadata for the document's latest "
 "file."
 msgstr ""
+"Vrátí hodnotu specifických zdrojových metadat pro nejnovější soubor "
+"dokumentu."
 
 #: apps.py:137 apps.py:144
 msgid "Source metadata value of"
@@ -65,7 +68,7 @@ msgstr "Zdroj vytvořen"
 
 #: events.py:13
 msgid "Source edited"
-msgstr ""
+msgstr "Zdroj upraven"
 
 #: forms.py:25
 msgid "An optional comment to explain the upload."
@@ -138,7 +141,7 @@ msgstr "Klíč"
 
 #: models.py:30
 msgid "The actual value stored in the source metadata for the document file."
-msgstr ""
+msgstr "Skutečná hodnota uložená ve zdrojových metadatech souboru dokumentu."
 
 #: models.py:32
 msgid "Value"

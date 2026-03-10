@@ -21,7 +21,7 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:21 settings.py:11
+#: apps.py:15 settings.py:10
 msgid "Views"
 msgstr "Προβολές"
 
@@ -158,18 +158,12 @@ msgstr "Διαγραφή του \"%(object)s\"."
 msgid "Delete %(count)d object."
 msgstr "Διαγραφή %(count)d αντικειμένου."
 
-#: settings.py:17
+#: settings.py:16
 msgid "The number objects that will be displayed per page."
 msgstr "Ο αριθμός των αντικειμένων που θα εμφανίζονται ανά σελίδα."
 
-#: settings.py:23
+#: settings.py:22
 msgid "A string specifying the name to use for the paging parameter."
-msgstr ""
-
-#: settings.py:29
-msgid ""
-"Display a submit button and wait for the submit button to be pressed before "
-"processing up the upload."
 msgstr ""
 
 #: templatetags/views_tags.py:30

@@ -24,11 +24,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "タスクマネージャー"
 
-#: apps.py:114 apps.py:139 apps.py:182
+#: apps.py:114 apps.py:140 apps.py:183
 msgid "Label"
 msgstr "ラベル"
 
-#: apps.py:118 apps.py:142 apps.py:186
+#: apps.py:118 apps.py:143 apps.py:187
 msgid "Name"
 msgstr "名前"
 
@@ -44,79 +44,79 @@ msgid ""
 msgstr ""
 "一時的なキューは永続的ではありません。ブローカーが再起動されると、一時キュー内のタスクは失われます。一時キューはリソースを少なく使用し、重要でないタスクの管理に適しています。"
 
-#: apps.py:131
+#: apps.py:132
 msgid "Is transient?"
 msgstr "一時キューですか？"
 
-#: apps.py:145
+#: apps.py:146
 msgid "Dotted path"
 msgstr "ドット区切りパス"
 
-#: apps.py:149
+#: apps.py:150
 msgid "Schedule"
 msgstr "スケジュール"
 
-#: apps.py:155
+#: apps.py:156
 msgid "Type"
 msgstr "タイプ"
 
-#: apps.py:160
+#: apps.py:161
 msgid "Start time"
 msgstr "開始時刻"
 
-#: apps.py:164
+#: apps.py:165
 msgid "Host"
 msgstr "ホスト"
 
-#: apps.py:168
+#: apps.py:169
 msgid "Arguments"
 msgstr "引数"
 
-#: apps.py:172
+#: apps.py:173
 msgid "Keyword arguments"
 msgstr "キーワード引数"
 
-#: apps.py:177
+#: apps.py:178
 msgid "Worker process ID"
 msgstr "ワーカープロセス ID"
 
-#: apps.py:190
+#: apps.py:191
 msgid ""
 "Maximum amount of resident memory a worker can execute before it's replaced "
 "by a new process."
 msgstr "ワーカーが置き換えられる前に使用できる常駐メモリの最大量"
 
-#: apps.py:192
+#: apps.py:193
 msgid "Maximum memory per child"
 msgstr "子プロセスごとの最大メモリ"
 
-#: apps.py:196
+#: apps.py:197
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
 msgstr "ワーカーが置き換えられる前に実行できるタスクの最大数"
 
-#: apps.py:198
+#: apps.py:199
 msgid "Maximum tasks per child"
 msgstr "子プロセスごとの最大タスク数"
 
-#: apps.py:202
+#: apps.py:203
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
 msgstr "起動するワーカープロセス/スレッドの数。デフォルトはマシンの利用可能なCPU数です。"
 
-#: apps.py:204
+#: apps.py:205
 msgid "Concurrency"
 msgstr "同時実行数"
 
-#: apps.py:208
+#: apps.py:209
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
 msgstr "プロセスの優先度を決定するnice値。値が大きいほど優先度は低くなります。デフォルト値は0です。"
 
-#: apps.py:211
+#: apps.py:212
 msgid "Nice level"
 msgstr "Niceレベル"
 
@@ -163,14 +163,14 @@ msgstr ""
 "transport://userid:password@hostname:port/virtual_host。スキーム部分 (transport://)"
 " のみ必須で、その他はオプションであり、各トランスポートの既定値値が使用されます。"
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
 msgstr ""
 "既定値: \"Disabled\"。ブローカー接続でのSSL使用とSSL設定を切り替えます。このオプションの有効な値はトランスポートによって異なります。"
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

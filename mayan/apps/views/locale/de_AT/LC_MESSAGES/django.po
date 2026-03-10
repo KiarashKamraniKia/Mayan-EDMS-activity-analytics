@@ -28,7 +28,7 @@ msgstr ""
 "Language: de_AT\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:21 settings.py:11
+#: apps.py:15 settings.py:10
 msgid "Views"
 msgstr "Ansichten"
 
@@ -165,21 +165,13 @@ msgstr "\"%(object)s\" löschen."
 msgid "Delete %(count)d object."
 msgstr "%(count)d Objekt löschen."
 
-#: settings.py:17
+#: settings.py:16
 msgid "The number objects that will be displayed per page."
 msgstr "Die Anzahl der Objekte, die pro Seite angezeigt werden."
 
-#: settings.py:23
+#: settings.py:22
 msgid "A string specifying the name to use for the paging parameter."
 msgstr "Eine Zeichenfolge, die den Namen für den Paging-Parameters angibt."
-
-#: settings.py:29
-msgid ""
-"Display a submit button and wait for the submit button to be pressed before "
-"processing up the upload."
-msgstr ""
-"Anzeigen einer Senden-Schaltfläche und warten bis sie gedrückt wurde, bevor "
-"der Upload verarbeitet wird."
 
 #: templatetags/views_tags.py:30
 msgid "Confirm delete"

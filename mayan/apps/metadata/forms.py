@@ -114,7 +114,8 @@ class DocumentMetadataForm(forms.Form):
                     raise ValidationError(
                         message={
                             'value': _(
-                                message='"%s" is required for this document type.'
+                                message='"%s" is required for this document '
+                                'type.'
                             ) % metadata_type.label
                         }
                     )

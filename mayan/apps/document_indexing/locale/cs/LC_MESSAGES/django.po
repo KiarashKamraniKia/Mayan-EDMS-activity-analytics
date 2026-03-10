@@ -89,7 +89,7 @@ msgid "Index templates to be queued for rebuilding."
 msgstr ""
 "Šablony rejstříků, které mají být zařazeny do fronty pro nové sestavení."
 
-#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:49 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "Šablony rejstříků"
@@ -154,7 +154,7 @@ msgstr "Ne"
 msgid "Yes"
 msgstr "Ano"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
@@ -163,24 +163,24 @@ msgstr ""
 "Chyba při zařazení dokumentu do rejstříku: %(document)s; výraz: "
 "%(expression)s; %(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr ""
 "Celkový počet uzlů s jedinečnými hodnotami, které tato položka obsahuje."
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "Celkový počet jedinečných dokumentů, které tato položka obsahuje."
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "Celkový počet úrovní uzlů, které tato položka obsahuje."
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "Cesta k indexu včetně všech předků."
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "Celá cesta"
 
@@ -228,11 +228,11 @@ msgstr "Stručný popis tohoto indexu."
 msgid "This value will be used by other apps to reference this index."
 msgstr "Tuto hodnotu použijí jiné aplikace k odkazu na tento rejstřík."
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "Slug"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr ""
@@ -597,12 +597,12 @@ msgstr "Vytvořit podřízený uzel: %s"
 msgid "Delete the index template node: %s?"
 msgstr "Odstranit uzel šablony rejstříku: %s?"
 
-#: views/index_template_views.py:365
+#: views/index_template_views.py:367
 #, python-format
 msgid "Edit the index template node: %s"
 msgstr "Upravte šablonu rejstříku uzlu: %s"
 
-#: views/index_template_views.py:386
+#: views/index_template_views.py:388
 #, python-format
 msgid "Rebuild index template: %s"
 msgstr "Znovu vytvořit šablonu rejstříku: %s"

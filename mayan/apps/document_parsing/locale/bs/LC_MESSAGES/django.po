@@ -155,7 +155,7 @@ msgstr ""
 "Podesite nove tipove dokumenata koji automatski podrazumevaju automatsko "
 "analiziranje."
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."

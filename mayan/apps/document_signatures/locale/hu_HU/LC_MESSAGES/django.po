@@ -34,7 +34,7 @@ msgstr "Dátum és idő"
 msgid "Key ID"
 msgstr "Kulcs ID"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "Nincs"
 
@@ -80,47 +80,47 @@ msgstr "Jelszó"
 msgid "Private key that will be used to sign this document file."
 msgstr "A dokumentumfájl aláírásához használt privát kulcs."
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "Az aláírás be van ágyazva?"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "Aláírás dátuma"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "Aláírás kulcs azonosítója"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "Megvan az aláírás kulcs?"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "Kulcs ujjlenyomata"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "Kulcs létrehozásának dátuma"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "Kulcs lejárati dátuma"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "Kulcs hossza"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "Kulcs algoritmus"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "Kulcs felhasználói azonosító"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "Kulcs típusa"
 
@@ -293,8 +293,8 @@ msgid "Path to the Storage subclass to use when storing detached signatures."
 msgstr "A Tároló alosztály elérési útja a leválasztott aláírások tárolásakor."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Argumentumok a következőhöz: SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

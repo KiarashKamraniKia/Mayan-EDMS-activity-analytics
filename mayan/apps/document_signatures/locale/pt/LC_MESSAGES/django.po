@@ -41,7 +41,7 @@ msgstr "Data e Hora"
 msgid "Key ID"
 msgstr "ID da chave"
 
-#: apps.py:118 forms.py:78
+#: apps.py:118 forms.py:79
 msgid "None"
 msgstr "Nenhum"
 
@@ -90,47 +90,47 @@ msgid "Private key that will be used to sign this document file."
 msgstr ""
 "Chave privada que irá ser utilizada para assinar este ficheiro de documento."
 
-#: forms.py:45
+#: forms.py:46
 msgid "Signature is embedded?"
 msgstr "Assinatura integrada?"
 
-#: forms.py:48
+#: forms.py:49
 msgid "Signature date"
 msgstr "Data de assinatura"
 
-#: forms.py:52
+#: forms.py:53
 msgid "Signature key ID"
 msgstr "ID da chave da assinatura"
 
-#: forms.py:55
+#: forms.py:56
 msgid "Signature key present?"
 msgstr "Chave da assinatura presente?"
 
-#: forms.py:68
+#: forms.py:69
 msgid "Key fingerprint"
 msgstr "Key fingerprint"
 
-#: forms.py:72
+#: forms.py:73
 msgid "Key creation date"
 msgstr "Data de criação da chave"
 
-#: forms.py:77
+#: forms.py:78
 msgid "Key expiration date"
 msgstr "Data de expiração da chave"
 
-#: forms.py:82
+#: forms.py:83
 msgid "Key length"
 msgstr "Tamanho da chave"
 
-#: forms.py:86
+#: forms.py:87
 msgid "Key algorithm"
 msgstr "Algoritmo da chave"
 
-#: forms.py:90
+#: forms.py:91
 msgid "Key user ID"
 msgstr "ID do utilizador da chave"
 
-#: forms.py:94
+#: forms.py:95
 msgid "Key type"
 msgstr "Tipo de chave"
 
@@ -306,8 +306,8 @@ msgstr ""
 "destacadas."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Argumentos a serem passados para SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

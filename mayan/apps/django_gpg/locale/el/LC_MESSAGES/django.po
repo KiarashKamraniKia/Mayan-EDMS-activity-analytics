@@ -230,7 +230,11 @@ msgstr ""
 "Πλήρης διαδρομή στο backend που θα χρησιμοποιηθεί για την διαχείριση "
 "κλειδιών και υπογραφών."
 
-#: settings.py:27
+#: settings.py:26
+msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
+msgstr ""
+
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "Διακομιστής κλειδιών που θα χρησιμοποιηθεί για αναζήτηση κλειδιών."
 
