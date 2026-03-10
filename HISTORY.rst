@@ -3,6 +3,7 @@
 - Merge and improvements from versions 4.6.12 and 4.6.13.
 - Update safety from version 3.2.3 to 3.7.0.
 - Update setting `SEARCH_STORE_RESULTS_DEFAULT_VALUE` to be a choice field.
+- Rename internal references of `DOCKER_ELASTIC_` to `DOCKER_ELASTICSEARCH_`.
 
 4.7.8 (2025-12-13)
 ==================
