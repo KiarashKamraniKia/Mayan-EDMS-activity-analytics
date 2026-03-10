@@ -23,7 +23,8 @@ from mayan.apps.common.exceptions import ResolverPipelineError
 from mayan.apps.common.utils import ResolverPipelineObjectAttribute
 from mayan.apps.storage.compressed_files import TarArchive
 from mayan.apps.storage.utils import (
-    TemporaryDirectory, mkdtemp, patch_files as storage_patch_files
+    TemporaryDirectory, fs_cleanup, mkdtemp,
+    patch_files as storage_patch_files
 )
 
 from .algorithms import HashAlgorithm
@@ -310,6 +311,15 @@ class Dependency(AppsModuleLoaderMixin):
             else:
                 dependency.install(force=force)
 
+    @classmethod
+    def uninstall_multiple(cls, app_label=None, subclass_only=False):
+        for dependency in cls.get_all(subclass_only=subclass_only):
+            if app_label:
+                if app_label == dependency.app_label:
+                    dependency.uninstall()
+            else:
+                dependency.uninstall()
+
     def __init__(
         self, name, environment=environment_production, app_label=None,
         environments=None, help_text=None, label=None, legal_text=None,
@@ -414,6 +424,18 @@ class Dependency(AppsModuleLoaderMixin):
                 _(message='Complete.')
             )
             sys.stdout.flush()
+
+    def uninstall(self):
+        label_full = self.get_label_full()
+        print(
+            _(message='Uninstalling package: %s... ') % label_full, end=''
+        )
+        sys.stdout.flush()
+        self._uninstall()
+        print(
+            _(message='Complete.')
+        )
+        sys.stdout.flush()
 
     def _install(self):
         raise NotImplementedError
@@ -593,6 +615,25 @@ class JavaScriptDependency(Dependency):
                     name=name, version_string=version_string
                 )
                 dependency.install(include_dependencies=False)
+
+    def _uninstall(self, include_dependencies=False):
+        print(
+            _(message='Uninstalling... '), end=''
+        )
+        sys.stdout.flush()
+        self.delete()
+
+        if include_dependencies:
+            dependency_dict = self.version_metadata.get('dependencies', {})
+            for name, version_string in dependency_dict.items():
+                dependency = JavaScriptDependency(
+                    name=name, version_string=version_string
+                )
+                dependency.uninstall(include_dependencies=False)
+
+    def delete(self):
+        path_install = self.get_install_path()
+        fs_cleanup(filename=path_install)
 
     def extract(self, replace_list=None):
         with TemporaryDirectory() as temporary_directory:
@@ -895,6 +936,17 @@ class GoogleFontDependency(Dependency):
         )
         sys.stdout.flush()
         self.extract()
+
+    def _uninstall(self):
+        print(
+            _(message='Uninstalling... '), end=''
+        )
+        sys.stdout.flush()
+        self.delete()
+
+    def delete(self):
+        path_install = self.get_install_path()
+        fs_cleanup(filename=path_install)
 
     def download(self):
         self.path_cache = Path(
