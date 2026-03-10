@@ -1,6 +1,7 @@
 4.7.9 (XXXX-XX-XX)
 ==================
 - Merge and improvements from versions 4.6.12 and 4.6.13.
+- Update safety from version 3.2.3 to 3.7.0.
 
 4.7.8 (2025-12-13)
 ==================

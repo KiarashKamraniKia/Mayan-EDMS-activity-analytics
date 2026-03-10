@@ -203,7 +203,7 @@ PythonDependency(
 )
 PythonDependency(
     environment=environment_development,
-    module=__name__, name='safety', version_string='==3.2.3'
+    module=__name__, name='safety', version_string='==3.7.0'
 )
 
 # Documentation
