@@ -24,7 +24,7 @@ Features
   - Signature captures are digital recording of handwritten signatures.
   - Commonly used for business transactions and remote contract signing.
 
-- :ref:`User-defined document metadata<apps-metadata>`.
+- User-defined document metadata.
 
   - Several metadata fields can be matched to a document type as per technical,
     legal or structural requirements such as the `Dublin core`_ or `ISO 23081`_
@@ -32,7 +32,7 @@ Features
   - Metadata fields can have an initial value, which can be static or determined
     by a template code snippet provided by the user.
 
-- :ref:`Documents can be uploaded from different sources<apps-sources>`.
+- Documents can be uploaded from different sources.
 
   - Local file or server side file uploads, multifunctional copier, or even via
     email.
@@ -44,7 +44,7 @@ Features
   - Complex design changes are documented via a formal processes called
     :ref:`mercs`.
 
-- :ref:`Advanced access control system<apps-permissions>`.
+- Advanced access control system.
 
   - Role based access control. It is possible to create an unlimited amount
     of different roles not being restricted to the traditional admin,
@@ -93,7 +93,7 @@ Features
     Amazon EC2.
   - Use cloud object storage like S3 or on premise using Minio.
 
-- :ref:`Workflows<apps-document_states>`.
+- Workflows.
 
   - Keep track of the state of documents, along with the log of the previous
     state changes.
@@ -167,7 +167,7 @@ Features
   - Default installation scales to hundred of thousand of documents.
   - Tuned installations scale to millions of documents.
 
-- :ref:`Color coded tags<apps-tags>`.
+- Color coded tags.
 
   - Labeled and color coded tags can be assigned for intuitive recognition.
 

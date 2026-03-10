@@ -9,8 +9,7 @@ Mayan EDMS uses a role based permission system
 (https://en.wikipedia.org/wiki/Role-based_access_control) that provides a
 mechanism to control access to the contained documents and system functions.
 
-Besides the permissions system explained in the
-:ref:`permissions app<apps-permissions>`, Mayan EDMS provides per object
+Besides the permissions system explained in the permissions app, Mayan EDMS provides per object
 permission granting. This feature is used to grant a permission to a role,
 but this permission can only be executed for a limited number of objects
 (documents, folders, tags) instead of being effective system-wide.
