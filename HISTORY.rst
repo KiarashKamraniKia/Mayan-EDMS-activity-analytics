@@ -1,6 +1,7 @@
-4.7.9 (XXXX-XX-XX)
+4.7.9 (2026-03-10)
 ==================
-- Merge and improvements from versions 4.6.12 and 4.6.13.
+- Merge and improvements from versions 4.6.12 and 4.6.13 which in turn
+  include backports from series 4.10 and 4.11.
 - Update safety from version 3.2.3 to 3.7.0.
 - Update setting `SEARCH_STORE_RESULTS_DEFAULT_VALUE` to be a choice field.
 - Rename internal references of `DOCKER_ELASTIC_` to `DOCKER_ELASTICSEARCH_`.
