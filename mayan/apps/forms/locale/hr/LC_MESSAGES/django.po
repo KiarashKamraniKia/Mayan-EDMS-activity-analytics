@@ -6,13 +6,12 @@
 # Translators:
 # Mario Jakovina <mario.jakovina@gmail.com>, 2026
 # 
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-07 05:42+0000\n"
-"PO-Revision-Date: 2026-03-07 05:39+0000\n"
+"PO-Revision-Date: 2026-03-10 21:56+0000\n"
 "Last-Translator: Mario Jakovina <mario.jakovina@gmail.com>, 2026\n"
 "Language-Team: Croatian (https://app.transifex.com/rosarior/teams/13584/hr/)\n"
 "MIME-Version: 1.0\n"

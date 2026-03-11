@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: piera.daraio, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
@@ -40,7 +40,7 @@ msgstr "ID chiave"
 msgid "None"
 msgstr "Nessuno"
 
-#: apps.py:119 forms.py:65 models.py:58
+#: apps.py:119 forms.py:66 models.py:58
 msgid "Signature ID"
 msgstr "ID Firma"
 

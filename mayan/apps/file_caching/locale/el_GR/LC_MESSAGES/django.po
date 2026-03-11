@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Hmayag Antonian <hmayag@freemail.gr>, 2024\n"
 "Language-Team: Greek (Greece) (https://app.transifex.com/rosarior/teams/13584/el_GR/)\n"
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Total cached files."
 msgstr ""
 
-#: model_mixins.py:113 model_mixins.py:326
+#: model_mixins.py:113 model_mixins.py:325
 msgid "Current size"
 msgstr "Τρέχον μέγεθος"
 
@@ -115,7 +115,7 @@ msgstr "Τρέχον μέγεθος της προσωρινής μνήμης."
 msgid "Label"
 msgstr "Ετικέτα"
 
-#: model_mixins.py:328
+#: model_mixins.py:327
 msgid "Current size of the cache partition."
 msgstr ""
 

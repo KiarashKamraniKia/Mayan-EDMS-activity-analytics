@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26 15:20+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -312,65 +312,65 @@ msgstr "主キー"
 msgid "Search fields"
 msgstr "検索フィールド"
 
-#: settings.py:25
+#: settings.py:26
 msgid "Full path to the backend to be used to handle the search."
 msgstr "検索を処理するバックエンドのフルパス"
 
-#: settings.py:31
+#: settings.py:33
 msgid ""
 "Arguments to pass to the search backend. For example values to change the "
 "behavior, host names, or authentication arguments."
 msgstr "検索バックエンドに渡す引数（動作変更やホスト名、認証引数など）"
 
-#: settings.py:39
+#: settings.py:42
 msgid "The search operator to use when none is specified."
 msgstr "指定がない場合に使用する検索演算子"
 
-#: settings.py:46
+#: settings.py:49
 msgid ""
 "Disables the single term bar search leaving only the advanced search button."
 msgstr "単一検索バーを無効にし、高度な検索ボタンのみを表示"
 
-#: settings.py:53
+#: settings.py:57
 msgid "Amount of objects to process when performing bulk indexing."
 msgstr "バルクインデックス処理時の対象オブジェクト数 "
 
-#: settings.py:59
+#: settings.py:63
 msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr "「すべて一致」チェックボックスの初期状態を設定"
 
-#: settings.py:66
+#: settings.py:70
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr "1回の検索クエリで取得・表示する最大検索結果数"
 
-#: settings.py:73
+#: settings.py:77
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."
 msgstr "検索結果が SEARCH_QUERY_RESULTS_LIMIT を超えた場合にエラーを発生させます"
 
-#: settings.py:79
+#: settings.py:84
 msgid "Maximum number of search results to fetch and display."
 msgstr " 取得・表示する最大検索結果数"
 
-#: settings.py:85
+#: settings.py:90
 msgid "Maximum number of saved resultsets to keep per user."
 msgstr "ユーザーごとに保持できる結果セットの最大数"
 
-#: settings.py:91
+#: settings.py:96
 msgid "Maximum number of results to store per resultset."
 msgstr "結果セットごとに保存できる最大件数"
 
-#: settings.py:97
+#: settings.py:102
 msgid "Time to keep the resultset in seconds."
 msgstr "結果セットを保持する時間（秒）"
 
-#: settings.py:103
+#: settings.py:108
 msgid "Amount to increase the time to live on each access of the resultset."
 msgstr "結果セットにアクセスするたびに有効期限を延長する時間"
 
-#: settings.py:110
+#: settings.py:116
 msgid "Sets the default state of the \"Store results\" checkbox."
 msgstr "「結果を保存」チェックボックスの初期状態を設定"
 

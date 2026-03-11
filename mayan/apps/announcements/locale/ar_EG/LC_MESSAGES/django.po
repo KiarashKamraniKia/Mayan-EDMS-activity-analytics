@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:28+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (Egypt) (https://app.transifex.com/rosarior/teams/13584/ar_EG/)\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Language: ar_EG\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
-#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:48
+#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:50
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:121
 msgid "Announcements"
 msgstr "إعلانات"
@@ -78,19 +78,19 @@ msgstr "مفعل"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "التاريخ و الوقت الذي سيُعرض حينه هذا الإعلان"
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "وقت تاريخ البدء"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "التاريخ و الوقت الذي سيوقف حينه عرض هذا الإعلان"
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "وقت تاريخ الانتهاء"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "إعلان"
 

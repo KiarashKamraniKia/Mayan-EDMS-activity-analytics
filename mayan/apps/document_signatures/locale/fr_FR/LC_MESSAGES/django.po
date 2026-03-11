@@ -4,7 +4,6 @@
 # 
 # Translators:
 # Translators:
-# 3d8c9ede7eec1ed3d454abc701cf2020_b5d10da <2cc9776490f3745e0e39b80d9b76a349_955453>, 2024
 # Guillaume Trottier <gui.trottier@gmail.com>, 2024
 # Christophe CHAUVET <christophe.chauvet@gmail.com>, 2024
 # Luc Didry, 2024
@@ -21,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Frédéric Sheedy <sheedf@gmail.com>, 2024\n"
 "Language-Team: French (France) (https://app.transifex.com/rosarior/teams/13584/fr_FR/)\n"
@@ -47,7 +46,7 @@ msgstr "ID de la clé"
 msgid "None"
 msgstr "Aucun"
 
-#: apps.py:119 forms.py:65 models.py:58
+#: apps.py:119 forms.py:66 models.py:58
 msgid "Signature ID"
 msgstr "ID de la signature"
 
@@ -306,8 +305,8 @@ msgstr ""
 "signatures détachées."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Arguments à transmettre à SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

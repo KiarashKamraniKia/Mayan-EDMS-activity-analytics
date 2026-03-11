@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:30+0000\n"
+"POT-Creation-Date: 2026-03-10 21:56+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Csaba Tarjányi, 2024\n"
 "Language-Team: Hungarian (Slovakia) (https://app.transifex.com/rosarior/teams/13584/hu_SK/)\n"
@@ -118,7 +118,7 @@ msgstr "A weblinkhez hozzáadandó dokumentumtípus elsődleges kulcsa."
 msgid "Document type ID"
 msgstr "Dokumentumtípus azonosító"
 
-#: serializers.py:26
+#: serializers.py:25
 msgid "Primary key of the document type to remove from the web link."
 msgstr "A weblinkről eltávolítandó dokumentumtípus elsődleges kulcsa."
 

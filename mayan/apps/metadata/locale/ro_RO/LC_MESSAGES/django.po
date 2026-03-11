@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-04 06:21+0000\n"
+"POT-Creation-Date: 2026-03-10 21:55+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Harald Ersch, 2024\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -85,7 +85,7 @@ msgstr "Valoare"
 msgid "Update"
 msgstr "Actualizați"
 
-#: forms.py:51 forms.py:232 models/document_type_metadata_type_models.py:31
+#: forms.py:51 forms.py:233 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "Necesară"
 
@@ -104,42 +104,42 @@ msgstr "Valoare eroare standard: %s"
 msgid "\"%s\" is required for this document type."
 msgstr "\"%s\" este necesar pentru acest tip de document."
 
-#: forms.py:136
+#: forms.py:137
 msgid "Metadata types to be added to the selected documents."
 msgstr ""
 "Tipurile de metadate care urmează să fie adăugate la documentele selectate."
 
-#: forms.py:137 models/document_type_metadata_type_models.py:28
+#: forms.py:138 models/document_type_metadata_type_models.py:28
 #: models/metadata_type_models.py:83 search.py:11 serializers.py:52
 #: serializers.py:114 workflow_actions.py:148
 msgid "Metadata type"
 msgstr "Tip de metadate"
 
-#: forms.py:162
+#: forms.py:163
 msgid "Remove"
 msgstr "Eliminați"
 
-#: forms.py:181
+#: forms.py:182
 msgid "Basic"
 msgstr "De bază"
 
-#: forms.py:185
+#: forms.py:186
 msgid "Values"
 msgstr "Valori"
 
-#: forms.py:189
+#: forms.py:190
 msgid "Validation"
 msgstr "Validare"
 
-#: forms.py:193
+#: forms.py:194
 msgid "Parsing"
 msgstr "Analizare"
 
-#: forms.py:230
+#: forms.py:231
 msgid "None"
 msgstr "Nici unul"
 
-#: forms.py:231
+#: forms.py:232
 msgid "Optional"
 msgstr "Facultativ"
 
@@ -639,7 +639,7 @@ msgstr "Relații între tipul de document și tipul de metadate: %s"
 msgid "Enter document metadata"
 msgstr "Introduceți metadatele documentului"
 
-#: wizard_steps.py:203
+#: wizard_steps.py:207
 msgid ""
 "One of more metadata types that are required for this document type are not "
 "available."

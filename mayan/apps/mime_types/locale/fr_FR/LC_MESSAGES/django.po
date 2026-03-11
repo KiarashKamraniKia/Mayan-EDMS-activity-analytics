@@ -28,9 +28,9 @@ msgstr "Types MIME"
 msgid "file command not installed or not found."
 msgstr "commande de fichier non installée ou introuvable."
 
-#: backends/perl_file_mimeinfo.py:26
-msgid "mimetype not installed or not found."
-msgstr "type mime non installé ou introuvable."
+#: backends/perl_file_mimeinfo.py:24
+msgid "mimetype command not installed or not found."
+msgstr ""
 
 #: dependencies.py:9
 msgid ""

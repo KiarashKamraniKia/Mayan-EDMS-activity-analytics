@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-04 06:21+0000\n"
+"POT-Creation-Date: 2026-03-10 21:55+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: lilo.panic, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/rosarior/teams/13584/ru/)\n"
@@ -86,7 +86,7 @@ msgstr "Значение"
 msgid "Update"
 msgstr "Обновить"
 
-#: forms.py:51 forms.py:232 models/document_type_metadata_type_models.py:31
+#: forms.py:51 forms.py:233 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "Требуемый"
 
@@ -105,41 +105,41 @@ msgstr "Ошибка значения по умолчанию: %s"
 msgid "\"%s\" is required for this document type."
 msgstr "\"%s\" требуется для этого типа документа."
 
-#: forms.py:136
+#: forms.py:137
 msgid "Metadata types to be added to the selected documents."
 msgstr "Типы метаданных, которые будут добавлены к выбранным документам."
 
-#: forms.py:137 models/document_type_metadata_type_models.py:28
+#: forms.py:138 models/document_type_metadata_type_models.py:28
 #: models/metadata_type_models.py:83 search.py:11 serializers.py:52
 #: serializers.py:114 workflow_actions.py:148
 msgid "Metadata type"
 msgstr "Тип метаданных"
 
-#: forms.py:162
+#: forms.py:163
 msgid "Remove"
 msgstr "Удалить"
 
-#: forms.py:181
+#: forms.py:182
 msgid "Basic"
 msgstr ""
 
-#: forms.py:185
+#: forms.py:186
 msgid "Values"
 msgstr ""
 
-#: forms.py:189
+#: forms.py:190
 msgid "Validation"
 msgstr ""
 
-#: forms.py:193
+#: forms.py:194
 msgid "Parsing"
 msgstr "Анализ"
 
-#: forms.py:230
+#: forms.py:231
 msgid "None"
 msgstr "Нет"
 
-#: forms.py:231
+#: forms.py:232
 msgid "Optional"
 msgstr "Необязательный"
 
@@ -629,7 +629,7 @@ msgstr "Отношения типа документа для типа мета�
 msgid "Enter document metadata"
 msgstr "Введите метаданные документа"
 
-#: wizard_steps.py:203
+#: wizard_steps.py:207
 msgid ""
 "One of more metadata types that are required for this document type are not "
 "available."

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26 15:20+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -320,12 +320,12 @@ msgstr "གཙོ་བོའི་ལྡེ་མིག"
 msgid "Search fields"
 msgstr "འཚོལ་བཤེར་ས་ཁོངས།"
 
-#: settings.py:25
+#: settings.py:26
 msgid "Full path to the backend to be used to handle the search."
 msgstr ""
 "འཚོལ་ཞིབ་ལ་འགན་ལེན་བྱེད་པར་བེད་སྤྱོད་གཏོང་བའི་རྒྱབ་ཕྱོགས་ལ་འགྲོ་ལམ་ཆ་ཚང་།"
 
-#: settings.py:31
+#: settings.py:33
 msgid ""
 "Arguments to pass to the search backend. For example values to change the "
 "behavior, host names, or authentication arguments."
@@ -334,61 +334,61 @@ msgstr ""
 "སྤྱོད་ལམ་བསྒྱུར་བཅོས་བྱེད་པའི་གནས་གོང་དང་། གཙོ་བོའི་མིང་། "
 "ཡང་ན་བདེན་དཔང་སྒྲུབ་བྱེད།"
 
-#: settings.py:39
+#: settings.py:42
 msgid "The search operator to use when none is specified."
 msgstr ""
 "གང་ཡང་གསལ་བཀོད་བྱས་མེད་པའི་སྐབས་བེད་སྤྱོད་གཏོང་བའི་འཚོལ་ཞིབ་བཀོལ་སྤྱོད་པ།"
 
-#: settings.py:46
+#: settings.py:49
 msgid ""
 "Disables the single term bar search leaving only the advanced search button."
 msgstr ""
 "ཡར་ཐོན་ཅན་གྱི་འཚོལ་ཞིབ་མཐེབ་ཁོ་ན་བཞག་སྟེ་མིང་ཚིག་རྐྱང་པའི་ཕྲ་རིང་འཚོལ་ཞིབ་ལྕོགས་མིན་བཟོས།"
 
-#: settings.py:53
+#: settings.py:57
 msgid "Amount of objects to process when performing bulk indexing."
 msgstr "དཀར་ཆག་མང་པོ་སྒྲུབ་སྐབས་ལས་སྣོན་བྱེད་དགོས་པའི་དངོས་པོའི་ཚད་གཞི།"
 
-#: settings.py:59
+#: settings.py:63
 msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr ""
 "&quot;ཚང་མ་མཐུན་སྒྲིག་&quot; "
 "ཞིབ་བཤེར་སྒྲོམ་གྱི་སྔོན་སྒྲིག་གནས་སྟངས་སྒྲིག་བཀོད་བྱེད།"
 
-#: settings.py:66
+#: settings.py:70
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "འཚོལ་ཞིབ་འདྲི་རྩད་ཀྱི་ཆ་ཤས་རེ་ལ་འཚོལ་ཞིབ་གྲུབ་འབྲས་ཆེས་མཐོ་བའི་གྲངས་འབོར།"
 
-#: settings.py:73
+#: settings.py:77
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."
 msgstr ""
 
-#: settings.py:79
+#: settings.py:84
 msgid "Maximum number of search results to fetch and display."
 msgstr "འཚོལ་བཤེར་གྲུབ་འབྲས་ཆེས་མཐོ་བའི་གྲངས་འབོར།"
 
-#: settings.py:85
+#: settings.py:90
 msgid "Maximum number of saved resultsets to keep per user."
 msgstr "སྤྱོད་མཁན་རེ་ལ་གསོག་འཇོག་བྱས་པའི་གྲུབ་འབྲས་ཆ་ཚང་མང་ཤོས།"
 
-#: settings.py:91
+#: settings.py:96
 msgid "Maximum number of results to store per resultset."
 msgstr ""
 "གྲུབ་འབྲས་ཆ་ཚང་རེ་ལ་གསོག་འཇོག་བྱེད་པའི་གྲུབ་འབྲས་ཆེས་མཐོ་བའི་གྲངས་འབོར།"
 
-#: settings.py:97
+#: settings.py:102
 msgid "Time to keep the resultset in seconds."
 msgstr "གྲུབ་འབྲས་ཆ་ཚང་སྐར་ཆ་ཁ་ཤས་ནང་བཞག་པའི་དུས་ཚོད།"
 
-#: settings.py:103
+#: settings.py:108
 msgid "Amount to increase the time to live on each access of the resultset."
 msgstr "གྲུབ་འབྲས་ཆ་ཚང་ལ་འཛུལ་ཞུགས་རེ་རེར་འཚོ་བའི་དུས་ཚོད་འཕར་བའི་དངུལ་འབོར།"
 
-#: settings.py:110
+#: settings.py:116
 msgid "Sets the default state of the \"Store results\" checkbox."
 msgstr ""
 "&quot;གྲུབ་འབྲས་གསོག་འཇོག་&quot; "

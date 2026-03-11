@@ -28,8 +28,8 @@ msgstr "MIME típusok"
 msgid "file command not installed or not found."
 msgstr "file parancs nincs telepítve vagy nem található."
 
-#: backends/perl_file_mimeinfo.py:26
-msgid "mimetype not installed or not found."
+#: backends/perl_file_mimeinfo.py:24
+msgid "mimetype command not installed or not found."
 msgstr ""
 
 #: dependencies.py:9

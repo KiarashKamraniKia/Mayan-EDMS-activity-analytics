@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:55+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -163,8 +163,8 @@ msgid "No source files available"
 msgstr "འབྱུང་ཁུངས་ཡིག་ཆ་མེད་པ།"
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
-msgstr "པར་རིས་སྒྱུར་ཆས་ཀྱི་རྒྱབ་ཕྱོགས་ལ་སྤྲོད་དགོས་པའི་རྒྱ་ཚད་ཀྱི་རིན་ཐང་།"
+msgid "Width value to be passed to the converter backend."
+msgstr ""
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

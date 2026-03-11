@@ -4,17 +4,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Michal Švábík <snadno@lehce.cz>, 2024
 # Jiri Fait <fait@orkasolutions.cz>, 2024
 # Jiří Podhorecký <jirka.p@volny.cz>, 2024
+# Michal Švábík <snadno@lehce.cz>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:55+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
-"Last-Translator: Jiří Podhorecký <jirka.p@volny.cz>, 2024\n"
+"Last-Translator: Michal Švábík <snadno@lehce.cz>, 2026\n"
 "Language-Team: Czech (https://app.transifex.com/rosarior/teams/13584/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -155,8 +155,8 @@ msgid "No source files available"
 msgstr ""
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
-msgstr ""
+msgid "Width value to be passed to the converter backend."
+msgstr "Hodnota šířky, která má být předána na backend převodníku."
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

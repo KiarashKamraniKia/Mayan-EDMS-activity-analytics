@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 21:13+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: apps.py:220 apps.py:285 apps.py:662 events.py:6 menus.py:8
-#: models/document_models.py:112 permissions.py:6 settings.py:33
+#: models/document_models.py:113 permissions.py:6 settings.py:33
 #: statistics.py:286
 msgid "Documents"
 msgstr "ཡིག་ཆ།"
@@ -55,7 +55,7 @@ msgid "File timestamps"
 msgstr "ཡིག་ཆའི་དུས་རྟགས།"
 
 #: apps.py:419 links/document_file_page_links.py:76
-#: models/document_file_models.py:107 models/document_file_page_models.py:28
+#: models/document_file_models.py:108 models/document_file_page_models.py:28
 #: search.py:54
 msgid "Document file"
 msgstr "ཡིག་ཆའི་ཡིག་ཆ།"
@@ -80,7 +80,7 @@ msgstr "ཡིག་ཆའི་དཔེ་མཚོན་ཕྱིར་ལོ
 #: apps.py:434 links/document_file_links.py:71
 #: links/document_file_page_links.py:70 links/document_version_links.py:73
 #: links/document_version_page_links.py:90 models/document_file_models.py:58
-#: models/document_models.py:111 models/document_version_models.py:30
+#: models/document_models.py:112 models/document_version_models.py:30
 #: models/favorite_document_models.py:30
 #: models/recently_accessed_document_models.py:25 search.py:14
 #: serializers/favorite_document_serializers.py:13
@@ -313,15 +313,15 @@ msgstr "གཞན་པ།"
 msgid "Date added"
 msgstr "བསྣན་པའི་ཚེས་གྲངས།"
 
-#: forms/document_file_forms.py:66 models/document_file_models.py:84
+#: forms/document_file_forms.py:66 models/document_file_models.py:85
 msgid "MIME type"
 msgstr "MIME རིགས་།"
 
-#: forms/document_file_forms.py:70 models/document_file_models.py:90
+#: forms/document_file_forms.py:70 models/document_file_models.py:91
 msgid "Encoding"
 msgstr "ཨིན་ཁོ་ཌིང་།"
 
-#: forms/document_file_forms.py:74 models/document_file_models.py:102
+#: forms/document_file_forms.py:74 models/document_file_models.py:103
 msgid "Size"
 msgstr "ཆེ་ཆུང་།"
 
@@ -333,7 +333,7 @@ msgstr "ཉར་ཚགས་ནང་ཡོད།"
 msgid "Path in storage"
 msgstr "ཉར་ཚགས་ནང་གི་བགྲོད་ལམ།"
 
-#: forms/document_file_forms.py:86 models/document_file_models.py:97
+#: forms/document_file_forms.py:86 models/document_file_models.py:98
 msgid "Checksum"
 msgstr "དག་བཤེར།"
 
@@ -357,7 +357,7 @@ msgstr ""
 msgid "Date created"
 msgstr "གསར་བཟོ་བྱས་པའི་ཚེས་གྲངས།"
 
-#: forms/document_forms.py:113 models/document_models.py:78
+#: forms/document_forms.py:113 models/document_models.py:79
 msgid "Language"
 msgstr "སྐད་ཡིག་།"
 
@@ -672,9 +672,9 @@ msgstr "ཟླ་བ་བཅུ་གཉིས་པ།"
 msgid "All pages"
 msgstr "ཤོག་ངོས་ཚང་མ།"
 
-#: models/document_file_model_mixins.py:365
+#: models/document_file_model_mixins.py:362
 #: models/document_file_page_model_mixins.py:244
-#: models/document_model_mixins.py:179 models/document_models.py:63
+#: models/document_model_mixins.py:179 models/document_models.py:64
 #: models/document_type_models.py:43 models/document_type_models.py:156
 #: models/document_version_model_mixins.py:131
 #: models/document_version_page_model_mixins.py:290
@@ -683,7 +683,7 @@ msgstr "ཤོག་ངོས་ཚང་མ།"
 msgid "Label"
 msgstr "ལག་ཁྱེར་།"
 
-#: models/document_file_model_mixins.py:506
+#: models/document_file_model_mixins.py:503
 msgid "Controls what happens when a new document file is uploaded."
 msgstr "ཡིག་ཆའི་གསར་པ་བསྐུར་བའི་སྐབས་སུ་གང་བྱུང་བ་ལ་ཚོད་འཛིན་བྱེད་པ།"
 
@@ -691,27 +691,27 @@ msgstr "ཡིག་ཆའི་གསར་པ་བསྐུར་བའི་
 msgid "The server date and time when the document file was processed."
 msgstr "ཡིག་ཆ་འདི་སྒྲིག་གཅོད་བྱེད་པའི་སར་བའི་ཚེས་གྲངས་དང་དུས་ཚོད།"
 
-#: models/document_file_models.py:63 models/document_version_models.py:36
+#: models/document_file_models.py:64 models/document_version_models.py:36
 msgid "Timestamp"
 msgstr "དུས་ཚོད་བརྟན་རྟགས།"
 
-#: models/document_file_models.py:67
+#: models/document_file_models.py:68
 msgid "An optional short text describing the document file."
 msgstr "ཡིག་ཆ་བཀོད་པའི་ཚིག་ཐོ་ཐུང་ངུ་འདེམས་ཆོག"
 
-#: models/document_file_models.py:68 models/document_version_models.py:41
+#: models/document_file_models.py:69 models/document_version_models.py:41
 msgid "Comment"
 msgstr "མཆན་འགྲེལ།"
 
-#: models/document_file_models.py:73 serializers/document_serializers.py:93
+#: models/document_file_models.py:74 serializers/document_serializers.py:93
 msgid "File"
 msgstr "ཡིག་ཆ་།"
 
-#: models/document_file_models.py:76
+#: models/document_file_models.py:77
 msgid "Filename"
 msgstr "ཡིག་ཆའི་མིང་།"
 
-#: models/document_file_models.py:80
+#: models/document_file_models.py:81
 msgid ""
 "The document file's file mimetype. MIME types are a standard way to describe"
 " the format of a file, in this case the file format of the document. Some "
@@ -722,13 +722,13 @@ msgstr ""
 "འདིར་ཡིག་ཆའི་བཀོད་སྒྲིག་གི་བཟོ་དབྱིབས་གསལ་བཤད་བྱེད་ཀྱིན་ཡོད། "
 "དཔེ་མཚོན་འགའ་ནི་ \"text/plain\" དང་ \"image/jpeg\" ལྟ་བུ་ཡིན།"
 
-#: models/document_file_models.py:88
+#: models/document_file_models.py:89
 msgid ""
 "The document file file encoding. binary 7-bit, binary 8-bit, text, base64, "
 "etc."
 msgstr "ཡིག་ཆའི་ཨིན་ཁོ་ཌིང་། 7-bit དང་ 8-bit དང་། ཡི་གེ་དང་། base64 སོགས།"
 
-#: models/document_file_models.py:108 storages.py:27
+#: models/document_file_models.py:109 storages.py:27
 msgid "Document files"
 msgstr "ཡིག་ཆ་།"
 
@@ -772,43 +772,43 @@ msgstr ""
 "ཡིག་ཆ་འདི་ངོས་འཛིན་བྱེད་པའི་ཚིག་ཐོ་ཐུང་ངུ་། སྔོན་གཤིས་ལྟར་ན། "
 "ཡིག་ཆ་བསྐུར་བའི་ཡིག་ཆའི་མིང་དང་པོ་ལ་གཏན་འཁེལ་བྱེད་པ།"
 
-#: models/document_models.py:67
+#: models/document_models.py:68
 msgid "An optional short text describing a document."
 msgstr "ཡིག་ཆ་ཞིག་བཀོད་པའི་ཚིག་ཐོ་ཐུང་ངུ་འདེམས་ཆོག"
 
-#: models/document_models.py:68 serializers/document_version_serializers.py:20
+#: models/document_models.py:69 serializers/document_version_serializers.py:20
 msgid "Description"
 msgstr "བཀོད་པ།"
 
-#: models/document_models.py:72
+#: models/document_models.py:73
 msgid "The date and time of the document creation."
 msgstr "ཡིག་ཆ་གསར་བཟོ་བྱས་པའི་ཚེས་གྲངས་དང་དུས་ཚོད།"
 
-#: models/document_models.py:73
+#: models/document_models.py:74
 msgid "Created"
 msgstr "གསར་བཟོ་བྱས་པ།"
 
-#: models/document_models.py:77
+#: models/document_models.py:78
 msgid "The primary language in the document."
 msgstr "ཡིག་ཆའི་ནང་གི་སྐད་ཡིག་གཙོ་བོ།"
 
-#: models/document_models.py:82
+#: models/document_models.py:83
 msgid "Whether or not this document is in the trash."
 msgstr "ཡིག་ཆ་འདི་གད་སྙིགས་ནང་ཡོད་མེད་།"
 
-#: models/document_models.py:83
+#: models/document_models.py:84
 msgid "In trash?"
 msgstr "གད་སྙིགས་ནང་ཡོད་དམ།"
 
-#: models/document_models.py:87
+#: models/document_models.py:88
 msgid "The server date and time when the document was moved to the trash."
 msgstr "ཡིག་ཆ་གད་སྙིགས་ནང་སྤོར་བའི་སར་བའི་ཚེས་གྲངས་དང་དུས་ཚོད།"
 
-#: models/document_models.py:89
+#: models/document_models.py:90
 msgid "Date and time trashed"
 msgstr "གད་སྙིགས་ནང་བསྐྱུར་བའི་ཚེས་གྲངས་དང་དུས་ཚོད།"
 
-#: models/document_models.py:93
+#: models/document_models.py:94
 msgid ""
 "A document stub is a document with an entry on the database but no file "
 "uploaded. This could be an interrupted upload or a deferred upload via the "
@@ -818,11 +818,11 @@ msgstr ""
 "དེ་ལ་གྲངས་མཛོད་ནང་བཅུག་པའི་འགོད་ཐོ་ཡོད་ཀྱང་ཡིག་ཆ་བསྐུར་མེད་པ་ཞིག་ཡིན། "
 "དེ་ནི་བསྐུར་བའི་དཀྱིལ་དུ་ཆད་པ་ཞིག་གམ་ API བརྒྱུད་ནས་བསྐུར་བ་ཞིག་ཡིན་སྲིད།"
 
-#: models/document_models.py:96
+#: models/document_models.py:97
 msgid "Is stub?"
 msgstr "རྩ་འཛུགས་ཡིན་ནམ།"
 
-#: models/document_models.py:101
+#: models/document_models.py:102
 msgid "Active document version"
 msgstr "བེད་སྤྱོད་ཆོག་པའི་ཡིག་ཆའི་པར་གཞི་།"
 
@@ -1362,6 +1362,13 @@ msgstr "དགའ་ཤོས་ཀྱི་ཡིག་ཆ་གསར་པའ
 msgid "Restore URL"
 msgstr "སླར་གསོ་བྱེད་པའི་ URL །"
 
+#: settings.py:40
+msgid ""
+"Optional height in pixels of the document page image used for interactive "
+"display. Leave empty to calculate the height from `DOCUMENTS_DISPLAY_WIDTH` "
+"while preserving the aspect ratio."
+msgstr ""
+
 #: settings.py:49
 msgid ""
 "Width in pixels of the document page image used for interactive display. "
@@ -1369,17 +1376,7 @@ msgid ""
 "storage."
 msgstr ""
 
-#: settings.py:57
-msgid "Path to the Storage subclass to use when storing document files."
-msgstr ""
-"ཡིག་ཆ་ཉར་ཚགས་བྱེད་པའི་སྐབས་སུ་བེད་སྤྱོད་བྱ་རྒྱུའི་ Storage "
-"རིགས་བགར་བའི་བགྲོད་ལམ།"
-
-#: settings.py:64
-msgid "Arguments to pass to the DOCUMENT_FILE_STORAGE_BACKEND."
-msgstr "ཡིག་ཆ་ཉར་ཚགས་ཀྱི་རྒྱབ་ལྗོངས་ལ་འདོན་རྒྱུའི་བགྲོ་གླེང་།"
-
-#: settings.py:70
+#: settings.py:58
 msgid ""
 "Maximum size in bytes of the "
 "`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
@@ -1387,33 +1384,47 @@ msgid ""
 "images."
 msgstr ""
 
-#: settings.py:78
+#: settings.py:67
+msgid "Dotted path to the storage subclass to used to store document files."
+msgstr ""
+
+#: settings.py:74
+msgid "Keyword arguments to pass to `DOCUMENTS_FILE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:81
 msgid ""
 "Dotted path to the storage subclass used to store the cached document file "
 "page images."
 msgstr ""
 
-#: settings.py:84
+#: settings.py:89
+msgid ""
+"Keyword arguments to pass to "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:96
 msgid "Maximum number of favorite documents to remember per user."
 msgstr ""
 "བེད་སྤྱོད་པ་རེ་རེ་ལ་དྲན་པར་བྱ་རྒྱུའི་དགའ་ཤོས་ཀྱི་ཡིག་ཆའི་ཆེ་ཤོས་ཀྱི་གྲངས་།"
 
-#: settings.py:90
+#: settings.py:102
 msgid ""
 "Block size in bytes used when calculating a document file checksum. Use 0 to"
 " disable block reads and hash the entire file in a single pass (loads the "
 "file into memory)."
 msgstr ""
 
-#: settings.py:97
+#: settings.py:109
 msgid "Default documents language (in ISO639-3 format)."
 msgstr "ཡིག་ཆའི་སྐད་ཡིག་སྔོན་གཤིས་། (ISO639-3 བཟོ་དབྱིབས་ནང་།)"
 
-#: settings.py:101
-msgid "List of supported document languages. In ISO639-3 format."
+#: settings.py:114
+msgid "List of supported document languages (in ISO639-3 format)."
 msgstr ""
 
-#: settings.py:107
+#: settings.py:121
 msgid ""
 "Maximum size in bytes of the "
 "`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
@@ -1421,51 +1432,82 @@ msgid ""
 "page images."
 msgstr ""
 
-#: settings.py:116
+#: settings.py:131
 msgid ""
 "Dotted path to the storage subclass used to store cached document version "
 "page images."
 msgstr ""
 
-#: settings.py:124
+#: settings.py:139
 msgid ""
 "Keyword arguments to pass to "
 "`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
 
-#: settings.py:146
+#: settings.py:147
 msgid ""
 "Optional height in pixels of the document preview image. Leave empty to "
 "calculate the height from `DOCUMENTS_PREVIEW_WIDTH` while preserving the "
 "aspect ratio."
 msgstr ""
 
-#: settings.py:153
+#: settings.py:156
+msgid ""
+"Width in pixels of the document preview image. Larger values improve quality"
+" but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:165
+msgid ""
+"Optional height in pixels of the document page image generated for printing."
+" Leave empty to calculate the height from `DOCUMENTS_PRINT_WIDTH` while "
+"preserving the aspect ratio."
+msgstr ""
+
+#: settings.py:174
+msgid ""
+"Width in pixels of the document page image generated for printing. Larger "
+"values improve quality but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:182
+msgid ""
+"Maximum number of recently accessed documents to remember per user (viewed, "
+"created, or edited)."
+msgstr ""
+
+#: settings.py:189
 msgid "Maximum number of recently created documents to show."
 msgstr "ཉེ་ཆར་གསར་བཟོ་བྱས་པའི་ཡིག་ཆ་མང་ཤོས་མངོན་པའི་གྲངས་།"
 
-#: settings.py:159
-msgid "Amount in degrees to rotate a document page per user interaction."
-msgstr "བེད་སྤྱོད་པ་རེ་རེས་ཡིག་ཆའི་ཤོག་ངོས་བསྐོར་བའི་ཚད་གཞི་འདས་པའི་གྲངས་།"
+#: settings.py:195
+msgid "Rotation step in degrees applied each time the user rotates a page."
+msgstr ""
 
-#: settings.py:165
+#: settings.py:202
 msgid "Height in pixels of the document thumbnail image."
 msgstr "ཡིག་ཆའི་བརྡ་ཆུང་པར་གྱི་དཔངས་པར་བཅད་དུམ་མཐོ་ཚད་།"
 
-#: settings.py:184
-msgid ""
-"Maximum amount in percent (%) to allow user to zoom in a document page "
-"interactively."
-msgstr "བེད་སྤྱོད་པས་ཡིག་ཆའི་ཤོག་ངོས་ཆེ་རུ་གཏོང་ཆོག་པའི་བརྒྱ་ཆ་(%)མང་ཤོས།"
+#: settings.py:208
+msgid "Width in pixels of the document thumbnail image."
+msgstr ""
 
-#: settings.py:191
+#: settings.py:214
 msgid ""
-"Minimum amount in percent (%) to allow user to zoom out a document page "
-"interactively."
-msgstr "བེད་སྤྱོད་པས་ཡིག་ཆའི་ཤོག་ངོས་ཆུང་དུ་གཏོང་ཆོག་པའི་བརྒྱ་ཆ་(%)ཉུང་ཤོས།"
+"Width in pixels of the document thumbnail image when shown in list view "
+"mode."
+msgstr ""
 
-#: settings.py:198
-msgid "Amount in percent zoom in or out a document page per user interaction."
+#: settings.py:221
+msgid "Maximum zoom level (percent) allowed when viewing a document page."
+msgstr ""
+
+#: settings.py:228
+msgid "Minimum zoom level (percent) allowed when viewing a document page."
+msgstr ""
+
+#: settings.py:235
+msgid "Zoom step (percent) applied each time the user zooms in or out."
 msgstr ""
 
 #: statistics.py:291
@@ -1981,7 +2023,7 @@ msgstr ""
 "པར་གཞི་ནི་ཡིག་ཆའི་ཤོག་ངོས་དེ་དག་དངོས་ཡོད་ལྟར་མངོན་པར་བྱེད་པ་དང་། "
 "བཟོ་དབྱིབས་མི་འདྲ་བ་ཞིག་ཏུ་སླར་སྒྲིག་དང་འདྲེས་སྦྱོར་བྱེད་ཐུབ།"
 
-#: views/document_version_views.py:204
+#: views/document_version_views.py:203
 msgid "No versions available"
 msgstr "པར་གཞི་མེད།"
 

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 21:15+0000\n"
+"POT-Creation-Date: 2026-03-10 21:56+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Christophe CHAUVET <christophe.chauvet@gmail.com>, 2024\n"
 "Language-Team: French (France) (https://app.transifex.com/rosarior/teams/13584/fr_FR/)\n"
@@ -230,7 +230,7 @@ msgstr "Attacher les étiquettes au document: %(object)s"
 msgid "Attach tags to %(count)d document."
 msgstr "Attacher les étiquettes à %(count)d document."
 
-#: views.py:69 wizard_steps.py:82
+#: views.py:69 wizard_steps.py:89
 msgid "Tags to be attached."
 msgstr "Étiquettes à attacher."
 
@@ -343,7 +343,7 @@ msgstr "Supprimez les étiquettes de %(count)d document."
 msgid "Tags to be removed."
 msgstr "Étiquettes qui seront retirées."
 
-#: wizard_steps.py:21
+#: wizard_steps.py:20
 msgid "Select tags"
 msgstr "Sélectionner les étiquettes"
 

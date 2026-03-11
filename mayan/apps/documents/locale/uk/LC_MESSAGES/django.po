@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 21:13+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Leo Lado, 2025\n"
 "Language-Team: Ukrainian (https://app.transifex.com/rosarior/teams/13584/uk/)\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #: apps.py:220 apps.py:285 apps.py:662 events.py:6 menus.py:8
-#: models/document_models.py:112 permissions.py:6 settings.py:33
+#: models/document_models.py:113 permissions.py:6 settings.py:33
 #: statistics.py:286
 msgid "Documents"
 msgstr "Документи"
@@ -58,7 +58,7 @@ msgid "File timestamps"
 msgstr "Часові мітки файлу"
 
 #: apps.py:419 links/document_file_page_links.py:76
-#: models/document_file_models.py:107 models/document_file_page_models.py:28
+#: models/document_file_models.py:108 models/document_file_page_models.py:28
 #: search.py:54
 msgid "Document file"
 msgstr "Файл документа"
@@ -83,7 +83,7 @@ msgstr "Повернути екземпляр документа."
 #: apps.py:434 links/document_file_links.py:71
 #: links/document_file_page_links.py:70 links/document_version_links.py:73
 #: links/document_version_page_links.py:90 models/document_file_models.py:58
-#: models/document_models.py:111 models/document_version_models.py:30
+#: models/document_models.py:112 models/document_version_models.py:30
 #: models/favorite_document_models.py:30
 #: models/recently_accessed_document_models.py:25 search.py:14
 #: serializers/favorite_document_serializers.py:13
@@ -316,15 +316,15 @@ msgstr "Інші"
 msgid "Date added"
 msgstr "Дату додано"
 
-#: forms/document_file_forms.py:66 models/document_file_models.py:84
+#: forms/document_file_forms.py:66 models/document_file_models.py:85
 msgid "MIME type"
 msgstr "Тип MIME"
 
-#: forms/document_file_forms.py:70 models/document_file_models.py:90
+#: forms/document_file_forms.py:70 models/document_file_models.py:91
 msgid "Encoding"
 msgstr "Кодування"
 
-#: forms/document_file_forms.py:74 models/document_file_models.py:102
+#: forms/document_file_forms.py:74 models/document_file_models.py:103
 msgid "Size"
 msgstr "Розмір"
 
@@ -336,7 +336,7 @@ msgstr "Існує в сховищі"
 msgid "Path in storage"
 msgstr "Шлях у сховищі"
 
-#: forms/document_file_forms.py:86 models/document_file_models.py:97
+#: forms/document_file_forms.py:86 models/document_file_models.py:98
 msgid "Checksum"
 msgstr "Контрольна сума"
 
@@ -360,7 +360,7 @@ msgstr ""
 msgid "Date created"
 msgstr "Дата створення"
 
-#: forms/document_forms.py:113 models/document_models.py:78
+#: forms/document_forms.py:113 models/document_models.py:79
 msgid "Language"
 msgstr "Мова"
 
@@ -675,9 +675,9 @@ msgstr "Грудень"
 msgid "All pages"
 msgstr "Усі сторінки"
 
-#: models/document_file_model_mixins.py:365
+#: models/document_file_model_mixins.py:362
 #: models/document_file_page_model_mixins.py:244
-#: models/document_model_mixins.py:179 models/document_models.py:63
+#: models/document_model_mixins.py:179 models/document_models.py:64
 #: models/document_type_models.py:43 models/document_type_models.py:156
 #: models/document_version_model_mixins.py:131
 #: models/document_version_page_model_mixins.py:290
@@ -686,7 +686,7 @@ msgstr "Усі сторінки"
 msgid "Label"
 msgstr "Мітка"
 
-#: models/document_file_model_mixins.py:506
+#: models/document_file_model_mixins.py:503
 msgid "Controls what happens when a new document file is uploaded."
 msgstr ""
 "Керує тим, що відбувається під час завантаження нового файлу документа."
@@ -695,27 +695,27 @@ msgstr ""
 msgid "The server date and time when the document file was processed."
 msgstr "Дата й час сервера, коли було оброблено файл документа."
 
-#: models/document_file_models.py:63 models/document_version_models.py:36
+#: models/document_file_models.py:64 models/document_version_models.py:36
 msgid "Timestamp"
 msgstr "Часова мітка"
 
-#: models/document_file_models.py:67
+#: models/document_file_models.py:68
 msgid "An optional short text describing the document file."
 msgstr "Необов’язковий короткий текст, що описує файл документа."
 
-#: models/document_file_models.py:68 models/document_version_models.py:41
+#: models/document_file_models.py:69 models/document_version_models.py:41
 msgid "Comment"
 msgstr "Коментар"
 
-#: models/document_file_models.py:73 serializers/document_serializers.py:93
+#: models/document_file_models.py:74 serializers/document_serializers.py:93
 msgid "File"
 msgstr "Файл"
 
-#: models/document_file_models.py:76
+#: models/document_file_models.py:77
 msgid "Filename"
 msgstr "Ім'я файлу"
 
-#: models/document_file_models.py:80
+#: models/document_file_models.py:81
 msgid ""
 "The document file's file mimetype. MIME types are a standard way to describe"
 " the format of a file, in this case the file format of the document. Some "
@@ -725,14 +725,14 @@ msgstr ""
 "файлу, у даному випадку формату файлу документа. Деякі приклади: "
 "\"text/plain\" або \"image/jpeg\"."
 
-#: models/document_file_models.py:88
+#: models/document_file_models.py:89
 msgid ""
 "The document file file encoding. binary 7-bit, binary 8-bit, text, base64, "
 "etc."
 msgstr ""
 "Кодування файлу документа. binary 7-bit, binary 8-bit, text, base64 тощо."
 
-#: models/document_file_models.py:108 storages.py:27
+#: models/document_file_models.py:109 storages.py:27
 msgid "Document files"
 msgstr "Файли докумену"
 
@@ -775,43 +775,43 @@ msgstr ""
 "Короткий текст, що ідентифікує документ. За замовчуванням буде встановлено "
 "назву першого файлу, завантаженого в документ."
 
-#: models/document_models.py:67
+#: models/document_models.py:68
 msgid "An optional short text describing a document."
 msgstr "Необов’язковий короткий текст опису документа."
 
-#: models/document_models.py:68 serializers/document_version_serializers.py:20
+#: models/document_models.py:69 serializers/document_version_serializers.py:20
 msgid "Description"
 msgstr "Опис"
 
-#: models/document_models.py:72
+#: models/document_models.py:73
 msgid "The date and time of the document creation."
 msgstr "Дата і час створення документа."
 
-#: models/document_models.py:73
+#: models/document_models.py:74
 msgid "Created"
 msgstr "Створено"
 
-#: models/document_models.py:77
+#: models/document_models.py:78
 msgid "The primary language in the document."
 msgstr "Основна мова документу."
 
-#: models/document_models.py:82
+#: models/document_models.py:83
 msgid "Whether or not this document is in the trash."
 msgstr "Незалежно від того, чи знаходиться цей документ у кошику."
 
-#: models/document_models.py:83
+#: models/document_models.py:84
 msgid "In trash?"
 msgstr "У кошик?"
 
-#: models/document_models.py:87
+#: models/document_models.py:88
 msgid "The server date and time when the document was moved to the trash."
 msgstr "Дата й час сервера, коли документ було переміщено до кошика."
 
-#: models/document_models.py:89
+#: models/document_models.py:90
 msgid "Date and time trashed"
 msgstr "Дата і час знищення"
 
-#: models/document_models.py:93
+#: models/document_models.py:94
 msgid ""
 "A document stub is a document with an entry on the database but no file "
 "uploaded. This could be an interrupted upload or a deferred upload via the "
@@ -821,11 +821,11 @@ msgstr ""
 "завантаженого файлу. Це може бути перерване завантаження або відкладене "
 "завантаження через API."
 
-#: models/document_models.py:96
+#: models/document_models.py:97
 msgid "Is stub?"
 msgstr "Заглушка ?"
 
-#: models/document_models.py:101
+#: models/document_models.py:102
 msgid "Active document version"
 msgstr "Активна версія документа"
 
@@ -1364,6 +1364,13 @@ msgstr "ID документа для нового улюбленого доку�
 msgid "Restore URL"
 msgstr "Відновити URL"
 
+#: settings.py:40
+msgid ""
+"Optional height in pixels of the document page image used for interactive "
+"display. Leave empty to calculate the height from `DOCUMENTS_DISPLAY_WIDTH` "
+"while preserving the aspect ratio."
+msgstr ""
+
 #: settings.py:49
 msgid ""
 "Width in pixels of the document page image used for interactive display. "
@@ -1371,17 +1378,7 @@ msgid ""
 "storage."
 msgstr ""
 
-#: settings.py:57
-msgid "Path to the Storage subclass to use when storing document files."
-msgstr ""
-"Шлях до підкласу сховища, який використовується для зберігання файлів "
-"документів."
-
-#: settings.py:64
-msgid "Arguments to pass to the DOCUMENT_FILE_STORAGE_BACKEND."
-msgstr "Аргументи, які потрібно передати до DOCUMENT_FILE_STORAGE_BACKEND."
-
-#: settings.py:70
+#: settings.py:58
 msgid ""
 "Maximum size in bytes of the "
 "`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
@@ -1389,41 +1386,48 @@ msgid ""
 "images."
 msgstr ""
 
-#: settings.py:78
+#: settings.py:67
+msgid "Dotted path to the storage subclass to used to store document files."
+msgstr ""
+
+#: settings.py:74
+msgid "Keyword arguments to pass to `DOCUMENTS_FILE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:81
 msgid ""
 "Dotted path to the storage subclass used to store the cached document file "
 "page images."
 msgstr ""
 
-#: settings.py:84
+#: settings.py:89
+msgid ""
+"Keyword arguments to pass to "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:96
 msgid "Maximum number of favorite documents to remember per user."
 msgstr ""
 "Максимальна кількість улюблених документів, яку слід запам'ятовувати для "
 "кожного користувача."
 
-#: settings.py:90
+#: settings.py:102
 msgid ""
 "Block size in bytes used when calculating a document file checksum. Use 0 to"
 " disable block reads and hash the entire file in a single pass (loads the "
 "file into memory)."
 msgstr ""
 
-#: settings.py:97
+#: settings.py:109
 msgid "Default documents language (in ISO639-3 format)."
 msgstr "Мова документів за замовчуванням (у форматі ISO639-3)."
 
-#: settings.py:101
-msgid "List of supported document languages. In ISO639-3 format."
-msgstr "Список підтримуваних мов документом. У форматі ISO639-3."
-
-#: settings.py:107
-msgid ""
-"The threshold at which the DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND"
-" will start deleting the oldest document version page image cache versions. "
-"Specify the size in bytes."
+#: settings.py:114
+msgid "List of supported document languages (in ISO639-3 format)."
 msgstr ""
 
-#: settings.py:116
+#: settings.py:121
 msgid ""
 "Maximum size in bytes of the "
 "`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
@@ -1431,44 +1435,82 @@ msgid ""
 "page images."
 msgstr ""
 
-#: settings.py:124
+#: settings.py:131
 msgid ""
 "Dotted path to the storage subclass used to store cached document version "
 "page images."
 msgstr ""
 
-#: settings.py:146
+#: settings.py:139
 msgid ""
 "Keyword arguments to pass to "
 "`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
 
-#: settings.py:153
+#: settings.py:147
+msgid ""
+"Optional height in pixels of the document preview image. Leave empty to "
+"calculate the height from `DOCUMENTS_PREVIEW_WIDTH` while preserving the "
+"aspect ratio."
+msgstr ""
+
+#: settings.py:156
+msgid ""
+"Width in pixels of the document preview image. Larger values improve quality"
+" but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:165
+msgid ""
+"Optional height in pixels of the document page image generated for printing."
+" Leave empty to calculate the height from `DOCUMENTS_PRINT_WIDTH` while "
+"preserving the aspect ratio."
+msgstr ""
+
+#: settings.py:174
+msgid ""
+"Width in pixels of the document page image generated for printing. Larger "
+"values improve quality but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:182
+msgid ""
+"Maximum number of recently accessed documents to remember per user (viewed, "
+"created, or edited)."
+msgstr ""
+
+#: settings.py:189
 msgid "Maximum number of recently created documents to show."
 msgstr "Максимальна кількість недавно створених документів для відображення."
 
-#: settings.py:159
-msgid "Amount in degrees to rotate a document page per user interaction."
-msgstr "Обертання сторінки документа в градусах за раз."
+#: settings.py:195
+msgid "Rotation step in degrees applied each time the user rotates a page."
+msgstr ""
 
-#: settings.py:165
+#: settings.py:202
 msgid "Height in pixels of the document thumbnail image."
 msgstr "Висота в пікселях зображення мініатюри документа."
 
-#: settings.py:184
-msgid ""
-"Maximum amount in percent (%) to allow user to zoom in a document page "
-"interactively."
-msgstr "Максимальний відсоток, на який можна збільшити сторінку документу."
-
-#: settings.py:191
-msgid ""
-"Minimum amount in percent (%) to allow user to zoom out a document page "
-"interactively."
+#: settings.py:208
+msgid "Width in pixels of the document thumbnail image."
 msgstr ""
 
-#: settings.py:198
-msgid "Amount in percent zoom in or out a document page per user interaction."
+#: settings.py:214
+msgid ""
+"Width in pixels of the document thumbnail image when shown in list view "
+"mode."
+msgstr ""
+
+#: settings.py:221
+msgid "Maximum zoom level (percent) allowed when viewing a document page."
+msgstr ""
+
+#: settings.py:228
+msgid "Minimum zoom level (percent) allowed when viewing a document page."
+msgstr ""
+
+#: settings.py:235
+msgid "Zoom step (percent) applied each time the user zooms in or out."
 msgstr ""
 
 #: statistics.py:291
@@ -1992,7 +2034,7 @@ msgstr ""
 "Версії — це перегляди, які можуть відображати сторінки файлу документа "
 "такими, якими вони є, переназначати або об’єднувати їх у різні шари."
 
-#: views/document_version_views.py:204
+#: views/document_version_views.py:203
 msgid "No versions available"
 msgstr "Немає доступних версій"
 

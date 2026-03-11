@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:28+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Frédéric Sheedy <sheedf@gmail.com>, 2024\n"
 "Language-Team: French (France) (https://app.transifex.com/rosarior/teams/13584/fr_FR/)\n"
@@ -63,22 +63,22 @@ msgstr ""
 "d'authentification. Ne partagez pas ce secret, traitez-le comme un mot de "
 "passe."
 
-#: forms.py:108 forms.py:113
+#: forms.py:109 forms.py:114
 msgid "Secret"
 msgstr "Secret"
 
-#: forms.py:119
+#: forms.py:120
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 "Entrez le jeton correspondant pour valider que le secret a été enregistré "
 "correctement."
 
-#: forms.py:122
+#: forms.py:123
 msgid "Token"
 msgstr "Jeton"
 
-#: forms.py:158
+#: forms.py:159
 msgid "Token is incorrect for the specified secret."
 msgstr "Le jeton est incorrect pour le secret spécifié."
 

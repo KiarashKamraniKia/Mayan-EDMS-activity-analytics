@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:30+0000\n"
+"POT-Creation-Date: 2026-03-10 21:56+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Harald Ersch, 2024\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -119,7 +119,7 @@ msgstr "Cheia primară a tipului de document de adăugat la linkul web."
 msgid "Document type ID"
 msgstr "ID tip document"
 
-#: serializers.py:26
+#: serializers.py:25
 msgid "Primary key of the document type to remove from the web link."
 msgstr "Cheia primară a tipului de document de eliminat de pe link-ul web."
 

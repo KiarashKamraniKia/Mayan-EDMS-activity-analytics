@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -107,7 +107,7 @@ msgstr "ཡིག་ཆའི་མེ་ཊ་གཞི་གྲངས་སྒ
 msgid "File metadata processing per type"
 msgstr "རིགས་རེ་རེའི་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ལས་སྣོན།"
 
-#: links.py:65 views.py:234
+#: links.py:65 views.py:238
 msgid "File metadata drivers"
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་སྒུལ་གཏོང་འཕྲུལ་ཆས།"
 
@@ -145,43 +145,43 @@ msgid "Automatically queue newly created documents for processing."
 msgstr ""
 "རང་འགུལ་གྱིས་གསར་དུ་བཟོས་པའི་ཡིག་ཆ་རྣམས་ལས་སྣོན་བྱེད་པར་བང་སྒྲིག་དགོས།"
 
-#: models.py:49
+#: models.py:48
 msgid "Auto process"
 msgstr "རང་འགུལ་བརྒྱུད་རིམ།"
 
-#: models.py:55
+#: models.py:54
 msgid "Document type settings"
 msgstr "ཡིག་ཆའི་རིགས་སྒྲིག་སྟངས།"
 
-#: models.py:56
+#: models.py:55
 msgid "Document types settings"
 msgstr "ཡིག་ཆའི་རིགས་སྒྲིག་སྟངས།"
 
-#: models.py:71
+#: models.py:70
 msgid "Normalized name of the file metadata entry."
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཐོ་འགོད་ཀྱི་སྤྱིར་བཏང་མིང་།"
 
-#: models.py:76
+#: models.py:75
 msgid "Name of the file metadata entry as provided by the driver."
 msgstr "སྒུལ་གཏོང་གིས་མཁོ་སྤྲོད་བྱས་པའི་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཐོ་འགོད་ཀྱི་མིང་།"
 
-#: models.py:78
+#: models.py:77
 msgid "Key"
 msgstr "ལྡེ་མིག"
 
-#: models.py:81
+#: models.py:80
 msgid "Value of the file metadata entry."
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཐོ་འགོད་ཀྱི་རིན་ཐང་།"
 
-#: models.py:82
+#: models.py:81
 msgid "Value"
 msgstr "རིན་ཐང"
 
-#: models.py:88
+#: models.py:87
 msgid "File metadata entry"
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ནང་འཛུལ།"
 
-#: models.py:89
+#: models.py:88
 msgid "File metadata entries"
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཐོ་འགོད།"
 
@@ -276,36 +276,36 @@ msgid ""
 msgstr ""
 "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཁྱད་ཆོས།: %(document_file)s དང་སྒུལ་གཏོང་: %(driver)s"
 
-#: views.py:124
+#: views.py:125
 #, python-format
 msgid "%(count)d documents files submitted to the file metadata queue."
 msgstr "%(count)d ཡིག་ཆའི་ཡིག་ཆ་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་བང་རིམ་ལ་ཕུལ་ཡོད།"
 
-#: views.py:127
+#: views.py:129
 #, python-format
 msgid "%(count)d document file submitted to the file metadata queue."
 msgstr "%(count)d ཡིག་ཆའི་ཡིག་ཆ་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་བང་རིམ་ལ་ཕུལ་ཡོད།"
 
-#: views.py:136
+#: views.py:139
 msgid "Submit the selected document file to the file metadata queue?"
 msgid_plural "Submit the selected documents files to the file metadata queue?"
 msgstr[0] "བདམས་པའི་ཡིག་ཆའི་ཡིག་ཆ་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་བང་རིམ་ལ་འབུལ་དགོས་སམ།"
 
-#: views.py:167
+#: views.py:170
 #, python-format
 msgid "Edit file metadata settings for document type: %s"
 msgstr "ཡིག་ཆའི་རིགས་ལ་ཡིག་ཆའི་ཚད་གཞིའི་སྒྲིག་སྟངས་རྩོམ་སྒྲིག་བྱེད། %s"
 
-#: views.py:178
+#: views.py:181
 msgid "Submit all documents of a type for file metadata processing."
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ལས་སྣོན་ཆེད་དུ་རིགས་གཅིག་གི་ཡིག་ཆ་ཚང་མ་འབུལ་དགོས།"
 
-#: views.py:205
+#: views.py:209
 #, python-format
 msgid "%(count)d documents added to the file metadata processing queue."
 msgstr "%(count)d ཡིག་ཆ་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ལས་སྣོན་བང་རིམ་ལ་ཁ་སྣོན་བྱས།"
 
-#: views.py:226
+#: views.py:230
 msgid ""
 "File metadata drivers extract embedded information from document files. File"
 " metadata drivers are configure in code only."
@@ -314,6 +314,6 @@ msgstr ""
 " "
 "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་སྒུལ་གཏོང་འཕྲུལ་ཆས་དེ་ཚོ་གསང་ཚིག་ནང་ལ་སྒྲིག་བཀོད་བྱེད་ཀྱི་ཡོད།"
 
-#: views.py:231
+#: views.py:235
 msgid "No file metadata drivers available."
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་སྒུལ་གཏོང་མི་འདུག"

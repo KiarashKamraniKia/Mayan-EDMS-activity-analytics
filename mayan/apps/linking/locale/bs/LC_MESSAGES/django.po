@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 21:14+0000\n"
+"POT-Creation-Date: 2026-03-10 17:54-0400\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Bosnian (https://app.transifex.com/rosarior/teams/13584/bs/)\n"
@@ -183,10 +183,6 @@ msgstr "Pametni link"
 #: models.py:98
 msgid "The inclusion is ignored for the first item."
 msgstr "Inkluzija je ignorisana za prvu stavku"
-
-#: models.py:95
-msgid "Inclusion"
-msgstr ""
 
 #: models.py:99
 msgid "Inclusion"

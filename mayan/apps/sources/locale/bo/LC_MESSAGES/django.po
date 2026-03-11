@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:56+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -206,7 +206,7 @@ msgstr "འབྱུང་ཁུངས་མེ་ཊ་ཌེ་ཊ་ལྡེ
 msgid "Source metadata value"
 msgstr "འབྱུང་ཁུངས་མེ་ཊ་གྲངས་ཐོའི་རིན་ཐང་།"
 
-#: serializers.py:22 serializers.py:107
+#: serializers.py:22 serializers.py:108
 msgid "URL"
 msgstr "URL །"
 
@@ -230,7 +230,7 @@ msgstr "མིང"
 msgid "Required"
 msgstr "ངེས་སྦྱོང"
 
-#: serializers.py:70 serializers.py:85
+#: serializers.py:70 serializers.py:86
 msgid "Arguments"
 msgstr "རྩོད་པ།"
 
@@ -242,31 +242,31 @@ msgstr "ཡིག་ཆ་དང་ལེན་བྱེད་པ།"
 msgid "Optional arguments for the action. Must be JSON formatted."
 msgstr "བྱ་བའི་གདམ་ཀའི་སྒྲུབ་བྱེད། ངེས་པར་དུ་JSONརྩ་སྒྲིག་བྱེད་དགོས།"
 
-#: serializers.py:89
+#: serializers.py:90
 msgid "Confirmation"
 msgstr "བདེན་དཔང་།"
 
-#: serializers.py:92
+#: serializers.py:93
 msgid "Execute URL"
 msgstr "URL ལག་བསྟར།"
 
-#: serializers.py:95
+#: serializers.py:96
 msgid "Interfaces"
 msgstr "ངོས་འདྲ་བ།"
 
-#: serializers.py:99
+#: serializers.py:100
 msgid "name"
 msgstr "མིང་"
 
-#: serializers.py:102
+#: serializers.py:103
 msgid "Permission"
 msgstr "ཆོག་མཆན"
 
-#: serializers.py:118
+#: serializers.py:119
 msgid "Binary content for the new file."
 msgstr "ཡིག་ཆ་གསར་པའི་དྭང་གཟུགས་ཀྱི་ནང་དོན།"
 
-#: serializers.py:154
+#: serializers.py:155
 msgid "Actions URL"
 msgstr "བྱ་བའི་URL"
 
@@ -289,8 +289,8 @@ msgid "Path to the Storage subclass used to store cached source image files."
 msgstr ""
 "འདྲ་མཛོད་ཀྱི་འབྱུང་ཁུངས་པར་རིས་ཡིག་ཆ་གསོག་འཇོག་བྱེད་པར་བེད་སྤྱོད་བྱེད་པའི་གསོག་འཇོག་སྡེ་ཚན་ཆུང་བ་ལ་འགྲོ་ལམ།"
 
-#: settings.py:44
-msgid "Arguments to pass to the SOURCES_SOURCE_CACHE_STORAGE_BACKEND."
+#: settings.py:45
+msgid "Arguments to pass to the `SOURCES_SOURCE_CACHE_STORAGE_BACKEND`."
 msgstr ""
 
 #: source_backend_actions/interfaces.py:161
@@ -360,7 +360,7 @@ msgstr "རྒྱུན་ལྡན་བརྗོད་པ་ཕུད།"
 msgid "Content selection"
 msgstr "ནང་དོན་འདེམས་སྒྲུག།"
 
-#: storages.py:13
+#: storages.py:14
 msgid ""
 "Unable to initialize the staging folder file image storage. Check the "
 "settings {} and {} for formatting errors."
@@ -368,7 +368,7 @@ msgstr ""
 "རིམ་པ་སྣོད་ཡིག་ཡིག་ཆའི་པར་རིས་གསོག་འཇོག་འགོ་འཛུགས་བྱེད་མི་ཐུབ། སྒྲིག་སྟངས་ "
 "{} དང་ {} ལ་རྩ་སྒྲིག་ནོར་འཁྲུལ་ཡོད་མེད་ཞིབ་བཤེར་བྱེད།"
 
-#: storages.py:20
+#: storages.py:21
 msgid "Sources cache"
 msgstr "ཐོན་ཁུངས་མཛོད་ཁང་།"
 

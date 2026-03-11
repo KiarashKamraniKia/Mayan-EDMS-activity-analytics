@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:30+0000\n"
+"POT-Creation-Date: 2026-03-10 21:56+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: piera.daraio, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
@@ -129,7 +129,7 @@ msgstr "Chiave primaria del Tipo documento da aggiungere al collegamento web."
 msgid "Document type ID"
 msgstr "ID Tipo documento"
 
-#: serializers.py:26
+#: serializers.py:25
 msgid "Primary key of the document type to remove from the web link."
 msgstr "Chiave primaria del Tipo documento da rimuovere dal collegamento web."
 

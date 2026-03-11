@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26 15:20+0000\n"
+"POT-Creation-Date: 2026-03-10 21:55+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Badea Gabriel <gcbadea@gmail.com>, 2024\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -25,32 +25,32 @@ msgstr ""
 msgid "Platform"
 msgstr "Platformă"
 
-#: classes.py:239
+#: classes.py:242
 msgid "Template for entrypoint.sh file inside a Docker image."
 msgstr ""
 "Șablon pentru fișierul entrypoint.sh în interiorul unei imagini Docker."
 
-#: classes.py:254
+#: classes.py:257
 msgid "Template that generates the Docker Compose file."
 msgstr "Șablon care generează fișierul Docker Compose."
 
-#: classes.py:419
+#: classes.py:422
 msgid "Template for Supervisord inside a Docker image."
 msgstr "Șablon pentru Supervisord în interiorul unei imagini Docker."
 
-#: classes.py:437
+#: classes.py:440
 msgid "Template that generates a Dockerfile file."
 msgstr "Șablon care generează un fișier Dockerfile."
 
-#: classes.py:452
+#: classes.py:464
 msgid "Template that generates a GitLab CI config file."
 msgstr "Șablon care generează un fișier de configurare GitLab CI."
 
-#: classes.py:611
+#: classes.py:633
 msgid "Template for Supervisord."
 msgstr "Șablon pentru Supervisord."
 
-#: classes.py:685
+#: classes.py:707
 msgid "Template showing the queues of a worker."
 msgstr "Șablon care arată cozile unui lucrător."
 

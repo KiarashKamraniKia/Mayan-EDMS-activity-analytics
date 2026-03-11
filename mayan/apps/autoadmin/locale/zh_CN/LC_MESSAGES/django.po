@@ -8,14 +8,15 @@
 # Leon Chu, 2024
 # yan songwei <yansw@vip.163.com>, 2024
 # Ford Guo <agile.guo@gmail.com>, 2024
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-02 14:05+0000\n"
+"POT-Creation-Date: 2026-03-07 05:31+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
-"Last-Translator: Ford Guo <agile.guo@gmail.com>, 2024\n"
+"Last-Translator: YJ Chen, 2026\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/rosarior/teams/13584/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +32,7 @@ msgstr "自动管理员"
 msgid ""
 "Welcome Admin! You have been given super user privileges. Use them with "
 "caution."
-msgstr ""
+msgstr "歡迎管理員！您已被授予超級使用者權限，請謹慎使用。"
 
 #: models.py:13
 msgid "Account"

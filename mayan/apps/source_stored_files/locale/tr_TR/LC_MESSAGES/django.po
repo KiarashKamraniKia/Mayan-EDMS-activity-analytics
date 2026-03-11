@@ -6,16 +6,16 @@
 # Translators:
 # Bedreddin Şahbaz, 2024
 # Nurgül Özkan <nurgulozkan@hotmail.com>, 2024
-# serhatcan77 <serhat_can@yahoo.com>, 2024
 # Emine Öztürk <oemine075@gmail.com>, 2024
+# serhatcan77 <serhat_can@yahoo.com>, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:55+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
-"Last-Translator: Emine Öztürk <oemine075@gmail.com>, 2024\n"
+"Last-Translator: serhatcan77 <serhat_can@yahoo.com>, 2026\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -156,8 +156,8 @@ msgid "No source files available"
 msgstr ""
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
-msgstr ""
+msgid "Width value to be passed to the converter backend."
+msgstr "Dönüştürücü uygulamasına iletilecek genişlik değeri."
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

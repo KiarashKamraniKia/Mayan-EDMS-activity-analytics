@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-07 22:22+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -561,15 +561,15 @@ msgstr "ལས་ཀའི་རྒྱུན་རིམ་གནས་སྟང
 msgid "Lookup value error: %s"
 msgstr "འཚོལ་ཞིབ་རིན་ཐང་གི་ནོར་ %s"
 
-#: models/workflow_transition_field_model_mixins.py:110
+#: models/workflow_transition_field_model_mixins.py:109
 msgid "Has a default?"
 msgstr "སྔོན་སྒྲིག་ཡོད་དམ།"
 
-#: models/workflow_transition_field_model_mixins.py:118
+#: models/workflow_transition_field_model_mixins.py:117
 msgid "Has a lookup?"
 msgstr "ལྟ་ཞིབ་བྱས་ཡོད་དམ།"
 
-#: models/workflow_transition_field_model_mixins.py:129
+#: models/workflow_transition_field_model_mixins.py:128
 msgid "Value is not one of the provided options."
 msgstr "རིན་ཐང་ནི་མཁོ་སྤྲོད་བྱས་པའི་གདམ་གའི་གྲས་ཤིག་མ་རེད།"
 
@@ -868,7 +868,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr "ལས་ཀའི་རྒྱུན་རིམ་ལ་ཁ་སྣོན་བྱེད་པའི་ཡིག་ཆའི་རིགས་ཀྱི་ལྡེ་མིག་གཙོ་བོ།"
 
 #: serializers/workflow_template_serializers.py:71
-#: serializers/workflow_template_serializers.py:80
+#: serializers/workflow_template_serializers.py:81
 msgid "Document type ID"
 msgstr "ཡིག་ཆའི་རིགས་ཀྱི་ཨང་རྟགས།"
 
@@ -1250,32 +1250,32 @@ msgstr ""
 msgid "Workflow transition trigger events for: %s"
 msgstr "ལས་ཀའི་རྒྱུན་རིམ་བརྗེ་སྒྱུར་གྱི་བྱུང་རིམ་ནི། %s"
 
-#: views/workflow_template_transition_views.py:39
+#: views/workflow_template_transition_views.py:40
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "ལས་ཀའི་རྒྱུན་རིམ་གྱི་འགྱུར་ལྡོག་བཟོས། %s"
 
-#: views/workflow_template_transition_views.py:79
+#: views/workflow_template_transition_views.py:80
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "%s །"
 
-#: views/workflow_template_transition_views.py:106
+#: views/workflow_template_transition_views.py:107
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "ལས་ཀའི་འགྲོ་ལུགས་བརྗེ་སྒྱུར་རྩོམ་སྒྲིག: %s"
 
-#: views/workflow_template_transition_views.py:146
+#: views/workflow_template_transition_views.py:147
 msgid ""
 "Create a transition and use it to move a workflow from one state to another."
 msgstr ""
 "འགྱུར་ལྡོག་ཅིག་གསར་འཛུགས་བྱས་ནས་དེ་བེད་སྤྱད་དེ་ལས་ཀའི་རྒྱུན་རིམ་ཞིག་གནས་སྟངས་གཅིག་ནས་གཞན་ཞིག་ལ་སྤོ་བསྒྱུར་བྱེད།"
 
-#: views/workflow_template_transition_views.py:150
+#: views/workflow_template_transition_views.py:151
 msgid "This workflow doesn't have any transitions"
 msgstr "ལས་ཀའི་འགྲོ་ལུགས་འདི་ལ་འགྱུར་ལྡོག་གང་ཡང་མེད།"
 
-#: views/workflow_template_transition_views.py:154
+#: views/workflow_template_transition_views.py:155
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "%s"

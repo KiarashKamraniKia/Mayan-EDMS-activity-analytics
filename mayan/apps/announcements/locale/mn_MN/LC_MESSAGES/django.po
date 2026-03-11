@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:28+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Bilgutei Erdenebayar <beke0130@gmail.com>, 2024\n"
 "Language-Team: Mongolian (Mongolia) (https://app.transifex.com/rosarior/teams/13584/mn_MN/)\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Language: mn_MN\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:48
+#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:50
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:121
 msgid "Announcements"
 msgstr "Зарлалууд"
@@ -74,19 +74,19 @@ msgstr "Идэвхжүүлсэн"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "Энэ зарлалыг тавьж эхлэх огноо."
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "Эхлэх огноо"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "Энэ зарлалыг тавьж дуусах огноо."
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "Дуусах огноо"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "Зарлал"
 

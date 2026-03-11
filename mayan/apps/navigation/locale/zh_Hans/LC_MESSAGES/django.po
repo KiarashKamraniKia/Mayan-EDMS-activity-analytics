@@ -7,6 +7,7 @@
 # Ford Guo <agile.guo@gmail.com>, 2024
 # xisafe <root@xisafe.com>, 2024
 # Roberto Rosario, 2024
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-07 07:29+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
-"Last-Translator: Roberto Rosario, 2024\n"
+"Last-Translator: YJ Chen, 2026\n"
 "Language-Team: Chinese Simplified (https://app.transifex.com/rosarior/teams/13584/zh-Hans/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -40,16 +41,16 @@ msgstr "切换下拉列表"
 
 #: templates/navigation/app/list_toolbar.html:14
 msgid "Sort by column"
-msgstr ""
+msgstr "依欄位排序"
 
 #: templates/navigation/app/list_toolbar.html:15
 msgid "--- Clear ---"
-msgstr ""
+msgstr "--- 清除 ---"
 
 #: templates/navigation/app/list_toolbar.html:18
 msgid "(ascending)"
-msgstr ""
+msgstr "(遞增)"
 
 #: templates/navigation/app/list_toolbar.html:20
 msgid "(descending)"
-msgstr ""
+msgstr "(遞減)"

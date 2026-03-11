@@ -4,8 +4,8 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Marco Camplese <marco.camplese.mc@gmail.com>, 2026
 # Roberto Rosario, 2026
+# Marco Camplese <marco.camplese.mc@gmail.com>, 2026
 # 
 #, fuzzy
 msgid ""
@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-03-07 05:43+0000\n"
-"PO-Revision-Date: 2026-03-07 05:39+0000\n"
-"Last-Translator: Roberto Rosario, 2026\n"
+"PO-Revision-Date: 2026-03-10 21:56+0000\n"
+"Last-Translator: Marco Camplese <marco.camplese.mc@gmail.com>, 2026\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"

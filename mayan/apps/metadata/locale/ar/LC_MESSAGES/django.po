@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-04 06:21+0000\n"
+"POT-Creation-Date: 2026-03-10 21:55+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Hany salah, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/rosarior/teams/13584/ar/)\n"
@@ -88,7 +88,7 @@ msgstr "قيمة"
 msgid "Update"
 msgstr "تحديث"
 
-#: forms.py:51 forms.py:232 models/document_type_metadata_type_models.py:31
+#: forms.py:51 forms.py:233 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "متطلب"
 
@@ -107,41 +107,41 @@ msgstr "خطأ القيمة الافتراضية: %s"
 msgid "\"%s\" is required for this document type."
 msgstr "مطلوب &quot;%s&quot; لنوع المستند هذا."
 
-#: forms.py:136
+#: forms.py:137
 msgid "Metadata types to be added to the selected documents."
 msgstr "يرجى الإختيار لإكمال عملية الإضافة"
 
-#: forms.py:137 models/document_type_metadata_type_models.py:28
+#: forms.py:138 models/document_type_metadata_type_models.py:28
 #: models/metadata_type_models.py:83 search.py:11 serializers.py:52
 #: serializers.py:114 workflow_actions.py:148
 msgid "Metadata type"
 msgstr "نوع البيانات الوصفية"
 
-#: forms.py:162
+#: forms.py:163
 msgid "Remove"
 msgstr "حذف"
 
-#: forms.py:181
+#: forms.py:182
 msgid "Basic"
 msgstr "أساسي"
 
-#: forms.py:185
+#: forms.py:186
 msgid "Values"
 msgstr "القيم"
 
-#: forms.py:189
+#: forms.py:190
 msgid "Validation"
 msgstr "التحقق"
 
-#: forms.py:193
+#: forms.py:194
 msgid "Parsing"
 msgstr "تفسير"
 
-#: forms.py:230
+#: forms.py:231
 msgid "None"
 msgstr "لا شيء"
 
-#: forms.py:231
+#: forms.py:232
 msgid "Optional"
 msgstr "اختياري"
 
@@ -639,7 +639,7 @@ msgstr "أنواع المستندات لنوع البيانات الوصفية: 
 msgid "Enter document metadata"
 msgstr "أدخل البيانات الوصفية للوثيقة"
 
-#: wizard_steps.py:203
+#: wizard_steps.py:207
 msgid ""
 "One of more metadata types that are required for this document type are not "
 "available."

@@ -5,18 +5,18 @@
 # 
 # Translators:
 # John Kawas <john@clinicalclouds.com>, 2024
-# Roberto Rosario, 2024
 # Marwan Rahhal <Marwanr@sssit.net>, 2024
 # Yaman Sanobar <yman.snober@gmail.com>, 2024
 # Mohamad Ashmar, 2025
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:55+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
-"Last-Translator: Mohamad Ashmar, 2025\n"
+"Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Arabic (https://app.transifex.com/rosarior/teams/13584/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -166,8 +166,8 @@ msgid "No source files available"
 msgstr "لا توجد ملفات مصدرية متاحة"
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
-msgstr "قيمة العرض التي سيتم تمريرها إلى محوّل الصور الخلفي."
+msgid "Width value to be passed to the converter backend."
+msgstr "قيمة العرض لتمريرها إلى نظام المعالجة"
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

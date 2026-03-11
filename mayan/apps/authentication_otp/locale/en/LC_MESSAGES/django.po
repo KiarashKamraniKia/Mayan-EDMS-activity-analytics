@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:28+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,20 +55,20 @@ msgid ""
 "share this secret, treat it like a password."
 msgstr ""
 
-#: forms.py:108 forms.py:113
+#: forms.py:109 forms.py:114
 msgid "Secret"
 msgstr ""
 
-#: forms.py:119
+#: forms.py:120
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 
-#: forms.py:122
+#: forms.py:123
 msgid "Token"
 msgstr ""
 
-#: forms.py:158
+#: forms.py:159
 msgid "Token is incorrect for the specified secret."
 msgstr ""
 

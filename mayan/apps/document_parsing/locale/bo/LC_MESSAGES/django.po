@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -29,7 +29,7 @@ msgid "A generator returning the document file's pages parsed content."
 msgstr ""
 "ཡིག་ཆའི་ཡིག་ཆའི་ཤོག་ངོས་ལ་དབྱེ་ཞིབ་བྱས་པའི་ནང་དོན་སླར་ལོག་བྱེད་པའི་འཕྲུལ་ཆས་ཤིག་རེད།"
 
-#: apps.py:114 links.py:26 links.py:49 models.py:27 search.py:18
+#: apps.py:115 links.py:26 links.py:49 models.py:27 search.py:18
 msgid "Content"
 msgstr "ནང་དོན"
 
@@ -177,72 +177,72 @@ msgstr ""
 msgid "Content of %(count)d document versions deleted successfully."
 msgstr "%(count)d ཡིག་ཆའི་ཐོན་རིམ་གྱི་ནང་དོན་མཐར་ཕྱིན་ངང་བསུབས་ཡོད།"
 
-#: views.py:48
+#: views.py:49
 #, python-format
 msgid "Content of \"%(object)s\" deleted successfully."
 msgstr "&quot; %(object)s &quot; ཡི་ནང་དོན་མཐར་ཕྱིན་ངང་བསུབས་ཡོད།"
 
-#: views.py:51
+#: views.py:52
 #, python-format
 msgid "Content of %(count)d document version deleted successfully."
 msgstr "ཡིག་ཆའི་ཐོན་རིམ་ %(count)d ཡི་ནང་དོན་མཐར་ཕྱིན་ངང་བསུབས་ཡོད།"
 
-#: views.py:53
+#: views.py:54
 #, python-format
 msgid "Delete the content of: %(object)s."
 msgstr "འདིའི་ནང་དོན་བསུབས་ %(object)s"
 
-#: views.py:55
+#: views.py:56
 #, python-format
 msgid "Delete the content of the %(count)d selected document version."
 msgstr "%(count)d འདེམས་སྒྲུག་བྱས་པའི་ཡིག་ཆའི་ཐོན་རིམ་གྱི་ནང་དོན་བསུབས་དགོས།"
 
-#: views.py:58
+#: views.py:60
 #, python-format
 msgid "Delete the content of the %(count)d selected document versions."
 msgstr "%(count)d འདེམས་སྒྲུག་བྱས་པའི་ཡིག་ཆའི་ཐོན་རིམ་གྱི་ནང་དོན་བསུབས་དགོས།"
 
-#: views.py:99
+#: views.py:102
 #, python-format
 msgid "Content for document file: %s"
 msgstr "ཡིག་ཆའི་ཡིག་ཆའི་ནང་དོན། %s"
 
-#: views.py:121
+#: views.py:124
 #, python-format
 msgid "Content for document file page: %s"
 msgstr "ཡིག་ཆའི་ཡིག་ཆའི་ཤོག་ངོས་ཀྱི་ནང་དོན། %s"
 
-#: views.py:136
+#: views.py:139
 #, python-format
 msgid "%(count)d document file added to the parsing queue"
 msgstr "དབྱེ་ཞིབ་བང་རིམ་ལ་ %(count)d ཡིག་ཆའི་ཡིག་ཆ་ཁ་སྣོན་བྱས།"
 
-#: views.py:139
+#: views.py:142
 #, python-format
 msgid "%(count)d documents files added to the parsing queue"
 msgstr "དབྱེ་ཞིབ་བང་རིམ་ལ་ %(count)d ཡིག་ཆའི་ཡིག་ཆ་ཁ་སྣོན་བྱས།"
 
-#: views.py:148
+#: views.py:151
 #, python-format
 msgid "Submit %(count)d document file to the parsing queue?"
 msgid_plural "Submit %(count)d documents files to the parsing queue?"
 msgstr[0] "ཡིག་ཆའི་ཡིག་ཆ་ %(count)d དབྱེ་ཞིབ་བང་རིམ་ལ་འབུལ་དགོས་སམ།"
 
-#: views.py:161
+#: views.py:164
 #, python-format
 msgid "Submit document file \"%s\" to the parsing queue"
 msgstr "ཡིག་ཆའི་ཡིག་ཆ་ &quot; %s &quot; དབྱེ་ཞིབ་བང་རིམ་ལ་འབུལ།"
 
-#: views.py:191
+#: views.py:195
 #, python-format
 msgid "Edit parsing settings for document type: %s."
 msgstr "ཡིག་ཆའི་རིགས་ལ་དབྱེ་ཞིབ་སྒྲིག་སྟངས་ཞུན་དག་བྱེད། %s ."
 
-#: views.py:201
+#: views.py:205
 msgid "Submit all documents of a type for parsing"
 msgstr "རིགས་གཅིག་གི་ཡིག་ཆ་ཚང་མ་དབྱེ་ཞིབ་ཆེད་འབུལ་དགོས།"
 
-#: views.py:223
+#: views.py:227
 #, python-format
 msgid "%(count)d documents added to the parsing queue."
 msgstr "དབྱེ་ཞིབ་བང་རིམ་ལ་ %(count)d ཡིག་ཆ་ཁ་སྣོན་བྱས།"

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-03-10 21:41+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Ford Guo <agile.guo@gmail.com>, 2024\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/rosarior/teams/13584/zh_TW/)\n"
@@ -31,7 +31,7 @@ msgstr "文档解析"
 msgid "A generator returning the document file's pages parsed content."
 msgstr ""
 
-#: apps.py:114 links.py:26 links.py:49 models.py:27 search.py:18
+#: apps.py:115 links.py:26 links.py:49 models.py:27 search.py:18
 msgid "Content"
 msgstr "内容"
 
@@ -172,72 +172,72 @@ msgstr ""
 msgid "Content of %(count)d document versions deleted successfully."
 msgstr ""
 
-#: views.py:48
+#: views.py:49
 #, python-format
 msgid "Content of \"%(object)s\" deleted successfully."
 msgstr ""
 
-#: views.py:51
+#: views.py:52
 #, python-format
 msgid "Content of %(count)d document version deleted successfully."
 msgstr ""
 
-#: views.py:53
+#: views.py:54
 #, python-format
 msgid "Delete the content of: %(object)s."
 msgstr ""
 
-#: views.py:55
+#: views.py:56
 #, python-format
 msgid "Delete the content of the %(count)d selected document version."
 msgstr ""
 
-#: views.py:58
+#: views.py:60
 #, python-format
 msgid "Delete the content of the %(count)d selected document versions."
 msgstr ""
 
-#: views.py:99
+#: views.py:102
 #, python-format
 msgid "Content for document file: %s"
 msgstr "文件檔案中的內容 : %s"
 
-#: views.py:121
+#: views.py:124
 #, python-format
 msgid "Content for document file page: %s"
 msgstr "文件檔案頁面內容 : %s"
 
-#: views.py:136
+#: views.py:139
 #, python-format
 msgid "%(count)d document file added to the parsing queue"
 msgstr "%(count)d文件檔案被加入解析隊列"
 
-#: views.py:139
+#: views.py:142
 #, python-format
 msgid "%(count)d documents files added to the parsing queue"
 msgstr "%(count)d文件檔案加入解析隊列"
 
-#: views.py:148
+#: views.py:151
 #, python-format
 msgid "Submit %(count)d document file to the parsing queue?"
 msgid_plural "Submit %(count)d documents files to the parsing queue?"
 msgstr[0] "提交%(count)d文件檔案進入解析隊列?"
 
-#: views.py:161
+#: views.py:164
 #, python-format
 msgid "Submit document file \"%s\" to the parsing queue"
 msgstr "提交文件檔案\"%s\"至解析隊列"
 
-#: views.py:191
+#: views.py:195
 #, python-format
 msgid "Edit parsing settings for document type: %s."
 msgstr "編輯文件類型的解析設定%s."
 
-#: views.py:201
+#: views.py:205
 msgid "Submit all documents of a type for parsing"
 msgstr "提交某类型的所有文档进行解析"
 
-#: views.py:223
+#: views.py:227
 #, python-format
 msgid "%(count)d documents added to the parsing queue."
 msgstr "%(count)d文件已被加入解析隊列中"
