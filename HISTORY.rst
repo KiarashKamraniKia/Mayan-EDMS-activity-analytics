@@ -9,6 +9,7 @@
 - Support partial app template loading for the about view.
 - Modernize the fundraiser app and avoid hardcoding locations.
 - Remove repeated GitLab CI file `apt-get update`.
+- Import `setting_cluster` from the correct module.
 
 4.8.10 (2025-12-13)
 ===================

@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 CHOICES_TEMPLATING_WIDGET_HIGHLIGHT_THEME = (
     'a11y-dark', 'a11y-light', 'agate', 'an-old-hope', 'androidstudio',

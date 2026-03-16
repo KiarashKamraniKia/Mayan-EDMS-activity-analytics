@@ -1,7 +1,7 @@
 from django.conf import settings
 from django.test import override_settings
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 from mayan.apps.testing.tests.base import BaseTestCase
 
 from .literals import TEST_USER_LOCALE_LANGUAGE, TEST_USER_LOCALE_TIMEZONE
