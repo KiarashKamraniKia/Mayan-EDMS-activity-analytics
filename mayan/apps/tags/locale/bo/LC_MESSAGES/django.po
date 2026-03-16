@@ -340,7 +340,7 @@ msgstr "མིང་བྱང་མེད།"
 msgid "Documents with the tag: %s"
 msgstr "ཡིག་ཆའི་མིང་རྟགས་: %s"
 
-#: wizard_steps.py:21
+#: wizard_steps.py:20
 msgid "Select tags"
 msgstr "མིང་རྟགས་འདེམས།"
 

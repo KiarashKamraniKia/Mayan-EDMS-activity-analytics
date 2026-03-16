@@ -103,15 +103,15 @@ msgstr "معرف الكائن"
 msgid "Role to which the access is granted for the specified object."
 msgstr "الدور الذي يتم منح الوصول إليه للكائن المحدد."
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "بوابة الدخول"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "بوابات الدخول"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "إذن الدور \"%(role)s\" لـ \"%(object)s\""

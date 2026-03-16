@@ -2,7 +2,7 @@ from django.utils.translation import gettext_lazy as _
 
 from mayan.apps.smart_settings.settings import setting_cluster
 from mayan.apps.task_manager.classes import Worker
-from mayan.settings.literals import (  # NOQA
+from mayan.literals import (  # NOQA
     DOCKER_USER_GID, DOCKER_USER_UID, MAYAN_WORKER_A_CONCURRENCY,
     MAYAN_WORKER_A_MAX_MEMORY_PER_CHILD, MAYAN_WORKER_A_MAX_TASKS_PER_CHILD,
     MAYAN_WORKER_B_CONCURRENCY, MAYAN_WORKER_B_MAX_MEMORY_PER_CHILD,

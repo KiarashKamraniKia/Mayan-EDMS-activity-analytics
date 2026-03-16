@@ -170,9 +170,13 @@ msgstr ""
 "Varsayılan olarak, OCR işlemini otomatik olarak gerçekleştirmek için yeni "
 "belge türlerini ayarlayın."
 
-#: settings.py:23
+#: settings.py:24
 msgid "Full path to the backend to be used to do OCR."
 msgstr "OCR yapmak için kullanılacak arka uç için tam yol."
+
+#: settings.py:30
+msgid "Arguments to pass to `OCR_BACKEND`."
+msgstr ""
 
 #: views.py:64
 #, python-format
@@ -193,63 +197,63 @@ msgstr "%(count)d belgeleri OCR kuyruğuna eklendi."
 msgid "Error deleting document version OCR \"%(instance)s\"; %(exception)s"
 msgstr "OCR \"%(instance)s\" belge sürümü silinirken hata oluştu; %(exception)s"
 
-#: views.py:124
+#: views.py:125
 #, python-format
 msgid "OCR content of %(count)d document versions deleted successfully."
 msgstr "%(count)d belge sürümlerinin OCR içerikleri başarıyla silindi."
 
-#: views.py:127
+#: views.py:129
 #, python-format
 msgid "OCR content of \"%(object)s\" deleted successfully."
 msgstr "\"%(object)s\" OCR içeriği başarıyla silindi."
 
-#: views.py:130
+#: views.py:132
 #, python-format
 msgid "OCR content of %(count)d document version deleted successfully."
 msgstr "%(count)d belge sürümünün OCR içeriği başarıyla silindi."
 
-#: views.py:133
+#: views.py:136
 #, python-format
 msgid "Delete the OCR content of the %(count)d selected document versions."
 msgstr "%(count)d seçili belge sürümlerinin OCR içeriğini sil."
 
-#: views.py:135
+#: views.py:139
 #, python-format
 msgid "Delete the OCR content of: %(object)s."
 msgstr "OCR içeriğini sil: %(object)s."
 
-#: views.py:137
+#: views.py:141
 #, python-format
 msgid "Delete the OCR content of the %(count)d selected document version."
 msgstr "%(count)d seçilen belge sürümünün OCR içeriğini sil."
 
-#: views.py:168
+#: views.py:173
 #, python-format
 msgid "OCR result for document: %s"
 msgstr "Belge için OCR sonucu: %s"
 
-#: views.py:190
+#: views.py:195
 #, python-format
 msgid "%(count)d document version submitted to the OCR queue."
 msgstr "%(count)d OCR kuyruğuna gönderilen belge sürümü."
 
-#: views.py:193
+#: views.py:198
 #, python-format
 msgid "%(count)d document versions submitted to the OCR queue."
 msgstr "OCR kuyruğuna gönderilen %(count)d belge sürümleri."
 
-#: views.py:202
+#: views.py:207
 msgid "Submit the selected document version to the OCR queue?"
 msgid_plural "Submit the selected document versions to the OCR queue?"
 msgstr[0] "Seçilen belge sürümleri OCR kuyruğuna gönderilsin mi?"
 msgstr[1] "Seçilen belge sürümleri OCR kuyruğuna gönderilsin mi?"
 
-#: views.py:238
+#: views.py:243
 #, python-format
 msgid "OCR result for document version page: %s"
 msgstr "Belge sürümü sayfası için OCR sonucu: %s"
 
-#: views.py:266
+#: views.py:271
 #, python-format
 msgid "Edit OCR for document version page: %s"
 msgstr "Belge sürümü sayfası için OCR'yi düzenleyin: %s"

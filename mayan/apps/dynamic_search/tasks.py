@@ -27,8 +27,6 @@ logger = logging.getLogger(name=__name__)
     retry_backoff_max=TASK_DEINDEX_INSTANCE_RETRY_BACKOFF_MAX
 )
 def task_deindex_instance(self, app_label, model_name, object_id):
-    logger.debug('Executing')
-
     Model = apps.get_model(app_label=app_label, model_name=model_name)
     instance = Model._meta.default_manager.get(pk=object_id)
 
@@ -37,13 +35,8 @@ def task_deindex_instance(self, app_label, model_name, object_id):
         search_backend.deindex_instance(instance=instance)
     except (DynamicSearchRetry, LockError) as exception:
         raise self.retry(exc=exception)
-    except ObjectDoesNotExist as exception:
-        # Object was deleted before it could be deindexed.
-        logger.debug(
-            str(exception)
-        )
-
-    logger.debug('Finished')
+    except ObjectDoesNotExist:
+        """Object was deleted before it could be deindexed."""
 
 
 @app.task(
@@ -55,8 +48,6 @@ def task_index_instance(
     self, app_label, model_name, object_id, exclude_app_label=None,
     exclude_model_name=None, exclude_kwargs=None
 ):
-    logger.debug('Executing')
-
     Model = apps.get_model(app_label=app_label, model_name=model_name)
     if exclude_app_label and exclude_model_name:
         ExcludeModel = apps.get_model(
@@ -78,13 +69,8 @@ def task_index_instance(
         )
     except (DynamicSearchRetry, LockError) as exception:
         raise self.retry(exc=exception)
-    except ObjectDoesNotExist as exception:
-        # Object was deleted before it could be indexed.
-        logger.debug(
-            str(
-                exception
-            )
-        )
+    except ObjectDoesNotExist:
+        """Object was deleted before it could be indexed."""
     except Exception as exception:
         kwargs = {
             'app_label': app_label,
@@ -101,8 +87,6 @@ def task_index_instance(
 
         logger.debug(error_message)
         raise DynamicSearchException(error_message) from exception
-    else:
-        logger.debug('Finished')
 
 
 @app.task(

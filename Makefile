@@ -288,7 +288,7 @@ check-missing-inits: ## Find missing __init__.py files from modules.
 	@contrib/scripts/find_missing_inits.py
 
 copy-config-env: ## Copy and convert `config.env` to `settings.literals.py`.
-	@contrib/scripts/copy_config_env.py > mayan/settings/literals.py
+	@contrib/scripts/copy_config_env.py > mayan/literals.py
 
 # Development environment
 

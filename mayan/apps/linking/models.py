@@ -111,8 +111,8 @@ class SmartLinkCondition(
     )
     expression = models.TextField(
         help_text=_(
-            message='The expression using document properties to be evaluated '
-            'against the foreign document field.'
+            message='The expression using document properties to be '
+            'evaluated against the foreign document field.'
         ), verbose_name=_(message='Expression')
     )
     negated = models.BooleanField(

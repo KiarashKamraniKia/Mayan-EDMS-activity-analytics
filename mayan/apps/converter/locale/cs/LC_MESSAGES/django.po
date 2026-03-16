@@ -61,7 +61,7 @@ msgid "Utility from the poppler-utils package used to inspect PDF files."
 msgstr ""
 "Obslužný program z balíčku poppler-utils používaný k prohlížení souborů PDF."
 
-#: dependencies.py:19
+#: dependencies.py:20
 msgid ""
 "Utility from the popper-utils package used to extract pages from PDF files "
 "into PPM format images."
@@ -134,11 +134,11 @@ msgstr "Transformace"
 msgid "Select new transformation"
 msgstr "Vyberte novou transformaci"
 
-#: model_mixins.py:120
+#: model_mixins.py:118
 msgid "Badly formatted arguments YAML"
 msgstr ""
 
-#: model_mixins.py:131 models.py:168
+#: model_mixins.py:129 models.py:168
 msgid "Arguments"
 msgstr "Argumenty"
 
@@ -272,7 +272,7 @@ msgstr ""
 
 #: serializers.py:16 serializers.py:32
 msgid "Image URL"
-msgstr ""
+msgstr "URL obrázku"
 
 #: serializers.py:21
 msgid "Template name"

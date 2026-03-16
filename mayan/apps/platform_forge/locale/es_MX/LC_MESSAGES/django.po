@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Roberto Rosario, 2026
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -18,12 +21,12 @@ msgstr ""
 
 #: apps.py:10
 msgid "Platform Forge"
-msgstr ""
+msgstr "Plataforma de Forja"
 
 #: platform_templates.py:18
 msgid "Template that generates the Mayan Forge Docker Compose file."
-msgstr ""
+msgstr "Plantilla que genera el archivo Docker Compose de Mayan Forge."
 
 #: platform_templates.py:54
 msgid "Template that generates a Mayan Forge Dockerfile file."
-msgstr ""
+msgstr "Plantilla que genera un archivo Dockerfile de Mayan Forge."

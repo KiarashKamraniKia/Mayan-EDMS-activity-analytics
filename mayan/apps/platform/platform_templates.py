@@ -11,7 +11,7 @@ from django.utils.translation import gettext_lazy as _
 from mayan.apps.backends.classes import BaseBackend
 from mayan.apps.common.serialization import yaml_dump, yaml_load
 from mayan.apps.task_manager.classes import Worker
-from mayan.settings.literals import (
+from mayan.literals import (
     DEFAULT_DATABASE_NAME, DEFAULT_DATABASE_PASSWORD, DEFAULT_DATABASE_USER,
     DEFAULT_DIRECTORY_INSTALLATION, DEFAULT_OS_USERNAME,
     DEFAULT_USER_SETTINGS_FOLDER, DOCKER_CLI_IMAGE_VERSION,
@@ -126,7 +126,7 @@ class PlatformTemplate(BaseBackend):
         context.update(
             self.get_variables_context()
         )
-        # get_context goes last to server as the override.
+        # get_context goes last to serve as the override.
         context.update(
             self.get_context()
         )

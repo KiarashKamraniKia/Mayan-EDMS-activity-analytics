@@ -640,7 +640,7 @@ msgstr ""
 msgid "Enter document metadata"
 msgstr "A dokumentum metaadatainak megadása"
 
-#: wizard_steps.py:203
+#: wizard_steps.py:207
 msgid ""
 "One of more metadata types that are required for this document type are not "
 "available."

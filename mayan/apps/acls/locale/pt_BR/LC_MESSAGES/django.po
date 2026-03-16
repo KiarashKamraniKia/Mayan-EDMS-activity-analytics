@@ -109,15 +109,15 @@ msgstr "ID do objeto"
 msgid "Role to which the access is granted for the specified object."
 msgstr "Função para qual o acesso é garantido para o objeto específico. "
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "Entrada de acesso"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "Entradas de acesso"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Permissões do papel \"%(role)s\" para \"%(object)s\""

@@ -164,7 +164,7 @@ msgid "No source files available"
 msgstr ""
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
+msgid "Width value to be passed to the converter backend."
 msgstr ""
 
 #: source_backends/stored_file_mixins.py:197

@@ -369,7 +369,7 @@ msgstr "Rekken waaruit de geselecteerde documenten worden verwijderd."
 msgid "Select cabinets"
 msgstr "Rekken selecteren"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Rekken waaraan het document wordt toegevoegd."
 

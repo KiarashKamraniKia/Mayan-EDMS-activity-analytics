@@ -180,7 +180,7 @@ msgstr ""
 "Standard: \"amqp://\". Die Standard Broker-URL. Muss in folgender Form angegeben werden: transport://userid:password@hostname:port/virtual_host\n"
 "Nur das Schema (transport://) muss angegeben werden, der Rest ist optional und verweist auf die Standardwerte."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -189,7 +189,7 @@ msgstr ""
 "Brokerverbindung und die SSL-Einstellungen um. Die gültigen Werte für diese "
 "Option variieren je nach Transport."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "
@@ -235,7 +235,7 @@ msgstr "Hochvolume-Tasks mit niedriger Latenz"
 
 #: workers.py:21
 msgid "Worker A"
-msgstr ""
+msgstr "Worker A"
 
 #: workers.py:28 workers.py:36
 msgid "Medium latency tasks"
@@ -243,11 +243,11 @@ msgstr "Tasks mit mittlerer Latenz"
 
 #: workers.py:29
 msgid "Worker B"
-msgstr ""
+msgstr "Worker B"
 
 #: workers.py:37
 msgid "Worker C"
-msgstr ""
+msgstr "Worker C"
 
 #: workers.py:44 workers.py:52
 msgid "Low latency, long lived tasks"
@@ -255,8 +255,8 @@ msgstr "Niedrige Latenz, langlebige Tasks"
 
 #: workers.py:45
 msgid "Worker D"
-msgstr ""
+msgstr "Worker D"
 
 #: workers.py:53
 msgid "Worker E"
-msgstr ""
+msgstr "Worker E"

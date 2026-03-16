@@ -5,9 +5,7 @@ from mayan.apps.dependencies.environments import (
     environment_build, environment_development, environment_documentation,
     environment_documentation_override
 )
-from mayan.settings.literals import (
-    PYTHON_SETUPTOOLS_VERSION, PYTHON_WHEEL_VERSION
-)
+from mayan.literals import PYTHON_SETUPTOOLS_VERSION, PYTHON_WHEEL_VERSION
 
 PythonDependency(
     legal_text='''
@@ -38,7 +36,7 @@ PythonDependency(
         ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
         (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
         SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-    ''', module=__name__, name='django', version_string='==4.2.27'
+    ''', module=__name__, name='django', version_string='==4.2.29'
 )
 PythonDependency(
     legal_text='''
@@ -127,7 +125,7 @@ PythonDependency(
     legal_text='''
         Author: Christian Theune
         License: LGPL 2.1
-    ''', module=__name__, name='pycountry', version_string='==24.6.1'
+    ''', module=__name__, name='pycountry', version_string='==26.2.16'
 )
 PythonDependency(
     module=__name__, name='requests', version_string='==2.32.5'
@@ -196,12 +194,12 @@ PythonDependency(
 )
 PythonDependency(
     environment=environment_development, help_text=_(
-        'Checks proper formatting of the README file.'
+        message='Checks proper formatting of the README file.'
     ), module=__name__, name='readme', version_string='==0.7.1'
 )
 PythonDependency(
     environment=environment_development,
-    module=__name__, name='safety', version_string='==3.2.3'
+    module=__name__, name='safety', version_string='==3.7.0'
 )
 
 # Documentation

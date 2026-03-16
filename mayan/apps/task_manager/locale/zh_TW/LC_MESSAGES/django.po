@@ -163,13 +163,13 @@ msgstr ""
 "默认值：“amqp：//”。默认代理URL。这必须是以下形式的URL：transport:// userid:password @ "
 "hostname:port / virtual_host只需要方案部分（transport://），其余部分是可选的，默认为特定传输的默认值。"
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
 msgstr ""
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

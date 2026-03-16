@@ -15,7 +15,7 @@ PythonDependency(
 )
 PythonDependency(
     environment=environment_testing, module=__name__, name='coveralls',
-    version_string='==4.0.1'
+    version_string='==4.0.2'
 )
 PythonDependency(
     environment=environment_testing, module=__name__,

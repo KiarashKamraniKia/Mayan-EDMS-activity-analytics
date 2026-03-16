@@ -178,7 +178,7 @@ msgstr ""
 "(transport://) kötelező, a többi rész opcionális, és alapértelmezésként az "
 "adott szállítás alapértelmezett értékeit veszi fel."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -187,7 +187,7 @@ msgstr ""
 "brókerkapcsolat és az SSL-beállítások esetén. Ennek az opciónak az érvényes "
 "értékei szállításonként változnak."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

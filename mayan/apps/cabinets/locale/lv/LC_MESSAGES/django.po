@@ -362,7 +362,7 @@ msgstr "Kabineti, no kuriem tiks izņemti atlasītie dokumenti."
 msgid "Select cabinets"
 msgstr ""
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr ""
 

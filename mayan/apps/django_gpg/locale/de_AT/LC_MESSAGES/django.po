@@ -236,7 +236,11 @@ msgstr ""
 "Vollständiger Pfad zum Backend, welcher für die Behandlung von Schlüsseln "
 "und Signaturen verwendet werden soll."
 
-#: settings.py:27
+#: settings.py:26
+msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
+msgstr ""
+
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "Server, der nach unbekannten Schlüsseln durchsucht wird."
 

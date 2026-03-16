@@ -115,26 +115,31 @@ class DocumentTypeOCRSubmitView(FormView):
 
 class DocumentVersionOCRContentDeleteView(MultipleObjectDeleteView):
     error_message = _(
-        message='Error deleting document version OCR "%(instance)s"; %(exception)s'
+        message='Error deleting document version OCR "%(instance)s"; '
+        '%(exception)s'
     )
     object_permission = permission_document_version_ocr
     pk_url_kwarg = 'document_version_id'
     source_queryset = DocumentVersion.valid.all()
     success_message_plural = _(
-        message='OCR content of %(count)d document versions deleted successfully.'
+        message='OCR content of %(count)d document versions deleted '
+        'successfully.'
     )
     success_message_single = _(
         message='OCR content of "%(object)s" deleted successfully.'
     )
     success_message_singular = _(
-        message='OCR content of %(count)d document version deleted successfully.'
+        message='OCR content of %(count)d document version deleted '
+        'successfully.'
     )
     title_plural = _(
-        message='Delete the OCR content of the %(count)d selected document versions.'
+        message='Delete the OCR content of the %(count)d selected document '
+        'versions.'
     )
     title_single = _(message='Delete the OCR content of: %(object)s.')
     title_singular = _(
-        message='Delete the OCR content of the %(count)d selected document version.'
+        message='Delete the OCR content of the %(count)d selected document '
+        'version.'
     )
     view_icon = icon_document_version_ocr_content_single_delete
 

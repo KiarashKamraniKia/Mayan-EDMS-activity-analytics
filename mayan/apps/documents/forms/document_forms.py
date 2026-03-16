@@ -52,9 +52,9 @@ class DocumentForm(forms.ModelForm):
             self.fields['preserve_extension'] = form_fields.BooleanField(
                 label=_(message='Preserve extension'), required=False,
                 help_text=_(
-                    message='Takes the file extension and moves it to the end of the '
-                    'filename allowing operating systems that rely on file '
-                    'extensions to open document correctly.'
+                    message='Takes the file extension and moves it to the '
+                    'end of the filename allowing operating systems that '
+                    'rely on file extensions to open document correctly.'
                 )
             )
 

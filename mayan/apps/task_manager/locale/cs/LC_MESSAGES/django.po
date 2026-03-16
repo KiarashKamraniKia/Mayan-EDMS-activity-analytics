@@ -164,7 +164,7 @@ msgstr ""
 "pouze část schématu (transport://), zbytek je volitelný a výchozí hodnoty "
 "jsou specifické pro přenos."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -172,7 +172,7 @@ msgstr ""
 "Výchozí: „Zakázáno“. Přepíná využití SSL na připojení makléře a nastavení "
 "SSL. Platné hodnoty pro tuto možnost se liší podle dopravy."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

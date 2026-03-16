@@ -8,6 +8,7 @@
 # Jiri Fait <fait@orkasolutions.cz>, 2024
 # Jiří Podhorecký <jirka.p@volny.cz>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2026
 # 
 msgid ""
 msgstr ""
@@ -128,7 +129,7 @@ msgstr "Odstranit"
 
 #: forms.py:182
 msgid "Basic"
-msgstr ""
+msgstr "Základní"
 
 #: forms.py:186
 msgid "Values"
@@ -643,7 +644,7 @@ msgstr ""
 msgid "Enter document metadata"
 msgstr "Zadejte metadata dokumentu"
 
-#: wizard_steps.py:203
+#: wizard_steps.py:207
 msgid ""
 "One of more metadata types that are required for this document type are not "
 "available."

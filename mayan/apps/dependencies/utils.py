@@ -5,9 +5,9 @@ from mayan.apps.views.http import URL
 
 from .exceptions import DependenciesException
 from .literals import (
-    MAYAN_PYPI_NAME, MESSAGE_GREATER_THAN_SERVER, MESSAGE_NOT_LATEST,
-    MESSAGE_UNKNOWN_VERSION, MESSAGE_UNEXPECTED_ERROR, MESSAGE_UP_TO_DATE,
-    PYPI_URL
+    DEFAULT_HTTP_TIMEOUT, MAYAN_PYPI_NAME, MESSAGE_GREATER_THAN_SERVER,
+    MESSAGE_NOT_LATEST, MESSAGE_UNKNOWN_VERSION, MESSAGE_UNEXPECTED_ERROR,
+    MESSAGE_UP_TO_DATE, PYPI_URL
 )
 from .versions import Version
 
@@ -98,7 +98,7 @@ class PyPIClient:
         )
 
         response = requests.get(
-            url=url.to_string()
+            url=url.to_string(), timeout=DEFAULT_HTTP_TIMEOUT
         )
         response.raise_for_status()
         response_json = response.json()

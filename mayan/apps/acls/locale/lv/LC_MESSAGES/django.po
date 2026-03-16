@@ -96,15 +96,15 @@ msgstr "Objekta ID"
 msgid "Role to which the access is granted for the specified object."
 msgstr ""
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "Piekļuves ieraksts"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "Piekļuves ieraksti"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Lomas \"%(role)s\" atļaujas priekš \"%(object)s\""

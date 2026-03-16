@@ -5,7 +5,7 @@
 # Translators:
 # Translators:
 # José Manuel Caínzos <josem.cainzos@gmail.com>, 2024
-# Roberto Rosario, 2024
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
@@ -191,7 +191,7 @@ msgstr "La inclusión es ignorada para el primer artículo."
 
 #: models.py:99
 msgid "Inclusion"
-msgstr ""
+msgstr "Inclusión"
 
 #: models.py:103
 msgid "This represents the metadata of all other documents."
@@ -203,7 +203,7 @@ msgstr "Attributo del documento foráneo"
 
 #: models.py:110
 msgid "Operator"
-msgstr ""
+msgstr "Operador"
 
 #: models.py:114
 msgid ""

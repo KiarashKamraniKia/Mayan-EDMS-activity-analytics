@@ -296,8 +296,8 @@ msgstr ""
 "απεσπασμένες υπογραφές."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Ορίσματα που θα διαβιβαστούν στο SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

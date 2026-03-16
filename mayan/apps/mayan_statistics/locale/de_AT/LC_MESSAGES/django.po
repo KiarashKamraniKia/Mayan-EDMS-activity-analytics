@@ -123,40 +123,40 @@ msgstr "Statistik \"%s\" nicht gefunden."
 msgid "Statistics namespaces group statistics into logical units. "
 msgstr "Statistik-Namensräume gruppieren Statistiken in logische Einheiten."
 
-#: views.py:25
+#: views.py:26
 msgid "No statistic namespaces available"
 msgstr "Keine Statistik-Namensräume verfügbar"
 
-#: views.py:26
+#: views.py:27
 msgid "Statistics namespaces"
 msgstr "Statistiken Namensräume"
 
-#: views.py:49
+#: views.py:50
 msgid "Statistics are metrics and chart representations of existing data."
 msgstr ""
 "Statistiken sind metrische und Diagrammdarstellungen von existierenden "
 "Daten."
 
-#: views.py:52
+#: views.py:53
 msgid "No statistic available"
 msgstr "Keine Statistiken verfügbar"
 
-#: views.py:54
+#: views.py:55
 #, python-format
 msgid "Namespace details for: %s"
 msgstr "Namensraumdetails für %s"
 
-#: views.py:77
+#: views.py:78
 #, python-format
 msgid "Results for: %s"
 msgstr "Ergebnis für %s"
 
-#: views.py:97
+#: views.py:98
 #, python-format
 msgid "Queue statistic \"%s\" to be updated?"
 msgstr "Statistik \"%s\"  für die Aktualisierung vorsehen?"
 
-#: views.py:105
+#: views.py:106
 #, python-format
 msgid "Statistic \"%s\" queued successfully for update."
 msgstr ""

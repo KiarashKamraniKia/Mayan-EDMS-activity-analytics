@@ -5,8 +5,8 @@
 # Translators:
 # Translators:
 # Jiri Fait <fait@orkasolutions.cz>, 2024
-# Jiří Podhorecký <jirka.p@volny.cz>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2026
 # 
 msgid ""
 msgstr ""
@@ -147,7 +147,7 @@ msgstr "Zobrazit stávající motivy"
 
 #: settings.py:18
 msgid "Custom HTTP response code for AJAX redirections."
-msgstr ""
+msgstr "Vlastní kód odpovědi HTTP pro přesměrování AJAX."
 
 #: settings.py:24
 msgid "Maximum number of characters that will be displayed as the view title."
@@ -155,7 +155,7 @@ msgstr "Maximální počet znaků, které se zobrazí jako název pohledu."
 
 #: settings.py:34
 msgid "Position where the system messages will be displayed."
-msgstr ""
+msgstr "Pozice, kde se budou zobrazovat systémové zprávy."
 
 #: settings.py:40
 msgid ""
@@ -166,13 +166,15 @@ msgstr ""
 #: settings.py:47
 msgid ""
 "Maximum number of requests that can be made before throttling is enabled."
-msgstr ""
+msgstr "Maximální počet požadavků, které lze provést před povolením omezení."
 
 #: settings.py:54
 msgid ""
 "Time in milliseconds after which a throttled request will clear allowing an "
 "additional request to be performed."
 msgstr ""
+"Čas v milisekundách, po kterém se omezený požadavek vymaže a umožní "
+"provedení dalšího požadavku."
 
 #: templatetags/appearance_tags.py:77
 msgid "None"

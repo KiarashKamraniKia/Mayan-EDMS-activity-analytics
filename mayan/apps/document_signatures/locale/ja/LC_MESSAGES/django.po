@@ -291,8 +291,8 @@ msgid "Path to the Storage subclass to use when storing detached signatures."
 msgstr "分離署名を保存する際に使用する Storage サブクラスのパス"
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "IGNATURE_STORAGE_BACKEND に渡す引数"
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

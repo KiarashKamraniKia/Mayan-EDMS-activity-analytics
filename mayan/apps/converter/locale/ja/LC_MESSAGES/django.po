@@ -56,7 +56,7 @@ msgstr "変換処理（Transformations）を使用すると、ドキュメント
 msgid "Utility from the poppler-utils package used to inspect PDF files."
 msgstr "変換処理（Transformations）を使用すると、ドキュメント自体のファイルを変更せずに、見た目を変更することができます。"
 
-#: dependencies.py:19
+#: dependencies.py:20
 msgid ""
 "Utility from the popper-utils package used to extract pages from PDF files "
 "into PPM format images."
@@ -125,11 +125,11 @@ msgstr "変換処理"
 msgid "Select new transformation"
 msgstr "新規変換処理を選択"
 
-#: model_mixins.py:120
+#: model_mixins.py:118
 msgid "Badly formatted arguments YAML"
 msgstr "不正な形式の引数 YAML"
 
-#: model_mixins.py:131 models.py:168
+#: model_mixins.py:129 models.py:168
 msgid "Arguments"
 msgstr "引数"
 

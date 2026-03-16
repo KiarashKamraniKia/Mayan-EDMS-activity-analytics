@@ -64,7 +64,7 @@ msgid "Utility from the poppler-utils package used to inspect PDF files."
 msgstr ""
 "Utilità dal pacchetto poppler-utils utilizzato per ispezionare i file PDF."
 
-#: dependencies.py:19
+#: dependencies.py:20
 msgid ""
 "Utility from the popper-utils package used to extract pages from PDF files "
 "into PPM format images."
@@ -137,11 +137,11 @@ msgstr "Trasformazioni"
 msgid "Select new transformation"
 msgstr "Seleziona nuova trasformazione"
 
-#: model_mixins.py:120
+#: model_mixins.py:118
 msgid "Badly formatted arguments YAML"
 msgstr "YAML degli argomenti formattato in modo errato."
 
-#: model_mixins.py:131 models.py:168
+#: model_mixins.py:129 models.py:168
 msgid "Arguments"
 msgstr "Argomenti"
 

@@ -22,7 +22,7 @@ msgstr ""
 "Language: pl\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
-#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:48
+#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:50
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:121
 msgid "Announcements"
 msgstr "Ogłoszenia"
@@ -75,19 +75,19 @@ msgstr "Włączone"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "Data i godzina, po której zostanie wyświetlone to ogłoszenie."
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "Ważna od"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "Data i godzina, do której ma się wyświetlić to ogłoszenie."
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "Ważna do"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "Ogłoszenie"
 

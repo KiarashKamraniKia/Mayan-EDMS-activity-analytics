@@ -64,8 +64,8 @@ class DocumentListView(SingleObjectListView):
             'no_results_icon': icon_document_list,
             'no_results_text': _(
                 message='This could mean that no documents have been '
-                'uploaded or that your user account has not been granted the '
-                'view permission for any document or document type.'
+                'uploaded or that your user account has not been granted '
+                'the view permission for any document or document type.'
             ),
             'no_results_title': _(message='No documents available'),
             'title': _(message='All documents')

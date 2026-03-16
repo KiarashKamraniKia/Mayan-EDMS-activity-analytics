@@ -100,15 +100,15 @@ msgstr "Objektum azonosító"
 msgid "Role to which the access is granted for the specified object."
 msgstr "Szerepkör, amely a megadott objektumhoz hozzáférést biztosít."
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "Hozzáférési bejegyzés"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "Hozzáférési bejegyzések"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "A \"%(role)s\" szerepkör engedélye a következőhöz: \"%(object)s\""

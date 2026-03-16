@@ -368,7 +368,7 @@ msgstr "Fișetele din care vor fi eliminate documentele selectate."
 msgid "Select cabinets"
 msgstr "Selectați fișete"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Fișetele la care se va adăuga documentul."
 

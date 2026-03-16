@@ -17,8 +17,8 @@
 # Siegfried Albrecht, 2024
 # Roberto Rosario, 2024
 # Berny <berny@bernhard-marx.de>, 2024
-# Mathias Behrle <mathiasb@m9s.biz>, 2025
 # Dennis M. Pöpperl <free-software@dm-poepperl.de>, 2025
+# Mathias Behrle <mathiasb@m9s.biz>, 2025
 # 
 msgid ""
 msgstr ""
@@ -62,7 +62,7 @@ msgstr "Dokumenteninstanz zurückgeben."
 #: apps.py:288 links/document_file_links.py:71
 #: links/document_file_page_links.py:70 links/document_version_links.py:73
 #: links/document_version_page_links.py:90 models/document_file_models.py:58
-#: models/document_models.py:111 models/document_version_models.py:30
+#: models/document_models.py:112 models/document_version_models.py:30
 #: models/favorite_document_models.py:30
 #: models/recently_accessed_document_models.py:25 search.py:14
 #: serializers/favorite_document_serializers.py:13
@@ -699,7 +699,7 @@ msgstr "Alle Seiten"
 
 #: models/document_file_model_mixins.py:366
 #: models/document_file_page_model_mixins.py:244
-#: models/document_model_mixins.py:179 models/document_models.py:63
+#: models/document_model_mixins.py:179 models/document_models.py:64
 #: models/document_type_models.py:43 models/document_type_models.py:156
 #: models/document_version_model_mixins.py:131
 #: models/document_version_page_model_mixins.py:290
@@ -718,27 +718,27 @@ msgstr ""
 "Datum und Uhrzeit des Servers, zu denen die Dokumentendatei verarbeitet "
 "wurde."
 
-#: models/document_file_models.py:63 models/document_version_models.py:36
+#: models/document_file_models.py:64 models/document_version_models.py:36
 msgid "Timestamp"
 msgstr "Zeitstempel"
 
-#: models/document_file_models.py:67
+#: models/document_file_models.py:68
 msgid "An optional short text describing the document file."
 msgstr "Optionaler Kurztext zur Beschreibung der Dokumentendatei."
 
-#: models/document_file_models.py:68 models/document_version_models.py:41
+#: models/document_file_models.py:69 models/document_version_models.py:41
 msgid "Comment"
 msgstr "Kommentar"
 
-#: models/document_file_models.py:73 serializers/document_serializers.py:93
+#: models/document_file_models.py:74 serializers/document_serializers.py:93
 msgid "File"
 msgstr "Datei"
 
-#: models/document_file_models.py:76
+#: models/document_file_models.py:77
 msgid "Filename"
 msgstr "Dateiname"
 
-#: models/document_file_models.py:80
+#: models/document_file_models.py:81
 msgid ""
 "The document file's file mimetype. MIME types are a standard way to describe"
 " the format of a file, in this case the file format of the document. Some "
@@ -748,7 +748,7 @@ msgstr ""
 "Datei, in diesem Fall das Dateiformat des Dokuments. Beispiele für MIME-"
 "Typen sind: \"text/plain\" oder \"image/jpeg\"."
 
-#: models/document_file_models.py:88
+#: models/document_file_models.py:89
 msgid ""
 "The document file file encoding. binary 7-bit, binary 8-bit, text, base64, "
 "etc."
@@ -756,7 +756,7 @@ msgstr ""
 "Die Kodierung der Datei der Dokumentenversion. Binär 7-bit, binär 8-bit, "
 "Text, base64, etc."
 
-#: models/document_file_models.py:108 storages.py:27
+#: models/document_file_models.py:109 storages.py:27
 msgid "Document files"
 msgstr "Dokumentendateien"
 
@@ -799,44 +799,44 @@ msgstr ""
 "Ein kurzer Text zur Identifizierung des Dokuments. Standardmäßig wird der "
 "Name der ersten Datei, die in das Dokument hochgeladen wird, verwendet."
 
-#: models/document_models.py:67
+#: models/document_models.py:68
 msgid "An optional short text describing a document."
 msgstr "Optionaler Kurztext zur Beschreibung eines Dokuments."
 
-#: models/document_models.py:68 serializers/document_version_serializers.py:20
+#: models/document_models.py:69 serializers/document_version_serializers.py:20
 msgid "Description"
 msgstr "Beschreibung"
 
-#: models/document_models.py:72
+#: models/document_models.py:73
 msgid "The date and time of the document creation."
 msgstr "Datum und Zeit der Dokumenterstellung"
 
-#: models/document_models.py:73
+#: models/document_models.py:74
 msgid "Created"
 msgstr "Erstellt"
 
-#: models/document_models.py:77
+#: models/document_models.py:78
 msgid "The primary language in the document."
 msgstr "Die Hauptsprache des Dokuments."
 
-#: models/document_models.py:82
+#: models/document_models.py:83
 msgid "Whether or not this document is in the trash."
 msgstr "Unabhängig davon, ob dieses Dokument im Papierkorb ist."
 
-#: models/document_models.py:83
+#: models/document_models.py:84
 msgid "In trash?"
 msgstr "Im Papierkorb?"
 
-#: models/document_models.py:87
+#: models/document_models.py:88
 msgid "The server date and time when the document was moved to the trash."
 msgstr ""
 "Datum und Uhrzeit, zu dem das Dokument in den Papierkorb verschoben wurde."
 
-#: models/document_models.py:89
+#: models/document_models.py:90
 msgid "Date and time trashed"
 msgstr "Zeitpunkt der Löschung"
 
-#: models/document_models.py:93
+#: models/document_models.py:94
 msgid ""
 "A document stub is a document with an entry on the database but no file "
 "uploaded. This could be an interrupted upload or a deferred upload via the "
@@ -846,11 +846,11 @@ msgstr ""
 "keine Datei hochgeladen wurde. Die Ursache könnte ein fehlgeschlagener "
 "Uploadvorgang sein oder ein verzögerter Upload über die API-Schnittstelle."
 
-#: models/document_models.py:96
+#: models/document_models.py:97
 msgid "Is stub?"
 msgstr "Inkomplett"
 
-#: models/document_models.py:101
+#: models/document_models.py:102
 msgid "Active document version"
 msgstr "Aktive Dokumentenversion"
 
@@ -1247,7 +1247,7 @@ msgstr "Prüfsumme der Dokumentendatei"
 
 #: search.py:45
 msgid "Document file filename"
-msgstr ""
+msgstr "Dateiname der Dokumentendatei"
 
 #: search.py:48
 msgid "Document file MIME type"
@@ -1397,122 +1397,154 @@ msgstr "Dokument-ID für das neue favorisierte Dokument."
 msgid "Restore URL"
 msgstr "Wiederherstellungs URL"
 
+#: settings.py:40
+msgid ""
+"Optional height in pixels of the document page image used for interactive "
+"display. Leave empty to calculate the height from `DOCUMENTS_DISPLAY_WIDTH` "
+"while preserving the aspect ratio."
+msgstr ""
+
 #: settings.py:49
 msgid ""
-"The threshold at which the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"will start deleting the oldest document file page image cache files. Specify"
-" the size in bytes."
+"Width in pixels of the document page image used for interactive display. "
+"Larger values improve quality but increase processing time and cache "
+"storage."
 msgstr ""
-"Der Grenzwert (in Bytes) ab dem das "
-"DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND mit dem Löschen der ältesten"
-" Cachedatei für Dokumentendateibilder beginnen wird."
 
-#: settings.py:57
-msgid "Path to the Storage subclass to use when storing document files."
-msgstr ""
-"Pfad zur Speicher-Unterklasse (Storage subclass) für die Speicherung der "
-"Dokumentendateien."
-
-#: settings.py:64
-msgid "Arguments to pass to the DOCUMENT_FILE_STORAGE_BACKEND."
-msgstr "Argumente für das DOCUMENT_FILE_STORAGE_BACKEND."
-
-#: settings.py:70
+#: settings.py:58
 msgid ""
-"Path to the Storage subclass to use when storing the cached document file "
-"page image files."
+"Maximum size in bytes of the "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached page "
+"images."
 msgstr ""
-"Pfad zur Storage Subclass für die Speicherung der Cachedateien für Bilder "
-"von Dokumentendateiseiten."
 
-#: settings.py:78
+#: settings.py:67
+msgid "Dotted path to the storage subclass to used to store document files."
+msgstr ""
+
+#: settings.py:74
+msgid "Keyword arguments to pass to `DOCUMENTS_FILE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:81
 msgid ""
-"Arguments to pass to the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "Argumente für das DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store the cached document file "
+"page images."
+msgstr ""
 
-#: settings.py:84
+#: settings.py:89
+msgid ""
+"Keyword arguments to pass to "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:96
 msgid "Maximum number of favorite documents to remember per user."
 msgstr "Maximale Anzahl von Favoriten pro Benutzer."
 
-#: settings.py:90
+#: settings.py:102
 msgid ""
-"Size of blocks to use when calculating the document file's checksum. A value"
-" of 0 disables the block calculation and the entire file will be loaded into"
-" memory."
+"Block size in bytes used when calculating a document file checksum. Use 0 to"
+" disable block reads and hash the entire file in a single pass (loads the "
+"file into memory)."
 msgstr ""
-"Blockgröße die für die Berechnung der Dokumentenprüfsumme verwendet wird. "
-"Der Wert 0 verhindert die Berücksichtigung von Blöcken und das gesamte "
-"Dokument wird in den Speicher geladen."
 
-#: settings.py:97
+#: settings.py:109
 msgid "Default documents language (in ISO639-3 format)."
 msgstr "Standarddokumentensprache (in ISO639-3 Format)."
 
-#: settings.py:101
-msgid "List of supported document languages. In ISO639-3 format."
-msgstr "Liste der unterstützten Dokumentensprachen. In ISO639-3 Format."
-
-#: settings.py:107
-msgid ""
-"The threshold at which the DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND"
-" will start deleting the oldest document version page image cache versions. "
-"Specify the size in bytes."
+#: settings.py:114
+msgid "List of supported document languages (in ISO639-3 format)."
 msgstr ""
-"Der Grenzwert (in Bytes) ab dem das "
-"DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND mit dem Löschen der "
-"ältesten Cachedatei für Dokumentenversionsseitenbilder beginnen wird."
 
-#: settings.py:116
+#: settings.py:121
 msgid ""
-"Path to the Storage subclass to use when storing the cached document version"
-" page image versions."
+"Maximum size in bytes of the "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached version "
+"page images."
 msgstr ""
-"Pfad zur Storage Subclass für die Speicherung der Cachedateien für Bilder "
-"von Dokumentenversionsseiten."
 
-#: settings.py:124
+#: settings.py:131
 msgid ""
-"Arguments to pass to the DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "Argumente für das DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
-
-#: settings.py:146
-msgid ""
-"Maximum number of recently accessed documents (created, edited, viewed) to "
-"remember per user."
+"Dotted path to the storage subclass used to store cached document version "
+"page images."
 msgstr ""
-"Maximale Anzahl der kürzlich zugegriffenen Dokumente (erstellt, bearbeitet, "
-"betrachtet), die pro Benutzer gemerkt werden soll."
 
-#: settings.py:153
+#: settings.py:139
+msgid ""
+"Keyword arguments to pass to "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:147
+msgid ""
+"Optional height in pixels of the document preview image. Leave empty to "
+"calculate the height from `DOCUMENTS_PREVIEW_WIDTH` while preserving the "
+"aspect ratio."
+msgstr ""
+
+#: settings.py:156
+msgid ""
+"Width in pixels of the document preview image. Larger values improve quality"
+" but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:165
+msgid ""
+"Optional height in pixels of the document page image generated for printing."
+" Leave empty to calculate the height from `DOCUMENTS_PRINT_WIDTH` while "
+"preserving the aspect ratio."
+msgstr ""
+
+#: settings.py:174
+msgid ""
+"Width in pixels of the document page image generated for printing. Larger "
+"values improve quality but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:182
+msgid ""
+"Maximum number of recently accessed documents to remember per user (viewed, "
+"created, or edited)."
+msgstr ""
+
+#: settings.py:189
 msgid "Maximum number of recently created documents to show."
 msgstr ""
 "Maximale Anzahl der letztens erstellten Dokumente, die angezeigt werden "
 "soll."
 
-#: settings.py:159
-msgid "Amount in degrees to rotate a document page per user interaction."
-msgstr "Gradzahl, die ein Dokument pro Benutzer Aktion gedreht wird."
+#: settings.py:195
+msgid "Rotation step in degrees applied each time the user rotates a page."
+msgstr ""
 
-#: settings.py:165
+#: settings.py:202
 msgid "Height in pixels of the document thumbnail image."
 msgstr "Höhe des Dokumentenminiaturbilds (Thumbnail) in Pixeln."
 
-#: settings.py:184
-msgid ""
-"Maximum amount in percent (%) to allow user to zoom in a document page "
-"interactively."
-msgstr "Maximaler erlaubter Zoom in %, den Benutzer interaktiv wählen können."
-
-#: settings.py:191
-msgid ""
-"Minimum amount in percent (%) to allow user to zoom out a document page "
-"interactively."
-msgstr "Minimaler erlaubter Zoom in %, den Benutzer interaktiv wählen können."
-
-#: settings.py:198
-msgid "Amount in percent zoom in or out a document page per user interaction."
+#: settings.py:208
+msgid "Width in pixels of the document thumbnail image."
 msgstr ""
-"Betrag in Prozent für Ansicht vergrößern/verkleinern pro Benutzer Aktion."
+
+#: settings.py:214
+msgid ""
+"Width in pixels of the document thumbnail image when shown in list view "
+"mode."
+msgstr ""
+
+#: settings.py:221
+msgid "Maximum zoom level (percent) allowed when viewing a document page."
+msgstr ""
+
+#: settings.py:228
+msgid "Minimum zoom level (percent) allowed when viewing a document page."
+msgstr ""
+
+#: settings.py:235
+msgid "Zoom step (percent) applied each time the user zooms in or out."
+msgstr ""
 
 #: statistics.py:291
 msgid "New documents per month"

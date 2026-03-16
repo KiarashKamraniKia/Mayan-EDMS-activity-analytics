@@ -163,14 +163,14 @@ msgstr ""
 "transport://userid:password@hostname:port/virtual_host。スキーム部分 (transport://)"
 " のみ必須で、その他はオプションであり、各トランスポートの既定値値が使用されます。"
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
 msgstr ""
 "既定値: \"Disabled\"。ブローカー接続でのSSL使用とSSL設定を切り替えます。このオプションの有効な値はトランスポートによって異なります。"
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

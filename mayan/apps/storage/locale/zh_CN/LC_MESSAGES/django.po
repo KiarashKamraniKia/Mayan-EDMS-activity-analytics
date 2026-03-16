@@ -167,17 +167,26 @@ msgid ""
 "download."
 msgstr ""
 
-#: settings.py:38
+#: settings.py:35
+msgid ""
+"Keyword arguments to pass to the `STORAGE_DOWNLOAD_FILE_STORAGE` backend."
+msgstr ""
+
+#: settings.py:42
 msgid "A storage backend that all workers can use to share files."
 msgstr "所有工作人员可用于共享文件的存储后端。"
 
-#: settings.py:48
+#: settings.py:49
+msgid "Keyword arguments to pass to the `STORAGE_SHARED_STORAGE` backend."
+msgstr ""
+
+#: settings.py:56
 msgid ""
 "Temporary directory used site wide to store thumbnails, previews and "
 "temporary files."
 msgstr "临时目录用于站点范围以存储缩略图，预览和临时文件。"
 
-#: settings.py:55
+#: settings.py:63
 msgid "Time in seconds, after which temporary uploaded files will be deleted."
 msgstr ""
 

@@ -5,12 +5,12 @@ from ...classes import GoogleFontDependency, JavaScriptDependency
 
 
 class Command(management.BaseCommand):
-    help = 'Install JavaScript dependencies.'
+    help = 'Install Google Font and JavaScript dependencies.'
 
     def add_arguments(self, parser):
         parser.add_argument(
             '--app', action='store', dest='app',
-            help=_(message='Process a specific app.'),
+            help=_(message='Process a specific app.')
         )
         parser.add_argument(
             '--force', action='store_true', dest='force',

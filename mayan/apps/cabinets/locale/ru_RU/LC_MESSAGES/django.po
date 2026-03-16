@@ -368,7 +368,7 @@ msgstr "Кабинеты, из которых будут удалены выбр
 msgid "Select cabinets"
 msgstr "Выберите кабинеты"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Кабинеты, в которые будет добавлен документ."
 

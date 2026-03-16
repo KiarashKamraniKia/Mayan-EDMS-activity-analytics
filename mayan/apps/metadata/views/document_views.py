@@ -228,8 +228,8 @@ class DocumentMetadataEditView(
             'no_results_icon': icon_metadata,
             'no_results_main_link': no_results_main_link,
             'no_results_text': _(
-                message='Add metadata types available for this document\'s type '
-                'and assign them corresponding values.'
+                message='Add metadata types available for this document\'s '
+                'type and assign them corresponding values.'
             ),
             'no_results_title': _(message='There is no metadata to edit'),
             'title': ngettext(
@@ -369,8 +369,8 @@ class DocumentMetadataListView(ExternalObjectViewMixin, SingleObjectListView):
                 )
             ),
             'no_results_text': _(
-                message='Add metadata types this document\'s type to be able '
-                'to add them to individual documents. Once added to '
+                message='Add metadata types this document\'s type to be '
+                'able to add them to individual documents. Once added to '
                 'individual document, you can then edit their values.'
             ),
             'no_results_title': _(

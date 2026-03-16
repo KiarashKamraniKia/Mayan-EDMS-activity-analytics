@@ -369,7 +369,7 @@ msgstr "Cartelle dalle quali verranno rimossi i documenti selezionati."
 msgid "Select cabinets"
 msgstr "Seleziona cartelle"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Cartelle alle quali verrà aggiunto il documento."
 

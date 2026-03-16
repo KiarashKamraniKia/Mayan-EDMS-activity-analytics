@@ -31,12 +31,14 @@ class Announcement(ExtraDataModelMixin, models.Model):
     )
     start_datetime = models.DateTimeField(
         blank=True, help_text=_(
-            message='Date and time after which this announcement will be displayed.'
+            message='Date and time after which this announcement will be '
+            'displayed.'
         ), null=True, verbose_name=_(message='Start date time')
     )
     end_datetime = models.DateTimeField(
         blank=True, help_text=_(
-            message='Date and time until when this announcement is to be displayed.'
+            message='Date and time until when this announcement is to be '
+            'displayed.'
         ), null=True, verbose_name=_(message='End date time')
     )
 

@@ -236,7 +236,11 @@ msgstr ""
 "Chemin complet vers le logiciel à utiliser pour gérer les clés et les "
 "signatures."
 
-#: settings.py:27
+#: settings.py:26
+msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
+msgstr ""
+
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "Serveur de clefs à contacter"
 

@@ -329,12 +329,12 @@ msgstr "Chiave primaria"
 msgid "Search fields"
 msgstr "Campi di ricerca"
 
-#: settings.py:25
+#: settings.py:26
 msgid "Full path to the backend to be used to handle the search."
 msgstr ""
 "Percorso completo per il backend da utilizzare per gestire la ricerca."
 
-#: settings.py:31
+#: settings.py:33
 msgid ""
 "Arguments to pass to the search backend. For example values to change the "
 "behavior, host names, or authentication arguments."
@@ -342,38 +342,38 @@ msgstr ""
 "Argomenti da passare al backend di ricerca. Ad esempio valori per "
 "modificarne il comportamento, nomi host o argomenti di autenticazione."
 
-#: settings.py:39
+#: settings.py:42
 msgid "The search operator to use when none is specified."
 msgstr ""
 "Operatore di ricerca da utilizzare quando non ne viene specificato alcuno."
 
-#: settings.py:46
+#: settings.py:49
 msgid ""
 "Disables the single term bar search leaving only the advanced search button."
 msgstr ""
 "Disabilita la ricerca della barra a termine singolo lasciando solo il "
 "pulsante di ricerca avanzata."
 
-#: settings.py:53
+#: settings.py:57
 msgid "Amount of objects to process when performing bulk indexing."
 msgstr ""
 "Numero di oggetti da elaborare durante l'esecuzione dell'indicizzazione "
 "massiva."
 
-#: settings.py:59
+#: settings.py:63
 msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr ""
 "Imposta lo stato predefinito della casella di controllo \\\"Corrisponde a "
 "tutti\\\"."
 
-#: settings.py:65
+#: settings.py:70
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "Numero massimo di risultati di ricerca da recuperare e visualizzare per "
 "singola query di ricerca."
 
-#: settings.py:72
+#: settings.py:77
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."
@@ -381,29 +381,29 @@ msgstr ""
 "Genera un errore quando il numero di risultati di ricerca supera il valore "
 "di `SEARCH_QUERY_RESULTS_LIMIT`."
 
-#: settings.py:79
+#: settings.py:84
 msgid "Maximum number of search results to fetch and display."
 msgstr "Numero massimo di risultati di ricerca da recuperare e visualizzare."
 
-#: settings.py:85
+#: settings.py:90
 msgid "Maximum number of saved resultsets to keep per user."
 msgstr "Numero massimo di set di risultati salvati da mantenere per utente."
 
-#: settings.py:91
+#: settings.py:96
 msgid "Maximum number of results to store per resultset."
 msgstr "Numero massimo di risultati da memorizzare per ogni set di risultati."
 
-#: settings.py:97
+#: settings.py:102
 msgid "Time to keep the resultset in seconds."
 msgstr "Tempo di conservazione del set di risultati in secondi."
 
-#: settings.py:103
+#: settings.py:108
 msgid "Amount to increase the time to live on each access of the resultset."
 msgstr ""
 "Valore con cui aumentare il tempo di vita a ogni accesso del set di "
 "risultati."
 
-#: settings.py:110
+#: settings.py:116
 msgid "Sets the default state of the \"Store results\" checkbox."
 msgstr ""
 "Imposta lo stato predefinito della casella di controllo \\\"Memorizza "

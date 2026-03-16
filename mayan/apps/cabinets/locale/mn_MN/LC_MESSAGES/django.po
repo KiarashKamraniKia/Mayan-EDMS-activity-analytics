@@ -364,7 +364,7 @@ msgstr "Сонгосон баримтуудыг хасах шүүгээ."
 msgid "Select cabinets"
 msgstr "Сонгосон шүүгээнүүд"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Баримт нэмэх шүүгээнүүд."
 

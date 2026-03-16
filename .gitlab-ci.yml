@@ -36,23 +36,23 @@ job_docker_build:
     - key: pip-cache-4.8
       paths:
         - ${PIP_CACHE_DIR}
-  image: docker:27.0.3-dind
+  image: docker:28.2.2-dind
   only:
-    - builds/docker
-    - releases/all/major
-    - releases/all/minor
-    - releases/docker/major
-    - releases/docker/minor
-    - releases/nightly
-    - releases/staging
-    - tests/all
-    - tests/docker
+    - ci/builds/docker
+    - ci/releases/all/major
+    - ci/releases/all/minor
+    - ci/releases/docker/major
+    - ci/releases/docker/minor
+    - ci/releases/nightly
+    - ci/releases/staging
+    - ci/tests/all
+    - ci/tests/docker
   script:
     - DOCKER_VERSION=`cat docker/rootfs/version`
     - make docker-build DOCKER_IMAGE_MAYAN_NAME=${CI_REGISTRY_IMAGE} IMAGE_VERSION=${DOCKER_VERSION} DOCKER_IMAGE_LABELS_EXTRA='--label com.gitlab.ci.job.id=${CI_JOB_ID} --label com.gitlab.ci.pipeline.id=${CI_PIPELINE_ID} --label org.opencontainers.image.revision=${CI_COMMIT_SHA}'
     - docker push "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}"
   services:
-    - docker:27.0.3-dind
+    - docker:28.2.2-dind
   stage: stage_build_container
   variables:
     DOCKER_DRIVER: overlay2
@@ -70,10 +70,10 @@ job_docker_push_major:
     - key: apk-cache-4.8
       paths:
         - ${APK_CACHE_DIR}
-  image: docker:27.0.3-cli
+  image: docker:28.2.2-cli
   only:
-    - releases/all/major
-    - releases/docker/major
+    - ci/releases/all/major
+    - ci/releases/docker/major
   script:
     - DOCKER_VERSION=`cat docker/rootfs/version`
     - docker pull "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}"
@@ -89,7 +89,7 @@ job_docker_push_major:
     - docker push registry-1.docker.io/mayanedms/mayanedms:s"${MAJOR_VERSION}"
     - docker push registry-1.docker.io/mayanedms/mayanedms:s"${MINOR_VERSION}"
   services:
-    - docker:27.0.3-dind
+    - docker:28.2.2-dind
   stage: stage_push
   variables:
     DOCKER_DRIVER: overlay2
@@ -107,10 +107,10 @@ job_docker_push_minor:
     - key: apk-cache-4.8
       paths:
         - ${APK_CACHE_DIR}
-  image: docker:27.0.3-cli
+  image: docker:28.2.2-cli
   only:
-    - releases/all/minor
-    - releases/docker/minor
+    - ci/releases/all/minor
+    - ci/releases/docker/minor
   script:
     - DOCKER_VERSION=`cat docker/rootfs/version`
     - docker pull "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}"
@@ -121,7 +121,7 @@ job_docker_push_minor:
     - docker push registry-1.docker.io/mayanedms/mayanedms:v"${DOCKER_VERSION}"
     - docker push registry-1.docker.io/mayanedms/mayanedms:s"${MINOR_VERSION}"
   services:
-    - docker:27.0.3-dind
+    - docker:28.2.2-dind
   stage: stage_push
   variables:
     DOCKER_DRIVER: overlay2
@@ -132,11 +132,11 @@ job_docker_nightly:
   before_script:
     - set -a && sed -E "s/=(.*)/\=\"\1\"/g" config.env > /tmp/config.env && . /tmp/config.env && rm /tmp/config.env && set +a
     - docker login --username ${CI_REGISTRY_USER} --password ${CI_REGISTRY_PASSWORD} ${CI_REGISTRY}
-  image: docker:27.0.3-cli
+  image: docker:28.2.2-cli
   needs:
     - job_docker_build
   only:
-    - releases/nightly
+    - ci/releases/nightly
   script:
     - DOCKER_VERSION=`cat docker/rootfs/version`
     - docker pull "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}"
@@ -144,7 +144,7 @@ job_docker_nightly:
     - docker tag "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" "registry-1.docker.io/mayanedms/mayanedms:${CI_COMMIT_REF_SLUG}"
     - docker push "registry-1.docker.io/mayanedms/mayanedms:${CI_COMMIT_REF_SLUG}"
   services:
-    - docker:27.0.3-dind
+    - docker:28.2.2-dind
   stage: stage_push
   variables:
     DOCKER_DRIVER: overlay2
@@ -163,7 +163,7 @@ job_documentation_build:
     - printf "dir::state::lists    ${APT_STATE_LISTS};\ndir::cache::archives    ${APT_CACHE_ARCHIVES};\n" > /etc/apt/apt.conf.d/99gitlab-ci-cache
     - if [ "${APT_PROXY}" ]; then echo "Acquire::http { Proxy \"http://${APT_PROXY}\"; };" > /etc/apt/apt.conf.d/01proxy; fi
     - apt-get update
-    - apt-get install --yes --no-install-recommends enchant-2 libcairo2 g++ gcc libffi-dev libjpeg-dev libldap2-dev libpng-dev libsasl2-dev libssl-dev libtiff-dev make zlib1g-dev make python3-dev python3-venv
+    - apt-get install --yes --no-install-recommends enchant-2 libcairo2 g++ gcc libffi-dev libjpeg-dev libldap2-dev libpng-dev libsasl2-dev libssl-dev libtiff-dev make pkg-config zlib1g-dev make python3-dev python3-venv
     - python3 -m venv venv
     - . venv/bin/activate
     - pip install pip==${PYTHON_PIP_VERSION}
@@ -176,12 +176,12 @@ job_documentation_build:
     - key: pip-cache-4.8
       paths:
         - ${PIP_CACHE_DIR}
-  image: debian:12.12-slim
+  image: debian:12.13-slim
   only:
-    - builds/documentation
-    - releases/all/major
-    - releases/documentation
-    - tests/all
+    - ci/builds/documentation
+    - ci/releases/all/major
+    - ci/releases/documentation
+    - ci/tests/all
   script:
     - pip install --requirement requirements/common.txt
     - pip install --requirement requirements/base.txt
@@ -216,10 +216,10 @@ job_documentation_push:
     - key: pip-cache-4.8
       paths:
         - ${PIP_CACHE_DIR}
-  image: debian:12.12-slim
+  image: debian:12.13-slim
   only:
-    - releases/all/major
-    - releases/documentation
+    - ci/releases/all/major
+    - ci/releases/documentation
   script:
     - ssh ${DOCUMENTATION_SSH_USERNAME}@${DOCUMENTATION_HOSTNAME} "rm -Rf ${DOCUMENTATION_SERVER_PATH}/*"
     - rsync -avzP --progress -e ssh docs/_build/html/* ${DOCUMENTATION_SSH_USERNAME}@${DOCUMENTATION_HOSTNAME}:${DOCUMENTATION_SERVER_PATH}
@@ -243,7 +243,7 @@ job_python_build:
     - if [ "${APT_PROXY}" ]; then echo "Acquire::http { Proxy \"http://${APT_PROXY}\"; };" > /etc/apt/apt.conf.d/01proxy; fi
     - apt-get update
     - apt-get update
-    - apt-get install --yes --no-install-recommends g++ gcc libffi-dev libjpeg-dev libldap2-dev libpng-dev libsasl2-dev libssl-dev libtiff-dev make zlib1g-dev make python3-dev python3-venv
+    - apt-get install --yes --no-install-recommends g++ gcc libffi-dev libjpeg-dev libldap2-dev libpng-dev libsasl2-dev libssl-dev libtiff-dev make pkg-config zlib1g-dev make python3-dev python3-venv
     - python3 -m venv venv
     - . venv/bin/activate
     - pip install pip==${PYTHON_PIP_VERSION}
@@ -257,19 +257,19 @@ job_python_build:
     - key: pip-cache-4.8
       paths:
         - ${PIP_CACHE_DIR}
-  image: debian:12.12-slim
+  image: debian:12.13-slim
   only:
-    - builds/python
-    - releases/all/major
-    - releases/all/minor
-    - releases/docker/major
-    - releases/docker/minor
-    - releases/python/major
-    - releases/python/minor
-    - releases/testing
-    - tests/all
-    - tests/python/all
-    - tests/python/upgrade
+    - ci/builds/python
+    - ci/releases/all/major
+    - ci/releases/all/minor
+    - ci/releases/docker/major
+    - ci/releases/docker/minor
+    - ci/releases/python/major
+    - ci/releases/python/minor
+    - ci/releases/testing
+    - ci/tests/all
+    - ci/tests/python/all
+    - ci/tests/python/upgrade
   script:
     - make python-wheel-production
   stage: stage_build_python
@@ -297,13 +297,13 @@ job_python_push_pypi:
     - key: pip-cache-4.8
       paths:
         - ${PIP_CACHE_DIR}
-  image: debian:12.12-slim
+  image: debian:12.13-slim
   only:
-    - releases/all/major
-    - releases/all/minor
-    - releases/python/major
-    - releases/python/minor
-    - releases/testing
+    - ci/releases/all/major
+    - ci/releases/all/minor
+    - ci/releases/python/major
+    - ci/releases/python/minor
+    - ci/releases/testing
   script:
     - pip install --requirement requirements/build.txt
     - twine upload --verbose dist/mayan*edms*
@@ -323,7 +323,7 @@ job_python_push_pypi:
     - printf "dir::state::lists    ${APT_STATE_LISTS};\ndir::cache::archives    ${APT_CACHE_ARCHIVES};\n" > /etc/apt/apt.conf.d/99gitlab-ci-cache
     - if [ "${APT_PROXY}" ]; then echo "Acquire::http { Proxy \"http://${APT_PROXY}\"; };" > /etc/apt/apt.conf.d/01proxy; fi
     - apt-get update
-    - apt-get install --yes --no-install-recommends ca-certificates clamav file fuse ghostscript git gnupg1 graphviz libarchive-zip-perl libfile-mimeinfo-perl libimage-exiftool-perl libmariadb3 libpq5 libreoffice-calc-nogui libreoffice-draw-nogui libreoffice-impress-nogui libreoffice-math-nogui libreoffice-writer-nogui poppler-utils sane-utils sudo supervisor tesseract-ocr g++ gcc libffi-dev libjpeg-dev libldap2-dev libpng-dev libsasl2-dev libssl-dev libtiff-dev make zlib1g-dev make python3-dev python3-venv tesseract-ocr-deu
+    - apt-get install --yes --no-install-recommends ca-certificates clamav file fuse ghostscript git gnupg1 graphviz libarchive-zip-perl libfile-mimeinfo-perl libfuse2 libimage-exiftool-perl libmariadb3 libpq5 libreoffice-calc-nogui libreoffice-draw-nogui libreoffice-impress-nogui libreoffice-math-nogui libreoffice-writer-nogui poppler-utils sane-utils sudo supervisor tesseract-ocr g++ gcc libffi-dev libjpeg-dev libldap2-dev libpng-dev libsasl2-dev libssl-dev libtiff-dev make pkg-config zlib1g-dev make python3-dev python3-venv tesseract-ocr-deu
     - python3 -m venv venv
     - . venv/bin/activate
     - pip install pip==${PYTHON_PIP_VERSION}
@@ -335,18 +335,18 @@ job_python_push_pypi:
     - key: pip-cache-4.8
       paths:
         - ${PIP_CACHE_DIR}
-  image: debian:12.12-slim
+  image: debian:12.13-slim
   only:
-    - releases/all/major
-    - releases/all/minor
-    - releases/docker/major
-    - releases/docker/minor
-    - releases/python/major
-    - releases/python/minor
-    - releases/staging
-    - tests/all
-    - tests/python/all
-    - tests/python/base
+    - ci/releases/all/major
+    - ci/releases/all/minor
+    - ci/releases/docker/major
+    - ci/releases/docker/minor
+    - ci/releases/python/major
+    - ci/releases/python/minor
+    - ci/releases/staging
+    - ci/tests/all
+    - ci/tests/python/all
+    - ci/tests/python/base
   stage: stage_test_python
   variables:
     APT_CACHE_DIR: ${CI_PROJECT_DIR}/.cache/apt
@@ -398,16 +398,16 @@ job_demo_deploy:
         - ${APT_CACHE_DIR}
   environment:
     name: demo
-  image: debian:12.12-slim
+  image: debian:12.13-slim
   only:
-    - builds/docker
-    - deployments/demo
-    - releases/all/major
-    - releases/all/minor
-    - releases/docker/major
-    - releases/docker/minor
-    - releases/nightly
-    - releases/staging
+    - ci/builds/docker
+    - ci/deployments/demo
+    - ci/releases/all/major
+    - ci/releases/all/minor
+    - ci/releases/docker/major
+    - ci/releases/docker/minor
+    - ci/releases/nightly
+    - ci/releases/staging
   script:
     - ssh ${DEMO_USERNAME}@${DEMO_IP_ADDRESS} "docker compose down --remove-orphans --volumes || true"
     - ssh ${DEMO_USERNAME}@${DEMO_IP_ADDRESS} "curl --remote-name https://gitlab.com/mayan-edms/mayan-edms/-/raw/master/docker/docker-compose.yml --show-error --silent"
@@ -440,16 +440,16 @@ job_staging_deploy:
         - ${APT_CACHE_DIR}
   environment:
     name: staging
-  image: debian:12.12-slim
+  image: debian:12.13-slim
   only:
-    - builds/docker
-    - deployments/staging
-    - releases/all/major
-    - releases/all/minor
-    - releases/docker/major
-    - releases/docker/minor
-    - releases/nightly
-    - releases/staging
+    - ci/builds/docker
+    - ci/deployments/staging
+    - ci/releases/all/major
+    - ci/releases/all/minor
+    - ci/releases/docker/major
+    - ci/releases/docker/minor
+    - ci/releases/nightly
+    - ci/releases/staging
   script:
     - ssh ${STAGING_SSH_USERNAME}@${STAGING_HOSTNAME} "docker compose down --remove-orphans --volumes || true"
     - scp docker/docker-compose.yml ${STAGING_SSH_USERNAME}@${STAGING_HOSTNAME}:~
@@ -470,12 +470,12 @@ job_staging_deploy:
 job_docker_build_try:
   extends: job_docker_build
   only:
-    - try/staging
+    - ci/try/staging
 
 job_staging_deploy_try:
   extends: job_staging_deploy
   needs:
     - job_docker_build_try
   only:
-    - try/staging
+    - ci/try/staging
   when: on_success

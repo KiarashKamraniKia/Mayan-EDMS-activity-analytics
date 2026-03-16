@@ -36,11 +36,11 @@ msgstr "Iekšējais nosaukums"
 msgid "Description"
 msgstr "Apraksts"
 
-#: apps.py:45 classes.py:218
+#: apps.py:45 classes.py:221
 msgid "Type"
 msgstr "Tips"
 
-#: apps.py:49 classes.py:221
+#: apps.py:49 classes.py:224
 msgid "Other data"
 msgstr ""
 
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Declared by"
 msgstr ""
 
-#: apps.py:57 classes.py:219
+#: apps.py:57 classes.py:222
 msgid "Version"
 msgstr "Versija"
 
@@ -56,73 +56,78 @@ msgstr "Versija"
 msgid "Environment"
 msgstr ""
 
-#: apps.py:64 classes.py:221
+#: apps.py:64 classes.py:224
 msgid "Check"
 msgstr ""
 
-#: classes.py:218
+#: classes.py:221
 msgid "Name"
 msgstr "Nosaukums"
 
-#: classes.py:219
+#: classes.py:222
 msgid "App"
 msgstr ""
 
-#: classes.py:220 classes.py:966
+#: classes.py:223 classes.py:1040
 msgid "Environments"
 msgstr ""
 
-#: classes.py:331
+#: classes.py:343
 msgid "Need to specify at least one: app_label or module."
 msgstr ""
 
-#: classes.py:336
+#: classes.py:348
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "Atkarība \"%s\" jau ir reģistrēta."
 
-#: classes.py:387
+#: classes.py:399
 #, python-format
 msgid "Installing package: %s... "
 msgstr ""
 
-#: classes.py:394
+#: classes.py:406
 msgid "Already installed."
 msgstr ""
 
-#: classes.py:399 classes.py:406 classes.py:412
+#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
 msgid "Complete."
 msgstr ""
 
-#: classes.py:439
+#: classes.py:431
+#, python-format
+msgid "Uninstalling package: %s... "
+msgstr ""
+
+#: classes.py:463
 msgid "Installed and correct version"
 msgstr ""
 
-#: classes.py:441
+#: classes.py:465
 msgid "Missing or incorrect version"
 msgstr ""
 
-#: classes.py:478
+#: classes.py:502
 msgid "None"
 msgstr "Nav neviens"
 
-#: classes.py:487
+#: classes.py:511
 msgid "Not specified"
 msgstr ""
 
-#: classes.py:490
+#: classes.py:514
 msgid "Patching files... "
 msgstr "Notiek failu lāpīšana ..."
 
-#: classes.py:518
+#: classes.py:542
 msgid "Executables that are called directly by the code."
 msgstr ""
 
-#: classes.py:520
+#: classes.py:544
 msgid "Binary"
 msgstr ""
 
-#: classes.py:537
+#: classes.py:562
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
@@ -130,51 +135,55 @@ msgstr ""
 "JavaScript bibliotēkas lejupielādēja no NPM reģistra un tika izmantotas "
 "front-end funkcionalitātei."
 
-#: classes.py:540
+#: classes.py:565
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: classes.py:572 classes.py:869
+#: classes.py:597 classes.py:930
 msgid "Downloading... "
 msgstr ""
 
-#: classes.py:577
+#: classes.py:602
 msgid "Verifying... "
 msgstr ""
 
-#: classes.py:582 classes.py:874
+#: classes.py:607 classes.py:935
 msgid "Extracting... "
 msgstr ""
 
-#: classes.py:795
+#: classes.py:621 classes.py:942
+msgid "Uninstalling... "
+msgstr ""
+
+#: classes.py:839
 msgid "Python packages downloaded from PyPI."
 msgstr ""
 
-#: classes.py:797
+#: classes.py:841
 msgid "Python"
 msgstr ""
 
-#: classes.py:849
+#: classes.py:910
 msgid "Fonts downloaded from fonts.googleapis.com."
 msgstr "Fonti, kas lejupielādēti no fonts.googleapis.com."
 
-#: classes.py:851
+#: classes.py:912
 msgid "Google font"
 msgstr "Google fonti"
 
-#: classes.py:947
+#: classes.py:1020
 msgid "Declared in app"
 msgstr ""
 
-#: classes.py:948
+#: classes.py:1021
 msgid "Show dependencies by the app that declared them."
 msgstr "Rādīt atkarības pēc lietotnēm, kas tās deklarēja."
 
-#: classes.py:952
+#: classes.py:1025
 msgid "Class"
 msgstr ""
 
-#: classes.py:953
+#: classes.py:1026
 msgid ""
 "Show the different classes of dependencies. Classes are usually divided by "
 "language or the file types of the dependency."
@@ -182,11 +191,11 @@ msgstr ""
 "Rādīt dažādu atkarību klases. Klases parasti tiek sadalītas pēc valodas vai "
 "atkarības faila veidiem."
 
-#: classes.py:958
+#: classes.py:1031
 msgid "State"
 msgstr ""
 
-#: classes.py:959
+#: classes.py:1032
 msgid ""
 "Show the different states of the dependencies. True means that the "
 "dependencies is installed and is of a correct version. False means the "
@@ -195,7 +204,7 @@ msgstr ""
 "Rādīt dažādos atkarību stāvokļus. True nozīmē, ka atkarības ir instalētas un"
 " ir pareizas. False nozīmē, ka trūkst atkarību vai ir nepareiza versija."
 
-#: classes.py:967
+#: classes.py:1041
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."
@@ -256,18 +265,18 @@ msgstr ""
 "Normāla vide gala lietotājiem. Trūkstošas atkarības šajā vidē radīs "
 "problēmas un kļūdas normālas lietošanas laikā."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr ""
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
 "usage."
 msgstr ""
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr ""
 
@@ -291,25 +300,25 @@ msgstr "Detaļas"
 msgid "Dependencies licenses"
 msgstr ""
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
 "(%(version_server)s)."
 msgstr ""
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
 "version is %(version_server)s."
 msgstr ""
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr ""
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"
@@ -332,6 +341,7 @@ msgid ""
 msgstr ""
 
 #: management/commands/dependencies_install.py:13
+#: management/commands/dependencies_uninstall.py:13
 msgid "Process a specific app."
 msgstr ""
 

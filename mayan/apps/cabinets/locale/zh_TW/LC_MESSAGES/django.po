@@ -7,6 +7,7 @@
 # Roberto Rosario, 2024
 # yan songwei <yansw@vip.163.com>, 2024
 # Leon Chu, 2024
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
@@ -258,7 +259,7 @@ msgstr "此文件櫃級別是空的"
 #: views.py:135
 #, python-format
 msgid "Details of cabinet: %s"
-msgstr "文件櫃詳情：%s"
+msgstr "文件櫃詳細資訊：%s"
 
 #: views.py:154
 #, python-format
@@ -360,7 +361,7 @@ msgstr "將已選擇之文件從文件櫃移除。"
 msgid "Select cabinets"
 msgstr "選擇文件櫃"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "將新增文件到文件櫃。"
 

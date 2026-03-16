@@ -38,11 +38,11 @@ msgstr "Belső név"
 msgid "Description"
 msgstr "Leírás"
 
-#: apps.py:45 classes.py:218
+#: apps.py:45 classes.py:221
 msgid "Type"
 msgstr "Típus"
 
-#: apps.py:49 classes.py:221
+#: apps.py:49 classes.py:224
 msgid "Other data"
 msgstr "Egyéb adatok"
 
@@ -50,7 +50,7 @@ msgstr "Egyéb adatok"
 msgid "Declared by"
 msgstr "Deklarálva:"
 
-#: apps.py:57 classes.py:219
+#: apps.py:57 classes.py:222
 msgid "Version"
 msgstr "Verzió"
 
@@ -58,73 +58,78 @@ msgstr "Verzió"
 msgid "Environment"
 msgstr "Környezet"
 
-#: apps.py:64 classes.py:221
+#: apps.py:64 classes.py:224
 msgid "Check"
 msgstr "Bejelölés"
 
-#: classes.py:218
+#: classes.py:221
 msgid "Name"
 msgstr "Név"
 
-#: classes.py:219
+#: classes.py:222
 msgid "App"
 msgstr "Alkalmazás"
 
-#: classes.py:220 classes.py:966
+#: classes.py:223 classes.py:1040
 msgid "Environments"
 msgstr "Környezetek"
 
-#: classes.py:331
+#: classes.py:343
 msgid "Need to specify at least one: app_label or module."
 msgstr "Legalább egyet meg kell adnia: app_label vagy module."
 
-#: classes.py:336
+#: classes.py:348
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "A \"%s\" függőség már regisztrálva."
 
-#: classes.py:387
+#: classes.py:399
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Telepítő csomag: %s ..."
 
-#: classes.py:394
+#: classes.py:406
 msgid "Already installed."
 msgstr "Már telepítve."
 
-#: classes.py:399 classes.py:406 classes.py:412
+#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
 msgid "Complete."
 msgstr "Kész."
 
-#: classes.py:439
+#: classes.py:431
+#, python-format
+msgid "Uninstalling package: %s... "
+msgstr ""
+
+#: classes.py:463
 msgid "Installed and correct version"
 msgstr "Telepített és helyes verzió"
 
-#: classes.py:441
+#: classes.py:465
 msgid "Missing or incorrect version"
 msgstr "Hiányzó vagy hibás verzió"
 
-#: classes.py:478
+#: classes.py:502
 msgid "None"
 msgstr "Nincs"
 
-#: classes.py:487
+#: classes.py:511
 msgid "Not specified"
 msgstr "Nem meghatározott"
 
-#: classes.py:490
+#: classes.py:514
 msgid "Patching files... "
 msgstr "Fájlok javítása... "
 
-#: classes.py:518
+#: classes.py:542
 msgid "Executables that are called directly by the code."
 msgstr "A kód által közvetlenül meghívott végrehajtható fájlok."
 
-#: classes.py:520
+#: classes.py:544
 msgid "Binary"
 msgstr "Bináris"
 
-#: classes.py:537
+#: classes.py:562
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
@@ -132,51 +137,55 @@ msgstr ""
 "A JavaScript-könyvtárak letöltődtek az NPM-nyilvántartásból, és az előtér-"
 "funkciókhoz felhasználva."
 
-#: classes.py:540
+#: classes.py:565
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: classes.py:572 classes.py:869
+#: classes.py:597 classes.py:930
 msgid "Downloading... "
 msgstr "Letöltés..."
 
-#: classes.py:577
+#: classes.py:602
 msgid "Verifying... "
 msgstr "Ellenőrzés..."
 
-#: classes.py:582 classes.py:874
+#: classes.py:607 classes.py:935
 msgid "Extracting... "
 msgstr "Kibontás..."
 
-#: classes.py:795
+#: classes.py:621 classes.py:942
+msgid "Uninstalling... "
+msgstr ""
+
+#: classes.py:839
 msgid "Python packages downloaded from PyPI."
 msgstr "A PyPI-ről letöltött Python-csomagok."
 
-#: classes.py:797
+#: classes.py:841
 msgid "Python"
 msgstr "Python"
 
-#: classes.py:849
+#: classes.py:910
 msgid "Fonts downloaded from fonts.googleapis.com."
 msgstr "A fonts.googleapis.com webhelyről letöltött betűtípusok."
 
-#: classes.py:851
+#: classes.py:912
 msgid "Google font"
 msgstr "Google font"
 
-#: classes.py:947
+#: classes.py:1020
 msgid "Declared in app"
 msgstr "Az alkalmazásban deklarálva"
 
-#: classes.py:948
+#: classes.py:1021
 msgid "Show dependencies by the app that declared them."
 msgstr "A függőségek megjelenítése az azokat deklaráló alkalmazás által."
 
-#: classes.py:952
+#: classes.py:1025
 msgid "Class"
 msgstr "Osztály"
 
-#: classes.py:953
+#: classes.py:1026
 msgid ""
 "Show the different classes of dependencies. Classes are usually divided by "
 "language or the file types of the dependency."
@@ -184,11 +193,11 @@ msgstr ""
 "Mutassa a különböző függőségi osztályokat. Az osztályokat általában nyelv "
 "vagy a függőségi fájltípusok szerint osztják fel."
 
-#: classes.py:958
+#: classes.py:1031
 msgid "State"
 msgstr "Állapot"
 
-#: classes.py:959
+#: classes.py:1032
 msgid ""
 "Show the different states of the dependencies. True means that the "
 "dependencies is installed and is of a correct version. False means the "
@@ -198,7 +207,7 @@ msgstr ""
 "függőségek telepítve vannak, és megfelelő verziójúak. A hamis azt jelenti, "
 "hogy a függőségek hiányoznak, vagy hibás verzió van jelen."
 
-#: classes.py:967
+#: classes.py:1041
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."
@@ -266,11 +275,11 @@ msgstr ""
 "Normál környezet a végfelhasználók számára. A hiányzó függőség ebben a "
 "környezetben problémákat és hibákat eredményez a normál használat során."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Éles üzem"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -280,7 +289,7 @@ msgstr ""
 "szolgál. Ebben a környezetben nincs szükség függőségekre a normál éles üzem "
 "használathoz."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Tesztelés"
 
@@ -304,7 +313,7 @@ msgstr "Részletek"
 msgid "Dependencies licenses"
 msgstr "Függőségi licencek"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
@@ -313,7 +322,7 @@ msgstr ""
 "A te verziód ( %(version_local)s ) Legutóbbi , mint a közzétett verzió ( "
 "%(version_server)s )."
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
@@ -322,11 +331,11 @@ msgstr ""
 "Az Ön által használt verzió ( %(version_local)s ) elavult. A legújabb verzió"
 " a %(version_server)s ."
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr "Nem lehet meghatározni a legújabb verziót."
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"
@@ -355,6 +364,7 @@ msgstr ""
 "minden mást kizárnak."
 
 #: management/commands/dependencies_install.py:13
+#: management/commands/dependencies_uninstall.py:13
 msgid "Process a specific app."
 msgstr "Egy adott alkalmazás feldolgozása."
 

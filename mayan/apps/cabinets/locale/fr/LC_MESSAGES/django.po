@@ -372,7 +372,7 @@ msgstr "Classeurs desquels les documents sélectionnés seront retirés."
 msgid "Select cabinets"
 msgstr "Sélectionnez les classeurs"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Classeurs auxquelles le document sera ajouté."
 

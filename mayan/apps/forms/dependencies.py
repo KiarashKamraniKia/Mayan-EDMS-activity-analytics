@@ -7,7 +7,7 @@ JavaScriptDependency(
 )
 
 PythonDependency(
-    module=__name__, name='django-formtools', version_string='==2.3'
+    module=__name__, name='django-formtools', version_string='==2.5.1'
 )
 PythonDependency(
     legal_text='''
@@ -31,5 +31,5 @@ PythonDependency(
         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
         THE SOFTWARE.
     ''', module=__name__, name='django-widget-tweaks',
-    version_string='==1.5.0'
+    version_string='==1.5.1'
 )

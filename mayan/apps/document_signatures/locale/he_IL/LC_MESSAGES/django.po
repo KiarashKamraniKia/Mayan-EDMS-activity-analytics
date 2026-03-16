@@ -292,8 +292,8 @@ msgid "Path to the Storage subclass to use when storing detached signatures."
 msgstr "נתיב לתת-סוג Storage לשימוש בעת אחסון חתימות מנותקות."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "פרמטרים להעביר ל-SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

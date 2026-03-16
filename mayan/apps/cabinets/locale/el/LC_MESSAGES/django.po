@@ -368,7 +368,7 @@ msgstr "Ερμάρια από τα οποία τα επιλεγμένα έγγρ
 msgid "Select cabinets"
 msgstr "Επιλογή ερμαρίων"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Ερμάρια στα οποία το έγγραφο θα προστεθεί."
 

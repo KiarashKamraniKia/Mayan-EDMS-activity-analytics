@@ -22,7 +22,7 @@ msgstr ""
 "Language: bg_BG\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:48
+#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:50
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:121
 msgid "Announcements"
 msgstr "Съобщения"
@@ -75,19 +75,19 @@ msgstr "Активиран"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "Дата и час, след които това съобщение ще се покаже."
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "Начални дата и час"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "Дата и час, до които трябва да се покаже това съобщение."
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "Крайни дата и час"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "Съобщение"
 

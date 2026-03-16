@@ -7,6 +7,7 @@
 # Jiri Fait <fait@orkasolutions.cz>, 2024
 # Jiří Podhorecký <jirka.p@volny.cz>, 2024
 # Michal Švábík <snadno@lehce.cz>, 2024
+# Jiří Podhorecký <jirka.p@volny.cz>, 2026
 # 
 msgid ""
 msgstr ""
@@ -46,6 +47,8 @@ msgid ""
 "Return the value of a specific source metadata for the document's latest "
 "file."
 msgstr ""
+"Vrátí hodnotu specifických zdrojových metadat pro nejnovější soubor "
+"dokumentu."
 
 #: apps.py:137 apps.py:144
 msgid "Source metadata value of"
@@ -65,7 +68,7 @@ msgstr "Zdroj vytvořen"
 
 #: events.py:13
 msgid "Source edited"
-msgstr ""
+msgstr "Zdroj upraven"
 
 #: forms.py:24
 msgid "An optional comment to explain the upload."
@@ -138,7 +141,7 @@ msgstr "Klíč"
 
 #: models.py:30
 msgid "The actual value stored in the source metadata for the document file."
-msgstr ""
+msgstr "Skutečná hodnota uložená ve zdrojových metadatech souboru dokumentu."
 
 #: models.py:32
 msgid "Value"
@@ -208,7 +211,7 @@ msgstr ""
 msgid "Source metadata value"
 msgstr ""
 
-#: serializers.py:22 serializers.py:107
+#: serializers.py:22 serializers.py:108
 msgid "URL"
 msgstr "URL"
 
@@ -232,7 +235,7 @@ msgstr "název"
 msgid "Required"
 msgstr "Požadované"
 
-#: serializers.py:70 serializers.py:85
+#: serializers.py:70 serializers.py:86
 msgid "Arguments"
 msgstr "Argumenty"
 
@@ -242,33 +245,33 @@ msgstr ""
 
 #: serializers.py:84
 msgid "Optional arguments for the action. Must be JSON formatted."
-msgstr ""
+msgstr "Volitelné argumenty pro akci. Musí být ve formátu JSON."
 
-#: serializers.py:89
+#: serializers.py:90
 msgid "Confirmation"
 msgstr ""
 
-#: serializers.py:92
+#: serializers.py:93
 msgid "Execute URL"
-msgstr ""
+msgstr "URL pro spuštění"
 
-#: serializers.py:95
+#: serializers.py:96
 msgid "Interfaces"
 msgstr ""
 
-#: serializers.py:99
+#: serializers.py:100
 msgid "name"
 msgstr ""
 
-#: serializers.py:102
+#: serializers.py:103
 msgid "Permission"
 msgstr "Oprávnění"
 
-#: serializers.py:118
+#: serializers.py:119
 msgid "Binary content for the new file."
 msgstr ""
 
-#: serializers.py:154
+#: serializers.py:155
 msgid "Actions URL"
 msgstr ""
 
@@ -286,8 +289,8 @@ msgstr ""
 msgid "Path to the Storage subclass used to store cached source image files."
 msgstr ""
 
-#: settings.py:44
-msgid "Arguments to pass to the SOURCES_SOURCE_CACHE_STORAGE_BACKEND."
+#: settings.py:45
+msgid "Arguments to pass to the `SOURCES_SOURCE_CACHE_STORAGE_BACKEND`."
 msgstr ""
 
 #: source_backend_actions/interfaces.py:161
@@ -350,7 +353,7 @@ msgstr ""
 msgid "Content selection"
 msgstr ""
 
-#: storages.py:13
+#: storages.py:14
 msgid ""
 "Unable to initialize the staging folder file image storage. Check the "
 "settings {} and {} for formatting errors."
@@ -358,7 +361,7 @@ msgstr ""
 "Nelze inicializovat úložiště obrazu souboru pracovní složky. Zkontrolujte v "
 "nastavení {} a {} chyby formátování."
 
-#: storages.py:20
+#: storages.py:21
 msgid "Sources cache"
 msgstr ""
 

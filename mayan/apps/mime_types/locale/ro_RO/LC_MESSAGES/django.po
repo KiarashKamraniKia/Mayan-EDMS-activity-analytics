@@ -24,13 +24,13 @@ msgstr ""
 msgid "MIME types"
 msgstr "Tipuri MIME"
 
-#: backends/file_command.py:26
+#: backends/file_command.py:24
 msgid "file command not installed or not found."
 msgstr "Comanda fișier nu este instalată sau nu a fost găsită."
 
-#: backends/perl_file_mimeinfo.py:26
-msgid "mimetype not installed or not found."
-msgstr "mimetype nu este instalat sau nu a fost găsit."
+#: backends/perl_file_mimeinfo.py:24
+msgid "mimetype command not installed or not found."
+msgstr ""
 
 #: dependencies.py:9
 msgid ""

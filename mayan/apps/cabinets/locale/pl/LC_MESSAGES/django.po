@@ -367,7 +367,7 @@ msgstr "Szafki, z których wybrane dokumenty zostaną usunięte."
 msgid "Select cabinets"
 msgstr "Wybierz szafki"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Szafki, do których dokument zostanie dodany."
 

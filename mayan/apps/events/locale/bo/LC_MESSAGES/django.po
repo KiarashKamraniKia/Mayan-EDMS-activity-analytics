@@ -67,15 +67,15 @@ msgstr "བྱ་བའི་ཡུལ"
 msgid "Event type"
 msgstr "བྱུང་རིམ་རིགས།"
 
-#: classes.py:90
+#: classes.py:91
 msgid "Event list export to CSV"
 msgstr "བྱུང་རིམ་རེའུ་མིག་CSVལ་ཕྱིར་འདྲེན་བྱེད།"
 
-#: classes.py:119
+#: classes.py:120
 msgid "Events exported."
 msgstr "བྱ་འགུལ་ཕྱིར་གཏོང་བྱས།"
 
-#: classes.py:121
+#: classes.py:122
 #, python-format
 msgid ""
 "The event list has been exported and is available for download using the "

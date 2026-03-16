@@ -20,7 +20,7 @@ msgstr ""
 "Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:48
+#: apps.py:39 events.py:6 links.py:37 links.py:46 models.py:50
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:121
 msgid "Announcements"
 msgstr "お知らせ"
@@ -73,19 +73,19 @@ msgstr "有効"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "このお知らせが表示される日時"
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "表示開始日時"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "このお知らせが表示される終了日時"
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "終了日時"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "お知らせ"
 

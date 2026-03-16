@@ -299,8 +299,8 @@ msgstr ""
 "المسار إلى فئة التخزين الفرعية لاستخدامها عند تخزين التوقيعات المنفصلة."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "تفعيل المتغيرات"
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

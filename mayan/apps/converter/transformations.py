@@ -41,11 +41,11 @@ class BaseTransformation(metaclass=BaseTransformationType):
 
     @staticmethod
     def combine(transformations):
-        result = hashlib.sha256()
+        hash_object = hashlib.sha256()
 
         for transformation in transformations or ():
             try:
-                result.update(
+                hash_object.update(
                     transformation.cache_hash()
                 )
             except Exception as exception:
@@ -54,7 +54,7 @@ class BaseTransformation(metaclass=BaseTransformationType):
                     transformation, exception
                 )
 
-        return result.hexdigest()
+        return hash_object.hexdigest()
 
     @staticmethod
     def list_as_query_string(transformation_instance_list):
@@ -176,25 +176,24 @@ class BaseTransformation(metaclass=BaseTransformationType):
             self.kwargs[argument_name] = kwargs.get(argument_name)
 
     def _update_hash(self):
-        result = hashlib.sha256(
-            string=force_bytes(s=self.name)
-        )
+        string = force_bytes(s=self.name)
+        hash_object = hashlib.sha256(string=string)
 
         # Sort arguments for guaranteed repeatability.
         for key, value in sorted(self.kwargs.items()):
-            result.update(
+            hash_object.update(
                 force_bytes(s=key)
             )
-            result.update(
+            hash_object.update(
                 force_bytes(s=value)
             )
 
-        return result
+        return hash_object
 
     def cache_hash(self):
-        return force_bytes(
-            s=self._update_hash().hexdigest()
-        )
+        hash_object = self._update_hash()
+        string = hash_object.hexdigest()
+        return force_bytes(s=string)
 
     def execute_on(self, image):
         self.image = image
@@ -668,13 +667,14 @@ class TransformationRotate(BaseTransformation):
     class Form(forms.Form):
         degrees = form_fields.IntegerField(
             help_text=_(
-                message='Number of degrees to rotate the image counter clockwise '
-                'around its center.'
+                message='Number of degrees to rotate the image counter '
+                'clockwise around its center.'
             ), label=_(message='Degrees'), required=True
         )
         fillcolor = form_fields.CharField(
             help_text=_(
-                message='Color to be used for area outside of the rotated image.'
+                message='Color to be used for area outside of the rotated '
+                'image.'
             ), label=_(message='Fill color'), required=False,
             widget=form_widgets.ColorWidget()
         )

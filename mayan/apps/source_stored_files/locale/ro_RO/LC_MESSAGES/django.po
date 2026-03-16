@@ -8,6 +8,7 @@
 # Badea Gabriel <gcbadea@gmail.com>, 2024
 # Stefaniu Criste <gupi@hangar.ro>, 2024
 # Harald Ersch, 2024
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
@@ -171,10 +172,8 @@ msgid "No source files available"
 msgstr "Nu există fișiere sursă disponibile"
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
-msgstr ""
-"Valoarea lățimii care trebuie transmisă backend-ului convertorului de "
-"imagini."
+msgid "Width value to be passed to the converter backend."
+msgstr "Valoarea lățime trecuta convertorului."
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

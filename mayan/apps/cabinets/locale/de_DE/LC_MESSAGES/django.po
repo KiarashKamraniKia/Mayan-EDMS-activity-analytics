@@ -379,7 +379,7 @@ msgstr "Aktenschränke aus denen die ausgewählten Dokumente entfernt werden."
 msgid "Select cabinets"
 msgstr "Aktenschränke auswählen"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Aktenschränke zu denen die ausgewählten Dokumente hinzugefügt werden."
 

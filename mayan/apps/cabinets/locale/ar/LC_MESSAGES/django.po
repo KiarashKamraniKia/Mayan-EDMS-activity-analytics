@@ -365,7 +365,7 @@ msgstr "الخزانات التي ستتم إحذف الوثائق المحدد�
 msgid "Select cabinets"
 msgstr "إختيار خزانة الحفظ"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "الخزانات التي سيتم إضافة المستند إليها"
 

@@ -1,7 +1,7 @@
 from django.utils.translation import gettext_lazy as _
 
 from mayan.apps.platform.platform_templates import PlatformTemplate, Variable
-from mayan.settings.literals import (
+from mayan.literals import (
     FORGE_DOCKER_BASE_IMAGE_NAME, FORGE_DOCKER_BASE_IMAGE_TAG,
     FORGE_DOCKER_COMPOSE_PROJECT_NAME, FORGE_DOCKER_IMAGE_NAME,
     FORGE_PYTHON_PACKAGES, FORGE_PYTHON_VERSION, FORGE_TRANSIFEX_VERSION,

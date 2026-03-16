@@ -63,7 +63,7 @@ msgstr "تغير الوثيقة الخارجية للعرض"
 msgid "Utility from the poppler-utils package used to inspect PDF files."
 msgstr "ادوات مساعدة اضافية"
 
-#: dependencies.py:19
+#: dependencies.py:20
 msgid ""
 "Utility from the popper-utils package used to extract pages from PDF files "
 "into PPM format images."
@@ -132,11 +132,11 @@ msgstr "المسار التعديلي"
 msgid "Select new transformation"
 msgstr "تحديد جديد"
 
-#: model_mixins.py:120
+#: model_mixins.py:118
 msgid "Badly formatted arguments YAML"
 msgstr "وسائط YAML ذات تنسيق غير صحيح"
 
-#: model_mixins.py:131 models.py:168
+#: model_mixins.py:129 models.py:168
 msgid "Arguments"
 msgstr "المحددات"
 

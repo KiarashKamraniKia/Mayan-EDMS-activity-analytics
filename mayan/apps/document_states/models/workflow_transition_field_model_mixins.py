@@ -80,11 +80,11 @@ class WorkflowTransitionFieldBusinessLogicMixin:
                 }
 
     def get_hash(self):
-        return hashlib.sha256(
-            string=serializers.serialize(
-                format='json', queryset=(self,)
-            ).encode()
-        ).hexdigest()
+        string = serializers.serialize(
+            format='json', queryset=(self,)
+        ).encode()
+        hash_object = hashlib.sha256(string=string)
+        return hash_object.hexdigest()
 
     def get_lookup_values(self, workflow_instance):
         template = Template(
@@ -98,9 +98,8 @@ class WorkflowTransitionFieldBusinessLogicMixin:
         )
 
     def get_widget_kwargs(self):
-        return yaml_load(
-            stream=self.widget_kwargs or '{}'
-        )
+        stream = self.widget_kwargs or '{}'
+        return yaml_load(stream=stream)
 
     def has_default(self):
         if self.default:

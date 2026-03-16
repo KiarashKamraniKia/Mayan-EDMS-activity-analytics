@@ -100,7 +100,7 @@ msgstr ""
 "Caminho pontilhado para o backend utilizado para processar autenticação de "
 "utilizador"
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "Argumentos para o AUTENTICACAO_BACKEND"
 

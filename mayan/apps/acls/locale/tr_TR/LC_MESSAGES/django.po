@@ -103,15 +103,15 @@ msgstr "Nesne ID"
 msgid "Role to which the access is granted for the specified object."
 msgstr "Belirtilen nesne için erişim yetkisinin verildiği rol."
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "Erişim Girişi"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "Erişim Girişleri"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Rol \"%(role)s\" izni \"%(object)s\" için"

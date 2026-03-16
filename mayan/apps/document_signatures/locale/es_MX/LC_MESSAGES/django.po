@@ -296,8 +296,8 @@ msgstr ""
 "Ruta a la subclase Storage para usar cuando se almacenan firmas separadas."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Argumentos para pasar al SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

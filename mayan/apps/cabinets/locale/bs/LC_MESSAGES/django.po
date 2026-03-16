@@ -359,7 +359,7 @@ msgstr "Ormari iz kojih će izabrani dokumenti biti uklonjeni."
 msgid "Select cabinets"
 msgstr ""
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr ""
 

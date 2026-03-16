@@ -100,15 +100,15 @@ msgstr "Object ID"
 msgid "Role to which the access is granted for the specified object."
 msgstr "Rol waartoe de toegang wordt verleend voor het opgegeven object."
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "Authorisatie invoer"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "Authorisatie invoer"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Rol \"%(role)s\" permissies voor \"%(object)s\""

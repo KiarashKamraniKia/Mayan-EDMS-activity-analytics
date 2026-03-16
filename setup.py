@@ -65,63 +65,63 @@ def find_packages(directory):
 
 
 install_requires = """
-django==4.2.27
+django==4.2.29
 CairoSVG==2.8.2
 Markdown==3.10
-Pillow==12.0.0
+Pillow==12.1.1
 PyYAML==6.0.3
 Whoosh==2.7.4
 bleach==6.3.0
-boto3==1.34.122
+boto3==1.40.24
 celery==5.4.0
-dateparser==1.2.2
+dateparser==1.3.0
 django-activity-stream==2.0.0
-django-auth-ldap==5.2.0
+django-auth-ldap==5.3.0
 django-celery-beat==2.8.1
 django-cors-headers==4.9.0
-django-formtools==2.3
+django-formtools==2.5.1
 django-mathfilters==1.0.0
 django-model-utils==5.0.0
 django-mptt==0.18.0
 django-qsstats-magic==1.1.0
-django-solo==2.4.0
+django-solo==2.5.1
 django-storages==1.14.6
 django-stronghold==0.4.0
-django-widget-tweaks==1.5.0
+django-widget-tweaks==1.5.1
 djangorestframework==3.15.2
 djangorestframework-recursive==0.1.2
-drf-yasg==1.21.11
+drf-yasg==1.21.15
 elasticsearch==7.17.12
 elasticsearch-dsl==7.4.1
 extract-msg==0.55.0
 flex==6.14.1
 furl==2.1.4
 fusepy==3.0.1
-gevent==24.2.1
+gevent==25.9.1
 google-cloud-storage==2.17.0
 graphviz==0.21
-greenlet==3.0.3
-gunicorn==23.0.0
+greenlet==3.3.2
+gunicorn==25.1.0
 importlib-metadata==8.0.0
-jsonschema==4.25.1
-mozilla-django-oidc==4.0.1
+jsonschema==4.26.0
+mozilla-django-oidc==5.0.2
 nh3==0.3.2
 node-semver==0.9.0
 ollama==0.6.1
-pycountry==24.6.1
+pycountry==26.2.16
 pycryptodome==3.23.0
 pyotp==2.9.0
-pypdf==6.3.0
+pypdf==6.7.5
 python-dateutil==2.9.0.post0
 python-magic==0.4.27
-python_gnupg==0.5.5
-pytz==2025.2
+python_gnupg==0.5.6
+pytz==2026.1.post1
 qrcode==8.2
 requests==2.32.5
-sentry-sdk==2.45.0
+sentry-sdk==2.54.0
 sh==2.2.2
 swagger-spec-validator==3.0.4
-whitenoise==6.11.0
+whitenoise==6.12.0
 """.split()
 
 with open(file='README.rst') as file_object:
@@ -137,7 +137,6 @@ setup(
         'Intended Audience :: Education',
         'Intended Audience :: Developers',
         'Intended Audience :: Information Technology',
-        'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
         'Natural Language :: English',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',

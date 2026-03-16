@@ -164,9 +164,9 @@ class AddRemoveView(
 ):
     form_classes = {'form_available': ChoiceForm, 'form_added': ChoiceForm}
     list_added_help_text = _(
-        message='Select entries to be removed. Hold Control to select multiple '
-        'entries. Once the selection is complete, click the button below '
-        'or double click the list to activate the action.'
+        message='Select entries to be removed. Hold Control to select '
+        'multiple entries. Once the selection is complete, click the button '
+        'below or double click the list to activate the action.'
     )
     list_available_help_text = _(
         message='Select entries to be added. Hold Control to select multiple '

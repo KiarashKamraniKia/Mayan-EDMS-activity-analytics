@@ -363,7 +363,7 @@ msgstr "འདེམས་སྒྲུག་བྱས་པའི་ཡིག་
 msgid "Select cabinets"
 msgstr "ཆ་སྒམ་འདེམས།"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "ཡིག་ཆ་དེ་ཁ་སྣོན་བྱེད་སའི་སྒམ་ཆུང་།"
 

@@ -11,7 +11,7 @@ from mayan.apps.common.tests.literals import (
 )
 from mayan.apps.documents.literals import STORAGE_NAME_DOCUMENT_FILES
 from mayan.apps.permissions.tests.mixins import PermissionTestMixin
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from ..classes import DefinedStorage
 from ..compressed_files import Archive

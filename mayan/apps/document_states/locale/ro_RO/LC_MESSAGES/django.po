@@ -882,7 +882,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr "Cheia primară a tipului de document de adăugat la fluxul de lucru."
 
 #: serializers/workflow_template_serializers.py:71
-#: serializers/workflow_template_serializers.py:80
+#: serializers/workflow_template_serializers.py:81
 msgid "Document type ID"
 msgstr "ID tip document"
 
@@ -906,11 +906,11 @@ msgstr ""
 "Cheia primară a tranziției șablonului fluxului de lucru care urmează să fie "
 "adăugată."
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "ID de tranziție al șablonului de flux de lucru"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "Adresa URL de tranziție a șablonului de flux de lucru"
 
@@ -974,12 +974,10 @@ msgstr ""
 
 #: settings.py:28
 msgid ""
-"The threshold at which the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND will start "
-"deleting the oldest workflow image cache files. Specify the size in bytes."
+"The threshold at which the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will "
+"start deleting the oldest workflow image cache files. Specify the size in "
+"bytes."
 msgstr ""
-"Pragul la care WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND va începe să șteargă "
-"cele mai vechi fișiere de memorie cache a imaginilor fluxului de lucru. "
-"Specificați dimensiunea în octeți."
 
 #: settings.py:37
 msgid ""
@@ -990,10 +988,10 @@ msgstr ""
 "fișierelor de imagine ale fluxului de lucru din cache"
 
 #: settings.py:45
-msgid "Arguments to pass to the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "Argumente de transmis la WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."
@@ -1269,33 +1267,33 @@ msgstr ""
 msgid "Workflow transition trigger events for: %s"
 msgstr "Evenimente de declanșare a fluxului de lucru pentru: %s"
 
-#: views/workflow_template_transition_views.py:39
+#: views/workflow_template_transition_views.py:40
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "Creați tranziții pentru fluxul de lucru: %s"
 
-#: views/workflow_template_transition_views.py:79
+#: views/workflow_template_transition_views.py:80
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "Ștergeți tranziția fluxului de lucru: %s?"
 
-#: views/workflow_template_transition_views.py:106
+#: views/workflow_template_transition_views.py:107
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "Editați tranziția fluxului de lucru: %s"
 
-#: views/workflow_template_transition_views.py:146
+#: views/workflow_template_transition_views.py:147
 msgid ""
 "Create a transition and use it to move a workflow from one state to another."
 msgstr ""
 "Creați o tranziție și utilizați-o pentru a muta un flux de lucru dintr-o "
 "stare în alta."
 
-#: views/workflow_template_transition_views.py:150
+#: views/workflow_template_transition_views.py:151
 msgid "This workflow doesn't have any transitions"
 msgstr "Acest flux de lucru nu are nicio tranziție"
 
-#: views/workflow_template_transition_views.py:154
+#: views/workflow_template_transition_views.py:155
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "Tranzițiile fluxului de lucru: %s"

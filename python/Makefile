@@ -28,12 +28,12 @@ python-sdist-testing: clean
 
 python-wheel-production: ## Build the production wheel distribution package.
 python-wheel-production: clean python-sdist-production
-	pip wheel --no-index --no-deps --wheel-dir dist dist/*.tar.gz
+	pip wheel --wheel-dir dist dist/*.tar.gz
 	ls -l dist
 
 python-wheel-testing: ## Build the testing wheel distribution package.
 python-wheel-testing: clean python-sdist-testing
-	pip wheel --no-index --no-deps --wheel-dir dist dist/*.tar.gz
+	pip wheel --wheel-dir dist dist/*.tar.gz
 	ls -l dist
 
 # Development environment

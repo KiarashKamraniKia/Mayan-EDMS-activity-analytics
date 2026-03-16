@@ -151,8 +151,8 @@ msgid "No source files available"
 msgstr "ソースファイルが存在しません"
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
-msgstr "画像変換バックエンドに渡す幅"
+msgid "Width value to be passed to the converter backend."
+msgstr ""
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

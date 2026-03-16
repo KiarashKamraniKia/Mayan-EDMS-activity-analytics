@@ -93,7 +93,7 @@ msgid "Dotted path to the backend used to process user authentication."
 msgstr ""
 "བཀོལ་སྤྱོད་པའི་བདེན་དཔང་ལས་སྣོན་བྱེད་པར་བེད་སྤྱོད་བྱེད་པའི་རྒྱབ་ཕྱོགས་ལ་ཚག་ཡོད་པའི་འགྲོ་ལམ།"
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "AUTHENTICATION_BACKEND དོན་གྱི་ཨར་གུ་མེན་ཊི་ (Arguments) ཁག"
 

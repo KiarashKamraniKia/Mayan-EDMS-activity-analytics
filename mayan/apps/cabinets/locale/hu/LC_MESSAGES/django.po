@@ -370,7 +370,7 @@ msgstr ""
 msgid "Select cabinets"
 msgstr "Irattartók kiválasztása"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Irattartók, amelyekhez a dokumentum hozzáadásra kerül."
 

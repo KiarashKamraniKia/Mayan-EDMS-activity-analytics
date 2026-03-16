@@ -366,7 +366,7 @@ msgstr "Шкафове, от които ще бъдат премахнати и�
 msgid "Select cabinets"
 msgstr "Изберете шкафове"
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr "Шкафове, към които ще бъде добавен документът."
 

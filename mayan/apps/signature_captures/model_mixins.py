@@ -89,9 +89,8 @@ class SignatureCaptureBusinessLogicMixin:
     get_date_time_created.short_description = _(message='Creation date and time')
 
     def get_hash(self):
-        return hashlib.sha256(
-            string=force_bytes(self.svg)
-        ).hexdigest()
+        string = force_bytes(s=self.svg)
+        return hashlib.sha256(string=string).hexdigest()
 
     def get_image(self):
         stream = io.BytesIO()

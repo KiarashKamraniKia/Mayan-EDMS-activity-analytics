@@ -359,7 +359,7 @@ msgstr "کابینت هایی که اسناد انتخاب شده حذف خوا�
 msgid "Select cabinets"
 msgstr ""
 
-#: wizard_steps.py:80 workflow_actions.py:33
+#: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
 msgstr ""
 

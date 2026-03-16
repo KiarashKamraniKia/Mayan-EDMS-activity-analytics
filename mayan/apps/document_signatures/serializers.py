@@ -56,8 +56,8 @@ class BaseSignatureSerializer(serializers.HyperlinkedModelSerializer):
 class BaseSignSerializer(serializers.HyperlinkedModelSerializer):
     key = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            message='Primary key of the secret key used to sign the document '
-            'file.'
+            message='Primary key of the secret key used to sign the '
+            'document file.'
         ), label=_(message='Key ID'), source_queryset=Key.objects.private_keys(),
         source_permission=permission_key_sign
     )

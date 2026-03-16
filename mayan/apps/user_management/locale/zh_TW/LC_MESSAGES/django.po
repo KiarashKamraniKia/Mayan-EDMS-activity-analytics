@@ -10,6 +10,7 @@
 # Leon Chu, 2024
 # bo feng <87289884@qq.com>, 2024
 # Roberto Rosario, 2024
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
@@ -61,7 +62,7 @@ msgstr "名字"
 
 #: apps.py:119
 msgid "Is active?"
-msgstr "已激活？"
+msgstr "已啟用？"
 
 #: apps.py:122
 msgid "Is super user?"
@@ -368,7 +369,7 @@ msgstr ""
 #: views/user_views.py:101
 #, python-format
 msgid "Details of user: %s"
-msgstr "用户详情：%s"
+msgstr "使用者詳細資訊：%s"
 
 #: views/user_views.py:120
 #, python-format

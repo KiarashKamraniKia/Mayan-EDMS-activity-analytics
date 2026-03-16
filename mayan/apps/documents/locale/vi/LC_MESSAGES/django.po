@@ -50,7 +50,7 @@ msgstr ""
 #: apps.py:288 links/document_file_links.py:71
 #: links/document_file_page_links.py:70 links/document_version_links.py:73
 #: links/document_version_page_links.py:90 models/document_file_models.py:58
-#: models/document_models.py:111 models/document_version_models.py:30
+#: models/document_models.py:112 models/document_version_models.py:30
 #: models/favorite_document_models.py:30
 #: models/recently_accessed_document_models.py:25 search.py:14
 #: serializers/favorite_document_serializers.py:13
@@ -680,7 +680,7 @@ msgstr "Tất cả các trang"
 
 #: models/document_file_model_mixins.py:366
 #: models/document_file_page_model_mixins.py:244
-#: models/document_model_mixins.py:179 models/document_models.py:63
+#: models/document_model_mixins.py:179 models/document_models.py:64
 #: models/document_type_models.py:43 models/document_type_models.py:156
 #: models/document_version_model_mixins.py:131
 #: models/document_version_page_model_mixins.py:290
@@ -697,40 +697,40 @@ msgstr ""
 msgid "The server date and time when the document file was processed."
 msgstr ""
 
-#: models/document_file_models.py:63 models/document_version_models.py:36
+#: models/document_file_models.py:64 models/document_version_models.py:36
 msgid "Timestamp"
 msgstr "Thời gian"
 
-#: models/document_file_models.py:67
+#: models/document_file_models.py:68
 msgid "An optional short text describing the document file."
 msgstr ""
 
-#: models/document_file_models.py:68 models/document_version_models.py:41
+#: models/document_file_models.py:69 models/document_version_models.py:41
 msgid "Comment"
 msgstr "Ghi chú"
 
-#: models/document_file_models.py:73 serializers/document_serializers.py:93
+#: models/document_file_models.py:74 serializers/document_serializers.py:93
 msgid "File"
 msgstr "Tệp tin"
 
-#: models/document_file_models.py:76
+#: models/document_file_models.py:77
 msgid "Filename"
 msgstr "Tên file"
 
-#: models/document_file_models.py:80
+#: models/document_file_models.py:81
 msgid ""
 "The document file's file mimetype. MIME types are a standard way to describe"
 " the format of a file, in this case the file format of the document. Some "
 "examples: \"text/plain\" or \"image/jpeg\". "
 msgstr ""
 
-#: models/document_file_models.py:88
+#: models/document_file_models.py:89
 msgid ""
 "The document file file encoding. binary 7-bit, binary 8-bit, text, base64, "
 "etc."
 msgstr ""
 
-#: models/document_file_models.py:108 storages.py:27
+#: models/document_file_models.py:109 storages.py:27
 msgid "Document files"
 msgstr ""
 
@@ -771,43 +771,43 @@ msgid ""
 "filename of the first file uploaded to the document."
 msgstr ""
 
-#: models/document_models.py:67
+#: models/document_models.py:68
 msgid "An optional short text describing a document."
 msgstr "Mô tả ngắn về tài liệu (tùy chọn)."
 
-#: models/document_models.py:68 serializers/document_version_serializers.py:20
+#: models/document_models.py:69 serializers/document_version_serializers.py:20
 msgid "Description"
 msgstr "Mô tả"
 
-#: models/document_models.py:72
+#: models/document_models.py:73
 msgid "The date and time of the document creation."
 msgstr ""
 
-#: models/document_models.py:73
+#: models/document_models.py:74
 msgid "Created"
 msgstr ""
 
-#: models/document_models.py:77
+#: models/document_models.py:78
 msgid "The primary language in the document."
 msgstr ""
 
-#: models/document_models.py:82
+#: models/document_models.py:83
 msgid "Whether or not this document is in the trash."
 msgstr "Tài liệu này có ở trong thùng rác hay không."
 
-#: models/document_models.py:83
+#: models/document_models.py:84
 msgid "In trash?"
 msgstr "Có trong thùng rác?"
 
-#: models/document_models.py:87
+#: models/document_models.py:88
 msgid "The server date and time when the document was moved to the trash."
 msgstr "Ngày giờ của máy chủ khi tài liệu được đưa vào thùng rác."
 
-#: models/document_models.py:89
+#: models/document_models.py:90
 msgid "Date and time trashed"
 msgstr "Ngày giờ xóa"
 
-#: models/document_models.py:93
+#: models/document_models.py:94
 msgid ""
 "A document stub is a document with an entry on the database but no file "
 "uploaded. This could be an interrupted upload or a deferred upload via the "
@@ -817,11 +817,11 @@ msgstr ""
 "tin được tải lên. Có thể do việc tải lên bị gián đoạn hoặc bị trì hoãn thông"
 " qua API."
 
-#: models/document_models.py:96
+#: models/document_models.py:97
 msgid "Is stub?"
 msgstr "Có phải tài liệu rỗng?"
 
-#: models/document_models.py:101
+#: models/document_models.py:102
 msgid "Active document version"
 msgstr ""
 
@@ -1352,109 +1352,152 @@ msgstr ""
 msgid "Restore URL"
 msgstr ""
 
+#: settings.py:40
+msgid ""
+"Optional height in pixels of the document page image used for interactive "
+"display. Leave empty to calculate the height from `DOCUMENTS_DISPLAY_WIDTH` "
+"while preserving the aspect ratio."
+msgstr ""
+
 #: settings.py:49
 msgid ""
-"The threshold at which the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"will start deleting the oldest document file page image cache files. Specify"
-" the size in bytes."
+"Width in pixels of the document page image used for interactive display. "
+"Larger values improve quality but increase processing time and cache "
+"storage."
 msgstr ""
 
-#: settings.py:57
-msgid "Path to the Storage subclass to use when storing document files."
-msgstr "Đường dẫn tới class Storage để dùng khi lưu tệp tin tài liệu."
-
-#: settings.py:64
-msgid "Arguments to pass to the DOCUMENT_FILE_STORAGE_BACKEND."
-msgstr ""
-
-#: settings.py:70
+#: settings.py:58
 msgid ""
-"Path to the Storage subclass to use when storing the cached document file "
-"page image files."
+"Maximum size in bytes of the "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached page "
+"images."
 msgstr ""
 
-#: settings.py:78
+#: settings.py:67
+msgid "Dotted path to the storage subclass to used to store document files."
+msgstr ""
+
+#: settings.py:74
+msgid "Keyword arguments to pass to `DOCUMENTS_FILE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:81
 msgid ""
-"Arguments to pass to the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store the cached document file "
+"page images."
 msgstr ""
 
-#: settings.py:84
+#: settings.py:89
+msgid ""
+"Keyword arguments to pass to "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:96
 msgid "Maximum number of favorite documents to remember per user."
 msgstr "Số tài liệu yêu thích tối đa cho mỗi người dùng."
 
-#: settings.py:90
+#: settings.py:102
 msgid ""
-"Size of blocks to use when calculating the document file's checksum. A value"
-" of 0 disables the block calculation and the entire file will be loaded into"
-" memory."
+"Block size in bytes used when calculating a document file checksum. Use 0 to"
+" disable block reads and hash the entire file in a single pass (loads the "
+"file into memory)."
 msgstr ""
-"Kích cỡ block dùng để tính toán checksum của tệp tin tài liệu. Giá trị 0 vô "
-"hiệu hóa tính toán theo block và toàn bộ tệp tin sẽ được tải vào bộ nhớ."
 
-#: settings.py:97
+#: settings.py:109
 msgid "Default documents language (in ISO639-3 format)."
 msgstr "Ngôn ngữ mặc định của tài liệu (ở định dạng ISO639-3)."
 
-#: settings.py:101
-msgid "List of supported document languages. In ISO639-3 format."
-msgstr "Danh sách ngôn ngữ của tài liệu được hỗ trợ. Ở định dạng ISO639-3."
-
-#: settings.py:107
-msgid ""
-"The threshold at which the DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND"
-" will start deleting the oldest document version page image cache versions. "
-"Specify the size in bytes."
+#: settings.py:114
+msgid "List of supported document languages (in ISO639-3 format)."
 msgstr ""
 
-#: settings.py:116
+#: settings.py:121
 msgid ""
-"Path to the Storage subclass to use when storing the cached document version"
-" page image versions."
+"Maximum size in bytes of the "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached version "
+"page images."
 msgstr ""
 
-#: settings.py:124
+#: settings.py:131
 msgid ""
-"Arguments to pass to the DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store cached document version "
+"page images."
 msgstr ""
 
-#: settings.py:146
+#: settings.py:139
 msgid ""
-"Maximum number of recently accessed documents (created, edited, viewed) to "
-"remember per user."
+"Keyword arguments to pass to "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
 
-#: settings.py:153
+#: settings.py:147
+msgid ""
+"Optional height in pixels of the document preview image. Leave empty to "
+"calculate the height from `DOCUMENTS_PREVIEW_WIDTH` while preserving the "
+"aspect ratio."
+msgstr ""
+
+#: settings.py:156
+msgid ""
+"Width in pixels of the document preview image. Larger values improve quality"
+" but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:165
+msgid ""
+"Optional height in pixels of the document page image generated for printing."
+" Leave empty to calculate the height from `DOCUMENTS_PRINT_WIDTH` while "
+"preserving the aspect ratio."
+msgstr ""
+
+#: settings.py:174
+msgid ""
+"Width in pixels of the document page image generated for printing. Larger "
+"values improve quality but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:182
+msgid ""
+"Maximum number of recently accessed documents to remember per user (viewed, "
+"created, or edited)."
+msgstr ""
+
+#: settings.py:189
 msgid "Maximum number of recently created documents to show."
 msgstr "Số lượng tài liệu vừa tạo tối đa."
 
-#: settings.py:159
-msgid "Amount in degrees to rotate a document page per user interaction."
-msgstr "Số độ để xoay trang tài liệu cho mỗi thao tác của người dùng."
+#: settings.py:195
+msgid "Rotation step in degrees applied each time the user rotates a page."
+msgstr ""
 
-#: settings.py:165
+#: settings.py:202
 msgid "Height in pixels of the document thumbnail image."
 msgstr "Chiều cao tính bằng pixel của hình xem trước của tài liệu."
 
-#: settings.py:184
-msgid ""
-"Maximum amount in percent (%) to allow user to zoom in a document page "
-"interactively."
+#: settings.py:208
+msgid "Width in pixels of the document thumbnail image."
 msgstr ""
-"Số phần trăm (%) tối đa cho phép người dùng phóng to trang tài liệu khi xem."
 
-#: settings.py:191
+#: settings.py:214
 msgid ""
-"Minimum amount in percent (%) to allow user to zoom out a document page "
-"interactively."
+"Width in pixels of the document thumbnail image when shown in list view "
+"mode."
 msgstr ""
-"Số phần trăm (%) tối thiểu cho phép người dùng thu nhỏ trang tài liệu khi "
-"xem."
 
-#: settings.py:198
-msgid "Amount in percent zoom in or out a document page per user interaction."
+#: settings.py:221
+msgid "Maximum zoom level (percent) allowed when viewing a document page."
 msgstr ""
-"Số phần trăm phóng to hoặc thu nhỏ trang tài liệu với mỗi thao tác của người"
-" dùng."
+
+#: settings.py:228
+msgid "Minimum zoom level (percent) allowed when viewing a document page."
+msgstr ""
+
+#: settings.py:235
+msgid "Zoom step (percent) applied each time the user zooms in or out."
+msgstr ""
 
 #: statistics.py:291
 msgid "New documents per month"

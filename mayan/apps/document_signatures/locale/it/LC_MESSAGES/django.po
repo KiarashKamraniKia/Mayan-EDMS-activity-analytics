@@ -297,8 +297,8 @@ msgstr ""
 "separate."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Argomenti da passare a SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

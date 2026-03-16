@@ -229,7 +229,11 @@ msgstr ""
 "Пълен път към бекенда, който да се използва за обработка на ключове и "
 "подписи."
 
-#: settings.py:27
+#: settings.py:26
+msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
+msgstr ""
+
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "Сървър, използван за търсене на ключове."
 

@@ -48,7 +48,7 @@ msgstr "モデルプロパティ"
 msgid "Model reverse fields"
 msgstr "モデル逆参照フィールド"
 
-#: literals.py:12
+#: literals.py:14
 msgid ""
 "Your database backend is set to use SQLite. SQLite should only be used for "
 "development and testing, not for production."

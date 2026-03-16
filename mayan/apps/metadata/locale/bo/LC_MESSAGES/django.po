@@ -639,7 +639,7 @@ msgstr "ཡིག་ཆའི་རིགས་འབྲེལ་བ། མེ�
 msgid "Enter document metadata"
 msgstr "ཡིག་ཆའི་མེ་ཊ་གཞི་གྲངས་ནང་འཇུག་བྱེད་པ།"
 
-#: wizard_steps.py:203
+#: wizard_steps.py:207
 msgid ""
 "One of more metadata types that are required for this document type are not "
 "available."

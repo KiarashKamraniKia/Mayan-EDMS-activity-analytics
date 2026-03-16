@@ -868,7 +868,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr "ལས་ཀའི་རྒྱུན་རིམ་ལ་ཁ་སྣོན་བྱེད་པའི་ཡིག་ཆའི་རིགས་ཀྱི་ལྡེ་མིག་གཙོ་བོ།"
 
 #: serializers/workflow_template_serializers.py:71
-#: serializers/workflow_template_serializers.py:80
+#: serializers/workflow_template_serializers.py:81
 msgid "Document type ID"
 msgstr "ཡིག་ཆའི་རིགས་ཀྱི་ཨང་རྟགས།"
 
@@ -890,11 +890,11 @@ msgstr "ལས་ཀའི་རྒྱུན་རིམ་དཔེ་སྒྲ
 msgid "Primary key of the workflow template transition to be added."
 msgstr "ལས་ཀའི་རྒྱུན་རིམ་གྱི་ཚད་གཞི་བརྗེ་སྒྱུར་གྱི་ལྡེ་མིག་གཙོ་བོ།"
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "ལས་ཀའི་རྒྱུན་རིམ་དཔེ་སྒྲོམ་གྱི་བརྗེ་སྒྱུར་ID"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "ལས་ཀའི་རྒྱུན་རིམ་དཔེ་སྒྲོམ་གྱི་བརྗེ་སྒྱུར་URL"
 
@@ -957,8 +957,9 @@ msgstr ""
 
 #: settings.py:28
 msgid ""
-"The threshold at which the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND will start "
-"deleting the oldest workflow image cache files. Specify the size in bytes."
+"The threshold at which the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will "
+"start deleting the oldest workflow image cache files. Specify the size in "
+"bytes."
 msgstr ""
 "WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND "
 "གིས་ལས་ཀའི་རྒྱུན་རིམ་གྱི་པར་རིས་མཛོད་ཡིག་ཆ་རྙིང་ཤོས་དེ་བསུབས་འགོ་ཚུགས་པའི་ཚད་གཞི།"
@@ -972,11 +973,10 @@ msgstr ""
 "མཛོད་སྒྲིག་བྱས་པའི་ལས་ཀའི་རྒྱུན་རིམ་གྱི་པར་རིས་ཡིག་ཆ་གསོག་འཇོག་བྱེད་སྐབས་བེད་སྤྱོད་གཏོང་བའི་གསོག་འཇོག་སྡེ་ཚན་ཆུང་བ་ལ་འགྲོ་ལམ།"
 
 #: settings.py:45
-msgid "Arguments to pass to the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"ལས་ཀའི་རྒྱུན་རིམ་_པར་རིས་_མཛོད་ཁང་_དངོས་ཟོག་_རྒྱབ་ལྗོངས་ལ་སྤྲོད་པའི་སྒྲུབ་བྱེད།"
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."
@@ -1247,32 +1247,32 @@ msgstr ""
 msgid "Workflow transition trigger events for: %s"
 msgstr "ལས་ཀའི་རྒྱུན་རིམ་བརྗེ་སྒྱུར་གྱི་བྱུང་རིམ་ནི། %s"
 
-#: views/workflow_template_transition_views.py:39
+#: views/workflow_template_transition_views.py:40
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "ལས་ཀའི་རྒྱུན་རིམ་གྱི་འགྱུར་ལྡོག་བཟོས། %s"
 
-#: views/workflow_template_transition_views.py:79
+#: views/workflow_template_transition_views.py:80
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "%s །"
 
-#: views/workflow_template_transition_views.py:106
+#: views/workflow_template_transition_views.py:107
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "ལས་ཀའི་འགྲོ་ལུགས་བརྗེ་སྒྱུར་རྩོམ་སྒྲིག: %s"
 
-#: views/workflow_template_transition_views.py:146
+#: views/workflow_template_transition_views.py:147
 msgid ""
 "Create a transition and use it to move a workflow from one state to another."
 msgstr ""
 "འགྱུར་ལྡོག་ཅིག་གསར་འཛུགས་བྱས་ནས་དེ་བེད་སྤྱད་དེ་ལས་ཀའི་རྒྱུན་རིམ་ཞིག་གནས་སྟངས་གཅིག་ནས་གཞན་ཞིག་ལ་སྤོ་བསྒྱུར་བྱེད།"
 
-#: views/workflow_template_transition_views.py:150
+#: views/workflow_template_transition_views.py:151
 msgid "This workflow doesn't have any transitions"
 msgstr "ལས་ཀའི་འགྲོ་ལུགས་འདི་ལ་འགྱུར་ལྡོག་གང་ཡང་མེད།"
 
-#: views/workflow_template_transition_views.py:154
+#: views/workflow_template_transition_views.py:155
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "%s"

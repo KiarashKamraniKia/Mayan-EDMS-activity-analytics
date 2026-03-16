@@ -8,6 +8,7 @@
 # Marco Camplese <marco.camplese.mc@gmail.com>, 2024
 # Giovanni Tricarico <gtricarico92@gmail.com>, 2024
 # piera.daraio, 2025
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
@@ -160,8 +161,10 @@ msgid "No source files available"
 msgstr "Nessuna sorgente file disponibile"
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
+msgid "Width value to be passed to the converter backend."
 msgstr ""
+"valore della larghezza da passare per le operazioni di conversione in "
+"backend"
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

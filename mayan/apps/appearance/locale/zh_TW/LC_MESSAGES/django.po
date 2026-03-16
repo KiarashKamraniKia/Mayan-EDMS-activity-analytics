@@ -64,7 +64,7 @@ msgstr "已編輯之佈景"
 
 #: events.py:16
 msgid "User theme edited"
-msgstr ""
+msgstr "使用者佈景主題已編輯"
 
 #: links.py:21
 msgid "Reload the current content"
@@ -146,7 +146,7 @@ msgstr "瀏覽所有已存佈景"
 
 #: settings.py:18
 msgid "Custom HTTP response code for AJAX redirections."
-msgstr ""
+msgstr "AJAX 重導向的自定義 HTTP 回應代碼"
 
 #: settings.py:24
 msgid "Maximum number of characters that will be displayed as the view title."

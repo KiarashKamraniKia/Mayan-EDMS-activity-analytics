@@ -305,8 +305,8 @@ msgstr ""
 "destacadas."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
-msgstr "Argumentos a serem passados para SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:13
 msgid ""

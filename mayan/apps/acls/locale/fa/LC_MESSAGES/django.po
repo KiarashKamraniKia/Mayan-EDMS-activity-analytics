@@ -98,15 +98,15 @@ msgstr "شناسه اشیاء"
 msgid "Role to which the access is granted for the specified object."
 msgstr ""
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "ورودی دسترسی"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "ورودیهای دسترسی"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "نقش\"%(role)s\" دارای اجازه برای \"%(object)s\""

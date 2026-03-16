@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Roberto Rosario, 2024
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
@@ -73,7 +73,7 @@ msgstr ""
 
 #: settings.py:22
 msgid "Default profile timezone for new user accounts."
-msgstr ""
+msgstr "Zona horaria de perfil predeterminada para nuevas cuentas de usuario."
 
 #: views.py:52
 #, python-format

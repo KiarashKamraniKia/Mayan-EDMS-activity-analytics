@@ -11,22 +11,23 @@ BinaryDependency(
 )
 BinaryDependency(
     label='PDF Info', help_text=_(
-        'Utility from the poppler-utils package used to inspect PDF files.'
+        message='Utility from the poppler-utils package used to inspect PDF '
+        'files.'
     ), module=__name__, name='pdfinfo', path=pdfinfo_path
 )
 BinaryDependency(
     label='PDF to PPM', help_text=_(
-        'Utility from the popper-utils package used to extract pages '
-        'from PDF files into PPM format images.'
+        message='Utility from the popper-utils package used to extract '
+        'pages from PDF files into PPM format images.'
     ), module=__name__, name='pdftoppm', path=pdftoppm_path
 )
 
 PythonDependency(
     attribute_copyright='PIL.__doc__', module=__name__, name='Pillow',
-    version_string='==12.0.0'
+    version_string='==12.1.1'
 )
 PythonDependency(
-    module=__name__, name='pypdf', version_string='==6.3.0'
+    module=__name__, name='pypdf', version_string='==6.7.5'
 )
 PythonDependency(
     module=__name__, name='qrcode', version_string='==8.2'

@@ -4,7 +4,7 @@ clash with the mayan/settings/* module
 """
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 setting_namespace = setting_cluster.do_namespace_add(
     name='mayan', label=_(message='Mayan')

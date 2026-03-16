@@ -100,15 +100,15 @@ msgstr "מזהה רכיב"
 msgid "Role to which the access is granted for the specified object."
 msgstr "התפקיד שמקבל הרשאה לרכיב שצויין"
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "כניסת גישה"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "כניסות גישה"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "הרשאות תפקיד %(role)s ל- %(object)s"

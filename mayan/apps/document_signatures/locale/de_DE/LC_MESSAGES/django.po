@@ -305,9 +305,8 @@ msgstr ""
 "Unterschriften."
 
 #: settings.py:27
-msgid "Arguments to pass to the SIGNATURE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `SIGNATURE_STORAGE_BACKEND`."
 msgstr ""
-"Argumente, die an das SIGNATURE_STORAGE_BACKEND übergeben werden sollen."
 
 #: storages.py:13
 msgid ""

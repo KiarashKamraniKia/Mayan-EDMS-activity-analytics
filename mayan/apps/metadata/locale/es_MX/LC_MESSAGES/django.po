@@ -655,7 +655,7 @@ msgstr "Relaciones de tipo de documento para el tipo de metadatos: %s"
 msgid "Enter document metadata"
 msgstr "Ingrese los metadatos del documento"
 
-#: wizard_steps.py:203
+#: wizard_steps.py:207
 msgid ""
 "One of more metadata types that are required for this document type are not "
 "available."

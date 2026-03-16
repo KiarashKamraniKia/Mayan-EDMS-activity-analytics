@@ -62,7 +62,7 @@ msgstr ""
 "Βοηθητικό πρόγραμμα από το πακέτο poppler-utils που χρησιμοποιείται για τον "
 "έλεγχο αρχείων PDF."
 
-#: dependencies.py:19
+#: dependencies.py:20
 msgid ""
 "Utility from the popper-utils package used to extract pages from PDF files "
 "into PPM format images."
@@ -135,11 +135,11 @@ msgstr "Μετασχηματισμοί"
 msgid "Select new transformation"
 msgstr "Επιλογή νέου μετασχηματισμού"
 
-#: model_mixins.py:120
+#: model_mixins.py:118
 msgid "Badly formatted arguments YAML"
 msgstr ""
 
-#: model_mixins.py:131 models.py:168
+#: model_mixins.py:129 models.py:168
 msgid "Arguments"
 msgstr "Ορίσματα"
 

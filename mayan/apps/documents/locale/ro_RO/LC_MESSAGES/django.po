@@ -7,7 +7,7 @@
 # Roberto Rosario, 2024
 # Stefaniu Criste <gupi@hangar.ro>, 2024
 # Badea Gabriel <gcbadea@gmail.com>, 2024
-# Harald Ersch, 2025
+# Harald Ersch, 2026
 # 
 msgid ""
 msgstr ""
@@ -51,7 +51,7 @@ msgstr "Întoarce instanța documentului."
 #: apps.py:288 links/document_file_links.py:71
 #: links/document_file_page_links.py:70 links/document_version_links.py:73
 #: links/document_version_page_links.py:90 models/document_file_models.py:58
-#: models/document_models.py:111 models/document_version_models.py:30
+#: models/document_models.py:112 models/document_version_models.py:30
 #: models/favorite_document_models.py:30
 #: models/recently_accessed_document_models.py:25 search.py:14
 #: serializers/favorite_document_serializers.py:13
@@ -691,7 +691,7 @@ msgstr "Toate paginile"
 
 #: models/document_file_model_mixins.py:366
 #: models/document_file_page_model_mixins.py:244
-#: models/document_model_mixins.py:179 models/document_models.py:63
+#: models/document_model_mixins.py:179 models/document_models.py:64
 #: models/document_type_models.py:43 models/document_type_models.py:156
 #: models/document_version_model_mixins.py:131
 #: models/document_version_page_model_mixins.py:290
@@ -710,27 +710,27 @@ msgstr ""
 msgid "The server date and time when the document file was processed."
 msgstr "Data și ora serverului la care a fost procesat fișierul document."
 
-#: models/document_file_models.py:63 models/document_version_models.py:36
+#: models/document_file_models.py:64 models/document_version_models.py:36
 msgid "Timestamp"
 msgstr "Marcaj temporal"
 
-#: models/document_file_models.py:67
+#: models/document_file_models.py:68
 msgid "An optional short text describing the document file."
 msgstr "Un text scurt opțional care descrie fișierul documentului."
 
-#: models/document_file_models.py:68 models/document_version_models.py:41
+#: models/document_file_models.py:69 models/document_version_models.py:41
 msgid "Comment"
 msgstr "Comentariu"
 
-#: models/document_file_models.py:73 serializers/document_serializers.py:93
+#: models/document_file_models.py:74 serializers/document_serializers.py:93
 msgid "File"
 msgstr "Fișier"
 
-#: models/document_file_models.py:76
+#: models/document_file_models.py:77
 msgid "Filename"
 msgstr "Nume fişier"
 
-#: models/document_file_models.py:80
+#: models/document_file_models.py:81
 msgid ""
 "The document file's file mimetype. MIME types are a standard way to describe"
 " the format of a file, in this case the file format of the document. Some "
@@ -740,7 +740,7 @@ msgstr ""
 "a descrie formatul unui fișier, în acest caz formatul de fișier al "
 "documentului. Câteva exemple: „text / simplu” sau „imagine / jpeg”."
 
-#: models/document_file_models.py:88
+#: models/document_file_models.py:89
 msgid ""
 "The document file file encoding. binary 7-bit, binary 8-bit, text, base64, "
 "etc."
@@ -748,7 +748,7 @@ msgstr ""
 "Codificarea fișierului fișierului document. binar pe 7 biți, binar pe 8 "
 "biți, text, base64 etc."
 
-#: models/document_file_models.py:108 storages.py:27
+#: models/document_file_models.py:109 storages.py:27
 msgid "Document files"
 msgstr "Fișiere de documente"
 
@@ -791,44 +791,44 @@ msgstr ""
 "Un scurt text care identifică documentul. În mod implicit, va fi setat la "
 "numele fișierului primului fișier încărcat în document."
 
-#: models/document_models.py:67
+#: models/document_models.py:68
 msgid "An optional short text describing a document."
 msgstr "Un text scurt opțional care descrie un document."
 
-#: models/document_models.py:68 serializers/document_version_serializers.py:20
+#: models/document_models.py:69 serializers/document_version_serializers.py:20
 msgid "Description"
 msgstr "Descriere"
 
-#: models/document_models.py:72
+#: models/document_models.py:73
 msgid "The date and time of the document creation."
 msgstr "Data și ora creării documentului."
 
-#: models/document_models.py:73
+#: models/document_models.py:74
 msgid "Created"
 msgstr "Creat"
 
-#: models/document_models.py:77
+#: models/document_models.py:78
 msgid "The primary language in the document."
 msgstr "Limba principală în document."
 
-#: models/document_models.py:82
+#: models/document_models.py:83
 msgid "Whether or not this document is in the trash."
 msgstr "Dacă acest document este sau nu în coșul de gunoi."
 
-#: models/document_models.py:83
+#: models/document_models.py:84
 msgid "In trash?"
 msgstr "În gunoi?"
 
-#: models/document_models.py:87
+#: models/document_models.py:88
 msgid "The server date and time when the document was moved to the trash."
 msgstr ""
 "Data și ora serverului când documentul a fost mutat în coșul de gunoi."
 
-#: models/document_models.py:89
+#: models/document_models.py:90
 msgid "Date and time trashed"
 msgstr "Data și ora în gunoi"
 
-#: models/document_models.py:93
+#: models/document_models.py:94
 msgid ""
 "A document stub is a document with an entry on the database but no file "
 "uploaded. This could be an interrupted upload or a deferred upload via the "
@@ -838,11 +838,11 @@ msgstr ""
 "încarcat niciun fișier. Aceasta ar putea fi o încărcare întreruptă sau o "
 "încărcare amânată prin API."
 
-#: models/document_models.py:96
+#: models/document_models.py:97
 msgid "Is stub?"
 msgstr "Este stub?"
 
-#: models/document_models.py:101
+#: models/document_models.py:102
 msgid "Active document version"
 msgstr "Versiunea activă a documentului"
 
@@ -1236,7 +1236,7 @@ msgstr "Suma de control a fișierului documentului"
 
 #: search.py:45
 msgid "Document file filename"
-msgstr ""
+msgstr "Numele fișierului documentului"
 
 #: search.py:48
 msgid "Document file MIME type"
@@ -1387,130 +1387,156 @@ msgstr "ID document pentru noul document preferat."
 msgid "Restore URL"
 msgstr "Adresa URL de restaurare"
 
+#: settings.py:40
+msgid ""
+"Optional height in pixels of the document page image used for interactive "
+"display. Leave empty to calculate the height from `DOCUMENTS_DISPLAY_WIDTH` "
+"while preserving the aspect ratio."
+msgstr ""
+"Înălțimea opțională în pixeli a imaginii paginii documentului utilizată "
+"pentru afișarea interactivă. Lăsați câmpul gol pentru a calcula înălțimea "
+"din `DOCUMENTS_DISPLAY_WIDTH`, păstrând în același timp raportul de aspect."
+
 #: settings.py:49
 msgid ""
-"The threshold at which the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND "
-"will start deleting the oldest document file page image cache files. Specify"
-" the size in bytes."
+"Width in pixels of the document page image used for interactive display. "
+"Larger values improve quality but increase processing time and cache "
+"storage."
 msgstr ""
-"Pragul la care DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND va începe să "
-"șteargă cele mai vechi fișiere cache a imaginii din paginile fișierului de "
-"document. Specificați dimensiunea în octeți."
 
-#: settings.py:57
-msgid "Path to the Storage subclass to use when storing document files."
-msgstr ""
-"Calea către subclasa de stocare care trebuie utilizată la stocarea "
-"fișierelor de documente."
-
-#: settings.py:64
-msgid "Arguments to pass to the DOCUMENT_FILE_STORAGE_BACKEND."
-msgstr "Argumente de transmis la DOCUMENT_FILE_STORAGE_BACKEND."
-
-#: settings.py:70
+#: settings.py:58
 msgid ""
-"Path to the Storage subclass to use when storing the cached document file "
-"page image files."
+"Maximum size in bytes of the "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached page "
+"images."
 msgstr ""
-"Calea către subclasa Storage de utilizat atunci când stocați fișierele de "
-"imagine din pagina fișierului documentului din cache."
 
-#: settings.py:78
+#: settings.py:67
+msgid "Dotted path to the storage subclass to used to store document files."
+msgstr ""
+
+#: settings.py:74
+msgid "Keyword arguments to pass to `DOCUMENTS_FILE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:81
 msgid ""
-"Arguments to pass to the DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store the cached document file "
+"page images."
 msgstr ""
-"Argumente de transmis la DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
 
-#: settings.py:84
+#: settings.py:89
+msgid ""
+"Keyword arguments to pass to "
+"`DOCUMENTS_FILE_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
+
+#: settings.py:96
 msgid "Maximum number of favorite documents to remember per user."
 msgstr ""
 "Numărul maxim de documente preferate de reținut pentru fiecare utilizator."
 
-#: settings.py:90
+#: settings.py:102
 msgid ""
-"Size of blocks to use when calculating the document file's checksum. A value"
-" of 0 disables the block calculation and the entire file will be loaded into"
-" memory."
+"Block size in bytes used when calculating a document file checksum. Use 0 to"
+" disable block reads and hash the entire file in a single pass (loads the "
+"file into memory)."
 msgstr ""
-"Dimensiunea blocurilor de utilizat la calcularea sumelor de control ale "
-"fișierului documentului. O valoare de 0 dezactivează calculul blocului și "
-"întregul fișier va fi încărcat în memorie."
 
-#: settings.py:97
+#: settings.py:109
 msgid "Default documents language (in ISO639-3 format)."
 msgstr "Limba standard a documentelor (în format ISO639-3)."
 
-#: settings.py:101
-msgid "List of supported document languages. In ISO639-3 format."
-msgstr "Lista limbilor de documente acceptate. În format ISO639-3."
-
-#: settings.py:107
-msgid ""
-"The threshold at which the DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND"
-" will start deleting the oldest document version page image cache versions. "
-"Specify the size in bytes."
+#: settings.py:114
+msgid "List of supported document languages (in ISO639-3 format)."
 msgstr ""
-"Pragul la care DOCUMENT_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND va începe "
-"să șteargă cele mai vechi versiuni de cache a imaginilor din pagina de "
-"versiune a documentului. Specificați dimensiunea în octeți."
 
-#: settings.py:116
+#: settings.py:121
 msgid ""
-"Path to the Storage subclass to use when storing the cached document version"
-" page image versions."
+"Maximum size in bytes of the "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`. When this limit is "
+"exceeded, the storage backend will start deleting the oldest cached version "
+"page images."
 msgstr ""
-"Calea către subclasa Storage de utilizat atunci când stocați versiunile de "
-"imagini ale paginii versiunii documentului stocate în cache."
 
-#: settings.py:124
+#: settings.py:131
 msgid ""
-"Arguments to pass to the DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
+"Dotted path to the storage subclass used to store cached document version "
+"page images."
 msgstr ""
-"Argumente de transmis la DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND."
 
-#: settings.py:146
+#: settings.py:139
 msgid ""
-"Maximum number of recently accessed documents (created, edited, viewed) to "
-"remember per user."
+"Keyword arguments to pass to "
+"`DOCUMENTS_VERSION_PAGE_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"Numărul maxim de documente accesate recent (create, editate, vizualizate) de"
-" reținut pentru fiecare utilizator."
 
-#: settings.py:153
+#: settings.py:147
+msgid ""
+"Optional height in pixels of the document preview image. Leave empty to "
+"calculate the height from `DOCUMENTS_PREVIEW_WIDTH` while preserving the "
+"aspect ratio."
+msgstr ""
+
+#: settings.py:156
+msgid ""
+"Width in pixels of the document preview image. Larger values improve quality"
+" but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:165
+msgid ""
+"Optional height in pixels of the document page image generated for printing."
+" Leave empty to calculate the height from `DOCUMENTS_PRINT_WIDTH` while "
+"preserving the aspect ratio."
+msgstr ""
+
+#: settings.py:174
+msgid ""
+"Width in pixels of the document page image generated for printing. Larger "
+"values improve quality but increase processing time and cache storage."
+msgstr ""
+
+#: settings.py:182
+msgid ""
+"Maximum number of recently accessed documents to remember per user (viewed, "
+"created, or edited)."
+msgstr ""
+
+#: settings.py:189
 msgid "Maximum number of recently created documents to show."
 msgstr "Numărul maxim de documente create recent pentru a fi afișate."
 
-#: settings.py:159
-msgid "Amount in degrees to rotate a document page per user interaction."
+#: settings.py:195
+msgid "Rotation step in degrees applied each time the user rotates a page."
 msgstr ""
-"Ce rotaţie pentru pagină (în grade) este folosită în interacțiunea cu "
-"utilizatorul."
 
-#: settings.py:165
+#: settings.py:202
 msgid "Height in pixels of the document thumbnail image."
 msgstr "Înălțimea în pixeli a imaginii miniatură a documentelor."
 
-#: settings.py:184
-msgid ""
-"Maximum amount in percent (%) to allow user to zoom in a document page "
-"interactively."
+#: settings.py:208
+msgid "Width in pixels of the document thumbnail image."
 msgstr ""
-"Suma maximă în procente (%), permisă utilizatorilor pentru mărirea "
-"interactiv a unei pagini ."
 
-#: settings.py:191
+#: settings.py:214
 msgid ""
-"Minimum amount in percent (%) to allow user to zoom out a document page "
-"interactively."
+"Width in pixels of the document thumbnail image when shown in list view "
+"mode."
 msgstr ""
-"Suma minimă în procente (%), permisă utilizatorului pentru micșorarea "
-"interactivă a unei pagini ."
 
-#: settings.py:198
-msgid "Amount in percent zoom in or out a document page per user interaction."
+#: settings.py:221
+msgid "Maximum zoom level (percent) allowed when viewing a document page."
 msgstr ""
-"Suma în procente folosită pentru a mării sau micşora un document interactiv "
-"cu utilizatorul."
+
+#: settings.py:228
+msgid "Minimum zoom level (percent) allowed when viewing a document page."
+msgstr ""
+
+#: settings.py:235
+msgid "Zoom step (percent) applied each time the user zooms in or out."
+msgstr ""
 
 #: statistics.py:291
 msgid "New documents per month"
