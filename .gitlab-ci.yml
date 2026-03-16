@@ -285,7 +285,6 @@ job_python_push_pypi:
     - printf "dir::state::lists    ${APT_STATE_LISTS};\ndir::cache::archives    ${APT_CACHE_ARCHIVES};\n" > /etc/apt/apt.conf.d/99gitlab-ci-cache
     - if [ "${APT_PROXY}" ]; then echo "Acquire::http { Proxy \"http://${APT_PROXY}\"; };" > /etc/apt/apt.conf.d/01proxy; fi
     - apt-get update
-    - apt-get update
     - apt-get install --yes --no-install-recommends make python3-dev python3-venv
     - python3 -m venv venv
     - . venv/bin/activate

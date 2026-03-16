@@ -238,7 +238,6 @@ job_python_push_pypi:
   before_script:
 {% platform_gitlab_ci_config_env_before_script indent=4 %}
 {% platform_gitlab_ci_cache_before_script apt=True indent=4 %}
-    - apt-get update
     - apt-get install --yes --no-install-recommends {{ LINUX_PACKAGES_DEBIAN_PYTHON }}
     - python3 -m venv venv
     - . venv/bin/activate

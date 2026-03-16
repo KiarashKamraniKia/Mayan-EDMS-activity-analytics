@@ -8,6 +8,7 @@
 - Remove the `removals.txt` file.
 - Support partial app template loading for the about view.
 - Modernize the fundraiser app and avoid hardcoding locations.
+- Remove repeated GitLab CI file `apt-get update`.
 
 4.8.10 (2025-12-13)
 ===================
