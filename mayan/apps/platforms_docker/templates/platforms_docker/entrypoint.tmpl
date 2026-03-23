@@ -157,7 +157,7 @@ export MAYAN_PIP_BIN="${MAYAN_PYTHON_BIN_DIR}pip"
 export MAYAN_STATIC_ROOT="${MAYAN_INSTALL_DIR}/static"
 export MAYAN_SUPERVISOR_AUTORESTART="${MAYAN_SUPERVISOR_AUTORESTART:-{{ SUPERVISOR_AUTORESTART }}}"
 
-# Setup worker environment variables.
+# Setup worker environment variables. Used by the all-in-one profile only.
 {% for worker in workers %}
 MAYAN_{{ worker.name|upper }}_CONCURRENCY="${MAYAN_{{ worker.name|upper }}_CONCURRENCY:-{{ worker.concurrency }}}"
 
