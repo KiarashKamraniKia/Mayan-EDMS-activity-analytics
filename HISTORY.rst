@@ -1,3 +1,9 @@
+4.6.14 (XXXX-XX_XX)
+===================
+- Split the templating app template tags module.
+- Prefix the templating app tags and filter functions to avoid name or
+  reserved word clashes.
+
 4.6.13 (2026-03-07)
 ===================
 - Skip cabinet and tag wizard step if the user has no access. Update the

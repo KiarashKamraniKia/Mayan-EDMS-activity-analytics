@@ -60,6 +60,8 @@ class Template:
                     'OPTIONS': {
                         'builtins': [
                             'mathfilters.templatetags.mathfilters',
+                            'mayan.apps.templating.templatetags.templating_datetime_tags',
+                            'mayan.apps.templating.templatetags.templating_regex_tags',
                             'mayan.apps.templating.templatetags.templating_tags'
                         ]
                     }
