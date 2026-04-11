@@ -1,3 +1,8 @@
+4.11.2 (XXXX-XX-XX)
+===================
+- Fix Docker Compose `cabinet_mirror` and `index_mirror` services to work
+  with series 4.11 changes.
+
 4.11.1 (2026-03-03)
 ===================
 - Merge improvement and changes from version 4.10.4.

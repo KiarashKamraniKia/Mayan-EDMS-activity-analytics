@@ -287,7 +287,7 @@ services:
     entrypoint:
       - /bin/sh
       - -c
-      - 'mkdir --parents /mnt/cabinet-${MAYAN_MIRROR_CABINET_NAME} && chown mayan:mayan /mnt/cabinet-${MAYAN_MIRROR_CABINET_NAME} && /usr/local/bin/entrypoint.sh run_command "mirroring_mount_cabinet --allow-other ${MAYAN_MIRROR_CABINET_NAME} /mnt/cabinet-${MAYAN_MIRROR_CABINET_NAME}"'
+      - 'mkdir --parents /mnt/cabinet-${MAYAN_MIRROR_CABINET_NAME} && chown mayan:mayan /mnt/cabinet-${MAYAN_MIRROR_CABINET_NAME} && /usr/local/bin/entrypoint.sh run_command mirroring_mount_cabinet --allow-other ${MAYAN_MIRROR_CABINET_NAME} /mnt/cabinet-${MAYAN_MIRROR_CABINET_NAME}'
     profiles:
       - cabinet_mirror
     security_opt:
@@ -314,7 +314,7 @@ services:
     entrypoint:
       - /bin/sh
       - -c
-      - 'mkdir --parents /mnt/index-${MAYAN_MIRROR_INDEX_NAME} && chown mayan:mayan /mnt/index-${MAYAN_MIRROR_INDEX_NAME} && /usr/local/bin/entrypoint.sh run_command "mirroring_mount_index --allow-other ${MAYAN_MIRROR_INDEX_NAME} /mnt/index-${MAYAN_MIRROR_INDEX_NAME}"'
+      - 'mkdir --parents /mnt/index-${MAYAN_MIRROR_INDEX_NAME} && chown mayan:mayan /mnt/index-${MAYAN_MIRROR_INDEX_NAME} && /usr/local/bin/entrypoint.sh run_command mirroring_mount_index --allow-other ${MAYAN_MIRROR_INDEX_NAME} /mnt/index-${MAYAN_MIRROR_INDEX_NAME}'
     profiles:
       - index_mirror
     security_opt:
