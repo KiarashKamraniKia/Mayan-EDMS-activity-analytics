@@ -65,7 +65,7 @@ initial_setup_or_perform_upgrade() {
 os_package_installs() {
     echo "Executing \`os_package_installs\`."
     if [ "${MAYAN_APT_INSTALLS}" ]; then
-        DEBIAN_FRONTEND=noninteractive apt_get_install "${MAYAN_APT_INSTALLS}"
+        DEBIAN_FRONTEND=noninteractive apt_get_install ${MAYAN_APT_INSTALLS}
     else
         echo "Nothing to install."
     fi
@@ -79,7 +79,7 @@ perform_upgrade() {
 pip_installs() {
     echo "Executing \`pip_installs\`."
     if [ "${MAYAN_PIP_INSTALLS}" ]; then
-        runuser --user {{ DOCKER_USER_USERNAME }} -- "${MAYAN_PIP_BIN}" install "${MAYAN_PIP_INSTALLS}"
+        runuser --user {{ DOCKER_USER_USERNAME }} -- "${MAYAN_PIP_BIN}" install ${MAYAN_PIP_INSTALLS}
     else
         echo "Nothing to install."
     fi

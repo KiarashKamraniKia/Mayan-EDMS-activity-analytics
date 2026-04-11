@@ -2,6 +2,8 @@
 ===================
 - Fix Docker Compose `cabinet_mirror` and `index_mirror` services to work
   with series 4.11 changes.
+- Fix Docker entrypoint to allow multi package APT and PIP installs to work
+  again.
 
 4.11.1 (2026-03-03)
 ===================
