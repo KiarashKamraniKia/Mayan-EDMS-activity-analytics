@@ -115,9 +115,8 @@ class SourceStoredFile:
         except FileNotFoundError:
             """No preview was yet generated."""
 
-        self.storage_backend_instance.delete(
-            name=self.get_full_path()
-        )
+        name = self.get_full_path()
+        self.storage_backend_instance.delete(name=name)
 
     def do_filename_validate(self):
         if not self.filename:
@@ -264,9 +263,8 @@ class SourceStoredFile:
         ).get_storage_instance()
 
     def open(self, mode=None):
-        return self.storage_backend_instance.open(
-            name=self.get_full_path(), mode=mode
-        )
+        name = self.get_full_path()
+        return self.storage_backend_instance.open(mode=mode, name=name)
 
     @cached_property
     def storage_backend_instance(self):
