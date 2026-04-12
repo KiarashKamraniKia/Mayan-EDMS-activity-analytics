@@ -1,8 +1,12 @@
+from django.core.exceptions import ValidationError
 from django.utils.module_loading import import_string
+from django.utils.translation import gettext_lazy as _
 
 from mayan.apps.common.serialization import yaml_load
 from mayan.apps.common.utils import comma_splitter
 from mayan.apps.templating.template_backends import Template
+
+from ..classes import MetadataParser, MetadataValidator
 
 
 class MetadataTypeBusinessLogicMixin:
@@ -21,6 +25,13 @@ class MetadataTypeBusinessLogicMixin:
         return comma_splitter(string=template_result)
 
     def get_parser_class(self):
+        if self.parser not in MetadataParser.get_all():
+            raise ValidationError(
+                message=_(
+                    message='Invalid parser `%s`'
+                ) % self.parser
+            )
+
         parser_class = import_string(dotted_path=self.parser)
 
         return parser_class
@@ -44,6 +55,13 @@ class MetadataTypeBusinessLogicMixin:
         return queryset.exists()
 
     def get_validator_class(self):
+        if self.validation not in MetadataValidator.get_all():
+            raise ValidationError(
+                message=_(
+                    message='Invalid validator `%s`'
+                ) % self.validation
+            )
+
         validator_class = import_string(dotted_path=self.validation)
 
         return validator_class

@@ -5,6 +5,7 @@
 - Fix Docker entrypoint to allow multi package APT and PIP installs to work
   again.
 - Fix `menu_topbar` reload on every refresh.
+- Ensure metadata type parser and validator exist.
 
 4.11.1 (2026-03-03)
 ===================
