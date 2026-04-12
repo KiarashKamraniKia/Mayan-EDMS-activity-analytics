@@ -1,4 +1,6 @@
-from django.core.exceptions import ValidationError as DjangoValidationError
+from django.core.exceptions import (
+    ImproperlyConfigured, ValidationError as DjangoValidationError
+)
 from django.utils.translation import gettext_lazy as _
 
 from rest_framework.exceptions import ValidationError
@@ -43,26 +45,28 @@ class MetadataTypeSerializer(serializers.HyperlinkedModelSerializer):
         read_only_fields = ('id', 'url')
 
     def validate(self, attrs):
-        parser = attrs['parser']
-        validation = attrs['validation']
+        parser = attrs.get('parser')
+        validation = attrs.get('validation')
 
-        if parser and parser not in MetadataParser.get_all():
-            raise ValidationError(
-                {
-                    'parser': _(
-                        message='Invalid parser `%s`'
-                    ) % parser
-                }
-            )
+        if parser:
+            try:
+                MetadataParser.get_class(dotted_path=parser)
+            except ImproperlyConfigured as exception:
+                raise ValidationError(
+                    {
+                        'parser': exception
+                    }
+                )
 
-        if validation and validation not in MetadataValidator.get_all():
-            raise ValidationError(
-                {
-                    'validation': _(
-                        message='Invalid validator `%s`'
-                    ) % validation
-                }
-            )
+        if validation:
+            try:
+                MetadataValidator.get_class(dotted_path=validation)
+            except ImproperlyConfigured as exception:
+                raise ValidationError(
+                    {
+                        'validation': exception
+                    }
+                )
 
         return attrs
 

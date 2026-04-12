@@ -6,6 +6,7 @@ from mayan.apps.documents.permissions import (
 from mayan.apps.documents.tests.mixins.document_mixins import DocumentTestMixin
 from mayan.apps.rest_api.tests.base import BaseAPITestCase
 
+from ..classes import MetadataParser, MetadataValidator
 from ..events import (
     event_metadata_type_created, event_metadata_type_edited,
     event_metadata_type_relationship_updated
@@ -58,13 +59,80 @@ class MetadataTypeAPITestCase(MetadataTypeAPIViewTestMixin, BaseAPITestCase):
         self.assertEqual(events[0].target, self._test_metadata_type)
         self.assertEqual(events[0].verb, event_metadata_type_created.id)
 
-    def test_metadata_type_create_api_view_with_permission_invalid_parser(self):
+    def test_metadata_type_create_api_view_with_permission_valid_parser(self):
         self.grant_permission(permission=permission_metadata_type_create)
 
         self._clear_events()
 
+        dotted_path = MetadataParser.get_choices()[0][0]
+
         response = self._request_test_metadata_type_create_api_view(
-            extra_data={'parser': 'invalid_path.InvalidParser'}
+            extra_data={'parser': dotted_path}
+        )
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+
+        metadata_type = MetadataType.objects.first()
+        self.assertEqual(response.data['id'], metadata_type.pk)
+
+        events = self._get_test_events()
+        self.assertEqual(events.count(), 1)
+
+        self.assertEqual(events[0].action_object, None)
+        self.assertEqual(events[0].actor, self._test_case_user)
+        self.assertEqual(events[0].target, self._test_metadata_type)
+        self.assertEqual(events[0].verb, event_metadata_type_created.id)
+
+    def test_metadata_type_create_api_view_with_permission_invalid_parser(self):
+        self.grant_permission(permission=permission_metadata_type_create)
+
+        dotted_path = 'invalid_path.InvalidParser'
+
+        self._clear_events()
+
+        response = self._request_test_metadata_type_create_api_view(
+            extra_data={'parser': dotted_path}
+        )
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+        self.assertEqual(
+            MetadataType.objects.count(), 0
+        )
+
+        events = self._get_test_events()
+        self.assertEqual(events.count(), 0)
+
+    def test_metadata_type_create_api_view_with_permission_valid_validator(self):
+        self.grant_permission(permission=permission_metadata_type_create)
+
+        dotted_path = MetadataValidator.get_choices()[0][0]
+
+        self._clear_events()
+
+        response = self._request_test_metadata_type_create_api_view(
+            extra_data={'validation': dotted_path}
+        )
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+
+        metadata_type = MetadataType.objects.first()
+        self.assertEqual(response.data['id'], metadata_type.pk)
+
+        events = self._get_test_events()
+        self.assertEqual(events.count(), 1)
+
+        self.assertEqual(events[0].action_object, None)
+        self.assertEqual(events[0].actor, self._test_case_user)
+        self.assertEqual(events[0].target, self._test_metadata_type)
+        self.assertEqual(events[0].verb, event_metadata_type_created.id)
+
+    def test_metadata_type_create_api_view_with_permission_invalid_validator(self):
+        self.grant_permission(permission=permission_metadata_type_create)
+
+        dotted_path = 'invalid_path.Invalidvalidator'
+
+        self._clear_events()
+
+        response = self._request_test_metadata_type_create_api_view(
+            extra_data={'validation': dotted_path}
         )
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
@@ -190,6 +258,40 @@ class MetadataTypeAPITestCase(MetadataTypeAPIViewTestMixin, BaseAPITestCase):
         self.assertEqual(events[0].target, self._test_metadata_type)
         self.assertEqual(events[0].verb, event_metadata_type_edited.id)
 
+    def test_metadata_type_patch_api_view_with_access_valid_parser(self):
+        self._create_test_metadata_type()
+        metadata_type_values = self._model_instance_to_dictionary(
+            instance=self._test_metadata_type
+        )
+        self.grant_access(
+            obj=self._test_metadata_type,
+            permission=permission_metadata_type_edit
+        )
+
+        dotted_path = MetadataParser.get_choices()[0][0]
+
+        self._clear_events()
+
+        response = self._request_test_metadata_type_edit_api_view_via_patch(
+            extra_data={'parser': dotted_path}
+        )
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        self._test_metadata_type.refresh_from_db()
+        self.assertNotEqual(
+            self._model_instance_to_dictionary(
+                instance=self._test_metadata_type
+            ), metadata_type_values
+        )
+
+        events = self._get_test_events()
+        self.assertEqual(events.count(), 1)
+
+        self.assertEqual(events[0].action_object, None)
+        self.assertEqual(events[0].actor, self._test_case_user)
+        self.assertEqual(events[0].target, self._test_metadata_type)
+        self.assertEqual(events[0].verb, event_metadata_type_edited.id)
+
     def test_metadata_type_patch_api_view_with_access_invalid_parser(self):
         self._create_test_metadata_type()
         metadata_type_values = self._model_instance_to_dictionary(
@@ -200,10 +302,75 @@ class MetadataTypeAPITestCase(MetadataTypeAPIViewTestMixin, BaseAPITestCase):
             permission=permission_metadata_type_edit
         )
 
+        dotted_path = 'invalid_path.InvalidParser'
+
         self._clear_events()
 
         response = self._request_test_metadata_type_edit_api_view_via_patch(
-            extra_data={'parser': 'invalid_path.InvalidParser'}
+            extra_data={'parser': dotted_path}
+        )
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+        self._test_metadata_type.refresh_from_db()
+        self.assertEqual(
+            self._model_instance_to_dictionary(
+                instance=self._test_metadata_type
+            ), metadata_type_values
+        )
+
+        events = self._get_test_events()
+        self.assertEqual(events.count(), 0)
+
+    def test_metadata_type_patch_api_view_with_access_valid_validator(self):
+        self._create_test_metadata_type()
+        metadata_type_values = self._model_instance_to_dictionary(
+            instance=self._test_metadata_type
+        )
+        self.grant_access(
+            obj=self._test_metadata_type,
+            permission=permission_metadata_type_edit
+        )
+
+        dotted_path = MetadataValidator.get_choices()[0][0]
+
+        self._clear_events()
+
+        response = self._request_test_metadata_type_edit_api_view_via_patch(
+            extra_data={'validation': dotted_path}
+        )
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        self._test_metadata_type.refresh_from_db()
+        self.assertNotEqual(
+            self._model_instance_to_dictionary(
+                instance=self._test_metadata_type
+            ), metadata_type_values
+        )
+
+        events = self._get_test_events()
+        self.assertEqual(events.count(), 1)
+
+        self.assertEqual(events[0].action_object, None)
+        self.assertEqual(events[0].actor, self._test_case_user)
+        self.assertEqual(events[0].target, self._test_metadata_type)
+        self.assertEqual(events[0].verb, event_metadata_type_edited.id)
+
+    def test_metadata_type_patch_api_view_with_access_invalid_validator(self):
+        self._create_test_metadata_type()
+        metadata_type_values = self._model_instance_to_dictionary(
+            instance=self._test_metadata_type
+        )
+        self.grant_access(
+            obj=self._test_metadata_type,
+            permission=permission_metadata_type_edit
+        )
+
+        dotted_path = 'invalid_path.InvalidValidator'
+
+        self._clear_events()
+
+        response = self._request_test_metadata_type_edit_api_view_via_patch(
+            extra_data={'validation': dotted_path}
         )
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 
@@ -268,6 +435,40 @@ class MetadataTypeAPITestCase(MetadataTypeAPIViewTestMixin, BaseAPITestCase):
         self.assertEqual(events[0].target, self._test_metadata_type)
         self.assertEqual(events[0].verb, event_metadata_type_edited.id)
 
+    def test_metadata_type_put_api_view_with_access_valid_parser(self):
+        self._create_test_metadata_type()
+        metadata_type_values = self._model_instance_to_dictionary(
+            instance=self._test_metadata_type
+        )
+        self.grant_access(
+            obj=self._test_metadata_type,
+            permission=permission_metadata_type_edit
+        )
+
+        dotted_path = MetadataParser.get_choices()[0][0]
+
+        self._clear_events()
+
+        response = self._request_test_metadata_type_edit_api_view_via_put(
+            extra_data={'parser': dotted_path}
+        )
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        self._test_metadata_type.refresh_from_db()
+        self.assertNotEqual(
+            self._model_instance_to_dictionary(
+                instance=self._test_metadata_type
+            ), metadata_type_values
+        )
+
+        events = self._get_test_events()
+        self.assertEqual(events.count(), 1)
+
+        self.assertEqual(events[0].action_object, None)
+        self.assertEqual(events[0].actor, self._test_case_user)
+        self.assertEqual(events[0].target, self._test_metadata_type)
+        self.assertEqual(events[0].verb, event_metadata_type_edited.id)
+
     def test_metadata_type_put_api_view_with_access_invalid_parser(self):
         self._create_test_metadata_type()
         metadata_type_values = self._model_instance_to_dictionary(
@@ -278,10 +479,75 @@ class MetadataTypeAPITestCase(MetadataTypeAPIViewTestMixin, BaseAPITestCase):
             permission=permission_metadata_type_edit
         )
 
+        dotted_path = 'invalid_path.InvalidParser'
+
         self._clear_events()
 
         response = self._request_test_metadata_type_edit_api_view_via_put(
-            extra_data={'parser': 'invalid_path.InvalidParser'}
+            extra_data={'parser': dotted_path}
+        )
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+        self._test_metadata_type.refresh_from_db()
+        self.assertEqual(
+            self._model_instance_to_dictionary(
+                instance=self._test_metadata_type
+            ), metadata_type_values
+        )
+
+        events = self._get_test_events()
+        self.assertEqual(events.count(), 0)
+
+    def test_metadata_type_put_api_view_with_access_valid_validator(self):
+        self._create_test_metadata_type()
+        metadata_type_values = self._model_instance_to_dictionary(
+            instance=self._test_metadata_type
+        )
+        self.grant_access(
+            obj=self._test_metadata_type,
+            permission=permission_metadata_type_edit
+        )
+
+        dotted_path = MetadataValidator.get_choices()[0][0]
+
+        self._clear_events()
+
+        response = self._request_test_metadata_type_edit_api_view_via_put(
+            extra_data={'validation': dotted_path}
+        )
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+
+        self._test_metadata_type.refresh_from_db()
+        self.assertNotEqual(
+            self._model_instance_to_dictionary(
+                instance=self._test_metadata_type
+            ), metadata_type_values
+        )
+
+        events = self._get_test_events()
+        self.assertEqual(events.count(), 1)
+
+        self.assertEqual(events[0].action_object, None)
+        self.assertEqual(events[0].actor, self._test_case_user)
+        self.assertEqual(events[0].target, self._test_metadata_type)
+        self.assertEqual(events[0].verb, event_metadata_type_edited.id)
+
+    def test_metadata_type_put_api_view_with_access_invalid_validator(self):
+        self._create_test_metadata_type()
+        metadata_type_values = self._model_instance_to_dictionary(
+            instance=self._test_metadata_type
+        )
+        self.grant_access(
+            obj=self._test_metadata_type,
+            permission=permission_metadata_type_edit
+        )
+
+        dotted_path = 'invalid_path.Invalidvalidator'
+
+        self._clear_events()
+
+        response = self._request_test_metadata_type_edit_api_view_via_put(
+            extra_data={'validation': dotted_path}
         )
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
 

@@ -1,6 +1,4 @@
-from django.core.exceptions import ValidationError
-from django.utils.module_loading import import_string
-from django.utils.translation import gettext_lazy as _
+from django.core.exceptions import ImproperlyConfigured, ValidationError
 
 from mayan.apps.common.serialization import yaml_load
 from mayan.apps.common.utils import comma_splitter
@@ -25,20 +23,12 @@ class MetadataTypeBusinessLogicMixin:
 
         return comma_splitter(string=template_result)
 
-    def get_parser_class(self):
-        if self.parser not in MetadataParser.get_all():
-            raise ValidationError(
-                message=_(
-                    message='Invalid parser `%s`'
-                ) % self.parser
-            )
-
-        parser_class = import_string(dotted_path=self.parser)
-
-        return parser_class
-
     def get_parser_instance(self):
-        parser_class = self.get_parser_class()
+        try:
+            parser_class = MetadataParser.get_class(dotted_path=self.parser)
+        except ImproperlyConfigured as exception:
+            raise ValidationError from exception
+
         stream = self.parser_arguments or '{}'
         parser_arguments = yaml_load(stream=stream)
         parser = parser_class(**parser_arguments)
@@ -55,20 +45,14 @@ class MetadataTypeBusinessLogicMixin:
 
         return queryset.exists()
 
-    def get_validator_class(self):
-        if self.validation not in MetadataValidator.get_all():
-            raise ValidationError(
-                message=_(
-                    message='Invalid validator `%s`'
-                ) % self.validation
-            )
-
-        validator_class = import_string(dotted_path=self.validation)
-
-        return validator_class
-
     def get_validator_instance(self):
-        validator_class = self.get_validator_class()
+        try:
+            validator_class = MetadataValidator.get_class(
+                dotted_path=self.validation
+            )
+        except ImproperlyConfigured as exception:
+            raise ValidationError from exception
+
         stream = self.validation_arguments or '{}'
         validator_arguments = yaml_load(stream=stream)
         validator = validator_class(**validator_arguments)
