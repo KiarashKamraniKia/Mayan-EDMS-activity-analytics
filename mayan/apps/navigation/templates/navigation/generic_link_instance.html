@@ -24,7 +24,9 @@
             </a>
         {% elif link.method == 'post' %}
             <form action="{{ link.url }}" method="{{ link.method }}" style="display: inline;">
+                <!--mayan-templating-hash-exclude-start-->
                 {% csrf_token %}
+                <!--mayan-templating-hash-exclude-end-->
                 <button
                     class="{{ link.html_extra_classes }} {% if link_classes %}{{ link_classes }} {% else %}btn {% if 'dangerous' in link.tags %}btn-danger{% else %}btn-primary{% endif %} btn-xs{% endif %} {% if link.active %}{{ link_class_active }}{% endif %}"
                     {% for key,value in link.html_data.items %}

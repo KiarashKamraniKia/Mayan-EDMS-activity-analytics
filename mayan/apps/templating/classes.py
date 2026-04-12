@@ -1,4 +1,5 @@
 import hashlib
+import re
 
 from django.template.response import TemplateResponse
 from django.utils.translation import gettext_lazy as _
@@ -8,8 +9,13 @@ from mayan.apps.acls.classes import ModelPermission
 from mayan.apps.common.menus import menu_list_facet
 
 from .links import link_object_template_sandbox
+from .literals import REGULAR_AJAX_TEMPLATE_HASH_EXCLUDE_PAIR
 from .permissions import permission_template_sandbox
 from .template_backends import Template
+
+REGEX_COMPILED_AJAX_TEMPLATE_HASH_EXCLUDE = re.compile(
+    pattern=REGULAR_AJAX_TEMPLATE_HASH_EXCLUDE_PAIR, flags=re.DOTALL
+)
 
 
 class AJAXTemplate:
@@ -43,15 +49,22 @@ class AJAXTemplate:
         )
 
     def render(self, request):
-        result = TemplateResponse(
+        template = TemplateResponse(
             context=self.context, request=request,
             template=self.template_name
-        ).render()
+        )
+        result = template.render()
 
-        # Calculate the hash of the bytes version but return the unicode
-        # version.
         self.html = result.rendered_content.replace('\n', '')
-        self.hex_hash = hashlib.sha256(string=result.content).hexdigest()
+
+        hash_string_raw = result.content.decode()
+        hash_string_cleaned = REGEX_COMPILED_AJAX_TEMPLATE_HASH_EXCLUDE.sub(
+            repl='', string=hash_string_raw
+        )
+        hash_string_final = hash_string_cleaned.encode()
+        hash_object = hashlib.sha256(string=hash_string_final)
+        self.hex_hash = hash_object.hexdigest()
+
         return self
 
 
