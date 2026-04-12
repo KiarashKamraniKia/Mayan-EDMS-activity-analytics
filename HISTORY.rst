@@ -1,4 +1,4 @@
-4.11.2 (XXXX-XX-XX)
+4.11.2 (2026-04-13)
 ===================
 - Fix Docker Compose `cabinet_mirror` and `index_mirror` services to work
   with series 4.11 changes.
@@ -29,7 +29,6 @@
   - pytz from 2025.2 to 2026.1.post1
   - requests from 2.32.5 to 2.33.1
   - sentry-sdk from 2.53.0 to 2.57.0
-
 
 4.11.1 (2026-03-03)
 ===================
