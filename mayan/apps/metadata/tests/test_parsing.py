@@ -53,6 +53,28 @@ class MetadataTypeParsingTestCase(
             ), TEST_PARSER_DATE_VALID
         )
 
+    def test_parser_dotted_path(self):
+        self._create_test_metadata_type(
+            add_test_document_type=True, extra_kwargs={
+                'parser': 'invalid_path.Invalid_parser'
+            }
+        )
+
+        with self.assertRaises(expected_exception=ValidationError):
+            self._test_metadata_type.validate_value(
+                document_type=None, value=' '
+            )
+
+        document_metadata = DocumentMetadata(
+            document=self._test_document,
+            metadata_type=self._test_metadata_type,
+            value=' '
+        )
+
+        with self.assertRaises(expected_exception=ValidationError):
+            document_metadata.full_clean()
+            document_metadata.save()
+
     def test_parser_regular_expression(self):
         self._create_test_metadata_type(
             add_test_document_type=True, extra_kwargs={

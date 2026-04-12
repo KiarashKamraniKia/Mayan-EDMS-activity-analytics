@@ -15,6 +15,7 @@ from mayan.apps.rest_api.relations import (
     FilteredPrimaryKeyRelatedField, FilteredSimplePrimaryKeyRelatedField
 )
 
+from .classes import MetadataParser, MetadataValidator
 from .models.document_type_metadata_type_models import (
     DocumentTypeMetadataType
 )
@@ -40,6 +41,30 @@ class MetadataTypeSerializer(serializers.HyperlinkedModelSerializer):
         )
         model = MetadataType
         read_only_fields = ('id', 'url')
+
+    def validate(self, attrs):
+        parser = attrs['parser']
+        validation = attrs['validation']
+
+        if parser and parser not in MetadataParser.get_all():
+            raise ValidationError(
+                {
+                    'parser': _(
+                        message='Invalid parser `%s`'
+                    ) % parser
+                }
+            )
+
+        if validation and validation not in MetadataValidator.get_all():
+            raise ValidationError(
+                {
+                    'validation': _(
+                        message='Invalid validator `%s`'
+                    ) % validation
+                }
+            )
+
+        return attrs
 
 
 class DocumentTypeMetadataTypeSerializer(

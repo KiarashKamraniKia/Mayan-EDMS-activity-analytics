@@ -11,6 +11,7 @@
 - Backport AJAX template deterministic assurance code.
 - Split metadata models.
 - Improve `SourceStoredFile` filename decoding.
+- Ensure metadata type parser and validator exist.
 
 4.6.13 (2026-03-07)
 ===================

@@ -77,6 +77,33 @@ class MetadataTypeValidationTestCase(
             ), TEST_VALID_DATE
         )
 
+    def test_validator_dotted_path(self):
+        self._create_test_metadata_type(
+            add_test_document_type=True, extra_kwargs={
+                'validation_arguments': yaml_dump(
+                    data={
+                        'pattern': TEST_VALIDATOR_REGULAR_EXPRESSION_PATTERN
+                    }
+                ),
+                'validation': 'invalid_path.Invalid_parser'
+            }
+        )
+
+        with self.assertRaises(expected_exception=ValidationError):
+            self._test_metadata_type.validate_value(
+                document_type=None, value=' '
+            )
+
+        document_metadata = DocumentMetadata(
+            document=self._test_document,
+            metadata_type=self._test_metadata_type,
+            value=' '
+        )
+
+        with self.assertRaises(expected_exception=ValidationError):
+            document_metadata.full_clean()
+            document_metadata.save()
+
     def test_validator_regular_expression(self):
         self._create_test_metadata_type(
             add_test_document_type=True, extra_kwargs={
