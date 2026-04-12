@@ -27,7 +27,7 @@ class MetadataTypeBusinessLogicMixin:
         try:
             parser_class = MetadataParser.get_class(dotted_path=self.parser)
         except ImproperlyConfigured as exception:
-            raise ValidationError from exception
+            raise ValidationError(message=exception)
 
         stream = self.parser_arguments or '{}'
         parser_arguments = yaml_load(stream=stream)
@@ -51,7 +51,7 @@ class MetadataTypeBusinessLogicMixin:
                 dotted_path=self.validation
             )
         except ImproperlyConfigured as exception:
-            raise ValidationError from exception
+            raise ValidationError(message=exception)
 
         stream = self.validation_arguments or '{}'
         validator_arguments = yaml_load(stream=stream)
