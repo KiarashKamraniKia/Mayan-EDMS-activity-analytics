@@ -73,7 +73,7 @@ msgstr ""
 
 #: settings.py:22
 msgid "Default profile timezone for new user accounts."
-msgstr ""
+msgstr "Zona horaria de perfil predeterminada para nuevas cuentas de usuario."
 
 #: views.py:52
 #, python-format

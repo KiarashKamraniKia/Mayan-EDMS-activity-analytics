@@ -8,6 +8,7 @@
 # Ford Guo <agile.guo@gmail.com>, 2026
 # Leon Chu, 2026
 # Roberto Rosario, 2026
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
@@ -15,7 +16,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-11 10:33+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Roberto Rosario, 2026\n"
+"Last-Translator: YJ Chen, 2026\n"
 "Language-Team: Chinese Simplified (https://app.transifex.com/rosarior/teams/13584/zh-Hans/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -85,11 +86,11 @@ msgstr "访问权限不足：%s"
 
 #: model_mixins.py:23
 msgid "Permission count"
-msgstr ""
+msgstr "權限總數"
 
 #: models.py:42 serializers.py:16
 msgid "Content type"
-msgstr ""
+msgstr "Content type"
 
 #: models.py:45 workflow_actions.py:54
 msgid "Object ID"
@@ -122,19 +123,19 @@ msgstr "查看访问控制列表"
 
 #: serializers.py:19
 msgid "Permissions add URL"
-msgstr ""
+msgstr "新增權限網址"
 
 #: serializers.py:39
 msgid "Permissions remove URL"
-msgstr ""
+msgstr "移除權限網址"
 
 #: serializers.py:59
 msgid "Permissions URL"
-msgstr ""
+msgstr "權限清單網址"
 
 #: serializers.py:82
 msgid "Role ID"
-msgstr ""
+msgstr "角色 ID"
 
 #: serializers.py:85
 msgid "URL"
@@ -146,7 +147,7 @@ msgstr "允許新增ACL存取權限的主要金鑰"
 
 #: serializers.py:119 serializers.py:126
 msgid "Permission ID"
-msgstr ""
+msgstr "權限 ID"
 
 #: serializers.py:125
 msgid "Primary key of the permission to remove from the ACL."
@@ -246,7 +247,7 @@ msgstr "授予对象访问权限"
 
 #: workflow_actions.py:133 workflow_actions.py:232
 msgid "Access"
-msgstr ""
+msgstr "存取"
 
 #: workflow_actions.py:171
 msgid "Revoke object access"

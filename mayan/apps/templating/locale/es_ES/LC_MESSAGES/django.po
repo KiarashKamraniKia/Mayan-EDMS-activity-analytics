@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-30 19:40+0000\n"
+"POT-Creation-Date: 2026-04-12 22:53+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/rosarior/teams/13584/es_ES/)\n"
@@ -28,7 +28,7 @@ msgstr "Sistema de plantillas"
 msgid "Current date and time"
 msgstr "Fecha y hora actuales"
 
-#: classes.py:83
+#: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
 msgstr ""
@@ -46,7 +46,7 @@ msgstr ""
 
 #: fields.py:28
 msgid "Use Django's default templating language. "
-msgstr ""
+msgstr "Utilice el lenguaje de plantillas predeterminado de Django. "
 
 #: fields.py:42
 #, python-format
@@ -104,6 +104,8 @@ msgid ""
 "Theme name of the CSS stylesheet used to change the visual appearance of the"
 " template preview."
 msgstr ""
+"Nombre del tema de la hoja de estilo CSS utilizada para cambiar la "
+"apariencia visual de la vista previa de la plantilla ."
 
 #: templatetags/templating_tags.py:100
 msgid "Tag can bypass access controls and create permanent changes."

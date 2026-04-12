@@ -75,11 +75,11 @@ msgstr "Último archivo"
 
 #: apps.py:939
 msgid "Return the active version of the document."
-msgstr ""
+msgstr "Devuelve la versión activa del documento."
 
 #: apps.py:940
 msgid "Active version"
-msgstr ""
+msgstr "Versión activa"
 
 #: apps.py:990
 msgid "Type"

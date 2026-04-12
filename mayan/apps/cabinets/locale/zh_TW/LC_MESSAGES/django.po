@@ -7,6 +7,7 @@
 # Roberto Rosario, 2026
 # yan songwei <yansw@vip.163.com>, 2026
 # Leon Chu, 2026
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
@@ -14,7 +15,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-24 07:05+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Leon Chu, 2026\n"
+"Last-Translator: YJ Chen, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/rosarior/teams/13584/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -258,7 +259,7 @@ msgstr "此文件櫃級別是空的"
 #: views/cabinet_views.py:124
 #, python-format
 msgid "Details of cabinet: %s"
-msgstr "文件櫃詳情：%s"
+msgstr "文件櫃詳細資訊：%s"
 
 #: views/cabinet_views.py:143
 #, python-format

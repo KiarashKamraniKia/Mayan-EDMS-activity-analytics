@@ -99,6 +99,10 @@ msgid ""
 "library installations. Executes the content as a script or call a script "
 "using the value as the filename."
 msgstr ""
+"Se ejecuta después de configurar las variables de entorno del contenedor, "
+"pero antes de configurar el UID/GID y de instalar paquetes adicionales del "
+"sistema operativo y bibliotecas de Python. Ejecuta el contenido como un "
+"script o invoca un script utilizando el valor como nombre de archivo."
 
 #: settings.py:66
 msgid ""

@@ -9,6 +9,7 @@
 # Roberto Rosario, 2026
 # yan songwei <yansw@vip.163.com>, 2026
 # Ford Guo <agile.guo@gmail.com>, 2026
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
@@ -16,7 +17,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-25 20:31+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Ford Guo <agile.guo@gmail.com>, 2026\n"
+"Last-Translator: YJ Chen, 2026\n"
 "Language-Team: Chinese Simplified (https://app.transifex.com/rosarior/teams/13584/zh-Hans/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +27,7 @@ msgstr ""
 
 #: apps.py:15
 msgid "Appearance (Bootstrap)"
-msgstr ""
+msgstr "外觀（Bootstrap）"
 
 #: dependencies.py:9
 msgid "Lato font"
@@ -197,7 +198,7 @@ msgstr "否"
 
 #: templates/appearance/confirm.html:52
 msgid "Do not ask me again."
-msgstr ""
+msgstr "不要再詢問我"
 
 #: templates/appearance/home.html:27
 msgid "Getting started"
@@ -276,7 +277,7 @@ msgstr "页面"
 
 #: templates/appearance/partials/list/pagination.html:47
 msgid "Jump to page"
-msgstr ""
+msgstr "跳轉至頁面"
 
 #: templates/appearance/partials/list/table/head/row_cell_identifier.html:6
 msgid "Identifier"
@@ -325,16 +326,16 @@ msgstr "切换列表显示模式"
 
 #: templates/navigation/app/list_toolbar.html:25
 msgid "Sort by column"
-msgstr ""
+msgstr "依欄位排序"
 
 #: templates/navigation/app/list_toolbar.html:26
 msgid "--- Clear ---"
-msgstr ""
+msgstr "--- 清除 ---"
 
 #: templates/navigation/app/list_toolbar.html:29
 msgid "(ascending)"
-msgstr ""
+msgstr "(遞增)"
 
 #: templates/navigation/app/list_toolbar.html:31
 msgid "(descending)"
-msgstr ""
+msgstr "(遞減)"

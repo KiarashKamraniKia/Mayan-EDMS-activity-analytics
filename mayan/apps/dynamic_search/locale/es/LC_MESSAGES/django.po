@@ -28,6 +28,8 @@ msgstr "Búsqueda dinámica "
 #: apps.py:87
 msgid "The underlying database model whose content is indexed for search."
 msgstr ""
+"El modelo de base de datos subyacente cuyo contenido está indexado para la "
+"búsqueda."
 
 #: apps.py:89
 msgid "Model"
@@ -36,6 +38,7 @@ msgstr "Modelo"
 #: apps.py:94
 msgid "The unique name used to reference the search model."
 msgstr ""
+"El nombre único utilizado para hacer referencia al modelo de búsqueda."
 
 #: apps.py:102
 msgid "The underlying database field whose content is indexed for search."
@@ -53,7 +56,7 @@ msgstr ""
 
 #: apps.py:119 serializers.py:61
 msgid "Field class"
-msgstr ""
+msgstr "Clase de campo"
 
 #: apps.py:123 serializers.py:67
 msgid "Description"

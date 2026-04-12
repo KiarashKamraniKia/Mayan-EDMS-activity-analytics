@@ -120,11 +120,11 @@ msgstr "Ruta separada por puntos"
 
 #: classes.py:62
 msgid "Human readable description of the task type."
-msgstr ""
+msgstr "Descripción legible por humanos del tipo de tarea."
 
 #: classes.py:70
 msgid "Unique internal name of the task type."
-msgstr ""
+msgstr "Nombre interno único del tipo de tarea."
 
 #: classes.py:77 classes.py:251
 msgid "Queue"
@@ -133,6 +133,8 @@ msgstr "Someter"
 #: classes.py:83
 msgid "Trigger interval if the task type is set for periodic execution."
 msgstr ""
+"Intervalo de activación si el tipo de tarea está configurado para ejecución "
+"periódica."
 
 #: classes.py:86
 msgid "Schedule"
@@ -144,7 +146,7 @@ msgstr "Trabajador"
 
 #: classes.py:217
 msgid "Number of task types managed by the queue."
-msgstr ""
+msgstr "Número de tipos de tareas gestionadas por la cola de tareas ."
 
 #: classes.py:219 classes.py:317
 msgid "Task type count"
@@ -168,7 +170,7 @@ msgstr "Cantidad de colas de trabajo"
 
 #: classes.py:315
 msgid "Number of task types managed by the worker."
-msgstr ""
+msgstr "Número de tipos de tareas gestionadas por el trabajador."
 
 #: links.py:13 links.py:18
 msgid "Task type list"

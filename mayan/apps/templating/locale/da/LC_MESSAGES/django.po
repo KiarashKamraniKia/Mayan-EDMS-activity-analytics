@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-30 19:40+0000\n"
+"POT-Creation-Date: 2026-04-12 22:53+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Mads L. Nielsen <sirlundgaard@gmail.com>, 2026\n"
 "Language-Team: Danish (https://app.transifex.com/rosarior/teams/13584/da/)\n"
@@ -29,7 +29,7 @@ msgstr ""
 msgid "Current date and time"
 msgstr ""
 
-#: classes.py:83
+#: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
 msgstr ""

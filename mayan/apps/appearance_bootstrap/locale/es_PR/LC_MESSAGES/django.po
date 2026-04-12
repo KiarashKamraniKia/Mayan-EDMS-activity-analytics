@@ -62,7 +62,7 @@ msgstr "La ubicación del artículo es incorrecta."
 
 #: templates/404.html:33
 msgid "The location is correct, but the item no longer exists."
-msgstr ""
+msgstr "La ubicación es correcta, pero el artículo ya no existe."
 
 #: templates/404.html:34
 msgid ""
@@ -251,7 +251,7 @@ msgstr "Guardar"
 #: templates/appearance/partials/form/single.html:95
 #: templates/appearance/partials/form/single.html:109
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: templates/appearance/partials/form/multiple.html:66
 #: templates/appearance/partials/form/single.html:99
