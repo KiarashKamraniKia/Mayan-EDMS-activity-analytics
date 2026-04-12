@@ -6,6 +6,30 @@
   again.
 - Fix `menu_topbar` reload on every refresh.
 - Ensure metadata type parser and validator exist.
+- Update container images:
+
+  - Debian from 13.3-slim to 13.4-slim
+  - PostgreSQL from 15.16 to 15.17
+  - Python from 3.13.12-slim to 3.13.13-slim
+  - Redis from 7.4.7 to 7.4.8
+  - Traefik from 2.11.37 to 2.11.42
+  - Ubuntu from noble-20250910 to noble-20260324
+
+- Update Python library versions:
+
+  - CairoSVG to 2.8.2 to 2.9.0
+  - Celery from 5.6.2 to 5.6.3
+  - Django from 5.2.11 to 5.2.13
+  - Pillow from 12.1.1 to 12.2.0
+  - coverage from 7.13.4 to 7.13.5
+  - dateparser from 1.3.0 to 1.4.0
+  - django-celery-beat from 2.8.1 to 2.9.0
+  - nh3 from 0.3.3 to 0.3.4
+  - pypdf from 6.7.3 to 6.10.0
+  - pytz from 2025.2 to 2026.1.post1
+  - requests from 2.32.5 to 2.33.1
+  - sentry-sdk from 2.53.0 to 2.57.0
+
 
 4.11.1 (2026-03-03)
 ===================

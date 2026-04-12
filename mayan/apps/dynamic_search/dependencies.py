@@ -7,7 +7,7 @@ PythonDependency(
 )
 PythonDependency(
     environments=(environment_production,), module=__name__,
-    name='dateparser', version_string='==1.3.0'
+    name='dateparser', version_string='==1.4.0'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__,

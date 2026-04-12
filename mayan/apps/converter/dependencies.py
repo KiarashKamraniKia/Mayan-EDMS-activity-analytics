@@ -26,11 +26,11 @@ BinaryDependency(
 PythonDependency(
     attribute_copyright='PIL.__doc__',
     environments=(environment_production,), module=__name__, name='Pillow',
-    version_string='==12.1.1'
+    version_string='==12.2.0'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='pypdf',
-    version_string='==6.7.3'
+    version_string='==6.10.0'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='qrcode',

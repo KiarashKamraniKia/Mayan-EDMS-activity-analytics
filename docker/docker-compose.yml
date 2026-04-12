@@ -163,7 +163,7 @@ services:
       timeout: 5s
       retries: 5
       start_period: 30s
-    image: ${MAYAN_DOCKER_POSTGRESQL_IMAGE:-postgres}:${MAYAN_DOCKER_POSTGRESQL_TAG:-15.16}
+    image: ${MAYAN_DOCKER_POSTGRESQL_IMAGE:-postgres}:${MAYAN_DOCKER_POSTGRESQL_TAG:-15.17}
     networks:
       - mayan
     # Enable to allow external access to the database.
@@ -190,7 +190,7 @@ services:
       PGHOST: ${MAYAN_DATABASE_HOST:-postgresql}
       PGPASSWORD: ${MAYAN_DATABASE_PASSWORD:-mayandbpass}
       PGUSER: ${MAYAN_DATABASE_USER:-mayan}
-    image: ${MAYAN_DOCKER_POSTGRESQL_IMAGE:-postgres}:${MAYAN_DOCKER_POSTGRESQL_TAG:-15.16}
+    image: ${MAYAN_DOCKER_POSTGRESQL_IMAGE:-postgres}:${MAYAN_DOCKER_POSTGRESQL_TAG:-15.17}
     networks:
       - mayan
     profiles:
@@ -259,7 +259,7 @@ services:
       timeout: 5s
       retries: 5
       start_period: 10s
-    image: ${MAYAN_DOCKER_REDIS_IMAGE:-redis}:${MAYAN_DOCKER_REDIS_TAG:-7.4.7}
+    image: ${MAYAN_DOCKER_REDIS_IMAGE:-redis}:${MAYAN_DOCKER_REDIS_TAG:-7.4.8}
     networks:
       - mayan
     profiles:
@@ -439,7 +439,7 @@ services:
       - "--providers.docker.exposedbydefault=false"
     # - Add DNS provider variables (https://doc.traefik.io/traefik/https/acme/#providers)
     # environment:
-    image: ${MAYAN_DOCKER_TRAEFIK_IMAGE:-traefik}:${MAYAN_DOCKER_TRAEFIK_TAG:-v2.11.37}
+    image: ${MAYAN_DOCKER_TRAEFIK_IMAGE:-traefik}:${MAYAN_DOCKER_TRAEFIK_TAG:-v2.11.42}
     labels:
       - "traefik.enable=${MAYAN_TRAEFIK_DASHBOARD_ENABLE:-false}"
       - "traefik.http.middlewares.basic-auth-global.basicauth.users=${MAYAN_TRAEFIK_DASHBOARD_AUTHENTICATION}"
