@@ -122,9 +122,8 @@ class SourceStoredFile:
         else:
             cache_partition_file.delete()
 
-        self.storage_backend_instance.delete(
-            name=self.get_full_path()
-        )
+        name = self.get_full_path()
+        self.storage_backend_instance.delete(name=name)
 
     def generate_image(self, transformation_instance_list=None):
         CachePartitionFile = apps.get_model(
@@ -251,9 +250,8 @@ class SourceStoredFile:
         ).get_storage_instance()
 
     def open(self, mode=None):
-        return self.storage_backend_instance.open(
-            name=self.get_full_path(), mode=mode
-        )
+        name = self.get_full_path()
+        return self.storage_backend_instance.open(mode=mode, name=name)
 
     @cached_property
     def storage_backend_instance(self):
