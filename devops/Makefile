@@ -38,6 +38,7 @@ devops-docker-major-publish:
 
 devops-docker-minor-publish:
 	$(MAKE) docker-registry-login
+	$(MAKE) docker-registry-public-login
 	$(MAKE) docker-image-pull-amd64
 	$(MAKE) docker-image-pull-arm64
 	docker tag \
