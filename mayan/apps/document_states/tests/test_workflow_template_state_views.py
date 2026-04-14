@@ -175,7 +175,7 @@ class WorkflowTemplateStateViewTestCase(
         self.assertEqual(response.status_code, 302)
 
         self._test_workflow_template_states[0].refresh_from_db()
-        self.assertNotEquals(
+        self.assertNotEqual(
             self._test_workflow_template_states[0].label, workflow_state_label
         )
 
