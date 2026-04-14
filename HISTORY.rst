@@ -10,6 +10,7 @@
   existing tags for backward compatibility.
 - Backport AJAX template deterministic assurance code.
 - Split metadata models.
+- Improve `SourceStoredFile` filename decoding.
 
 4.6.13 (2026-03-07)
 ===================

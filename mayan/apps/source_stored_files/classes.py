@@ -1,5 +1,7 @@
 import base64
+import binascii
 import logging
+import pathlib
 from urllib.parse import quote_plus, unquote_plus
 
 from furl import furl
@@ -21,6 +23,7 @@ from mayan.apps.converter.transformations import TransformationResize
 from mayan.apps.navigation.classes import SourceColumn
 from mayan.apps.sources.literals import STORAGE_NAME_SOURCE_CACHE_FOLDER
 from mayan.apps.storage.classes import DefinedStorage
+from mayan.apps.views.utils import base64_padding_add
 
 from .column_widgets import StoredFileThumbnailWidget
 from .links import link_storage_file_delete, link_source_file_select
@@ -63,20 +66,12 @@ class SourceStoredFile:
         self.source = source
         if encoded_filename:
             self.encoded_filename = str(encoded_filename)
-
-            try:
-                self.filename = base64.urlsafe_b64decode(
-                    s=unquote_plus(string=self.encoded_filename)
-                ).decode('utf8')
-            except UnicodeDecodeError:
-                raise ValueError(
-                    'Incorrect `encoded_filename` value.'
-                )
+            self.do_encoded_filename_decode()
         else:
             if not filename:
-                raise KeyError(
+                raise ValueError(
                     'Supply either `encoded_filename` or `filename` when '
-                    'instantiating a staging source file.'
+                    'instantiating a `{}`.'.format(self.__class__.__name__)
                 )
             self.filename = filename
             self.encoded_filename = quote_plus(
@@ -84,6 +79,8 @@ class SourceStoredFile:
                     s=filename.encode('utf8')
                 )
             )
+
+        self.do_filename_validate()
 
     def __str__(self):
         return force_str(s=self.filename)
@@ -93,6 +90,22 @@ class SourceStoredFile:
         return '{}-{}'.format(
             self.source.model_instance_id, self.encoded_filename
         )
+
+    def do_encoded_filename_decode(self):
+        filename_encoded_unquoted = unquote_plus(string=self.encoded_filename)
+        filename_encoded_unquoted_padded = base64_padding_add(
+            value=filename_encoded_unquoted
+        )
+
+        try:
+            self.filename = base64.b64decode(
+                altchars=b'-_', s=filename_encoded_unquoted_padded,
+                validate=True
+            ).decode('utf8')
+        except (binascii.Error, UnicodeDecodeError) as exception:
+            raise ValueError(
+                'Incorrect `encoded_filename` value.'
+            ) from exception
 
     def delete(self):
         # Don't include kwargs in .delete() as some backends might not
@@ -105,6 +118,22 @@ class SourceStoredFile:
         self.storage_backend_instance.delete(
             name=self.get_full_path()
         )
+
+    def do_filename_validate(self):
+        if not self.filename:
+            raise ValueError('Filename cannot be empty.')
+
+        if '\x00' in self.filename:
+            raise ValueError(
+                'Filename `{}` contains null bytes.'.format(self.filename)
+            )
+
+        path = pathlib.Path(self.filename)
+        if path.anchor or '..' in path.parts or not path.parts:
+            raise ValueError(
+                'Filename `{}` must be a non-empty relative path '
+                'without traversal components.'.format(self.filename)
+            )
 
     def generate_image(self, transformation_instance_list=None):
         # Check is transformed image is available.
