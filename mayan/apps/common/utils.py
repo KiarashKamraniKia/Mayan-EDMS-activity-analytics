@@ -2,6 +2,7 @@ from distutils import util
 from functools import reduce
 import itertools
 import logging
+import shlex
 import types
 
 from django.core.exceptions import FieldDoesNotExist
@@ -220,6 +221,16 @@ def any_to_bool(value):
             util.strtobool(val=value)
         )
     return value
+
+
+def comma_splitter(string):
+    splitter = shlex.shlex(string, posix=True)
+    splitter.whitespace = ','
+    splitter.whitespace_split = True
+    splitter.commenters = ''
+    return [
+        str(e) for e in splitter
+    ]
 
 
 def convert_to_internal_name(value):
