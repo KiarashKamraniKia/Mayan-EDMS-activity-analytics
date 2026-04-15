@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 from django import forms
-from django.utils.safestring import mark_safe
+from django.utils.html import format_html
 
 
 class ColorWidget(forms.TextInput):
@@ -141,7 +141,12 @@ class PlainWidget(forms.widgets.Widget):
     widget and reduces the output to only it's value.
     """
     def render(self, name, value, attrs=None, renderer=None):
-        return mark_safe(s='%s' % value)
+        if value is None:
+            value_final = ''
+        else:
+            value_final = value
+
+        return format_html('{}', value_final)
 
 
 class TextAreaDiv(forms.widgets.Widget):

@@ -12,6 +12,7 @@
 - Split metadata models.
 - Improve `SourceStoredFile` filename decoding.
 - Ensure metadata type parser and validator exist.
+- Harden form widget `PlainWidget` and remove usage of `mark_safe`.
 
 4.6.13 (2026-03-07)
 ===================
