@@ -13,6 +13,7 @@
 - Improve `SourceStoredFile` filename decoding.
 - Ensure metadata type parser and validator exist.
 - Harden form widget `PlainWidget` and remove usage of `mark_safe`.
+- Clean up and harden document indexing widgets.
 
 4.6.13 (2026-03-07)
 ===================
