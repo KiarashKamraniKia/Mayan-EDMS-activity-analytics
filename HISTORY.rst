@@ -14,6 +14,7 @@
 - Ensure metadata type parser and validator exist.
 - Harden form widget `PlainWidget` and remove usage of `mark_safe`.
 - Clean up and harden document indexing widgets.
+- Update Django from version 4.2.29 to 4.2.30.
 
 4.6.13 (2026-03-07)
 ===================
