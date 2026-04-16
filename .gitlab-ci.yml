@@ -36,7 +36,7 @@ job_docker_build:
     - key: pip-cache-4.7
       paths:
         - ${PIP_CACHE_DIR}
-  image: docker:28.2.2-dind
+  image: docker:29.2.1-dind
   only:
     - ci/builds/docker
     - ci/releases/all/major
@@ -52,7 +52,7 @@ job_docker_build:
     - make docker-build DOCKER_IMAGE_MAYAN_NAME=${CI_REGISTRY_IMAGE} IMAGE_VERSION=${DOCKER_VERSION} DOCKER_IMAGE_LABELS_EXTRA='--label com.gitlab.ci.job.id=${CI_JOB_ID} --label com.gitlab.ci.pipeline.id=${CI_PIPELINE_ID} --label org.opencontainers.image.revision=${CI_COMMIT_SHA}'
     - docker push "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}"
   services:
-    - docker:28.2.2-dind
+    - docker:29.2.1-dind
   stage: stage_build_container
   variables:
     DOCKER_DRIVER: overlay2
@@ -70,7 +70,7 @@ job_docker_push_major:
     - key: apk-cache-4.7
       paths:
         - ${APK_CACHE_DIR}
-  image: docker:28.2.2-cli
+  image: docker:29.2.1-cli
   only:
     - ci/releases/all/major
     - ci/releases/docker/major
@@ -89,7 +89,7 @@ job_docker_push_major:
     - docker push registry-1.docker.io/mayanedms/mayanedms:s"${MAJOR_VERSION}"
     - docker push registry-1.docker.io/mayanedms/mayanedms:s"${MINOR_VERSION}"
   services:
-    - docker:28.2.2-dind
+    - docker:29.2.1-dind
   stage: stage_push
   variables:
     DOCKER_DRIVER: overlay2
@@ -107,7 +107,7 @@ job_docker_push_minor:
     - key: apk-cache-4.7
       paths:
         - ${APK_CACHE_DIR}
-  image: docker:28.2.2-cli
+  image: docker:29.2.1-cli
   only:
     - ci/releases/all/minor
     - ci/releases/docker/minor
@@ -121,7 +121,7 @@ job_docker_push_minor:
     - docker push registry-1.docker.io/mayanedms/mayanedms:v"${DOCKER_VERSION}"
     - docker push registry-1.docker.io/mayanedms/mayanedms:s"${MINOR_VERSION}"
   services:
-    - docker:28.2.2-dind
+    - docker:29.2.1-dind
   stage: stage_push
   variables:
     DOCKER_DRIVER: overlay2
@@ -132,7 +132,7 @@ job_docker_nightly:
   before_script:
     - set -a && sed -E "s/=(.*)/\=\"\1\"/g" config.env > /tmp/config.env && . /tmp/config.env && rm /tmp/config.env && set +a
     - docker login --username ${CI_REGISTRY_USER} --password ${CI_REGISTRY_PASSWORD} ${CI_REGISTRY}
-  image: docker:28.2.2-cli
+  image: docker:29.2.1-cli
   needs:
     - job_docker_build
   only:
@@ -144,7 +144,7 @@ job_docker_nightly:
     - docker tag "${CI_REGISTRY_IMAGE}:${DOCKER_VERSION}" "registry-1.docker.io/mayanedms/mayanedms:${CI_COMMIT_REF_SLUG}"
     - docker push "registry-1.docker.io/mayanedms/mayanedms:${CI_COMMIT_REF_SLUG}"
   services:
-    - docker:28.2.2-dind
+    - docker:29.2.1-dind
   stage: stage_push
   variables:
     DOCKER_DRIVER: overlay2
