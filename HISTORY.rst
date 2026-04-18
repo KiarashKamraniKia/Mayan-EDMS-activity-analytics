@@ -17,6 +17,11 @@
   - requests from 2.32.5 to 2.33.1
   - sentry-sdk from 2.54.0 to 2.58.0
 
+- Update Docker image tags:
+
+  - PostgreSQL from 14.18-alpine to 14.22
+  - RabbitMQ from 3.13.7-management-alpine to 3.13.7-management
+
 4.7.9 (2026-03-10)
 ==================
 - Merge and improvements from versions 4.6.12 and 4.6.13 which in turn
