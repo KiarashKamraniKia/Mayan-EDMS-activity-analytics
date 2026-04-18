@@ -13,6 +13,7 @@
   - greenlet from 3.3.2 to 3.4.0
   - gunicorn from 25.1.0 to 25.3.0
   - pypdf from 6.7.5 to 6.10.2
+  - redis from 7.2.1 to 7.4.0
   - requests from 2.32.5 to 2.33.1
   - sentry-sdk from 2.54.0 to 2.58.0
 
