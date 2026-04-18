@@ -128,7 +128,7 @@ PythonDependency(
     ''', module=__name__, name='pycountry', version_string='==26.2.16'
 )
 PythonDependency(
-    module=__name__, name='requests', version_string='==2.32.5'
+    module=__name__, name='requests', version_string='==2.33.1'
 )
 PythonDependency(
     legal_text='''

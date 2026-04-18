@@ -4,6 +4,17 @@
   include backports from series 4.9, 4.10 and 4.11.
 - Add default makefile target that does nothing and instructs to use the
   `help` target instead.
+- Update Python dependency versions:
+
+  - CairoSVG from 2.8.2 to 2.9.0
+  - dateparser from 1.3.0 to 1.4.0
+  - elasticsearch from 7.17.12 to 7.17.13
+  - gevent from 25.9.1 to 26.4.0
+  - greenlet from 3.3.2 to 3.4.0
+  - gunicorn from 25.1.0 to 25.3.0
+  - pypdf from 6.7.5 to 6.10.2
+  - requests from 2.32.5 to 2.33.1
+  - sentry-sdk from 2.54.0 to 2.58.0
 
 4.7.9 (2026-03-10)
 ==================

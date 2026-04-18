@@ -4,10 +4,10 @@ PythonDependency(
     module=__name__, name='Whoosh', version_string='==2.7.4'
 )
 PythonDependency(
-    module=__name__, name='dateparser', version_string='==1.3.0'
+    module=__name__, name='dateparser', version_string='==1.4.0'
 )
 PythonDependency(
-    module=__name__, name='elasticsearch', version_string='==7.17.12'
+    module=__name__, name='elasticsearch', version_string='==7.17.13'
 )
 PythonDependency(
     module=__name__, name='elasticsearch-dsl', version_string='==7.4.1'
