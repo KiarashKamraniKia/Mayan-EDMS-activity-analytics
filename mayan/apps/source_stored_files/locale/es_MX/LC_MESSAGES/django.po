@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-10 21:55+0000\n"
+"POT-Creation-Date: 2026-04-19 07:07+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Spanish (Mexico) (https://app.transifex.com/rosarior/teams/13584/es_MX/)\n"
@@ -24,11 +24,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr "Fuente de documentos archivos almacenados"
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr "Tamaño"
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "Foto miniatura"
 

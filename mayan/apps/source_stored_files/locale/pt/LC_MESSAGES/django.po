@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-10 21:55+0000\n"
+"POT-Creation-Date: 2026-04-19 07:07+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: 425fe09b3064b9f906f637fff94056ae_a00ea56 <0fa3588fa89906bfcb3a354600956e0e_308047>, 2026\n"
 "Language-Team: Portuguese (https://app.transifex.com/rosarior/teams/13584/pt/)\n"
@@ -28,11 +28,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr ""
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr "Tamanho"
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "Miniatura"
 

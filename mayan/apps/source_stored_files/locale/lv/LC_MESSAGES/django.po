@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-10 21:55+0000\n"
+"POT-Creation-Date: 2026-04-19 07:07+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: Māris Teivāns <maris.teivans@gmail.com>, 2024\n"
 "Language-Team: Latvian (https://app.transifex.com/rosarior/teams/13584/lv/)\n"
@@ -24,11 +24,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr ""
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr ""
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "Sīktēls"
 

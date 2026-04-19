@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-10 21:55+0000\n"
+"POT-Creation-Date: 2026-04-19 07:07+0000\n"
 "PO-Revision-Date: 2024-05-07 07:30+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -42,6 +42,11 @@ msgstr "メタデータタイプ名"
 msgid "Metadata value"
 msgstr "メタデータ値"
 
+#: classes.py:76
+#, python-format
+msgid "Invalid `{}` `%s`"
+msgstr ""
+
 #: events.py:10
 msgid "Document metadata added"
 msgstr "文書メタデータを追加しました"
@@ -70,7 +75,7 @@ msgstr "メタデータタイプの関係を更新しました"
 msgid "ID"
 msgstr "ID"
 
-#: forms.py:18 models/metadata_type_models.py:35
+#: forms.py:18 models/metadata_type_models.py:33
 msgid "Name"
 msgstr "名前"
 
@@ -96,7 +101,7 @@ msgstr "参照値エラー: %s"
 msgid "Default value error: %s"
 msgstr "デフォルト値エラー: %s"
 
-#: forms.py:117 models/metadata_type_models.py:120
+#: forms.py:117 models/metadata_type_models.py:118
 #, python-format
 msgid "\"%s\" is required for this document type."
 msgstr "\"%s\" はこの文書タイプに必須です。"
@@ -106,8 +111,8 @@ msgid "Metadata types to be added to the selected documents."
 msgstr "選択した文書に追加するメタデータタイプ"
 
 #: forms.py:138 models/document_type_metadata_type_models.py:28
-#: models/metadata_type_models.py:83 search.py:11 serializers.py:52
-#: serializers.py:114 workflow_actions.py:148
+#: models/metadata_type_models.py:81 search.py:11 serializers.py:81
+#: serializers.py:143 workflow_actions.py:148
 msgid "Metadata type"
 msgstr "メタデータタイプ"
 
@@ -151,7 +156,7 @@ msgstr "メタデータを編集"
 msgid "Remove metadata"
 msgstr "メタデータを削除"
 
-#: links.py:63 links.py:95 links.py:103 models/metadata_type_models.py:84
+#: links.py:63 links.py:95 links.py:103 models/metadata_type_models.py:82
 #: permissions.py:24 views/metadata_type_views.py:112 workflow_actions.py:55
 #: workflow_actions.py:69
 msgid "Metadata types"
@@ -217,7 +222,7 @@ msgstr "文書のメタデータを返します。"
 msgid "Selected documents must be of the same type."
 msgstr "選択した文書は同じタイプである必要があります。"
 
-#: models/document_type_metadata_type_models.py:24 serializers.py:49
+#: models/document_type_metadata_type_models.py:24 serializers.py:78
 msgid "Document type"
 msgstr "文書タイプ"
 
@@ -229,7 +234,7 @@ msgstr "文書タイプのメタデータタイプオプション"
 msgid "Document type metadata types options"
 msgstr "文書タイプのメタデータタイプオプション一覧"
 
-#: models/metadata_instance_models.py:32 serializers.py:111
+#: models/metadata_instance_models.py:32 serializers.py:140
 msgid "Document"
 msgstr "文書"
 
@@ -253,77 +258,77 @@ msgstr "この文書タイプにはメタデータタイプの指定が必須で
 msgid "Metadata type is not valid for this document type."
 msgstr "この文書タイプには無効なメタデータタイプです"
 
-#: models/metadata_type_models.py:32
+#: models/metadata_type_models.py:30
 msgid ""
 "Name used by other apps to reference this metadata type. Do not use python "
 "reserved words, or spaces."
 msgstr "他のアプリでこのメタデータタイプを参照するための名前です。Python の予約語や空白は使用できません"
 
-#: models/metadata_type_models.py:38
+#: models/metadata_type_models.py:36
 msgid "Short description of this metadata type."
 msgstr "このメタデータタイプの簡易説明"
 
-#: models/metadata_type_models.py:39
+#: models/metadata_type_models.py:37
 msgid "Label"
 msgstr "ラベル"
 
-#: models/metadata_type_models.py:43
+#: models/metadata_type_models.py:41
 msgid "Enter a template to render."
 msgstr "出力テンプレートを入力"
 
-#: models/metadata_type_models.py:44
+#: models/metadata_type_models.py:42
 msgid "Default"
 msgstr "デフォルト"
 
-#: models/metadata_type_models.py:48
+#: models/metadata_type_models.py:46
 msgid "Enter a template to render. Must result in a comma delimited string."
 msgstr "出力テンプレートを入力してください。結果はカンマ区切りの文字列でなければなりません"
 
-#: models/metadata_type_models.py:50
+#: models/metadata_type_models.py:48
 msgid "Lookup"
 msgstr "参照"
 
-#: models/metadata_type_models.py:54
+#: models/metadata_type_models.py:52
 msgid ""
 "The validator will reject data entry if the value entered does not conform "
 "to the expected format."
 msgstr "入力値が期待される形式でない場合、検証が拒否されます"
 
-#: models/metadata_type_models.py:56
+#: models/metadata_type_models.py:54
 msgid "Validator"
 msgstr "検証"
 
-#: models/metadata_type_models.py:60
+#: models/metadata_type_models.py:58
 msgid "Enter the arguments for the validator in YAML format."
 msgstr "検証に渡す引数を YAML 形式で入力"
 
-#: models/metadata_type_models.py:62
+#: models/metadata_type_models.py:60
 msgid "Validator arguments"
 msgstr "検証の引数"
 
-#: models/metadata_type_models.py:67
+#: models/metadata_type_models.py:65
 msgid ""
 "The parser will reformat the value entered to conform to the expected "
 "format."
 msgstr "解析は入力値を期待される形式に整えます"
 
-#: models/metadata_type_models.py:69
+#: models/metadata_type_models.py:67
 msgid "Parser"
 msgstr "解析"
 
-#: models/metadata_type_models.py:73
+#: models/metadata_type_models.py:71
 msgid "Enter the arguments for the parser in YAML format."
 msgstr "解析に渡す引数を YAML 形式で入力"
 
-#: models/metadata_type_models.py:76
+#: models/metadata_type_models.py:74
 msgid "Parser arguments"
 msgstr "解析の引数"
 
-#: models/metadata_type_models.py:130
+#: models/metadata_type_models.py:128
 msgid "Value is not one of the provided options."
 msgstr "入力値は提供された選択肢のいずれでもありません"
 
-#: models/metadata_type_models.py:145
+#: models/metadata_type_models.py:139
 #, python-format
 msgid "Metadata type validation error; %(exception)s"
 msgstr "メタデータタイプ検証エラー: %(exception)s"
@@ -368,19 +373,19 @@ msgstr "メタデータタイプを削除"
 msgid "Add required metadata type"
 msgstr "必須メタデータタイプを追加"
 
-#: serializers.py:32 serializers.py:61 serializers.py:117
+#: serializers.py:35 serializers.py:90 serializers.py:146
 msgid "URL"
 msgstr "URL"
 
-#: serializers.py:56
+#: serializers.py:85
 msgid "Primary key of the metadata type to be added."
 msgstr "追加するメタデータタイプの主キー"
 
-#: serializers.py:57 serializers.py:107
+#: serializers.py:86 serializers.py:136
 msgid "Metadata type ID"
 msgstr "メタデータタイプID"
 
-#: serializers.py:105
+#: serializers.py:134
 msgid "Primary key of the metadata type to be added to the document."
 msgstr "追加するメタデータタイプの主キー"
 
