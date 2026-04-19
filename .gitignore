@@ -36,6 +36,7 @@ node_modules/
 docs/build/
 docs/_templates/layout.html
 docs/_templates/footer.html
+docs/apps/
 gitlab-ci-volume/
 .DS_Store
 config-local.env
