@@ -24,11 +24,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr "Forrásban tárolt fájlok"
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr "Méret"
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "Miniatűr"
 

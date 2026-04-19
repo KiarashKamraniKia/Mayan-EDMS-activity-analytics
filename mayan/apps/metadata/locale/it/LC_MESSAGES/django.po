@@ -164,7 +164,7 @@ msgstr "Modifica metadato"
 msgid "Remove metadata"
 msgstr "Rimuovi metadato"
 
-#: links.py:63 links.py:95 links.py:103 models/metadata_type_models.py:84
+#: links.py:63 links.py:95 links.py:103 models/metadata_type_models.py:82
 #: permissions.py:24 views/metadata_type_views.py:112 workflow_actions.py:55
 #: workflow_actions.py:69
 msgid "Metadata types"
@@ -230,7 +230,7 @@ msgstr ""
 msgid "Selected documents must be of the same type."
 msgstr "I documenti selezionati devono essere dello stesso tipo."
 
-#: models/document_type_metadata_type_models.py:24 serializers.py:49
+#: models/document_type_metadata_type_models.py:24 serializers.py:78
 msgid "Document type"
 msgstr "Tipo documento "
 
@@ -242,7 +242,7 @@ msgstr "Opzione per tipo documento del tipo metadato"
 msgid "Document type metadata types options"
 msgstr "Opzioni per tipo documento del tipo metadato"
 
-#: models/metadata_instance_models.py:32 serializers.py:111
+#: models/metadata_instance_models.py:32 serializers.py:140
 msgid "Document"
 msgstr "Documento"
 
@@ -269,7 +269,7 @@ msgstr "Tipo di metadati è necessario per questo tipo di documento."
 msgid "Metadata type is not valid for this document type."
 msgstr "Il metadato non è valido per il tipo di documento"
 
-#: models/metadata_type_models.py:32
+#: models/metadata_type_models.py:30
 msgid ""
 "Name used by other apps to reference this metadata type. Do not use python "
 "reserved words, or spaces."
@@ -277,31 +277,31 @@ msgstr ""
 "Nome utilizzato da altre app per fare riferimento a questo tipo di metadati."
 " Non utilizzare parole riservate a Python o spazi."
 
-#: models/metadata_type_models.py:38
+#: models/metadata_type_models.py:36
 msgid "Short description of this metadata type."
 msgstr "Breve descrizione di questo tipo di metadati."
 
-#: models/metadata_type_models.py:39
+#: models/metadata_type_models.py:37
 msgid "Label"
 msgstr "Etichetta"
 
-#: models/metadata_type_models.py:43
+#: models/metadata_type_models.py:41
 msgid "Enter a template to render."
 msgstr ""
 
-#: models/metadata_type_models.py:44
+#: models/metadata_type_models.py:42
 msgid "Default"
 msgstr "Default"
 
-#: models/metadata_type_models.py:48
+#: models/metadata_type_models.py:46
 msgid "Enter a template to render. Must result in a comma delimited string."
 msgstr ""
 
-#: models/metadata_type_models.py:50
+#: models/metadata_type_models.py:48
 msgid "Lookup"
 msgstr "Ricerca"
 
-#: models/metadata_type_models.py:54
+#: models/metadata_type_models.py:52
 msgid ""
 "The validator will reject data entry if the value entered does not conform "
 "to the expected format."
@@ -309,19 +309,19 @@ msgstr ""
 "Il validatore rifiuterà l'inserimento se il valore immesso non è conforme al"
 " formato richiesto."
 
-#: models/metadata_type_models.py:56
+#: models/metadata_type_models.py:54
 msgid "Validator"
 msgstr "Validatore"
 
-#: models/metadata_type_models.py:60
+#: models/metadata_type_models.py:58
 msgid "Enter the arguments for the validator in YAML format."
 msgstr ""
 
-#: models/metadata_type_models.py:62
+#: models/metadata_type_models.py:60
 msgid "Validator arguments"
 msgstr ""
 
-#: models/metadata_type_models.py:67
+#: models/metadata_type_models.py:65
 msgid ""
 "The parser will reformat the value entered to conform to the expected "
 "format."
@@ -329,23 +329,23 @@ msgstr ""
 "Il parser riformatta il valore immesso per renderlo conforme al formato "
 "voluto."
 
-#: models/metadata_type_models.py:69
+#: models/metadata_type_models.py:67
 msgid "Parser"
 msgstr "Parser"
 
-#: models/metadata_type_models.py:73
+#: models/metadata_type_models.py:71
 msgid "Enter the arguments for the parser in YAML format."
 msgstr ""
 
-#: models/metadata_type_models.py:76
+#: models/metadata_type_models.py:74
 msgid "Parser arguments"
 msgstr ""
 
-#: models/metadata_type_models.py:130
+#: models/metadata_type_models.py:128
 msgid "Value is not one of the provided options."
 msgstr "Il valore non è compreso tra i valori ammessi."
 
-#: models/metadata_type_models.py:145
+#: models/metadata_type_models.py:139
 #, python-format
 msgid "Metadata type validation error; %(exception)s"
 msgstr ""
@@ -406,7 +406,7 @@ msgstr ""
 msgid "URL"
 msgstr "URL"
 
-#: serializers.py:56
+#: serializers.py:85
 msgid "Primary key of the metadata type to be added."
 msgstr "Chiave primaria del tipo metadato da aggiungere."
 

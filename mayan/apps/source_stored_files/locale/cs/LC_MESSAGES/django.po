@@ -26,11 +26,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr ""
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr "Velikost"
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "Náhled"
 

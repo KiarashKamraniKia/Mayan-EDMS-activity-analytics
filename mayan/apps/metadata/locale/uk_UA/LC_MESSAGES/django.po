@@ -162,7 +162,7 @@ msgstr "Редагувати метадані"
 msgid "Remove metadata"
 msgstr "Видалити метадані"
 
-#: links.py:63 links.py:95 links.py:103 models/metadata_type_models.py:84
+#: links.py:63 links.py:95 links.py:103 models/metadata_type_models.py:82
 #: permissions.py:24 views/metadata_type_views.py:112 workflow_actions.py:55
 #: workflow_actions.py:69
 msgid "Metadata types"
@@ -228,7 +228,7 @@ msgstr "Повернути метадані документа."
 msgid "Selected documents must be of the same type."
 msgstr "Вибрані документи мають бути одного типу."
 
-#: models/document_type_metadata_type_models.py:24 serializers.py:49
+#: models/document_type_metadata_type_models.py:24 serializers.py:78
 msgid "Document type"
 msgstr "Тип документа"
 
@@ -240,7 +240,7 @@ msgstr "Параметри типу метаданих типу документ
 msgid "Document type metadata types options"
 msgstr "Опції типів метаданих типу документа"
 
-#: models/metadata_instance_models.py:32 serializers.py:111
+#: models/metadata_instance_models.py:32 serializers.py:140
 msgid "Document"
 msgstr "Документ"
 
@@ -265,7 +265,7 @@ msgstr "Обов'язкове використання даного типу м�
 msgid "Metadata type is not valid for this document type."
 msgstr "Тип метаданих не є дійсним для цього типу документа."
 
-#: models/metadata_type_models.py:32
+#: models/metadata_type_models.py:30
 msgid ""
 "Name used by other apps to reference this metadata type. Do not use python "
 "reserved words, or spaces."
@@ -273,33 +273,33 @@ msgstr ""
 "Ім’я, яке використовують інші програми для посилання на цей тип метаданих. "
 "Не використовуйте зарезервовані слова або пробіли Python."
 
-#: models/metadata_type_models.py:38
+#: models/metadata_type_models.py:36
 msgid "Short description of this metadata type."
 msgstr "Короткий опис цього типу метаданих."
 
-#: models/metadata_type_models.py:39
+#: models/metadata_type_models.py:37
 msgid "Label"
 msgstr "Мітка"
 
-#: models/metadata_type_models.py:43
+#: models/metadata_type_models.py:41
 msgid "Enter a template to render."
 msgstr "Введіть шаблон для візуалізації."
 
-#: models/metadata_type_models.py:44
+#: models/metadata_type_models.py:42
 msgid "Default"
 msgstr "За замовчуванням"
 
-#: models/metadata_type_models.py:48
+#: models/metadata_type_models.py:46
 msgid "Enter a template to render. Must result in a comma delimited string."
 msgstr ""
 "Введіть шаблон для візуалізації. У результаті має бути рядок, розділений "
 "комами."
 
-#: models/metadata_type_models.py:50
+#: models/metadata_type_models.py:48
 msgid "Lookup"
 msgstr "Пошук"
 
-#: models/metadata_type_models.py:54
+#: models/metadata_type_models.py:52
 msgid ""
 "The validator will reject data entry if the value entered does not conform "
 "to the expected format."
@@ -307,19 +307,19 @@ msgstr ""
 "Валідатор відхилить введення даних, якщо введене значення не відповідає "
 "очікуваному формату."
 
-#: models/metadata_type_models.py:56
+#: models/metadata_type_models.py:54
 msgid "Validator"
 msgstr "Валідатор"
 
-#: models/metadata_type_models.py:60
+#: models/metadata_type_models.py:58
 msgid "Enter the arguments for the validator in YAML format."
 msgstr "Введіть аргументи для валідатора у форматі YAML."
 
-#: models/metadata_type_models.py:62
+#: models/metadata_type_models.py:60
 msgid "Validator arguments"
 msgstr "Аргументи валідатора"
 
-#: models/metadata_type_models.py:67
+#: models/metadata_type_models.py:65
 msgid ""
 "The parser will reformat the value entered to conform to the expected "
 "format."
@@ -327,23 +327,23 @@ msgstr ""
 "Синтаксичний аналізатор переформатує введене значення відповідно до "
 "очікуваного формату."
 
-#: models/metadata_type_models.py:69
+#: models/metadata_type_models.py:67
 msgid "Parser"
 msgstr "Парсер"
 
-#: models/metadata_type_models.py:73
+#: models/metadata_type_models.py:71
 msgid "Enter the arguments for the parser in YAML format."
 msgstr "Введіть аргументи для аналізатора у форматі YAML."
 
-#: models/metadata_type_models.py:76
+#: models/metadata_type_models.py:74
 msgid "Parser arguments"
 msgstr "Аргументи парсера"
 
-#: models/metadata_type_models.py:130
+#: models/metadata_type_models.py:128
 msgid "Value is not one of the provided options."
 msgstr "Значення не є одним із запропонованих варіантів."
 
-#: models/metadata_type_models.py:145
+#: models/metadata_type_models.py:139
 #, python-format
 msgid "Metadata type validation error; %(exception)s"
 msgstr "Помилка перевірки типу метаданих; %(exception)s"
@@ -404,7 +404,7 @@ msgstr "ID типу метаданих"
 msgid "URL"
 msgstr "URL"
 
-#: serializers.py:56
+#: serializers.py:85
 msgid "Primary key of the metadata type to be added."
 msgstr "Первинний ключ типу метаданих, який потрібно додати."
 

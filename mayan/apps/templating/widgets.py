@@ -6,6 +6,7 @@ from mayan.apps.databases.classes import ModelAttribute
 from mayan.apps.forms import form_widgets
 
 from .classes import Template
+from .settings import setting_templating_dangerous_tags_allow_list
 
 
 class FormWidgetCode(form_widgets.Textarea):
@@ -68,11 +69,17 @@ class TemplateWidget(form_widgets.NamedMultiWidget):
         builtin_libraries = [
             ('', library) for library in template._template.backend.engine.template_builtins
         ]
+        dangerous_allowed_list = setting_templating_dangerous_tags_allow_list.value.split(',')
+
         for module_name, library in builtin_libraries:
             for name, function in getattr(library, klass).items():
-                if name not in self.builtin_excludes.get(klass, ()):
+                is_excluded = name in self.builtin_excludes.get(klass, ())
+                is_dangerous = getattr(function, '_dangerous_template_tag', False)
+                is_dangerous_but_allowed = getattr(function, '_dangerous_template_tag', False) and name in dangerous_allowed_list
+
+                if not is_excluded and (not is_dangerous or is_dangerous_but_allowed):
                     title, body, metadata = admindocs.utils.parse_docstring(
-                        function.__doc__
+                        docstring=function.__doc__
                     )
                     title = _(title)
                     result.append(

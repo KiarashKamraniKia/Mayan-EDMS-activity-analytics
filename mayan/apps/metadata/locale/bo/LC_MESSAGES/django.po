@@ -159,7 +159,7 @@ msgstr "མེ་ཊ་ཌེ་ཊ་རྩོམ་སྒྲིག་བྱེ
 msgid "Remove metadata"
 msgstr "མེ་ཊ་ཌེ་ཊ་མེད་པར་བཟོས།"
 
-#: links.py:63 links.py:95 links.py:103 models/metadata_type_models.py:84
+#: links.py:63 links.py:95 links.py:103 models/metadata_type_models.py:82
 #: permissions.py:24 views/metadata_type_views.py:112 workflow_actions.py:55
 #: workflow_actions.py:69
 msgid "Metadata types"
@@ -225,7 +225,7 @@ msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཕྱིར་ལ
 msgid "Selected documents must be of the same type."
 msgstr "བདམས་ཐོན་བྱུང་བའི་ཡིག་ཆ་རིགས་གཅིག་མཚུངས་ཡིན་དགོས།"
 
-#: models/document_type_metadata_type_models.py:24 serializers.py:49
+#: models/document_type_metadata_type_models.py:24 serializers.py:78
 msgid "Document type"
 msgstr "ཡིག་ཆའི་རིགས།"
 
@@ -237,7 +237,7 @@ msgstr "ཡིག་ཆའི་རིགས་ཀྱི་མེ་ཊ་གཞ
 msgid "Document type metadata types options"
 msgstr "ཡིག་ཆའི་རིགས་ཀྱི་མེ་ཊ་གཞི་གྲངས་རིགས་གདམ་ཁ།"
 
-#: models/metadata_instance_models.py:32 serializers.py:111
+#: models/metadata_instance_models.py:32 serializers.py:140
 msgid "Document"
 msgstr "ཡིག་ཆ།"
 
@@ -263,7 +263,7 @@ msgstr "ཡིག་ཆའི་རིགས་འདི་ལ་མེ་ཊ་
 msgid "Metadata type is not valid for this document type."
 msgstr "ཡིག་ཆའི་རིགས་འདི་ལ་མེ་ཊ་ཌེ་ཊ་རིགས་ནུས་ལྡན་མིན།"
 
-#: models/metadata_type_models.py:32
+#: models/metadata_type_models.py:30
 msgid ""
 "Name used by other apps to reference this metadata type. Do not use python "
 "reserved words, or spaces."
@@ -271,75 +271,75 @@ msgstr ""
 "མཉེན་ཆས་གཞན་གྱིས་མེ་ཊ་ཌེ་ཊ་རིགས་འདི་ལ་གཞི་གྲངས་བྱེད་པར་བེད་སྤྱོད་བྱེད་པའི་མིང་།"
 " པའེ་ཐོན་གྱིས་བཀག་སྡོམ་བྱས་པའི་ཚིག་དང་ཡང་ན་བར་སྟོང་བེད་སྤྱོད་མ་གཏོང་།"
 
-#: models/metadata_type_models.py:38
+#: models/metadata_type_models.py:36
 msgid "Short description of this metadata type."
 msgstr "མེ་ཊ་ཌེ་ཊ་རིགས་འདིའི་འགྲེལ་བཤད་ཐུང་ངུ།"
 
-#: models/metadata_type_models.py:39
+#: models/metadata_type_models.py:37
 msgid "Label"
 msgstr "ལག་ཁྱེར་།"
 
-#: models/metadata_type_models.py:43
+#: models/metadata_type_models.py:41
 msgid "Enter a template to render."
 msgstr "བརྙན་ཕབ་བྱེད་པའི་ཊེམ་པེལེཊི་ཞིག་བླུགས།"
 
-#: models/metadata_type_models.py:44
+#: models/metadata_type_models.py:42
 msgid "Default"
 msgstr "སྔོན་གཤིས།"
 
-#: models/metadata_type_models.py:48
+#: models/metadata_type_models.py:46
 msgid "Enter a template to render. Must result in a comma delimited string."
 msgstr ""
 "བརྙན་ཕབ་བྱེད་པའི་ཊེམ་པེལེཊི་ཞིག་བླུགས། "
 "ངེས་པར་དུ་ཚེག་གིས་དབྱེ་བའི་ཡིག་རྒྱུན་ཐོན་དགོས།"
 
-#: models/metadata_type_models.py:50
+#: models/metadata_type_models.py:48
 msgid "Lookup"
 msgstr "ལྟ་བ།"
 
-#: models/metadata_type_models.py:54
+#: models/metadata_type_models.py:52
 msgid ""
 "The validator will reject data entry if the value entered does not conform "
 "to the expected format."
 msgstr ""
 "གལ་ཏེ་བཙུགས་པའི་རིན་ཐང་དེ་རེ་བ་བྱེད་པའི་རྩ་སྒྲིག་དང་མཐུན་མིན་ན་བདེན་དཔང་བྱེད་མཁན་གྱིས་གནས་སྡུད་བཙུགས་པ་ཁས་མི་ལེན།"
 
-#: models/metadata_type_models.py:56
+#: models/metadata_type_models.py:54
 msgid "Validator"
 msgstr "བདེན་དཔང་བྱེད་མཁན།"
 
-#: models/metadata_type_models.py:60
+#: models/metadata_type_models.py:58
 msgid "Enter the arguments for the validator in YAML format."
 msgstr "བདེན་དཔང་བྱེད་མཁན་གྱི་སྒྲུབ་བྱེད་དེ་YAMLརྩ་སྒྲིག་ནང་བཙུགས།"
 
-#: models/metadata_type_models.py:62
+#: models/metadata_type_models.py:60
 msgid "Validator arguments"
 msgstr "བདེན་དཔང་བྱེད་མཁན་གྱི་རྩོད་གླེང་།"
 
-#: models/metadata_type_models.py:67
+#: models/metadata_type_models.py:65
 msgid ""
 "The parser will reformat the value entered to conform to the expected "
 "format."
 msgstr ""
 "དབྱེ་ཞིབ་པས་བླུགས་པའི་རིན་ཐང་དེ་རེ་བ་བྱེད་པའི་རྩ་སྒྲིག་དང་མཐུན་པར་བསྐྱར་དུ་རྩ་སྒྲིག་བྱེད།"
 
-#: models/metadata_type_models.py:69
+#: models/metadata_type_models.py:67
 msgid "Parser"
 msgstr "དབྱེ་ཞིབ་བྱེད་མཁན།"
 
-#: models/metadata_type_models.py:73
+#: models/metadata_type_models.py:71
 msgid "Enter the arguments for the parser in YAML format."
 msgstr "དབྱེ་དཔྱད་བྱེད་མཁན་གྱི་སྒྲུབ་བྱེད་དེ་YAMLརྩ་སྒྲིག་ནང་བཙུགས།"
 
-#: models/metadata_type_models.py:76
+#: models/metadata_type_models.py:74
 msgid "Parser arguments"
 msgstr "དབྱེ་ཞིབ་བྱེད་མཁན་གྱི་རྩོད་གླེང་།"
 
-#: models/metadata_type_models.py:130
+#: models/metadata_type_models.py:128
 msgid "Value is not one of the provided options."
 msgstr "རིན་ཐང་ནི་མཁོ་སྤྲོད་བྱས་པའི་གདམ་གའི་གྲས་ཤིག་མ་རེད།"
 
-#: models/metadata_type_models.py:145
+#: models/metadata_type_models.py:139
 #, python-format
 msgid "Metadata type validation error; %(exception)s"
 msgstr "མེ་ཊ་ཌེ་ཊ་རིགས་བདེན་དཔང་ནོར་འཁྲུལ། %(exception)s"
@@ -400,7 +400,7 @@ msgstr "མེ་ཊ་ཌེ་ཊ་རིགས་ID"
 msgid "URL"
 msgstr "URL །"
 
-#: serializers.py:56
+#: serializers.py:85
 msgid "Primary key of the metadata type to be added."
 msgstr "ཁ་སྣོན་བྱེད་དགོས་པའི་མེ་ཊ་ཌེ་ཊ་རིགས་ཀྱི་ལྡེ་མིག་གཙོ་བོ།"
 

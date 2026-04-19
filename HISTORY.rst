@@ -329,6 +329,30 @@
   The workflow state action context is now composed of the keys:
   `workflow_instance`, `workflow_instance_context`, `action`, and `log_entry`.
 
+4.7.10 (2026-04-19)
+===================
+- Merge and improvements from versions 4.6.14 which in turn
+  include backports from series 4.9, 4.10 and 4.11.
+- Add default makefile target that does nothing and instructs to use the
+  `help` target instead.
+- Update Python dependency versions:
+
+  - CairoSVG from 2.8.2 to 2.9.0
+  - dateparser from 1.3.0 to 1.4.0
+  - elasticsearch from 7.17.12 to 7.17.13
+  - gevent from 25.9.1 to 26.4.0
+  - greenlet from 3.3.2 to 3.4.0
+  - gunicorn from 25.1.0 to 25.3.0
+  - pypdf from 6.7.5 to 6.10.2
+  - redis from 7.2.1 to 7.4.0
+  - requests from 2.32.5 to 2.33.1
+  - sentry-sdk from 2.54.0 to 2.58.0
+
+- Update Docker image tags:
+
+  - PostgreSQL from 14.18-alpine to 14.22
+  - RabbitMQ from 3.13.7-management-alpine to 3.13.7-management
+
 4.7.9 (2026-03-10)
 ==================
 - Merge and improvements from versions 4.6.12 and 4.6.13 which in turn
@@ -668,6 +692,26 @@
 - Add the ID field of primary models as search fields.
 - Expose the document index instance depth and node count values via the API.
 - Add a document type API view to return all documents of that type.
+
+4.6.14 (2026-04-16)
+===================
+- Split the templating app template tags module.
+- Prefix the templating app tags and filter functions to avoid name or
+  reserved word clashes.
+- Add support for marking template tags and filters as "dangerous". These are
+  tags or filters that if not properly used or controlled with adequate
+  permissions can allow more access than intended. Adds the setting
+  `TEMPLATING_TAGS_DANGEROUS_ALLOW_LIST`, which defaults to allowing the
+  existing tags for backward compatibility.
+- Backport AJAX template deterministic assurance code.
+- Split metadata models.
+- Improve `SourceStoredFile` filename decoding.
+- Ensure metadata type parser and validator exist.
+- Harden form widget `PlainWidget` and remove usage of `mark_safe`.
+- Clean up and harden document indexing widgets.
+- Update Django from version 4.2.29 to 4.2.30.
+- Update base Docker image from debian:12.13-slim to debian:bookworm-20260406-slim.
+- Remove hardcoded Alpine Docker build package names.
 
 4.6.13 (2026-03-07)
 ===================

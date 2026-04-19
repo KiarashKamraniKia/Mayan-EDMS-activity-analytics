@@ -163,7 +163,7 @@ msgstr "Editați metadatele"
 msgid "Remove metadata"
 msgstr "Eliminați metadatele"
 
-#: links.py:63 links.py:95 links.py:103 models/metadata_type_models.py:84
+#: links.py:63 links.py:95 links.py:103 models/metadata_type_models.py:82
 #: permissions.py:24 views/metadata_type_views.py:112 workflow_actions.py:55
 #: workflow_actions.py:69
 msgid "Metadata types"
@@ -229,7 +229,7 @@ msgstr "Returnează metadatele documentului."
 msgid "Selected documents must be of the same type."
 msgstr "Documentele selectate trebuie să fie de același tip."
 
-#: models/document_type_metadata_type_models.py:24 serializers.py:49
+#: models/document_type_metadata_type_models.py:24 serializers.py:78
 msgid "Document type"
 msgstr "Tipul documentului"
 
@@ -241,7 +241,7 @@ msgstr "Opțiune tip metadate tip document"
 msgid "Document type metadata types options"
 msgstr "Opțiuni tipuri de  metadate tip document"
 
-#: models/metadata_instance_models.py:32 serializers.py:111
+#: models/metadata_instance_models.py:32 serializers.py:140
 msgid "Document"
 msgstr "Document"
 
@@ -266,7 +266,7 @@ msgstr "Tipul de metadate este necesar pentru acest tip de document."
 msgid "Metadata type is not valid for this document type."
 msgstr "Tipul de metadate nu este valabil pentru acest tip de document."
 
-#: models/metadata_type_models.py:32
+#: models/metadata_type_models.py:30
 msgid ""
 "Name used by other apps to reference this metadata type. Do not use python "
 "reserved words, or spaces."
@@ -274,33 +274,33 @@ msgstr ""
 "Numele utilizat de alte aplicații pentru a face referire la acest tip de "
 "metadate. Nu utilizați cuvinte sau spații rezervate Python."
 
-#: models/metadata_type_models.py:38
+#: models/metadata_type_models.py:36
 msgid "Short description of this metadata type."
 msgstr "Scurtă descriere a acestui tip de metadate."
 
-#: models/metadata_type_models.py:39
+#: models/metadata_type_models.py:37
 msgid "Label"
 msgstr "Conținut etichetă"
 
-#: models/metadata_type_models.py:43
+#: models/metadata_type_models.py:41
 msgid "Enter a template to render."
 msgstr "Introduceți un șablon de redat."
 
-#: models/metadata_type_models.py:44
+#: models/metadata_type_models.py:42
 msgid "Default"
 msgstr "Implicit"
 
-#: models/metadata_type_models.py:48
+#: models/metadata_type_models.py:46
 msgid "Enter a template to render. Must result in a comma delimited string."
 msgstr ""
 "Introduceți un șablon de redat. Trebuie să aibă ca rezultat un șir delimitat"
 " de virgule."
 
-#: models/metadata_type_models.py:50
+#: models/metadata_type_models.py:48
 msgid "Lookup"
 msgstr "Căutare"
 
-#: models/metadata_type_models.py:54
+#: models/metadata_type_models.py:52
 msgid ""
 "The validator will reject data entry if the value entered does not conform "
 "to the expected format."
@@ -308,19 +308,19 @@ msgstr ""
 "Validatorul va respinge introducerea datelor dacă valoarea introdusă nu este"
 " conformă cu formatul așteptat."
 
-#: models/metadata_type_models.py:56
+#: models/metadata_type_models.py:54
 msgid "Validator"
 msgstr "Validator"
 
-#: models/metadata_type_models.py:60
+#: models/metadata_type_models.py:58
 msgid "Enter the arguments for the validator in YAML format."
 msgstr "Introduceți argumentele validatorului în format YAML."
 
-#: models/metadata_type_models.py:62
+#: models/metadata_type_models.py:60
 msgid "Validator arguments"
 msgstr "Argumente pentru validator"
 
-#: models/metadata_type_models.py:67
+#: models/metadata_type_models.py:65
 msgid ""
 "The parser will reformat the value entered to conform to the expected "
 "format."
@@ -328,23 +328,23 @@ msgstr ""
 "Parserul va reformata valoarea introdusă pentru a se conforma formatului "
 "așteptat."
 
-#: models/metadata_type_models.py:69
+#: models/metadata_type_models.py:67
 msgid "Parser"
 msgstr "Parser"
 
-#: models/metadata_type_models.py:73
+#: models/metadata_type_models.py:71
 msgid "Enter the arguments for the parser in YAML format."
 msgstr "Introduceți argumentele analizorului  în format YAML."
 
-#: models/metadata_type_models.py:76
+#: models/metadata_type_models.py:74
 msgid "Parser arguments"
 msgstr "Argumente ale analizorului"
 
-#: models/metadata_type_models.py:130
+#: models/metadata_type_models.py:128
 msgid "Value is not one of the provided options."
 msgstr "Valoarea nu este una dintre opțiunile furnizate."
 
-#: models/metadata_type_models.py:145
+#: models/metadata_type_models.py:139
 #, python-format
 msgid "Metadata type validation error; %(exception)s"
 msgstr "Eroare de validare a tipului de metadate; %(exception)s"
@@ -405,7 +405,7 @@ msgstr "ID tip de metadate"
 msgid "URL"
 msgstr "URL"
 
-#: serializers.py:56
+#: serializers.py:85
 msgid "Primary key of the metadata type to be added."
 msgstr "Cheia primară a tipului de metadate care urmează să fie adăugată."
 

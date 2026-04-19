@@ -32,6 +32,20 @@ msgstr "Vorlagen"
 msgid "Current date and time"
 msgstr "Aktuelles Datum und Zeit"
 
+#: decorators.py:20
+msgid "None provided."
+msgstr "Nichts eingegeben."
+
+#: decorators.py:22
+#, python-format
+msgid ""
+"Filter or tag \"%(name)s\" is considered dangerous and not allowed. Reason: "
+"%(reason)s Change setting `%(setting)s` to allow it."
+msgstr ""
+"Filter oder Tag \"%(name)s\" wird als gefährlich betrachtet und sind nicht "
+"erlaubt. Grund: %(reason)s Durch die Einstellung `%(setting)s` können sie "
+"erlaubt werden."
+
 #: fields.py:28
 msgid "Use Django's default templating language. "
 msgstr "Verwenden Sie die Standard Vorlagensprache von Django."

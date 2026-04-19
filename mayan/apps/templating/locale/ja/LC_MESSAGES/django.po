@@ -28,6 +28,17 @@ msgstr "テンプレート"
 msgid "Current date and time"
 msgstr "現在の日付と時刻"
 
+#: decorators.py:20
+msgid "None provided."
+msgstr ""
+
+#: decorators.py:22
+#, python-format
+msgid ""
+"Filter or tag \"%(name)s\" is considered dangerous and not allowed. Reason: "
+"%(reason)s Change setting `%(setting)s` to allow it."
+msgstr ""
+
 #: fields.py:28
 msgid "Use Django's default templating language. "
 msgstr "Django のデフォルトテンプレート言語を使用します "
