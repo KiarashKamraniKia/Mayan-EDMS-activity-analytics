@@ -198,7 +198,7 @@ services:
       - "256"
       - --requirepass
       - "${MAYAN_REDIS_PASSWORD:-mayanredispassword}"
-    image: ${MAYAN_DOCKER_REDIS_IMAGE:-redis}:${MAYAN_DOCKER_REDIS_TAG:-7.2.10-alpine3.21}
+    image: ${MAYAN_DOCKER_REDIS_IMAGE:-redis}:${MAYAN_DOCKER_REDIS_TAG:-7.2.10}
     networks:
       - mayan
     profiles:

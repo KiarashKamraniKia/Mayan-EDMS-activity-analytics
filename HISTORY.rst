@@ -1,6 +1,6 @@
 4.8.11 (XXXX-XX-XX)
 ===================
-- Changes and improvements from version 4.7.9 and 4.6.13.
+- Changes and improvements from version 4.6.13, 4.6.14, 4.7.9, 4.7.10, series 4.10 and 4.11.
 - Automate copyright year updates.
 - Refactor `generate_setup.py`.
 - Expose Django's `CACHES` setting as `MAYAN_CACHES`.
@@ -10,6 +10,7 @@
 - Modernize the fundraiser app and avoid hardcoding locations.
 - Remove repeated GitLab CI file `apt-get update`.
 - Import `setting_cluster` from the correct module.
+- Update Docker Redis image tag from 7.2.10-alpine3.21 to 7.2.10.
 
 4.8.10 (2025-12-13)
 ===================
