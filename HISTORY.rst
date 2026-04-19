@@ -1,4 +1,4 @@
-4.7.10 (XXXX-XX-XX)
+4.7.10 (2026-04-19)
 ===================
 - Merge and improvements from versions 4.6.14 which in turn
   include backports from series 4.9, 4.10 and 4.11.
