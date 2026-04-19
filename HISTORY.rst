@@ -1,4 +1,4 @@
-4.8.11 (XXXX-XX-XX)
+4.8.11 (2026-04-20)
 ===================
 - Changes and improvements from version 4.6.13, 4.6.14, 4.7.9, 4.7.10, series 4.10 and 4.11.
 - Automate copyright year updates.
