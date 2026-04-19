@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 18:08+0000\n"
+"POT-Creation-Date: 2026-04-19 18:49+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Ilya Pavlov <spirkaa@gmail.com>, 2024\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/rosarior/teams/13584/ru_RU/)\n"
@@ -26,11 +26,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Диспетчер задач"
 
-#: apps.py:116 apps.py:141 apps.py:184
+#: apps.py:116 apps.py:142 apps.py:185
 msgid "Label"
 msgstr "Заголовок"
 
-#: apps.py:120 apps.py:144 apps.py:188
+#: apps.py:120 apps.py:145 apps.py:189
 msgid "Name"
 msgstr "Имя"
 
@@ -45,79 +45,79 @@ msgid ""
 " critical tasks."
 msgstr ""
 
-#: apps.py:133
+#: apps.py:134
 msgid "Is transient?"
 msgstr "Переходная?"
 
-#: apps.py:147
+#: apps.py:148
 msgid "Dotted path"
 msgstr ""
 
-#: apps.py:151
+#: apps.py:152
 msgid "Schedule"
 msgstr "Расписание"
 
-#: apps.py:157
+#: apps.py:158
 msgid "Type"
 msgstr "Тип"
 
-#: apps.py:162
+#: apps.py:163
 msgid "Start time"
 msgstr "Время начала"
 
-#: apps.py:166
+#: apps.py:167
 msgid "Host"
 msgstr "Сервер"
 
-#: apps.py:170
+#: apps.py:171
 msgid "Arguments"
 msgstr "Аргументы"
 
-#: apps.py:174
+#: apps.py:175
 msgid "Keyword arguments"
 msgstr "Аргументы ключевого слова"
 
-#: apps.py:179
+#: apps.py:180
 msgid "Worker process ID"
 msgstr "ID процесса"
 
-#: apps.py:192
+#: apps.py:193
 msgid ""
 "Maximum amount of resident memory a worker can execute before it's replaced "
 "by a new process."
 msgstr ""
 
-#: apps.py:194
+#: apps.py:195
 msgid "Maximum memory per child"
 msgstr ""
 
-#: apps.py:198
+#: apps.py:199
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
 msgstr ""
 
-#: apps.py:200
+#: apps.py:201
 msgid "Maximum tasks per child"
 msgstr ""
 
-#: apps.py:204
+#: apps.py:205
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
 msgstr ""
 
-#: apps.py:206
+#: apps.py:207
 msgid "Concurrency"
 msgstr ""
 
-#: apps.py:210
+#: apps.py:211
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
 msgstr ""
 
-#: apps.py:213
+#: apps.py:214
 msgid "Nice level"
 msgstr ""
 

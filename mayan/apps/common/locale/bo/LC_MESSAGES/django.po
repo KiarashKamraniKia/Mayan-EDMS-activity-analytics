@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-02 13:13+0000\n"
+"POT-Creation-Date: 2026-04-19 18:47+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -24,11 +24,11 @@ msgstr ""
 msgid "Common"
 msgstr "སྤྱི་པའི"
 
-#: dependencies.py:194
+#: dependencies.py:189
 msgid "Command line environment with autocompletion."
 msgstr "རང་འགུལ་མཇུག་སྒྲིལ་ཡོད་པའི་བཀའ་ཚིག་གྲལ་ཐིག་ཁོར་ཡུག"
 
-#: dependencies.py:199
+#: dependencies.py:194
 msgid "Checks proper formatting of the README file."
 msgstr "READMEཡིག་ཆའི་རྩ་སྒྲིག་འོས་འཚམ་ལ་ཞིབ་བཤེར་བྱེད།"
 

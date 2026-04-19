@@ -11,14 +11,15 @@
 # Leon Chu, 2024
 # Roberto Rosario, 2024
 # Ford Guo <agile.guo@gmail.com>, 2024
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 18:07+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
-"Last-Translator: Ford Guo <agile.guo@gmail.com>, 2024\n"
+"Last-Translator: YJ Chen, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/rosarior/teams/13584/zh_TW/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -27,7 +28,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: apps.py:220 apps.py:1061 events.py:6 menus.py:8
-#: models/document_models.py:112 permissions.py:6 settings.py:33
+#: models/document_models.py:113 permissions.py:6 settings.py:33
 #: statistics.py:286
 msgid "Documents"
 msgstr "文件"
@@ -37,7 +38,7 @@ msgid "Date and time added"
 msgstr ""
 
 #: apps.py:278 links/document_file_page_links.py:76
-#: models/document_file_models.py:107 models/document_file_page_models.py:28
+#: models/document_file_models.py:108 models/document_file_page_models.py:28
 #: search.py:54
 msgid "Document file"
 msgstr "文件檔案"
@@ -320,16 +321,16 @@ msgstr ""
 msgid "Date added"
 msgstr "日期已添加"
 
-#: forms/document_file_forms.py:63 models/document_file_models.py:84
+#: forms/document_file_forms.py:63 models/document_file_models.py:85
 msgid "MIME type"
 msgstr "MIME类型"
 
-#: forms/document_file_forms.py:67 models/document_file_models.py:90
+#: forms/document_file_forms.py:67 models/document_file_models.py:91
 msgid "Encoding"
 msgstr "编码"
 
-#: forms/document_file_forms.py:71 models/document_file_model_mixins.py:371
-#: models/document_file_models.py:102
+#: forms/document_file_forms.py:71 models/document_file_model_mixins.py:368
+#: models/document_file_models.py:103
 msgid "Size"
 msgstr ""
 
@@ -341,7 +342,7 @@ msgstr "在存储中存在"
 msgid "Path in storage"
 msgstr ""
 
-#: forms/document_file_forms.py:83 models/document_file_models.py:97
+#: forms/document_file_forms.py:83 models/document_file_models.py:98
 msgid "Checksum"
 msgstr "校验码"
 
@@ -363,7 +364,7 @@ msgstr "获取文件扩展名并将其移动到文件名的末尾，允许依赖
 msgid "Date created"
 msgstr ""
 
-#: forms/document_forms.py:110 models/document_models.py:78
+#: forms/document_forms.py:110 models/document_models.py:79
 msgid "Language"
 msgstr "语言"
 
@@ -676,7 +677,7 @@ msgstr "十二月"
 msgid "All pages"
 msgstr "所有页面"
 
-#: models/document_file_model_mixins.py:366
+#: models/document_file_model_mixins.py:363
 #: models/document_file_page_model_mixins.py:244
 #: models/document_model_mixins.py:179 models/document_models.py:64
 #: models/document_type_models.py:43 models/document_type_models.py:156
@@ -687,7 +688,7 @@ msgstr "所有页面"
 msgid "Label"
 msgstr "標籤"
 
-#: models/document_file_model_mixins.py:512
+#: models/document_file_model_mixins.py:509
 msgid "Controls what happens when a new document file is uploaded."
 msgstr ""
 

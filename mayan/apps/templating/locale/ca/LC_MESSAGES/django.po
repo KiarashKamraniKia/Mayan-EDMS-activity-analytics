@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 12:51+0000\n"
+"POT-Creation-Date: 2026-04-19 18:49+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:21 permissions.py:6 settings.py:94
+#: apps.py:21 permissions.py:6 settings.py:96
 msgid "Templating"
 msgstr ""
 
@@ -84,10 +84,20 @@ msgstr ""
 msgid "URL"
 msgstr ""
 
-#: settings.py:101
+#: settings.py:102
+msgid ""
+"A comma separated list of dangerous templating tags and filters that are "
+"allowed."
+msgstr ""
+
+#: settings.py:110
 msgid ""
 "Theme name of the CSS stylesheet used to change the visual appearance of the"
 " template preview."
+msgstr ""
+
+#: templatetags/templating_tags.py:63
+msgid "Tag can bypass access controls and create permanent changes."
 msgstr ""
 
 #: views.py:44
@@ -100,18 +110,18 @@ msgstr ""
 msgid "Template error; %(exception)s"
 msgstr ""
 
-#: widgets.py:42
+#: widgets.py:43
 msgid "Filters"
 msgstr ""
 
-#: widgets.py:49
+#: widgets.py:50
 msgid "Tags"
 msgstr ""
 
-#: widgets.py:56
+#: widgets.py:57
 msgid "<Filters and tags>"
 msgstr ""
 
-#: widgets.py:129
+#: widgets.py:136
 msgid "<Model attributes>"
 msgstr ""

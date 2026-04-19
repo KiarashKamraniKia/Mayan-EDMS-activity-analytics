@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-25 17:02+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Harald Ersch, 2025\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -53,6 +53,11 @@ msgstr "Legătură document"
 msgid "Document thumbnail"
 msgstr "Miniatură document"
 
+#: classes.py:76
+#, python-format
+msgid "Invalid `{}` `%s`"
+msgstr ""
+
 #: events.py:10
 msgid "Document metadata added"
 msgstr "Au fost adăugate metadate la document"
@@ -81,7 +86,7 @@ msgstr "Relația tipului de metadate a fost actualizată"
 msgid "ID"
 msgstr "ID-ul"
 
-#: forms.py:17 models/metadata_type_models.py:35
+#: forms.py:17 models/metadata_type_models.py:33
 msgid "Name"
 msgstr "Nume"
 
@@ -93,7 +98,7 @@ msgstr "Valoare"
 msgid "Update"
 msgstr "Actualizați"
 
-#: forms.py:50 forms.py:233 models/document_type_metadata_type_models.py:31
+#: forms.py:50 forms.py:234 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "Necesară"
 
@@ -107,47 +112,47 @@ msgstr "Valoarea erorii de căutare: %s"
 msgid "Default value error: %s"
 msgstr "Valoare eroare standard: %s"
 
-#: forms.py:116 models/metadata_type_models.py:120
+#: forms.py:116 models/metadata_type_models.py:118
 #, python-format
 msgid "\"%s\" is required for this document type."
 msgstr "\"%s\" este necesar pentru acest tip de document."
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr ""
 "Tipurile de metadate care urmează să fie adăugate la documentele selectate."
 
-#: forms.py:138 models/document_type_metadata_type_models.py:28
-#: models/metadata_type_models.py:83 search.py:12 serializers.py:52
-#: serializers.py:114 workflow_actions.py:148
+#: forms.py:139 models/document_type_metadata_type_models.py:28
+#: models/metadata_type_models.py:81 search.py:12 serializers.py:81
+#: serializers.py:143 workflow_actions.py:148
 msgid "Metadata type"
 msgstr "Tip de metadate"
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Eliminați"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr "De bază"
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr "Valori"
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr "Validare"
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr "Analizare"
 
-#: forms.py:231
+#: forms.py:232
 msgid "None"
 msgstr "Nici unul"
 
-#: forms.py:232
+#: forms.py:233
 msgid "Optional"
 msgstr "Facultativ"
 
@@ -397,11 +402,11 @@ msgstr "ID tip document"
 msgid "Document type label"
 msgstr "Etichetă tip document"
 
-#: search.py:40 serializers.py:57 serializers.py:107
+#: search.py:40 serializers.py:86 serializers.py:136
 msgid "Metadata type ID"
 msgstr "ID tip de metadate"
 
-#: serializers.py:32 serializers.py:61 serializers.py:117
+#: serializers.py:35 serializers.py:90 serializers.py:146
 msgid "URL"
 msgstr "URL"
 
@@ -409,7 +414,7 @@ msgstr "URL"
 msgid "Primary key of the metadata type to be added."
 msgstr "Cheia primară a tipului de metadate care urmează să fie adăugată."
 
-#: serializers.py:105
+#: serializers.py:134
 msgid "Primary key of the metadata type to be added to the document."
 msgstr ""
 "Cheia primară a tipului de metadate care urmează să fie adăugată în "

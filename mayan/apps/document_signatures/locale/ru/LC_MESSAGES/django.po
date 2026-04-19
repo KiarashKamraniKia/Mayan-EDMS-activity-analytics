@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-04 04:33+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: lilo.panic, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/rosarior/teams/13584/ru/)\n"
@@ -37,11 +37,11 @@ msgstr "Дата и время"
 msgid "Key ID"
 msgstr "ID ключа"
 
-#: apps.py:118 forms.py:77
+#: apps.py:118 forms.py:78
 msgid "None"
 msgstr "Нет"
 
-#: apps.py:119 forms.py:64 models.py:58
+#: apps.py:119 forms.py:65 models.py:58
 msgid "Signature ID"
 msgstr "ID подписи"
 
@@ -87,47 +87,47 @@ msgstr ""
 "Закрытый ключ, который будет использоваться для подписи этого файла "
 "документа."
 
-#: forms.py:44
+#: forms.py:45
 msgid "Signature is embedded?"
 msgstr "Присоединенная подпись?"
 
-#: forms.py:47
+#: forms.py:48
 msgid "Signature date"
 msgstr "Дата подписи"
 
-#: forms.py:51
+#: forms.py:52
 msgid "Signature key ID"
 msgstr "ID ключа подписи"
 
-#: forms.py:54
+#: forms.py:55
 msgid "Signature key present?"
 msgstr "Ключ подписи предоставлен?"
 
-#: forms.py:67
+#: forms.py:68
 msgid "Key fingerprint"
 msgstr "Отпечаток ключа"
 
-#: forms.py:71
+#: forms.py:72
 msgid "Key creation date"
 msgstr "Дата создания ключа"
 
-#: forms.py:76
+#: forms.py:77
 msgid "Key expiration date"
 msgstr "Срок действия ключа"
 
-#: forms.py:81
+#: forms.py:82
 msgid "Key length"
 msgstr "Длина ключа"
 
-#: forms.py:85
+#: forms.py:86
 msgid "Key algorithm"
 msgstr "Алгоритм ключа"
 
-#: forms.py:89
+#: forms.py:90
 msgid "Key user ID"
 msgstr "ID пользователя ключа"
 
-#: forms.py:93
+#: forms.py:94
 msgid "Key type"
 msgstr "Тип ключа"
 

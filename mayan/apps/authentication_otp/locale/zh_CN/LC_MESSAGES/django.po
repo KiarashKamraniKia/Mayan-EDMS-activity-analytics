@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 10:33+0000\n"
+"POT-Creation-Date: 2026-04-19 18:47+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Ford Guo <agile.guo@gmail.com>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/rosarior/teams/13584/zh_CN/)\n"
@@ -59,20 +59,20 @@ msgid ""
 "share this secret, treat it like a password."
 msgstr ""
 
-#: forms.py:107 forms.py:112
+#: forms.py:108 forms.py:113
 msgid "Secret"
 msgstr "隐私的"
 
-#: forms.py:118
+#: forms.py:119
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 
-#: forms.py:121
+#: forms.py:122
 msgid "Token"
 msgstr ""
 
-#: forms.py:157
+#: forms.py:158
 msgid "Token is incorrect for the specified secret."
 msgstr ""
 

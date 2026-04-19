@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 12:51+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Lyudmil Antonov <lantonov.here@gmail.com>, 2024\n"
 "Language-Team: Bulgarian (https://app.transifex.com/rosarior/teams/13584/bg/)\n"
@@ -261,32 +261,32 @@ msgstr ""
 "Грешка при маркирането на съобщението „%(instance)s“ като непрочетено; "
 "%(exception)s"
 
-#: views.py:200
+#: views.py:201
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)d съобщения, успешно отбелязани като непрочетени."
 
-#: views.py:203
+#: views.py:204
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "Съобщението „%(object)s“ бе отбелязано като непрочетено успешно."
 
-#: views.py:206
+#: views.py:207
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "%(count)d съобщение, успешно означено като непрочетено."
 
-#: views.py:208
+#: views.py:209
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "Маркирайте избраните съобщения %(count)d като непрочетени."
 
-#: views.py:209
+#: views.py:210
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "Маркирайте съобщението \"%(object)s\" като непрочетено."
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "Маркирайте избраното съобщение %(count)d като непрочетено."

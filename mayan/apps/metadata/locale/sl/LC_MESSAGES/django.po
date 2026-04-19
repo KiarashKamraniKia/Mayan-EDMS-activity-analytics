@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-25 17:02+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Slovenian (https://app.transifex.com/rosarior/teams/13584/sl/)\n"
@@ -51,6 +51,11 @@ msgstr ""
 msgid "Document thumbnail"
 msgstr ""
 
+#: classes.py:76
+#, python-format
+msgid "Invalid `{}` `%s`"
+msgstr ""
+
 #: events.py:10
 msgid "Document metadata added"
 msgstr ""
@@ -79,7 +84,7 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
-#: forms.py:17 models/metadata_type_models.py:35
+#: forms.py:17 models/metadata_type_models.py:33
 msgid "Name"
 msgstr "Ime"
 
@@ -91,7 +96,7 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: forms.py:50 forms.py:233 models/document_type_metadata_type_models.py:31
+#: forms.py:50 forms.py:234 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr ""
 
@@ -105,46 +110,46 @@ msgstr ""
 msgid "Default value error: %s"
 msgstr ""
 
-#: forms.py:116 models/metadata_type_models.py:120
+#: forms.py:116 models/metadata_type_models.py:118
 #, python-format
 msgid "\"%s\" is required for this document type."
 msgstr ""
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr ""
 
-#: forms.py:138 models/document_type_metadata_type_models.py:28
-#: models/metadata_type_models.py:83 search.py:12 serializers.py:52
-#: serializers.py:114 workflow_actions.py:148
+#: forms.py:139 models/document_type_metadata_type_models.py:28
+#: models/metadata_type_models.py:81 search.py:12 serializers.py:81
+#: serializers.py:143 workflow_actions.py:148
 msgid "Metadata type"
 msgstr ""
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Odstrani"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr ""
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr ""
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr ""
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr ""
 
-#: forms.py:231
+#: forms.py:232
 msgid "None"
 msgstr "Nobenega"
 
-#: forms.py:232
+#: forms.py:233
 msgid "Optional"
 msgstr ""
 
@@ -386,11 +391,11 @@ msgstr ""
 msgid "Document type label"
 msgstr ""
 
-#: search.py:40 serializers.py:57 serializers.py:107
+#: search.py:40 serializers.py:86 serializers.py:136
 msgid "Metadata type ID"
 msgstr ""
 
-#: serializers.py:32 serializers.py:61 serializers.py:117
+#: serializers.py:35 serializers.py:90 serializers.py:146
 msgid "URL"
 msgstr ""
 
@@ -398,7 +403,7 @@ msgstr ""
 msgid "Primary key of the metadata type to be added."
 msgstr ""
 
-#: serializers.py:105
+#: serializers.py:134
 msgid "Primary key of the metadata type to be added to the document."
 msgstr ""
 

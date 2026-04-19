@@ -7,7 +7,6 @@
 # xisafe <root@xisafe.com>, 2024
 # Ford Guo <agile.guo@gmail.com>, 2024
 # Leon Chu, 2024
-# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""

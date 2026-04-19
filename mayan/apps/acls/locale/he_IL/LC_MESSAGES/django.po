@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 10:33+0000\n"
+"POT-Creation-Date: 2026-04-19 18:47+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Ovadia Ovadia, 2024\n"
 "Language-Team: Hebrew (Israel) (https://app.transifex.com/rosarior/teams/13584/he_IL/)\n"
@@ -54,7 +54,7 @@ msgstr "רשימת בקרת גישה (ACL) נמחקה"
 msgid "ACL edited"
 msgstr "רשימת בקרת גישה (ACL) נערכה"
 
-#: forms.py:12 models.py:58 serializers.py:79 views.py:73
+#: forms.py:12 models.py:59 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "תפקיד"
 

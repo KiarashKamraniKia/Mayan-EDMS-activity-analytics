@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 12:51+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/rosarior/teams/13584/ar/)\n"
@@ -257,32 +257,32 @@ msgstr "تعيين كل الرسائل مقروءة"
 msgid "Error marking message \"%(instance)s\" as unread; %(exception)s"
 msgstr "خطأ في تعيين الرسالة \"%(instance)s\" كمقروءة %(exception)s."
 
-#: views.py:200
+#: views.py:201
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)dرسالة تم تعيينها غير مقروءة."
 
-#: views.py:203
+#: views.py:204
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "الرسالة \"%(object)s\" تم تعيينها غير مقروءة"
 
-#: views.py:206
+#: views.py:207
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "%(count)dرسالة تم تعيينها غير مقروءة"
 
-#: views.py:208
+#: views.py:209
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "تعيين%(count)d رسالة محددة كغير مقروءة"
 
-#: views.py:209
+#: views.py:210
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "تعيين الرسالة \"%(object)s\" كفير مقروءة."
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "تعيين %(count)dرسالة محددة كغير مقروءة."

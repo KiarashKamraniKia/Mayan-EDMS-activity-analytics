@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 10:33+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Frédéric Sheedy <sheedf@gmail.com>, 2024\n"
 "Language-Team: French (France) (https://app.transifex.com/rosarior/teams/13584/fr_FR/)\n"
@@ -107,7 +107,7 @@ msgstr ""
 msgid "Total cached files."
 msgstr ""
 
-#: model_mixins.py:111 model_mixins.py:324
+#: model_mixins.py:111 model_mixins.py:323
 msgid "Current size"
 msgstr "Taille actuelle"
 
@@ -119,7 +119,7 @@ msgstr "Taille actuelle du cache."
 msgid "Label"
 msgstr "Libellé"
 
-#: model_mixins.py:326
+#: model_mixins.py:325
 msgid "Current size of the cache partition."
 msgstr ""
 

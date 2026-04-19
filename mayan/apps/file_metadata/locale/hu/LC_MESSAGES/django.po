@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-14 23:59+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Csaba Tarjányi, 2024\n"
 "Language-Team: Hungarian (https://app.transifex.com/rosarior/teams/13584/hu/)\n"
@@ -312,17 +312,17 @@ msgstr ""
 "Fájl metaadat attribútumai a következőhöz: %(document_file)s "
 "illesztőprogramja: %(driver)s"
 
-#: views/document_file_views.py:111
+#: views/document_file_views.py:112
 #, python-format
 msgid "%(count)d documents files submitted to the file metadata queue."
 msgstr "%(count)d dokumentumfájl elküldve a fájl metaadatsorba."
 
-#: views/document_file_views.py:114
+#: views/document_file_views.py:116
 #, python-format
 msgid "%(count)d document file submitted to the file metadata queue."
 msgstr "%(count)d dokumentumfájl elküldve a fájl metaadatsorba."
 
-#: views/document_file_views.py:123
+#: views/document_file_views.py:126
 msgid "Submit the selected document file to the file metadata queue?"
 msgid_plural "Submit the selected documents files to the file metadata queue?"
 msgstr[0] "Elküldi a kiválasztott dokumentumfájlt a fájl metaadat-sorába?"

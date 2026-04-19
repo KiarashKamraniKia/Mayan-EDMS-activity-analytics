@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26 19:04+0000\n"
+"POT-Creation-Date: 2026-04-19 18:49+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: abc Def <hdogan1974@gmail.com>, 2024\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
@@ -34,15 +34,15 @@ msgstr "Nöbetçi testi hatası"
 msgid "Trigger tests"
 msgstr "Tetik testleri"
 
-#: platform_templates.py:148
+#: platform_templates.py:152
 msgid "Template that generates a GitLab CI config file."
 msgstr "GitLab CI yapılandırma dosyası oluşturan şablon."
 
-#: platform_templates.py:307
+#: platform_templates.py:324
 msgid "Template for Supervisord."
 msgstr "Gözetmen için şablon."
 
-#: platform_templates.py:381
+#: platform_templates.py:398
 msgid "Template showing the queues of a worker."
 msgstr "Bir işçinin sıralarını gösteren şablon."
 
@@ -63,30 +63,30 @@ msgstr ""
 "değişkenler için sözlük anahtarı olarak istemci backend noktalı yolunu "
 "kullanın."
 
-#: settings.py:40
+#: settings.py:41
 msgid "Load an alternate settings file."
 msgstr ""
 
-#: settings.py:49
+#: settings.py:50
 msgid "Allows setting Gunicorn's `workers` value."
 msgstr ""
 
-#: settings.py:55
+#: settings.py:56
 msgid "Allows setting Gunicorn's `worker_class` value."
 msgstr ""
 
-#: settings.py:62
+#: settings.py:63
 msgid "Allows setting Gunicorn's `timeout` value."
 msgstr ""
 
-#: settings.py:68
+#: settings.py:69
 msgid "Allows setting Gunicorn's `max_requests_jitter` value."
 msgstr ""
 
-#: settings.py:74
+#: settings.py:75
 msgid "Allows setting Gunicorn's `max_requests` value."
 msgstr ""
 
-#: settings.py:80
+#: settings.py:81
 msgid "Allows setting Gunicorn's `limit_request_line` value."
 msgstr ""

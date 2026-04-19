@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26 19:04+0000\n"
+"POT-Creation-Date: 2026-04-19 18:49+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -32,15 +32,15 @@ msgstr "སེནཊ་རིའི་ཚོད་ལྟའི་ནོར་འ
 msgid "Trigger tests"
 msgstr "འབྱུང་ཁུངས་ཚོད་ལྟ།"
 
-#: platform_templates.py:148
+#: platform_templates.py:152
 msgid "Template that generates a GitLab CI config file."
 msgstr "GitLab CI རིམ་སྒྲིག་ཡིག་ཆ་བཟོ་བའི་དཔེ་སྒྲོམ།"
 
-#: platform_templates.py:307
+#: platform_templates.py:324
 msgid "Template for Supervisord."
 msgstr "ལྟ་རྟོག་པའི་ཆེད་དུ་དཔེ་གཞི།"
 
-#: platform_templates.py:381
+#: platform_templates.py:398
 msgid "Template showing the queues of a worker."
 msgstr "ལས་མི་ཞིག་གི་བང་རིམ་སྟོན་པའི་དཔེ་སྒྲོམ།"
 
@@ -60,30 +60,30 @@ msgstr ""
 "མཁོ་སྤྲོད་བྱེད་མཁན་གྱི་རྒྱབ་ཕྱོགས་ཀྱི་རྩོད་གླེང་། "
 "ཚིག་མཛོད་རྩ་སྒྲིག་ནང་སྒྲུབ་བྱེད་ཀྱི་ཚིག་མཛོད་ལྡེ་མིག་ལྟར་ཚོང་ཤག་གི་རྒྱབ་ཕྱོགས་ཚག་ཅན་གྱི་འགྲུལ་ལམ་བེད་སྤྱོད་བྱེད།"
 
-#: settings.py:40
+#: settings.py:41
 msgid "Load an alternate settings file."
 msgstr "སྒྲིག་སྟངས་ཡིག་ཆ་གཞན་ཞིག་མངོན་འཆར་བྱེད།"
 
-#: settings.py:49
+#: settings.py:50
 msgid "Allows setting Gunicorn's `workers` value."
 msgstr "གྷུ་ནི་ཀོརན་གྱི་ལས་བྱེད་པའི་རིན་ཐང་སྒྲིག་ཆོག"
 
-#: settings.py:55
+#: settings.py:56
 msgid "Allows setting Gunicorn's `worker_class` value."
 msgstr "གུ་ནི་ཁོརན་གྱི་`ལས་མིའི་རིགས་`རིན་ཐང་སྒྲིག་འཇུག་བྱེད་ཆོག"
 
-#: settings.py:62
+#: settings.py:63
 msgid "Allows setting Gunicorn's `timeout` value."
 msgstr "གྷུ་ནི་ཁོརན་གྱི་དུས་ཚོད་རྫོགས་པའི་རིན་ཐང་སྒྲིག་ཆོག"
 
-#: settings.py:68
+#: settings.py:69
 msgid "Allows setting Gunicorn's `max_requests_jitter` value."
 msgstr "གུ་ནི་ཀོརན་གྱི་`མཐོ་ཤོས་_རེ་འདུན་_ཇི་ཊར་` རིན་ཐང་སྒྲིག་ཆོག"
 
-#: settings.py:74
+#: settings.py:75
 msgid "Allows setting Gunicorn's `max_requests` value."
 msgstr "གུ་ནི་ཁོརན་གྱི་`max_requests` རིན་ཐང་སྒྲིག་ཆོག"
 
-#: settings.py:80
+#: settings.py:81
 msgid "Allows setting Gunicorn's `limit_request_line` value."
 msgstr "གུ་ནི་ཁོརན་གྱི་`ཚད་གཞི་_རེ་འདུན་_གྲལ་ཐིག་` རིན་ཐང་སྒྲིག་ཆོག"

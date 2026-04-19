@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-04 04:34+0000\n"
+"POT-Creation-Date: 2026-04-19 18:49+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Leo Lado, 2024\n"
 "Language-Team: Ukrainian (Ukraine) (https://app.transifex.com/rosarior/teams/13584/uk_UA/)\n"
@@ -36,19 +36,19 @@ msgstr ""
 msgid "Allows setting the worker's Celery `max-tasks-per-child` value."
 msgstr ""
 
-#: platform_templates.py:26
+#: platform_templates.py:29
 msgid "Template for entrypoint.sh file inside a Docker image."
 msgstr "Шаблон для файлу entrypoint.sh всередині Docker-образу."
 
-#: platform_templates.py:41
+#: platform_templates.py:44
 msgid "Template that generates the Docker Compose file."
 msgstr "Шаблон, що генерує файл Docker Compose."
 
-#: platform_templates.py:206
+#: platform_templates.py:209
 msgid "Template for Supervisord inside a Docker image."
 msgstr "Шаблон для Supervisord у Docker-образі."
 
-#: platform_templates.py:224
+#: platform_templates.py:227
 msgid "Template that generates a Dockerfile file."
 msgstr "Шаблон, що генерує файл Dockerfile."
 

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 10:33+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: yan songwei <yansw@vip.163.com>, 2024\n"
 "Language-Team: Chinese (China) (https://app.transifex.com/rosarior/teams/13584/zh_CN/)\n"
@@ -103,7 +103,7 @@ msgstr ""
 msgid "Total cached files."
 msgstr ""
 
-#: model_mixins.py:111 model_mixins.py:324
+#: model_mixins.py:111 model_mixins.py:323
 msgid "Current size"
 msgstr "当前大小"
 
@@ -115,7 +115,7 @@ msgstr "当前缓存的大小。"
 msgid "Label"
 msgstr "标签"
 
-#: model_mixins.py:326
+#: model_mixins.py:325
 msgid "Current size of the cache partition."
 msgstr ""
 

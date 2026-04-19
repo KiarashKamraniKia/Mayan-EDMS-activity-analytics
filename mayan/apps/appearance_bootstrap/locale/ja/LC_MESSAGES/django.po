@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-27 19:21+0000\n"
+"POT-Creation-Date: 2026-04-19 18:47+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -121,7 +121,7 @@ msgstr "ビルドナンバー: %(project_build_number)s"
 msgid "Released under the license:"
 msgstr "次のライセンスの下で公開されています:"
 
-#: templates/appearance/about.html:57
+#: templates/appearance/about.html:59
 #, python-format
 msgid ""
 "To get the latest news subscribe to the <a class=\"new_window\" "
@@ -130,7 +130,7 @@ msgstr ""
 "最新情報を受け取るには、<a class=\"new_window\" "
 "href=\"%(link_mailing_list_url)s\">メーリングリスト</a>に登録してください。"
 
-#: templates/appearance/about.html:66
+#: templates/appearance/about.html:68
 #, python-format
 msgid ""
 "For articles, tutorials, troubleshooting, subscribe to the <a "
@@ -140,7 +140,7 @@ msgstr ""
 "記事、チュートリアル、トラブルシューティング情報を入手するには、<a class=\"new_window\" "
 "href=\"%(link_knowledge_base_url)s\">ナレッジベース</a>に登録してください。"
 
-#: templates/appearance/about.html:75
+#: templates/appearance/about.html:77
 #, python-format
 msgid ""
 "Need professional help? Check out the <a class=\"new_window\" "
@@ -149,7 +149,7 @@ msgstr ""
 "専門的な支援が必要ですか？<a class=\"new_window\" "
 "href=\"%(link_support_url)s\">サポート</a>をご確認ください。"
 
-#: templates/appearance/about.html:84
+#: templates/appearance/about.html:86
 #, python-format
 msgid ""
 "For discussions visit the <a class=\"new_window\" "
@@ -158,7 +158,7 @@ msgstr ""
 "ディスカッションをご希望の場合は、<a class=\"new_window\" "
 "href=\"%(link_forum_url)s\">コミュニティフォーラム</a>をご利用ください。"
 
-#: templates/appearance/about.html:93
+#: templates/appearance/about.html:95
 #, python-format
 msgid ""
 "The complete list of changes is available via the <a class=\"new_window\" "
@@ -167,7 +167,7 @@ msgstr ""
 "変更点の全一覧は、<a class=\"new_window\" "
 "href=\"%(link_release_notes_url)s\">リリースノート</a>からご確認いただけます。"
 
-#: templates/appearance/about.html:102
+#: templates/appearance/about.html:104
 #, python-format
 msgid ""
 "For questions check the <a class=\"new_window\" "
@@ -176,7 +176,7 @@ msgstr ""
 "ご不明な点がある場合は、<a class=\"new_window\" "
 "href=\"%(link_documentation_url)s\">ドキュメント</a>をご確認ください。"
 
-#: templates/appearance/about.html:111
+#: templates/appearance/about.html:113
 #, python-format
 msgid ""
 "If you found a bug or have a feature idea open a ticket in the <a "
@@ -186,7 +186,7 @@ msgstr ""
 "バグを見つけた場合や機能の提案がある場合は、<a class=\"new_window\" "
 "href=\"%(link_source_code_url)s\">ソースコードリポジトリ</a>でチケットを作成してください。"
 
-#: templates/appearance/about.html:117
+#: templates/appearance/about.html:119
 #, python-format
 msgid ""
 "%(project_title)s is Free and Open Source software, which is provided as-is "
@@ -268,13 +268,13 @@ msgstr "合計: %(total)s"
 msgid "No results"
 msgstr "該当する結果なし"
 
-#: templates/appearance/partials/list/pagination.html:12
-#: templates/appearance/partials/list/pagination.html:14
+#: templates/appearance/partials/list/pagination.html:13
+#: templates/appearance/partials/list/pagination.html:15
 msgid "Previous page"
 msgstr "前のページ"
 
-#: templates/appearance/partials/list/pagination.html:30
-#: templates/appearance/partials/list/pagination.html:32
+#: templates/appearance/partials/list/pagination.html:31
+#: templates/appearance/partials/list/pagination.html:33
 msgid "Next page"
 msgstr "次のページ"
 

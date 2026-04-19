@@ -202,7 +202,6 @@ msgid ""
 "Arguments to pass to the "
 "`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"མཚན་རྟགས་_འཛིན་བཟུང་_མཚན་རྟགས་_འཛིན་བཟུང་_མཛོད་_གསོག་འཇོག་_རྒྱབ་ལྗོངས་ལ་སྤྲོད་པའི་སྒྲུབ་བྱེད།"
 
 #: storages.py:14
 msgid ""

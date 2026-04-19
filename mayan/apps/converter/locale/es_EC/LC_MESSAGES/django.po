@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 10:33+0000\n"
+"POT-Creation-Date: 2026-04-19 18:47+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Roberto Rosario, 2024\n"
 "Language-Team: Spanish (Ecuador) (https://app.transifex.com/rosarior/teams/13584/es_EC/)\n"
@@ -365,7 +365,7 @@ msgstr ""
 msgid "Assets cache"
 msgstr "Caché de activos"
 
-#: transformation_mixins.py:18 transformations.py:671
+#: transformation_mixins.py:18 transformations.py:670
 msgid ""
 "Number of degrees to rotate the image counter clockwise around its center."
 msgstr ""
@@ -401,8 +401,8 @@ msgid "Horizontal position in pixels from the left."
 msgstr "Posición horizontal en píxeles desde la izquierda."
 
 #: transformation_mixins.py:119 transformation_mixins.py:164
-#: transformation_mixins.py:229 transformations.py:236 transformations.py:338
-#: transformations.py:436
+#: transformation_mixins.py:229 transformations.py:235 transformations.py:337
+#: transformations.py:435
 msgid "Left"
 msgstr "Izquierda"
 
@@ -411,8 +411,8 @@ msgid "Vertical position in pixels from the top."
 msgstr "Posición vertical en píxeles desde la parte superior."
 
 #: transformation_mixins.py:123 transformation_mixins.py:169
-#: transformation_mixins.py:239 transformations.py:240 transformations.py:342
-#: transformations.py:440
+#: transformation_mixins.py:239 transformations.py:239 transformations.py:341
+#: transformations.py:439
 msgid "Top"
 msgstr "Parte superior"
 
@@ -428,7 +428,7 @@ msgstr "Posición horizontal en porcentaje desde la izquierda."
 msgid "Vertical position in percent from the top."
 msgstr "Posición vertical en porcentaje desde la parte superior."
 
-#: transformation_mixins.py:222 transformations.py:224
+#: transformation_mixins.py:222 transformations.py:223
 msgid "Paste an asset as watermark"
 msgstr "Pegar un activo como marca de agua"
 
@@ -440,8 +440,8 @@ msgstr "Posición de inicio horizontal en píxeles desde la izquierda."
 msgid "Horizontal end position in pixels from the right."
 msgstr "Posición final horizontal en píxeles desde la derecha."
 
-#: transformation_mixins.py:234 transformations.py:245 transformations.py:346
-#: transformations.py:444
+#: transformation_mixins.py:234 transformations.py:244 transformations.py:345
+#: transformations.py:443
 msgid "Right"
 msgstr "Derecha"
 
@@ -453,8 +453,8 @@ msgstr "Posición de inicio vertical en píxeles desde la parte superior."
 msgid "Vertical end position in pixels from the top."
 msgstr "Posición final vertical en píxeles desde la parte superior."
 
-#: transformation_mixins.py:244 transformations.py:250 transformations.py:350
-#: transformations.py:448
+#: transformation_mixins.py:244 transformations.py:249 transformations.py:349
+#: transformations.py:447
 msgid "Bottom"
 msgstr "Abajo"
 
@@ -510,135 +510,135 @@ msgstr "Ancho en píxeles del contorno del rectángulo."
 msgid "Outline width"
 msgstr "Ancho del contorno"
 
-#: transformations.py:208
+#: transformations.py:207
 msgid "Paste an asset (absolute coordinates)"
 msgstr "Pegar un activo (coordenadas absolutas)"
 
-#: transformations.py:216
+#: transformations.py:215
 msgid "Paste an asset (percent coordinates)"
 msgstr "Pegar una imagen (coordenadas porcentuales)"
 
-#: transformations.py:230
+#: transformations.py:229
 msgid "Crop"
 msgstr "Recortar"
 
-#: transformations.py:235
+#: transformations.py:234
 msgid "Number of pixels to remove from the left."
 msgstr "Número de píxeles a eliminar de la izquierda."
 
-#: transformations.py:239
+#: transformations.py:238
 msgid "Number of pixels to remove from the top."
 msgstr "Número de píxeles a eliminar de la parte superior."
 
-#: transformations.py:244
+#: transformations.py:243
 msgid "Number of pixels to remove from the right."
 msgstr "Número de píxeles a eliminar de la derecha."
 
-#: transformations.py:249
+#: transformations.py:248
 msgid "Number of pixels to remove from the bottom."
 msgstr "Número de píxeles a eliminar de la parte inferior."
 
-#: transformations.py:332
+#: transformations.py:331
 msgid "Draw rectangle"
 msgstr "Dibujar rectángulo"
 
-#: transformations.py:337
+#: transformations.py:336
 msgid "Left side location in pixels."
 msgstr "Ubicación del lado izquierdo en píxeles."
 
-#: transformations.py:341
+#: transformations.py:340
 msgid "Top side location in pixels."
 msgstr "Ubicación del lado superior en píxeles."
 
-#: transformations.py:345
+#: transformations.py:344
 msgid "Right side location in pixels."
 msgstr "Ubicación del lado derecho en píxeles."
 
-#: transformations.py:349
+#: transformations.py:348
 msgid "Bottom side location in pixels."
 msgstr "Ubicación del lado inferior en píxeles."
 
-#: transformations.py:430
+#: transformations.py:429
 msgid "Draw rectangle (percent coordinates)"
 msgstr "Dibujar rectángulo (coordenadas porcentuales)"
 
-#: transformations.py:435
+#: transformations.py:434
 msgid "Left side location in percent."
 msgstr "Ubicación del lado izquierdo en porcentaje."
 
-#: transformations.py:439
+#: transformations.py:438
 msgid "Top side location in percent."
 msgstr "Ubicación del lado superior en porcentaje."
 
-#: transformations.py:443
+#: transformations.py:442
 msgid "Right side location in percent."
 msgstr "Ubicación del lado derecho en porcentaje."
 
-#: transformations.py:447
+#: transformations.py:446
 msgid "Bottom side location in percent."
 msgstr "Ubicación del lado inferior en porcentaje."
 
-#: transformations.py:530
+#: transformations.py:529
 msgid "Flip"
 msgstr "Voltear"
 
-#: transformations.py:541
+#: transformations.py:540
 msgid "Gaussian blur"
 msgstr "Desenfoque gaussiano"
 
-#: transformations.py:546 transformations.py:747
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr "Radio"
 
-#: transformations.py:558
+#: transformations.py:557
 msgid "Line art"
 msgstr "Arte lineal"
 
-#: transformations.py:572
+#: transformations.py:571
 msgid "Mirror"
 msgstr "Espejo"
 
-#: transformations.py:585
+#: transformations.py:584
 msgid "Draw a QRCode (percent coordinates)"
 msgstr "Dibujar un código QR (coordenadas porcentuales)"
 
-#: transformations.py:595
+#: transformations.py:594
 msgid "Value to encode in the QRCode."
 msgstr "Valor a codificar en el QRCode."
 
-#: transformations.py:596
+#: transformations.py:595
 msgid "Code value"
 msgstr "Valor del código"
 
-#: transformations.py:621
+#: transformations.py:620
 msgid "Resize"
 msgstr "Cambiar el tamaño"
 
-#: transformations.py:627
+#: transformations.py:626
 msgid "New width in pixels."
 msgstr "Nuevo ancho en píxeles."
 
-#: transformations.py:628
+#: transformations.py:627
 msgid "Width"
 msgstr "Ancho"
 
-#: transformations.py:632
+#: transformations.py:631
 msgid "New height in pixels."
 msgstr "Nueva altura en píxeles."
 
-#: transformations.py:633
+#: transformations.py:632
 msgid "Height"
 msgstr "Altura"
 
-#: transformations.py:665
+#: transformations.py:664
 msgid "Rotate"
 msgstr "Girar"
 
-#: transformations.py:673
+#: transformations.py:672
 msgid "Degrees"
 msgstr "Grados"
 
-#: transformations.py:677
+#: transformations.py:676
 msgid "Color to be used for area outside of the rotated image."
 msgstr "Color que se usará para el área fuera de la imagen girada."
 

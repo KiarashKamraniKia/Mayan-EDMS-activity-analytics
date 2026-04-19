@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 10:33+0000\n"
+"POT-Creation-Date: 2026-04-19 18:47+0000\n"
 "PO-Revision-Date: 2020-03-28 07:22+0000\n"
 "Last-Translator: Roberto Rosario\n"
 "Language-Team: English (http://www.transifex.com/rosarior/mayan-edms/"
@@ -48,7 +48,7 @@ msgstr ""
 msgid "ACL edited"
 msgstr ""
 
-#: forms.py:12 models.py:58 serializers.py:79 views.py:73
+#: forms.py:12 models.py:59 serializers.py:79 views.py:73
 msgid "Role"
 msgstr ""
 

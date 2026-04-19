@@ -9,14 +9,15 @@
 # Roberto Rosario, 2024
 # bo feng <87289884@qq.com>, 2024
 # yan songwei <yansw@vip.163.com>, 2024
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-27 19:21+0000\n"
+"POT-Creation-Date: 2026-04-19 18:47+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
-"Last-Translator: yan songwei <yansw@vip.163.com>, 2024\n"
+"Last-Translator: YJ Chen, 2026\n"
 "Language-Team: Chinese Simplified (https://app.transifex.com/rosarior/teams/13584/zh-Hans/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +27,7 @@ msgstr ""
 
 #: apps.py:15
 msgid "Appearance (Bootstrap)"
-msgstr ""
+msgstr "外觀（Bootstrap）"
 
 #: dependencies.py:8
 msgid "Lato font"
@@ -125,14 +126,14 @@ msgstr ""
 msgid "Released under the license:"
 msgstr "根据许可证发布："
 
-#: templates/appearance/about.html:57
+#: templates/appearance/about.html:59
 #, python-format
 msgid ""
 "To get the latest news subscribe to the <a class=\"new_window\" "
 "href=\"%(link_mailing_list_url)s\"> Mailing list</a>."
 msgstr ""
 
-#: templates/appearance/about.html:66
+#: templates/appearance/about.html:68
 #, python-format
 msgid ""
 "For articles, tutorials, troubleshooting, subscribe to the <a "
@@ -140,35 +141,35 @@ msgid ""
 "base</a>."
 msgstr ""
 
-#: templates/appearance/about.html:75
+#: templates/appearance/about.html:77
 #, python-format
 msgid ""
 "Need professional help? Check out the <a class=\"new_window\" "
 "href=\"%(link_support_url)s\"> Support</a> offerings."
 msgstr ""
 
-#: templates/appearance/about.html:84
+#: templates/appearance/about.html:86
 #, python-format
 msgid ""
 "For discussions visit the <a class=\"new_window\" "
 "href=\"%(link_forum_url)s\">Community forum</a>."
 msgstr ""
 
-#: templates/appearance/about.html:93
+#: templates/appearance/about.html:95
 #, python-format
 msgid ""
 "The complete list of changes is available via the <a class=\"new_window\" "
 "href=\"%(link_release_notes_url)s\">Release notes</a>."
 msgstr ""
 
-#: templates/appearance/about.html:102
+#: templates/appearance/about.html:104
 #, python-format
 msgid ""
 "For questions check the <a class=\"new_window\" "
 "href=\"%(link_documentation_url)s\">Documentation</a>."
 msgstr ""
 
-#: templates/appearance/about.html:111
+#: templates/appearance/about.html:113
 #, python-format
 msgid ""
 "If you found a bug or have a feature idea open a ticket in the <a "
@@ -176,7 +177,7 @@ msgid ""
 "repository</a>."
 msgstr ""
 
-#: templates/appearance/about.html:117
+#: templates/appearance/about.html:119
 #, python-format
 msgid ""
 "%(project_title)s is Free and Open Source software, which is provided as-is "
@@ -257,13 +258,13 @@ msgstr "总计：%(total)s"
 msgid "No results"
 msgstr "没有结果"
 
-#: templates/appearance/partials/list/pagination.html:12
-#: templates/appearance/partials/list/pagination.html:14
+#: templates/appearance/partials/list/pagination.html:13
+#: templates/appearance/partials/list/pagination.html:15
 msgid "Previous page"
 msgstr "上一页"
 
-#: templates/appearance/partials/list/pagination.html:30
-#: templates/appearance/partials/list/pagination.html:32
+#: templates/appearance/partials/list/pagination.html:31
+#: templates/appearance/partials/list/pagination.html:33
 msgid "Next page"
 msgstr "下一页"
 
@@ -314,16 +315,16 @@ msgstr "切换列表显示模式"
 
 #: templates/navigation/app/list_toolbar.html:25
 msgid "Sort by column"
-msgstr ""
+msgstr "依欄位排序"
 
 #: templates/navigation/app/list_toolbar.html:26
 msgid "--- Clear ---"
-msgstr ""
+msgstr "--- 清除 ---"
 
 #: templates/navigation/app/list_toolbar.html:29
 msgid "(ascending)"
-msgstr ""
+msgstr "(遞增)"
 
 #: templates/navigation/app/list_toolbar.html:31
 msgid "(descending)"
-msgstr ""
+msgstr "(遞減)"

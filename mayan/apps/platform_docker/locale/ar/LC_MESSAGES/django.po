@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-04 04:34+0000\n"
+"POT-Creation-Date: 2026-04-19 18:49+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Mohamad Ashmar, 2025\n"
 "Language-Team: Arabic (https://app.transifex.com/rosarior/teams/13584/ar/)\n"
@@ -37,19 +37,19 @@ msgstr "يسمح بتعيين قيمة max-memory-per-child لـ Celery الخ
 msgid "Allows setting the worker's Celery `max-tasks-per-child` value."
 msgstr "يسمح بتعيين قيمة max-tasks-per-child لـ Celery الخاص بالعامل."
 
-#: platform_templates.py:26
+#: platform_templates.py:29
 msgid "Template for entrypoint.sh file inside a Docker image."
 msgstr "قالب لملف entrypoint.sh داخل صورة Docker."
 
-#: platform_templates.py:41
+#: platform_templates.py:44
 msgid "Template that generates the Docker Compose file."
 msgstr "قالب يولد ملف Docker Compose."
 
-#: platform_templates.py:206
+#: platform_templates.py:209
 msgid "Template for Supervisord inside a Docker image."
 msgstr "النموذج الخاص بالـ Doker"
 
-#: platform_templates.py:224
+#: platform_templates.py:227
 msgid "Template that generates a Dockerfile file."
 msgstr "قالب يولد ملف Dockerfile."
 

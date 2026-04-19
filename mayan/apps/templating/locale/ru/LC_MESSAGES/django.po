@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 12:51+0000\n"
+"POT-Creation-Date: 2026-04-19 18:49+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Ilya Pavlov <spirkaa@gmail.com>, 2024\n"
 "Language-Team: Russian (https://app.transifex.com/rosarior/teams/13584/ru/)\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Language: ru\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: apps.py:21 permissions.py:6 settings.py:94
+#: apps.py:21 permissions.py:6 settings.py:96
 msgid "Templating"
 msgstr "Шаблоны"
 
@@ -92,10 +92,20 @@ msgstr ""
 msgid "URL"
 msgstr "URL"
 
-#: settings.py:101
+#: settings.py:102
+msgid ""
+"A comma separated list of dangerous templating tags and filters that are "
+"allowed."
+msgstr ""
+
+#: settings.py:110
 msgid ""
 "Theme name of the CSS stylesheet used to change the visual appearance of the"
 " template preview."
+msgstr ""
+
+#: templatetags/templating_tags.py:63
+msgid "Tag can bypass access controls and create permanent changes."
 msgstr ""
 
 #: views.py:44
@@ -108,18 +118,18 @@ msgstr "Песочница шаблонов для: %s"
 msgid "Template error; %(exception)s"
 msgstr "Ошибка в шаблоне; %(exception)s"
 
-#: widgets.py:42
+#: widgets.py:43
 msgid "Filters"
 msgstr "Фильтры"
 
-#: widgets.py:49
+#: widgets.py:50
 msgid "Tags"
 msgstr "Метки"
 
-#: widgets.py:56
+#: widgets.py:57
 msgid "<Filters and tags>"
 msgstr "<Фильтры и метки>"
 
-#: widgets.py:129
+#: widgets.py:136
 msgid "<Model attributes>"
 msgstr "<Атрибуты модели>"

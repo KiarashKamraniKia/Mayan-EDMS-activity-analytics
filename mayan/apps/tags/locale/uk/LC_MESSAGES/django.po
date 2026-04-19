@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 18:08+0000\n"
+"POT-Creation-Date: 2026-04-19 18:49+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Leo Lado, 2024\n"
 "Language-Team: Ukrainian (https://app.transifex.com/rosarior/teams/13584/uk/)\n"
@@ -227,7 +227,7 @@ msgstr "Додати теги до документа: %(object)s"
 msgid "Attach tags to %(count)d document."
 msgstr "Додати теги до документа %(count)d ."
 
-#: views/document_views.py:58 wizard_steps.py:82
+#: views/document_views.py:58 wizard_steps.py:89
 msgid "Tags to be attached."
 msgstr "Теги, які потрібно додати."
 
@@ -339,7 +339,7 @@ msgstr "Немає доступних тегів"
 msgid "Documents with the tag: %s"
 msgstr "Документи з тегом: %s"
 
-#: wizard_steps.py:21
+#: wizard_steps.py:20
 msgid "Select tags"
 msgstr "Виберати теги"
 

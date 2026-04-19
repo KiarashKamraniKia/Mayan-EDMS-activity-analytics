@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 12:51+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -258,34 +258,34 @@ msgstr ""
 "བརྡ་འཕྲིན་ &quot; %(instance)s &quot; མ་བཀླགས་པར་རྟགས་བཀོད་པའི་ནོར་འཁྲུལ། "
 "%(exception)s"
 
-#: views.py:200
+#: views.py:201
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)d བརྡ་འཕྲིན་དེ་དག་མཐར་ཕྱིན་ངང་མ་བཀླགས་པར་རྟགས་བཀོད་ཡོད།"
 
-#: views.py:203
+#: views.py:204
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr ""
 "བརྡ་འཕྲིན་ &quot; %(object)s &quot; "
 "མཐར་ཕྱིན་པར་ཀློག་མ་ཐུབ་པའི་རྟགས་བཀོད་ཡོད།"
 
-#: views.py:206
+#: views.py:207
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "%(count)d བརྡ་འཕྲིན་དེ་མཐར་ཕྱིན་ངང་མ་བཀླགས་པར་རྟགས་བཀོད་ཡོད།"
 
-#: views.py:208
+#: views.py:209
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "འདེམས་སྒྲུག་བྱས་པའི་བརྡ་འཕྲིན་དེ་ཚོ་མ་བཀླགས་པར་རྟགས་བཀོད %(count)d"
 
-#: views.py:209
+#: views.py:210
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "བརྡ་འཕྲིན་ &quot; %(object)s &quot; དེ་མ་བཀླགས་པར་རྟགས་བཀོད།"
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "འདེམས་སྒྲུག་བྱས་པའི་བརྡ་འཕྲིན་དེ་ཀློག་མ་ཐུབ་པར་རྟགས་བཀོད %(count)d"

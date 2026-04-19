@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-25 17:02+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Hany salah, 2025\n"
 "Language-Team: Arabic (Egypt) (https://app.transifex.com/rosarior/teams/13584/ar_EG/)\n"
@@ -57,6 +57,11 @@ msgstr "رابط المستند"
 msgid "Document thumbnail"
 msgstr "صورة مصغرة للمستند"
 
+#: classes.py:76
+#, python-format
+msgid "Invalid `{}` `%s`"
+msgstr ""
+
 #: events.py:10
 msgid "Document metadata added"
 msgstr "إضافة بيانات وصفية للوثيقة"
@@ -85,7 +90,7 @@ msgstr "تحديث ارتباطات البيانات الوصفية"
 msgid "ID"
 msgstr "المعرف"
 
-#: forms.py:17 models/metadata_type_models.py:35
+#: forms.py:17 models/metadata_type_models.py:33
 msgid "Name"
 msgstr "اسم"
 
@@ -97,7 +102,7 @@ msgstr "قيمة"
 msgid "Update"
 msgstr "تحديث"
 
-#: forms.py:50 forms.py:233 models/document_type_metadata_type_models.py:31
+#: forms.py:50 forms.py:234 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "متطلب"
 
@@ -111,46 +116,46 @@ msgstr "خطأ في قيمة البحث: %s"
 msgid "Default value error: %s"
 msgstr "خطأ القيمة الافتراضية: %s"
 
-#: forms.py:116 models/metadata_type_models.py:120
+#: forms.py:116 models/metadata_type_models.py:118
 #, python-format
 msgid "\"%s\" is required for this document type."
 msgstr "مطلوب &quot;%s&quot; لنوع المستند هذا."
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr "يرجى الإختيار لإكمال عملية الإضافة"
 
-#: forms.py:138 models/document_type_metadata_type_models.py:28
-#: models/metadata_type_models.py:83 search.py:12 serializers.py:52
-#: serializers.py:114 workflow_actions.py:148
+#: forms.py:139 models/document_type_metadata_type_models.py:28
+#: models/metadata_type_models.py:81 search.py:12 serializers.py:81
+#: serializers.py:143 workflow_actions.py:148
 msgid "Metadata type"
 msgstr "نوع البيانات الوصفية"
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "حذف"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr "أساسي"
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr "القيم"
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr "التحقق"
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr "تفسير"
 
-#: forms.py:231
+#: forms.py:232
 msgid "None"
 msgstr "لا شيء"
 
-#: forms.py:232
+#: forms.py:233
 msgid "Optional"
 msgstr "اختياري"
 
@@ -398,11 +403,11 @@ msgstr "مُعرِّف نوع المستند"
 msgid "Document type label"
 msgstr "إسم نوع الوثيقة"
 
-#: search.py:40 serializers.py:57 serializers.py:107
+#: search.py:40 serializers.py:86 serializers.py:136
 msgid "Metadata type ID"
 msgstr "معرف نوع البيانات الوصفية"
 
-#: serializers.py:32 serializers.py:61 serializers.py:117
+#: serializers.py:35 serializers.py:90 serializers.py:146
 msgid "URL"
 msgstr "URL"
 
@@ -410,7 +415,7 @@ msgstr "URL"
 msgid "Primary key of the metadata type to be added."
 msgstr "المفتاح الأساسي لنوع البيانات الوصفية المراد إضافته."
 
-#: serializers.py:105
+#: serializers.py:134
 msgid "Primary key of the metadata type to be added to the document."
 msgstr "المفتاح الأساسي لنوع البيانات الأولية المراد إضافته إلى المستند."
 

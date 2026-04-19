@@ -14,9 +14,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 10:33+0000\n"
+"POT-Creation-Date: 2026-04-19 18:47+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
-"Last-Translator: Leon Chu, 2024\n"
+"Last-Translator: YJ Chen, 2026\n"
 "Language-Team: Chinese Simplified (https://app.transifex.com/rosarior/teams/13584/zh-Hans/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,7 +54,7 @@ msgstr "已刪除的ACL存取控制"
 msgid "ACL edited"
 msgstr "ACL已编辑"
 
-#: forms.py:12 models.py:58 serializers.py:79 views.py:73
+#: forms.py:12 models.py:59 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "角色"
 

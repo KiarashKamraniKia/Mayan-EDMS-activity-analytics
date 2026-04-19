@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-11 10:33+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -100,7 +100,7 @@ msgstr "パーティション内ファイル数"
 msgid "Total cached files."
 msgstr "キャッシュされたファイル合計"
 
-#: model_mixins.py:111 model_mixins.py:324
+#: model_mixins.py:111 model_mixins.py:323
 msgid "Current size"
 msgstr "現在のサイズ"
 
@@ -112,7 +112,7 @@ msgstr "キャッシュの現在のサイズ"
 msgid "Label"
 msgstr "ラベル"
 
-#: model_mixins.py:326
+#: model_mixins.py:325
 msgid "Current size of the cache partition."
 msgstr "キャッシュパーティションの現在のサイズ"
 

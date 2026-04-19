@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 18:08+0000\n"
+"POT-Creation-Date: 2026-04-19 18:49+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Mathias Behrle <mathiasb@m9s.biz>, 2025\n"
 "Language-Team: German (Germany) (https://app.transifex.com/rosarior/teams/13584/de_DE/)\n"
@@ -230,7 +230,7 @@ msgstr "Tags anhängen an Dokument: %(object)s"
 msgid "Attach tags to %(count)d document."
 msgstr "Tags an %(count)d Dokument anhängen."
 
-#: views/document_views.py:58 wizard_steps.py:82
+#: views/document_views.py:58 wizard_steps.py:89
 msgid "Tags to be attached."
 msgstr "Hinzuzufügende Tags."
 
@@ -340,7 +340,7 @@ msgstr "Keine Tags verfügbar"
 msgid "Documents with the tag: %s"
 msgstr "Dokumente mit Tag %s"
 
-#: wizard_steps.py:21
+#: wizard_steps.py:20
 msgid "Select tags"
 msgstr "Tags auswählen"
 

@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-26 19:04+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Frédéric Sheedy <sheedf@gmail.com>, 2024\n"
 "Language-Team: French (France) (https://app.transifex.com/rosarior/teams/13584/fr_FR/)\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "None"
 msgstr "Aucun"
 
-#: admin.py:26 links.py:88 models/index_template_models.py:50
+#: admin.py:26 links.py:88 models/index_template_models.py:51
 #: serializers/index_template_serializers.py:196
 msgid "Document types"
 msgstr "Types de document"
@@ -85,8 +85,8 @@ msgstr "Espace de nommage"
 msgid "Label"
 msgstr "Libellé"
 
-#: forms.py:32 models/index_template_models.py:46
-#: models/index_template_models.py:166
+#: forms.py:32 models/index_template_models.py:47
+#: models/index_template_models.py:167
 msgid "Enabled"
 msgstr "Activé"
 
@@ -94,7 +94,7 @@ msgstr "Activé"
 msgid "Index templates to be queued for rebuilding."
 msgstr "Les modèles d'index en en file d'attente pour la reconstruction."
 
-#: forms.py:47 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:47 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "Modèles d'index"

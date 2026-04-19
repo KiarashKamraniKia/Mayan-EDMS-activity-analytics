@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 18:08+0000\n"
+"POT-Creation-Date: 2026-04-19 18:49+0000\n"
 "PO-Revision-Date: 2024-07-11 12:52+0000\n"
 "Last-Translator: Harald Ersch, 2024\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -26,11 +26,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Gestionar de sarcini"
 
-#: apps.py:116 apps.py:141 apps.py:184
+#: apps.py:116 apps.py:142 apps.py:185
 msgid "Label"
 msgstr "Conținut etichetă"
 
-#: apps.py:120 apps.py:144 apps.py:188
+#: apps.py:120 apps.py:145 apps.py:189
 msgid "Name"
 msgstr "Nume"
 
@@ -48,43 +48,43 @@ msgstr ""
 "se pierd dacă brokerul este repornit. Cozile tranzitorii folosesc mai puține"
 " resurse și gestionează sarcini non-critice."
 
-#: apps.py:133
+#: apps.py:134
 msgid "Is transient?"
 msgstr "Este tranzitorie?"
 
-#: apps.py:147
+#: apps.py:148
 msgid "Dotted path"
 msgstr "Calea punctată"
 
-#: apps.py:151
+#: apps.py:152
 msgid "Schedule"
 msgstr "Orar"
 
-#: apps.py:157
+#: apps.py:158
 msgid "Type"
 msgstr "Tip"
 
-#: apps.py:162
+#: apps.py:163
 msgid "Start time"
 msgstr "Timpul de începere"
 
-#: apps.py:166
+#: apps.py:167
 msgid "Host"
 msgstr "Gazdă"
 
-#: apps.py:170
+#: apps.py:171
 msgid "Arguments"
 msgstr "Argumente"
 
-#: apps.py:174
+#: apps.py:175
 msgid "Keyword arguments"
 msgstr "Argumentele cuvinte cheie"
 
-#: apps.py:179
+#: apps.py:180
 msgid "Worker process ID"
 msgstr "ID-ul procesului de lucru"
 
-#: apps.py:192
+#: apps.py:193
 msgid ""
 "Maximum amount of resident memory a worker can execute before it's replaced "
 "by a new process."
@@ -92,11 +92,11 @@ msgstr ""
 "Cantitatea maximă de memorie rezidentă pe care o poate executa un lucrător "
 "înainte de a fi înlocuită cu un nou proces."
 
-#: apps.py:194
+#: apps.py:195
 msgid "Maximum memory per child"
 msgstr "Memoria maximă per copil"
 
-#: apps.py:198
+#: apps.py:199
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
@@ -104,11 +104,11 @@ msgstr ""
 "Numărul maxim de sarcini pe care un lucrător le poate executa înainte de a "
 "fi înlocuit cu un nou proces."
 
-#: apps.py:200
+#: apps.py:201
 msgid "Maximum tasks per child"
 msgstr "Sarcini maxime per copil"
 
-#: apps.py:204
+#: apps.py:205
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
@@ -116,11 +116,11 @@ msgstr ""
 "Numărul de procese/fire de execuție care sunt lansate. Implicit, numărul de "
 "procesoare disponibile pe mașină."
 
-#: apps.py:206
+#: apps.py:207
 msgid "Concurrency"
 msgstr "Concurență"
 
-#: apps.py:210
+#: apps.py:211
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
@@ -128,7 +128,7 @@ msgstr ""
 "Valoarea -nice- determină prioritatea procesului. O valoare mai mare scade "
 "prioritatea. Valoarea implicită este 0."
 
-#: apps.py:213
+#: apps.py:214
 msgid "Nice level"
 msgstr "Nivel nice"
 
