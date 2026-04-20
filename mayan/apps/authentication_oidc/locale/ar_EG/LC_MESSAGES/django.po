@@ -24,7 +24,7 @@ msgstr ""
 msgid "Authentication OIDC"
 msgstr "التحقق من الهوية عبر حساب خارجي OIDC"
 
-#: authentication_backends.py:97
+#: authentication_backends.py:102
 msgid "Login via OIDC"
 msgstr "تسجيل الدخول باستخدام حساب آخر OIDC"
 

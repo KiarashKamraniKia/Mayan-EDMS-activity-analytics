@@ -94,7 +94,7 @@ msgstr "&quot;%s&quot; не е валиден запис."
 msgid "Save"
 msgstr "Запазване"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "Настройки"
 
@@ -106,11 +106,11 @@ msgstr "Редактиране"
 msgid "Revert"
 msgstr "Обръщане"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "Именни пространства"
 
-#: literals.py:47
+#: literals.py:48
 msgid ""
 "Local storage is currently disabled, changes to settings will not be saved. "
 "Instead, use environment variables to modify settings."
@@ -139,6 +139,10 @@ msgstr ""
 #: models.py:20
 msgid "Updated settings"
 msgstr ""
+
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "Пространство на имената на настройките"
 
 #: permissions.py:10
 msgid "Edit settings"
@@ -488,13 +492,10 @@ msgstr ""
 
 #: settings.py:281
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"По подразбиране: &#39;sessionid&#39;. Името на бисквитката, която да "
-"използвате за сесии. Това може да бъде каквото искате (стига да е различно "
-"от другите имена на бисквитки във вашето приложение)."
 
 #: settings.py:289
 msgid ""

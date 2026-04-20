@@ -103,7 +103,7 @@ msgstr "Număr de fișiere de partiție"
 msgid "Total cached files."
 msgstr "Numărul total de fișiere stocate în cache."
 
-#: model_mixins.py:111 model_mixins.py:324
+#: model_mixins.py:111 model_mixins.py:323
 msgid "Current size"
 msgstr "Dimensiunea curentă"
 
@@ -115,7 +115,7 @@ msgstr "Dimensiunea actuală a memoriei cache."
 msgid "Label"
 msgstr "Conținut etichetă"
 
-#: model_mixins.py:326
+#: model_mixins.py:325
 msgid "Current size of the cache partition."
 msgstr "Dimensiunea actuală a partiției cache."
 

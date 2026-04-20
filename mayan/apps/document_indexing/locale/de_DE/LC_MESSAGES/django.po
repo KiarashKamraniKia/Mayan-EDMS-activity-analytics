@@ -33,7 +33,7 @@ msgstr ""
 msgid "None"
 msgstr "Keine"
 
-#: admin.py:26 links.py:88 models/index_template_models.py:50
+#: admin.py:26 links.py:88 models/index_template_models.py:51
 #: serializers/index_template_serializers.py:196
 msgid "Document types"
 msgstr "Dokumententypen"
@@ -87,8 +87,8 @@ msgstr "Namensraum"
 msgid "Label"
 msgstr "Bezeichner"
 
-#: forms.py:32 models/index_template_models.py:46
-#: models/index_template_models.py:166
+#: forms.py:32 models/index_template_models.py:47
+#: models/index_template_models.py:167
 msgid "Enabled"
 msgstr "Aktiviert"
 
@@ -96,7 +96,7 @@ msgstr "Aktiviert"
 msgid "Index templates to be queued for rebuilding."
 msgstr "In die Warteschlange für den Wiederaufbau eingestellte Indexvorlagen."
 
-#: forms.py:47 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:47 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "Indexvorlagen"
@@ -161,7 +161,7 @@ msgstr "Nein"
 msgid "Yes"
 msgstr "Ja"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
@@ -170,25 +170,25 @@ msgstr ""
 "Fehler bei der Indexierung von Dokument %(document)s; Ausdruck: "
 "%(expression)s; %(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr ""
 "Gesamtzahl der Knotenpunkte mit einmaligen Werten, die dieses Element "
 "beinhaltet."
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "Gesamtzahl einmaliger Dokumente, die dieses Element beinhaltet."
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "Gesamtzahl der Knotenpunktebenen, die dieses Element beinhaltet."
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "Der Pfad zum Index, einschließlich aller übergeordneten Elemente."
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "Vollständiger Pfad"
 
@@ -200,7 +200,7 @@ msgstr "Index-Instanz"
 msgid "Index instances"
 msgstr "Index-Instanzen"
 
-#: models/index_instance_models.py:59 models/index_template_models.py:178
+#: models/index_instance_models.py:59 models/index_template_models.py:179
 msgid "Index template node"
 msgstr "Index Knotenpunkt"
 
@@ -236,58 +236,58 @@ msgstr "Kurze Beschreibung dieses Index."
 msgid "This value will be used by other apps to reference this index."
 msgstr "Interner Name um diesen Index zu identifizieren."
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "Webkürzel"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr ""
 "Bewirkt Sichtbarkeit und Aktualisierung des Index, wenn Dokumente geändert "
 "werden."
 
-#: models/index_template_models.py:57 models/index_template_models.py:97
+#: models/index_template_models.py:58 models/index_template_models.py:98
 msgid "Index template"
 msgstr "Indexvorlage"
 
-#: models/index_template_models.py:101
+#: models/index_template_models.py:102
 msgid "Event type"
 msgstr "Ereignistyp"
 
-#: models/index_template_models.py:106
+#: models/index_template_models.py:107
 msgid "Index template event trigger"
 msgstr "Indexvorlagen-Ereignistrigger"
 
-#: models/index_template_models.py:107
+#: models/index_template_models.py:108
 msgid "Index template event triggers"
 msgstr "Indexvorlagen-Ereignistrigger"
 
-#: models/index_template_models.py:145
+#: models/index_template_models.py:146
 msgid "Parent index template node of this node."
 msgstr "Übergeordnete Knotenpunkt-Indexvorlage."
 
-#: models/index_template_models.py:151
+#: models/index_template_models.py:152
 msgid "Index"
 msgstr "Index"
 
-#: models/index_template_models.py:155
+#: models/index_template_models.py:156
 msgid "Enter a template to render. Use Django's default templating language."
 msgstr ""
 "Vorlage zur Generierung eingeben. Django's Standard-Vorlagen-Sprache "
 "benutzen."
 
-#: models/index_template_models.py:158
+#: models/index_template_models.py:159
 msgid "Indexing expression"
 msgstr "Indexierungsausdruck"
 
-#: models/index_template_models.py:163
+#: models/index_template_models.py:164
 msgid "Causes this node to be visible and updated when document data changes."
 msgstr ""
 "Bewirkt Sichtbarkeit und Aktualisierung des Index, wenn Dokumente geändert "
 "werden."
 
-#: models/index_template_models.py:171
+#: models/index_template_models.py:172
 msgid ""
 "Check this option to have this node act as a container for documents and not"
 " as a parent for further nodes."
@@ -296,15 +296,15 @@ msgstr ""
 "sollen (und dieser Knoten nicht als Eltern-Knoten für weitere Kind-"
 "Knotenpunkte fungieren soll)."
 
-#: models/index_template_models.py:174
+#: models/index_template_models.py:175
 msgid "Link documents"
 msgstr "Dokumente verknüpfen"
 
-#: models/index_template_models.py:179
+#: models/index_template_models.py:180
 msgid "Index template nodes"
 msgstr "Indexvorlagenknotenpunkte"
 
-#: models/index_template_models.py:183
+#: models/index_template_models.py:184
 msgid "Root"
 msgstr "Wurzel"
 

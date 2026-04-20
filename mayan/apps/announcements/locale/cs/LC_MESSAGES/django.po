@@ -76,19 +76,19 @@ msgstr "Povoleno"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "Datum a čas, po kterém se toto oznámení zobrazí."
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "Počáteční datum"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "Datum a čas, do kdy se má toto oznámení zobrazit."
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "Datum ukončení"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "Oznámení"
 
@@ -158,6 +158,9 @@ msgid ""
 "convey information about your organization, announcements or usage "
 "guidelines for your users."
 msgstr ""
+"Oznámení se zobrazují v přihlašovacím zobrazení. Oznámení můžete použít k "
+"sdělení informací o vaší organizaci, oznámení nebo pokynů k používání pro "
+"vaše uživatele."
 
 #: views.py:120
 msgid "No announcements available"

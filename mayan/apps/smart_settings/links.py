@@ -52,12 +52,13 @@ link_setting_revert = Link(
     text=_(message='Revert'), view='settings:setting_revert_view'
 )
 link_setting_namespace_detail = Link(
-    args='resolved_object.name', icon=icon_setting_namespace_detail,
+    icon=icon_setting_namespace_detail,
+    kwargs={'namespace_name': 'resolved_object.name'},
     permission=permission_settings_view, text=_(message='Settings'),
     view='settings:setting_namespace_detail'
 )
 # Duplicate the link to use a different name.
-link_setting_namespace_root_list = Link(
+link_setting_namespace_list = Link(
     icon=icon_setting_cluster_namespace_list,
     permission=permission_settings_view,
     text=_(message='Namespaces'),

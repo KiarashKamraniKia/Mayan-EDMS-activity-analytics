@@ -1,4 +1,4 @@
-from mayan.apps.smart_settings.setting_namespaces import (
+from mayan.apps.smart_settings.namespace_migrations import (
     SettingNamespaceMigration
 )
 from mayan.apps.smart_settings.utils import smart_yaml_load

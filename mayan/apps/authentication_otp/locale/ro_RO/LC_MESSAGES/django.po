@@ -62,22 +62,22 @@ msgstr ""
 "Scanați codul QR sau introduceți secretul în dispozitivul dvs. de "
 "autentificare. Nu împărtășiți acest secret, tratați-l ca pe o parolă."
 
-#: forms.py:107 forms.py:112
+#: forms.py:108 forms.py:113
 msgid "Secret"
 msgstr "Secret"
 
-#: forms.py:118
+#: forms.py:119
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 "Introduceți jetonul corespunzător pentru a valida dacă secretul a fost "
 "salvat corect."
 
-#: forms.py:121
+#: forms.py:122
 msgid "Token"
 msgstr "Jeton"
 
-#: forms.py:157
+#: forms.py:158
 msgid "Token is incorrect for the specified secret."
 msgstr "Jetonul este incorect pentru secretul specificat."
 

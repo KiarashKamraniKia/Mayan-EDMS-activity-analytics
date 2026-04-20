@@ -63,7 +63,7 @@ msgstr "تغير الوثيقة الخارجية للعرض"
 msgid "Utility from the poppler-utils package used to inspect PDF files."
 msgstr "ادوات مساعدة اضافية"
 
-#: dependencies.py:19
+#: dependencies.py:20
 msgid ""
 "Utility from the popper-utils package used to extract pages from PDF files "
 "into PPM format images."
@@ -132,11 +132,11 @@ msgstr "المسار التعديلي"
 msgid "Select new transformation"
 msgstr "تحديد جديد"
 
-#: model_mixins.py:120
+#: model_mixins.py:118
 msgid "Badly formatted arguments YAML"
 msgstr "وسائط YAML ذات تنسيق غير صحيح"
 
-#: model_mixins.py:131 models.py:168
+#: model_mixins.py:129 models.py:168
 msgid "Arguments"
 msgstr "المحددات"
 
@@ -355,7 +355,7 @@ msgstr ""
 msgid "Assets cache"
 msgstr "ذاكرة التخزين المؤقت للأصول"
 
-#: transformation_mixins.py:18 transformations.py:671
+#: transformation_mixins.py:18 transformations.py:670
 msgid ""
 "Number of degrees to rotate the image counter clockwise around its center."
 msgstr "عدد الدرجات لتدوير الصورة عكس اتجاه عقارب الساعة حول مركزها."
@@ -389,8 +389,8 @@ msgid "Horizontal position in pixels from the left."
 msgstr "الموضع الأفقي بالبكسل من اليسار."
 
 #: transformation_mixins.py:119 transformation_mixins.py:164
-#: transformation_mixins.py:229 transformations.py:236 transformations.py:338
-#: transformations.py:436
+#: transformation_mixins.py:229 transformations.py:235 transformations.py:337
+#: transformations.py:435
 msgid "Left"
 msgstr "يسار"
 
@@ -399,8 +399,8 @@ msgid "Vertical position in pixels from the top."
 msgstr "الموضع الرأسي بالبكسل من الأعلى."
 
 #: transformation_mixins.py:123 transformation_mixins.py:169
-#: transformation_mixins.py:239 transformations.py:240 transformations.py:342
-#: transformations.py:440
+#: transformation_mixins.py:239 transformations.py:239 transformations.py:341
+#: transformations.py:439
 msgid "Top"
 msgstr "أعلى"
 
@@ -416,7 +416,7 @@ msgstr "الموضع الأفقي كنسبة مئوية من اليسار."
 msgid "Vertical position in percent from the top."
 msgstr "الموضع الرأسي كنسبة مئوية من الأعلى."
 
-#: transformation_mixins.py:222 transformations.py:224
+#: transformation_mixins.py:222 transformations.py:223
 msgid "Paste an asset as watermark"
 msgstr "التعديب مع إضافة العلامة المائية"
 
@@ -428,8 +428,8 @@ msgstr "موضع البداية الأفقي بالبكسل من اليسار."
 msgid "Horizontal end position in pixels from the right."
 msgstr "موضع النهاية الأفقي بالبكسل من اليمين."
 
-#: transformation_mixins.py:234 transformations.py:245 transformations.py:346
-#: transformations.py:444
+#: transformation_mixins.py:234 transformations.py:244 transformations.py:345
+#: transformations.py:443
 msgid "Right"
 msgstr "يمين"
 
@@ -441,8 +441,8 @@ msgstr "موضع البداية الرأسي بالبكسل من الأعلى."
 msgid "Vertical end position in pixels from the top."
 msgstr "موضع النهاية الرأسي بالبكسل من الأعلى."
 
-#: transformation_mixins.py:244 transformations.py:250 transformations.py:350
-#: transformations.py:448
+#: transformation_mixins.py:244 transformations.py:249 transformations.py:349
+#: transformations.py:447
 msgid "Bottom"
 msgstr "أسفل"
 
@@ -498,135 +498,135 @@ msgstr "عرض الإطار الخارجي للمستطيل بالبكسل."
 msgid "Outline width"
 msgstr "عرض الإطار الخارجي"
 
-#: transformations.py:208
+#: transformations.py:207
 msgid "Paste an asset (absolute coordinates)"
 msgstr "لصق أصل بإحداثيات مطلقة"
 
-#: transformations.py:216
+#: transformations.py:215
 msgid "Paste an asset (percent coordinates)"
 msgstr " لصق أصل بإحداثيات النسبة المئوية"
 
-#: transformations.py:230
+#: transformations.py:229
 msgid "Crop"
 msgstr "تحديد"
 
-#: transformations.py:235
+#: transformations.py:234
 msgid "Number of pixels to remove from the left."
 msgstr "عدد البكسلات المراد إزالتها من اليسار."
 
-#: transformations.py:239
+#: transformations.py:238
 msgid "Number of pixels to remove from the top."
 msgstr "عدد البكسلات المراد إزالتها من الأعلى."
 
-#: transformations.py:244
+#: transformations.py:243
 msgid "Number of pixels to remove from the right."
 msgstr "عدد البكسلات المراد إزالتها من اليمين."
 
-#: transformations.py:249
+#: transformations.py:248
 msgid "Number of pixels to remove from the bottom."
 msgstr "عدد البكسلات من الأسفل"
 
-#: transformations.py:332
+#: transformations.py:331
 msgid "Draw rectangle"
 msgstr "أشكال"
 
-#: transformations.py:337
+#: transformations.py:336
 msgid "Left side location in pixels."
 msgstr "الموقع على الجانب الأيسر بالبكسل.ٍ"
 
-#: transformations.py:341
+#: transformations.py:340
 msgid "Top side location in pixels."
 msgstr "الموقع على الجانب العلوي بالبكسل."
 
-#: transformations.py:345
+#: transformations.py:344
 msgid "Right side location in pixels."
 msgstr "الموقع على الجانب الأيمن بالبكسل."
 
-#: transformations.py:349
+#: transformations.py:348
 msgid "Bottom side location in pixels."
 msgstr "الموقع الجانب السفلي بالبكسل."
 
-#: transformations.py:430
+#: transformations.py:429
 msgid "Draw rectangle (percent coordinates)"
 msgstr "رسم مستطيل (إحداثيات النسبة المئوية)"
 
-#: transformations.py:435
+#: transformations.py:434
 msgid "Left side location in percent."
 msgstr "الموقع على الجانب الأيسر بالنسبة المئوية."
 
-#: transformations.py:439
+#: transformations.py:438
 msgid "Top side location in percent."
 msgstr "الموقع على الجانب العلوي بالنسبة المئوية."
 
-#: transformations.py:443
+#: transformations.py:442
 msgid "Right side location in percent."
 msgstr "الموقع على الجانب الأيمن بالنسبة المئوية."
 
-#: transformations.py:447
+#: transformations.py:446
 msgid "Bottom side location in percent."
 msgstr "الموقع على الجانب السفلي بالنسبة المئوية."
 
-#: transformations.py:530
+#: transformations.py:529
 msgid "Flip"
 msgstr "عرض"
 
-#: transformations.py:541
+#: transformations.py:540
 msgid "Gaussian blur"
 msgstr "الضبابي"
 
-#: transformations.py:546 transformations.py:747
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr "نطاق"
 
-#: transformations.py:558
+#: transformations.py:557
 msgid "Line art"
 msgstr "الخط"
 
-#: transformations.py:572
+#: transformations.py:571
 msgid "Mirror"
 msgstr "نسخة مطابقة"
 
-#: transformations.py:585
+#: transformations.py:584
 msgid "Draw a QRCode (percent coordinates)"
 msgstr "رسم رمز QR (إحداثيات نسبية)"
 
-#: transformations.py:595
+#: transformations.py:594
 msgid "Value to encode in the QRCode."
 msgstr "القيمة المراد ترميزها في رمز QR"
 
-#: transformations.py:596
+#: transformations.py:595
 msgid "Code value"
 msgstr "قيمة الرمز"
 
-#: transformations.py:621
+#: transformations.py:620
 msgid "Resize"
 msgstr "تغيير حجم"
 
-#: transformations.py:627
+#: transformations.py:626
 msgid "New width in pixels."
 msgstr "عرض جديد بالبكسل."
 
-#: transformations.py:628
+#: transformations.py:627
 msgid "Width"
 msgstr "عرض"
 
-#: transformations.py:632
+#: transformations.py:631
 msgid "New height in pixels."
 msgstr "ارتفاع جديد بالبكسل."
 
-#: transformations.py:633
+#: transformations.py:632
 msgid "Height"
 msgstr "ارتفاع"
 
-#: transformations.py:665
+#: transformations.py:664
 msgid "Rotate"
 msgstr "تدوير"
 
-#: transformations.py:673
+#: transformations.py:672
 msgid "Degrees"
 msgstr "درجات"
 
-#: transformations.py:677
+#: transformations.py:676
 msgid "Color to be used for area outside of the rotated image."
 msgstr "اللون الذي سيتم استخدامه للمنطقة خارج الصورة الدائرية."
 

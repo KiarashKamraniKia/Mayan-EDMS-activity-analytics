@@ -25,7 +25,7 @@ class StoredCredential(
     )
     internal_name = models.CharField(
         db_index=True, help_text=_(
-            'This value will be used by other apps to reference this '
+            message='This value will be used by other apps to reference this '
             'credential. Can only contain letters, numbers, and underscores.'
         ), max_length=255, unique=True, validators=[validate_internal_name],
         verbose_name=_(message='Internal name')

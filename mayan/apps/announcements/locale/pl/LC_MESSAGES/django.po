@@ -75,19 +75,19 @@ msgstr "Włączone"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "Data i godzina, po której zostanie wyświetlone to ogłoszenie."
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "Ważna od"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "Data i godzina, do której ma się wyświetlić to ogłoszenie."
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "Ważna do"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "Ogłoszenie"
 

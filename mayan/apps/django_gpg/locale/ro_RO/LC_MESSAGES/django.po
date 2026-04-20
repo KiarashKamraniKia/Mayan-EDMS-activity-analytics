@@ -231,7 +231,11 @@ msgstr ""
 "Calea completă către backend pentru a fi folosită pentru a gestiona tastele "
 "și semnăturile."
 
-#: settings.py:27
+#: settings.py:26
+msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
+msgstr ""
+
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "Keyserver-ul  folosit la interogarea cheilor."
 

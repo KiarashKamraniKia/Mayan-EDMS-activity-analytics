@@ -11,27 +11,23 @@ from .settings import (
 class MirrorFilesystemCache:
     @staticmethod
     def get_key_hash(key):
-        return hashlib.sha256(
-            string=force_bytes(s=key)
-        ).hexdigest()
+        key_bytes = force_bytes(s=key)
+        return hashlib.sha256(string=key_bytes).hexdigest()
 
     @staticmethod
     def get_document_key(document):
-        return MirrorFilesystemCache.get_key_hash(
-            key='document_pk_{}'.format(document.pk)
-        )
+        key = 'document_pk_{}'.format(document.pk)
+        return MirrorFilesystemCache.get_key_hash(key=key)
 
     @staticmethod
     def get_node_key(node):
-        return MirrorFilesystemCache.get_key_hash(
-            key='node_pk_{}'.format(node.pk)
-        )
+        key = 'node_pk_{}'.format(node.pk)
+        return MirrorFilesystemCache.get_key_hash(key=key)
 
     @staticmethod
     def get_path_key(path):
-        return MirrorFilesystemCache.get_key_hash(
-            key='path_{}'.format(path)
-        )
+        key = 'path_{}'.format(path)
+        return MirrorFilesystemCache.get_key_hash(key=key)
 
     def __init__(self, name='default'):
         self.cache = caches[name]
@@ -62,37 +58,41 @@ class MirrorFilesystemCache:
         self.cache.delete(key=document_key)
 
     def clean_path(self, path):
-        self.cache.delete(
-            key=MirrorFilesystemCache.get_path_key(path=path)
-        )
+        key = MirrorFilesystemCache.get_path_key(path=path)
+        self.cache.delete(key=key)
 
     def get_path(self, path):
-        return self.cache.get(
-            key=MirrorFilesystemCache.get_path_key(path=path)
-        )
+        key = MirrorFilesystemCache.get_path_key(path=path)
+        return self.cache.get(key=key)
 
     def set_path(self, path, document=None, node=None):
         # Must provide a document_pk or a node_pk
         # not both.
         if document:
+            path_key = MirrorFilesystemCache.get_path_key(path=path)
             self.cache.set(
-                key=MirrorFilesystemCache.get_path_key(path=path),
+                key=path_key,
                 timeout=setting_document_lookup_cache_timeout.value,
                 value={'document_pk': document.pk}
             )
+            document_key = MirrorFilesystemCache.get_document_key(
+                document=document
+            )
             self.cache.set(
-                key=MirrorFilesystemCache.get_document_key(document=document),
+                key=document_key,
                 timeout=setting_document_lookup_cache_timeout.value,
                 value={'path': path}
             )
         elif node:
+            path_key = MirrorFilesystemCache.get_path_key(path=path)
             self.cache.set(
-                key=MirrorFilesystemCache.get_path_key(path=path),
+                key=path_key,
                 timeout=setting_node_lookup_cache_timeout.value,
                 value={'node_pk': node.pk}
             )
+            node_key = MirrorFilesystemCache.get_node_key(node=node)
             self.cache.set(
-                key=MirrorFilesystemCache.get_node_key(node=node),
+                key=node_key,
                 timeout=setting_node_lookup_cache_timeout.value,
                 value={'path': path}
             )

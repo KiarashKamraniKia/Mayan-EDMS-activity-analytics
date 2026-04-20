@@ -36,9 +36,9 @@ class WorkflowInstance(
         verbose_name=_(message='Workflow')
     )
     datetime = models.DateTimeField(
-        auto_now_add=True, db_index=True,
-        help_text=_('Workflow instance creation date time.'),
-        verbose_name=_(message='Datetime')
+        auto_now_add=True, db_index=True, help_text=_(
+            message='Workflow instance creation date time.'
+        ), verbose_name=_(message='Datetime')
     )
     document = models.ForeignKey(
         help_text=_(

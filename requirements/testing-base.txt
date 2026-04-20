@@ -1,5 +1,5 @@
 coverage==7.12.0
 coveralls==4.0.2
 django-test-migrations==1.5.0
-psutil==5.9.8
+psutil==6.1.1
 selenium==3.141.0

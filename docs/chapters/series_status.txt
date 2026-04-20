@@ -7,9 +7,6 @@ Support status
 
 Software support levels determine the type and extent of assistance a release series receives throughout its lifecycle. The level of support depends on the age of the series and whether it falls under community or commercial support.
 
-Below are the support levels for major release series, starting from the most recent.
-
-
 Support levels
 ==============
 
@@ -40,8 +37,6 @@ A **maintenance** series remains supported but with reduced scope:
 - Translations continue to be updated.
 - Technical support is limited.
 
-This is the final phase before a series reaches *end of life*.
-
 
 Extended Support
 ----------------
@@ -50,9 +45,9 @@ A **series in extended support** is comparable to a **Long Term Support (LTS)** 
 
 - Security patches and critical bug fixes are provided on request.
 - Fixes may be backported to older versions under a commercial agreement.
-- Community support is no longer available.
+- Community support is no longer available. Only commercial support is available.
 - New releases may no be available to the public.
-- Translations are not maintained.
+- Online translations are not maintained. Translation updates are only possible offline.
 
 Extended support allows organizations to remain on a stable version for longer, while still receiving essential updates under a sponsored or commercial support contract.
 
@@ -87,7 +82,6 @@ Lifecycle diagram
    }
 
 
-
 Current series status
 =====================
 
@@ -95,25 +89,25 @@ Current series status
    :header-rows: 1
 
    * - Series
-     - Release data
+     - Release date
      - Status
      - End of life
    * - 4.9
      - January 2025
-     - Fully supported
+     - Extended support
      -
    * - 4.8
      - July 2024
-     - Fully supported
+     - Extended support
      -
    * - 4.7
      - May 2024
-     - Maintenance
+     - Extended support
      -
    * - 4.6
      - January 2024
      - Extended support
-     -
+     - March 2026
    * - 4.5
      - September 2023
      - End of life

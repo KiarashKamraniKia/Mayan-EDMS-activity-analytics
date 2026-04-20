@@ -76,7 +76,8 @@ class WorkflowTemplateDocumentTypeAddSerializer(serializers.Serializer):
 class WorkflowTemplateDocumentTypeRemoveSerializer(serializers.Serializer):
     document_type_id = FilteredPrimaryKeyRelatedField(
         help_text=_(
-            message='Primary key of the document type to remove from the workflow.'
+            message='Primary key of the document type to remove from the '
+            'workflow.'
         ), label=_(message='Document type ID'), source_model=DocumentType,
         source_permission=permission_document_type_edit
     )

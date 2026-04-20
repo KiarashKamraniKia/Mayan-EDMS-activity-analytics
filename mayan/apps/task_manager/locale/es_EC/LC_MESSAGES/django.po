@@ -209,7 +209,7 @@ msgstr ""
 "requiere la parte de esquema (transporte: //), el resto es opcional y se "
 "predetermina a los valores predeterminados de transporte específico."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -218,7 +218,7 @@ msgstr ""
 "conexión del agente y la configuración de SSL. Los valores válidos para esta"
 " opción varían según el transporte."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "
@@ -268,7 +268,7 @@ msgstr "Tareas de alto volumen y baja latencia"
 
 #: workers.py:21
 msgid "Worker A"
-msgstr ""
+msgstr "Trabajador A"
 
 #: workers.py:28 workers.py:36
 msgid "Medium latency tasks"
@@ -276,11 +276,11 @@ msgstr "Tareas de latencia media"
 
 #: workers.py:29
 msgid "Worker B"
-msgstr ""
+msgstr "Trabajador B"
 
 #: workers.py:37
 msgid "Worker C"
-msgstr ""
+msgstr "Trabajador C"
 
 #: workers.py:44 workers.py:52
 msgid "Low latency, long lived tasks"
@@ -288,8 +288,8 @@ msgstr "Tareas de baja latencia y larga duración"
 
 #: workers.py:45
 msgid "Worker D"
-msgstr ""
+msgstr "Trabajador D"
 
 #: workers.py:53
 msgid "Worker E"
-msgstr ""
+msgstr "Trabajador E"

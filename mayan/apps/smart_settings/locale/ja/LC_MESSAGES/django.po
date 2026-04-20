@@ -92,7 +92,7 @@ msgstr "\"%s\"は有効な入力ではありません。"
 msgid "Save"
 msgstr "保存"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "設定"
 
@@ -104,11 +104,11 @@ msgstr "編集"
 msgid "Revert"
 msgstr "元に戻す"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "名前空間"
 
-#: literals.py:47
+#: literals.py:48
 msgid ""
 "Local storage is currently disabled, changes to settings will not be saved. "
 "Instead, use environment variables to modify settings."
@@ -137,6 +137,10 @@ msgstr "更新された設定"
 #: models.py:20
 msgid "Updated settings"
 msgstr "更新された設定"
+
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "設定の名前空間"
 
 #: permissions.py:10
 msgid "Edit settings"

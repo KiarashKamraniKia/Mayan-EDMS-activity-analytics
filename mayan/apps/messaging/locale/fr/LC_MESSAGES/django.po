@@ -260,32 +260,32 @@ msgid "Error marking message \"%(instance)s\" as unread; %(exception)s"
 msgstr ""
 "Erreur pour marquer le message \"%(instance)s\" comme non lu; %(exception)s"
 
-#: views.py:200
+#: views.py:201
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)d messages marqués comme non lus avec succès."
 
-#: views.py:203
+#: views.py:204
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "Message \"%(object)s\" marqué comme non lu avec succès."
 
-#: views.py:206
+#: views.py:207
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr " %(count)d message marqué comme non lu avec succès."
 
-#: views.py:208
+#: views.py:209
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "Marquez les %(count)d messages sélectionnés comme non lus."
 
-#: views.py:209
+#: views.py:210
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "Marquez le message \"%(object)s\" comme non lu."
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "Marquez  %(count)d message sélectionné comme non lu."

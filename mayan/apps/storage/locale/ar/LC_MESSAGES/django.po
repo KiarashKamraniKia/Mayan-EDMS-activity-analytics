@@ -169,17 +169,26 @@ msgid ""
 msgstr ""
 "نظام تخزين خلفي يمكن لجميع العاملين استخدامه لإنشاء وحفظ ملفات التحميل."
 
-#: settings.py:38
+#: settings.py:35
+msgid ""
+"Keyword arguments to pass to the `STORAGE_DOWNLOAD_FILE_STORAGE` backend."
+msgstr ""
+
+#: settings.py:42
 msgid "A storage backend that all workers can use to share files."
 msgstr "مساحة تخزينية مشتركة"
 
-#: settings.py:48
+#: settings.py:49
+msgid "Keyword arguments to pass to the `STORAGE_SHARED_STORAGE` backend."
+msgstr ""
+
+#: settings.py:56
 msgid ""
 "Temporary directory used site wide to store thumbnails, previews and "
 "temporary files."
 msgstr "مساحة تخزينية مؤقتة"
 
-#: settings.py:55
+#: settings.py:63
 msgid "Time in seconds, after which temporary uploaded files will be deleted."
 msgstr "الوقت بالثواني بعدها سيتم حذف الملفات المؤقتة المرفوعة."
 

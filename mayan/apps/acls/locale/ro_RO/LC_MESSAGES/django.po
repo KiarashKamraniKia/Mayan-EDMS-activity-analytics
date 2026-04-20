@@ -55,7 +55,7 @@ msgstr "ACL a fost șters"
 msgid "ACL edited"
 msgstr "ACL-ul a fost editat"
 
-#: forms.py:12 models.py:58 serializers.py:79 views.py:73
+#: forms.py:12 models.py:59 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "Rol"
 
@@ -101,15 +101,15 @@ msgstr "ID obiect"
 msgid "Role to which the access is granted for the specified object."
 msgstr "Rolul căruia i se acordă accesul pentru obiectul specificat."
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "Înregistrare acces"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "Înregistrări de acces"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Permisiunile rolului \"%(role)s\" pentru \"%(object)s\""

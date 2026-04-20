@@ -73,19 +73,19 @@ msgstr "מופעל/מאופשר"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "תאריך ושעה שאחריה הכרזה זו תוצג."
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "תאריך ושעת התחלה"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "תאריך ושעה לתוקף תצוגה של הכרזה זו."
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "תאריך ושעת סיום"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "הכרזה"
 

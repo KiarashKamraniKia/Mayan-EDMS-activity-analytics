@@ -53,7 +53,7 @@ msgid "Sets the email of the automatically created super user account."
 msgstr ""
 "རང་འགུལ་གྱིས་གསར་བཟོ་བྱས་པའི་ཆེས་མཐོའི་སྤྱོད་མཁན་རྩིས་ཁྲའི་གློག་འཕྲིན་སྒྲིག་བཀོད་བྱེད།"
 
-#: settings.py:18
+#: settings.py:19
 msgid ""
 "The password of the automatically created super user account. If it is equal"
 " to None, the password is randomly generated."
@@ -61,7 +61,7 @@ msgstr ""
 "རང་འགུལ་གྱིས་བཟོས་པའི་ཆེས་མཐོའི་སྤྱོད་མཁན་གྱི་རྩིས་ཁྲའི་གསང་གྲངས། གལ་ཏེ་ "
 "None དང་འདྲ་མཉམ་ཡིན་ན་གསང་གྲངས་དེ་གང་བྱུང་དུ་བཟོས་པ་རེད།"
 
-#: settings.py:24
+#: settings.py:26
 msgid "The username of the automatically created super user account."
 msgstr ""
 "རང་འགུལ་གྱིས་བཟོས་པའི་ཆེས་མཐོའི་སྤྱོད་མཁན་རྩིས་ཁྲའི་སྤྱོད་མཁན་གྱི་མིང་།"

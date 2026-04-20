@@ -245,18 +245,18 @@ msgid ""
 "environment will result in issues and errors during normal use."
 msgstr "エンドユーザー向けの通常環境です。この環境で依存関係が不足していると、通常使用中に問題やエラーが発生します。"
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "本番環境"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
 "usage."
 msgstr "コードの機能を検証するためのテストスイート実行用環境です。この環境の依存関係は、通常の本番利用では必要ありません。"
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "テスト中"
 
@@ -280,7 +280,7 @@ msgstr "詳細"
 msgid "Dependencies licenses"
 msgstr "依存関係のライセンス"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
@@ -288,7 +288,7 @@ msgid ""
 msgstr ""
 "あなたのバージョン (%(version_local)s) は公開されているバージョン (%(version_server)s) より新しいです。"
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
@@ -296,11 +296,11 @@ msgid ""
 msgstr ""
 "使用中のバージョン (%(version_local)s) は古くなっています。最新バージョンは %(version_server)s です。"
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr "利用可能な最新バージョンを確認できません。"
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"
@@ -325,6 +325,7 @@ msgid ""
 msgstr "他のすべての依存関係を除外して表示する依存関係名を、カンマ区切りで指定します。"
 
 #: management/commands/dependencies_install.py:13
+#: management/commands/dependencies_uninstall.py:13
 msgid "Process a specific app."
 msgstr "特定のアプリを処理します。"
 

@@ -227,7 +227,11 @@ msgid "Full path to the backend to be used to handle keys and signatures."
 msgstr ""
 "ལྡེ་མིག་དང་མིང་རྟགས་བཀོལ་སྤྱོད་བྱེད་པར་བེད་སྤྱོད་གཏོང་བའི་རྒྱབ་ཕྱོགས་ལ་འགྲོ་ལམ་ཆ་ཚང་།"
 
-#: settings.py:27
+#: settings.py:26
+msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
+msgstr ""
+
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "ལྡེ་མིག་སར་བར་ལྡེ་མིག་འདྲི་རྩད་བྱེད་པར་བེད་སྤྱོད་བྱེད།"
 

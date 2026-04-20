@@ -169,19 +169,28 @@ msgid ""
 msgstr ""
 "ལས་བྱེད་ཚང་མས་ཕབ་ལེན་བྱེད་པའི་ཆེད་དུ་ཡིག་ཆ་བཟོ་སྐྲུན་དང་འཛིན་པར་བེད་སྤྱོད་གཏོང་ཐུབ་པའི་གསོག་འཇོག་རྒྱབ་ལྗོངས་ཤིག"
 
-#: settings.py:38
+#: settings.py:35
+msgid ""
+"Keyword arguments to pass to the `STORAGE_DOWNLOAD_FILE_STORAGE` backend."
+msgstr ""
+
+#: settings.py:42
 msgid "A storage backend that all workers can use to share files."
 msgstr ""
 "ལས་བྱེད་ཚང་མས་ཡིག་ཆ་མཉམ་སྤྱོད་བྱེད་པར་བེད་སྤྱོད་གཏོང་ཐུབ་པའི་གསོག་འཇོག་རྒྱབ་ལྗོངས་ཤིག"
 
-#: settings.py:48
+#: settings.py:49
+msgid "Keyword arguments to pass to the `STORAGE_SHARED_STORAGE` backend."
+msgstr ""
+
+#: settings.py:56
 msgid ""
 "Temporary directory used site wide to store thumbnails, previews and "
 "temporary files."
 msgstr ""
 "གནས་སྐབས་ཀྱི་སྣོད་ཐོ་དེ་དྲ་ཚིགས་ཡོངས་སུ་མཐེབ་གཞོང་དང་སྔོན་ལྟ་དང་གནས་སྐབས་ཀྱི་ཡིག་ཆ་གསོག་འཇོག་བྱེད་པར་བེད་སྤྱོད་བྱེད་ཀྱི་ཡོད།"
 
-#: settings.py:55
+#: settings.py:63
 msgid "Time in seconds, after which temporary uploaded files will be deleted."
 msgstr ""
 "དུས་ཚོད་སྐར་ཆའི་ནང་། "

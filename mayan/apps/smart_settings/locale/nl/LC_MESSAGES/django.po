@@ -93,7 +93,7 @@ msgstr "\"%s\" is geen geldige invoer."
 msgid "Save"
 msgstr "Opslaan"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "Instellingen"
 
@@ -105,11 +105,11 @@ msgstr "Bewerken"
 msgid "Revert"
 msgstr "Terugdraaien"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "Namespaces"
 
-#: literals.py:47
+#: literals.py:48
 msgid ""
 "Local storage is currently disabled, changes to settings will not be saved. "
 "Instead, use environment variables to modify settings."
@@ -137,6 +137,10 @@ msgstr ""
 
 #: models.py:20
 msgid "Updated settings"
+msgstr ""
+
+#: namespaces.py:104
+msgid "Settings namespace"
 msgstr ""
 
 #: permissions.py:10
@@ -490,13 +494,10 @@ msgstr ""
 
 #: settings.py:281
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"Standaard: 'sessionid'. De naam van de cookie die voor sessies moet worden "
-"gebruikt. Dit kan zijn wat u maar wilt (zolang deze maar verschilt van de "
-"andere cookienamen in uw toepassing)."
 
 #: settings.py:289
 msgid ""

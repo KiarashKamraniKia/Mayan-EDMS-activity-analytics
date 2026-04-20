@@ -1,5 +1,7 @@
-from django.core.exceptions import ValidationError
+from django.core.exceptions import ImproperlyConfigured, ValidationError
+from django.utils.module_loading import import_string
 from django.utils.text import format_lazy
+from django.utils.translation import gettext_lazy as _
 
 from mayan.apps.common.class_mixins import AppsModuleLoaderMixin
 from mayan.apps.forms.literals import EMPTY_LABEL
@@ -61,6 +63,24 @@ class MetadataTypeModuleMixin(AppsModuleLoaderMixin):
         return choices
 
     @classmethod
+    def get_class(cls, dotted_path):
+        choices = dict(
+            cls.get_choices()
+        )
+
+        try:
+            choices[dotted_path]
+        except KeyError:
+            raise ImproperlyConfigured(
+                _(
+                    message='Invalid `{}` `%s`'.format(cls._class_label)
+                ) % dotted_path
+            )
+        else:
+            klass = import_string(dotted_path=dotted_path)
+            return klass
+
+    @classmethod
     def get_import_path(cls):
         return cls.__module__ + '.' + cls.__name__
 
@@ -88,6 +108,7 @@ class MetadataTypeModuleMixin(AppsModuleLoaderMixin):
 class MetadataParser(
     MetadataTypeModuleMixin, metaclass=MetadataTypeParserMetaclass
 ):
+    _class_label = 'MetadataParser'
     _loader_module_name = 'metadata_parsers'
 
     def parse(self, input_data):
@@ -100,6 +121,7 @@ class MetadataParser(
 class MetadataValidator(
     MetadataTypeModuleMixin, metaclass=MetadataTypeValidatorMetaclass
 ):
+    _class_label = 'MetadataValidator'
     _loader_module_name = 'metadata_validators'
 
     def validate(self, input_data):

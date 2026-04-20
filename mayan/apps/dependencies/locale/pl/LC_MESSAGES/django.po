@@ -268,11 +268,11 @@ msgstr ""
 "Normalne środowisko dla użytkowników końcowych. Brak zależności w tym "
 "środowisku spowoduje problemy i błędy podczas normalnego użytkowania."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Produkcja"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -282,7 +282,7 @@ msgstr ""
 "funkcjonalności kodu. Zależności w tym środowisku nie są potrzebne do "
 "normalnego użytkowania produkcji."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Testowanie"
 
@@ -306,25 +306,25 @@ msgstr "Szczegóły"
 msgid "Dependencies licenses"
 msgstr "Pozostałe licencje"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
 "(%(version_server)s)."
 msgstr ""
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
 "version is %(version_server)s."
 msgstr ""
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr ""
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"
@@ -351,6 +351,7 @@ msgstr ""
 "wyłączając wszystkie pozostałe."
 
 #: management/commands/dependencies_install.py:13
+#: management/commands/dependencies_uninstall.py:13
 msgid "Process a specific app."
 msgstr "Przetwórz konkretną aplikację."
 

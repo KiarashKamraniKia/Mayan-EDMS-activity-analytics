@@ -94,7 +94,7 @@ msgstr ""
 "Ruta separada por puntos al backend que se usa para procesar la "
 "autenticación del usuario."
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "Argumentos para AUTHENTICATION_BACKEND."
 

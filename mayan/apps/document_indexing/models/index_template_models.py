@@ -36,13 +36,14 @@ class IndexTemplate(
     )
     slug = models.SlugField(
         help_text=_(
-            message='This value will be used by other apps to reference this index.'
+            message='This value will be used by other apps to reference this '
+            'index.'
         ), max_length=128, unique=True, verbose_name=_(message='Slug')
     )
     enabled = models.BooleanField(
         default=True, help_text=_(
-            message='Causes this index to be visible and updated when document data '
-            'changes.'
+            message='Causes this index to be visible and updated when '
+            'document data changes.'
         ), verbose_name=_(message='Enabled')
     )
     document_types = models.ManyToManyField(

@@ -134,9 +134,10 @@ class TaskManagerApp(MayanAppConfig):
         )
         SourceColumn(
             attribute='transient', help_text=_(
-                message='Transient queues are not persistent. Tasks in a transient '
-                'queue are lost if the broker is restarted. Transient '
-                'queues use less resources and managed non critical tasks.'
+                message='Transient queues are not persistent. Tasks in a '
+                'transient queue are lost if the broker is restarted. '
+                'Transient queues use less resources and managed non '
+                'critical tasks.'
             ), include_label=True, label=_(message='Is transient?'),
             source=CeleryQueue, widget=column_widgets.TwoStateWidget
         )
@@ -210,8 +211,8 @@ class TaskManagerApp(MayanAppConfig):
         )
         SourceColumn(
             attribute='maximum_tasks_per_child', help_text=_(
-                message='Maximum number of tasks a worker can execute before it\'s '
-                'replaced by a new process.'
+                message='Maximum number of tasks a worker can execute before '
+                'it\'s replaced by a new process.'
             ), include_label=True, label=_(message='Maximum tasks per child'),
             source=Worker
         )
@@ -224,8 +225,8 @@ class TaskManagerApp(MayanAppConfig):
         )
         SourceColumn(
             attribute='nice_level', help_text=_(
-                message='The nice value determines the priority of the process. '
-                'A higher value lowers the priority. The default '
+                message='The nice value determines the priority of the '
+                'process. A higher value lowers the priority. The default '
                 'value is 0.'
             ), include_label=True, label=_(message='Nice level'),
             source=Worker

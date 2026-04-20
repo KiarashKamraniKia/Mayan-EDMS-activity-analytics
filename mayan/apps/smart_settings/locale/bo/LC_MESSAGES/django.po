@@ -95,7 +95,7 @@ msgstr "&quot; %s &quot; ནུས་ལྡན་གྱི་ཐོ་འགོ�
 msgid "Save"
 msgstr "སྐྱོབ་པ"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "སྒྲིག་སྟངས།"
 
@@ -107,11 +107,11 @@ msgstr "བཅོས་པ།"
 msgid "Revert"
 msgstr "ཕྱིར་ལོག་པ།"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "མིང་གི་བར་སྟོང་།"
 
-#: literals.py:47
+#: literals.py:48
 msgid ""
 "Local storage is currently disabled, changes to settings will not be saved. "
 "Instead, use environment variables to modify settings."
@@ -143,6 +143,10 @@ msgstr "སྒྲིག་གཞི་གསར་བཅོས་བྱས།"
 #: models.py:20
 msgid "Updated settings"
 msgstr "སྒྲིག་སྟངས་གསར་བཅོས་བྱས།"
+
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "སྒྲིག་སྟངས་མིང་བར་སྟོང་།"
 
 #: permissions.py:10
 msgid "Edit settings"
@@ -503,13 +507,10 @@ msgstr ""
 
 #: settings.py:281
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"སྔོན་སྒྲིག: &#39;sessionid&#39;. "
-"འདི་ཁྱེད་རང་ལ་དགོས་པ་གང་འདྲ་ཞིག་ཡིན་ནའང་འགྲིག "
-"(ཁྱེད་རང་གི་མཉེན་ཆས་ནང་ཡོད་པའི་ཀུ་ཀི་མིང་གཞན་དང་མི་འདྲ་བ་ཡིན་ན།)"
 
 #: settings.py:289
 msgid ""

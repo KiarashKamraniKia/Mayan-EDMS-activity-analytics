@@ -301,17 +301,17 @@ msgid ""
 msgstr ""
 "سمات بيانات تعريف الملف لـ: %(document_file)s مع برنامج التشغيل: %(driver)s"
 
-#: views/document_file_views.py:111
+#: views/document_file_views.py:112
 #, python-format
 msgid "%(count)d documents files submitted to the file metadata queue."
 msgstr "تم إرسال %(count)d ملفات مستندات إلى قائمة انتظار بيانات تعريف الملف."
 
-#: views/document_file_views.py:114
+#: views/document_file_views.py:116
 #, python-format
 msgid "%(count)d document file submitted to the file metadata queue."
 msgstr "تم إرسال %(count)d ملف مستند إلى قائمة انتظار بيانات تعريف الملف."
 
-#: views/document_file_views.py:123
+#: views/document_file_views.py:126
 msgid "Submit the selected document file to the file metadata queue?"
 msgid_plural "Submit the selected documents files to the file metadata queue?"
 msgstr[0] "إرسال المستند المحدد إلى قائمة انتظار البيانات الوصفية للملف؟"

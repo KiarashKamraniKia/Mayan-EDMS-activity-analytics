@@ -83,7 +83,13 @@ msgstr ""
 msgid "URL"
 msgstr "نشانی اینترنتی"
 
-#: settings.py:101
+#: settings.py:102
+msgid ""
+"A comma separated list of dangerous templating tags and filters that are "
+"allowed."
+msgstr ""
+
+#: settings.py:110
 msgid ""
 "Theme name of the CSS stylesheet used to change the visual appearance of the"
 " template preview."
@@ -99,18 +105,18 @@ msgstr ""
 msgid "Template error; %(exception)s"
 msgstr ""
 
-#: widgets.py:42
+#: widgets.py:43
 msgid "Filters"
 msgstr ""
 
-#: widgets.py:49
+#: widgets.py:50
 msgid "Tags"
 msgstr "برچسب ها"
 
-#: widgets.py:56
+#: widgets.py:57
 msgid "<Filters and tags>"
 msgstr ""
 
-#: widgets.py:129
+#: widgets.py:136
 msgid "<Model attributes>"
 msgstr ""

@@ -28,10 +28,11 @@ class FileLock(LockingBackend):
 
     @classmethod
     def _initialize(cls):
+        string = force_bytes(s=settings.SECRET_KEY)
+        hexdigest = hashlib.sha256(string=string).hexdigest()
+
         cls.lock_file = os.path.join(
-            setting_temporary_directory.value, hashlib.sha256(
-                string=force_bytes(s=settings.SECRET_KEY)
-            ).hexdigest()
+            setting_temporary_directory.value, hexdigest
         )
         open(file=cls.lock_file, mode='a').close()
         logger.debug('lock_file: %s', cls.lock_file)

@@ -228,7 +228,6 @@ class CachePartitionBusinessLogicMixin:
     def create_file(self, filename):
         lock_name = self.get_file_lock_name(filename=filename)
         try:
-            logger.debug('trying to acquire lock: %s', lock_name)
             locking_backend_class = LockingBackend.get_backend()
             lock = locking_backend_class.acquire_lock(name=lock_name)
             logger.debug('acquired lock: %s', lock_name)
@@ -414,7 +413,6 @@ class CachePartitionFileBusinessLogicMixin:
 
         lock_name = self._lock_manager_get_lock_name()
         try:
-            logger.debug('trying to acquire lock: %s', lock_name)
             locking_backend_class = LockingBackend.get_backend()
 
             self._lock = locking_backend_class.acquire_lock(name=lock_name)

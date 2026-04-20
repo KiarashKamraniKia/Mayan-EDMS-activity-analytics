@@ -197,7 +197,7 @@ msgstr ""
 "protocol deel (transport://) is vereist, de rest is optioneel, en is "
 "standaard gelijk aan de standaardwaarden van het betreffende protocol."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -206,7 +206,7 @@ msgstr ""
 "SSL-instellingen in. De geldige waarden voor deze optie verschillen per "
 "transport."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

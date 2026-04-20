@@ -76,19 +76,19 @@ msgstr "Активовано"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "Дата та час, після яких це оголошення буде показано."
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "Дата та час початку"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "Дата й час, до якого це оголошення має відображатися."
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "Дата та час закінчення"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "Оголошення"
 

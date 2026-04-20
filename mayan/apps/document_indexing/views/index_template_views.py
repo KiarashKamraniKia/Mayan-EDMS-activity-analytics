@@ -221,7 +221,8 @@ class IndexTemplateEventTriggerListView(ExternalObjectViewMixin, FormView):
         else:
             messages.success(
                 message=_(
-                    message='Index template event triggers updated successfully.'
+                    message='Index template event triggers updated '
+                    'successfully.'
                 ), request=self.request
             )
 
@@ -231,8 +232,8 @@ class IndexTemplateEventTriggerListView(ExternalObjectViewMixin, FormView):
         return {
             'form_display_mode_table': True,
             'subtitle': _(
-                message='Triggers are document events that cause instances of this '
-                'index template to be updated.'
+                message='Triggers are document events that cause instances '
+                'of this index template to be updated.'
             ),
             'object': self.external_object,
             'title': _(

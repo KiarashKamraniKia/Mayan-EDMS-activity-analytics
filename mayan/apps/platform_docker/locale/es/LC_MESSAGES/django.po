@@ -86,6 +86,11 @@ msgid ""
 "installations but before launching the Mayan EDMS stack. Executes the "
 "content as a script or call a script using the value as the filename."
 msgstr ""
+"Se ejecuta tras configurar las variables de entorno del contenedor, la "
+"configuración de UID/GID y la instalación de paquetes adicionales del "
+"sistema operativo y de librerias de Python, pero antes de iniciar los "
+"componentes de Mayan EDMS. Ejecuta el contenido como un script o invoca un "
+"script utilizando el valor como nombre de archivo."
 
 #: settings.py:56
 msgid ""
@@ -94,6 +99,10 @@ msgid ""
 "library installations. Executes the content as a script or call a script "
 "using the value as the filename."
 msgstr ""
+"Se ejecuta después de configurar las variables de entorno del contenedor, "
+"pero antes de configurar el UID/GID y de instalar paquetes adicionales del "
+"sistema operativo y bibliotecas de Python. Ejecuta el contenido como un "
+"script o invoca un script utilizando el valor como nombre de archivo."
 
 #: settings.py:66
 msgid ""
@@ -103,11 +112,11 @@ msgstr ""
 
 #: settings.py:74
 msgid "Changes the GID of the `mayan` user internal to the Docker container."
-msgstr ""
+msgstr "Cambia el GID del usuario `mayan` interno del contenedor Docker."
 
 #: settings.py:81
 msgid "Changes the UID of the `mayan` user internal to the Docker container."
-msgstr ""
+msgstr "Cambia el UID del usuario `mayan` interno del contenedor Docker."
 
 #: settings.py:89
 msgid ""

@@ -96,7 +96,7 @@ msgstr ""
 "Calea punctată către backend folosită pentru a procesa autentificarea "
 "utilizatorului."
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "Argumente pentru AUTHENTICATION_BACKEND."
 

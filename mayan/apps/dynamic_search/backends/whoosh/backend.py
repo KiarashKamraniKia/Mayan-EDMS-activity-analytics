@@ -81,8 +81,6 @@ class WhooshSearchBackend(SearchBackend):
     def _do_query_resolve(self, index, query):
         with index.searcher() as searcher:
             results = searcher.search(limit=None, q=query)
-            logger.debug('results: %s', results)
-
             for result in results:
                 yield int(
                     result['id']

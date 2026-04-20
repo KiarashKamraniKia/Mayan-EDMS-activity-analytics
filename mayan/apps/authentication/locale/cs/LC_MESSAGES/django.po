@@ -94,7 +94,7 @@ msgid "Dotted path to the backend used to process user authentication."
 msgstr ""
 "Tečkovaná cesta k backendu používanému ke zpracování autentizace uživatele."
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "Argumenty pro AUTHENTICATION_BACKEND."
 
@@ -199,6 +199,9 @@ msgid ""
 "Changing the password of staff or super user accounts via the user interface"
 " is not allowed. Use administration tools to perform this operation."
 msgstr ""
+"Změna hesla zaměstnanců nebo superuživatelských účtů prostřednictvím "
+"uživatelského rozhraní není povolena. K provedení této operace použijte "
+"nástroje pro správu."
 
 #: views/authentication_views.py:400
 msgid "Change user password"

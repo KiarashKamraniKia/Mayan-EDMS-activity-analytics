@@ -57,13 +57,13 @@ PythonDependency(
     version_string='==0.1.2'
 )
 PythonDependency(
-    module=__name__, name='drf-yasg', version_string='==1.21.11'
+    module=__name__, name='drf-yasg', version_string='==1.21.15'
 )
 PythonDependency(
     module=__name__, name='flex', version_string='==6.14.1'
 )
 PythonDependency(
-    module=__name__, name='jsonschema', version_string='==4.25.1'
+    module=__name__, name='jsonschema', version_string='==4.26.0'
 )
 PythonDependency(
     module=__name__, name='swagger-spec-validator', version_string='==3.0.4'

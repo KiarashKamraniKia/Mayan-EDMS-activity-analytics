@@ -73,19 +73,19 @@ msgstr "有効"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "このお知らせが表示される日時"
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "表示開始日時"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "このお知らせが表示される終了日時"
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "終了日時"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "お知らせ"
 

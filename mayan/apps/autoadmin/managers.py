@@ -4,6 +4,8 @@ from django.contrib.auth import get_user_model
 from django.core import management
 from django.db import models
 
+from mayan.apps.authentication.secrets import get_random_password
+
 from .literals import COMMAND_NAME_CREATESUPERUSER
 from .settings import setting_email, setting_password, setting_username
 
@@ -15,7 +17,7 @@ class AutoAdminSingletonManager(models.Manager):
         UserModel = get_user_model()
 
         if setting_password.value is None:
-            password = UserModel.objects.make_random_password()
+            password = get_random_password()
         else:
             password = setting_password.value
 

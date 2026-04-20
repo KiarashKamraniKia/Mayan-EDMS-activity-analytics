@@ -1,4 +1,3 @@
-import hashlib
 import io
 import logging
 
@@ -13,6 +12,7 @@ from django.utils.translation import gettext_lazy as _
 
 from mayan.apps.common.serialization import yaml_load
 from mayan.apps.file_caching.models import CachePartitionFile
+from mayan.apps.storage.hashing import chunk_hash_file_object
 
 from .literals import STORAGE_NAME_ASSETS_CACHE
 from .transformations import BaseTransformation
@@ -43,9 +43,8 @@ class AssetBusinessLogicMixin:
         # The parameters 'maximum_layer_order',
         # `transformation_instance_list`, `user` are not used, but added
         # to retain interface compatibility.
-        cache_filename = '{}'.format(
-            self.get_hash()
-        )
+        hash_result = self.get_hash()
+        cache_filename = '{}'.format(hash_result)
 
         try:
             self.cache_partition.get_file(filename=cache_filename)
@@ -78,10 +77,9 @@ class AssetBusinessLogicMixin:
 
     def get_hash(self):
         with self.open() as file_object:
-            hash_object = hashlib.sha256(
-                string=file_object.read()
-            )
-            return hash_object.hexdigest()
+            hash_object = chunk_hash_file_object(file_object=file_object)
+
+        return hash_object.hexdigest()
 
     def get_image(self):
         with self.open() as file_object:

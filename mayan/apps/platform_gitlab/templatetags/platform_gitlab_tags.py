@@ -3,7 +3,7 @@ from django.template import Library
 import mayan
 from mayan.apps.dependencies.versions import Version
 from mayan.apps.platform.utils import yaml_dump
-from mayan.settings.literals import LINUX_PACKAGES_DEBIAN_PUSH
+from mayan.literals import LINUX_PACKAGES_DEBIAN_PUSH
 
 register = Library()
 

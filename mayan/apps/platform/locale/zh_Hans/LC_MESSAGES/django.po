@@ -54,30 +54,30 @@ msgid ""
 " dictionary key for the arguments in dictionary format."
 msgstr "用戶端後端的參數. 將用戶端後端虛擬路徑作為字典格式中的字典索引鍵."
 
-#: settings.py:40
+#: settings.py:41
 msgid "Load an alternate settings file."
 msgstr ""
 
-#: settings.py:49
+#: settings.py:50
 msgid "Allows setting Gunicorn's `workers` value."
 msgstr ""
 
-#: settings.py:55
+#: settings.py:56
 msgid "Allows setting Gunicorn's `worker_class` value."
 msgstr ""
 
-#: settings.py:62
+#: settings.py:63
 msgid "Allows setting Gunicorn's `timeout` value."
 msgstr ""
 
-#: settings.py:68
+#: settings.py:69
 msgid "Allows setting Gunicorn's `max_requests_jitter` value."
 msgstr ""
 
-#: settings.py:74
+#: settings.py:75
 msgid "Allows setting Gunicorn's `max_requests` value."
 msgstr ""
 
-#: settings.py:80
+#: settings.py:81
 msgid "Allows setting Gunicorn's `limit_request_line` value."
 msgstr ""

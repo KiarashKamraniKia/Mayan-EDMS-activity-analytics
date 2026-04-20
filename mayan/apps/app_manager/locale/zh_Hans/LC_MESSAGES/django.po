@@ -22,19 +22,19 @@ msgstr ""
 
 #: apps.py:147
 msgid "App class full path"
-msgstr ""
+msgstr "App class full path"
 
 #: apps.py:153
 msgid "App URL"
-msgstr ""
+msgstr "App網址"
 
 #: apps.py:164
 msgid "Has REST API"
-msgstr ""
+msgstr "支援 REST API？"
 
 #: apps.py:169
 msgid "Has tests"
-msgstr ""
+msgstr "包含測試？"
 
 #: apps.py:174
 msgid "Name"
@@ -42,20 +42,20 @@ msgstr "名称"
 
 #: apps.py:179
 msgid "Verbose name"
-msgstr ""
+msgstr "顯示名稱"
 
 #: apps.py:198
 msgid "App manager"
-msgstr ""
+msgstr "應用程式管理"
 
 #: links.py:8
 msgid "Apps"
-msgstr ""
+msgstr "應用程式"
 
 #: views.py:16
 msgid "Detected and active Mayan EDMS apps."
-msgstr ""
+msgstr "已偵測到並啟用的 Mayan EDMS 應用程式。"
 
 #: views.py:17
 msgid "System apps"
-msgstr ""
+msgstr "系統應用程式"

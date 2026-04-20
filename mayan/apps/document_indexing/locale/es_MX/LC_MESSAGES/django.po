@@ -24,7 +24,7 @@ msgstr ""
 msgid "None"
 msgstr "Ninguno"
 
-#: admin.py:26 links.py:88 models/index_template_models.py:50
+#: admin.py:26 links.py:88 models/index_template_models.py:51
 #: serializers/index_template_serializers.py:196
 msgid "Document types"
 msgstr "Tipos de documento"
@@ -78,8 +78,8 @@ msgstr "Categoría"
 msgid "Label"
 msgstr "Etiqueta"
 
-#: forms.py:32 models/index_template_models.py:46
-#: models/index_template_models.py:166
+#: forms.py:32 models/index_template_models.py:47
+#: models/index_template_models.py:167
 msgid "Enabled"
 msgstr "Habilitado"
 
@@ -87,7 +87,7 @@ msgstr "Habilitado"
 msgid "Index templates to be queued for rebuilding."
 msgstr "Las plantillas de índice se pondrán en cola para su reconstrucción."
 
-#: forms.py:47 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:47 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "Plantillas de índice"
@@ -152,7 +152,7 @@ msgstr "No"
 msgid "Yes"
 msgstr "Si"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
@@ -161,23 +161,23 @@ msgstr ""
 "Error indexando documento: %(document)s; expresión: %(expression)s; "
 "%(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr "Número total de nodos con valores únicos que contiene este elemento."
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr "Número total de documentos únicos que contiene este elemento."
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr "Número total de niveles de nodo que contiene este elemento."
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "La ruta al nodo del índice, incluidos todos los que lo contienen."
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "Ruta completa"
 
@@ -189,7 +189,7 @@ msgstr "Instancia de índice"
 msgid "Index instances"
 msgstr "Instancias de índices"
 
-#: models/index_instance_models.py:59 models/index_template_models.py:178
+#: models/index_instance_models.py:59 models/index_template_models.py:179
 msgid "Index template node"
 msgstr "Nodo de plantilla de indice"
 
@@ -227,58 +227,58 @@ msgstr ""
 "Este valor será utilizado por otras aplicaciones para hacer referencia a "
 "este índice."
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "Identificador"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr ""
 "Hace que este índice sea visible y actualizado cuando los datos de "
 "documentos cambien."
 
-#: models/index_template_models.py:57 models/index_template_models.py:97
+#: models/index_template_models.py:58 models/index_template_models.py:98
 msgid "Index template"
 msgstr "Plantillas de índice"
 
-#: models/index_template_models.py:101
+#: models/index_template_models.py:102
 msgid "Event type"
 msgstr "Tipo de evento"
 
-#: models/index_template_models.py:106
+#: models/index_template_models.py:107
 msgid "Index template event trigger"
 msgstr "Disparador de evento de plantilla de índice"
 
-#: models/index_template_models.py:107
+#: models/index_template_models.py:108
 msgid "Index template event triggers"
 msgstr "Disparadores de evento de plantilla de índice"
 
-#: models/index_template_models.py:145
+#: models/index_template_models.py:146
 msgid "Parent index template node of this node."
 msgstr "Nodo de plantilla de índice principal de este nodo."
 
-#: models/index_template_models.py:151
+#: models/index_template_models.py:152
 msgid "Index"
 msgstr "Índice"
 
-#: models/index_template_models.py:155
+#: models/index_template_models.py:156
 msgid "Enter a template to render. Use Django's default templating language."
 msgstr ""
 "Ingrese una plantilla para renderizar. Utilice el lenguaje de plantillas "
 "predeterminado de Django."
 
-#: models/index_template_models.py:158
+#: models/index_template_models.py:159
 msgid "Indexing expression"
 msgstr "Expresión de indexación"
 
-#: models/index_template_models.py:163
+#: models/index_template_models.py:164
 msgid "Causes this node to be visible and updated when document data changes."
 msgstr ""
 "Hace que este nodo sea visible y actualizado cuando los datos de los "
 "documentos son cambiados."
 
-#: models/index_template_models.py:171
+#: models/index_template_models.py:172
 msgid ""
 "Check this option to have this node act as a container for documents and not"
 " as a parent for further nodes."
@@ -286,15 +286,15 @@ msgstr ""
 "Marque esta opción para que el nodo actúe como un contenedor de documentos y"
 " no como un padre para otros nodos secundarios."
 
-#: models/index_template_models.py:174
+#: models/index_template_models.py:175
 msgid "Link documents"
 msgstr "Vincular documentos"
 
-#: models/index_template_models.py:179
+#: models/index_template_models.py:180
 msgid "Index template nodes"
 msgstr "Nodo de plantilla de indice"
 
-#: models/index_template_models.py:183
+#: models/index_template_models.py:184
 msgid "Root"
 msgstr "Nodo principal"
 

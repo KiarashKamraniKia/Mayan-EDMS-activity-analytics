@@ -75,19 +75,19 @@ msgstr "Etkin"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "Bu duyurunun gösterilemeye başlayacağı tarih saat."
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "Başlangıç tarihi saat"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "Bu duyurunun gösterilemesinin bitirileceği tarih ve saat."
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "Bitiş tarihi saat"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "Duyuru"
 

@@ -104,7 +104,7 @@ msgstr "عدد ملفات التقسيم"
 msgid "Total cached files."
 msgstr "إجمالي الملفات المخزنة مؤقتًا."
 
-#: model_mixins.py:111 model_mixins.py:324
+#: model_mixins.py:111 model_mixins.py:323
 msgid "Current size"
 msgstr "الحجم الحالي"
 
@@ -116,7 +116,7 @@ msgstr "الحجم الحالي للملف المؤقت"
 msgid "Label"
 msgstr "العنوان"
 
-#: model_mixins.py:326
+#: model_mixins.py:325
 msgid "Current size of the cache partition."
 msgstr "الحجم الحالي لقسم ذاكرة التخزين المؤقت."
 

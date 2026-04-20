@@ -10,13 +10,18 @@ def get_instance_link(index_instance_node):
     """
     Return an HTML anchor to an index node instance
     """
-    return mark_safe(
-        s='<a href="{url}">{text}</a>'.format(
-            text=escape(
-                index_instance_node.get_full_path()
-            ), url=index_instance_node.get_absolute_url()
-        )
+    full_path = escape(
+        text=index_instance_node.get_full_path()
     )
+    url = index_instance_node.get_absolute_url()
+
+    result = '<a href="{url}">{full_path}</a>'.format(
+        full_path=full_path, url=url
+    )
+
+    output = mark_safe(s=result)
+
+    return output
 
 
 def index_instance_item_link(index_instance_item):
@@ -32,27 +37,41 @@ def index_instance_item_link(index_instance_item):
     else:
         icon = ''
 
-    return mark_safe(
-        s='{icon}&nbsp;<a href="{url}">{text}</a>'.format(
-            icon=icon, text=index_instance_item,
-            url=index_instance_item.get_absolute_url()
-        )
+    text = escape(text=index_instance_item)
+    url = index_instance_item.get_absolute_url()
+
+    result = '{icon}&nbsp;<a href="{url}">{text}</a>'.format(
+        icon=icon, text=text, url=url
     )
+
+    output = mark_safe(s=result)
+
+    return output
 
 
 def node_level(node):
     """
-    Render an indented tree like output for a specific node
+    Render an indented tree like output for a specific node.
     """
-    return mark_safe(
-        s=''.join(
-            [
-                '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' * node.get_level(),
-                '' if node.is_root_node() else icon_index_level_up.render(),
-                str(node)
-            ]
-        )
+    level = node.get_level()
+    if node.is_root_node():
+        icon = ''
+    else:
+        icon = icon_index_level_up.render()
+
+    node_text = escape(
+        text=str(node)
     )
+
+    spacing = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' * level
+
+    level = ''.join(
+        [spacing, icon, node_text]
+    )
+
+    output = mark_safe(s=level)
+
+    return output
 
 
 def node_tree(node, user):
@@ -71,18 +90,25 @@ def node_tree(node, user):
             else:
                 icon = icon_index_level_up
 
-        result.append(
-            '<a href="{url}" class="list-group-item {active}"><span class="badge">{count}</span>{icon} {text}</a>'.format(
-                url=element.get_absolute_url(),
-                active='active' if element == node or node.get_ancestors(include_self=True).count() == 1 else '',
-                count=element.get_descendants_document_count(user=user),
-                icon=icon.render(),
-                text=escape(element)
-            )
+        if element == node or node.get_ancestors(include_self=True).count() == 1:
+            active = 'active'
+        else:
+            active = ''
+        count = element.get_descendants_document_count(user=user)
+        icon = icon.render()
+        text = escape(text=element)
+        url = element.get_absolute_url()
+
+        level_result = '<a href="{url}" class="list-group-item {active}"><span class="badge">{count}</span>{icon} {text}</a>'.format(
+            active=active, count=count, icon=icon, text=text, url=url
         )
+
+        result.append(level_result)
 
     result.append('</div>')
 
-    return mark_safe(
+    output = mark_safe(
         s=''.join(result)
     )
+
+    return output

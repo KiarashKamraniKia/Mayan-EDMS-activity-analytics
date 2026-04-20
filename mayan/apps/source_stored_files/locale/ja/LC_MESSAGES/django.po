@@ -24,11 +24,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr "保存済みソースファイル"
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr "サイズ"
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "サムネイル"
 
@@ -151,8 +151,8 @@ msgid "No source files available"
 msgstr "ソースファイルが存在しません"
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
-msgstr "画像変換バックエンドに渡す幅"
+msgid "Width value to be passed to the converter backend."
+msgstr ""
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

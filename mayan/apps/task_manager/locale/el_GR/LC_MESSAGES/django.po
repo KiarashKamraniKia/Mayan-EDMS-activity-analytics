@@ -197,7 +197,7 @@ msgstr ""
 "τμήμα σχήματος (transport: //), το υπόλοιπο είναι προαιρετικό και από "
 "προεπιλογή παίρνει τις προεπιλεγμένες τιμές του συγκεκριμένης μεταφοράς."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -206,7 +206,7 @@ msgstr ""
 "μεσολαβητή και ρυθμίσεις SSL Οι έγκυρες τιμές για αυτήν την επιλογή "
 "διαφέρουν ανάλογα με τη μεταφορά."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

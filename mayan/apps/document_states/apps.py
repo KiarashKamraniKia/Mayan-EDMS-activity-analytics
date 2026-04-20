@@ -326,8 +326,8 @@ class DocumentStatesApp(MayanAppConfig):
         )
         ModelProperty(
             description=_(
-                message='Return the current context dictionary which includes '
-                'runtime data from the workflow transition fields.'
+                message='Return the current context dictionary which '
+                'includes runtime data from the workflow transition fields.'
             ), label=_(message='Get the context'), model=WorkflowInstance,
             name='get_runtime_context'
         )

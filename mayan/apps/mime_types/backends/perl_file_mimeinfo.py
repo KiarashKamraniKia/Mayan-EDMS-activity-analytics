@@ -1,6 +1,6 @@
+import pathlib
 from shutil import copyfileobj
-
-import sh
+import subprocess
 
 from django.utils.translation import gettext_lazy as _
 
@@ -17,13 +17,11 @@ class MIMETypeBackendPerlFileMIMEInfo(MIMETypeBackend):
         self.mimetype_path = mimetype_path or DEFAULT_MIMETYPE_PATH
         self.copy_length = copy_length
 
-        try:
-            self.command_mimetype = sh.Command(path=self.mimetype_path).bake(
-                '--magic-only'
-            )
-        except sh.CommandNotFound:
+        path = pathlib.Path(self.mimetype_path)
+
+        if not path.is_file():
             raise DependenciesException(
-                _(message='mimetype not installed or not found.')
+                _(message='mimetype command not installed or not found.')
             )
 
     def _get_mime_type(self, file_object, mime_type_only):
@@ -36,8 +34,12 @@ class MIMETypeBackendPerlFileMIMEInfo(MIMETypeBackend):
             file_object.seek(0)
             temporary_file_object.seek(0)
 
-            filename, mime_type = self.command_mimetype(
-                temporary_file_object.name
-            ).split()
+            cmd = [
+                self.mimetype_path, '--magic-only', temporary_file_object.name
+            ]
+            completed = subprocess.run(
+                args=cmd, capture_output=True, check=False, text=True
+            )
+            filename, mime_type = (completed.stdout or '').strip().split()
 
             return (mime_type, 'binary')

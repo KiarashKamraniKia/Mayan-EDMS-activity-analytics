@@ -93,7 +93,7 @@ msgstr "“%s”不是有效的许可。"
 msgid "Save"
 msgstr "保存"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "设置"
 
@@ -105,11 +105,11 @@ msgstr "编辑"
 msgid "Revert"
 msgstr "还原"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "命名空间"
 
-#: literals.py:47
+#: literals.py:48
 msgid ""
 "Local storage is currently disabled, changes to settings will not be saved. "
 "Instead, use environment variables to modify settings."
@@ -137,6 +137,10 @@ msgstr ""
 
 #: models.py:20
 msgid "Updated settings"
+msgstr ""
+
+#: namespaces.py:104
+msgid "Settings namespace"
 msgstr ""
 
 #: permissions.py:10
@@ -390,9 +394,9 @@ msgstr ""
 
 #: settings.py:281
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
 
 #: settings.py:289

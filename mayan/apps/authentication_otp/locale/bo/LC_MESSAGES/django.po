@@ -60,21 +60,21 @@ msgstr ""
 "ཁྱེད་རང་གི་བདེན་དཔང་འཕྲུལ་ཆས་ནང་QRཨང་རྟགས་པར་བཤུས་བྱེད་པའམ་ཡང་ན་གསང་བ་དེ་བླུགས།"
 " གསང་བ་འདི་མཉམ་སྤྱོད་མ་བྱེད། གསང་གྲངས་ལྟར་འཛིན་དགོས།"
 
-#: forms.py:107 forms.py:112
+#: forms.py:108 forms.py:113
 msgid "Secret"
 msgstr "གསང་བ"
 
-#: forms.py:118
+#: forms.py:119
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 "གསང་བ་དེ་བདེན་པ་ཡིན་མིན་བདེན་དཔང་བྱེད་པར་འབྲེལ་ཡོད་ཀྱི་རྟགས་མཚན་བླུགས།"
 
-#: forms.py:121
+#: forms.py:122
 msgid "Token"
 msgstr "རྟགས་མཚན།"
 
-#: forms.py:157
+#: forms.py:158
 msgid "Token is incorrect for the specified secret."
 msgstr "གསལ་བཀོད་བྱས་པའི་གསང་བའི་ཆེད་དུ་ཊོ་ཀེན་ནོར་འཁྲུལ་ཅན་རེད།"
 

@@ -396,11 +396,11 @@ msgstr "المفتاح الأساسي"
 msgid "Search fields"
 msgstr "حقول البحث"
 
-#: settings.py:25
+#: settings.py:26
 msgid "Full path to the backend to be used to handle the search."
 msgstr "المسار الكامل للواجهة الخفية لاستخدامه في معالجة البحث."
 
-#: settings.py:31
+#: settings.py:33
 msgid ""
 "Arguments to pass to the search backend. For example values to change the "
 "behavior, host names, or authentication arguments."
@@ -408,52 +408,52 @@ msgstr ""
 "الوسائط المُرسَلة إلى خادم البحث. على سبيل المثال، القيم لتغيير السلوك، أو "
 "أسماء المضيفين، أو وسائط المصادقة."
 
-#: settings.py:39
+#: settings.py:42
 msgid "The search operator to use when none is specified."
 msgstr "عامل البحث الذي يجب استخدامه عندما لا يتم تحديد أي عامل بحث."
 
-#: settings.py:46
+#: settings.py:49
 msgid ""
 "Disables the single term bar search leaving only the advanced search button."
 msgstr "لتعطيل بحث شريط المصطلح الفردي مع ترك زر البحث المتقدم فقط."
 
-#: settings.py:53
+#: settings.py:57
 msgid "Amount of objects to process when performing bulk indexing."
 msgstr "عدد الكائنات التي يجب معالجتها عند تنفيذ الفهرسة المجمعة."
 
-#: settings.py:59
+#: settings.py:63
 msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr "تعيين الحالة الافتراضية لمربع الاختيار \"مطابقة الكل\"."
 
-#: settings.py:65
+#: settings.py:70
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "الحد الأقصى لعدد نتائج البحث التي سيتم جلبها وعرضها لكل وحدة استعلام بحث."
 
-#: settings.py:72
+#: settings.py:77
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."
 msgstr ""
 
-#: settings.py:79
+#: settings.py:84
 msgid "Maximum number of search results to fetch and display."
 msgstr "الحد الأقصى لعدد نتائج البحث التي سيتم جلبها وعرضها."
 
-#: settings.py:85
+#: settings.py:90
 msgid "Maximum number of saved resultsets to keep per user."
 msgstr "الحد الأقصى لعدد مجموعات النتائج المحفوظة لكل مستخدم."
 
-#: settings.py:91
+#: settings.py:96
 msgid "Maximum number of results to store per resultset."
 msgstr "الحد الأقصى لعدد النتائج لتخزينها في كل مجموعة نتائج."
 
-#: settings.py:97
+#: settings.py:102
 msgid "Time to keep the resultset in seconds."
 msgstr "المدة الزمنية لحفظ مجموعة النتائج بالثواني."
 
-#: settings.py:103
+#: settings.py:108
 msgid "Amount to increase the time to live on each access of the resultset."
 msgstr "مقدار زيادة مدة البقاء في كل مرة يتم فيها الوصول إلى مجموعة النتائج."
 

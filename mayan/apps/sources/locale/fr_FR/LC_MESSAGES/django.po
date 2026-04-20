@@ -217,7 +217,7 @@ msgstr ""
 msgid "Source metadata value"
 msgstr ""
 
-#: serializers.py:22 serializers.py:107
+#: serializers.py:22 serializers.py:108
 msgid "URL"
 msgstr "URL"
 
@@ -241,7 +241,7 @@ msgstr "Nom"
 msgid "Required"
 msgstr "Obligatoire"
 
-#: serializers.py:70 serializers.py:85
+#: serializers.py:70 serializers.py:86
 msgid "Arguments"
 msgstr "Arguments"
 
@@ -253,31 +253,31 @@ msgstr ""
 msgid "Optional arguments for the action. Must be JSON formatted."
 msgstr ""
 
-#: serializers.py:89
+#: serializers.py:90
 msgid "Confirmation"
 msgstr "Confirmation"
 
-#: serializers.py:92
+#: serializers.py:93
 msgid "Execute URL"
 msgstr ""
 
-#: serializers.py:95
+#: serializers.py:96
 msgid "Interfaces"
 msgstr ""
 
-#: serializers.py:99
+#: serializers.py:100
 msgid "name"
 msgstr "nom"
 
-#: serializers.py:102
+#: serializers.py:103
 msgid "Permission"
 msgstr "Autorisation"
 
-#: serializers.py:118
+#: serializers.py:119
 msgid "Binary content for the new file."
 msgstr "Contenu binaire du nouveau fichier."
 
-#: serializers.py:154
+#: serializers.py:155
 msgid "Actions URL"
 msgstr "URL des actions"
 
@@ -295,8 +295,8 @@ msgstr ""
 msgid "Path to the Storage subclass used to store cached source image files."
 msgstr ""
 
-#: settings.py:44
-msgid "Arguments to pass to the SOURCES_SOURCE_CACHE_STORAGE_BACKEND."
+#: settings.py:45
+msgid "Arguments to pass to the `SOURCES_SOURCE_CACHE_STORAGE_BACKEND`."
 msgstr ""
 
 #: source_backend_actions/interfaces.py:161
@@ -360,7 +360,7 @@ msgstr "Exclure les expressions régulières"
 msgid "Content selection"
 msgstr ""
 
-#: storages.py:13
+#: storages.py:14
 msgid ""
 "Unable to initialize the staging folder file image storage. Check the "
 "settings {} and {} for formatting errors."
@@ -369,7 +369,7 @@ msgstr ""
 "d'importation. Vérifiez les paramètres {} et {} pour les erreurs de "
 "formatage."
 
-#: storages.py:20
+#: storages.py:21
 msgid "Sources cache"
 msgstr ""
 

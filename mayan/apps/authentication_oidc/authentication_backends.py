@@ -12,19 +12,24 @@ from mayan.apps.common.utils import get_class_full_name
 from .django_authentication_backends import DjangoAuthenticationBackendOIDC
 from .forms import AuthenticationFormOIDC
 from .literals import (
-    DEFAULT_OIDC_OP_AUTHORIZATION_ENDPOINT, DEFAULT_OIDC_OP_JWKS_ENDPOINT,
-    DEFAULT_OIDC_OP_TOKEN_ENDPOINT, DEFAULT_OIDC_OP_USER_ENDPOINT,
-    DEFAULT_OIDC_RP_CLIENT_ID, DEFAULT_OIDC_RP_CLIENT_SECRET,
-    DEFAULT_OIDC_RP_SIGN_ALGO, DEFAULT_OIDC_USERNAME_ALGO
+    DEFAULT_HTTP_TIMEOUT, DEFAULT_OIDC_OP_AUTHORIZATION_ENDPOINT,
+    DEFAULT_OIDC_OP_JWKS_ENDPOINT, DEFAULT_OIDC_OP_TOKEN_ENDPOINT,
+    DEFAULT_OIDC_OP_USER_ENDPOINT, DEFAULT_OIDC_RP_CLIENT_ID,
+    DEFAULT_OIDC_RP_CLIENT_SECRET, DEFAULT_OIDC_RP_SIGN_ALGO,
+    DEFAULT_OIDC_USERNAME_ALGO
 )
 
 
 class AuthenticationBackendOIDC(AuthenticationBackend):
     login_form_class = AuthenticationFormOIDC
 
-    def __init__(self, oidc_discovery_url=None, **kwargs):
+    def __init__(
+        self, oidc_discovery_timeout=None, oidc_discovery_url=None, **kwargs
+    ):
         if oidc_discovery_url:
-            response = requests.get(url=oidc_discovery_url)
+            timeout = oidc_discovery_timeout or DEFAULT_HTTP_TIMEOUT
+            response = requests.get(timeout=timeout, url=oidc_discovery_url)
+            response.raise_for_status()
             data = response.json()
 
             try:

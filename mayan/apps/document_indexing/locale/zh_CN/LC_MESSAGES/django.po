@@ -30,7 +30,7 @@ msgstr ""
 msgid "None"
 msgstr "无"
 
-#: admin.py:26 links.py:88 models/index_template_models.py:50
+#: admin.py:26 links.py:88 models/index_template_models.py:51
 #: serializers/index_template_serializers.py:196
 msgid "Document types"
 msgstr "文件类型"
@@ -84,8 +84,8 @@ msgstr "命名空间"
 msgid "Label"
 msgstr "标签"
 
-#: forms.py:32 models/index_template_models.py:46
-#: models/index_template_models.py:166
+#: forms.py:32 models/index_template_models.py:47
+#: models/index_template_models.py:167
 msgid "Enabled"
 msgstr "啟用"
 
@@ -93,7 +93,7 @@ msgstr "啟用"
 msgid "Index templates to be queued for rebuilding."
 msgstr "索引範例將被加入重建隊列"
 
-#: forms.py:47 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:47 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "索引模板"
@@ -158,30 +158,30 @@ msgstr "否"
 msgid "Yes"
 msgstr "是"
 
-#: models/index_instance_model_mixins.py:34
+#: models/index_instance_model_mixins.py:36
 #, python-format
 msgid ""
 "Error indexing document: %(document)s; expression: %(expression)s; "
 "%(exception)s"
 msgstr "错误索引文档：%(document)s;表达式：%(expression)s; %(exception)s"
 
-#: models/index_instance_model_mixins.py:155
+#: models/index_instance_model_mixins.py:174
 msgid "Total number of nodes with unique values this item contains."
 msgstr ""
 
-#: models/index_instance_model_mixins.py:164
+#: models/index_instance_model_mixins.py:183
 msgid "Total number of unique documents this item contains."
 msgstr ""
 
-#: models/index_instance_model_mixins.py:174
+#: models/index_instance_model_mixins.py:193
 msgid "Total number of node levels this item contains."
 msgstr ""
 
-#: models/index_instance_model_mixins.py:243
+#: models/index_instance_model_mixins.py:262
 msgid "The path to the index including all ancestors."
 msgstr "包含所有歷史紀錄的索引路徑"
 
-#: models/index_instance_model_mixins.py:245
+#: models/index_instance_model_mixins.py:264
 msgid "Full path"
 msgstr "完整路徑"
 
@@ -193,7 +193,7 @@ msgstr "索引实例"
 msgid "Index instances"
 msgstr "索引实例"
 
-#: models/index_instance_models.py:59 models/index_template_models.py:178
+#: models/index_instance_models.py:59 models/index_template_models.py:179
 msgid "Index template node"
 msgstr "索引模板节点"
 
@@ -229,66 +229,66 @@ msgstr "索引的簡易敘述"
 msgid "This value will be used by other apps to reference this index."
 msgstr "其他应用程序将使用此值来引用此索引。"
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "标称"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr "使文档数据更改时，此索引可见并更新。"
 
-#: models/index_template_models.py:57 models/index_template_models.py:97
+#: models/index_template_models.py:58 models/index_template_models.py:98
 msgid "Index template"
 msgstr ""
 
-#: models/index_template_models.py:101
+#: models/index_template_models.py:102
 msgid "Event type"
 msgstr "事件类型"
 
-#: models/index_template_models.py:106
+#: models/index_template_models.py:107
 msgid "Index template event trigger"
 msgstr ""
 
-#: models/index_template_models.py:107
+#: models/index_template_models.py:108
 msgid "Index template event triggers"
 msgstr ""
 
-#: models/index_template_models.py:145
+#: models/index_template_models.py:146
 msgid "Parent index template node of this node."
 msgstr ""
 
-#: models/index_template_models.py:151
+#: models/index_template_models.py:152
 msgid "Index"
 msgstr "索引"
 
-#: models/index_template_models.py:155
+#: models/index_template_models.py:156
 msgid "Enter a template to render. Use Django's default templating language."
 msgstr ""
 
-#: models/index_template_models.py:158
+#: models/index_template_models.py:159
 msgid "Indexing expression"
 msgstr "索引表达式"
 
-#: models/index_template_models.py:163
+#: models/index_template_models.py:164
 msgid "Causes this node to be visible and updated when document data changes."
 msgstr "使文档数据更改时，此节点可见并更新。"
 
-#: models/index_template_models.py:171
+#: models/index_template_models.py:172
 msgid ""
 "Check this option to have this node act as a container for documents and not"
 " as a parent for further nodes."
 msgstr "检查当前节点是否为文档容器，而不是作为别处节点的父节点。"
 
-#: models/index_template_models.py:174
+#: models/index_template_models.py:175
 msgid "Link documents"
 msgstr "链接文件"
 
-#: models/index_template_models.py:179
+#: models/index_template_models.py:180
 msgid "Index template nodes"
 msgstr ""
 
-#: models/index_template_models.py:183
+#: models/index_template_models.py:184
 msgid "Root"
 msgstr "根"
 

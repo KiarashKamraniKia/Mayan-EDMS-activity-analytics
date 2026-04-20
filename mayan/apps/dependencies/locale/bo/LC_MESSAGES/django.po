@@ -264,11 +264,11 @@ msgstr ""
 "མཐའ་མའི་སྤྱོད་མཁན་གྱི་རྒྱུན་ལྡན་གྱི་ཁོར་ཡུག "
 "མཐའ་འཁོར་འདིའི་འོག་ལ་རག་ལུས་མེད་ན་སྤྱིར་བཏང་བེད་སྤྱོད་བྱེད་སྐབས་གནད་དོན་དང་ནོར་འཁྲུལ་འབྱུང་སྲིད།"
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "ཐོན་སྐྱེད"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -277,7 +277,7 @@ msgstr ""
 "མཐའ་མཚམས་ཀྱི་བྱེད་ནུས་བདེན་དཔང་བྱེད་པར་ཚོད་ལྟའི་གྱོན་ཆས་བཀོལ་སྤྱོད་བྱེད་པའི་ཁོར་ཡུག"
 " སྤྱིར་བཏང་གི་ཐོན་སྐྱེད་བེད་སྤྱོད་ལ་ཁོར་ཡུག་འདིའི་ནང་དུ་བརྟེན་དགོས་མིན།"
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "ཚོད་ལྟ་བྱེད་པ།"
 
@@ -301,7 +301,7 @@ msgstr "ཞིབ་ཆ"
 msgid "Dependencies licenses"
 msgstr "བརྟེན་སའི་ཆོག་མཆན།"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
@@ -310,7 +310,7 @@ msgstr ""
 "ཁྱེད་ཀྱི་ཐོན་རིམ་ ( %(version_local)s ) དེ་དཔེ་སྐྲུན་བྱས་པའི་ཐོན་རིམ་ ( "
 "%(version_server)s ) ལས་གསར་ཤོས་ཡིན།"
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
@@ -319,11 +319,11 @@ msgstr ""
 "ཁྱེད་ཀྱིས་བེད་སྤྱོད་བྱེད་བཞིན་པའི་ཐོན་རིམ་( %(version_local)s "
 ")དེ་དུས་ཚོད་རྙིང་པ་རེད། ཐོན་རིམ་གསར་ཤོས་དེ་ %(version_server)s ཡིན།"
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr "ཐོན་རིམ་གསར་ཤོས་ཡོད་མེད་གཏན་འབེབས་བྱེད་ཐུབ་ཀྱི་མེད།"
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"
@@ -351,6 +351,7 @@ msgstr ""
 "གཞན་ཚང་མ་བཀག་པའི་སྐབས་ཐོ་གཞུང་ནང་སྟོན་པའི་འབྲེལ་ཡོད་ཀྱི་མིང་ཚེག་གིས་དབྱེ་འབྱེད་བྱས།"
 
 #: management/commands/dependencies_install.py:13
+#: management/commands/dependencies_uninstall.py:13
 msgid "Process a specific app."
 msgstr "མཉེན་ཆས་དམིགས་བསལ་ཞིག་ལ་ལས་སྣོན་བྱེད།"
 

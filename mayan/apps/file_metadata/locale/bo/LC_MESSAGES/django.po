@@ -309,17 +309,17 @@ msgid ""
 msgstr ""
 "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ཁྱད་ཆོས།: %(document_file)s དང་སྒུལ་གཏོང་: %(driver)s"
 
-#: views/document_file_views.py:111
+#: views/document_file_views.py:112
 #, python-format
 msgid "%(count)d documents files submitted to the file metadata queue."
 msgstr "%(count)d ཡིག་ཆའི་ཡིག་ཆ་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་བང་རིམ་ལ་ཕུལ་ཡོད།"
 
-#: views/document_file_views.py:114
+#: views/document_file_views.py:116
 #, python-format
 msgid "%(count)d document file submitted to the file metadata queue."
 msgstr "%(count)d ཡིག་ཆའི་ཡིག་ཆ་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་བང་རིམ་ལ་ཕུལ་ཡོད།"
 
-#: views/document_file_views.py:123
+#: views/document_file_views.py:126
 msgid "Submit the selected document file to the file metadata queue?"
 msgid_plural "Submit the selected documents files to the file metadata queue?"
 msgstr[0] "བདམས་པའི་ཡིག་ཆའི་ཡིག་ཆ་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་བང་རིམ་ལ་འབུལ་དགོས་སམ།"

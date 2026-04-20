@@ -52,7 +52,11 @@ CONTAINER_NAME_TEST_ORACLE = mayan-test-oracle
 CONTAINER_NAME_TEST_POSTGRESQL = mayan-test-postgresql
 CONTAINER_NAME_TEST_REDIS = mayan-test-redis
 
-.PHONY: clean clean-pyc clean-build test
+.PHONY: clean clean-pyc clean-build default help test
+
+default:
+	@echo "No default target."
+	@echo "Run: make help for a list of targets."
 
 help:
 	@echo "Usage: make <target>\n"
@@ -291,7 +295,7 @@ config-env-copy: ## Forward compatible alias for `copy-config-env`.
 config-env-copy: copy-config-env
 
 copy-config-env: ## Copy and convert `config.env` to `settings.literals.py`.
-	@contrib/scripts/copy_config_env.py > mayan/settings/literals.py
+	@contrib/scripts/copy_config_env.py > mayan/literals.py
 
 # Development environment
 

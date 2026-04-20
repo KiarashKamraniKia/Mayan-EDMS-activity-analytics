@@ -131,8 +131,8 @@ class DocumentTypeFileMetadataSubmitView(FormView):
 
         messages.success(
             message=_(
-                message='%(count)d documents added to the file metadata processing '
-                'queue.'
+                message='%(count)d documents added to the file metadata '
+                'processing queue.'
             ) % {
                 'count': count
             }, request=self.request

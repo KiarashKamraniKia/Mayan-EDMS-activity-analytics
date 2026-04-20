@@ -61,7 +61,7 @@ msgid "Utility from the poppler-utils package used to inspect PDF files."
 msgstr ""
 "A PDF-fájlok ellenőrzésére használt poppler-utils csomag segédprogramja."
 
-#: dependencies.py:19
+#: dependencies.py:20
 msgid ""
 "Utility from the popper-utils package used to extract pages from PDF files "
 "into PPM format images."
@@ -134,11 +134,11 @@ msgstr "Átalakítások"
 msgid "Select new transformation"
 msgstr "Új átalakítás választása"
 
-#: model_mixins.py:120
+#: model_mixins.py:118
 msgid "Badly formatted arguments YAML"
 msgstr "Rosszul formázott YAML argumentumok"
 
-#: model_mixins.py:131 models.py:168
+#: model_mixins.py:129 models.py:168
 msgid "Arguments"
 msgstr "Argumentumok"
 
@@ -361,7 +361,7 @@ msgstr ""
 msgid "Assets cache"
 msgstr "Tartalom gyorsítótár"
 
-#: transformation_mixins.py:18 transformations.py:671
+#: transformation_mixins.py:18 transformations.py:670
 msgid ""
 "Number of degrees to rotate the image counter clockwise around its center."
 msgstr ""
@@ -397,8 +397,8 @@ msgid "Horizontal position in pixels from the left."
 msgstr "Vízszintes helyzet pixelben balról."
 
 #: transformation_mixins.py:119 transformation_mixins.py:164
-#: transformation_mixins.py:229 transformations.py:236 transformations.py:338
-#: transformations.py:436
+#: transformation_mixins.py:229 transformations.py:235 transformations.py:337
+#: transformations.py:435
 msgid "Left"
 msgstr "Bal"
 
@@ -407,8 +407,8 @@ msgid "Vertical position in pixels from the top."
 msgstr "Függőleges pozíció pixelben felülről."
 
 #: transformation_mixins.py:123 transformation_mixins.py:169
-#: transformation_mixins.py:239 transformations.py:240 transformations.py:342
-#: transformations.py:440
+#: transformation_mixins.py:239 transformations.py:239 transformations.py:341
+#: transformations.py:439
 msgid "Top"
 msgstr "Felső"
 
@@ -424,7 +424,7 @@ msgstr "Vízszintes helyzet százalékban balról."
 msgid "Vertical position in percent from the top."
 msgstr "Függőleges pozíció százalékban felülről."
 
-#: transformation_mixins.py:222 transformations.py:224
+#: transformation_mixins.py:222 transformations.py:223
 msgid "Paste an asset as watermark"
 msgstr "Tartalom beillesztése vízjelként"
 
@@ -436,8 +436,8 @@ msgstr "Vízszintes kezdőpozíció pixelben balról."
 msgid "Horizontal end position in pixels from the right."
 msgstr "Vízszintes véghelyzet pixelben jobbról."
 
-#: transformation_mixins.py:234 transformations.py:245 transformations.py:346
-#: transformations.py:444
+#: transformation_mixins.py:234 transformations.py:244 transformations.py:345
+#: transformations.py:443
 msgid "Right"
 msgstr "Jobb"
 
@@ -449,8 +449,8 @@ msgstr "Függőleges kezdőpozíció pixelben felülről."
 msgid "Vertical end position in pixels from the top."
 msgstr "Függőleges véghelyzet pixelben felülről."
 
-#: transformation_mixins.py:244 transformations.py:250 transformations.py:350
-#: transformations.py:448
+#: transformation_mixins.py:244 transformations.py:249 transformations.py:349
+#: transformations.py:447
 msgid "Bottom"
 msgstr "Alsó"
 
@@ -506,135 +506,135 @@ msgstr "A téglalap körvonalának szélessége pixelben."
 msgid "Outline width"
 msgstr "Körvonal vastagsága"
 
-#: transformations.py:208
+#: transformations.py:207
 msgid "Paste an asset (absolute coordinates)"
 msgstr "Tartalom beillesztése (abszolút koordináták)"
 
-#: transformations.py:216
+#: transformations.py:215
 msgid "Paste an asset (percent coordinates)"
 msgstr "Tartalom beillesztése (százalékos koordináták)"
 
-#: transformations.py:230
+#: transformations.py:229
 msgid "Crop"
 msgstr "Körülvágás"
 
-#: transformations.py:235
+#: transformations.py:234
 msgid "Number of pixels to remove from the left."
 msgstr "Az eltávolítandó képpontok száma balról."
 
-#: transformations.py:239
+#: transformations.py:238
 msgid "Number of pixels to remove from the top."
 msgstr "A felülről eltávolítandó képpontok száma."
 
-#: transformations.py:244
+#: transformations.py:243
 msgid "Number of pixels to remove from the right."
 msgstr "Jobbról eltávolítandó képpontok száma."
 
-#: transformations.py:249
+#: transformations.py:248
 msgid "Number of pixels to remove from the bottom."
 msgstr "Az alulról eltávolítandó képpontok száma."
 
-#: transformations.py:332
+#: transformations.py:331
 msgid "Draw rectangle"
 msgstr "Téglalap rajzolása"
 
-#: transformations.py:337
+#: transformations.py:336
 msgid "Left side location in pixels."
 msgstr "Bal oldali helyzet képpontokban."
 
-#: transformations.py:341
+#: transformations.py:340
 msgid "Top side location in pixels."
 msgstr "Felső oldali helyzet képpontokban."
 
-#: transformations.py:345
+#: transformations.py:344
 msgid "Right side location in pixels."
 msgstr "Jobb oldali helyzet képpontokban."
 
-#: transformations.py:349
+#: transformations.py:348
 msgid "Bottom side location in pixels."
 msgstr "Az alsó oldali helyzet képpontokban."
 
-#: transformations.py:430
+#: transformations.py:429
 msgid "Draw rectangle (percent coordinates)"
 msgstr "Téglalap rajzolása (százalékos koordináták)"
 
-#: transformations.py:435
+#: transformations.py:434
 msgid "Left side location in percent."
 msgstr "Bal oldali helyzet százalékban."
 
-#: transformations.py:439
+#: transformations.py:438
 msgid "Top side location in percent."
 msgstr "Felső oldali helyzet százalékban."
 
-#: transformations.py:443
+#: transformations.py:442
 msgid "Right side location in percent."
 msgstr "Jobb oldali helyzet százalékban."
 
-#: transformations.py:447
+#: transformations.py:446
 msgid "Bottom side location in percent."
 msgstr "Alsó oldali helyzet százalékban"
 
-#: transformations.py:530
+#: transformations.py:529
 msgid "Flip"
 msgstr "Megfordítás"
 
-#: transformations.py:541
+#: transformations.py:540
 msgid "Gaussian blur"
 msgstr "Gauss-elmosás"
 
-#: transformations.py:546 transformations.py:747
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr "Sugár"
 
-#: transformations.py:558
+#: transformations.py:557
 msgid "Line art"
 msgstr "Vonalrajz"
 
-#: transformations.py:572
+#: transformations.py:571
 msgid "Mirror"
 msgstr "Tükrözés"
 
-#: transformations.py:585
+#: transformations.py:584
 msgid "Draw a QRCode (percent coordinates)"
 msgstr "Rajzoljon QRCode-ot (százalékos koordináták)"
 
-#: transformations.py:595
+#: transformations.py:594
 msgid "Value to encode in the QRCode."
 msgstr "A QRCode-ba kódolandó érték."
 
-#: transformations.py:596
+#: transformations.py:595
 msgid "Code value"
 msgstr "Kódérték"
 
-#: transformations.py:621
+#: transformations.py:620
 msgid "Resize"
 msgstr "Átméretezés"
 
-#: transformations.py:627
+#: transformations.py:626
 msgid "New width in pixels."
 msgstr "Új szélesség képpontokban"
 
-#: transformations.py:628
+#: transformations.py:627
 msgid "Width"
 msgstr "Szélesség"
 
-#: transformations.py:632
+#: transformations.py:631
 msgid "New height in pixels."
 msgstr "Új magasság képpontokban"
 
-#: transformations.py:633
+#: transformations.py:632
 msgid "Height"
 msgstr "Magasság"
 
-#: transformations.py:665
+#: transformations.py:664
 msgid "Rotate"
 msgstr "Forgatás"
 
-#: transformations.py:673
+#: transformations.py:672
 msgid "Degrees"
 msgstr "Fokok"
 
-#: transformations.py:677
+#: transformations.py:676
 msgid "Color to be used for area outside of the rotated image."
 msgstr "Az elforgatott képen kívüli területhez használandó szín."
 

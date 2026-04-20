@@ -201,7 +201,7 @@ msgstr ""
 " a parte de esquema (transport://) é requerida, o resto é opcional e "
 "determina os valores padrão específicos de transportes."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -210,7 +210,7 @@ msgstr ""
 "configurações de SSL. Os valores válidos para esta opção variam de acordo "
 "com o transporte."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

@@ -19,6 +19,7 @@ from mayan.apps.events.decorators import method_event
 from mayan.apps.events.event_managers import EventManagerMethodAfter
 from mayan.apps.file_caching.models import CachePartitionFile
 from mayan.apps.mime_types.classes import MIMETypeBackend
+from mayan.apps.storage.hashing import chunk_hash_file_object
 from mayan.apps.storage.model_mixins import ModelMixinFileFieldOpen
 
 from ..classes import DocumentFileAction
@@ -249,18 +250,14 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
             block_size = -1
 
         if self.exists():
-            hash_object = DocumentFile.hash_function()
             with self.open(raw=True) as file_object:
-                while (True):
-                    data = file_object.read(block_size)
-                    if not data:
-                        break
+                hash_object = chunk_hash_file_object(
+                    block_size=block_size, file_object=file_object,
+                    hash_function=DocumentFile.hash_function
+                )
 
-                    hash_object.update(data)
-
-            self.checksum = str(
-                hash_object.hexdigest()
-            )
+            hash_object_hexdigest = hash_object.hexdigest()
+            self.checksum = str(hash_object_hexdigest)
 
             if save:
                 self.save(
@@ -521,5 +518,5 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
         )
 
     versions_new.help_text = _(
-        'Controls what happens when a new document file is uploaded.'
+        message='Controls what happens when a new document file is uploaded.'
     )

@@ -102,7 +102,7 @@ msgstr "Partíció fájlok száma"
 msgid "Total cached files."
 msgstr "Összes gyorsítótárazott fájl."
 
-#: model_mixins.py:111 model_mixins.py:324
+#: model_mixins.py:111 model_mixins.py:323
 msgid "Current size"
 msgstr "Jelenlegi méret"
 
@@ -114,7 +114,7 @@ msgstr "A gyorsítótár jelenlegi mérete."
 msgid "Label"
 msgstr "Cimke"
 
-#: model_mixins.py:326
+#: model_mixins.py:325
 msgid "Current size of the cache partition."
 msgstr "A gyorsítótár-partíció jelenlegi mérete."
 

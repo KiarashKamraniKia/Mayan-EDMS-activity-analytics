@@ -23,7 +23,7 @@ msgstr ""
 
 #: apps.py:10
 msgid "Backends"
-msgstr ""
+msgstr "Backendy"
 
 #: model_mixins.py:22
 msgid "The dotted Python path to the backend class."

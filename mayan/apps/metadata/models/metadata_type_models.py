@@ -1,10 +1,8 @@
 from django.core.exceptions import ValidationError
 from django.db import models
 from django.urls import reverse
-from django.utils.module_loading import import_string
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.common.serialization import yaml_load
 from mayan.apps.common.validators import YAMLValidator
 from mayan.apps.databases.model_mixins import ExtraDataModelMixin
 from mayan.apps.events.decorators import method_event
@@ -132,11 +130,7 @@ class MetadataType(
                 )
 
         if self.validation:
-            validator_class = import_string(dotted_path=self.validation)
-            validator_arguments = yaml_load(
-                stream=self.validation_arguments or '{}'
-            )
-            validator = validator_class(**validator_arguments)
+            validator = self.get_validator_instance()
             try:
                 validator.validate(value)
             except ValidationError as exception:
@@ -150,11 +144,7 @@ class MetadataType(
                 ) from exception
 
         if self.parser:
-            parser_class = import_string(dotted_path=self.parser)
-            parser_arguments = yaml_load(
-                stream=self.parser_arguments or '{}'
-            )
-            parser = parser_class(**parser_arguments)
+            parser = self.get_parser_instance()
             value = parser.parse(value)
 
         return value

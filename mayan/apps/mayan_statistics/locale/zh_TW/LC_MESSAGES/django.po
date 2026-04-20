@@ -122,38 +122,38 @@ msgstr "统计“%s”未找到。"
 msgid "Statistics namespaces group statistics into logical units. "
 msgstr ""
 
-#: views.py:25
+#: views.py:26
 msgid "No statistic namespaces available"
 msgstr ""
 
-#: views.py:26
+#: views.py:27
 msgid "Statistics namespaces"
 msgstr "统计命名空间"
 
-#: views.py:49
+#: views.py:50
 msgid "Statistics are metrics and chart representations of existing data."
 msgstr ""
 
-#: views.py:52
+#: views.py:53
 msgid "No statistic available"
 msgstr ""
 
-#: views.py:54
+#: views.py:55
 #, python-format
 msgid "Namespace details for: %s"
 msgstr "命名空间详细信息：%s"
 
-#: views.py:77
+#: views.py:78
 #, python-format
 msgid "Results for: %s"
 msgstr "结果：%s"
 
-#: views.py:97
+#: views.py:98
 #, python-format
 msgid "Queue statistic \"%s\" to be updated?"
 msgstr "队列统计“%s”有待更新？"
 
-#: views.py:105
+#: views.py:106
 #, python-format
 msgid "Statistic \"%s\" queued successfully for update."
 msgstr "统计“%s”已成功排队等待更新。"

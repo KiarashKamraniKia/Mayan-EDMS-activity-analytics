@@ -117,7 +117,7 @@ msgstr "查看错误日志"
 
 #: serializers.py:12
 msgid "Content type"
-msgstr ""
+msgstr "Content type"
 
 #: serializers.py:16
 msgid "Object ID"

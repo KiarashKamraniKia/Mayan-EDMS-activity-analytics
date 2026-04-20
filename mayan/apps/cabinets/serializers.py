@@ -27,8 +27,8 @@ class CabinetSerializer(serializers.ModelSerializer):
     )
     full_path = serializers.SerializerMethodField(
         help_text=_(
-            message='The name of this cabinet level appended to the names of '
-            'its ancestors.'
+            message='The name of this cabinet level appended to the names '
+            'of its ancestors.'
         ), label=_(message='Full path'), read_only=True
     )
     parent_url = serializers.SerializerMethodField(

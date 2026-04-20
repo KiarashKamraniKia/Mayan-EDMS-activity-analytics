@@ -97,7 +97,7 @@ msgstr "\"%s\" n'est pas une entrée valide."
 msgid "Save"
 msgstr "Enregistrer"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -109,11 +109,11 @@ msgstr "Modifier"
 msgid "Revert"
 msgstr "Rétablir"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "Espaces de noms"
 
-#: literals.py:47
+#: literals.py:48
 msgid ""
 "Local storage is currently disabled, changes to settings will not be saved. "
 "Instead, use environment variables to modify settings."
@@ -141,6 +141,10 @@ msgstr ""
 
 #: models.py:20
 msgid "Updated settings"
+msgstr ""
+
+#: namespaces.py:104
+msgid "Settings namespace"
 msgstr ""
 
 #: permissions.py:10
@@ -444,13 +448,10 @@ msgstr ""
 
 #: settings.py:281
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"Défaut : 'sessionid'. Le nom du cookie à utiliser pour les sessions. "
-"N'importe quel nom (à condition qu'il soit différent des autres noms de "
-"cookie de votre application)."
 
 #: settings.py:289
 msgid ""

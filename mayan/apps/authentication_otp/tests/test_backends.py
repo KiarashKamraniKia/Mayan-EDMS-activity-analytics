@@ -9,7 +9,7 @@ from django.urls import reverse
 
 from mayan.apps.authentication.classes import AuthenticationBackend
 from mayan.apps.authentication.tests.mixins import LoginViewTestMixin
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 from mayan.apps.testing.tests.base import GenericViewTestCase
 
 from .literals import (

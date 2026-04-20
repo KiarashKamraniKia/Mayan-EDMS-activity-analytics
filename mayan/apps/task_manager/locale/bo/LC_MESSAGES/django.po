@@ -206,7 +206,7 @@ msgstr ""
 "འདི་ནི་སྐྱེལ་འདྲེན་://userid:password@hostname:port/virtual_host "
 "འཆར་གཞིའི་ཆ་ཤས་(transport://) ཁོ་ན་དགོས་པ་དང་། ལྷག་མ་རྣམས་འདེམས་གཞི་ཡིན།"
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -215,7 +215,7 @@ msgstr ""
 "བར་ཚོང་པའི་མཐུད་ཁ་དང་SSLསྒྲིག་སྟངས་ཐོག་ལ་SSLབེད་སྤྱོད་བརྗེ་སྒྱུར་བྱེད། "
 "གདམ་ཁ་འདིའི་ནུས་ལྡན་གྱི་རིན་ཐང་དེ་སྐྱེལ་འདྲེན་ལ་གཞིགས་ཏེ་མི་འདྲ་བ་རེད།"
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

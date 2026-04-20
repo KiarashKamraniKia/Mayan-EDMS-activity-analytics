@@ -29,6 +29,8 @@ msgid ""
 "Welcome Admin! You have been given super user privileges. Use them with "
 "caution."
 msgstr ""
+"Vítejte, administrátore! Byla vám udělena oprávnění superuživatele. "
+"Používejte je opatrně."
 
 #: models.py:13
 msgid "Account"
@@ -50,7 +52,7 @@ msgstr "Vlastnosti automatického správce"
 msgid "Sets the email of the automatically created super user account."
 msgstr "Nastaví e-mail automaticky vytvořeného superuživatelského účtu."
 
-#: settings.py:18
+#: settings.py:19
 msgid ""
 "The password of the automatically created super user account. If it is equal"
 " to None, the password is randomly generated."
@@ -58,7 +60,7 @@ msgstr ""
 "Heslo automaticky vytvořeného superuživatelského účtu. Pokud je rovno Žádné,"
 " heslo se vygeneruje náhodně."
 
-#: settings.py:24
+#: settings.py:26
 msgid "The username of the automatically created super user account."
 msgstr "Uživatelské jméno automaticky vytvořeného superuživatelského účtu."
 

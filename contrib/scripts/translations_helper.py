@@ -230,11 +230,11 @@ class MessageProcessor:
         else:
             self.selected_languages = MessageProcessor.get_language_list()
 
-        command_manage = sh.Command('django-admin')
+        command_manage = sh.Command(path='django-admin')
         self.command_makemessages = command_manage.bake('makemessages')
         self.command_compilemessages = command_manage.bake('compilemessages')
 
-        command_transifex_client = sh.Command('tx')
+        command_transifex_client = sh.Command(path='tx')
         self.command_transifex_pull_translations = command_transifex_client.bake('pull')
         self.command_transifex_push_translations = command_transifex_client.bake('push')
 

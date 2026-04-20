@@ -86,7 +86,14 @@ msgstr "HTML"
 msgid "URL"
 msgstr "URL"
 
-#: settings.py:101
+#: settings.py:102
+msgid ""
+"A comma separated list of dangerous templating tags and filters that are "
+"allowed."
+msgstr ""
+"Eine kommagetrennte Liste gefährlicher Templating Tags, die erlaubt sind."
+
+#: settings.py:110
 msgid ""
 "Theme name of the CSS stylesheet used to change the visual appearance of the"
 " template preview."
@@ -104,18 +111,18 @@ msgstr "Vorlagen-Sandbox für: %s"
 msgid "Template error; %(exception)s"
 msgstr "Fehler in der Vorlage; %(exception)s"
 
-#: widgets.py:42
+#: widgets.py:43
 msgid "Filters"
 msgstr "Filter"
 
-#: widgets.py:49
+#: widgets.py:50
 msgid "Tags"
 msgstr "Tags"
 
-#: widgets.py:56
+#: widgets.py:57
 msgid "<Filters and tags>"
 msgstr "<Filters and tags>"
 
-#: widgets.py:129
+#: widgets.py:136
 msgid "<Model attributes>"
 msgstr "<Model attributes>"

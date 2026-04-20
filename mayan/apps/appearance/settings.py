@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_APPEARANCE_ELIDED_PAGER_ON_EACH_SIDE,
@@ -39,8 +39,8 @@ setting_default_appearance_elided_pager_on_ends = setting_namespace.do_setting_a
 setting_max_title_length = setting_namespace.do_setting_add(
     default=DEFAULT_MAXIMUM_TITLE_LENGTH,
     global_name='APPEARANCE_MAXIMUM_TITLE_LENGTH', help_text=_(
-        message='Maximum number of characters that will be displayed as the view '
-        'title.'
+        message='Maximum number of characters that will be displayed as the '
+        'view title.'
     )
 )
 setting_message_position = setting_namespace.do_setting_add(
@@ -55,8 +55,8 @@ setting_message_position = setting_namespace.do_setting_add(
 setting_menu_polling_interval = setting_namespace.do_setting_add(
     default=DEFAULT_MENU_POLLING_INTERVAL,
     global_name='APPEARANCE_MENU_POLLING_INTERVAL', help_text=_(
-        message='Delay in milliseconds after which the menus will be checked for '
-        'updates.'
+        message='Delay in milliseconds after which the menus will be checked '
+        'for updates.'
     )
 )
 setting_pagination_dropdown_range = setting_namespace.do_setting_add(
@@ -80,8 +80,8 @@ setting_appearance_pagination_input_enable = setting_namespace.do_setting_add(
 setting_throttling_maximum_requests = setting_namespace.do_setting_add(
     default=DEFAULT_THROTTLING_MAXIMUM_REQUESTS,
     global_name='APPEARANCE_THROTTLING_MAXIMUM_REQUESTS', help_text=_(
-        message='Maximum number of requests that can be made before throttling '
-        'is enabled.'
+        message='Maximum number of requests that can be made before '
+        'throttling is enabled.'
     )
 )
 setting_throttling_timeout = setting_namespace.do_setting_add(

@@ -5,7 +5,7 @@ from django.test import override_settings
 
 from mayan.apps.storage.utils import TemporaryDirectory
 from mayan.apps.testing.tests.base import BaseTransactionTestCase
-from mayan.settings.literals import (
+from mayan.literals import (
     DEFAULT_USER_SETTINGS_FOLDER, SECRET_KEY_FILENAME, SYSTEM_DIR
 )
 

@@ -35,7 +35,7 @@ msgstr ""
 
 #: fields.py:28
 msgid "Use Django's default templating language. "
-msgstr ""
+msgstr "Utilice el lenguaje de plantillas predeterminado de Django. "
 
 #: fields.py:42
 #, python-format
@@ -82,10 +82,22 @@ msgstr "HTML"
 msgid "URL"
 msgstr "URL"
 
-#: settings.py:101
+#: settings.py:102
+msgid ""
+"A comma separated list of dangerous templating tags and filters that are "
+"allowed."
+msgstr ""
+
+#: settings.py:110
 msgid ""
 "Theme name of the CSS stylesheet used to change the visual appearance of the"
 " template preview."
+msgstr ""
+"Nombre del tema de la hoja de estilo CSS utilizada para cambiar la "
+"apariencia visual de la vista previa de la plantilla ."
+
+#: templatetags/templating_tags.py:63
+msgid "Tag can bypass access controls and create permanent changes."
 msgstr ""
 
 #: views.py:59
@@ -98,18 +110,18 @@ msgstr "Sandbox de plantillas para: %s"
 msgid "Template error; %(exception)s"
 msgstr "Error de plantilla; %(exception)s"
 
-#: widgets.py:42
+#: widgets.py:43
 msgid "Filters"
 msgstr "Filtros"
 
-#: widgets.py:49
+#: widgets.py:50
 msgid "Tags"
 msgstr "Etiquetas"
 
-#: widgets.py:56
+#: widgets.py:57
 msgid "<Filters and tags>"
 msgstr "<Filters and tags>"
 
-#: widgets.py:129
+#: widgets.py:136
 msgid "<Model attributes>"
 msgstr "<Model attributes>"

@@ -197,7 +197,7 @@ msgstr ""
 "şema kısmı (transport://) gereklidir, gerisi isteğe bağlıdır ve varsayılan "
 "olarak belirli aktarımların varsayılan değerlerine göre ayarlanır."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -206,7 +206,7 @@ msgstr ""
 "kullanımını değiştirir. Bu seçenek için geçerli değerler taşımaya göre "
 "değişir."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

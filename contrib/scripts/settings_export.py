@@ -22,8 +22,8 @@ class SettingNamespaceExporter:
         django.setup()
 
         # Hidden imports
-        from mayan.apps.smart_settings.setting_clusters import SettingCluster
-        from mayan.apps.smart_settings.settings import setting_cluster
+        from mayan.apps.smart_settings.clusters import SettingCluster
+        from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
         SettingCluster.load_modules()
 

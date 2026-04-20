@@ -96,7 +96,7 @@ msgstr "\"%s\" no es una entrada válida."
 msgid "Save"
 msgstr "Guardar"
 
-#: links.py:39 links.py:56
+#: links.py:39 links.py:57
 msgid "Settings"
 msgstr "Ajustes"
 
@@ -108,11 +108,11 @@ msgstr "Editar"
 msgid "Revert"
 msgstr "Revertir"
 
-#: links.py:63
+#: links.py:64
 msgid "Namespaces"
 msgstr "Categorías"
 
-#: literals.py:47
+#: literals.py:48
 msgid ""
 "Local storage is currently disabled, changes to settings will not be saved. "
 "Instead, use environment variables to modify settings."
@@ -144,6 +144,10 @@ msgstr "Configuración actualizada"
 #: models.py:20
 msgid "Updated settings"
 msgstr "Configuraciones actualizadas"
+
+#: namespaces.py:104
+msgid "Settings namespace"
+msgstr "Espacio de nombres de configuración"
 
 #: permissions.py:10
 msgid "Edit settings"
@@ -512,13 +516,10 @@ msgstr ""
 
 #: settings.py:281
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"Valor predeterminado: \"sessionid\". El nombre de la cookie que se utilizará"
-" para las sesiones. Puede ser lo que desee (siempre y cuando sea diferente "
-"de los otros nombres de cookies en su aplicación)."
 
 #: settings.py:289
 msgid ""
@@ -679,17 +680,17 @@ msgstr "%(count)d valor de configuración revertido."
 #: views.py:136
 #, python-format
 msgid "Revert the value of the %(count)d selected settings."
-msgstr ""
+msgstr "Revertir el valor de las %(count)d configuración seleccionadas."
 
 #: views.py:138
 #, python-format
 msgid "Revert the value of setting: %(object)s"
-msgstr ""
+msgstr "Revertir el valor de la configuración: %(object)s"
 
 #: views.py:140
 #, python-format
 msgid "Revert the value of %(count)d selected setting."
-msgstr ""
+msgstr "Revertir el valor de %(count)d configuración seleccionada."
 
 #: views.py:150
 msgid "Unsaved changes will be lost."

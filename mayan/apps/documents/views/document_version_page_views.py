@@ -53,8 +53,8 @@ class DocumentVersionPageDeleteView(SingleObjectDeleteView):
     def get_extra_context(self):
         return {
             'message': _(
-                message='The page number of this page will be skipped. If you '
-                'want to achieve sequential page numbering, use the '
+                message='The page number of this page will be skipped. If '
+                'you want to achieve sequential page numbering, use the '
                 'page remap action instead.'
             ),
             'object': self.object,

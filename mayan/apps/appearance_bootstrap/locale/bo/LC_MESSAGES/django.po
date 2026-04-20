@@ -127,7 +127,7 @@ msgstr "བཟོ་སྐྲུན་ཨང་གྲངས།: %(project_build_
 msgid "Released under the license:"
 msgstr "ཆོག་མཆན་འོག་གློད་གྲོལ་བཏང་བ་ནི།"
 
-#: templates/appearance/about.html:57
+#: templates/appearance/about.html:59
 #, python-format
 msgid ""
 "To get the latest news subscribe to the <a class=\"new_window\" "
@@ -136,7 +136,7 @@ msgstr ""
 "གསར་འགྱུར་གསར་ཤོས་ཐོབ་ཆེད་ <a class=\"new_window\" "
 "href=\"%(link_mailing_list_url)s\">ཡིག་ཟམ་ཐོ་གཞུང་</a> ལ་མངགས་ཉོ་བྱོས།"
 
-#: templates/appearance/about.html:66
+#: templates/appearance/about.html:68
 #, python-format
 msgid ""
 "For articles, tutorials, troubleshooting, subscribe to the <a "
@@ -146,7 +146,7 @@ msgstr ""
 "རྩོམ་ཡིག་དང་། སློབ་ཁྲིད། དཀའ་ངལ་སེལ་ཐབས། <a class=\"new_window\" "
 "href=\"%(link_knowledge_base_url)s\">ཤེས་བྱའི་གཞི་གྲངས་</a> ལ་མངགས་ཉོ་བྱོས།"
 
-#: templates/appearance/about.html:75
+#: templates/appearance/about.html:77
 #, python-format
 msgid ""
 "Need professional help? Check out the <a class=\"new_window\" "
@@ -155,7 +155,7 @@ msgstr ""
 "ཆེད་ལས་རོགས་རམ་དགོས་སམ། <a class=\"new_window\" "
 "href=\"%(link_support_url)s\">རྒྱབ་སྐྱོར་གྱི་</a> མཆོད་འབུལ་ལ་ལྟོས།"
 
-#: templates/appearance/about.html:84
+#: templates/appearance/about.html:86
 #, python-format
 msgid ""
 "For discussions visit the <a class=\"new_window\" "
@@ -164,7 +164,7 @@ msgstr ""
 "གྲོས་བསྡུར་ཆེད་དུ་ <a class=\"new_window\" "
 "href=\"%(link_forum_url)s\">སྤྱི་ཚོགས་ཀྱི་གླེང་སྟེགས་</a> ལ་གཟིགས་རོགས།"
 
-#: templates/appearance/about.html:93
+#: templates/appearance/about.html:95
 #, python-format
 msgid ""
 "The complete list of changes is available via the <a class=\"new_window\" "
@@ -173,7 +173,7 @@ msgstr ""
 "བསྒྱུར་བཅོས་ཀྱི་ཐོ་གཞུང་ཆ་ཚང་འགྲེམ་ <a class=\"new_window\" "
 "href=\"%(link_release_notes_url)s\">སྤེལ་གྱི་དྲན་ཐོ་</a> བརྒྱུད་ནས་ཐོབ་ཐུབ།"
 
-#: templates/appearance/about.html:102
+#: templates/appearance/about.html:104
 #, python-format
 msgid ""
 "For questions check the <a class=\"new_window\" "
@@ -182,7 +182,7 @@ msgstr ""
 "དྲི་བ་ཡོད་ན་ <a class=\"new_window\" "
 "href=\"%(link_documentation_url)s\">ཡིག་ཆ་</a> ལ་ལྟོས།"
 
-#: templates/appearance/about.html:111
+#: templates/appearance/about.html:113
 #, python-format
 msgid ""
 "If you found a bug or have a feature idea open a ticket in the <a "
@@ -194,7 +194,7 @@ msgstr ""
 "href=\"%(link_source_code_url)s\">འབྱུང་ཁུངས་ཨང་གྲངས་མཛོད་ཁང་</a> "
 "ནང་ལ་ལག་ཁྱེར་ཁ་ཕྱེ།"
 
-#: templates/appearance/about.html:117
+#: templates/appearance/about.html:119
 #, python-format
 msgid ""
 "%(project_title)s is Free and Open Source software, which is provided as-is "

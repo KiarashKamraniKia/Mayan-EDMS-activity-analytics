@@ -129,7 +129,7 @@ msgstr "Build szám: %(project_build_number)s"
 msgid "Released under the license:"
 msgstr "A licenc ami alatt megjelent:"
 
-#: templates/appearance/about.html:57
+#: templates/appearance/about.html:59
 #, python-format
 msgid ""
 "To get the latest news subscribe to the <a class=\"new_window\" "
@@ -138,7 +138,7 @@ msgstr ""
 "A legfrissebb hírekért iratkozzon fel a <a class=\"new_window\" "
 "href=\"%(link_mailing_list_url)s\">levelezőlistára</a> ."
 
-#: templates/appearance/about.html:66
+#: templates/appearance/about.html:68
 #, python-format
 msgid ""
 "For articles, tutorials, troubleshooting, subscribe to the <a "
@@ -149,7 +149,7 @@ msgstr ""
 "fel a <a class=\"new_window\" "
 "href=\"%(link_knowledge_base_url)s\">Tudásbázisra</a> ."
 
-#: templates/appearance/about.html:75
+#: templates/appearance/about.html:77
 #, python-format
 msgid ""
 "Need professional help? Check out the <a class=\"new_window\" "
@@ -158,7 +158,7 @@ msgstr ""
 "Szakmai segítségre van szüksége? Tekintse meg a <a class=\"new_window\" "
 "href=\"%(link_support_url)s\">támogatási</a> ajánlatokat."
 
-#: templates/appearance/about.html:84
+#: templates/appearance/about.html:86
 #, python-format
 msgid ""
 "For discussions visit the <a class=\"new_window\" "
@@ -167,7 +167,7 @@ msgstr ""
 "Megbeszélésekhez látogasson el a <a class=\"new_window\" "
 "href=\"%(link_forum_url)s\">közösségi fórumra</a> ."
 
-#: templates/appearance/about.html:93
+#: templates/appearance/about.html:95
 #, python-format
 msgid ""
 "The complete list of changes is available via the <a class=\"new_window\" "
@@ -177,7 +177,7 @@ msgstr ""
 "href=\"%(link_release_notes_url)s\">Kibocsátási megjegyzésekben</a> érhető "
 "el."
 
-#: templates/appearance/about.html:102
+#: templates/appearance/about.html:104
 #, python-format
 msgid ""
 "For questions check the <a class=\"new_window\" "
@@ -186,7 +186,7 @@ msgstr ""
 "Kérdés esetén nézze meg a <a class=\"new_window\" "
 "href=\"%(link_documentation_url)s\">Dokumentációt</a> ."
 
-#: templates/appearance/about.html:111
+#: templates/appearance/about.html:113
 #, python-format
 msgid ""
 "If you found a bug or have a feature idea open a ticket in the <a "
@@ -197,7 +197,7 @@ msgstr ""
 "class=\"new_window\" href=\"%(link_source_code_url)s\">forráskód "
 "tárolóban</a> ."
 
-#: templates/appearance/about.html:117
+#: templates/appearance/about.html:119
 #, python-format
 msgid ""
 "%(project_title)s is Free and Open Source software, which is provided as-is "

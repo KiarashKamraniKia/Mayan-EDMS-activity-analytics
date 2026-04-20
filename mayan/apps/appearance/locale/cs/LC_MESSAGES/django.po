@@ -143,7 +143,7 @@ msgstr "Zobrazit stávající motivy"
 
 #: settings.py:23
 msgid "Custom HTTP response code for AJAX redirections."
-msgstr ""
+msgstr "Vlastní kód odpovědi HTTP pro přesměrování AJAX."
 
 #: settings.py:29
 msgid ""
@@ -161,7 +161,7 @@ msgstr "Maximální počet znaků, které se zobrazí jako název pohledu."
 
 #: settings.py:52
 msgid "Position where the system messages will be displayed."
-msgstr ""
+msgstr "Pozice, kde se budou zobrazovat systémové zprávy."
 
 #: settings.py:58
 msgid ""
@@ -184,13 +184,15 @@ msgstr ""
 #: settings.py:83
 msgid ""
 "Maximum number of requests that can be made before throttling is enabled."
-msgstr ""
+msgstr "Maximální počet požadavků, které lze provést před povolením omezení."
 
 #: settings.py:90
 msgid ""
 "Time in milliseconds after which a throttled request will clear allowing an "
 "additional request to be performed."
 msgstr ""
+"Čas v milisekundách, po kterém se omezený požadavek vymaže a umožní "
+"provedení dalšího požadavku."
 
 #: templates/appearance/app/foot.html:22
 msgid "Copy content to clipboard"

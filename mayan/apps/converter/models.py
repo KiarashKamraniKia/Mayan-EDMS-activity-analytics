@@ -152,8 +152,8 @@ class LayerTransformation(
     )
     order = models.PositiveIntegerField(
         blank=True, db_index=True, default=0, help_text=_(
-            message='Order in which the transformations will be executed. If '
-            'left unchanged, an automatic order value will be assigned.'
+            message='Order in which the transformations will be executed. '
+            'If left unchanged, an automatic order value will be assigned.'
         ), verbose_name=_(message='Order')
     )
     name = models.CharField(

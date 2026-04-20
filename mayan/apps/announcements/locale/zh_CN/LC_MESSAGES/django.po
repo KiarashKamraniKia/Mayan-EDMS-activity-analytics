@@ -76,19 +76,19 @@ msgstr "啟用"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "此公告將被公布的日期˙與時間"
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "開始日期與時間"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "此公告將被終止公布的日期與時間"
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "結束的日期與時間"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "公告"
 
@@ -157,7 +157,7 @@ msgid ""
 "Announcements are displayed in the login view. You can use announcements to "
 "convey information about your organization, announcements or usage "
 "guidelines for your users."
-msgstr ""
+msgstr "公告會顯示在登入介面中。您可以透過公告向使用者傳達組織資訊、宣佈事項或使用指南。"
 
 #: views.py:120
 msgid "No announcements available"

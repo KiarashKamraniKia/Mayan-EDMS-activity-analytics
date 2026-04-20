@@ -1,3 +1,4 @@
+{% load humanize %}
 {% load i18n %}
 
 {% load smart_settings_tags %}
@@ -28,9 +29,9 @@
                         <a class="btn btn-default btn-sm disabled" href="#">{{ paginator.ELLIPSIS }}</a>
                     {% else %}
                         {% if page_number == page_obj.number %}
-                            <a class="active btn btn-default btn-sm pagination-disabled" href="#">{{ page_number }}</a>
+                            <a class="active btn btn-default btn-sm pagination-disabled" href="#">{{ page_number|intcomma }}</a>
                         {% else %}
-                            <a class="btn btn-default btn-sm" href="{% views_get_paging_query_string page_number=page_number %}">{{ page_number }}</a>
+                            <a class="btn btn-default btn-sm" href="{% views_get_paging_query_string page_number=page_number %}">{{ page_number|intcomma }}</a>
                         {% endif %}
                     {% endif %}
                 {% endfor %}

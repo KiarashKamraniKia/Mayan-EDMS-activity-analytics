@@ -97,7 +97,7 @@ msgstr ""
 "Kullanıcı kimlik doğrulamasını işlemek için kullanılan arka uca giden "
 "noktalı yol."
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "AUTHENTİCATİON_BACKEND için bağımsız değişkenler."
 

@@ -204,8 +204,8 @@ class DocumentCreateWizardStepMetadata(DocumentCreateWizardStep):
             if not has_required_metadata:
                 messages.error(
                     message=_(
-                        'One of more metadata types that are required for '
-                        'this document type are not available.'
+                        message='One of more metadata types that are '
+                        'required for this document type are not available.'
                     ), request=wizard.request
                 )
                 wizard.render_goto_step(goto_step=0)

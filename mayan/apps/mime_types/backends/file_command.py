@@ -1,6 +1,6 @@
+import pathlib
 from shutil import copyfileobj
-
-import sh
+import subprocess
 
 from django.utils.translation import gettext_lazy as _
 
@@ -17,11 +17,9 @@ class MIMETypeBackendFileCommand(MIMETypeBackend):
         self.file_path = file_path or DEFAULT_FILE_PATH
         self.copy_length = copy_length
 
-        try:
-            self.command_file = sh.Command(path=self.file_path).bake(
-                brief=True, mime_type=True
-            )
-        except sh.CommandNotFound:
+        path = pathlib.Path(self.file_path)
+
+        if not path.is_file():
             raise DependenciesException(
                 _(message='file command not installed or not found.')
             )
@@ -29,6 +27,7 @@ class MIMETypeBackendFileCommand(MIMETypeBackend):
     def _get_mime_type(self, file_object, mime_type_only):
         with NamedTemporaryFile() as temporary_file_object:
             file_object.seek(0)
+
             copyfileobj(
                 fsrc=file_object, fdst=temporary_file_object,
                 length=self.copy_length
@@ -36,20 +35,27 @@ class MIMETypeBackendFileCommand(MIMETypeBackend):
             file_object.seek(0)
             temporary_file_object.seek(0)
 
-            output = self.command_file(
-                temporary_file_object.name, mime_encoding=not mime_type_only
-            ).split(';')
+            cmd = [
+                self.file_path, '--brief',
+                '--mime-type' if mime_type_only else '--mime',
+                temporary_file_object.name
+            ]
+            completed = subprocess.run(
+                args=cmd, capture_output=True, check=False, text=True
+            )
+            output = (completed.stdout or '').strip().split(';')
 
-            file_mime_type = output[0]
+            if output:
+                file_mime_type = output[0].strip()
+            else:
+                file_mime_type = ''
 
             if mime_type_only:
                 file_mime_encoding = 'binary'
             else:
-                # Remove the ' charset=' string from the output.
-                file_mime_encoding = output[1].split(' charset=')[1]
-
-            # Remove trailing newline.
-            file_mime_type = file_mime_type.split('\n')[0]
-            file_mime_encoding = file_mime_encoding.split('\n')[0]
+                if len(output) > 1:
+                    charset_part = output[1]
+                    if 'charset=' in charset_part:
+                        file_mime_encoding = charset_part.split('charset=')[-1].strip()
 
             return (file_mime_type, file_mime_encoding)

@@ -97,7 +97,7 @@ class ReleaseNoteExporter:
         )
 
         if self.output_format == 'md':
-            command_pandoc = sh.Command('pandoc')
+            command_pandoc = sh.Command(path='pandoc')
 
             markdown_tag_cleanup = (
                 (b'class="docutils literal"', b''),
@@ -111,7 +111,7 @@ class ReleaseNoteExporter:
 
             return command_pandoc(_in=joined_result, f='html', t='markdown')
         elif self.output_format == 'news':
-            command_pandoc = sh.Command('pandoc')
+            command_pandoc = sh.Command(path='pandoc')
 
             markdown_tag_cleanup = (
                 (b'class="docutils literal"', b''),

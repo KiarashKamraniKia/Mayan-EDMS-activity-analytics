@@ -52,7 +52,7 @@ msgstr "ACLབསུབས་ཟིན།"
 msgid "ACL edited"
 msgstr "ACL རྩོམ་སྒྲིག་བྱས།"
 
-#: forms.py:12 models.py:58 serializers.py:79 views.py:73
+#: forms.py:12 models.py:59 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "འཁྲབ་ཚན"
 
@@ -100,15 +100,15 @@ msgstr "དངོས་པོའི་ཨང་རྟགས།"
 msgid "Role to which the access is granted for the specified object."
 msgstr "གསལ་བཀོད་བྱས་པའི་དངོས་པོའི་ཆེད་དུ་འཛུལ་སྤྱོད་སྤྲོད་པའི་འགན་འཁྲི།"
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "འཛུལ་ཞུགས་འཛུལ་སྒོ།"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "འཛུལ་ཞུགས་ཐོ་འགོད།"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr ""

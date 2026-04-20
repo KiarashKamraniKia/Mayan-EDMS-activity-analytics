@@ -105,7 +105,7 @@ msgstr "Anzahl Dateien auf Partition"
 msgid "Total cached files."
 msgstr "Gesamtzahl gecachte Dateien."
 
-#: model_mixins.py:111 model_mixins.py:324
+#: model_mixins.py:111 model_mixins.py:323
 msgid "Current size"
 msgstr "Momentane Größe"
 
@@ -117,7 +117,7 @@ msgstr "Aktuelle Größe des Caches."
 msgid "Label"
 msgstr "Bezeichner"
 
-#: model_mixins.py:326
+#: model_mixins.py:325
 msgid "Current size of the cache partition."
 msgstr "Gegenwärtige Größe der Cachepartition."
 
