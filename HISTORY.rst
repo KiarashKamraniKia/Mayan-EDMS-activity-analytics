@@ -22,6 +22,12 @@
     in a following minor version.
   - Improve math tags help texts.
 
+- Update Python dependency versions:
+
+  - Markdown from 3.10 to 3.10.2
+  - Pillow from 12.1.1 to 12.2.0
+  - nh3 from 0.3.2 to 0.3.4
+
 4.9.8 (2025-12-27)
 ==================
 - Merge changes and improvements from version 4.8.10.

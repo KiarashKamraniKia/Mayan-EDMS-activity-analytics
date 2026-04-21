@@ -67,8 +67,8 @@ def find_packages(directory):
 install_requires = """
 django==4.2.30
 CairoSVG==2.9.0
-Markdown==3.10
-Pillow==12.1.1
+Markdown==3.10.2
+Pillow==12.2.0
 PyYAML==6.0.3
 Whoosh==2.7.4
 bleach==6.3.0
@@ -102,10 +102,9 @@ google-cloud-storage==2.19.0
 graphviz==0.21
 greenlet==3.4.0
 gunicorn==25.3.0
-importlib-metadata==8.5.0
 jsonschema==4.26.0
 mozilla-django-oidc==5.0.2
-nh3==0.3.2
+nh3==0.3.4
 node-semver==0.9.0
 ollama==0.6.1
 pycountry==26.2.16
