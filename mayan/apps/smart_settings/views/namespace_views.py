@@ -7,7 +7,7 @@ from ..icons import (
     icon_setting_cluster_namespace_list, icon_setting_namespace_detail
 )
 from ..permissions import permission_settings_view
-from ..settings import setting_cluster
+from ..setting_clusters import setting_cluster
 
 
 class SettingNamespaceDetailView(SingleObjectListView):

@@ -11,7 +11,7 @@ from ..forms import SettingForm
 from ..icons import icon_setting_edit, icon_setting_revert
 from ..literals import MESSAGE_LOCAL_STORAGE_DISABLED
 from ..permissions import permission_settings_edit
-from ..settings import setting_cluster
+from ..setting_clusters import setting_cluster
 
 
 class SettingValueEditView(FormView):

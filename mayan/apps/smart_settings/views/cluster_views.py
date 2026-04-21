@@ -8,7 +8,7 @@ from mayan.apps.views.generics import ConfirmView
 from ..icons import icon_setting_cluster_configuration_save
 from ..literals import MESSAGE_LOCAL_STORAGE_DISABLED
 from ..permissions import permission_settings_edit
-from .settings import setting_cluster
+from ..setting_clusters import setting_cluster
 
 
 class SettingClusterConfigurationFileSave(ConfirmView):
