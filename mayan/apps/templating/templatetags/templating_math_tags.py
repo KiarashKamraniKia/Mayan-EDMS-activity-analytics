@@ -18,9 +18,8 @@ def _process_value(value):
 @register.filter(name='math_add')
 def filter_math_add(value, argument):
     """
-    Mathematical addition.
+    Mathematical addition. {{ |math_add:addend }}
     """
-
     addends = _process_value(value=value), _process_value(value=argument)
     result = addends[0] + addends[1]
     return result
@@ -29,9 +28,8 @@ def filter_math_add(value, argument):
 @register.filter(name='math_absolute')
 def filter_math_absolute(value):
     """
-    Mathematical absolute.
+    Mathematical absolute. {{ |math_absolute }}
     """
-
     value = _process_value(value=value)
     result = abs(value)
     return result
@@ -40,9 +38,8 @@ def filter_math_absolute(value):
 @register.filter(name='math_divide')
 def filter_math_divide(value, argument):
     """
-    Mathematical division.
+    Mathematical division. {{ |math_divide:divisor }}
     """
-
     dividend = _process_value(value=value)
     divisor = _process_value(value=argument)
     quotient = dividend / divisor
@@ -52,9 +49,8 @@ def filter_math_divide(value, argument):
 @register.filter(name='math_exponentiate')
 def fitler_math_exponentiate(value, argument):
     """
-    Mathematical exponentiation.
+    Mathematical exponentiation. {{ |math_exponentiate:power }}
     """
-
     base = _process_value(value=value)
     exponent = _process_value(value=argument)
     power = base ** exponent
@@ -64,9 +60,8 @@ def fitler_math_exponentiate(value, argument):
 @register.filter(name='math_floor_divide')
 def filter_math_floor_divide(value, argument):
     """
-    Mathematical floor division.
+    Mathematical floor division. {{ |math_floor_divide:divisor }}
     """
-
     dividend = _process_value(value=value)
     divisor = _process_value(value=argument)
     quotient = dividend // divisor
@@ -76,9 +71,8 @@ def filter_math_floor_divide(value, argument):
 @register.filter(name='math_modulo')
 def filter_math_modulo(value, argument):
     """
-    Mathematical modulo.
+    Mathematical modulo. {{ |math_modulo:divisor }}
     """
-
     dividend = _process_value(value=value)
     divisor = _process_value(value=argument)
     modulus = dividend % divisor
@@ -88,9 +82,8 @@ def filter_math_modulo(value, argument):
 @register.filter(name='math_multiply')
 def filter_math_multiply(value, argument):
     """
-    Mathematical multiplication.
+    Mathematical multiplication. {{ |math_multiply:multiplier }}
     """
-
     multiplicand = _process_value(value=value)
     multiplier = _process_value(value=argument)
     product = multiplicand * multiplier
@@ -100,9 +93,8 @@ def filter_math_multiply(value, argument):
 @register.filter(name='math_square_root')
 def filter_math_square_root(value):
     """
-    Mathematical square root.
+    Mathematical square root. {{ |math_square_root }}
     """
-
     radicand = _process_value(value=value)
     square_root = math.sqrt(radicand)
     return square_root
@@ -111,9 +103,8 @@ def filter_math_square_root(value):
 @register.filter(name='math_subtract')
 def filter_math_subtract(value, argument):
     """
-    Mathematical subtraction.
+    Mathematical subtraction. {{ |math_subtract:subtrahend }}
     """
-
     minuend = _process_value(value=value)
     subtrahend = _process_value(value=argument)
     difference = minuend - subtrahend
@@ -125,5 +116,4 @@ def filter_math_substract(parser, token):
     """
     Mathematical subtraction (compatibility alias)
     """
-
     return filter_math_subtract(parser, token)

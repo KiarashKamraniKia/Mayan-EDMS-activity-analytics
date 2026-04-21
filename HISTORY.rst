@@ -5,7 +5,7 @@
   - Split smart settings app views.
   - Rename smart settings app view class names.
   - Help texts improvements.
-  - Eerror logging changes:
+  - Error logging changes:
 
     - Add more descriptive module error log messages.
     - Make error log messages translatable.
@@ -20,6 +20,7 @@
     your existing templates if you use this template tag. An alias named
     `math_substract` was added for backwards compatibility but will be removed
     in a following minor version.
+  - Improve math tags help texts.
 
 4.9.8 (2025-12-27)
 ==================
