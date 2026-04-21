@@ -3,7 +3,6 @@ from django.utils.encoding import force_str
 from django.utils.translation import gettext_lazy as _
 
 from .classes import Setting
-from .exceptions import SettingsException
 from .literals import NAMESPACE_VERSION_INITIAL
 
 
@@ -63,20 +62,6 @@ class SettingNamespace(metaclass=SettingNamespaceMetaclass):
     def do_migrate(self, setting):
         if self.migration_class:
             self.migration_class(namespace=self).do_migrate(setting=setting)
-
-    def do_setting_add(self, **kwargs):
-        setting = Setting(namespace=self, **kwargs)
-
-        if setting.global_name in self.setting_dict:
-            raise SettingsException(
-                'Setting "%s" already exists in '
-                'namespace.' % setting.global_name
-            )
-
-        self.setting_dict[setting.global_name] = setting
-        self.cluster.setting_dict[setting.global_name] = setting
-
-        return setting
 
     def do_setting_add(self, **kwargs):
         setting = Setting(namespace=self, **kwargs)
