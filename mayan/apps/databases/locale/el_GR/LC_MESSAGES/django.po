@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-27 11:22+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: pyrotech <anastasios@tutamail.com>, 2025\n"
 "Language-Team: Greek (Greece) (https://app.transifex.com/rosarior/teams/13584/el_GR/)\n"
@@ -37,7 +37,7 @@ msgstr "Υπάρχει συνθήκη;"
 msgid "Description"
 msgstr "Περιγραφή"
 
-#: classes.py:92 classes.py:277
+#: classes.py:92 classes.py:279
 msgid "Label"
 msgstr "Ετικέτα"
 
@@ -45,7 +45,7 @@ msgstr "Ετικέτα"
 msgid "Example usage of the property."
 msgstr ""
 
-#: classes.py:98 classes.py:282
+#: classes.py:98 classes.py:284
 msgid "Name"
 msgstr "Όνομα"
 
@@ -65,23 +65,23 @@ msgstr "Ιδιότητες μοντέλου"
 msgid "Model reverse fields"
 msgstr "Πεδία αντιστροφής μοντέλου"
 
-#: classes.py:264
+#: classes.py:265
 msgid "Name of the app where the model is defined."
 msgstr ""
 
-#: classes.py:265
+#: classes.py:267
 msgid "App"
 msgstr "Εφαρμογή"
 
-#: classes.py:270
+#: classes.py:272
 msgid "Complete unique name of the model."
 msgstr ""
 
-#: classes.py:271
+#: classes.py:273
 msgid "Full name"
 msgstr "Πλήρες όνομα"
 
-#: classes.py:276
+#: classes.py:278
 msgid "Human readable name of the model."
 msgstr ""
 
@@ -93,7 +93,7 @@ msgstr "Ιδιότητες"
 msgid "Property models"
 msgstr ""
 
-#: literals.py:16
+#: literals.py:18
 msgid ""
 "Your database backend is set to use SQLite. SQLite should only be used for "
 "development and testing, not for production."

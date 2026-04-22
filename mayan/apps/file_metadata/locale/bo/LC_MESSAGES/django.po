@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-01 15:31+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -70,6 +70,11 @@ msgstr "སྔོན་སྒྲིག་ལྟར་ལྕོགས་ཅན་
 msgid "Badly formatted arguments YAML; %s"
 msgstr "རྩ་སྒྲིག་ངན་པའི་སྒྲུབ་བྱེད་YAML; %s"
 
+#: classes.py:358
+#, python-format
+msgid "Cannot process driver \"%(driver)s\"; %(exception)s"
+msgstr ""
+
 #: events.py:10
 msgid "Document file submitted for file metadata processing"
 msgstr "ཡིག་ཆའི་མེ་ཊ་གཞི་གྲངས་ལས་སྣོན་ཆེད་ཡིག་ཆའི་ཡིག་ཆ་ཕུལ་བ།"
@@ -98,7 +103,7 @@ msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་སྒུལ་ག
 msgid "File metadata processing per type"
 msgstr "རིགས་རེ་རེའི་ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་ལས་སྣོན།"
 
-#: links.py:75 views/tool_views.py:28
+#: links.py:75 views/tool_views.py:30
 msgid "File metadata drivers"
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་སྒུལ་གཏོང་འཕྲུལ་ཆས།"
 
@@ -372,7 +377,7 @@ msgstr ""
 msgid "No file metadata drivers available."
 msgstr "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་སྒུལ་གཏོང་མི་འདུག"
 
-#: views/tool_views.py:26
+#: views/tool_views.py:27
 msgid "File metadata drivers enabled and detected."
 msgstr ""
 "ཡིག་ཆའི་མེ་ཊ་ཌེ་ཊ་སྒུལ་གཏོང་འཕྲུལ་ཆས་ལྕོགས་ཅན་བཟོས་པ་དང་ཤེས་རྟོགས་བྱུང་ཡོད།"

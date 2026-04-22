@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 16:59+0000\n"
+"POT-Creation-Date: 2026-04-22 14:59+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Ara Gasparyan, 2025\n"
 "Language-Team: Armenian (Armenia) (https://app.transifex.com/rosarior/teams/13584/hy_AM/)\n"
@@ -24,11 +24,11 @@ msgstr ""
 msgid "Task manager"
 msgstr ""
 
-#: apps.py:123 apps.py:200 classes.py:64
+#: apps.py:123 apps.py:201 classes.py:64
 msgid "Label"
 msgstr ""
 
-#: apps.py:127 apps.py:204 classes.py:71
+#: apps.py:127 apps.py:205 classes.py:71
 msgid "Name"
 msgstr ""
 
@@ -43,61 +43,61 @@ msgid ""
 " critical tasks."
 msgstr ""
 
-#: apps.py:140
+#: apps.py:141
 msgid "Is transient?"
 msgstr ""
 
-#: apps.py:171
+#: apps.py:172
 msgid "Type"
 msgstr "Տեսակ"
 
-#: apps.py:176
+#: apps.py:177
 msgid "Start time"
 msgstr ""
 
-#: apps.py:180
+#: apps.py:181
 msgid "Host"
 msgstr ""
 
-#: apps.py:184
+#: apps.py:185
 msgid "Arguments"
 msgstr ""
 
-#: apps.py:188
+#: apps.py:189
 msgid "Keyword arguments"
 msgstr ""
 
-#: apps.py:193
+#: apps.py:194
 msgid "Worker process ID"
 msgstr ""
 
-#: apps.py:213
+#: apps.py:214
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
 msgstr ""
 
-#: apps.py:215
+#: apps.py:216
 msgid "Maximum tasks per child"
 msgstr ""
 
-#: apps.py:220
+#: apps.py:221
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
 msgstr ""
 
-#: apps.py:222
+#: apps.py:223
 msgid "Concurrency"
 msgstr ""
 
-#: apps.py:227
+#: apps.py:228
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
 msgstr ""
 
-#: apps.py:230
+#: apps.py:231
 msgid "Nice level"
 msgstr ""
 

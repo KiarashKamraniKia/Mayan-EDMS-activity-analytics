@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -54,14 +54,14 @@ msgstr "ནོར་འཁྲུལ་སེལ་བ།"
 
 #: model_mixins.py:11
 #, python-format
-msgid "Unknown domain name: %s"
-msgstr "མ་ཤེས་པའི་དྲ་རྒྱའི་མིང་ %s"
+msgid "Unknown domain name: %(domain_name)s"
+msgstr ""
 
-#: model_mixins.py:18
+#: model_mixins.py:20
 msgid "Object"
 msgstr "བྱ་བའི་ཡུལ"
 
-#: model_mixins.py:26
+#: model_mixins.py:28
 msgid "App label"
 msgstr "མཉེན་ཆས་མིང་བྱང་།"
 
@@ -181,6 +181,11 @@ msgstr ""
 "ཐོ་གཞུང་སྟོང་པ་དེ་ཡག་པོ་རེད།"
 
 #: views.py:103
+#, python-format
+msgid "Maximum number of entries kept for this object type: %s"
+msgstr ""
+
+#: views.py:107
 #, python-format
 msgid "Error log entries for: %s"
 msgstr "ནོར་འཁྲུལ་གྱི་དྲན་ཐོའི་ཐོ་འགོད།: %s"

@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-20 12:33+0000\n"
+"POT-Creation-Date: 2026-04-22 14:56+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Roberto Vasconcelos Novaes <rvnovaes@gmail.com>, 2025\n"
 "Language-Team: Portuguese (https://app.transifex.com/rosarior/teams/13584/pt/)\n"
@@ -42,45 +42,45 @@ msgstr "Nome"
 msgid "Value"
 msgstr "Valor"
 
-#: classes.py:162
+#: classes.py:172
 msgid "Has errors"
 msgstr ""
 
-#: classes.py:164
+#: classes.py:174
 msgid ""
 "Indicates that this setting was not loaded correctly. Settings with errors "
 "revert to their default value."
 msgstr ""
 
-#: classes.py:171
+#: classes.py:181
 msgid "Choices"
 msgstr ""
 
-#: classes.py:173
+#: classes.py:183
 msgid "Possible values allowed for this setting."
 msgstr ""
 
-#: classes.py:194
+#: classes.py:204
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr ""
 
-#: classes.py:231
+#: classes.py:241
 msgid "Default"
 msgstr "Padrão"
 
-#: classes.py:244
+#: classes.py:254
 msgid "Modified"
 msgstr ""
 
-#: classes.py:246
+#: classes.py:256
 msgid "The value of this setting being modified since the last restart."
 msgstr ""
 
-#: classes.py:252
+#: classes.py:263
 msgid "Overridden"
 msgstr "Sobrescrito"
 
-#: classes.py:254
+#: classes.py:265
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr ""
@@ -144,7 +144,7 @@ msgstr ""
 msgid "Updated settings"
 msgstr ""
 
-#: namespaces.py:104
+#: namespaces.py:94
 msgid "Settings namespace"
 msgstr ""
 
@@ -156,15 +156,11 @@ msgstr "Editar parâmetros"
 msgid "View settings"
 msgstr "Ver parâmetros"
 
-#: setting_namespaces.py:78
-msgid "Settings namespace"
-msgstr ""
-
-#: settings.py:27
+#: settings.py:23
 msgid "Django"
 msgstr "Django"
 
-#: settings.py:32
+#: settings.py:28
 msgid ""
 "A list of strings representing the host/domain names that this site can "
 "serve. This is a security measure to prevent HTTP Host header attacks, which"
@@ -192,7 +188,7 @@ msgstr ""
 " validação para o Host header (talvez num middleware; assim sendo o "
 "middleware deve ser listado primeiro em MIDDLEWARE)."
 
-#: settings.py:49
+#: settings.py:45
 msgid ""
 "When set to True, if the request URL does not match any of the patterns in "
 "the URLconf and it doesn't end in a slash, an HTTP redirect is issued to the"
@@ -208,7 +204,7 @@ msgstr ""
 "perdidos.  O parâmetro APPEND_SLASH é usada apenas se o CommonMiddleware "
 "estiver instalado (veja Middleware). Veja também PREPEND_WWW."
 
-#: settings.py:61
+#: settings.py:57
 msgid ""
 "The list of validators that are used to check the strength of user's "
 "passwords."
@@ -216,7 +212,7 @@ msgstr ""
 "A lista de validadores que são usados para validar a força das senhas dos "
 "usuários."
 
-#: settings.py:68
+#: settings.py:64
 msgid ""
 "A list of authentication backend classes (as strings) to use when attempting"
 " to authenticate a user."
@@ -224,7 +220,14 @@ msgstr ""
 "Uma lista de classes de back-end de autenticação (como strings) a serem "
 "usadas ao tentar autenticar um usuário."
 
-#: settings.py:75
+#: settings.py:71
+msgid ""
+"A dictionary containing the settings for all caches to be used with Django. "
+"It is a nested dictionary whose contents maps cache aliases to a dictionary "
+"containing the options for an individual cache."
+msgstr ""
+
+#: settings.py:80
 msgid ""
 "Whether to use a secure cookie for the CSRF cookie. If this is set to True, "
 "the cookie will be marked as \"secure\", which means browsers may ensure "
@@ -233,21 +236,21 @@ msgid ""
 "CSRF_COOKIE_SECURE"
 msgstr ""
 
-#: settings.py:85
+#: settings.py:90
 msgid ""
 "A list of trusted origins for unsafe requests (e.g. POST). "
 "https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-"
 "CSRF_TRUSTED_ORIGINS"
 msgstr ""
 
-#: settings.py:92
+#: settings.py:97
 msgid ""
 "Whether to store the CSRF token in the user's session instead of in a "
 "cookie. https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-"
 "CSRF_USE_SESSIONS"
 msgstr ""
 
-#: settings.py:99
+#: settings.py:104
 msgid ""
 "A dictionary containing the settings for all databases to be used with "
 "Django. It is a nested dictionary whose contents map a database alias to a "
@@ -262,7 +265,7 @@ msgstr ""
 "base de dados padrão; qualquer número de bases de dados adicionais deve ser "
 "especificado."
 
-#: settings.py:110
+#: settings.py:115
 msgid ""
 "Default: 2621440 (i.e. 2.5 MB). The maximum size in bytes that a request "
 "body may be before a SuspiciousOperation (RequestDataTooBig) is raised. The "
@@ -291,7 +294,7 @@ msgstr ""
 "possível realizar uma verificação similar nesse nível. Veja também "
 "FILE_UPLOAD_MAX_MEMORY_SIZE."
 
-#: settings.py:129
+#: settings.py:134
 msgid ""
 "Default: 'webmaster@localhost' Default email address to use for various "
 "automated correspondence from the site manager(s). This doesn't include "
@@ -302,7 +305,7 @@ msgstr ""
 "inclui mensagens de erro enviadas para ADMINS e MANAGERS; para tanto, veja "
 "SERVER_EMAIL."
 
-#: settings.py:138
+#: settings.py:143
 msgid ""
 "Default: [] (Empty list). List of compiled regular expression objects "
 "representing User-Agent strings that are not allowed to visit any page, "
@@ -315,7 +318,7 @@ msgstr ""
 " Este parâmetro só é usado com o CommonMiddleware instalado (veja "
 "Middleware)."
 
-#: settings.py:147
+#: settings.py:152
 msgid ""
 "Default: 'django.core.mail.backends.smtp.EmailBackend'. The backend to use "
 "for sending emails."
@@ -323,11 +326,11 @@ msgstr ""
 "Valor padrão: 'django.core.mail.backends.smtp.EmailBackend'. O back-end "
 "usado para enviar e-mails."
 
-#: settings.py:153
+#: settings.py:158
 msgid "Default: 'localhost'. The host to use for sending email."
 msgstr "Valor padrão: 'localhost'. O host usado para enviar e-mail."
 
-#: settings.py:159
+#: settings.py:164
 msgid ""
 "Default: '' (Empty string). Password to use for the SMTP server defined in "
 "EMAIL_HOST. This setting is used in conjunction with EMAIL_HOST_USER when "
@@ -339,7 +342,7 @@ msgstr ""
 "durante a autenticação no servidor SMTP. Se qualquer um desses parâmetros "
 "estiver vazio, Django não tentará a autenticação."
 
-#: settings.py:169
+#: settings.py:174
 msgid ""
 "Default: '' (Empty string). Username to use for the SMTP server defined in "
 "EMAIL_HOST. If empty, Django won't attempt authentication."
@@ -348,12 +351,12 @@ msgstr ""
 "SMTP definido em EMAIL_HOST. Se estiver vazio, Django não tentará a "
 "autenticação."
 
-#: settings.py:176
+#: settings.py:181
 msgid "Default: 25. Port to use for the SMTP server defined in EMAIL_HOST."
 msgstr ""
 "Valor padrão: 25. Porta usada para o servidor SMTP definido em EMAIL_HOST."
 
-#: settings.py:181
+#: settings.py:187
 msgid ""
 "Default: None. Specifies a timeout in seconds for blocking operations like "
 "the connection attempt."
@@ -361,7 +364,7 @@ msgstr ""
 "Valor padrão: None. Especifica um tempo de espera em segundos para operações"
 " de bloqueio, como tentativas de conexão."
 
-#: settings.py:187
+#: settings.py:193
 msgid ""
 "Default: False. Whether to use an implicit TLS (secure) connection when "
 "talking to the SMTP server. In most email documentation this type of TLS "
@@ -378,7 +381,7 @@ msgstr ""
 "são mutuamente excludentes, razão pela qual apenas um dos parâmetros pode "
 "ser Verdadeiro."
 
-#: settings.py:197
+#: settings.py:204
 msgid ""
 "Default: False. Whether to use a TLS (secure) connection when talking to the"
 " SMTP server. This is used for explicit TLS connections, generally on port "
@@ -390,7 +393,7 @@ msgstr ""
 "explícitas de TLS, geralmente na porta 587. Se você está experimentando "
 "conexões suspensas, consulte o parâmetro de TLS implícita EMAIL_USE_SSL."
 
-#: settings.py:206
+#: settings.py:213
 msgid ""
 "Default: 2621440 (i.e. 2.5 MB). The maximum size (in bytes) that an upload "
 "will be before it gets streamed to the file system. See Managing files for "
@@ -401,7 +404,7 @@ msgstr ""
 "Administração de arquivos para detalhes. Veja ainda "
 "DATA_UPLOAD_MAX_MEMORY_SIZE."
 
-#: settings.py:214
+#: settings.py:221
 msgid ""
 "Default: '/accounts/login/' The URL where requests are redirected for login,"
 " especially when using the login_required() decorator. This setting also "
@@ -415,7 +418,7 @@ msgstr ""
 "podem ser usados para reduzir a duplicação de parâmetros, uma vez que você "
 "não precisa definir a URL em dois lugares (parâmetros e URLconf)."
 
-#: settings.py:225
+#: settings.py:232
 msgid ""
 "Default: '/accounts/profile/' The URL where requests are redirected after "
 "login when the contrib.auth.login view gets no next parameter. This is used "
@@ -430,7 +433,7 @@ msgstr ""
 "usados para reduzir a duplicação de parâmetros, uma vez que você não precisa"
 " definir a URL em dois lugares (parâmetros e URLconf)."
 
-#: settings.py:236
+#: settings.py:243
 msgid ""
 "Default: None. The URL where requests are redirected after a user logs out "
 "using LogoutView (if the view doesn't get a next_page argument). If None, no"
@@ -447,7 +450,7 @@ msgstr ""
 "parâmetros, já que você não precisará de definir a URL em dois lugares "
 "(settings e URLconf)."
 
-#: settings.py:247
+#: settings.py:254
 msgid ""
 "A list of IP addresses, as strings, that: Allow the debug() context "
 "processor to add some variables to the template context. Can use the "
@@ -459,7 +462,7 @@ msgstr ""
 "livretos admindocs mesmo se não estiver logado como staff user. São marcados"
 " como \"interal\" (oposto a \"EXTERNAL\") nos e-mails AdminEmailHandler."
 
-#: settings.py:256
+#: settings.py:263
 msgid ""
 "A list of all available languages. The list is a list of two-tuples in the "
 "format (language code, language name) for example, ('ja', 'Japanese'). This "
@@ -474,7 +477,7 @@ msgstr ""
 "parâmetro se você quiser restringir a seleção de idiomas a um subconjunto "
 "daquelas fornecidas pelo Django."
 
-#: settings.py:267
+#: settings.py:274
 msgid ""
 "A string representing the language code for this installation. This should "
 "be in standard language ID format. For example, U.S. English is \"en-us\". "
@@ -494,14 +497,14 @@ msgstr ""
 "fornece uma tradução de fallback quando a tradução de determinada literal "
 "não existir para o idioma do usuário."
 
-#: settings.py:281
+#: settings.py:288
 msgid ""
 "Default: 'sessionid'. The name of the cookie to use for sessions. This can "
 "be whatever you want (as long as it's different from the other cookie names "
 "in your application)."
 msgstr ""
 
-#: settings.py:289
+#: settings.py:296
 msgid ""
 "Default: 'django.contrib.sessions.backends.db'. Controls where Django stores"
 " session data."
@@ -509,7 +512,7 @@ msgstr ""
 "'django.contrib.sessions.backends.db' default;. Controla onde o Django "
 "armazena dados da sessão."
 
-#: settings.py:296
+#: settings.py:303
 msgid ""
 "A tuple representing a HTTP header/value combination that signifies a "
 "request is secure. This controls the behavior of the request object’s "
@@ -522,7 +525,7 @@ msgstr ""
 "segurança deste site. Certifique-se de compreender integralmente sua "
 "instalação antes de mudá-lo."
 
-#: settings.py:305
+#: settings.py:312
 msgid ""
 "URL to use when referring to static files located in STATIC_ROOT. Example: "
 "\"/static/\" or \"http://static.example.com/\" If not None, this will be "
@@ -535,14 +538,14 @@ msgstr ""
 "classe Media) e a app staticfiles. Deve terminar com uma barra se definida "
 "para um valor não vazio."
 
-#: settings.py:315
+#: settings.py:322
 msgid ""
 "A dictionary containing the settings for all storages to be used with "
 "Django. It is a nested dictionary whose contents map a storage alias to a "
 "dictionary containing the options for an individual storage."
 msgstr ""
 
-#: settings.py:323
+#: settings.py:330
 msgid ""
 "A string representing the time zone for this installation. Note that this "
 "isn't necessarily the time zone of the server. For example, one server may "
@@ -553,7 +556,7 @@ msgstr ""
 "pode servir várias aplicações em Django, cada uma com um parâmetro de time "
 "zone."
 
-#: settings.py:332
+#: settings.py:339
 msgid ""
 "A boolean that specifies whether to use the X-Forwarded-Host header in "
 "preference to the Host header. This should only be enabled if a proxy which "
@@ -563,7 +566,7 @@ msgstr ""
 " lugar do cabeçalho Host. Isto apenas deve ser especificado se um proxy que "
 "define este cabeça-lho estiver em uso."
 
-#: settings.py:340
+#: settings.py:347
 msgid ""
 "A boolean that specifies whether to use the X-Forwarded-Port header in "
 "preference to the SERVER_PORT META variable. This should only be enabled if "
@@ -575,7 +578,7 @@ msgstr ""
 " proxy que define este cabeça-lho estiver em uso. USE_X_FORWARDED_HOST tem "
 "precedência sobre este parâmetro."
 
-#: settings.py:349
+#: settings.py:357
 msgid ""
 "The full Python path of the WSGI application object that Django's built-in "
 "servers (e.g. runserver) will use. The django-admin startproject management "
@@ -597,76 +600,23 @@ msgid ""
 "effect."
 msgstr ""
 
-#: tests/test_classes.py:192
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "Inglês"
 
-#: views.py:41
+#: views/cluster_views.py:32
 msgid "This will overwrite the content of the configuration file."
 msgstr ""
 
-#: views.py:44
+#: views/cluster_views.py:35
 msgid "Save settings to the configuration file?"
 msgstr ""
 
-#: views.py:52
+#: views/cluster_views.py:43
 msgid "Settings saved to configuration file successfully."
 msgstr ""
 
-#: views.py:60
-msgid "Setting namespaces"
-msgstr "Categorias de parâmetros"
-
-#: views.py:89
-msgid "Setting updated successfully."
-msgstr "Configurações atualizadas com sucesso"
-
-#: views.py:98
-msgid ""
-"This setting is overridden by an environment variable, changing its value "
-"will have no effect."
-msgstr ""
-
-#: views.py:108
-#, python-format
-msgid "Edit setting: %s"
-msgstr "Editar o parâmetro: %s"
-
-#: views.py:129
-#, python-format
-msgid "%(count)d settings value reverted."
-msgstr ""
-
-#: views.py:132
-#, python-format
-msgid "Value of setting \"%(object)s\" reverted."
-msgstr ""
-
-#: views.py:134
-#, python-format
-msgid "%(count)d setting value reverted."
-msgstr ""
-
-#: views.py:136
-#, python-format
-msgid "Revert the value of the %(count)d selected settings."
-msgstr ""
-
-#: views.py:138
-#, python-format
-msgid "Revert the value of setting: %(object)s"
-msgstr ""
-
-#: views.py:140
-#, python-format
-msgid "Revert the value of %(count)d selected setting."
-msgstr ""
-
-#: views.py:150
-msgid "Unsaved changes will be lost."
-msgstr ""
-
-#: views.py:187
+#: views/namespace_views.py:24
 msgid ""
 "Settings inherited from an environment variable take precedence and cannot "
 "be changed in this view. "
@@ -674,12 +624,65 @@ msgstr ""
 "Configurações herdadas de uma variável de ambiente têm precedência e não "
 "podem ser alteradas nesta tela."
 
-#: views.py:190
+#: views/namespace_views.py:27
 #, python-format
 msgid "Settings in namespace: %s"
 msgstr "Ajustes na categoria: %s"
 
-#: views.py:200
+#: views/namespace_views.py:37
 #, python-format
 msgid "Namespace: %s, not found"
 msgstr "Namespace: %s, não encontrad"
+
+#: views/namespace_views.py:50
+msgid "Setting namespaces"
+msgstr "Categorias de parâmetros"
+
+#: views/setting_views.py:37
+msgid "Setting updated successfully."
+msgstr "Configurações atualizadas com sucesso"
+
+#: views/setting_views.py:46
+msgid ""
+"This setting is overridden by an environment variable, changing its value "
+"will have no effect."
+msgstr ""
+
+#: views/setting_views.py:56
+#, python-format
+msgid "Edit setting: %s"
+msgstr "Editar o parâmetro: %s"
+
+#: views/setting_views.py:77
+#, python-format
+msgid "%(count)d settings value reverted."
+msgstr ""
+
+#: views/setting_views.py:80
+#, python-format
+msgid "Value of setting \"%(object)s\" reverted."
+msgstr ""
+
+#: views/setting_views.py:82
+#, python-format
+msgid "%(count)d setting value reverted."
+msgstr ""
+
+#: views/setting_views.py:84
+#, python-format
+msgid "Revert the value of the %(count)d selected settings."
+msgstr ""
+
+#: views/setting_views.py:86
+#, python-format
+msgid "Revert the value of setting: %(object)s"
+msgstr ""
+
+#: views/setting_views.py:88
+#, python-format
+msgid "Revert the value of %(count)d selected setting."
+msgstr ""
+
+#: views/setting_views.py:98
+msgid "Unsaved changes will be lost."
+msgstr ""

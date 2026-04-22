@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-27 20:16+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: molnars <szabolcs.molnar@gmail.com>, 2025\n"
 "Language-Team: Hungarian (Slovakia) (https://app.transifex.com/rosarior/teams/13584/hu_SK/)\n"
@@ -38,11 +38,11 @@ msgstr "Belső név"
 msgid "Description"
 msgstr "Leírás"
 
-#: apps.py:45 classes.py:219
+#: apps.py:45 classes.py:221
 msgid "Type"
 msgstr "Típus"
 
-#: apps.py:49 classes.py:222
+#: apps.py:49 classes.py:224
 msgid "Other data"
 msgstr "Egyéb adatok"
 
@@ -50,7 +50,7 @@ msgstr "Egyéb adatok"
 msgid "Declared by"
 msgstr "Deklarálva: "
 
-#: apps.py:57 classes.py:220
+#: apps.py:57 classes.py:222
 msgid "Version"
 msgstr "Verzió"
 
@@ -58,73 +58,78 @@ msgstr "Verzió"
 msgid "Environment"
 msgstr "Környezet"
 
-#: apps.py:64 classes.py:222
+#: apps.py:64 classes.py:224
 msgid "Check"
 msgstr "Ellenőrzés"
 
-#: classes.py:219
+#: classes.py:221
 msgid "Name"
 msgstr "Név"
 
-#: classes.py:220
+#: classes.py:222
 msgid "App"
 msgstr "Alkalmazás"
 
-#: classes.py:221 classes.py:984
+#: classes.py:223 classes.py:1040
 msgid "Environments"
 msgstr "Környezetek"
 
-#: classes.py:332
+#: classes.py:343
 msgid "Need to specify at least one: app_label or module."
 msgstr "Legalább egyet meg kell adnia: app_label vagy module."
 
-#: classes.py:337
+#: classes.py:348
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "A \"%s\" függőség már regisztrálva."
 
-#: classes.py:388
+#: classes.py:399
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Telepítő csomag: %s ..."
 
-#: classes.py:395
+#: classes.py:406
 msgid "Already installed."
 msgstr "Már telepítve."
 
-#: classes.py:400 classes.py:407 classes.py:413
+#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
 msgid "Complete."
 msgstr "Teljes."
 
-#: classes.py:440
+#: classes.py:431
+#, python-format
+msgid "Uninstalling package: %s... "
+msgstr ""
+
+#: classes.py:463
 msgid "Installed and correct version"
 msgstr "Telepített és helyes verzió"
 
-#: classes.py:442
+#: classes.py:465
 msgid "Missing or incorrect version"
 msgstr "Hiányzó vagy hibás verzió"
 
-#: classes.py:479
+#: classes.py:502
 msgid "None"
 msgstr "Nincs"
 
-#: classes.py:488
+#: classes.py:511
 msgid "Not specified"
 msgstr "Nem meghatározott"
 
-#: classes.py:491
+#: classes.py:514
 msgid "Patching files... "
 msgstr "Fájlok javítása... "
 
-#: classes.py:519
+#: classes.py:542
 msgid "Executables that are called directly by the code."
 msgstr "A kód által közvetlenül meghívott végrehajtható fájlok."
 
-#: classes.py:521
+#: classes.py:544
 msgid "Binary"
 msgstr "Bináris"
 
-#: classes.py:539
+#: classes.py:562
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
@@ -132,51 +137,55 @@ msgstr ""
 "A JavaScript-könyvtárak letöltötték az NPM-nyilvántartásból, és az előtér-"
 "funkciókhoz használatosak."
 
-#: classes.py:542
+#: classes.py:565
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: classes.py:574 classes.py:887
+#: classes.py:597 classes.py:930
 msgid "Downloading... "
 msgstr "Letöltés..."
 
-#: classes.py:579
+#: classes.py:602
 msgid "Verifying... "
 msgstr "Ellenőrzés..."
 
-#: classes.py:584 classes.py:892
+#: classes.py:607 classes.py:935
 msgid "Extracting... "
 msgstr "Kibontás..."
 
-#: classes.py:797
+#: classes.py:621 classes.py:942
+msgid "Uninstalling... "
+msgstr ""
+
+#: classes.py:839
 msgid "Python packages downloaded from PyPI."
 msgstr "A PyPI-ről letöltött Python-csomagok."
 
-#: classes.py:799
+#: classes.py:841
 msgid "Python"
 msgstr "Python"
 
-#: classes.py:867
+#: classes.py:910
 msgid "Fonts downloaded from fonts.googleapis.com."
 msgstr "A fonts.googleapis.com webhelyről letöltött betűtípusok."
 
-#: classes.py:869
+#: classes.py:912
 msgid "Google font"
 msgstr "Google font"
 
-#: classes.py:965
+#: classes.py:1020
 msgid "Declared in app"
 msgstr "Az app-ban deklarálva"
 
-#: classes.py:966
+#: classes.py:1021
 msgid "Show dependencies by the app that declared them."
 msgstr "A függőségek megjelenítése az azokat deklaráló alkalmazás által."
 
-#: classes.py:970
+#: classes.py:1025
 msgid "Class"
 msgstr "Osztály"
 
-#: classes.py:971
+#: classes.py:1026
 msgid ""
 "Show the different classes of dependencies. Classes are usually divided by "
 "language or the file types of the dependency."
@@ -184,11 +193,11 @@ msgstr ""
 "Megjeleníti a különböző függőségi osztályokat. Az osztályokat általában "
 "nyelv vagy a függőségi fájltípusok szerint osztják fel."
 
-#: classes.py:976
+#: classes.py:1031
 msgid "State"
 msgstr "Állapot"
 
-#: classes.py:977
+#: classes.py:1032
 msgid ""
 "Show the different states of the dependencies. True means that the "
 "dependencies is installed and is of a correct version. False means the "
@@ -198,7 +207,7 @@ msgstr ""
 "függőségek telepítve vannak, és megfelelő verziójúak. A hamis azt jelenti, "
 "hogy a függőségek hiányoznak, vagy hibás verzió van jelen."
 
-#: classes.py:985
+#: classes.py:1041
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."

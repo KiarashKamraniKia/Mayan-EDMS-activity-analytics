@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-01 15:31+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Harald Ersch, 2025\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -73,6 +73,11 @@ msgstr "Activat în mod implicit?"
 msgid "Badly formatted arguments YAML; %s"
 msgstr "Argumente YAML formatate greșit; %s"
 
+#: classes.py:358
+#, python-format
+msgid "Cannot process driver \"%(driver)s\"; %(exception)s"
+msgstr ""
+
 #: events.py:10
 msgid "Document file submitted for file metadata processing"
 msgstr "Fișier de document trimis pentru procesarea metadatelor fișierului"
@@ -101,7 +106,7 @@ msgstr "Configurarea driverului de metadate ale fișierelor"
 msgid "File metadata processing per type"
 msgstr "Procesarea metadatelor de fișiere pe tip"
 
-#: links.py:75 views/tool_views.py:28
+#: links.py:75 views/tool_views.py:30
 msgid "File metadata drivers"
 msgstr "Drivere de metadate ale fișierelor"
 
@@ -392,7 +397,7 @@ msgstr ""
 msgid "No file metadata drivers available."
 msgstr "Nu sunt disponibile drivere pentru metadate ale fișierelor."
 
-#: views/tool_views.py:26
+#: views/tool_views.py:27
 msgid "File metadata drivers enabled and detected."
 msgstr "Driverele de metadate ale fișierelor au fost activate și detectate."
 

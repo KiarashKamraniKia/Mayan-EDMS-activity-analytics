@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-27 20:16+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Michal Švábík <snadno@lehce.cz>, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/rosarior/teams/13584/cs/)\n"
@@ -37,11 +37,11 @@ msgstr "Vnitřní název"
 msgid "Description"
 msgstr "Popis"
 
-#: apps.py:45 classes.py:219
+#: apps.py:45 classes.py:221
 msgid "Type"
 msgstr "Typ"
 
-#: apps.py:49 classes.py:222
+#: apps.py:49 classes.py:224
 msgid "Other data"
 msgstr "Další údaje"
 
@@ -49,7 +49,7 @@ msgstr "Další údaje"
 msgid "Declared by"
 msgstr "Deklarováno uživatelem"
 
-#: apps.py:57 classes.py:220
+#: apps.py:57 classes.py:222
 msgid "Version"
 msgstr "Verze"
 
@@ -57,73 +57,78 @@ msgstr "Verze"
 msgid "Environment"
 msgstr "Prostředí"
 
-#: apps.py:64 classes.py:222
+#: apps.py:64 classes.py:224
 msgid "Check"
 msgstr "Kontrola"
 
-#: classes.py:219
+#: classes.py:221
 msgid "Name"
 msgstr "název"
 
-#: classes.py:220
+#: classes.py:222
 msgid "App"
 msgstr "Aplikace"
 
-#: classes.py:221 classes.py:984
+#: classes.py:223 classes.py:1040
 msgid "Environments"
 msgstr ""
 
-#: classes.py:332
+#: classes.py:343
 msgid "Need to specify at least one: app_label or module."
 msgstr "Je třeba zadat alespoň jeden: app_label nebo modul."
 
-#: classes.py:337
+#: classes.py:348
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "Závislost \"%s\" je již zaregistrována."
 
-#: classes.py:388
+#: classes.py:399
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Instalace balíčku: %s ..."
 
-#: classes.py:395
+#: classes.py:406
 msgid "Already installed."
 msgstr "Už nainstalováno."
 
-#: classes.py:400 classes.py:407 classes.py:413
+#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
 msgid "Complete."
 msgstr "Kompletní."
 
-#: classes.py:440
+#: classes.py:431
+#, python-format
+msgid "Uninstalling package: %s... "
+msgstr ""
+
+#: classes.py:463
 msgid "Installed and correct version"
 msgstr "Nainstalovaná správná verze"
 
-#: classes.py:442
+#: classes.py:465
 msgid "Missing or incorrect version"
 msgstr "Chybějící nebo nesprávná verze"
 
-#: classes.py:479
+#: classes.py:502
 msgid "None"
 msgstr "Žádný"
 
-#: classes.py:488
+#: classes.py:511
 msgid "Not specified"
 msgstr "Nespecifikováno"
 
-#: classes.py:491
+#: classes.py:514
 msgid "Patching files... "
 msgstr "Opravné soubory ..."
 
-#: classes.py:519
+#: classes.py:542
 msgid "Executables that are called directly by the code."
 msgstr "Spustitelné soubory, které jsou volány přímo kódem."
 
-#: classes.py:521
+#: classes.py:544
 msgid "Binary"
 msgstr "Binární"
 
-#: classes.py:539
+#: classes.py:562
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
@@ -131,51 +136,55 @@ msgstr ""
 "Knihovny JavaScriptu stažené z registru NPM a použily se pro front-end "
 "funkce."
 
-#: classes.py:542
+#: classes.py:565
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: classes.py:574 classes.py:887
+#: classes.py:597 classes.py:930
 msgid "Downloading... "
 msgstr "Stahování ..."
 
-#: classes.py:579
+#: classes.py:602
 msgid "Verifying... "
 msgstr "Ověření ..."
 
-#: classes.py:584 classes.py:892
+#: classes.py:607 classes.py:935
 msgid "Extracting... "
 msgstr "Probíhá extrakce ..."
 
-#: classes.py:797
+#: classes.py:621 classes.py:942
+msgid "Uninstalling... "
+msgstr ""
+
+#: classes.py:839
 msgid "Python packages downloaded from PyPI."
 msgstr "Python balíčky stažené z PyPI."
 
-#: classes.py:799
+#: classes.py:841
 msgid "Python"
 msgstr "Python"
 
-#: classes.py:867
+#: classes.py:910
 msgid "Fonts downloaded from fonts.googleapis.com."
 msgstr "Fonty stažené z fonts.googleapis.com."
 
-#: classes.py:869
+#: classes.py:912
 msgid "Google font"
 msgstr "Písmo Google"
 
-#: classes.py:965
+#: classes.py:1020
 msgid "Declared in app"
 msgstr "Deklarováno v aplikaci"
 
-#: classes.py:966
+#: classes.py:1021
 msgid "Show dependencies by the app that declared them."
 msgstr "Zobrazit závislosti podle aplikace, která je deklarovala."
 
-#: classes.py:970
+#: classes.py:1025
 msgid "Class"
 msgstr "Třída"
 
-#: classes.py:971
+#: classes.py:1026
 msgid ""
 "Show the different classes of dependencies. Classes are usually divided by "
 "language or the file types of the dependency."
@@ -183,11 +192,11 @@ msgstr ""
 "Zobrazit různé třídy závislostí. Třídy jsou obvykle rozděleny podle jazyka "
 "nebo typu souboru závislosti."
 
-#: classes.py:976
+#: classes.py:1031
 msgid "State"
 msgstr "Stav"
 
-#: classes.py:977
+#: classes.py:1032
 msgid ""
 "Show the different states of the dependencies. True means that the "
 "dependencies is installed and is of a correct version. False means the "
@@ -197,7 +206,7 @@ msgstr ""
 "závislosti a mají správnou verzi. False znamená, že chybí závislosti nebo je"
 " přítomna nesprávná verze."
 
-#: classes.py:985
+#: classes.py:1041
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-27 11:22+0000\n"
+"POT-Creation-Date: 2026-04-22 14:40+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Lyudmil Antonov <lantonov.here@gmail.com>, 2025\n"
 "Language-Team: Bulgarian (https://app.transifex.com/rosarior/teams/13584/bg/)\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Language: bg\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:39 events.py:6 links.py:38 links.py:47 models.py:48
+#: apps.py:39 events.py:6 links.py:38 links.py:47 models.py:50
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:121
 msgid "Announcements"
 msgstr "Съобщения"

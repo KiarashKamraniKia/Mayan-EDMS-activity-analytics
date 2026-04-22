@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-20 12:32+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Ara Gasparyan, 2025\n"
 "Language-Team: Armenian (Armenia) (https://app.transifex.com/rosarior/teams/13584/hy_AM/)\n"
@@ -92,6 +92,11 @@ msgstr ""
 
 #: links.py:85
 msgid "Edit OCR"
+msgstr ""
+
+#: managers.py:75
+#, python-format
+msgid "Error calling OCR backend for page: %(page_number)d; %(exception)s"
 msgstr ""
 
 #: models.py:24

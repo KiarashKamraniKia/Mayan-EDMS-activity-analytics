@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-28 14:15+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: piera.daraio, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
@@ -487,7 +487,7 @@ msgstr ""
 "Valore con cui aumentare il tempo di vita a ogni accesso del set di "
 "risultati."
 
-#: settings.py:110
+#: settings.py:115
 msgid ""
 "Specifies the fields from which search model are to be disabled. The format "
 "is a dictionary of lists. The search model name is the dictionary key and "
@@ -500,7 +500,7 @@ msgstr ""
 " dei campi di ricerca. I campi disabilitati non saranno disponibili per la "
 "ricerca né saranno indicizzati dal backend di ricerca."
 
-#: settings.py:120
+#: settings.py:126
 msgid "Sets the default state of the \"Store results\" checkbox."
 msgstr ""
 "Imposta lo stato predefinito della casella di controllo \\\"Memorizza "

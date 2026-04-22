@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-28 14:15+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Csaba Tarjányi, 2025\n"
 "Language-Team: Hungarian (https://app.transifex.com/rosarior/teams/13584/hu/)\n"
@@ -469,7 +469,7 @@ msgid "Amount to increase the time to live on each access of the resultset."
 msgstr ""
 "Az eredményhalmaz élettartamát minden egyes hozzáférés után növelő összeg."
 
-#: settings.py:110
+#: settings.py:115
 msgid ""
 "Specifies the fields from which search model are to be disabled. The format "
 "is a dictionary of lists. The search model name is the dictionary key and "
@@ -477,7 +477,7 @@ msgid ""
 "neither be available for search nor be indexed by the search backend."
 msgstr ""
 
-#: settings.py:120
+#: settings.py:126
 msgid "Sets the default state of the \"Store results\" checkbox."
 msgstr ""
 "Beállítja az „Eredmények tárolása” jelölőnégyzet alapértelmezett állapotát."

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-20 12:32+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Ilya Pavlov <spirkaa@gmail.com>, 2025\n"
 "Language-Team: Russian (Russia) (https://app.transifex.com/rosarior/teams/13584/ru_RU/)\n"
@@ -33,7 +33,7 @@ msgstr ""
 "Генератор, возвращающий проанализированное содержимое страниц файла "
 "документа."
 
-#: apps.py:114 links.py:26 links.py:65 models.py:27 search.py:18
+#: apps.py:115 links.py:26 links.py:65 models.py:27 search.py:18
 msgid "Content"
 msgstr "Содержимое"
 
@@ -85,6 +85,11 @@ msgstr "Настройки анализа"
 #: links.py:84
 msgid "Parse documents per type"
 msgstr "Проанализировать документы указанного типа"
+
+#: managers.py:57
+#, python-format
+msgid "Error attempting to parse text; %(exception)s"
+msgstr ""
 
 #: models.py:21
 msgid "Document file page"

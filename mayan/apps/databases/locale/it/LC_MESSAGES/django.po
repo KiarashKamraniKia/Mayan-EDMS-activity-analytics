@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-27 11:22+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: piera.daraio, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
@@ -42,7 +42,7 @@ msgstr "Ha una condizione?"
 msgid "Description"
 msgstr "Descrizione "
 
-#: classes.py:92 classes.py:277
+#: classes.py:92 classes.py:279
 msgid "Label"
 msgstr "Etichetta"
 
@@ -50,7 +50,7 @@ msgstr "Etichetta"
 msgid "Example usage of the property."
 msgstr "Esempio di uso della proprietà."
 
-#: classes.py:98 classes.py:282
+#: classes.py:98 classes.py:284
 msgid "Name"
 msgstr "Nome "
 
@@ -70,23 +70,23 @@ msgstr "Proprietà del modello"
 msgid "Model reverse fields"
 msgstr "Modello campi inversi"
 
-#: classes.py:264
+#: classes.py:265
 msgid "Name of the app where the model is defined."
 msgstr "Nome dell'app in cui è definito il modello."
 
-#: classes.py:265
+#: classes.py:267
 msgid "App"
 msgstr "App"
 
-#: classes.py:270
+#: classes.py:272
 msgid "Complete unique name of the model."
 msgstr "Nome completo univoco del modello."
 
-#: classes.py:271
+#: classes.py:273
 msgid "Full name"
 msgstr "Nome completo"
 
-#: classes.py:276
+#: classes.py:278
 msgid "Human readable name of the model."
 msgstr "Nome del modello in forma leggibile."
 
@@ -98,7 +98,7 @@ msgstr "Proprietà"
 msgid "Property models"
 msgstr "Modelli di proprietà"
 
-#: literals.py:16
+#: literals.py:18
 msgid ""
 "Your database backend is set to use SQLite. SQLite should only be used for "
 "development and testing, not for production."

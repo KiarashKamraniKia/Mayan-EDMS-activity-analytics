@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-20 12:33+0000\n"
+"POT-Creation-Date: 2026-04-22 14:59+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Roberto Rosario, 2025\n"
 "Language-Team: Bosnian (https://app.transifex.com/rosarior/teams/13584/bs/)\n"
@@ -160,7 +160,7 @@ msgstr ""
 msgid "The current mode of the view."
 msgstr ""
 
-#: model_mixins.py:44 models.py:56
+#: model_mixins.py:44 models.py:57
 msgid "Value"
 msgstr "Vrijednost"
 
@@ -196,11 +196,11 @@ msgstr ""
 msgid "Stored value used to identify the display mode of the view."
 msgstr ""
 
-#: models.py:62
+#: models.py:63
 msgid "User view mode"
 msgstr ""
 
-#: models.py:63
+#: models.py:64
 msgid "User view modes"
 msgstr ""
 

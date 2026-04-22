@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-27 20:16+0000\n"
+"POT-Creation-Date: 2026-04-22 14:40+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Mehdi Amani <MehdiAmani@toorintan.com>, 2025\n"
 "Language-Team: Persian (https://app.transifex.com/rosarior/teams/13584/fa/)\n"
@@ -261,21 +261,21 @@ msgstr "مجموع: %(total)s"
 msgid "No results"
 msgstr "بی جواب و یا بی جواب"
 
-#: templates/appearance/partials/list/pagination.html:21
-#: templates/appearance/partials/list/pagination.html:23
+#: templates/appearance/partials/list/pagination.html:22
+#: templates/appearance/partials/list/pagination.html:24
 msgid "Previous page"
 msgstr "صفحه قبلی"
 
-#: templates/appearance/partials/list/pagination.html:39
-#: templates/appearance/partials/list/pagination.html:41
+#: templates/appearance/partials/list/pagination.html:40
+#: templates/appearance/partials/list/pagination.html:42
 msgid "Next page"
 msgstr "صفحه بعدی"
 
-#: templates/appearance/partials/list/pagination.html:46
+#: templates/appearance/partials/list/pagination.html:47
 msgid "Page"
 msgstr "صفحه"
 
-#: templates/appearance/partials/list/pagination.html:46
+#: templates/appearance/partials/list/pagination.html:47
 msgid "Jump to page"
 msgstr ""
 

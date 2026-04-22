@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-20 12:33+0000\n"
+"POT-Creation-Date: 2026-04-22 14:56+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -36,11 +36,11 @@ msgstr "མིང"
 msgid "Value"
 msgstr "རིན་ཐང"
 
-#: classes.py:162
+#: classes.py:172
 msgid "Has errors"
 msgstr "ནོར་འཁྲུལ་ཡོད་པ།"
 
-#: classes.py:164
+#: classes.py:174
 msgid ""
 "Indicates that this setting was not loaded correctly. Settings with errors "
 "revert to their default value."
@@ -48,36 +48,36 @@ msgstr ""
 "སྒྲིག་སྟངས་འདི་ནོར་འཁྲུལ་མེད་པར་མངོན་པར་བྱས་མེད་པ་སྟོན། "
 "ནོར་འཁྲུལ་ཡོད་པའི་སྒྲིག་སྟངས་དེ་ཚོ་སྔོན་སྒྲིག་རིན་ཐང་ལ་སླར་ལོག་བྱེད།"
 
-#: classes.py:171
+#: classes.py:181
 msgid "Choices"
 msgstr "གདམ་ག།"
 
-#: classes.py:173
+#: classes.py:183
 msgid "Possible values allowed for this setting."
 msgstr "སྒྲིག་སྟངས་འདིའི་ཆེད་དུ་འབྱུང་འགྱུར་གྱི་རིན་ཐང་ཆོག་མཆན་སྤྲད་ཡོད།"
 
-#: classes.py:194
+#: classes.py:204
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr "སྒྲིག་སྟངས་ཕྱིར་ལོག་བྱེད་མི་ཐུབ། སྒྲིག་སྟངས་རིན་ཐང་གསར་བཅོས་བྱས་མེད།"
 
-#: classes.py:231
+#: classes.py:241
 msgid "Default"
 msgstr "སྔོན་གཤིས།"
 
-#: classes.py:244
+#: classes.py:254
 msgid "Modified"
 msgstr "བཟོ་བཅོས།"
 
-#: classes.py:246
+#: classes.py:256
 msgid "The value of this setting being modified since the last restart."
 msgstr ""
 "མཐའ་མའི་བསྐྱར་འགོ་ཚུགས་རྗེས་སྒྲིག་སྟངས་འདིའི་རིན་ཐང་བསྒྱུར་བཅོས་བྱེད་བཞིན་ཡོད།"
 
-#: classes.py:252
+#: classes.py:263
 msgid "Overridden"
 msgstr "བཀག་འགོག་བྱས་པ།"
 
-#: classes.py:254
+#: classes.py:265
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr "སྒྲིག་སྟངས་ཀྱི་རིན་ཐང་དེ་ཁོར་ཡུག་འགྱུར་ལྡོག་གིས་བསྒྱུར་བཞིན་ཡོད།"
@@ -144,7 +144,7 @@ msgstr "སྒྲིག་གཞི་གསར་བཅོས་བྱས།"
 msgid "Updated settings"
 msgstr "སྒྲིག་སྟངས་གསར་བཅོས་བྱས།"
 
-#: namespaces.py:104
+#: namespaces.py:94
 msgid "Settings namespace"
 msgstr "སྒྲིག་སྟངས་མིང་བར་སྟོང་།"
 
@@ -156,15 +156,11 @@ msgstr "སྒྲིག་སྟངས་རྩོམ་སྒྲིག་བྱ
 msgid "View settings"
 msgstr "སྒྲིག་སྟངས་ལྟ་བ།"
 
-#: setting_namespaces.py:78
-msgid "Settings namespace"
-msgstr "སྒྲིག་སྟངས་མིང་བར་སྟོང་།"
-
-#: settings.py:27
+#: settings.py:23
 msgid "Django"
 msgstr "ཇང་གོ།"
 
-#: settings.py:32
+#: settings.py:28
 msgid ""
 "A list of strings representing the host/domain names that this site can "
 "serve. This is a security measure to prevent HTTP Host header attacks, which"
@@ -191,7 +187,7 @@ msgstr ""
 "(ཕལ་ཆེར་མཉེན་ཆས་དཀྱིལ་མའི་ནང་དུ། གལ་ཏེ་དེ་ལྟར་ཡིན་ན། "
 "མཉེན་ཆས་དཀྱིལ་མ་འདི་མཉེན་ཆས་དཀྱིལ་མའི་ནང་དུ་ཐོག་མར་ཐོ་འགོད་བྱེད་དགོས།)"
 
-#: settings.py:49
+#: settings.py:45
 msgid ""
 "When set to True, if the request URL does not match any of the patterns in "
 "the URLconf and it doesn't end in a slash, an HTTP redirect is issued to the"
@@ -207,21 +203,28 @@ msgstr ""
 "གཞི་བཙུགས་བྱས་ཡོད་ན་རྐྱངམ་གཅིག་བེད་སྤྱོད་བྱེད། (Middleware ལ་གཟིགས།) ད་དུང་ "
 "PREPEND_WWW ལ་གཟིགས།"
 
-#: settings.py:61
+#: settings.py:57
 msgid ""
 "The list of validators that are used to check the strength of user's "
 "passwords."
 msgstr ""
 "སྤྱོད་མཁན་གྱི་གསང་གྲངས་ཀྱི་ཤུགས་ཚད་ཞིབ་བཤེར་བྱེད་པར་བེད་སྤྱོད་བྱེད་པའི་བདེན་དཔང་བྱེད་མཁན་གྱི་ཐོ་གཞུང་།"
 
-#: settings.py:68
+#: settings.py:64
 msgid ""
 "A list of authentication backend classes (as strings) to use when attempting"
 " to authenticate a user."
 msgstr ""
 "བཀོལ་སྤྱོད་པ་བདེན་དཔང་བྱེད་པར་འབད་པའི་སྐབས་བེད་སྤྱོད་གཏོང་བའི་བདེན་དཔང་རྒྱབ་ཕྱོགས་ཀྱི་སྡེ་ཚན་གྱི་ཐོ་གཞུང་(ཡིག་རྒྱུན་ལྟར་)"
 
-#: settings.py:75
+#: settings.py:71
+msgid ""
+"A dictionary containing the settings for all caches to be used with Django. "
+"It is a nested dictionary whose contents maps cache aliases to a dictionary "
+"containing the options for an individual cache."
+msgstr ""
+
+#: settings.py:80
 msgid ""
 "Whether to use a secure cookie for the CSRF cookie. If this is set to True, "
 "the cookie will be marked as \"secure\", which means browsers may ensure "
@@ -234,7 +237,7 @@ msgstr ""
 "ཀུ་ཀི་དེ་&quot;བདེ་འཇགས་&quot;ཞེས་རྟགས་བཀོད་རྒྱུ་ཡིན། "
 "4.2/ref/settings/#std-སྒྲིག་སྟངས-CSRF_COOKIE_SECURE"
 
-#: settings.py:85
+#: settings.py:90
 msgid ""
 "A list of trusted origins for unsafe requests (e.g. POST). "
 "https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-"
@@ -243,7 +246,7 @@ msgstr ""
 "བདེ་འཇགས་མེད་པའི་འབོད་སྐུལ་གྱི་ཡིད་ཆེས་བྱེད་ཐུབ་པའི་འབྱུང་ཁུངས་ཀྱི་ཐོ་གཞུང་།"
 " (དཔེར་ན། POST) 4.2/ref/settings/#std-སྒྲིག་སྟངས-CSRF_ཡིད་ཆེས་_འབྱུང་ཁུངས།"
 
-#: settings.py:92
+#: settings.py:97
 msgid ""
 "Whether to store the CSRF token in the user's session instead of in a "
 "cookie. https://docs.djangoproject.com/en/4.2/ref/settings/#std-setting-"
@@ -253,7 +256,7 @@ msgstr ""
 "རྟགས་མཚན་དེ་ཀུ་ཀི་ནང་ལ་མ་ཡིན་པར་སྤྱོད་མཁན་གྱི་ཚོགས་ཐུན་ནང་ལ་གསོག་འཇོག་བྱེད་དགོས་སམ།"
 " 4.2/ref/settings/#std-སྒྲིག་སྟངས།CSRF_USE_SESSIONS"
 
-#: settings.py:99
+#: settings.py:104
 msgid ""
 "A dictionary containing the settings for all databases to be used with "
 "Django. It is a nested dictionary whose contents map a database alias to a "
@@ -268,7 +271,7 @@ msgstr ""
 "སྒྲིག་སྟངས་འདིས་སྔོན་སྒྲིག་གནས་སྡུད་གཞི་གྲངས་སྒྲིག་བཀོད་བྱེད་དགོས། "
 "གཞི་གྲངས་མཛོད་ཁ་སྣོན་གྱི་གྲངས་ཀ་གང་རུང་ཞིག་ཀྱང་གསལ་བཀོད་བྱེད་ཐུབ།"
 
-#: settings.py:110
+#: settings.py:115
 msgid ""
 "Default: 2621440 (i.e. 2.5 MB). The maximum size in bytes that a request "
 "body may be before a SuspiciousOperation (RequestDataTooBig) is raised. The "
@@ -295,7 +298,7 @@ msgstr ""
 "དྲ་རྒྱའི་ཞབས་ཞུ་འཕྲུལ་ཆས་ཀྱིས་སྤྱིར་བཏང་དུ་རེ་འདུན་གཏིང་ཟབ་པའི་ཞིབ་བཤེར་བྱེད་ཀྱི་མེད་པས་གནས་རིམ་དེ་ལ་དེ་དང་འདྲ་བའི་ཞིབ་བཤེར་བྱེད་ཐུབ་ཀྱི་མེད།"
 " ཡིག་ཆ་_ཡར་བསྐུར་_མཐོ་ཤོས་_དྲན་ཚད་_ཆེ་ཆུང་ཡང་གཟིགས།"
 
-#: settings.py:129
+#: settings.py:134
 msgid ""
 "Default: 'webmaster@localhost' Default email address to use for various "
 "automated correspondence from the site manager(s). This doesn't include "
@@ -307,7 +310,7 @@ msgstr ""
 "འདིའི་ནང་དུ་འཛིན་སྐྱོང་དང་འཛིན་སྐྱོང་པར་བཏང་བའི་ནོར་འཁྲུལ་གྱི་བརྡ་འཕྲིན་ཚུད་མེད།"
 " དེའི་ཆེད་དུ་སར་བར་_གློག་འཕྲིན་ལ་གཟིགས།"
 
-#: settings.py:138
+#: settings.py:143
 msgid ""
 "Default: [] (Empty list). List of compiled regular expression objects "
 "representing User-Agent strings that are not allowed to visit any page, "
@@ -320,7 +323,7 @@ msgstr ""
 "གལ་ཏེ་CommonMiddleware བཙུགས་ཡོད་ན་འདི་བེད་སྤྱོད་གཏོང་ཐུབ། (Middleware "
 "ལ་གཟིགས།)"
 
-#: settings.py:147
+#: settings.py:152
 msgid ""
 "Default: 'django.core.mail.backends.smtp.EmailBackend'. The backend to use "
 "for sending emails."
@@ -328,13 +331,13 @@ msgstr ""
 "སྔོན་སྒྲིག: &#39;django.core.mail.backends.smtp.གློག་འཕྲིན་རྒྱབ་ལྗོངས་&#39;."
 " གློག་འཕྲིན་གཏོང་བར་བེད་སྤྱོད་གཏོང་བའི་རྒྱབ་ལྗོངས།"
 
-#: settings.py:153
+#: settings.py:158
 msgid "Default: 'localhost'. The host to use for sending email."
 msgstr ""
 "སྔོན་སྒྲིག: &#39;ས་གནས་ཀྱི་གཙོ་བདག་&#39;. "
 "གློག་འཕྲིན་གཏོང་བར་སྤྱོད་པའི་གཙོ་བདག་།"
 
-#: settings.py:159
+#: settings.py:164
 msgid ""
 "Default: '' (Empty string). Password to use for the SMTP server defined in "
 "EMAIL_HOST. This setting is used in conjunction with EMAIL_HOST_USER when "
@@ -347,7 +350,7 @@ msgstr ""
 " གལ་ཏེ་སྒྲིག་སྟངས་འདི་གཉིས་ལས་གང་རུང་ཞིག་སྟོང་པ་ཡིན་ན། "
 "ཇང་གོ་ཡིས་བདེན་དཔང་བྱེད་པར་འབད་བརྩོན་བྱེད་ཀྱི་མིན།"
 
-#: settings.py:169
+#: settings.py:174
 msgid ""
 "Default: '' (Empty string). Username to use for the SMTP server defined in "
 "EMAIL_HOST. If empty, Django won't attempt authentication."
@@ -356,13 +359,13 @@ msgstr ""
 "ནང་གསལ་བཀོད་བྱས་པའི་SMTP ཞབས་ཞུ་འཕྲུལ་ཆས་ལ་སྤྱོད་པའི་སྤྱོད་མཁན་གྱི་མིང་། "
 "གལ་ཏེ་སྟོང་པ་ཡིན་ན། ཇང་གོ་ཡིས་བདེན་དཔང་བྱེད་པར་འབད་བརྩོན་བྱེད་ཀྱི་མིན།"
 
-#: settings.py:176
+#: settings.py:181
 msgid "Default: 25. Port to use for the SMTP server defined in EMAIL_HOST."
 msgstr ""
 "སྔོན་སྒྲིག: 25. EMAIL_HOST ནང་གསལ་བཀོད་བྱས་པའི་SMTP "
 "ཞབས་ཞུའི་ཆེད་དུ་བེད་སྤྱོད་གཏོང་བའི་མཐུད་ཁ།"
 
-#: settings.py:181
+#: settings.py:187
 msgid ""
 "Default: None. Specifies a timeout in seconds for blocking operations like "
 "the connection attempt."
@@ -370,7 +373,7 @@ msgstr ""
 "སྔོན་སྒྲིག: མེད། "
 "མཐུད་སྣེ་ཚོད་ལྟ་ལྟ་བུའི་བཀོལ་སྤྱོད་བཀག་འགོག་བྱེད་པའི་ཆེད་དུ་སྐར་ཆའི་ནང་དུས་ཚོད་རྫོགས་པ་གསལ་བཀོད་བྱེད།"
 
-#: settings.py:187
+#: settings.py:193
 msgid ""
 "Default: False. Whether to use an implicit TLS (secure) connection when "
 "talking to the SMTP server. In most email documentation this type of TLS "
@@ -386,7 +389,7 @@ msgstr ""
 "EMAIL_USE_TLS/EMAIL_USE_SSL "
 "ནི་ཕན་ཚུན་ཁ་བྲལ་བ་ཡིན་པས་སྒྲིག་སྟངས་དེ་དག་ལས་གཅིག་བདེན་པ་ལ་སྒྲིག་དགོས།"
 
-#: settings.py:197
+#: settings.py:204
 msgid ""
 "Default: False. Whether to use a TLS (secure) connection when talking to the"
 " SMTP server. This is used for explicit TLS connections, generally on port "
@@ -400,7 +403,7 @@ msgstr ""
 "གལ་ཏེ་ཁྱེད་ལ་མཐུད་ཁ་བཀག་པའི་གནས་ཚུལ་འབྱུང་བཞིན་ཡོད་ན། TLSསྒྲིག་སྟངས་གསལ་པོ་ "
 "EMAIL_USE_SSLལ་གཟིགས།"
 
-#: settings.py:206
+#: settings.py:213
 msgid ""
 "Default: 2621440 (i.e. 2.5 MB). The maximum size (in bytes) that an upload "
 "will be before it gets streamed to the file system. See Managing files for "
@@ -411,7 +414,7 @@ msgstr ""
 "ཞིབ་ཕྲའི་ཆེད་དུ་ཡིག་ཆ་འཛིན་སྐྱོང་བྱེད་པ་ལ་གཟིགས། "
 "གཞི་གྲངས་_ཡར་བསྐུར་_ཆེས་མཐོ_དྲན་ཚད་_ཚད་ལ་གཟིགས།"
 
-#: settings.py:214
+#: settings.py:221
 msgid ""
 "Default: '/accounts/login/' The URL where requests are redirected for login,"
 " especially when using the login_required() decorator. This setting also "
@@ -425,7 +428,7 @@ msgstr ""
 "སྒྲིག་སྟངས་འདིས་མིང་བཏགས་པའི་URLབཀོད་རིས་ཡང་ངོས་ལེན་བྱེད་ཀྱི་ཡོད། "
 "དེ་དག་སྒྲིག་བཀོད་ཀྱི་འདྲ་བཤུས་ཉུང་དུ་གཏོང་བར་བེད་སྤྱོད་གཏོང་ཐུབ།"
 
-#: settings.py:225
+#: settings.py:232
 msgid ""
 "Default: '/accounts/profile/' The URL where requests are redirected after "
 "login when the contrib.auth.login view gets no next parameter. This is used "
@@ -441,7 +444,7 @@ msgstr ""
 "རྒྱུ་མཚན་ནི་ཁྱེད་ཀྱིས་URLདེ་ས་ཆ་གཉིས་ལ་ངེས་ཚིག་བཀོད་མི་དགོས། "
 "(སྒྲིག་སྟངས་དང་URLconf)"
 
-#: settings.py:236
+#: settings.py:243
 msgid ""
 "Default: None. The URL where requests are redirected after a user logs out "
 "using LogoutView (if the view doesn't get a next_page argument). If None, no"
@@ -456,7 +459,7 @@ msgstr ""
 "སྒྲིག་སྟངས་འདིས་མིང་བཏགས་པའི་URLབཀོད་རིས་ཡང་ངོས་ལེན་བྱེད་ཀྱི་ཡོད། "
 "དེ་དག་སྒྲིག་བཀོད་ཀྱི་འདྲ་བཤུས་ཉུང་དུ་གཏོང་བར་བེད་སྤྱོད་གཏོང་ཐུབ།"
 
-#: settings.py:247
+#: settings.py:254
 msgid ""
 "A list of IP addresses, as strings, that: Allow the debug() context "
 "processor to add some variables to the template context. Can use the "
@@ -468,7 +471,7 @@ msgstr ""
 " ལས་བྱེད་པའི་སྤྱོད་མཁན་ཞིག་ཡིན་པའི་ཆ་ནས་ཐོ་འགོད་བྱས་མེད་ཀྱང་། "
 "འཛིན་སྐྱོང་གློག་འཕྲིན་བཀོལ་སྤྱོད་བྱེད་མཁན་གྱི་གློག་འཕྲིན་ནང་ལ་&quot;ནང་ཁུལ་&quot;(&quot;ཕྱི་ཁུལ་&quot;དང་འགལ་བ་)ཞེས་རྟགས་བཀོད་ཡོད།"
 
-#: settings.py:256
+#: settings.py:263
 msgid ""
 "A list of all available languages. The list is a list of two-tuples in the "
 "format (language code, language name) for example, ('ja', 'Japanese'). This "
@@ -484,7 +487,7 @@ msgstr ""
 "གལ་ཏེ་ཁྱེད་ཀྱིས་སྐད་ཡིག་འདེམས་སྒྲུག་དེ་ཌི་ཇང་གོ་ཡིས་མཁོ་སྤྲོད་བྱས་པའི་སྐད་ཡིག་གི་ཆ་ཚན་ཆུང་བ་ཞིག་ལ་ཚད་བཀག་བྱེད་འདོད་ན།"
 " "
 
-#: settings.py:267
+#: settings.py:274
 msgid ""
 "A string representing the language code for this installation. This should "
 "be in standard language ID format. For example, U.S. English is \"en-us\". "
@@ -505,14 +508,14 @@ msgstr ""
 " "
 "དེ་བཞིན་སྤྱོད་མཁན་གྱིས་འདོད་པའི་སྐད་ཡིག་ལ་ཡིག་འབྲུ་གཅིག་གི་སྐད་སྒྱུར་མེད་པའི་སྐབས་ལ་ཕྱིར་ལོག་སྐད་སྒྱུར་ཡང་མཁོ་སྤྲོད་བྱེད།"
 
-#: settings.py:281
+#: settings.py:288
 msgid ""
 "Default: 'sessionid'. The name of the cookie to use for sessions. This can "
 "be whatever you want (as long as it's different from the other cookie names "
 "in your application)."
 msgstr ""
 
-#: settings.py:289
+#: settings.py:296
 msgid ""
 "Default: 'django.contrib.sessions.backends.db'. Controls where Django stores"
 " session data."
@@ -520,7 +523,7 @@ msgstr ""
 "སྔོན་སྒྲིག: &#39;django.contrib.sessions.backends.db&#39;. "
 "ཇང་གོ་ཡིས་ལས་རིམ་གྱི་གཞི་གྲངས་གང་དུ་གསོག་འཇོག་བྱེད་མིན་ཚོད་འཛིན་བྱེད།"
 
-#: settings.py:296
+#: settings.py:303
 msgid ""
 "A tuple representing a HTTP header/value combination that signifies a "
 "request is secure. This controls the behavior of the request object’s "
@@ -534,7 +537,7 @@ msgstr ""
 " "
 "ཁྱེད་རང་གིས་སྒྲིག་བཀོད་བརྗེ་སྒྱུར་མ་བྱེད་གོང་ལ་ཆ་ཚང་ཤེས་རྟོགས་ཐུབ་པར་བྱ་དགོས།"
 
-#: settings.py:305
+#: settings.py:312
 msgid ""
 "URL to use when referring to static files located in STATIC_ROOT. Example: "
 "\"/static/\" or \"http://static.example.com/\" If not None, this will be "
@@ -547,7 +550,7 @@ msgstr ""
 "མཉེན་ཆས་ཀྱི་གཞི་གྲངས་འགྲོ་ལམ་དུ་བེད་སྤྱོད་བྱེད། "
 "གལ་ཏེ་སྟོང་པ་མིན་པའི་གནས་གོང་ལ་སྒྲིག་ན་དེ་གུག་ཤད་ནང་མཇུག་སྒྲིལ་དགོས།"
 
-#: settings.py:315
+#: settings.py:322
 msgid ""
 "A dictionary containing the settings for all storages to be used with "
 "Django. It is a nested dictionary whose contents map a storage alias to a "
@@ -557,7 +560,7 @@ msgstr ""
 " འདི་ནི་ཚིག་མཛོད་ཅིག་ཡིན་ཞིང་། "
 "དེའི་ནང་དོན་གྱིས་གསོག་འཇོག་མིང་གཞན་ཞིག་གསོག་འཇོག་རེ་རེའི་གདམ་ཁ་ཡོད་པའི་ཚིག་མཛོད་ལ་ས་ཁྲ་བཟོས་ཡོད།"
 
-#: settings.py:323
+#: settings.py:330
 msgid ""
 "A string representing the time zone for this installation. Note that this "
 "isn't necessarily the time zone of the server. For example, one server may "
@@ -568,7 +571,7 @@ msgstr ""
 "སར་བར་གཅིག་གིས་ཇང་གོ་གློག་ཤུགས་ལྡན་པའི་དྲ་ཚིགས་སྣ་ཚོགས་ལ་ཞབས་ཞུ་སྒྲུབ་ཐུབ། "
 "དེ་དག་རེ་རེ་ལ་དུས་ཚོད་ས་ཁུལ་གྱི་སྒྲིག་སྟངས་སོ་སོ་ཡོད།"
 
-#: settings.py:332
+#: settings.py:339
 msgid ""
 "A boolean that specifies whether to use the X-Forwarded-Host header in "
 "preference to the Host header. This should only be enabled if a proxy which "
@@ -579,7 +582,7 @@ msgstr ""
 " "
 "གལ་ཏེ་མགོ་ཡིག་འདི་སྒྲིག་པའི་ངོ་ཚབ་བེད་སྤྱོད་བྱེད་བཞིན་ཡོད་ན་འདི་ལྕོགས་ཅན་བཟོ་དགོས།"
 
-#: settings.py:340
+#: settings.py:347
 msgid ""
 "A boolean that specifies whether to use the X-Forwarded-Port header in "
 "preference to the SERVER_PORT META variable. This should only be enabled if "
@@ -591,7 +594,7 @@ msgstr ""
 "གལ་ཏེ་མགོ་ཡིག་འདི་སྒྲིག་པའི་ངོ་ཚབ་བེད་སྤྱོད་བྱེད་བཞིན་ཡོད་ན་འདི་ལྕོགས་ཅན་བཟོ་དགོས།"
 " USE_X_FORWARDED_HOST སྒྲིག་སྟངས་འདི་ལས་གཙོ་གནད་བཟུང་ཡོད།"
 
-#: settings.py:349
+#: settings.py:357
 msgid ""
 "The full Python path of the WSGI application object that Django's built-in "
 "servers (e.g. runserver) will use. The django-admin startproject management "
@@ -615,77 +618,23 @@ msgstr ""
 "སྒྲིག་སྟངས་གསར་བརྗེ་བྱས། "
 "བསྒྱུར་བཅོས་ལ་ནུས་པ་ཐོན་པའི་ཆེད་དུ་སྒྲིག་འཇུག་ཉར་ཚགས་དང་བསྐྱར་དུ་འགོ་བཙུགས།"
 
-#: tests/test_classes.py:192
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "དབྱིན་ཡིག"
 
-#: views.py:41
+#: views/cluster_views.py:32
 msgid "This will overwrite the content of the configuration file."
 msgstr "འདིས་སྒྲིག་བཀོད་ཡིག་ཆའི་ནང་དོན་བརྗེ་སྒྱུར་བྱེད།"
 
-#: views.py:44
+#: views/cluster_views.py:35
 msgid "Save settings to the configuration file?"
 msgstr "རིམ་སྒྲིག་ཡིག་ཆའི་ནང་དུ་སྒྲིག་སྟངས་ཉར་ཚགས་བྱེད་དགོས་སམ།"
 
-#: views.py:52
+#: views/cluster_views.py:43
 msgid "Settings saved to configuration file successfully."
 msgstr "སྒྲིག་སྟངས་རྣམས་སྒྲིག་བཀོད་ཡིག་ཆའི་ནང་ལེགས་འགྲུབ་བྱུང་ནས་ཉར་ཚགས་བྱས།"
 
-#: views.py:60
-msgid "Setting namespaces"
-msgstr "མིང་གི་བར་སྟོང་སྒྲིག་སྟངས།"
-
-#: views.py:89
-msgid "Setting updated successfully."
-msgstr "སྒྲིག་སྟངས་ལེགས་འགྲུབ་བྱུང་ནས་གསར་བརྗེ་བྱས།"
-
-#: views.py:98
-msgid ""
-"This setting is overridden by an environment variable, changing its value "
-"will have no effect."
-msgstr ""
-"སྒྲིག་སྟངས་འདི་ཁོར་ཡུག་འགྱུར་ལྡོག་གིས་བརྗེ་སྒྱུར་བྱས་པས་དེའི་རིན་ཐང་བསྒྱུར་ན་ནུས་པ་གང་ཡང་མེད།"
-
-#: views.py:108
-#, python-format
-msgid "Edit setting: %s"
-msgstr "རྩོམ་སྒྲིག་སྒྲིག་སྟངས།: %s"
-
-#: views.py:129
-#, python-format
-msgid "%(count)d settings value reverted."
-msgstr "%(count)d སྒྲིག་སྟངས་རིན་ཐང་ཕྱིར་ལོག་བྱས།"
-
-#: views.py:132
-#, python-format
-msgid "Value of setting \"%(object)s\" reverted."
-msgstr "སྒྲིག་སྟངས་ཀྱི་རིན་ཐང་ &quot; %(object)s &quot; ཕྱིར་ལོག་བྱས།"
-
-#: views.py:134
-#, python-format
-msgid "%(count)d setting value reverted."
-msgstr "%(count)d སྒྲིག་སྟངས་རིན་ཐང་ཕྱིར་ལོག་བྱས།"
-
-#: views.py:136
-#, python-format
-msgid "Revert the value of the %(count)d selected settings."
-msgstr "འདེམས་སྒྲུག་བྱས་པའི་སྒྲིག་སྟངས་ཀྱི་རིན་ཐང་ཕྱིར་ལོག་བྱེད %(count)d"
-
-#: views.py:138
-#, python-format
-msgid "Revert the value of setting: %(object)s"
-msgstr "སྒྲིག་སྟངས་ཀྱི་རིན་ཐང་ཕྱིར་ལོག: %(object)s"
-
-#: views.py:140
-#, python-format
-msgid "Revert the value of %(count)d selected setting."
-msgstr "འདེམས་སྒྲུག་བྱས་པའི་སྒྲིག་སྟངས་ %(count)d ཡི་རིན་ཐང་ཕྱིར་ལོག་བྱེད།"
-
-#: views.py:150
-msgid "Unsaved changes will be lost."
-msgstr "ཉར་ཚགས་མ་བྱས་པའི་བསྒྱུར་བཅོས་རྣམས་བརླག་འགྲོ།"
-
-#: views.py:187
+#: views/namespace_views.py:24
 msgid ""
 "Settings inherited from an environment variable take precedence and cannot "
 "be changed in this view. "
@@ -693,12 +642,66 @@ msgstr ""
 "མཐའ་འཁོར་འགྱུར་ཅན་ནས་རྒྱུད་འཛིན་བྱས་པའི་སྒྲིག་སྟངས་དེ་གཙོ་གནད་ཡིན་པ་དང་མཐོང་སྣང་འདིའི་ནང་བསྒྱུར་བཅོས་བྱེད་མི་ཐུབ།"
 " "
 
-#: views.py:190
+#: views/namespace_views.py:27
 #, python-format
 msgid "Settings in namespace: %s"
 msgstr "མིང་གནས་ནང་སྒྲིག་སྟངས། %s"
 
-#: views.py:200
+#: views/namespace_views.py:37
 #, python-format
 msgid "Namespace: %s, not found"
 msgstr "མིང་གནས་: %s , མ་རྙེད།"
+
+#: views/namespace_views.py:50
+msgid "Setting namespaces"
+msgstr "མིང་གི་བར་སྟོང་སྒྲིག་སྟངས།"
+
+#: views/setting_views.py:37
+msgid "Setting updated successfully."
+msgstr "སྒྲིག་སྟངས་ལེགས་འགྲུབ་བྱུང་ནས་གསར་བརྗེ་བྱས།"
+
+#: views/setting_views.py:46
+msgid ""
+"This setting is overridden by an environment variable, changing its value "
+"will have no effect."
+msgstr ""
+"སྒྲིག་སྟངས་འདི་ཁོར་ཡུག་འགྱུར་ལྡོག་གིས་བརྗེ་སྒྱུར་བྱས་པས་དེའི་རིན་ཐང་བསྒྱུར་ན་ནུས་པ་གང་ཡང་མེད།"
+
+#: views/setting_views.py:56
+#, python-format
+msgid "Edit setting: %s"
+msgstr "རྩོམ་སྒྲིག་སྒྲིག་སྟངས།: %s"
+
+#: views/setting_views.py:77
+#, python-format
+msgid "%(count)d settings value reverted."
+msgstr "%(count)d སྒྲིག་སྟངས་རིན་ཐང་ཕྱིར་ལོག་བྱས།"
+
+#: views/setting_views.py:80
+#, python-format
+msgid "Value of setting \"%(object)s\" reverted."
+msgstr "སྒྲིག་སྟངས་ཀྱི་རིན་ཐང་ &quot; %(object)s &quot; ཕྱིར་ལོག་བྱས།"
+
+#: views/setting_views.py:82
+#, python-format
+msgid "%(count)d setting value reverted."
+msgstr "%(count)d སྒྲིག་སྟངས་རིན་ཐང་ཕྱིར་ལོག་བྱས།"
+
+#: views/setting_views.py:84
+#, python-format
+msgid "Revert the value of the %(count)d selected settings."
+msgstr "འདེམས་སྒྲུག་བྱས་པའི་སྒྲིག་སྟངས་ཀྱི་རིན་ཐང་ཕྱིར་ལོག་བྱེད %(count)d"
+
+#: views/setting_views.py:86
+#, python-format
+msgid "Revert the value of setting: %(object)s"
+msgstr "སྒྲིག་སྟངས་ཀྱི་རིན་ཐང་ཕྱིར་ལོག: %(object)s"
+
+#: views/setting_views.py:88
+#, python-format
+msgid "Revert the value of %(count)d selected setting."
+msgstr "འདེམས་སྒྲུག་བྱས་པའི་སྒྲིག་སྟངས་ %(count)d ཡི་རིན་ཐང་ཕྱིར་ལོག་བྱེད།"
+
+#: views/setting_views.py:98
+msgid "Unsaved changes will be lost."
+msgstr "ཉར་ཚགས་མ་བྱས་པའི་བསྒྱུར་བཅོས་རྣམས་བརླག་འགྲོ།"

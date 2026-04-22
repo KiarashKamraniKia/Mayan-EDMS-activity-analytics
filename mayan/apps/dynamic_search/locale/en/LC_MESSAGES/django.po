@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-28 14:15+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2020-04-04 05:54+0000\n"
 "Last-Translator: Roberto Rosario\n"
 "Language-Team: English (http://www.transifex.com/rosarior/mayan-edms/"
@@ -440,7 +440,7 @@ msgstr ""
 msgid "Amount to increase the time to live on each access of the resultset."
 msgstr ""
 
-#: settings.py:110
+#: settings.py:115
 msgid ""
 "Specifies the fields from which search model are to be disabled. The format "
 "is a dictionary of lists. The search model name is the dictionary key and "
@@ -448,7 +448,7 @@ msgid ""
 "neither be available for search nor be indexed by the search backend."
 msgstr ""
 
-#: settings.py:120
+#: settings.py:126
 msgid "Sets the default state of the \"Store results\" checkbox."
 msgstr ""
 

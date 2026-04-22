@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: 0041b687dd284925c1885ba94464aacd_fde037b <fc746b00d74cefecce9698255909a24f_28512>, 2025\n"
 "Language-Team: French (https://app.transifex.com/rosarior/teams/13584/fr/)\n"
@@ -62,14 +62,14 @@ msgstr "Effacer les erreurs"
 
 #: model_mixins.py:11
 #, python-format
-msgid "Unknown domain name: %s"
+msgid "Unknown domain name: %(domain_name)s"
 msgstr ""
 
-#: model_mixins.py:18
+#: model_mixins.py:20
 msgid "Object"
 msgstr "Objet"
 
-#: model_mixins.py:26
+#: model_mixins.py:28
 msgid "App label"
 msgstr "Étiquette de l'application"
 
@@ -189,6 +189,11 @@ msgstr ""
 "bonne chose."
 
 #: views.py:103
+#, python-format
+msgid "Maximum number of entries kept for this object type: %s"
+msgstr ""
+
+#: views.py:107
 #, python-format
 msgid "Error log entries for: %s"
 msgstr "Entrées du journal des erreurs pour : %s"

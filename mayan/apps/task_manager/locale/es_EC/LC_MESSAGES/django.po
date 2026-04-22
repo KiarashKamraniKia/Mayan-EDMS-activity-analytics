@@ -4,15 +4,15 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Roberto Rosario, 2025
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 16:59+0000\n"
+"POT-Creation-Date: 2026-04-22 14:59+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
-"Last-Translator: Roberto Rosario, 2025\n"
+"Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Spanish (Ecuador) (https://app.transifex.com/rosarior/teams/13584/es_EC/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,11 +24,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Administrador de tareas"
 
-#: apps.py:123 apps.py:200 classes.py:64
+#: apps.py:123 apps.py:201 classes.py:64
 msgid "Label"
 msgstr "Etiqueta"
 
-#: apps.py:127 apps.py:204 classes.py:71
+#: apps.py:127 apps.py:205 classes.py:71
 msgid "Name"
 msgstr "Nombre"
 
@@ -46,35 +46,35 @@ msgstr ""
 "transitoria se pierden si se reinicia el intermediario. Las colas "
 "transitorias utilizan menos recursos y gestionan tareas no críticas."
 
-#: apps.py:140
+#: apps.py:141
 msgid "Is transient?"
 msgstr "¿Es transitoria?"
 
-#: apps.py:171
+#: apps.py:172
 msgid "Type"
 msgstr "Tipo"
 
-#: apps.py:176
+#: apps.py:177
 msgid "Start time"
 msgstr "Tiempo de inicio"
 
-#: apps.py:180
+#: apps.py:181
 msgid "Host"
 msgstr "Servidor"
 
-#: apps.py:184
+#: apps.py:185
 msgid "Arguments"
 msgstr "Argumentos"
 
-#: apps.py:188
+#: apps.py:189
 msgid "Keyword arguments"
 msgstr "Argumentos explícitos"
 
-#: apps.py:193
+#: apps.py:194
 msgid "Worker process ID"
 msgstr "ID del proceso trabajador"
 
-#: apps.py:213
+#: apps.py:214
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
@@ -82,11 +82,11 @@ msgstr ""
 "Número máximo de tareas que un trabajador puede ejecutar antes de ser "
 "reemplazado por un nuevo proceso."
 
-#: apps.py:215
+#: apps.py:216
 msgid "Maximum tasks per child"
 msgstr "Tareas máximas por subproceso"
 
-#: apps.py:220
+#: apps.py:221
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
@@ -94,11 +94,11 @@ msgstr ""
 "El número de procesos/hilos de trabajo que se lanzarán. El valor "
 "predeterminado es la cantidad de CPUs disponibles en la máquina."
 
-#: apps.py:222
+#: apps.py:223
 msgid "Concurrency"
 msgstr "Concurrencia"
 
-#: apps.py:227
+#: apps.py:228
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
@@ -106,13 +106,13 @@ msgstr ""
 "El valor de amistad determina la prioridad del proceso. Un valor más alto "
 "reduce la prioridad. El valor predeterminado es 0."
 
-#: apps.py:230
+#: apps.py:231
 msgid "Nice level"
 msgstr "Nivel de amistad"
 
 #: classes.py:55
 msgid "The Python path to the task code."
-msgstr ""
+msgstr "La ruta de Python al código de la tarea."
 
 #: classes.py:56
 msgid "Dotted path"
@@ -120,11 +120,11 @@ msgstr "Ruta separada por puntos"
 
 #: classes.py:62
 msgid "Human readable description of the task type."
-msgstr ""
+msgstr "Descripción legible por humanos del tipo de tarea."
 
 #: classes.py:70
 msgid "Unique internal name of the task type."
-msgstr ""
+msgstr "Nombre interno único del tipo de tarea."
 
 #: classes.py:77 classes.py:251
 msgid "Queue"
@@ -133,6 +133,8 @@ msgstr "Someter"
 #: classes.py:83
 msgid "Trigger interval if the task type is set for periodic execution."
 msgstr ""
+"Intervalo de activación si el tipo de tarea está configurado para ejecución "
+"periódica."
 
 #: classes.py:86
 msgid "Schedule"
@@ -140,11 +142,11 @@ msgstr "Horario"
 
 #: classes.py:91 classes.py:329
 msgid "Worker"
-msgstr ""
+msgstr "Trabajador"
 
 #: classes.py:217
 msgid "Number of task types managed by the queue."
-msgstr ""
+msgstr "Número de tipos de tareas gestionadas por la cola de tareas ."
 
 #: classes.py:219 classes.py:317
 msgid "Task type count"
@@ -168,7 +170,7 @@ msgstr "Cantidad de colas de tareas"
 
 #: classes.py:315
 msgid "Number of task types managed by the worker."
-msgstr ""
+msgstr "Número de tipos de tareas gestionadas por el trabajador."
 
 #: links.py:13 links.py:18
 msgid "Task type list"
@@ -236,7 +238,7 @@ msgstr "Lista de prueba"
 
 #: views.py:20
 msgid "Task types"
-msgstr ""
+msgstr "Tipos de tareas"
 
 #: views.py:43
 #, python-format

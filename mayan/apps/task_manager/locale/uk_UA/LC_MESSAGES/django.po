@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 16:59+0000\n"
+"POT-Creation-Date: 2026-04-22 14:59+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Leo Lado, 2025\n"
 "Language-Team: Ukrainian (Ukraine) (https://app.transifex.com/rosarior/teams/13584/uk_UA/)\n"
@@ -25,11 +25,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Менеджер завдань"
 
-#: apps.py:123 apps.py:200 classes.py:64
+#: apps.py:123 apps.py:201 classes.py:64
 msgid "Label"
 msgstr "Мітка"
 
-#: apps.py:127 apps.py:204 classes.py:71
+#: apps.py:127 apps.py:205 classes.py:71
 msgid "Name"
 msgstr "Ім'я"
 
@@ -47,35 +47,35 @@ msgstr ""
 "якщо брокер перезапускається. Тимчасові черги використовують менше ресурсів "
 "і керують не критичними завданнями."
 
-#: apps.py:140
+#: apps.py:141
 msgid "Is transient?"
 msgstr "Перехідний?"
 
-#: apps.py:171
+#: apps.py:172
 msgid "Type"
 msgstr "Тип"
 
-#: apps.py:176
+#: apps.py:177
 msgid "Start time"
 msgstr "Час початку"
 
-#: apps.py:180
+#: apps.py:181
 msgid "Host"
 msgstr "Хост"
 
-#: apps.py:184
+#: apps.py:185
 msgid "Arguments"
 msgstr "Аргументи"
 
-#: apps.py:188
+#: apps.py:189
 msgid "Keyword arguments"
 msgstr "Аргументи ключового слова"
 
-#: apps.py:193
+#: apps.py:194
 msgid "Worker process ID"
 msgstr "ID робочого процесу"
 
-#: apps.py:213
+#: apps.py:214
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
@@ -83,11 +83,11 @@ msgstr ""
 "Максимальна кількість завдань, яку працівник може виконати, перш ніж його "
 "замінять новим процесом."
 
-#: apps.py:215
+#: apps.py:216
 msgid "Maximum tasks per child"
 msgstr "Максимальна кількість завдань на одного дитину."
 
-#: apps.py:220
+#: apps.py:221
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
@@ -95,11 +95,11 @@ msgstr ""
 "Кількість робочих процесів / потоків для запуску. За замовчуванням "
 "відповідає кількості доступних процесорів на машині."
 
-#: apps.py:222
+#: apps.py:223
 msgid "Concurrency"
 msgstr "Паралелізм"
 
-#: apps.py:227
+#: apps.py:228
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
@@ -107,7 +107,7 @@ msgstr ""
 "Значення nice визначає пріоритет процесу. Вище значення знижує пріоритет. "
 "Значення за замовчуванням - 0."
 
-#: apps.py:230
+#: apps.py:231
 msgid "Nice level"
 msgstr "Nice рівень"
 

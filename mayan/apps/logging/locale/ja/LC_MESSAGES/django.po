@@ -4,15 +4,15 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# lockdlock, 2025
+# lockdlock, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
-"Last-Translator: lockdlock, 2025\n"
+"Last-Translator: lockdlock, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,14 +54,14 @@ msgstr "エラーをクリア"
 
 #: model_mixins.py:11
 #, python-format
-msgid "Unknown domain name: %s"
-msgstr "不明なドメイン名: %s"
+msgid "Unknown domain name: %(domain_name)s"
+msgstr "不明なドメイン名: %(domain_name)s"
 
-#: model_mixins.py:18
+#: model_mixins.py:20
 msgid "Object"
 msgstr "オブジェクト"
 
-#: model_mixins.py:26
+#: model_mixins.py:28
 msgid "App label"
 msgstr "アプリラベル"
 
@@ -176,6 +176,11 @@ msgid ""
 msgstr "このビューはオブジェクトのエラーログを表示します。空リストは正常です。"
 
 #: views.py:103
+#, python-format
+msgid "Maximum number of entries kept for this object type: %s"
+msgstr ""
+
+#: views.py:107
 #, python-format
 msgid "Error log entries for: %s"
 msgstr "「%s」のエラーログエントリ"

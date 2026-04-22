@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-20 12:33+0000\n"
+"POT-Creation-Date: 2026-04-22 14:59+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Hmayag Antonian <hmayag@freemail.gr>, 2025\n"
 "Language-Team: Greek (https://app.transifex.com/rosarior/teams/13584/el/)\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:16 permissions.py:6 settings.py:94
+#: apps.py:16 permissions.py:6 settings.py:96
 msgid "Templating"
 msgstr "Προτυποποίηση"
 
@@ -29,9 +29,20 @@ msgstr "Προτυποποίηση"
 msgid "Current date and time"
 msgstr ""
 
-#: classes.py:83
+#: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
+msgstr ""
+
+#: decorators.py:20
+msgid "None provided."
+msgstr ""
+
+#: decorators.py:22
+#, python-format
+msgid ""
+"Filter or tag \"%(name)s\" is considered dangerous and not allowed. Reason: "
+"%(reason)s Change setting `%(setting)s` to allow it."
 msgstr ""
 
 #: fields.py:28
@@ -93,6 +104,10 @@ msgstr ""
 msgid ""
 "Theme name of the CSS stylesheet used to change the visual appearance of the"
 " template preview."
+msgstr ""
+
+#: templatetags/templating_tags.py:99
+msgid "Tag can bypass access controls and create permanent changes."
 msgstr ""
 
 #: views.py:59

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-28 14:15+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: lockdlock, 2025\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -446,7 +446,7 @@ msgstr "結果セットを保持する時間（秒）"
 msgid "Amount to increase the time to live on each access of the resultset."
 msgstr "結果セットにアクセスするたびに有効期限を延長する時間"
 
-#: settings.py:110
+#: settings.py:115
 msgid ""
 "Specifies the fields from which search model are to be disabled. The format "
 "is a dictionary of lists. The search model name is the dictionary key and "
@@ -455,7 +455,7 @@ msgid ""
 msgstr ""
 "検索モデルで無効にするフィールドを指定します。形式はリストの辞書です。検索モデル名が辞書キー、値がフィールド名のリストです。無効化されたフィールドは検索できず、検索バックエンドにもインデックスされません"
 
-#: settings.py:120
+#: settings.py:126
 msgid "Sets the default state of the \"Store results\" checkbox."
 msgstr "「結果を保存」チェックボックスの初期状態を設定"
 

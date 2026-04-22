@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-20 12:32+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Michal Švábík <snadno@lehce.cz>, 2025\n"
 "Language-Team: Czech (https://app.transifex.com/rosarior/teams/13584/cs/)\n"
@@ -29,7 +29,7 @@ msgstr "Analýza dokumentů"
 msgid "A generator returning the document file's pages parsed content."
 msgstr "Generátor, který vrací analyzovaný obsah stránek dokumentu."
 
-#: apps.py:114 links.py:26 links.py:65 models.py:27 search.py:18
+#: apps.py:115 links.py:26 links.py:65 models.py:27 search.py:18
 msgid "Content"
 msgstr "Obsah"
 
@@ -81,6 +81,11 @@ msgstr "Nastavení analýzy"
 #: links.py:84
 msgid "Parse documents per type"
 msgstr "Analyzujte dokumenty podle typu"
+
+#: managers.py:57
+#, python-format
+msgid "Error attempting to parse text; %(exception)s"
+msgstr ""
 
 #: models.py:21
 msgid "Document file page"

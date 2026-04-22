@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-20 12:32+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: piera.daraio, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
@@ -244,9 +244,14 @@ msgstr "Percorso del file"
 msgid "Storage"
 msgstr "Magazzino "
 
-#: model_mixins.py:178
+#: model_mixins.py:174
 #, python-format
 msgid "Test email from %s"
+msgstr ""
+
+#: model_mixins.py:179
+#, python-format
+msgid "Error during testing; %(exception)s"
 msgstr ""
 
 #: models.py:32

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-01 15:31+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,6 +64,11 @@ msgstr ""
 msgid "Badly formatted arguments YAML; %s"
 msgstr ""
 
+#: classes.py:358
+#, python-format
+msgid "Cannot process driver \"%(driver)s\"; %(exception)s"
+msgstr ""
+
 #: events.py:10
 msgid "Document file submitted for file metadata processing"
 msgstr ""
@@ -92,7 +97,7 @@ msgstr ""
 msgid "File metadata processing per type"
 msgstr ""
 
-#: links.py:75 views/tool_views.py:28
+#: links.py:75 views/tool_views.py:30
 msgid "File metadata drivers"
 msgstr ""
 
@@ -342,7 +347,7 @@ msgstr ""
 msgid "No file metadata drivers available."
 msgstr ""
 
-#: views/tool_views.py:26
+#: views/tool_views.py:27
 msgid "File metadata drivers enabled and detected."
 msgstr ""
 

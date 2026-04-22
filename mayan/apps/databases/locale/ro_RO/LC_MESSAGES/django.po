@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-27 11:22+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Harald Ersch, 2025\n"
 "Language-Team: Romanian (Romania) (https://app.transifex.com/rosarior/teams/13584/ro_RO/)\n"
@@ -40,7 +40,7 @@ msgstr "Are o condiție?"
 msgid "Description"
 msgstr "Descriere"
 
-#: classes.py:92 classes.py:277
+#: classes.py:92 classes.py:279
 msgid "Label"
 msgstr "Conținut etichetă"
 
@@ -48,7 +48,7 @@ msgstr "Conținut etichetă"
 msgid "Example usage of the property."
 msgstr "Exemplu de utilizare a proprietății."
 
-#: classes.py:98 classes.py:282
+#: classes.py:98 classes.py:284
 msgid "Name"
 msgstr "Nume"
 
@@ -68,23 +68,23 @@ msgstr "Proprietățile modelului"
 msgid "Model reverse fields"
 msgstr "Model câmpuri invers"
 
-#: classes.py:264
+#: classes.py:265
 msgid "Name of the app where the model is defined."
 msgstr "Numele aplicației în care este definit modelul."
 
-#: classes.py:265
+#: classes.py:267
 msgid "App"
 msgstr "App"
 
-#: classes.py:270
+#: classes.py:272
 msgid "Complete unique name of the model."
 msgstr "Numele unic complet al modelului."
 
-#: classes.py:271
+#: classes.py:273
 msgid "Full name"
 msgstr "Numele întreg"
 
-#: classes.py:276
+#: classes.py:278
 msgid "Human readable name of the model."
 msgstr "Numele modelului, lizibil de către om."
 
@@ -96,7 +96,7 @@ msgstr "Proprietăți"
 msgid "Property models"
 msgstr "Modele de proprietăți"
 
-#: literals.py:16
+#: literals.py:18
 msgid ""
 "Your database backend is set to use SQLite. SQLite should only be used for "
 "development and testing, not for production."

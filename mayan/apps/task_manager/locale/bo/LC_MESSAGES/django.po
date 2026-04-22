@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-13 16:59+0000\n"
+"POT-Creation-Date: 2026-04-22 14:59+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -24,11 +24,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "ལས་འགན་འགན་འཛིན།"
 
-#: apps.py:123 apps.py:200 classes.py:64
+#: apps.py:123 apps.py:201 classes.py:64
 msgid "Label"
 msgstr "མིང་བྱང།"
 
-#: apps.py:127 apps.py:204 classes.py:71
+#: apps.py:127 apps.py:205 classes.py:71
 msgid "Name"
 msgstr "མིང"
 
@@ -47,46 +47,46 @@ msgstr ""
 " "
 "དུས་ཐུང་བང་རིམ་གྱིས་ཐོན་ཁུངས་ཉུང་བ་དང་གལ་ཆེའི་ལས་འགན་མིན་པའི་དོ་དམ་བྱེད་ཀྱི་ཡོད།"
 
-#: apps.py:140
+#: apps.py:141
 msgid "Is transient?"
 msgstr "དུས་ཐུང་ཡིན་ནམ།"
 
-#: apps.py:171
+#: apps.py:172
 msgid "Type"
 msgstr "རིགས"
 
-#: apps.py:176
+#: apps.py:177
 msgid "Start time"
 msgstr "འགོ་ཚུགས་དུས་ཚོད།"
 
-#: apps.py:180
+#: apps.py:181
 msgid "Host"
 msgstr "འགོ་འཛིན་པ"
 
-#: apps.py:184
+#: apps.py:185
 msgid "Arguments"
 msgstr "རྩོད་པ།"
 
-#: apps.py:188
+#: apps.py:189
 msgid "Keyword arguments"
 msgstr "གཙོ་ཚིག་རྩོད་གླེང་།"
 
-#: apps.py:193
+#: apps.py:194
 msgid "Worker process ID"
 msgstr "ལས་བྱེད་པའི་བརྒྱུད་རིམ་ཨང་རྟགས།"
 
-#: apps.py:213
+#: apps.py:214
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
 msgstr ""
 "ལས་བྱེད་པ་ཞིག་གིས་བྱ་རིམ་གསར་པས་ཚབ་མ་བྱེད་གོང་དུ་ལག་བསྟར་བྱེད་ཐུབ་པའི་ལས་འགན་ཆེ་ཤོས་ཀྱི་གྲངས་འབོར།"
 
-#: apps.py:215
+#: apps.py:216
 msgid "Maximum tasks per child"
 msgstr "བྱིས་པ་རེར་ཆེས་མཐོ་བའི་ལས་འགན།"
 
-#: apps.py:220
+#: apps.py:221
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
@@ -94,11 +94,11 @@ msgstr ""
 "ལས་བྱེད་པའི་བྱ་རིམ་དང་སྐུད་པའི་གྲངས་འབོར། "
 "འཕྲུལ་ཆས་སྟེང་ཡོད་པའི་CPUགྲངས་ལ་སྔོན་སྒྲིག་བྱེད།"
 
-#: apps.py:222
+#: apps.py:223
 msgid "Concurrency"
 msgstr "དུས་མཉམ་པ།"
 
-#: apps.py:227
+#: apps.py:228
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
@@ -106,7 +106,7 @@ msgstr ""
 "རིན་ཐང་ཡག་པོ་དེས་བྱ་རིམ་གྱི་གཙོ་གནད་གཏན་འབེབས་བྱེད། "
 "རིན་ཐང་མཐོ་བས་གཙོ་གནད་དམའ་རུ་གཏོང་གི་ཡོད། སྔོན་སྒྲིག་རིན་ཐང་ནི་༠ཡིན།"
 
-#: apps.py:230
+#: apps.py:231
 msgid "Nice level"
 msgstr "གནས་ཚད་ཡག་པོ་འདུག"
 

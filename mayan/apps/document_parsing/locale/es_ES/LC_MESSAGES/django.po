@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-20 12:32+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
 "Last-Translator: Roberto Rosario, 2025\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/rosarior/teams/13584/es_ES/)\n"
@@ -30,7 +30,7 @@ msgstr ""
 "Un generador que devuelve el contenido extraido de las páginas del archivo "
 "del documento."
 
-#: apps.py:114 links.py:26 links.py:65 models.py:27 search.py:18
+#: apps.py:115 links.py:26 links.py:65 models.py:27 search.py:18
 msgid "Content"
 msgstr "Contenido"
 
@@ -82,6 +82,11 @@ msgstr "Configurar extracción de texto"
 #: links.py:84
 msgid "Parse documents per type"
 msgstr "Extracción de contenido por tipo de documento"
+
+#: managers.py:57
+#, python-format
+msgid "Error attempting to parse text; %(exception)s"
+msgstr ""
 
 #: models.py:21
 msgid "Document file page"

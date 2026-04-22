@@ -9,15 +9,15 @@
 # Yaman Sanobar <yman.snober@gmail.com>, 2025
 # Mohammed ALDOUB <voulnet@gmail.com>, 2025
 # Marwan Rahhal <Marwanr@sssit.net>, 2025
-# Mohamad Ashmar, 2025
+# Mohamad Ashmar, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 07:29+0000\n"
+"POT-Creation-Date: 2026-04-22 14:41+0000\n"
 "PO-Revision-Date: 2025-01-20 12:34+0000\n"
-"Last-Translator: Mohamad Ashmar, 2025\n"
+"Last-Translator: Mohamad Ashmar, 2026\n"
 "Language-Team: Arabic (https://app.transifex.com/rosarior/teams/13584/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,14 +59,14 @@ msgstr "حذف الاخطاء"
 
 #: model_mixins.py:11
 #, python-format
-msgid "Unknown domain name: %s"
-msgstr "اسم نطاق غير معروف: %s"
+msgid "Unknown domain name: %(domain_name)s"
+msgstr "اسم نطاق غير معروف: %(domain_name)s"
 
-#: model_mixins.py:18
+#: model_mixins.py:20
 msgid "Object"
 msgstr "عنصر"
 
-#: model_mixins.py:26
+#: model_mixins.py:28
 msgid "App label"
 msgstr "اسم التطبيق"
 
@@ -181,6 +181,11 @@ msgid ""
 msgstr "طريقة عرض عناصر سجلات الأخطاء. قائمة فارغة خيار جيد"
 
 #: views.py:103
+#, python-format
+msgid "Maximum number of entries kept for this object type: %s"
+msgstr ""
+
+#: views.py:107
 #, python-format
 msgid "Error log entries for: %s"
 msgstr "أخطاء النظام : %s"

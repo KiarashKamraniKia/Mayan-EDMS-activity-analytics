@@ -9,6 +9,7 @@
 # Daniele Bortoluzzi <daniele@elkos.it>, 2025
 # Roberto Rosario, 2025
 # albanobattistella <albanobattistella@gmail.com>, 2025
+# piera.daraio, 2025
 # 
 msgid ""
 msgstr ""
