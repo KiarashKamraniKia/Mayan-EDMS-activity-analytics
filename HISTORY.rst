@@ -1,6 +1,6 @@
-4.9.9 (XXXX-XX-XX)
+4.9.9 (2026-04-22)
 ==================
-- Merge changes and improvements from version 4.7.11.
+- Merge changes and improvements from version 4.8.11.
 - Backport from series 4.11:
   - Split smart settings app views.
   - Rename smart settings app view class names.
