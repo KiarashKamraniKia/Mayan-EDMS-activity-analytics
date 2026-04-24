@@ -1,4 +1,4 @@
-4.10.5 (XXXX-XX-XX)
+4.10.5 (2026-04-24)
 ===================
 - Merge changes from version 4.9.9.
 
