@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_SOURCES_BACKEND_ARGUMENTS, DEFAULT_SOURCES_CACHE_MAXIMUM_SIZE,
@@ -40,8 +40,9 @@ setting_source_cache_storage_backend = setting_namespace.do_setting_add(
 )
 setting_source_cache_storage_backend_arguments = setting_namespace.do_setting_add(
     global_name='SOURCES_CACHE_STORAGE_BACKEND_ARGUMENTS',
-    default=DEFAULT_SOURCES_CACHE_STORAGE_BACKEND_ARGUMENTS, help_text=_(
+    default=DEFAULT_SOURCES_CACHE_STORAGE_BACKEND_ARGUMENTS,
+    help_text=_(
         message='Arguments to pass to the '
-        'SOURCES_SOURCE_CACHE_STORAGE_BACKEND.'
+        '`SOURCES_SOURCE_CACHE_STORAGE_BACKEND`.'
     )
 )

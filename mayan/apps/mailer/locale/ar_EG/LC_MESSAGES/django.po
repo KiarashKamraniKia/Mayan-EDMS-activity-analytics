@@ -246,10 +246,15 @@ msgstr "مسار الملف"
 msgid "Storage"
 msgstr "المساحة التخزينية"
 
-#: model_mixins.py:178
+#: model_mixins.py:174
 #, python-format
 msgid "Test email from %s"
 msgstr "بريد اختباري من %s"
+
+#: model_mixins.py:179
+#, python-format
+msgid "Error during testing; %(exception)s"
+msgstr ""
 
 #: models.py:32
 msgid "A short text describing the mailing profile."

@@ -99,7 +99,7 @@ msgstr ""
 "Wykropkowana ścieżka do backendu używanego do przetwarzania uwierzytelniania"
 " użytkowników."
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "Argumenty dla AUTHENTICATION_BACKEND."
 

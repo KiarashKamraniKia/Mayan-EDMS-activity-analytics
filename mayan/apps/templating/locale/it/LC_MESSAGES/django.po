@@ -31,7 +31,7 @@ msgstr "Data e ora correnti"
 msgid "Current date and time"
 msgstr "Data e ora correnti"
 
-#: classes.py:83
+#: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
 msgstr "Il modello `%s` non è disponibile per il template della sandbox."

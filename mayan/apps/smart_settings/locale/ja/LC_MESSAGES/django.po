@@ -36,45 +36,45 @@ msgstr "名前"
 msgid "Value"
 msgstr "値"
 
-#: classes.py:162
+#: classes.py:172
 msgid "Has errors"
 msgstr "エラーあり"
 
-#: classes.py:164
+#: classes.py:174
 msgid ""
 "Indicates that this setting was not loaded correctly. Settings with errors "
 "revert to their default value."
 msgstr "この設定は正しく読み込まれなかったことを示します。エラーのある設定は既定値に戻されます。"
 
-#: classes.py:171
+#: classes.py:181
 msgid "Choices"
 msgstr "選択肢"
 
-#: classes.py:173
+#: classes.py:183
 msgid "Possible values allowed for this setting."
 msgstr "この設定で許可されている値の一覧です。"
 
-#: classes.py:194
+#: classes.py:204
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr "設定を元に戻せません。値は更新されていません。"
 
-#: classes.py:231
+#: classes.py:241
 msgid "Default"
 msgstr "デフォルト"
 
-#: classes.py:244
+#: classes.py:254
 msgid "Modified"
 msgstr "変更済み"
 
-#: classes.py:246
+#: classes.py:256
 msgid "The value of this setting being modified since the last restart."
 msgstr "最後の再起動以降に変更された設定値です。"
 
-#: classes.py:252
+#: classes.py:263
 msgid "Overridden"
 msgstr "上書きされています"
 
-#: classes.py:254
+#: classes.py:265
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr "この設定値は環境変数によって上書きされています。"
@@ -138,6 +138,10 @@ msgstr "更新された設定"
 msgid "Updated settings"
 msgstr "更新された設定"
 
+#: namespaces.py:94
+msgid "Settings namespace"
+msgstr "設定の名前空間"
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr "設定を編集"
@@ -146,15 +150,11 @@ msgstr "設定を編集"
 msgid "View settings"
 msgstr "設定を表示"
 
-#: setting_namespaces.py:78
-msgid "Settings namespace"
-msgstr "設定の名前空間"
-
-#: settings.py:27
+#: settings.py:23
 msgid "Django"
 msgstr "Django"
 
-#: settings.py:32
+#: settings.py:28
 msgid ""
 "A list of strings representing the host/domain names that this site can "
 "serve. This is a security measure to prevent HTTP Host header attacks, which"
@@ -174,7 +174,7 @@ msgstr ""
 "example.com や www.example.com などを許可）。* "
 "を指定するとすべてのホストが許可されますが、この場合は独自にヘッダー検証を行う必要があります。"
 
-#: settings.py:49
+#: settings.py:45
 msgid ""
 "When set to True, if the request URL does not match any of the patterns in "
 "the URLconf and it doesn't end in a slash, an HTTP redirect is issued to the"
@@ -187,19 +187,26 @@ msgstr ""
 "にすると、リクエストURLがURLconfのいずれのパターンにも一致せず、末尾がスラッシュで終わっていない場合に、そのURLの末尾にスラッシュを付加して同じURLへHTTPリダイレクトを行います。ただし、このリダイレクトによって、POSTリクエストで送信されたデータが失われる可能性があります。このAPPEND_SLASH　設定は、CommonMiddleware"
 " が有効になっている場合にのみ使用されます（Middlewareを参照）。PREPEND_WWW も参照してください。"
 
-#: settings.py:61
+#: settings.py:57
 msgid ""
 "The list of validators that are used to check the strength of user's "
 "passwords."
 msgstr "利用者のパスワード強度を確認するための検証ルールの一覧です。"
 
-#: settings.py:68
+#: settings.py:64
 msgid ""
 "A list of authentication backend classes (as strings) to use when attempting"
 " to authenticate a user."
 msgstr "利用者認証に使用する認証バックエンドクラス（文字列）の一覧です。"
 
-#: settings.py:75
+#: settings.py:71
+msgid ""
+"A dictionary containing the settings for all caches to be used with Django. "
+"It is a nested dictionary whose contents maps cache aliases to a dictionary "
+"containing the options for an individual cache."
+msgstr ""
+
+#: settings.py:80
 msgid ""
 "A dictionary containing the settings for all caches to be used with Django. "
 "It is a nested dictionary whose contents maps cache aliases to a dictionary "
@@ -440,12 +447,10 @@ msgstr ""
 
 #: settings.py:290
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"既定値: 'sessionid' : "
-"セッションで使用するクッキーの名前です。（アプリケーション内の他のクッキー名と異なる限り、任意の名前を設定できます）"
 
 #: settings.py:298
 msgid ""
@@ -534,87 +539,87 @@ msgid ""
 "effect."
 msgstr "設定が更新されました。変更を反映させるには、インストールを保存して再起動してください。"
 
-#: tests/test_classes.py:192
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "英語"
 
-#: views.py:41
+#: views/cluster_views.py:32
 msgid "This will overwrite the content of the configuration file."
 msgstr "これにより、設定ファイルの内容が上書きされます。"
 
-#: views.py:44
+#: views/cluster_views.py:35
 msgid "Save settings to the configuration file?"
 msgstr "設定を設定ファイルに保存しますか？"
 
-#: views.py:52
+#: views/cluster_views.py:43
 msgid "Settings saved to configuration file successfully."
 msgstr "設定を設定ファイルに正常に保存しました。"
 
-#: views.py:60
-msgid "Setting namespaces"
-msgstr "設定の名前空間"
-
-#: views.py:89
-msgid "Setting updated successfully."
-msgstr "設定が正常に更新されました。"
-
-#: views.py:98
-msgid ""
-"This setting is overridden by an environment variable, changing its value "
-"will have no effect."
-msgstr "この設定は環境変数によって上書きされています。値を変更しても効果はありません。"
-
-#: views.py:108
-#, python-format
-msgid "Edit setting: %s"
-msgstr "設定を編集: %s"
-
-#: views.py:129
-#, python-format
-msgid "%(count)d settings value reverted."
-msgstr "%(count)d 件の設定値を元に戻しました。"
-
-#: views.py:132
-#, python-format
-msgid "Value of setting \"%(object)s\" reverted."
-msgstr "設定 \"%(object)s\" の値を元に戻しました。"
-
-#: views.py:134
-#, python-format
-msgid "%(count)d setting value reverted."
-msgstr "%(count)d 件の設定値を元に戻しました。"
-
-#: views.py:136
-#, python-format
-msgid "Revert the value of the %(count)d selected settings."
-msgstr "選択した %(count)d 件の設定値を元に戻します。"
-
-#: views.py:138
-#, python-format
-msgid "Revert the value of setting: %(object)s"
-msgstr "設定を元に戻す：%(object)s"
-
-#: views.py:140
-#, python-format
-msgid "Revert the value of %(count)d selected setting."
-msgstr "選択した %(count)d 件の設定値を元に戻します。"
-
-#: views.py:150
-msgid "Unsaved changes will be lost."
-msgstr "保存されていない変更は失われます。"
-
-#: views.py:187
+#: views/namespace_views.py:24
 msgid ""
 "Settings inherited from an environment variable take precedence and cannot "
 "be changed in this view. "
 msgstr "環境変数から継承された設定は優先され、この画面では変更できません。"
 
-#: views.py:190
+#: views/namespace_views.py:27
 #, python-format
 msgid "Settings in namespace: %s"
 msgstr "名前空間内の設定: %s"
 
-#: views.py:200
+#: views/namespace_views.py:37
 #, python-format
 msgid "Namespace: %s, not found"
 msgstr "名前空間: %s が見つかりません。"
+
+#: views/namespace_views.py:50
+msgid "Setting namespaces"
+msgstr "設定の名前空間"
+
+#: views/setting_views.py:37
+msgid "Setting updated successfully."
+msgstr "設定が正常に更新されました。"
+
+#: views/setting_views.py:46
+msgid ""
+"This setting is overridden by an environment variable, changing its value "
+"will have no effect."
+msgstr "この設定は環境変数によって上書きされています。値を変更しても効果はありません。"
+
+#: views/setting_views.py:56
+#, python-format
+msgid "Edit setting: %s"
+msgstr "設定を編集: %s"
+
+#: views/setting_views.py:77
+#, python-format
+msgid "%(count)d settings value reverted."
+msgstr "%(count)d 件の設定値を元に戻しました。"
+
+#: views/setting_views.py:80
+#, python-format
+msgid "Value of setting \"%(object)s\" reverted."
+msgstr "設定 \"%(object)s\" の値を元に戻しました。"
+
+#: views/setting_views.py:82
+#, python-format
+msgid "%(count)d setting value reverted."
+msgstr "%(count)d 件の設定値を元に戻しました。"
+
+#: views/setting_views.py:84
+#, python-format
+msgid "Revert the value of the %(count)d selected settings."
+msgstr "選択した %(count)d 件の設定値を元に戻します。"
+
+#: views/setting_views.py:86
+#, python-format
+msgid "Revert the value of setting: %(object)s"
+msgstr "設定を元に戻す：%(object)s"
+
+#: views/setting_views.py:88
+#, python-format
+msgid "Revert the value of %(count)d selected setting."
+msgstr "選択した %(count)d 件の設定値を元に戻します。"
+
+#: views/setting_views.py:98
+msgid "Unsaved changes will be lost."
+msgstr "保存されていない変更は失われます。"

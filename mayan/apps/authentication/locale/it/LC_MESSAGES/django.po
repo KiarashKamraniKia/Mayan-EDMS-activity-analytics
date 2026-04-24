@@ -98,7 +98,7 @@ msgstr ""
 "Percorso puntato al backend utilizzato per gestire l'autenticazione degli "
 "utenti."
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "Argomenti per AUTHENTICATION_BACKEND."
 

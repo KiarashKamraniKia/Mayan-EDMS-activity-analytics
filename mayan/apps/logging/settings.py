@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_LOGGING_DISABLE_COLOR_FORMATTER, DEFAULT_LOGGING_ENABLE,
@@ -38,6 +38,7 @@ setting_logging_level = setting_namespace.do_setting_add(
 setting_logging_log_file_path = setting_namespace.do_setting_add(
     default=DEFAULT_LOGGING_LOG_FILE_PATH,
     global_name='LOGGING_LOG_FILE_PATH', help_text=_(
-        message='Path to the logfile that will track errors during production.'
+        message='Path to the logfile that will track errors during '
+        'production.'
     ), is_path=True
 )

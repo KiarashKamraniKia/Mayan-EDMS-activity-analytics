@@ -80,6 +80,9 @@ class ErrorLog:
         )
 
         model.add_to_class(name='error_log', value=method_instance_logs)
+        model.add_to_class(
+            name='error_log_instance', value=error_log_instance
+        )
 
         menu_list_facet.bind_links(
             links=(link_object_error_log_entry_list,), sources=(model,)

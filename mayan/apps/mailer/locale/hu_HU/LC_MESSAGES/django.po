@@ -250,10 +250,15 @@ msgstr ""
 msgid "Storage"
 msgstr "Tároló"
 
-#: model_mixins.py:178
+#: model_mixins.py:174
 #, python-format
 msgid "Test email from %s"
 msgstr "Teszt email innen: %s"
+
+#: model_mixins.py:179
+#, python-format
+msgid "Error during testing; %(exception)s"
+msgstr ""
 
 #: models.py:32
 msgid "A short text describing the mailing profile."

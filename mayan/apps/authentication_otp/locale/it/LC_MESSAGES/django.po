@@ -64,22 +64,22 @@ msgstr ""
 "autenticazione. Non condividere con nessuno questo codice, trattalo come se "
 "fosse una password."
 
-#: forms.py:107 forms.py:112
+#: forms.py:108 forms.py:113
 msgid "Secret"
 msgstr "Segreta"
 
-#: forms.py:118
+#: forms.py:119
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 "Inserisci il token per confermare che il codice è stato salvato "
 "correttamente."
 
-#: forms.py:121
+#: forms.py:122
 msgid "Token"
 msgstr "Token"
 
-#: forms.py:157
+#: forms.py:158
 msgid "Token is incorrect for the specified secret."
 msgstr "Il token non è corretto per il codice specificato."
 

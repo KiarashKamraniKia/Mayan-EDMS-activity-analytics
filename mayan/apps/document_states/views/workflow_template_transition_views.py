@@ -17,7 +17,8 @@ from ..icons import (
     icon_workflow_template_transition_list
 )
 from ..links import link_workflow_template_transition_create
-from ..models import Workflow, WorkflowTransition
+from ..models.workflow_models import Workflow
+from ..models.workflow_transition_models import WorkflowTransition
 from ..permissions import (
     permission_workflow_template_edit, permission_workflow_template_view
 )

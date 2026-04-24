@@ -98,7 +98,7 @@ msgstr "Entfernt den \"Passwort vergessen?\"-Link auf dem Anmeldeformular."
 msgid "Dotted path to the backend used to process user authentication."
 msgstr "Punktierter Pfad zum Backend für die Benutzerauthentifizierung."
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr "Argumente für das AUTHENTICATION_BACKEND."
 

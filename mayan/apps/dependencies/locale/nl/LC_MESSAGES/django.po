@@ -275,11 +275,11 @@ msgstr ""
 "Normale omgeving voor eindgebruikers. Een ontbrekende afhankelijkheid in "
 "deze omgeving leidt tot problemen en fouten bij normaal gebruik."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Productielevel"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -289,7 +289,7 @@ msgstr ""
 "de code te verifiëren. Afhankelijkheden in deze omgeving zijn niet nodig "
 "voor normaal productiegebruik."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Testlevel"
 
@@ -313,25 +313,25 @@ msgstr "Details"
 msgid "Dependencies licenses"
 msgstr "Afhankelijkheden licenties"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
 "(%(version_server)s)."
 msgstr ""
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
 "version is %(version_server)s."
 msgstr ""
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr ""
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"

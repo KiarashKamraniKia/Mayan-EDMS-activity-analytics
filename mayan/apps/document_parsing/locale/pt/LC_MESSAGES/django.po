@@ -89,6 +89,11 @@ msgstr ""
 msgid "Parse documents per type"
 msgstr "Analisar documentos por tipo"
 
+#: managers.py:57
+#, python-format
+msgid "Error attempting to parse text; %(exception)s"
+msgstr ""
+
 #: models.py:21
 msgid "Document file page"
 msgstr "Página do ficheiro."
@@ -168,7 +173,7 @@ msgstr ""
 "Estabeleça tipos de novos documentos para realizar análise automática por "
 "padrão."
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."
@@ -189,55 +194,55 @@ msgid "Content of %(count)d document versions deleted successfully."
 msgstr ""
 "Conteúdo de %(count)d das versões do documento eliminadas com sucesso."
 
-#: views.py:48
+#: views.py:49
 #, python-format
 msgid "Content of \"%(object)s\" deleted successfully."
 msgstr "Conteúdo de \" %(object)s \" eliminados com sucesso."
 
-#: views.py:51
+#: views.py:52
 #, python-format
 msgid "Content of %(count)d document version deleted successfully."
 msgstr "Conteúdo de %(count)d da versão do documento eliminada com sucesso."
 
-#: views.py:53
+#: views.py:54
 #, python-format
 msgid "Delete the content of: %(object)s."
 msgstr "Eliminar o conteúdo de: %(object)s ."
 
-#: views.py:55
+#: views.py:56
 #, python-format
 msgid "Delete the content of the %(count)d selected document version."
 msgstr "Eliminar o conteúdo de %(count)d da versão do documento selecionada."
 
-#: views.py:58
+#: views.py:60
 #, python-format
 msgid "Delete the content of the %(count)d selected document versions."
 msgstr ""
 "Eliminar os conteúdos de %(count)d das versões do documento selecionado."
 
-#: views.py:99
+#: views.py:102
 #, python-format
 msgid "Content for document file: %s"
 msgstr "Conteúdo para o ficheiro de documento: %s"
 
-#: views.py:121
+#: views.py:124
 #, python-format
 msgid "Content for document file page: %s"
 msgstr "Conteúdo para a página do ficheiro de documento: %s"
 
-#: views.py:136
+#: views.py:139
 #, python-format
 msgid "%(count)d document file added to the parsing queue"
 msgstr ""
 "%(count)d ficheiro de documento adicionado à fila de espera de análise."
 
-#: views.py:139
+#: views.py:142
 #, python-format
 msgid "%(count)d documents files added to the parsing queue"
 msgstr ""
 "%(count)d ficheiros de documentos adicionado à linha de espera de análise."
 
-#: views.py:148
+#: views.py:151
 #, python-format
 msgid "Submit %(count)d document file to the parsing queue?"
 msgid_plural "Submit %(count)d documents files to the parsing queue?"
@@ -248,21 +253,21 @@ msgstr[1] ""
 msgstr[2] ""
 "Submeter %(count)d ficheiros de documentos à fila de espera de análise? "
 
-#: views.py:161
+#: views.py:164
 #, python-format
 msgid "Submit document file \"%s\" to the parsing queue"
 msgstr "Submeter o ficheiro de documento \" %s \" à fila de espera de análise."
 
-#: views.py:191
+#: views.py:195
 #, python-format
 msgid "Edit parsing settings for document type: %s."
 msgstr "Editar as configurações de análise para o tipo de documento: %s."
 
-#: views.py:201
+#: views.py:205
 msgid "Submit all documents of a type for parsing"
 msgstr "Enviar todos os documento de um tipo para análise"
 
-#: views.py:223
+#: views.py:227
 #, python-format
 msgid "%(count)d documents added to the parsing queue."
 msgstr "%(count)d documentos adicinados à fila de análise."

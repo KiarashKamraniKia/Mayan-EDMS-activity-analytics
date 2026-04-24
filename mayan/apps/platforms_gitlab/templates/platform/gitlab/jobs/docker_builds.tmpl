@@ -6,7 +6,7 @@ job_docker_build:
 {% platforms_gitlab_ci_cache_before_script apk=True indent=4 %}
     - docker login --username ${CI_REGISTRY_PUSH_USER} --password ${CI_REGISTRY_PUSH_PASSWORD} ${CI_REGISTRY}
     - apk update
-    - apk add --cache-dir ${APK_CACHE_DIR} {{ LINUX_PACKAGES_ALPINE_BUILD }} {{ LINUX_PACKAGES_ALPINE_PYTHON }}
+    - apk add --cache-dir ${APK_CACHE_DIR} {{ LINUX_PACKAGES_ALPINE_BUILD }} {{ LINUX_PACKAGES_ALPINE_ESSENTIAL }} {{ LINUX_PACKAGES_ALPINE_PYTHON }}
     - python3 -m venv venv
     - . venv/bin/activate
     - pip install pip==${PYTHON_PIP_VERSION}

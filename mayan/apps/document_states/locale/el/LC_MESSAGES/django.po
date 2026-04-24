@@ -275,7 +275,7 @@ msgstr "Εκκίνησης ροής εργασίας"
 msgid "Preview"
 msgstr "Προεπισκόπηση"
 
-#: links.py:131 models/workflow_state_model_mixins.py:126
+#: links.py:131 models/workflow_state_model_mixins.py:122
 msgid "Actions"
 msgstr "Ενέργειες"
 
@@ -287,7 +287,7 @@ msgstr "Δημιουργία ενέργειας"
 msgid "Create escalation"
 msgstr ""
 
-#: links.py:169 models/workflow_state_model_mixins.py:136
+#: links.py:169 models/workflow_state_model_mixins.py:132
 msgid "Escalations"
 msgstr ""
 
@@ -442,6 +442,13 @@ msgstr ""
 msgid "Initial state"
 msgstr "Αρχική κατάσταση"
 
+#: models/workflow_model_mixins.py:199
+#, python-format
+msgid ""
+"Cannot create a workflow instance. The workflow template "
+"\"%(workflow_template)s\" does not have an initial state."
+msgstr ""
+
 #: models/workflow_models.py:36
 msgid "Launch workflow when document is created."
 msgstr "Εκκίνηση ροής εργασίας με την δημιουργία του εγγράφου"
@@ -570,6 +577,11 @@ msgstr ""
 msgid "Workflow state escalations"
 msgstr ""
 
+#: models/workflow_state_model_mixins.py:57
+#, python-format
+msgid "Error executing workflow action \"%(action)s\"; %(exception)s"
+msgstr ""
+
 #: models/workflow_state_models.py:41
 msgid "A short text to describe the workflow state."
 msgstr "Σύντομο κείμενο για την περιγραφή της κατάστασης ροής εργασίας."
@@ -621,15 +633,15 @@ msgstr "Διακομιστές μεσολάβησης κατάστασης ρο�
 msgid "Lookup value error: %s"
 msgstr "Σφάλμα τιμής αναζήτησης: %s"
 
-#: models/workflow_transition_field_model_mixins.py:111
+#: models/workflow_transition_field_model_mixins.py:110
 msgid "Has a default?"
 msgstr ""
 
-#: models/workflow_transition_field_model_mixins.py:119
+#: models/workflow_transition_field_model_mixins.py:118
 msgid "Has a lookup?"
 msgstr ""
 
-#: models/workflow_transition_field_model_mixins.py:130
+#: models/workflow_transition_field_model_mixins.py:129
 msgid "Value is not one of the provided options."
 msgstr "Η τιμή δεν ανήκει στις διαθέσιμες επιλογές."
 
@@ -940,7 +952,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr ""
 
 #: serializers/workflow_template_serializers.py:71
-#: serializers/workflow_template_serializers.py:80
+#: serializers/workflow_template_serializers.py:81
 msgid "Document type ID"
 msgstr ""
 
@@ -962,11 +974,11 @@ msgstr ""
 msgid "Primary key of the workflow template transition to be added."
 msgstr ""
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr ""
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr ""
 
@@ -1030,12 +1042,10 @@ msgstr ""
 
 #: settings.py:28
 msgid ""
-"The threshold at which the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND will start "
-"deleting the oldest workflow image cache files. Specify the size in bytes."
+"The threshold at which the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will "
+"start deleting the oldest workflow image cache files. Specify the size in "
+"bytes."
 msgstr ""
-"Το όριο στο οποίο το WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND θα αρχίσει να "
-"διαγράφει τα παλαιότερα προσωρινώς αποθηκευμένα αρχεία εικόνων ροής "
-"εργασίας. Καθορίστε το μέγεθος σε byte."
 
 #: settings.py:37
 msgid ""
@@ -1046,10 +1056,10 @@ msgstr ""
 "αρχείων εικόνων της προσωρινής αποθήκευσης της ροής εργασίας."
 
 #: settings.py:45
-msgid "Arguments to pass to the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "Ορίσματα για διαβίβαση στο WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."
@@ -1343,31 +1353,31 @@ msgstr ""
 msgid "Workflow transition trigger events for: %s"
 msgstr "Οι μεταβάσεις ροών εργασίας εκκινούν συμβάντα για: %s"
 
-#: views/workflow_template_transition_views.py:39
+#: views/workflow_template_transition_views.py:40
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "Δημιουργία μεταβάσεων για την ροή εργασίας: %s"
 
-#: views/workflow_template_transition_views.py:79
+#: views/workflow_template_transition_views.py:80
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "Διαγραφή μετάβασης ροής εργασίας: %s;"
 
-#: views/workflow_template_transition_views.py:106
+#: views/workflow_template_transition_views.py:107
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "Επεξεργασία μετάβασης ροής εργασίας: %s"
 
-#: views/workflow_template_transition_views.py:146
+#: views/workflow_template_transition_views.py:147
 msgid ""
 "Create a transition and use it to move a workflow from one state to another."
 msgstr ""
 
-#: views/workflow_template_transition_views.py:150
+#: views/workflow_template_transition_views.py:151
 msgid "This workflow doesn't have any transitions"
 msgstr "Αυτή η ροή εργασίας δεν έχει καμία μετάβαση"
 
-#: views/workflow_template_transition_views.py:154
+#: views/workflow_template_transition_views.py:155
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "Μεταβάσεις της ροής εργασίας: %s"

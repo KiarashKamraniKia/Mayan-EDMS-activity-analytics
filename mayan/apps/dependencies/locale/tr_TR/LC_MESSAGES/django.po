@@ -271,11 +271,11 @@ msgstr ""
 "Son kullanıcılar için normal çevre. Bu çevre altında eksik bir bağımlılık, "
 "normal kullanım sırasında sorunlara ve hatalara neden olur."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Production"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -284,7 +284,7 @@ msgstr ""
 "Kodun işlevselliğini doğrulamak için test takımının çalıştığı çevre. Normal "
 "production kullanımı için bu çevredeki bağımlılıklara gerek yoktur."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Test ediliyor"
 
@@ -308,25 +308,25 @@ msgstr "Ayrıntılar"
 msgid "Dependencies licenses"
 msgstr "Bağımlılıkların lisansları"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
 "(%(version_server)s)."
 msgstr ""
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
 "version is %(version_server)s."
 msgstr ""
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr ""
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"

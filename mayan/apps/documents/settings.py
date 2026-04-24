@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_DOCUMENTS_DISPLAY_HEIGHT, DEFAULT_DOCUMENTS_DISPLAY_WIDTH,
@@ -245,7 +245,7 @@ setting_thumbnail_list_width = setting_namespace.do_setting_add(
 setting_zoom_max_level = setting_namespace.do_setting_add(
     default=DEFAULT_DOCUMENTS_ZOOM_MAX_LEVEL,
     global_name='DOCUMENTS_ZOOM_MAX_LEVEL', help_text=_(
-        mesasge='Maximum zoom level (percent) allowed when viewing a '
+        message='Maximum zoom level (percent) allowed when viewing a '
         'document page.'
     )
 )

@@ -46,7 +46,11 @@ COMMAND_SENTRY = \
 COMMAND_TEST = ./manage.py test $(MODULE) --settings=$(SETTINGS) $(SKIPMIGRATIONS) $(DEBUG) $(ARGUMENTS) $(ARGUMENT_TAG)
 COMMAND_TEST_MIGRATIONS = ./manage.py test $(MODULE) --no-exclude --settings=$(SETTINGS) --tag=migration_test $(DEBUG) $(ARGUMENTS)
 
-.PHONY: clean clean-pyc clean-build test
+.PHONY: clean clean-pyc clean-build default help test
+
+default:
+	@echo "No default target."
+	@echo "Run: make help for a list of targets."
 
 help:
 	@echo "Usage: make <target>\n"

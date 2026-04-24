@@ -195,13 +195,14 @@ class WorkflowBusinessLogicMixin:
                     'document.'
                 )
         else:
-            text_error = '''
-            Cannot create a workflow instance. The workflow template `{}`
-            does not have an initial state.
-            '''.format(self)
+            error_log_text = _(
+                message='Cannot create a workflow instance. The workflow '
+                'template "%(workflow_template)s" does not have an initial '
+                'state.'
+            ) % {'workflow_template': self}
 
             document.error_log.create(
-                domain_name=ERROR_LOG_DOMAIN_NAME, text=text_error
+                domain_name=ERROR_LOG_DOMAIN_NAME, text=error_log_text
             )
 
 

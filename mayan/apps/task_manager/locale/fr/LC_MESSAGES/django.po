@@ -28,11 +28,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Gestionnaire de tâche"
 
-#: apps.py:123 apps.py:200 classes.py:64
+#: apps.py:123 apps.py:201 classes.py:64
 msgid "Label"
 msgstr "Libellé"
 
-#: apps.py:127 apps.py:204 classes.py:71
+#: apps.py:127 apps.py:205 classes.py:71
 msgid "Name"
 msgstr "Nom"
 
@@ -47,61 +47,61 @@ msgid ""
 " critical tasks."
 msgstr ""
 
-#: apps.py:140
+#: apps.py:141
 msgid "Is transient?"
 msgstr "Est-il transitoire?"
 
-#: apps.py:171
+#: apps.py:172
 msgid "Type"
 msgstr "Type"
 
-#: apps.py:176
+#: apps.py:177
 msgid "Start time"
 msgstr "Heure de début"
 
-#: apps.py:180
+#: apps.py:181
 msgid "Host"
 msgstr "Hôte"
 
-#: apps.py:184
+#: apps.py:185
 msgid "Arguments"
 msgstr "Arguments"
 
-#: apps.py:188
+#: apps.py:189
 msgid "Keyword arguments"
 msgstr "Arguments relatifs aux mots-clés"
 
-#: apps.py:193
+#: apps.py:194
 msgid "Worker process ID"
 msgstr "ID du processus de travail"
 
-#: apps.py:213
+#: apps.py:214
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
 msgstr ""
 
-#: apps.py:215
+#: apps.py:216
 msgid "Maximum tasks per child"
 msgstr ""
 
-#: apps.py:220
+#: apps.py:221
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
 msgstr ""
 
-#: apps.py:222
+#: apps.py:223
 msgid "Concurrency"
 msgstr ""
 
-#: apps.py:227
+#: apps.py:228
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
 msgstr ""
 
-#: apps.py:230
+#: apps.py:231
 msgid "Nice level"
 msgstr ""
 
@@ -202,7 +202,7 @@ msgstr ""
 " la forme (transport://) est requise, le reste est facultatif et "
 "correspondent par défaut aux valeurs prédéfinies des transports déterminés."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -211,7 +211,7 @@ msgstr ""
 "connexion de l'intermédiaire et les paramètres SSL. Les valeurs valides pour"
 " cette option varient selon le transport."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

@@ -51,7 +51,7 @@ msgstr ""
 msgid "ACL edited"
 msgstr "ACL te modifikuara"
 
-#: forms.py:12 models.py:58 serializers.py:79 views.py:73
+#: forms.py:12 models.py:59 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "Roli"
 
@@ -97,15 +97,15 @@ msgstr ""
 msgid "Role to which the access is granted for the specified object."
 msgstr ""
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "Akses i akorduar"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "Aksese te akorduara"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "Te drejtat e perdoruesit \"%(role)s\" per \"%(object)s\""

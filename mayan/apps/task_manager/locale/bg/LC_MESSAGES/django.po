@@ -25,11 +25,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Управление на задачите"
 
-#: apps.py:123 apps.py:200 classes.py:64
+#: apps.py:123 apps.py:201 classes.py:64
 msgid "Label"
 msgstr "Етикет"
 
-#: apps.py:127 apps.py:204 classes.py:71
+#: apps.py:127 apps.py:205 classes.py:71
 msgid "Name"
 msgstr "Име"
 
@@ -47,35 +47,35 @@ msgstr ""
 "ако брокерът се рестартира. Временните опашки използват по-малко ресурси и "
 "управлявани некритични задачи."
 
-#: apps.py:140
+#: apps.py:141
 msgid "Is transient?"
 msgstr "Преходен ли е?"
 
-#: apps.py:171
+#: apps.py:172
 msgid "Type"
 msgstr "Тип"
 
-#: apps.py:176
+#: apps.py:177
 msgid "Start time"
 msgstr "Начален час"
 
-#: apps.py:180
+#: apps.py:181
 msgid "Host"
 msgstr "Хост"
 
-#: apps.py:184
+#: apps.py:185
 msgid "Arguments"
 msgstr "Аргументи"
 
-#: apps.py:188
+#: apps.py:189
 msgid "Keyword arguments"
 msgstr "Аргументи на ключови думи"
 
-#: apps.py:193
+#: apps.py:194
 msgid "Worker process ID"
 msgstr "Идентификационен номер на работния процес"
 
-#: apps.py:213
+#: apps.py:214
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
@@ -83,11 +83,11 @@ msgstr ""
 "Максимален брой задачи, които даден работник може да изпълни, преди да бъде "
 "заменен от нов процес."
 
-#: apps.py:215
+#: apps.py:216
 msgid "Maximum tasks per child"
 msgstr "Максимален брой задачи на вторичен процес"
 
-#: apps.py:220
+#: apps.py:221
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
@@ -95,11 +95,11 @@ msgstr ""
 "Брой работни процеси/нишки за стартиране. По подразбиране е броят процесори,"
 " налични в компютъра."
 
-#: apps.py:222
+#: apps.py:223
 msgid "Concurrency"
 msgstr "Паралелност"
 
-#: apps.py:227
+#: apps.py:228
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
@@ -107,7 +107,7 @@ msgstr ""
 "Стойността nice определя приоритета на процеса. По-високата стойност "
 "намалява приоритета. Стойността по подразбиране е 0."
 
-#: apps.py:230
+#: apps.py:231
 msgid "Nice level"
 msgstr "Ниво на \"хубост\""
 
@@ -210,7 +210,7 @@ msgstr ""
 "частта от схемата (transport://), останалото е по избор и по подразбиране "
 "към конкретните стойности на транспортиране по подразбиране."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -219,7 +219,7 @@ msgstr ""
 "връзка с брокера и настройките на SSL. Валидните стойности за тази опция "
 "варират в зависимост от транспорта."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

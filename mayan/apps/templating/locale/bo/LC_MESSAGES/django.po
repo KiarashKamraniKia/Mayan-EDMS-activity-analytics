@@ -28,9 +28,20 @@ msgstr ""
 msgid "Current date and time"
 msgstr ""
 
-#: classes.py:83
+#: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
+msgstr ""
+
+#: decorators.py:20
+msgid "None provided."
+msgstr ""
+
+#: decorators.py:22
+#, python-format
+msgid ""
+"Filter or tag \"%(name)s\" is considered dangerous and not allowed. Reason: "
+"%(reason)s Change setting `%(setting)s` to allow it."
 msgstr ""
 
 #: decorators.py:20
@@ -106,6 +117,10 @@ msgid ""
 msgstr ""
 
 #: templatetags/templating_tags.py:100
+msgid "Tag can bypass access controls and create permanent changes."
+msgstr ""
+
+#: templatetags/templating_tags.py:99
 msgid "Tag can bypass access controls and create permanent changes."
 msgstr ""
 

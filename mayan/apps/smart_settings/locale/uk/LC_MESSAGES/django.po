@@ -37,47 +37,47 @@ msgstr "Ім'я"
 msgid "Value"
 msgstr "Значення"
 
-#: classes.py:162
+#: classes.py:172
 msgid "Has errors"
 msgstr ""
 
-#: classes.py:164
+#: classes.py:174
 msgid ""
 "Indicates that this setting was not loaded correctly. Settings with errors "
 "revert to their default value."
 msgstr ""
 
-#: classes.py:171
+#: classes.py:181
 msgid "Choices"
 msgstr "Вибори"
 
-#: classes.py:173
+#: classes.py:183
 msgid "Possible values allowed for this setting."
 msgstr "Можливі значення, дозволені для цього параметра."
 
-#: classes.py:194
+#: classes.py:204
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr ""
 "Не вдається скасувати налаштування. Значення налаштування не було оновлено."
 
-#: classes.py:231
+#: classes.py:241
 msgid "Default"
 msgstr "За замовчуванням"
 
-#: classes.py:244
+#: classes.py:254
 msgid "Modified"
 msgstr "Змінено"
 
-#: classes.py:246
+#: classes.py:256
 msgid "The value of this setting being modified since the last restart."
 msgstr ""
 "Значення цього параметра змінюється з моменту останнього перезавантаження."
 
-#: classes.py:252
+#: classes.py:263
 msgid "Overridden"
 msgstr "Перевизначено"
 
-#: classes.py:254
+#: classes.py:265
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr "Значення налаштування перезаписується змінною середовища."
@@ -144,6 +144,10 @@ msgstr "Оновлене налаштування"
 msgid "Updated settings"
 msgstr "Оновлені налаштування"
 
+#: namespaces.py:94
+msgid "Settings namespace"
+msgstr "Налаштування простору імен"
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr "Редагувати налаштування"
@@ -152,15 +156,11 @@ msgstr "Редагувати налаштування"
 msgid "View settings"
 msgstr "Переглянути налаштування"
 
-#: setting_namespaces.py:78
-msgid "Settings namespace"
-msgstr "Налаштування простору імен"
-
-#: settings.py:27
+#: settings.py:23
 msgid "Django"
 msgstr "Django"
 
-#: settings.py:32
+#: settings.py:28
 msgid ""
 "A list of strings representing the host/domain names that this site can "
 "serve. This is a security measure to prevent HTTP Host header attacks, which"
@@ -187,7 +187,7 @@ msgstr ""
 "заголовка Host (можливо, в середній програмній забезпечення; якщо так, це "
 "середнє програмне забезпечення повинно бути першим у списку MIDDLEWARE)."
 
-#: settings.py:49
+#: settings.py:45
 msgid ""
 "When set to True, if the request URL does not match any of the patterns in "
 "the URLconf and it doesn't end in a slash, an HTTP redirect is issued to the"
@@ -203,7 +203,7 @@ msgstr ""
 "APPEND_SLASH використовується лише в разі встановлення CommonMiddleware "
 "(див. Middleware). Див. також PREPEND_WWW."
 
-#: settings.py:61
+#: settings.py:57
 msgid ""
 "The list of validators that are used to check the strength of user's "
 "passwords."
@@ -211,7 +211,7 @@ msgstr ""
 "Список перевіряючих програм, які використовуються для перевірки надійності "
 "паролів користувачів."
 
-#: settings.py:68
+#: settings.py:64
 msgid ""
 "A list of authentication backend classes (as strings) to use when attempting"
 " to authenticate a user."
@@ -219,7 +219,14 @@ msgstr ""
 "Список класів аутентифікації (у вигляді рядків), які слід використовувати "
 "при спробі аутентифікації користувача."
 
-#: settings.py:75
+#: settings.py:71
+msgid ""
+"A dictionary containing the settings for all caches to be used with Django. "
+"It is a nested dictionary whose contents maps cache aliases to a dictionary "
+"containing the options for an individual cache."
+msgstr ""
+
+#: settings.py:80
 msgid ""
 "A dictionary containing the settings for all caches to be used with Django. "
 "It is a nested dictionary whose contents maps cache aliases to a dictionary "
@@ -508,13 +515,10 @@ msgstr ""
 
 #: settings.py:290
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"За замовчуванням: 'sessionid'. Назва cookie, яку використовувати для сесій. "
-"Це може бути будь-що, що ви хочете (лише відрізняється від інших назв cookie"
-" у вашому додатку)."
 
 #: settings.py:298
 msgid ""
@@ -616,78 +620,23 @@ msgstr ""
 "Налаштування оновлено. Збережіть і перезапустіть вашу установку, щоб зміни "
 "набрали чинності."
 
-#: tests/test_classes.py:192
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "Англійська"
 
-#: views.py:41
+#: views/cluster_views.py:32
 msgid "This will overwrite the content of the configuration file."
 msgstr "Це перезапише вміст файлу конфігурації."
 
-#: views.py:44
+#: views/cluster_views.py:35
 msgid "Save settings to the configuration file?"
 msgstr "Зберегти налаштування у файл конфігурації?"
 
-#: views.py:52
+#: views/cluster_views.py:43
 msgid "Settings saved to configuration file successfully."
 msgstr "Налаштування успішно збережено у конфігураційному файлі."
 
-#: views.py:60
-msgid "Setting namespaces"
-msgstr "Встановлення просторів імен"
-
-#: views.py:89
-msgid "Setting updated successfully."
-msgstr "Налаштування успішно оновлено."
-
-#: views.py:98
-msgid ""
-"This setting is overridden by an environment variable, changing its value "
-"will have no effect."
-msgstr ""
-"Це налаштування перевизначається змінною середовища, зміна її значення не "
-"матиме жодного ефекту."
-
-#: views.py:108
-#, python-format
-msgid "Edit setting: %s"
-msgstr "Редагувати налаштування: %s"
-
-#: views.py:129
-#, python-format
-msgid "%(count)d settings value reverted."
-msgstr "%(count)d значень налаштувань скасовано."
-
-#: views.py:132
-#, python-format
-msgid "Value of setting \"%(object)s\" reverted."
-msgstr "Значення налаштування \"%(object)s\" відновлено."
-
-#: views.py:134
-#, python-format
-msgid "%(count)d setting value reverted."
-msgstr "%(count)d значення налаштування скасовано."
-
-#: views.py:136
-#, python-format
-msgid "Revert the value of the %(count)d selected settings."
-msgstr ""
-
-#: views.py:138
-#, python-format
-msgid "Revert the value of setting: %(object)s"
-msgstr ""
-
-#: views.py:140
-#, python-format
-msgid "Revert the value of %(count)d selected setting."
-msgstr ""
-
-#: views.py:150
-msgid "Unsaved changes will be lost."
-msgstr "Незбережені зміни будуть втрачені."
-
-#: views.py:187
+#: views/namespace_views.py:24
 msgid ""
 "Settings inherited from an environment variable take precedence and cannot "
 "be changed in this view. "
@@ -695,12 +644,67 @@ msgstr ""
 "Налаштування, успадковані від змінної середовища, мають пріоритет і не "
 "можуть бути змінені в цьому перегляді."
 
-#: views.py:190
+#: views/namespace_views.py:27
 #, python-format
 msgid "Settings in namespace: %s"
 msgstr "Налаштування в просторі імен: %s"
 
-#: views.py:200
+#: views/namespace_views.py:37
 #, python-format
 msgid "Namespace: %s, not found"
 msgstr "Простір імен: %s, не знайдено"
+
+#: views/namespace_views.py:50
+msgid "Setting namespaces"
+msgstr "Встановлення просторів імен"
+
+#: views/setting_views.py:37
+msgid "Setting updated successfully."
+msgstr "Налаштування успішно оновлено."
+
+#: views/setting_views.py:46
+msgid ""
+"This setting is overridden by an environment variable, changing its value "
+"will have no effect."
+msgstr ""
+"Це налаштування перевизначається змінною середовища, зміна її значення не "
+"матиме жодного ефекту."
+
+#: views/setting_views.py:56
+#, python-format
+msgid "Edit setting: %s"
+msgstr "Редагувати налаштування: %s"
+
+#: views/setting_views.py:77
+#, python-format
+msgid "%(count)d settings value reverted."
+msgstr "%(count)d значень налаштувань скасовано."
+
+#: views/setting_views.py:80
+#, python-format
+msgid "Value of setting \"%(object)s\" reverted."
+msgstr "Значення налаштування \"%(object)s\" відновлено."
+
+#: views/setting_views.py:82
+#, python-format
+msgid "%(count)d setting value reverted."
+msgstr "%(count)d значення налаштування скасовано."
+
+#: views/setting_views.py:84
+#, python-format
+msgid "Revert the value of the %(count)d selected settings."
+msgstr ""
+
+#: views/setting_views.py:86
+#, python-format
+msgid "Revert the value of setting: %(object)s"
+msgstr ""
+
+#: views/setting_views.py:88
+#, python-format
+msgid "Revert the value of %(count)d selected setting."
+msgstr ""
+
+#: views/setting_views.py:98
+msgid "Unsaved changes will be lost."
+msgstr "Незбережені зміни будуть втрачені."

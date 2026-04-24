@@ -30,7 +30,7 @@ msgstr "القوالب"
 msgid "Current date and time"
 msgstr "التاريخ والوقت الحاليان"
 
-#: classes.py:83
+#: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
 msgstr "النموذج %s غير متاح لبيئة القوالب الآمنة."

@@ -32,7 +32,7 @@ msgstr "Templating"
 msgid "Current date and time"
 msgstr ""
 
-#: classes.py:83
+#: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
 msgstr ""

@@ -26,11 +26,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Görev Yöneticisi"
 
-#: apps.py:123 apps.py:200 classes.py:64
+#: apps.py:123 apps.py:201 classes.py:64
 msgid "Label"
 msgstr "Etiket"
 
-#: apps.py:127 apps.py:204 classes.py:71
+#: apps.py:127 apps.py:205 classes.py:71
 msgid "Name"
 msgstr "İsim"
 
@@ -45,61 +45,61 @@ msgid ""
 " critical tasks."
 msgstr ""
 
-#: apps.py:140
+#: apps.py:141
 msgid "Is transient?"
 msgstr "Geçici mi?"
 
-#: apps.py:171
+#: apps.py:172
 msgid "Type"
 msgstr "Tür"
 
-#: apps.py:176
+#: apps.py:177
 msgid "Start time"
 msgstr "Başlangıç zamanı"
 
-#: apps.py:180
+#: apps.py:181
 msgid "Host"
 msgstr "Sunucu"
 
-#: apps.py:184
+#: apps.py:185
 msgid "Arguments"
 msgstr "Argümanlar"
 
-#: apps.py:188
+#: apps.py:189
 msgid "Keyword arguments"
 msgstr "Anahtar kelime değişkenleri"
 
-#: apps.py:193
+#: apps.py:194
 msgid "Worker process ID"
 msgstr "Worker proses ID"
 
-#: apps.py:213
+#: apps.py:214
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
 msgstr ""
 
-#: apps.py:215
+#: apps.py:216
 msgid "Maximum tasks per child"
 msgstr ""
 
-#: apps.py:220
+#: apps.py:221
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
 msgstr ""
 
-#: apps.py:222
+#: apps.py:223
 msgid "Concurrency"
 msgstr ""
 
-#: apps.py:227
+#: apps.py:228
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
 msgstr ""
 
-#: apps.py:230
+#: apps.py:231
 msgid "Nice level"
 msgstr ""
 
@@ -197,7 +197,7 @@ msgstr ""
 "şema kısmı (transport://) gereklidir, gerisi isteğe bağlıdır ve varsayılan "
 "olarak belirli aktarımların varsayılan değerlerine göre ayarlanır."
 
-#: settings.py:32
+#: settings.py:33
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -206,7 +206,7 @@ msgstr ""
 "kullanımını değiştirir. Bu seçenek için geçerli değerler taşımaya göre "
 "değişir."
 
-#: settings.py:40
+#: settings.py:41
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

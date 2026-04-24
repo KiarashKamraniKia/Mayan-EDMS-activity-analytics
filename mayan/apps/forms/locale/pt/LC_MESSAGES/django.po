@@ -24,7 +24,7 @@ msgstr ""
 
 #: apps.py:17 settings.py:8
 msgid "Forms"
-msgstr ""
+msgstr "Formulários"
 
 #: forms.py:42
 msgid "Search"
@@ -47,3 +47,9 @@ msgid ""
 "Display a submit button and wait for the submit button to be pressed before "
 "processing up the upload."
 msgstr ""
+"Exibir um botão \n"
+"de envio e aguardar \n"
+"que o botão seja \n"
+"pressionado antes\n"
+"de processar o \n"
+"upload."

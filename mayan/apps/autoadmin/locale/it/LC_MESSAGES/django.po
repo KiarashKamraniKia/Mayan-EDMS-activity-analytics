@@ -57,7 +57,7 @@ msgstr "Proprietà Autoadmin"
 msgid "Sets the email of the automatically created super user account."
 msgstr "Imposta l'email dell'account superutente creato in automatico."
 
-#: settings.py:18
+#: settings.py:19
 msgid ""
 "The password of the automatically created super user account. If it is equal"
 " to None, the password is randomly generated."
@@ -65,7 +65,7 @@ msgstr ""
 "La password dell'accoutn superutente creato in automatico. Se è uguale a "
 "None, la password è generata in maniera casuale."
 
-#: settings.py:24
+#: settings.py:26
 msgid "The username of the automatically created super user account."
 msgstr "Il nome utente dell'account superutente creato in automatico."
 

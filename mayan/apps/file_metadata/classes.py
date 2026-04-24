@@ -371,12 +371,12 @@ class FileMetadataDriver(
             if settings.DEBUG and 0:
                 raise
             else:
-                error_log_text = '''
-                Cannot process driver `{driver}` for document file `{document_file}`; {exception}
-                '''.format(
-                    document_file=document_file, driver=self.label,
-                    exception=exception
-                )
+                error_log_text = _(
+                    message='Cannot process driver "%(driver)s"; '
+                    '%(exception)s'
+                ) % {
+                    'driver': self.label, 'exception': exception
+                }
                 document_file.error_log.create(
                     domain_name=ERROR_LOG_DOMAIN_NAME, text=error_log_text
                 )

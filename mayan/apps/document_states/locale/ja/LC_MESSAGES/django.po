@@ -266,7 +266,7 @@ msgstr "ワークフローを開始"
 msgid "Preview"
 msgstr "プレビュー"
 
-#: links.py:131 models/workflow_state_model_mixins.py:126
+#: links.py:131 models/workflow_state_model_mixins.py:122
 msgid "Actions"
 msgstr "アクション"
 
@@ -278,7 +278,7 @@ msgstr "アクションを作成"
 msgid "Create escalation"
 msgstr "エスカレーションを作成"
 
-#: links.py:169 models/workflow_state_model_mixins.py:136
+#: links.py:169 models/workflow_state_model_mixins.py:132
 msgid "Escalations"
 msgstr "エスカレーション"
 
@@ -433,6 +433,13 @@ msgstr "最終状態"
 msgid "Initial state"
 msgstr "初期状態"
 
+#: models/workflow_model_mixins.py:199
+#, python-format
+msgid ""
+"Cannot create a workflow instance. The workflow template "
+"\"%(workflow_template)s\" does not have an initial state."
+msgstr ""
+
 #: models/workflow_models.py:36
 msgid "Launch workflow when document is created."
 msgstr "文書作成時にワークフローを実行"
@@ -556,6 +563,11 @@ msgstr "ワークフロー状態エスカレーション"
 msgid "Workflow state escalations"
 msgstr "ワークフロー状態エスカレーション一覧"
 
+#: models/workflow_state_model_mixins.py:57
+#, python-format
+msgid "Error executing workflow action \"%(action)s\"; %(exception)s"
+msgstr ""
+
 #: models/workflow_state_models.py:41
 msgid "A short text to describe the workflow state."
 msgstr "ワークフロー状態の簡単な説明"
@@ -603,15 +615,15 @@ msgstr "ワークフロー状態実行時プロキシ一覧"
 msgid "Lookup value error: %s"
 msgstr "参照値エラー: %s"
 
-#: models/workflow_transition_field_model_mixins.py:111
+#: models/workflow_transition_field_model_mixins.py:110
 msgid "Has a default?"
 msgstr "既定値あり？"
 
-#: models/workflow_transition_field_model_mixins.py:119
+#: models/workflow_transition_field_model_mixins.py:118
 msgid "Has a lookup?"
 msgstr " 参照値あり？"
 
-#: models/workflow_transition_field_model_mixins.py:130
+#: models/workflow_transition_field_model_mixins.py:129
 msgid "Value is not one of the provided options."
 msgstr "入力値は提供された選択肢のいずれでもありません"
 
@@ -906,7 +918,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr "ワークフローに追加する文書タイプの主キー"
 
 #: serializers/workflow_template_serializers.py:71
-#: serializers/workflow_template_serializers.py:80
+#: serializers/workflow_template_serializers.py:81
 msgid "Document type ID"
 msgstr "文書タイプ ID"
 
@@ -928,11 +940,11 @@ msgstr "ワークフローテンプレート状態 URL"
 msgid "Primary key of the workflow template transition to be added."
 msgstr "追加するワークフローテンプレート遷移の主キー"
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "ワークフローテンプレート遷移 ID"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "ワークフローテンプレート遷移 URL"
 
@@ -994,10 +1006,10 @@ msgstr "ワークフロープレビュー生成に使用する graphviz dot プ�
 
 #: settings.py:28
 msgid ""
-"The threshold at which the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND will start "
-"deleting the oldest workflow image cache files. Specify the size in bytes."
+"The threshold at which the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will "
+"start deleting the oldest workflow image cache files. Specify the size in "
+"bytes."
 msgstr ""
-"WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND が最古のワークフロー画像キャッシュを削除し始める閾値（バイト単位で指定）"
 
 #: settings.py:37
 msgid ""
@@ -1006,10 +1018,10 @@ msgid ""
 msgstr "キャッシュされたワークフロー画像を保存する際に使用する Storage サブクラスのパス"
 
 #: settings.py:45
-msgid "Arguments to pass to the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND に渡す引数"
+msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."
@@ -1286,31 +1298,31 @@ msgstr "トリガーは、この遷移を自動的に実行させるイベント
 msgid "Workflow transition trigger events for: %s"
 msgstr "ワークフロー遷移トリガーイベント: %s"
 
-#: views/workflow_template_transition_views.py:39
+#: views/workflow_template_transition_views.py:40
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "ワークフロー用の遷移を作成: %s"
 
-#: views/workflow_template_transition_views.py:79
+#: views/workflow_template_transition_views.py:80
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "ワークフロー遷移を削除: %s?"
 
-#: views/workflow_template_transition_views.py:106
+#: views/workflow_template_transition_views.py:107
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "ワークフロー遷移を編集: %s"
 
-#: views/workflow_template_transition_views.py:146
+#: views/workflow_template_transition_views.py:147
 msgid ""
 "Create a transition and use it to move a workflow from one state to another."
 msgstr "遷移を作成し、ワークフローをある状態から別の状態へ移動させます。"
 
-#: views/workflow_template_transition_views.py:150
+#: views/workflow_template_transition_views.py:151
 msgid "This workflow doesn't have any transitions"
 msgstr "このワークフローには遷移がありません。"
 
-#: views/workflow_template_transition_views.py:154
+#: views/workflow_template_transition_views.py:155
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "ワークフローの遷移: %s"

@@ -32,7 +32,7 @@ msgstr "Vorlagen"
 msgid "Current date and time"
 msgstr "Aktuelles Datum und Zeit"
 
-#: classes.py:83
+#: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
 msgstr "Modell `%s` ist nicht für die Vorlagensandbox verfügbar."

@@ -182,5 +182,10 @@ msgstr "طريقة عرض عناصر سجلات الأخطاء. قائمة فا�
 
 #: views.py:103
 #, python-format
+msgid "Maximum number of entries kept for this object type: %s"
+msgstr ""
+
+#: views.py:107
+#, python-format
 msgid "Error log entries for: %s"
 msgstr "أخطاء النظام : %s"

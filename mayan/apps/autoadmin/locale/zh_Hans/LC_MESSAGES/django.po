@@ -30,7 +30,7 @@ msgstr "自动管理员"
 msgid ""
 "Welcome Admin! You have been given super user privileges. Use them with "
 "caution."
-msgstr ""
+msgstr "歡迎管理員！您已被授予超級使用者權限，請謹慎使用。"
 
 #: models.py:13
 msgid "Account"
@@ -52,13 +52,13 @@ msgstr "自动管理属性"
 msgid "Sets the email of the automatically created super user account."
 msgstr "设置自动创建的超级用户帐户的电子邮件。"
 
-#: settings.py:18
+#: settings.py:19
 msgid ""
 "The password of the automatically created super user account. If it is equal"
 " to None, the password is randomly generated."
 msgstr "自动创建的超级用户帐户的密码。如果是“空”，则随机生成密码。"
 
-#: settings.py:24
+#: settings.py:26
 msgid "The username of the automatically created super user account."
 msgstr "自动创建的超级用户帐户的用户名。"
 

@@ -9,6 +9,7 @@
 # Roberto Rosario, 2025
 # 425fe09b3064b9f906f637fff94056ae_a00ea56 <0fa3588fa89906bfcb3a354600956e0e_308047>, 2025
 # Roberto Vasconcelos Novaes <rvnovaes@gmail.com>, 2025
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
@@ -28,11 +29,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr ""
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr "Tamanho"
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "Miniatura"
 
@@ -157,8 +158,8 @@ msgid "No source files available"
 msgstr ""
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
-msgstr ""
+msgid "Width value to be passed to the converter backend."
+msgstr "Valor da largura a ser passado para o backend conversor."
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

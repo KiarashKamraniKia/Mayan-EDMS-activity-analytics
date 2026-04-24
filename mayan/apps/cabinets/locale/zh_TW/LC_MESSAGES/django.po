@@ -7,6 +7,7 @@
 # Roberto Rosario, 2025
 # yan songwei <yansw@vip.163.com>, 2025
 # Leon Chu, 2025
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
@@ -258,7 +259,7 @@ msgstr "此文件櫃級別是空的"
 #: views/cabinet_views.py:124
 #, python-format
 msgid "Details of cabinet: %s"
-msgstr "文件櫃詳情：%s"
+msgstr "文件櫃詳細資訊：%s"
 
 #: views/cabinet_views.py:143
 #, python-format

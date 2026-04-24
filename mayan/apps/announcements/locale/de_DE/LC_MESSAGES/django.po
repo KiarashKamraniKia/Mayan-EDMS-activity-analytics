@@ -25,7 +25,7 @@ msgstr ""
 "Language: de_DE\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: apps.py:39 events.py:6 links.py:38 links.py:47 models.py:48
+#: apps.py:39 events.py:6 links.py:38 links.py:47 models.py:50
 #: permissions.py:6 templates/announcements/announcements.html:8 views.py:121
 msgid "Announcements"
 msgstr "Ankündigungen"
@@ -78,19 +78,19 @@ msgstr "Aktiviert"
 msgid "Date and time after which this announcement will be displayed."
 msgstr "Datum und Uhrzeit, nach denen diese Ankündigung angezeigt wird."
 
-#: models.py:35
+#: models.py:36
 msgid "Start date time"
 msgstr "Startdatum und Uhrzeit"
 
-#: models.py:39
+#: models.py:40
 msgid "Date and time until when this announcement is to be displayed."
 msgstr "Datum und Uhrzeit bis der diese Ankündigung angezeigt wird."
 
-#: models.py:40
+#: models.py:42
 msgid "End date time"
 msgstr "Enddatum und Uhrzeit"
 
-#: models.py:47
+#: models.py:49
 msgid "Announcement"
 msgstr "Ankündigung"
 

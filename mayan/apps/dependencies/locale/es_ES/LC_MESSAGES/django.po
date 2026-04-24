@@ -274,11 +274,11 @@ msgstr ""
 "Ambiente normal para usuarios finales. Una dependencia que falta en este "
 "entorno dará lugar a problemas y errores durante el uso normal."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Producción"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -288,7 +288,7 @@ msgstr ""
 "funcionalidad del código. Las dependencias en este entorno no son necesarias"
 " para el uso normal de producción."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Pruebas"
 
@@ -312,7 +312,7 @@ msgstr "Detalles"
 msgid "Dependencies licenses"
 msgstr "Licencias de dependencias"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
@@ -321,7 +321,7 @@ msgstr ""
 "Su versión ( %(version_local)s ) es más reciente que la versión publicada ( "
 "%(version_server)s )."
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
@@ -330,11 +330,11 @@ msgstr ""
 "La versión que está utilizando ( %(version_local)s ) está desactualizada. La"
 " última versión es %(version_server)s ."
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr "No es posible determinar la última versión disponible."
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"

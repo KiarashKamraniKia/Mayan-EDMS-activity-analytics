@@ -69,6 +69,11 @@ msgstr ""
 msgid "Badly formatted arguments YAML; %s"
 msgstr ""
 
+#: classes.py:358
+#, python-format
+msgid "Cannot process driver \"%(driver)s\"; %(exception)s"
+msgstr ""
+
 #: events.py:10
 msgid "Document file submitted for file metadata processing"
 msgstr ""
@@ -293,17 +298,17 @@ msgid ""
 "File metadata attributes for: %(document_file)s with driver: %(driver)s"
 msgstr ""
 
-#: views/document_file_views.py:111
+#: views/document_file_views.py:112
 #, python-format
 msgid "%(count)d documents files submitted to the file metadata queue."
 msgstr ""
 
-#: views/document_file_views.py:114
+#: views/document_file_views.py:116
 #, python-format
 msgid "%(count)d document file submitted to the file metadata queue."
 msgstr ""
 
-#: views/document_file_views.py:123
+#: views/document_file_views.py:126
 msgid "Submit the selected document file to the file metadata queue?"
 msgid_plural "Submit the selected documents files to the file metadata queue?"
 msgstr[0] ""

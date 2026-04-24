@@ -47,11 +47,11 @@ msgstr "General"
 
 #: forms.py:33
 msgid "Foreign document"
-msgstr ""
+msgstr "Documento extranjero"
 
 #: forms.py:38
 msgid "Local document"
-msgstr ""
+msgstr "Documento local"
 
 #: forms.py:64
 msgid "Foreign document field"

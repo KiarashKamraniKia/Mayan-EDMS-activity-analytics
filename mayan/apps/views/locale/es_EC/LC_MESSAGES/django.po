@@ -4,7 +4,7 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
-# Roberto Rosario, 2025
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
@@ -135,7 +135,7 @@ msgstr "Eliminar"
 
 #: links.py:27
 msgid "Confirm views"
-msgstr ""
+msgstr "Vistas de confirmación"
 
 #: links.py:33
 msgid "View modes"
@@ -188,7 +188,7 @@ msgstr "Usuario"
 
 #: models.py:26
 msgid "Remember the last confirmation of the view."
-msgstr ""
+msgstr "Recuerde la última confirmación de la vista."
 
 #: models.py:27
 msgid "Remember"
@@ -308,6 +308,7 @@ msgstr "%(object)s eliminado con éxito."
 #, python-format
 msgid "Error deleting confirm view \"%(instance)s\"; %(exception)s"
 msgstr ""
+"Error al eliminar la vista de confirmación \"%(instance)s\"; %(exception)s"
 
 #: views.py:26
 #, python-format

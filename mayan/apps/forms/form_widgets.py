@@ -3,7 +3,7 @@ from collections import OrderedDict
 from django.forms.widgets import *  # NOQA
 from django.forms.widgets import __all__ as django_forms_widgets_all
 from django.forms.widgets import Media, SelectMultiple, TextInput, Widget
-from django.utils.safestring import mark_safe
+from django.utils.html import format_html
 
 __all__ = django_forms_widgets_all + (
     'ColorWidget', 'DisableableSelectWidget', 'DropzoneWidget',
@@ -152,7 +152,12 @@ class PlainWidget(Widget):
     widget and reduces the output to only it's value.
     """
     def render(self, name, value, attrs=None, renderer=None):
-        return mark_safe(s='%s' % value)
+        if value is None:
+            value_final = ''
+        else:
+            value_final = value
+
+        return format_html('{}', value_final)
 
 
 class TextAreaDiv(Widget):

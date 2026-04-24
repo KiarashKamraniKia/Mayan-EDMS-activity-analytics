@@ -250,9 +250,14 @@ msgstr "Ścieżka pliku"
 msgid "Storage"
 msgstr "Magazyn"
 
-#: model_mixins.py:178
+#: model_mixins.py:174
 #, python-format
 msgid "Test email from %s"
+msgstr ""
+
+#: model_mixins.py:179
+#, python-format
+msgid "Error during testing; %(exception)s"
 msgstr ""
 
 #: models.py:32

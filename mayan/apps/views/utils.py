@@ -4,6 +4,16 @@ from django.urls.base import get_script_prefix
 from .literals import URL_QUERY_POSITIVE_VALUES
 
 
+def base64_padding_add(value):
+    remainder = len(value) % 4
+
+    if remainder == 0:
+        return value
+
+    padding_needed = 4 - remainder
+    return '{}{}'.format(value, '=' * padding_needed)
+
+
 def convert_to_id_list(items):
     return ','.join(
         map(str, items)

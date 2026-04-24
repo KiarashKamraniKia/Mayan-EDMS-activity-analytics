@@ -86,18 +86,14 @@ class UserMailerBusinessLogicMixin:
             email_message.send()
 
         except Exception as exception:
+            error_log_text = '{}; {}'.format(
+                exception.__class__.__name__, exception
+            )
+
             self.error_log.create(
-                domain_name=ERROR_LOG_DOMAIN_NAME,
-                text='{}; {}'.format(
-                    exception.__class__.__name__, exception
-                )
+                domain_name=ERROR_LOG_DOMAIN_NAME, text=error_log_text
             )
         else:
-            queryset_error_logs = self.error_log.filter(
-                domain_name=ERROR_LOG_DOMAIN_NAME
-            )
-            queryset_error_logs.delete()
-
             event_email_sent.commit(
                 action_object=_event_action_object, actor=user,
                 target=self
@@ -179,16 +175,11 @@ class UserMailerBusinessLogicMixin:
                 to=to, user=user
             )
         except Exception as exception:
+            error_log_text = _(
+                message='Error during testing; %(exception)s'
+            ) % {'exception': exception}
             self.error_log.create(
-                domain_name=ERROR_LOG_DOMAIN_NAME,
-                text='{}; {}'.format(
-                    exception.__class__.__name__, exception
-                )
+                domain_name=ERROR_LOG_DOMAIN_NAME, text=error_log_text
             )
             if settings.DEBUG:
                 raise
-        else:
-            queryset_error_logs = self.error_log.filter(
-                domain_name=ERROR_LOG_DOMAIN_NAME
-            )
-            queryset_error_logs.delete()

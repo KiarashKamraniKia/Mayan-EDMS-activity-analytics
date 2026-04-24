@@ -28,7 +28,7 @@ msgstr "テンプレート"
 msgid "Current date and time"
 msgstr "現在の日付と時刻"
 
-#: classes.py:83
+#: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
 msgstr "モデル 「%s」 はテンプレートサンドボックスで利用できません。"

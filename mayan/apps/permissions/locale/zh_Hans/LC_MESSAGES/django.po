@@ -7,6 +7,7 @@
 # xisafe <root@xisafe.com>, 2025
 # Ford Guo <agile.guo@gmail.com>, 2025
 # Roberto Rosario, 2025
+# YJ Chen, 2026
 # 
 msgid ""
 msgstr ""
@@ -72,7 +73,7 @@ msgstr "角色权限"
 
 #: model_mixins.py:43
 msgid "Permission count"
-msgstr ""
+msgstr "權限總數"
 
 #: model_mixins.py:89
 #, python-format
@@ -150,7 +151,7 @@ msgstr ""
 
 #: serializers.py:53 serializers.py:61
 msgid "Permission ID"
-msgstr ""
+msgstr "權限 ID"
 
 #: serializers.py:60
 msgid "Primary key of the permission to remove from the role."
@@ -170,15 +171,15 @@ msgstr ""
 
 #: serializers.py:79
 msgid "Permissions URL"
-msgstr ""
+msgstr "權限清單網址"
 
 #: serializers.py:83
 msgid "Permissions add URL"
-msgstr ""
+msgstr "新增權限網址"
 
 #: serializers.py:87
 msgid "Permissions remove URL"
-msgstr ""
+msgstr "移除權限網址"
 
 #: serializers.py:94
 msgid "URL"

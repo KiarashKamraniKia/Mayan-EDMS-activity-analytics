@@ -44,8 +44,8 @@ class DocumentType(
     )
     filename_generator_backend = models.CharField(
         default=BaseDocumentFilenameGenerator.get_default(), help_text=_(
-            message='The class responsible for producing the actual filename used '
-            'to store the uploaded documents.'
+            message='The class responsible for producing the actual filename '
+            'used to store the uploaded documents.'
         ), max_length=224, verbose_name=_(message='Filename generator backend')
     )
     filename_generator_backend_arguments = models.TextField(
@@ -63,8 +63,8 @@ class DocumentType(
 
     trash_time_period = models.PositiveIntegerField(
         blank=True, help_text=_(
-            message='Amount of time after which documents of this type will be '
-            'moved to the trash.'
+            message='Amount of time after which documents of this type will '
+            'be moved to the trash.'
         ), null=True, verbose_name=_(message='Trash time period')
     )
     trash_time_unit = models.CharField(
@@ -73,8 +73,8 @@ class DocumentType(
     )
     delete_time_period = models.PositiveIntegerField(
         blank=True, default=DEFAULT_DELETE_PERIOD, help_text=_(
-            message='Amount of time after which documents of this type in the trash '
-            'will be deleted.'
+            message='Amount of time after which documents of this type in '
+            'the trash will be deleted.'
         ), null=True, verbose_name=_(message='Delete time period')
     )
     delete_time_unit = models.CharField(

@@ -76,8 +76,8 @@ class DocumentSerializer(serializers.HyperlinkedModelSerializer):
 class DocumentChangeTypeSerializer(serializers.Serializer):
     document_type_id = FilteredPrimaryKeyRelatedField(
         label=_(message='Document type ID'), help_text=_(
-            message='Primary key of the document type into which the document '
-            'will be changed.'
+            message='Primary key of the document type into which the '
+            'document will be changed.'
         ), source_permission=permission_document_change_type,
         source_queryset_method='get_document_type_queryset', write_only=True
     )

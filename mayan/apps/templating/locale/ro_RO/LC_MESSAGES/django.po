@@ -29,7 +29,7 @@ msgstr "Lucru cu șabloane"
 msgid "Current date and time"
 msgstr "Data și ora curentă"
 
-#: classes.py:83
+#: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
 msgstr "Modelul ` %s nu este disponibil pentru sandbox-ul de șabloane."

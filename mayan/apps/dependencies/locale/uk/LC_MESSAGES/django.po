@@ -272,11 +272,11 @@ msgstr ""
 "цьому середовищі призведе до проблем і помилок під час звичайного "
 "використання."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Production"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -286,7 +286,7 @@ msgstr ""
 "функціональності коду. Залежності в цьому середовищі не потрібні для "
 "звичайного використання виробництва."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Тестування"
 
@@ -310,7 +310,7 @@ msgstr "Подробиці"
 msgid "Dependencies licenses"
 msgstr "Залежності ліцензій"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
@@ -319,7 +319,7 @@ msgstr ""
 "Ваша версія (%(version_local)s) новіша, ніж опублікована версія "
 "(%(version_server)s)."
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
@@ -328,11 +328,11 @@ msgstr ""
 "Версія, яку ви використовуєте (%(version_local)s), застаріла. Остання версія"
 " - %(version_server)s."
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr "Неможливо визначити останню доступну версію."
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"

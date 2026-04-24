@@ -39,11 +39,11 @@ msgstr "اسم"
 msgid "Value"
 msgstr "قيمة"
 
-#: classes.py:162
+#: classes.py:172
 msgid "Has errors"
 msgstr "يحتوي على أخطاء"
 
-#: classes.py:164
+#: classes.py:174
 msgid ""
 "Indicates that this setting was not loaded correctly. Settings with errors "
 "revert to their default value."
@@ -51,35 +51,35 @@ msgstr ""
 "يشير إلى أن هذا الإعداد لم يتم تحميله بشكل صحيح. تعود الإعدادات التي تحتوي "
 "على أخطاء إلى قيمتها الافتراضية."
 
-#: classes.py:171
+#: classes.py:181
 msgid "Choices"
 msgstr "خيارات"
 
-#: classes.py:173
+#: classes.py:183
 msgid "Possible values allowed for this setting."
 msgstr "القيم الممكنة المسموح بها لهذا الإعداد."
 
-#: classes.py:194
+#: classes.py:204
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr "لا يمكن استعادة الإعداد. لم يتم تحديث قيمة الإعداد."
 
-#: classes.py:231
+#: classes.py:241
 msgid "Default"
 msgstr "القيمة الإفتراضية"
 
-#: classes.py:244
+#: classes.py:254
 msgid "Modified"
 msgstr "معدل"
 
-#: classes.py:246
+#: classes.py:256
 msgid "The value of this setting being modified since the last restart."
 msgstr "قيمة هذا الإعداد التي تم تعديلها منذ آخر إعادة تشغيل."
 
-#: classes.py:252
+#: classes.py:263
 msgid "Overridden"
 msgstr "تم الإلغاء"
 
-#: classes.py:254
+#: classes.py:265
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr "يتم تجاوز قيمة الإعداد بواسطة متغير بيئة."
@@ -145,6 +145,10 @@ msgstr "إعداد محدث"
 msgid "Updated settings"
 msgstr "إعدادات محدثة"
 
+#: namespaces.py:94
+msgid "Settings namespace"
+msgstr "مساحة اسم الإعدادات"
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr "تعديل الإعدادات"
@@ -153,15 +157,11 @@ msgstr "تعديل الإعدادات"
 msgid "View settings"
 msgstr "استعراض الإعدادات"
 
-#: setting_namespaces.py:78
-msgid "Settings namespace"
-msgstr "مساحة اسم الإعدادات"
-
-#: settings.py:27
+#: settings.py:23
 msgid "Django"
 msgstr "جانغو"
 
-#: settings.py:32
+#: settings.py:28
 msgid ""
 "A list of strings representing the host/domain names that this site can "
 "serve. This is a security measure to prevent HTTP Host header attacks, which"
@@ -180,7 +180,7 @@ msgstr ""
 "ظل العديد من تكوينات خادم الويب التي تبدو آمنة. يمكن أن تكون القيم الموجودة "
 "في هذه القائمة عبارة عن أسماء مؤهلة بالكامل"
 
-#: settings.py:49
+#: settings.py:45
 msgid ""
 "When set to True, if the request URL does not match any of the patterns in "
 "the URLconf and it doesn't end in a slash, an HTTP redirect is issued to the"
@@ -194,19 +194,26 @@ msgstr ""
 "نفس عنوان URL مع إلحاق شرطة مائلة. لاحظ أن إعادة التوجيه قد تتسبب في فقد أي "
 "بيانات تم إرسالها في طلب POST."
 
-#: settings.py:61
+#: settings.py:57
 msgid ""
 "The list of validators that are used to check the strength of user's "
 "passwords."
 msgstr "قوة كلمات مرور المستخدم."
 
-#: settings.py:68
+#: settings.py:64
 msgid ""
 "A list of authentication backend classes (as strings) to use when attempting"
 " to authenticate a user."
 msgstr "محاولة مصادقة مستخدم."
 
-#: settings.py:75
+#: settings.py:71
+msgid ""
+"A dictionary containing the settings for all caches to be used with Django. "
+"It is a nested dictionary whose contents maps cache aliases to a dictionary "
+"containing the options for an individual cache."
+msgstr ""
+
+#: settings.py:80
 msgid ""
 "A dictionary containing the settings for all caches to be used with Django. "
 "It is a nested dictionary whose contents maps cache aliases to a dictionary "
@@ -405,10 +412,10 @@ msgstr "محددات تشغيلية"
 
 #: settings.py:290
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
-msgstr "محددات تشغيلية"
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
+msgstr ""
 
 #: settings.py:298
 msgid ""
@@ -490,78 +497,23 @@ msgstr ""
 "تم تحديث الإعدادات. احفظ التغييرات وأعد تشغيل التثبيت لتصبح التغييرات نافذة "
 "المفعول."
 
-#: tests/test_classes.py:192
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr "الإنجليزية"
 
-#: views.py:41
+#: views/cluster_views.py:32
 msgid "This will overwrite the content of the configuration file."
 msgstr "سيؤدي هذا إلى استبدال محتوى ملف التكوين."
 
-#: views.py:44
+#: views/cluster_views.py:35
 msgid "Save settings to the configuration file?"
 msgstr "حفظ الإعدادات في ملف التكوين؟"
 
-#: views.py:52
+#: views/cluster_views.py:43
 msgid "Settings saved to configuration file successfully."
 msgstr "تم حفظ الإعدادات في ملف التكوين بنجاح."
 
-#: views.py:60
-msgid "Setting namespaces"
-msgstr "تحديد مساحات الأسماء"
-
-#: views.py:89
-msgid "Setting updated successfully."
-msgstr "تم تحديث الإعداد بنجاح."
-
-#: views.py:98
-msgid ""
-"This setting is overridden by an environment variable, changing its value "
-"will have no effect."
-msgstr ""
-"يتم تجاوز هذا الإعداد بواسطة متغير بيئة، لذا فإن تغيير قيمته لن يكون له "
-"تأثير."
-
-#: views.py:108
-#, python-format
-msgid "Edit setting: %s"
-msgstr "تعديل الإعداد: %s"
-
-#: views.py:129
-#, python-format
-msgid "%(count)d settings value reverted."
-msgstr "تم استعادة قيمة %(count)d إعداد."
-
-#: views.py:132
-#, python-format
-msgid "Value of setting \"%(object)s\" reverted."
-msgstr "تم استعادة قيمة الإعداد \"%(object)s\"."
-
-#: views.py:134
-#, python-format
-msgid "%(count)d setting value reverted."
-msgstr "تم استعادة قيمة %(count)d إعداد."
-
-#: views.py:136
-#, python-format
-msgid "Revert the value of the %(count)d selected settings."
-msgstr "استعادة قيمة الإعدادات المحددة %(count)d."
-
-#: views.py:138
-#, python-format
-msgid "Revert the value of setting: %(object)s"
-msgstr "استعادة قيمة الإعداد: %(object)s"
-
-#: views.py:140
-#, python-format
-msgid "Revert the value of %(count)d selected setting."
-msgstr "استعادة قيمة الإعداد المحدد %(count)d."
-
-#: views.py:150
-msgid "Unsaved changes will be lost."
-msgstr "سيتم فقدان التغييرات غير المحفوظة."
-
-#: views.py:187
+#: views/namespace_views.py:24
 msgid ""
 "Settings inherited from an environment variable take precedence and cannot "
 "be changed in this view. "
@@ -569,12 +521,67 @@ msgstr ""
 "الإعدادات الموروثة من متغير البيئة لها الأسبقية ولا يمكن تغييرها في طريقة "
 "العرض هذه."
 
-#: views.py:190
+#: views/namespace_views.py:27
 #, python-format
 msgid "Settings in namespace: %s"
 msgstr "الإعدادات في مساحة الاسم: %s"
 
-#: views.py:200
+#: views/namespace_views.py:37
 #, python-format
 msgid "Namespace: %s, not found"
 msgstr " %s ، غير موجود"
+
+#: views/namespace_views.py:50
+msgid "Setting namespaces"
+msgstr "تحديد مساحات الأسماء"
+
+#: views/setting_views.py:37
+msgid "Setting updated successfully."
+msgstr "تم تحديث الإعداد بنجاح."
+
+#: views/setting_views.py:46
+msgid ""
+"This setting is overridden by an environment variable, changing its value "
+"will have no effect."
+msgstr ""
+"يتم تجاوز هذا الإعداد بواسطة متغير بيئة، لذا فإن تغيير قيمته لن يكون له "
+"تأثير."
+
+#: views/setting_views.py:56
+#, python-format
+msgid "Edit setting: %s"
+msgstr "تعديل الإعداد: %s"
+
+#: views/setting_views.py:77
+#, python-format
+msgid "%(count)d settings value reverted."
+msgstr "تم استعادة قيمة %(count)d إعداد."
+
+#: views/setting_views.py:80
+#, python-format
+msgid "Value of setting \"%(object)s\" reverted."
+msgstr "تم استعادة قيمة الإعداد \"%(object)s\"."
+
+#: views/setting_views.py:82
+#, python-format
+msgid "%(count)d setting value reverted."
+msgstr "تم استعادة قيمة %(count)d إعداد."
+
+#: views/setting_views.py:84
+#, python-format
+msgid "Revert the value of the %(count)d selected settings."
+msgstr "استعادة قيمة الإعدادات المحددة %(count)d."
+
+#: views/setting_views.py:86
+#, python-format
+msgid "Revert the value of setting: %(object)s"
+msgstr "استعادة قيمة الإعداد: %(object)s"
+
+#: views/setting_views.py:88
+#, python-format
+msgid "Revert the value of %(count)d selected setting."
+msgstr "استعادة قيمة الإعداد المحدد %(count)d."
+
+#: views/setting_views.py:98
+msgid "Unsaved changes will be lost."
+msgstr "سيتم فقدان التغييرات غير المحفوظة."

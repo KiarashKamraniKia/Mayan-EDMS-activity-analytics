@@ -116,7 +116,7 @@ Current series status
    * - 4.6
      - January 2024
      - Extended support
-     -
+     - March 2026
    * - 4.5
      - September 2023
      - End of life

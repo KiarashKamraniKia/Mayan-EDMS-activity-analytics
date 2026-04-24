@@ -188,8 +188,8 @@ class SourceBackendMixinStoredFileImage:
                     'class': 'django.forms.IntegerField',
                     'default': DEFAULT_PREVIEW_WIDTH,
                     'help_text': _(
-                        message='Width value to be passed to the image '
-                        'converter backend.'
+                        message='Width value to be passed to the converter '
+                        'backend.'
                     ),
                     'kwargs': {
                         'min_value': 0

@@ -5,9 +5,9 @@
 # 
 # Translators:
 # Giovanni Tricarico <gtricarico92@gmail.com>, 2025
-# Roberto Rosario, 2025
 # Marco Camplese <marco.camplese.mc@gmail.com>, 2025
 # piera.daraio, 2025
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
@@ -27,11 +27,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr ""
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr "Dimensione"
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "Miniatura"
 
@@ -160,8 +160,10 @@ msgid "No source files available"
 msgstr "Nessuna sorgente file disponibile"
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
+msgid "Width value to be passed to the converter backend."
 msgstr ""
+"valore della larghezza da passare per le operazioni di conversione in "
+"backend"
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

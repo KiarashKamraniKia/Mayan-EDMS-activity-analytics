@@ -10,8 +10,13 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
+<<<<<<< HEAD:mayan/apps/platforms_forge/locale/es_EC/LC_MESSAGES/django.po
 "POT-Creation-Date: 2025-10-30 19:39+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
+=======
+"POT-Creation-Date: 2025-08-08 18:37+0000\n"
+"PO-Revision-Date: 2025-08-27 13:18+0000\n"
+>>>>>>> internal/series/4.9:mayan/apps/platform_forge/locale/es_EC/LC_MESSAGES/django.po
 "Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Spanish (Ecuador) (https://app.transifex.com/rosarior/teams/13584/es_EC/)\n"
 "MIME-Version: 1.0\n"
@@ -21,8 +26,13 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: apps.py:10
+<<<<<<< HEAD:mayan/apps/platforms_forge/locale/es_EC/LC_MESSAGES/django.po
 msgid "Platforms Forge"
 msgstr ""
+=======
+msgid "Platform Forge"
+msgstr "Plataforma de Forja"
+>>>>>>> internal/series/4.9:mayan/apps/platform_forge/locale/es_EC/LC_MESSAGES/django.po
 
 #: platform_templates.py:18
 msgid "Template that generates the Mayan Forge Docker Compose file."

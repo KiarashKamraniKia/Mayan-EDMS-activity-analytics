@@ -5,6 +5,7 @@ import yaml
 
 from django.apps import apps
 from django.conf import settings
+from django.core.exceptions import ImproperlyConfigured
 from django.utils.encoding import force_str
 from django.utils.functional import Promise
 from django.utils.translation import gettext_lazy as _
@@ -17,15 +18,24 @@ logger = logging.getLogger(name=__name__)
 
 
 class SettingMetaclass(type):
-    def __call__(cls, namespace, global_name, **kwargs):
-        try:
-            instance = namespace.get_setting(global_name=global_name)
-        except KeyError:
+    _registry = {}
+
+    def __call__(mcls, namespace, global_name, **kwargs):
+        if global_name in mcls._registry:
+            raise ImproperlyConfigured(
+                'Setting `{}` already exists.'.format(global_name)
+            )
+        else:
             instance = super().__call__(
                 namespace=namespace, global_name=global_name, **kwargs
             )
-        finally:
-            return instance
+            mcls._registry[global_name] = instance
+
+        return instance
+
+    @classmethod
+    def unregister(mcls, instance):
+        mcls._registry.pop(instance.global_name, None)
 
 
 class Setting(metaclass=SettingMetaclass):
@@ -191,8 +201,8 @@ class Setting(metaclass=SettingMetaclass):
         if not self.get_has_value_new():
             raise SettingsExceptionRevert(
                 _(
-                    message='Cannot revert setting. Setting value has not been '
-                    'updated.'
+                    message='Cannot revert setting. Setting value has not '
+                    'been updated.'
                 )
             )
 
@@ -243,7 +253,8 @@ class Setting(metaclass=SettingMetaclass):
 
     get_has_value_new.short_description = _(message='Modified')
     get_has_value_new.help_text = _(
-        message='The value of this setting being modified since the last restart.'
+        message='The value of this setting being modified since the last '
+        'restart.'
     )
 
     def get_is_overridden(self):
@@ -251,8 +262,8 @@ class Setting(metaclass=SettingMetaclass):
 
     get_is_overridden.short_description = _(message='Overridden')
     get_is_overridden.help_text = _(
-        message='The value of the setting is being overridden by an environment '
-        'variable.'
+        message='The value of the setting is being overridden by an '
+        'environment variable.'
     )
 
     def get_value_current(self):

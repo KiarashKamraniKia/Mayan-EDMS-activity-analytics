@@ -262,32 +262,32 @@ msgstr ""
 "Fehler beim Markieren der Nachricht „ %(instance)s “ als ungelesen; "
 "%(exception)s"
 
-#: views.py:200
+#: views.py:201
 #, python-format
 msgid "%(count)d messages marked as unread successfully."
 msgstr "%(count)d Nachrichten wurden erfolgreich als ungelesen markiert."
 
-#: views.py:203
+#: views.py:204
 #, python-format
 msgid "Message \"%(object)s\" marked as unread successfully."
 msgstr "Nachricht „ %(object)s “ erfolgreich als ungelesen markiert."
 
-#: views.py:206
+#: views.py:207
 #, python-format
 msgid "%(count)d message marked as unread successfully."
 msgstr "%(count)d Nachricht erfolgreich als ungelesen markiert."
 
-#: views.py:208
+#: views.py:209
 #, python-format
 msgid "Mark the %(count)d selected messages as unread."
 msgstr "Markieren der %(count)d ausgewählten Nachrichten als  ungelesen."
 
-#: views.py:209
+#: views.py:210
 #, python-format
 msgid "Mark the message \"%(object)s\" as unread."
 msgstr "Markieren der Nachricht „ %(object)s “ als ungelesen."
 
-#: views.py:210
+#: views.py:211
 #, python-format
 msgid "Mark the %(count)d selected message as unread."
 msgstr "Markieren der %(count)d ausgewählten Nachricht als ungelesen."

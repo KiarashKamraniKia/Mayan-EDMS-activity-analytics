@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 from mayan.apps.task_manager.classes import Worker
 from mayan.literals import (  # NOQA
     DOCKER_USER_GID, DOCKER_USER_UID, MAYAN_WORKER_A_CONCURRENCY,

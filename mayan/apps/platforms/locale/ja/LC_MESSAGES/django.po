@@ -57,6 +57,7 @@ msgid "Load an alternate settings file."
 msgstr "代替設定ファイルを読み込む"
 
 #: settings.py:50
+<<<<<<< HEAD:mayan/apps/platforms/locale/ja/LC_MESSAGES/django.po
 msgid "Allows setting Gunicorn's `limit_request_line` value."
 msgstr "Gunicorn の `limit_request_line` 値を設定可能"
 
@@ -79,3 +80,27 @@ msgstr "Gunicorn の `worker_class` 値を設定可能"
 #: settings.py:81
 msgid "Allows setting Gunicorn's `workers` value."
 msgstr "Gunicorn の `workers` 値を設定可能"
+=======
+msgid "Allows setting Gunicorn's `workers` value."
+msgstr "Gunicorn の `workers` 値を設定可能"
+
+#: settings.py:56
+msgid "Allows setting Gunicorn's `worker_class` value."
+msgstr "Gunicorn の `worker_class` 値を設定可能"
+
+#: settings.py:63
+msgid "Allows setting Gunicorn's `timeout` value."
+msgstr "Gunicorn の `timeout` 値を設定可能"
+
+#: settings.py:69
+msgid "Allows setting Gunicorn's `max_requests_jitter` value."
+msgstr "Gunicorn の `max_requests_jitter` 値を設定可能"
+
+#: settings.py:75
+msgid "Allows setting Gunicorn's `max_requests` value."
+msgstr "Gunicorn の `max_requests` 値を設定可能"
+
+#: settings.py:81
+msgid "Allows setting Gunicorn's `limit_request_line` value."
+msgstr "Gunicorn の `limit_request_line` 値を設定可能"
+>>>>>>> internal/series/4.9:mayan/apps/platform/locale/ja/LC_MESSAGES/django.po

@@ -36,45 +36,45 @@ msgstr ""
 msgid "Value"
 msgstr ""
 
-#: classes.py:162
+#: classes.py:172
 msgid "Has errors"
 msgstr ""
 
-#: classes.py:164
+#: classes.py:174
 msgid ""
 "Indicates that this setting was not loaded correctly. Settings with errors "
 "revert to their default value."
 msgstr ""
 
-#: classes.py:171
+#: classes.py:181
 msgid "Choices"
 msgstr ""
 
-#: classes.py:173
+#: classes.py:183
 msgid "Possible values allowed for this setting."
 msgstr ""
 
-#: classes.py:194
+#: classes.py:204
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr ""
 
-#: classes.py:231
+#: classes.py:241
 msgid "Default"
 msgstr "སྔོན་གཤིས།"
 
-#: classes.py:244
+#: classes.py:254
 msgid "Modified"
 msgstr ""
 
-#: classes.py:246
+#: classes.py:256
 msgid "The value of this setting being modified since the last restart."
 msgstr ""
 
-#: classes.py:252
+#: classes.py:263
 msgid "Overridden"
 msgstr ""
 
-#: classes.py:254
+#: classes.py:265
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr ""
@@ -138,6 +138,10 @@ msgstr ""
 msgid "Updated settings"
 msgstr ""
 
+#: namespaces.py:94
+msgid "Settings namespace"
+msgstr "སྒྲིག་སྟངས་མིང་བར་སྟོང་།"
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr ""
@@ -154,7 +158,7 @@ msgstr ""
 msgid "Django"
 msgstr ""
 
-#: settings.py:32
+#: settings.py:28
 msgid ""
 "A list of strings representing the host/domain names that this site can "
 "serve. This is a security measure to prevent HTTP Host header attacks, which"
@@ -169,7 +173,7 @@ msgid ""
 "middleware must be listed first in MIDDLEWARE)."
 msgstr ""
 
-#: settings.py:49
+#: settings.py:45
 msgid ""
 "When set to True, if the request URL does not match any of the patterns in "
 "the URLconf and it doesn't end in a slash, an HTTP redirect is issued to the"
@@ -179,19 +183,26 @@ msgid ""
 "PREPEND_WWW."
 msgstr ""
 
-#: settings.py:61
+#: settings.py:57
 msgid ""
 "The list of validators that are used to check the strength of user's "
 "passwords."
 msgstr ""
 
-#: settings.py:68
+#: settings.py:64
 msgid ""
 "A list of authentication backend classes (as strings) to use when attempting"
 " to authenticate a user."
 msgstr ""
 
-#: settings.py:75
+#: settings.py:71
+msgid ""
+"A dictionary containing the settings for all caches to be used with Django. "
+"It is a nested dictionary whose contents maps cache aliases to a dictionary "
+"containing the options for an individual cache."
+msgstr ""
+
+#: settings.py:80
 msgid ""
 "A dictionary containing the settings for all caches to be used with Django. "
 "It is a nested dictionary whose contents maps cache aliases to a dictionary "
@@ -378,9 +389,9 @@ msgstr ""
 
 #: settings.py:290
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
 
 #: settings.py:298
@@ -452,19 +463,19 @@ msgid ""
 "effect."
 msgstr ""
 
-#: tests/test_classes.py:192
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr ""
 
-#: views.py:41
+#: views/cluster_views.py:32
 msgid "This will overwrite the content of the configuration file."
 msgstr ""
 
-#: views.py:44
+#: views/cluster_views.py:35
 msgid "Save settings to the configuration file?"
 msgstr ""
 
-#: views.py:52
+#: views/cluster_views.py:43
 msgid "Settings saved to configuration file successfully."
 msgstr ""
 
@@ -527,12 +538,12 @@ msgid ""
 "be changed in this view. "
 msgstr ""
 
-#: views.py:190
+#: views/namespace_views.py:27
 #, python-format
 msgid "Settings in namespace: %s"
 msgstr ""
 
-#: views.py:200
+#: views/namespace_views.py:37
 #, python-format
 msgid "Namespace: %s, not found"
 msgstr ""

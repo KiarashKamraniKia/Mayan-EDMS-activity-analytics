@@ -69,13 +69,17 @@ class MetadataTypeTestMixin(
 
 
 class MetadataTypeAPIViewTestMixin(MetadataTypeTestMixin):
-    def _request_test_metadata_type_create_api_view(self):
+    def _request_test_metadata_type_create_api_view(self, extra_data=None):
         self._test_object_track()
 
+        data = {
+            'name': 'test_metadata_type', 'label': 'test metadata type'
+        }
+        if extra_data:
+            data.update(extra_data)
+
         response = self.post(
-            viewname='rest_api:metadatatype-list', data={
-                'name': 'test_metadata_type', 'label': 'test metadata type'
-            }
+            viewname='rest_api:metadatatype-list', data=data
         )
 
         self._test_object_set()
@@ -94,22 +98,35 @@ class MetadataTypeAPIViewTestMixin(MetadataTypeTestMixin):
             kwargs={'metadata_type_id': self._test_metadata_type.pk}
         )
 
-    def _request_test_metadata_type_edit_api_view_via_patch(self):
+    def _request_test_metadata_type_edit_api_view_via_patch(
+        self, extra_data=None
+    ):
+        data = {
+            'label': '{} edited'.format(self._test_metadata_type.label),
+            'name': '{}_edited'.format(self._test_metadata_type.name)
+        }
+        if extra_data:
+            data.update(extra_data)
+
         return self.patch(
-            viewname='rest_api:metadatatype-detail',
-            kwargs={'metadata_type_id': self._test_metadata_type.pk}, data={
-                'label': '{} edited'.format(self._test_metadata_type.label),
-                'name': '{}_edited'.format(self._test_metadata_type.name)
-            }
+            data=data,
+            kwargs={'metadata_type_id': self._test_metadata_type.pk},
+            viewname='rest_api:metadatatype-detail'
         )
 
-    def _request_test_metadata_type_edit_api_view_via_put(self):
+    def _request_test_metadata_type_edit_api_view_via_put(self, extra_data=None):
+        data = {
+            'label': '{} edited'.format(self._test_metadata_type.label),
+            'name': '{}_edited'.format(self._test_metadata_type.name)
+        }
+
+        if extra_data:
+            data.update(extra_data)
+
         return self.put(
-            viewname='rest_api:metadatatype-detail',
-            kwargs={'metadata_type_id': self._test_metadata_type.pk}, data={
-                'label': '{} edited'.format(self._test_metadata_type.label),
-                'name': '{}_edited'.format(self._test_metadata_type.name)
-            }
+            data=data,
+            kwargs={'metadata_type_id': self._test_metadata_type.pk},
+            viewname='rest_api:metadatatype-detail'
         )
 
     def _request_test_metadata_type_list_api_view(self):

@@ -39,45 +39,45 @@ msgstr "Nazwa"
 msgid "Value"
 msgstr "Wartość"
 
-#: classes.py:162
+#: classes.py:172
 msgid "Has errors"
 msgstr ""
 
-#: classes.py:164
+#: classes.py:174
 msgid ""
 "Indicates that this setting was not loaded correctly. Settings with errors "
 "revert to their default value."
 msgstr ""
 
-#: classes.py:171
+#: classes.py:181
 msgid "Choices"
 msgstr ""
 
-#: classes.py:173
+#: classes.py:183
 msgid "Possible values allowed for this setting."
 msgstr ""
 
-#: classes.py:194
+#: classes.py:204
 msgid "Cannot revert setting. Setting value has not been updated."
 msgstr ""
 
-#: classes.py:231
+#: classes.py:241
 msgid "Default"
 msgstr "Domyślny"
 
-#: classes.py:244
+#: classes.py:254
 msgid "Modified"
 msgstr ""
 
-#: classes.py:246
+#: classes.py:256
 msgid "The value of this setting being modified since the last restart."
 msgstr ""
 
-#: classes.py:252
+#: classes.py:263
 msgid "Overridden"
 msgstr "Zastąpione"
 
-#: classes.py:254
+#: classes.py:265
 msgid ""
 "The value of the setting is being overridden by an environment variable."
 msgstr ""
@@ -141,6 +141,10 @@ msgstr ""
 msgid "Updated settings"
 msgstr ""
 
+#: namespaces.py:94
+msgid "Settings namespace"
+msgstr ""
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr "Edytuj ustawienia"
@@ -149,15 +153,11 @@ msgstr "Edytuj ustawienia"
 msgid "View settings"
 msgstr "Przegląd ustawień"
 
-#: setting_namespaces.py:78
-msgid "Settings namespace"
-msgstr ""
-
-#: settings.py:27
+#: settings.py:23
 msgid "Django"
 msgstr "Django"
 
-#: settings.py:32
+#: settings.py:28
 msgid ""
 "A list of strings representing the host/domain names that this site can "
 "serve. This is a security measure to prevent HTTP Host header attacks, which"
@@ -185,7 +185,7 @@ msgstr ""
 "pośrednim; jeśli tak, to oprogramowanie pośrednie musi być wymienione "
 "najpierw w MIDDLEWARE)."
 
-#: settings.py:49
+#: settings.py:45
 msgid ""
 "When set to True, if the request URL does not match any of the patterns in "
 "the URLconf and it doesn't end in a slash, an HTTP redirect is issued to the"
@@ -201,13 +201,13 @@ msgstr ""
 "Ustawienie APPEND_SLASH jest używane tylko wtedy, gdy zainstalowano "
 "CommonMiddleware (patrz Middleware). Zobacz także PREPEND_WWW."
 
-#: settings.py:61
+#: settings.py:57
 msgid ""
 "The list of validators that are used to check the strength of user's "
 "passwords."
 msgstr "Lista walidatorów używanych do sprawdzania siły haseł użytkownika."
 
-#: settings.py:68
+#: settings.py:64
 msgid ""
 "A list of authentication backend classes (as strings) to use when attempting"
 " to authenticate a user."
@@ -215,7 +215,14 @@ msgstr ""
 "Lista klas silnika uwierzytelniania (w postaci ciągów) wykorzystywana "
 "podczas próby uwierzytelnienia użytkownika."
 
-#: settings.py:75
+#: settings.py:71
+msgid ""
+"A dictionary containing the settings for all caches to be used with Django. "
+"It is a nested dictionary whose contents maps cache aliases to a dictionary "
+"containing the options for an individual cache."
+msgstr ""
+
+#: settings.py:80
 msgid ""
 "A dictionary containing the settings for all caches to be used with Django. "
 "It is a nested dictionary whose contents maps cache aliases to a dictionary "
@@ -493,13 +500,10 @@ msgstr ""
 
 #: settings.py:290
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"Domyślnie: „sessionid”. Nazwa pliku cookie wykorzystywanego podczas sesji. "
-"Może to być dowolna nazwa (pod warunkiem, że różni się od innych nazw plików"
-" cookie w aplikacji)."
 
 #: settings.py:298
 msgid ""
@@ -597,76 +601,23 @@ msgid ""
 "effect."
 msgstr ""
 
-#: tests/test_classes.py:192
+#: tests/test_clusters.py:36
 msgid "English"
 msgstr ""
 
-#: views.py:41
+#: views/cluster_views.py:32
 msgid "This will overwrite the content of the configuration file."
 msgstr ""
 
-#: views.py:44
+#: views/cluster_views.py:35
 msgid "Save settings to the configuration file?"
 msgstr ""
 
-#: views.py:52
+#: views/cluster_views.py:43
 msgid "Settings saved to configuration file successfully."
 msgstr ""
 
-#: views.py:60
-msgid "Setting namespaces"
-msgstr "Przestrzenie nazw ustawień"
-
-#: views.py:89
-msgid "Setting updated successfully."
-msgstr "Ustawienie zaktualizowane pomyślnie."
-
-#: views.py:98
-msgid ""
-"This setting is overridden by an environment variable, changing its value "
-"will have no effect."
-msgstr ""
-
-#: views.py:108
-#, python-format
-msgid "Edit setting: %s"
-msgstr "Edytuj ustawienie: %s"
-
-#: views.py:129
-#, python-format
-msgid "%(count)d settings value reverted."
-msgstr ""
-
-#: views.py:132
-#, python-format
-msgid "Value of setting \"%(object)s\" reverted."
-msgstr ""
-
-#: views.py:134
-#, python-format
-msgid "%(count)d setting value reverted."
-msgstr ""
-
-#: views.py:136
-#, python-format
-msgid "Revert the value of the %(count)d selected settings."
-msgstr ""
-
-#: views.py:138
-#, python-format
-msgid "Revert the value of setting: %(object)s"
-msgstr ""
-
-#: views.py:140
-#, python-format
-msgid "Revert the value of %(count)d selected setting."
-msgstr ""
-
-#: views.py:150
-msgid "Unsaved changes will be lost."
-msgstr ""
-
-#: views.py:187
+#: views/namespace_views.py:24
 msgid ""
 "Settings inherited from an environment variable take precedence and cannot "
 "be changed in this view. "
@@ -674,12 +625,65 @@ msgstr ""
 "Ustawienia dziedziczone ze zmiennej środowiskowej mają pierwszeństwo i nie "
 "można ich zmienić w tym widoku."
 
-#: views.py:190
+#: views/namespace_views.py:27
 #, python-format
 msgid "Settings in namespace: %s"
 msgstr "Ustawienia w przestrzeni nazw: %s"
 
-#: views.py:200
+#: views/namespace_views.py:37
 #, python-format
 msgid "Namespace: %s, not found"
 msgstr "Przestrzeń nazw: %s, nie znaleziono"
+
+#: views/namespace_views.py:50
+msgid "Setting namespaces"
+msgstr "Przestrzenie nazw ustawień"
+
+#: views/setting_views.py:37
+msgid "Setting updated successfully."
+msgstr "Ustawienie zaktualizowane pomyślnie."
+
+#: views/setting_views.py:46
+msgid ""
+"This setting is overridden by an environment variable, changing its value "
+"will have no effect."
+msgstr ""
+
+#: views/setting_views.py:56
+#, python-format
+msgid "Edit setting: %s"
+msgstr "Edytuj ustawienie: %s"
+
+#: views/setting_views.py:77
+#, python-format
+msgid "%(count)d settings value reverted."
+msgstr ""
+
+#: views/setting_views.py:80
+#, python-format
+msgid "Value of setting \"%(object)s\" reverted."
+msgstr ""
+
+#: views/setting_views.py:82
+#, python-format
+msgid "%(count)d setting value reverted."
+msgstr ""
+
+#: views/setting_views.py:84
+#, python-format
+msgid "Revert the value of the %(count)d selected settings."
+msgstr ""
+
+#: views/setting_views.py:86
+#, python-format
+msgid "Revert the value of setting: %(object)s"
+msgstr ""
+
+#: views/setting_views.py:88
+#, python-format
+msgid "Revert the value of %(count)d selected setting."
+msgstr ""
+
+#: views/setting_views.py:98
+msgid "Unsaved changes will be lost."
+msgstr ""

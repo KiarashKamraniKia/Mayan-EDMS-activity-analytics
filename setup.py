@@ -65,15 +65,15 @@ def find_packages(directory):
 
 
 install_requires = """
-django==4.2.28
-CairoSVG==2.8.2
+django==4.2.30
+CairoSVG==2.9.0
 Markdown==3.10.2
-Pillow==12.1.1
+Pillow==12.2.0
 PyYAML==6.0.3
 Whoosh==2.7.4
 boto3==1.40.24
 celery==5.5.3
-dateparser==1.3.0
+dateparser==1.4.0
 django-activity-stream==2.0.0
 django-auth-ldap==5.3.0
 django-celery-beat==2.8.1
@@ -101,19 +101,19 @@ greenlet==3.3.2
 gunicorn==25.1.0
 jsonschema==4.26.0
 mozilla-django-oidc==5.0.2
-nh3==0.3.3
+nh3==0.3.4
 node-semver==0.9.0
 ollama==0.6.1
 openai==1.109.1
 pycountry==26.2.16
 pycryptodome==3.23.0
 pyotp==2.9.0
-pypdf==6.7.3
+pypdf==6.10.2
 python-dateutil==2.9.0.post0
 python_gnupg==0.5.6
-pytz==2025.2
+pytz==2026.1.post1
 qrcode==8.2
-requests==2.32.5
+requests==2.33.1
 sentry-sdk==2.53.0
 sh==2.2.2
 swagger-spec-validator==3.0.4

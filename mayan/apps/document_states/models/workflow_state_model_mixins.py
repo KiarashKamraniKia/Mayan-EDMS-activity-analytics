@@ -53,23 +53,19 @@ class WorkflowStateBusinessLogicMixin:
                     context=context, workflow_instance=workflow_instance
                 )
             except Exception as exception:
-                queryset_error_logs = workflow_instance.document.error_log
-                queryset_error_logs.create(
-                    domain_name=ERROR_LOG_DOMAIN_NAME,
-                    text='{}; {}'.format(
-                        exception.__class__.__name__, exception
-                    )
+                error_log_text = _(
+                    message='Error executing workflow action "%(action)s"; '
+                    '%(exception)s'
+                ) % {'action': action, 'exception': exception}
+
+                workflow_instance.document.create(
+                    domain_name=ERROR_LOG_DOMAIN_NAME, text=error_log_text
                 )
 
                 if settings.DEBUG or settings.TESTING:
                     raise
 
                 break
-            else:
-                queryset_error_logs = workflow_instance.document.error_log.filter(
-                    domain_name=ERROR_LOG_DOMAIN_NAME
-                )
-                queryset_error_logs.delete()
 
     def do_diagram_generate(self, diagram):
         fill_color = ''

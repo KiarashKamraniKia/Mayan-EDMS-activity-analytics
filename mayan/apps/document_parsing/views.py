@@ -42,7 +42,8 @@ class DocumentFileContentDeleteView(MultipleObjectDeleteView):
     pk_url_kwarg = 'document_file_id'
     source_queryset = DocumentFile.valid.all()
     success_message_plural = _(
-        message='Content of %(count)d document versions deleted successfully.'
+        message='Content of %(count)d document versions deleted '
+        'successfully.'
     )
     success_message_single = _(
         message='Content of "%(object)s" deleted successfully.'
@@ -52,10 +53,12 @@ class DocumentFileContentDeleteView(MultipleObjectDeleteView):
     )
     title_single = _(message='Delete the content of: %(object)s.')
     title_singular = _(
-        message='Delete the content of the %(count)d selected document version.'
+        message='Delete the content of the %(count)d selected document '
+        'version.'
     )
     title_plural = _(
-        message='Delete the content of the %(count)d selected document versions.'
+        message='Delete the content of the %(count)d selected document '
+        'versions.'
     )
     view_icon = icon_document_file_content_delete_single
 
@@ -158,7 +161,8 @@ class DocumentFileSubmitView(MultipleObjectConfirmActionView):
                 {
                     'object': queryset.first(),
                     'title': _(
-                        message='Submit document file "%s" to the parsing queue'
+                        message='Submit document file "%s" to the parsing '
+                        'queue'
                     ) % queryset.first()
                 }
             )

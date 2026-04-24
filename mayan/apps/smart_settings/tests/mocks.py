@@ -1,6 +1,6 @@
 from django.core.exceptions import ValidationError
 
-from ..setting_namespaces import SettingNamespaceMigration
+from ..namespace_migrations import SettingNamespaceMigration
 
 from .literals import TEST_SETTING_VALIDATION_BAD_VALUE
 

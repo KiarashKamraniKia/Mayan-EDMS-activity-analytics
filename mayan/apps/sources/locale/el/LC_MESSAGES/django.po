@@ -285,8 +285,8 @@ msgstr ""
 msgid "Path to the Storage subclass used to store cached source image files."
 msgstr ""
 
-#: settings.py:44
-msgid "Arguments to pass to the SOURCES_SOURCE_CACHE_STORAGE_BACKEND."
+#: settings.py:45
+msgid "Arguments to pass to the `SOURCES_SOURCE_CACHE_STORAGE_BACKEND`."
 msgstr ""
 
 #: source_backend_actions/interfaces.py:161
@@ -349,7 +349,7 @@ msgstr ""
 msgid "Content selection"
 msgstr ""
 
-#: storages.py:13
+#: storages.py:14
 msgid ""
 "Unable to initialize the staging folder file image storage. Check the "
 "settings {} and {} for formatting errors."
@@ -358,7 +358,7 @@ msgstr ""
 "ενδιάμεσου σταδίου. Ελέγξτε τις ρυθμίσεις {} και {} για σφάλματα "
 "μορφοποίησης."
 
-#: storages.py:20
+#: storages.py:21
 msgid "Sources cache"
 msgstr ""
 

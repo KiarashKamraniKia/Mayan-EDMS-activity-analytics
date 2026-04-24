@@ -273,7 +273,7 @@ msgstr "Запустити робочий процес"
 msgid "Preview"
 msgstr "Попередній перегляд"
 
-#: links.py:131 models/workflow_state_model_mixins.py:126
+#: links.py:131 models/workflow_state_model_mixins.py:122
 msgid "Actions"
 msgstr "Дія"
 
@@ -285,7 +285,7 @@ msgstr "Створити дію"
 msgid "Create escalation"
 msgstr "Створити ескалацію"
 
-#: links.py:169 models/workflow_state_model_mixins.py:136
+#: links.py:169 models/workflow_state_model_mixins.py:132
 msgid "Escalations"
 msgstr "Ескалації"
 
@@ -440,6 +440,13 @@ msgstr ""
 msgid "Initial state"
 msgstr "Початковий стан"
 
+#: models/workflow_model_mixins.py:199
+#, python-format
+msgid ""
+"Cannot create a workflow instance. The workflow template "
+"\"%(workflow_template)s\" does not have an initial state."
+msgstr ""
+
 #: models/workflow_models.py:36
 msgid "Launch workflow when document is created."
 msgstr "Запустити робочий процес, коли документ створено."
@@ -572,6 +579,11 @@ msgstr "Стан ескалації робочого процесу"
 msgid "Workflow state escalations"
 msgstr "Стан ескалацій робочого процесу"
 
+#: models/workflow_state_model_mixins.py:57
+#, python-format
+msgid "Error executing workflow action \"%(action)s\"; %(exception)s"
+msgstr ""
+
 #: models/workflow_state_models.py:41
 msgid "A short text to describe the workflow state."
 msgstr "Короткий текст, що описує стан робочого процесу."
@@ -623,15 +635,15 @@ msgstr "Проксі-сервери середовища виконання ст
 msgid "Lookup value error: %s"
 msgstr "Помилка пошуку значення: %s"
 
-#: models/workflow_transition_field_model_mixins.py:111
+#: models/workflow_transition_field_model_mixins.py:110
 msgid "Has a default?"
 msgstr ""
 
-#: models/workflow_transition_field_model_mixins.py:119
+#: models/workflow_transition_field_model_mixins.py:118
 msgid "Has a lookup?"
 msgstr ""
 
-#: models/workflow_transition_field_model_mixins.py:130
+#: models/workflow_transition_field_model_mixins.py:129
 msgid "Value is not one of the provided options."
 msgstr "Значення не є одним із запропонованих варіантів."
 
@@ -940,7 +952,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr "Первинний ключ типу документа, який додається до робочого процесу."
 
 #: serializers/workflow_template_serializers.py:71
-#: serializers/workflow_template_serializers.py:80
+#: serializers/workflow_template_serializers.py:81
 msgid "Document type ID"
 msgstr "ID типу документа"
 
@@ -963,11 +975,11 @@ msgstr "URL-адреса стану шаблону робочого процес
 msgid "Primary key of the workflow template transition to be added."
 msgstr "Первинний ключ переходу шаблону робочого процесу, який буде доданий."
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "ID переходу шаблону робочого процесу"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "URL-адреса переходу шаблону робочого процесу"
 
@@ -1031,12 +1043,10 @@ msgstr ""
 
 #: settings.py:28
 msgid ""
-"The threshold at which the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND will start "
-"deleting the oldest workflow image cache files. Specify the size in bytes."
+"The threshold at which the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will "
+"start deleting the oldest workflow image cache files. Specify the size in "
+"bytes."
 msgstr ""
-"Порогове значення, за якого WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND почне "
-"видаляти найстаріші файли кешу зображень робочого процесу. Вкажіть розмір у "
-"байтах."
 
 #: settings.py:37
 msgid ""
@@ -1047,10 +1057,10 @@ msgstr ""
 "файлів зображень робочого процесу."
 
 #: settings.py:45
-msgid "Arguments to pass to the WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
-msgstr "Аргументи для передачі в WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND."
+msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."
@@ -1348,31 +1358,31 @@ msgstr ""
 msgid "Workflow transition trigger events for: %s"
 msgstr "Події запуску переходу робочого процесу для: %s"
 
-#: views/workflow_template_transition_views.py:39
+#: views/workflow_template_transition_views.py:40
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "Створити переходи для робочого процесу: %s"
 
-#: views/workflow_template_transition_views.py:79
+#: views/workflow_template_transition_views.py:80
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "Видалити перехід робочого процесу: %s ?"
 
-#: views/workflow_template_transition_views.py:106
+#: views/workflow_template_transition_views.py:107
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "Редагувати перехід робочого процесу: %s"
 
-#: views/workflow_template_transition_views.py:146
+#: views/workflow_template_transition_views.py:147
 msgid ""
 "Create a transition and use it to move a workflow from one state to another."
 msgstr ""
 
-#: views/workflow_template_transition_views.py:150
+#: views/workflow_template_transition_views.py:151
 msgid "This workflow doesn't have any transitions"
 msgstr "Цей робочий процес не має жодних переходів"
 
-#: views/workflow_template_transition_views.py:154
+#: views/workflow_template_transition_views.py:155
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "Переходи робочого процесу: %s"

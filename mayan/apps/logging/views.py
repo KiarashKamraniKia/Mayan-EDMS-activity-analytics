@@ -27,8 +27,8 @@ class GlobalErrorLogEntryList(SingleObjectListView):
             'hide_object': True,
             'no_results_icon': icon_object_errors,
             'no_results_text': _(
-                message='This view displays the error log of different objects. '
-                'An empty list is a good thing.'
+                message='This view displays the error log of different '
+                'objects. An empty list is a good thing.'
             ),
             'no_results_title': _(
                 message='There are no error log entries'
@@ -99,6 +99,10 @@ class ObjectErrorLogEntryListView(
                 message='There are no error log entries'
             ),
             'object': self.external_object,
+            'subtitle': _(
+                message='Maximum number of entries kept for this object '
+                'type: %s'
+            ) % self.external_object.error_log_instance.limit,
             'title': _(
                 message='Error log entries for: %s' % self.external_object
             )

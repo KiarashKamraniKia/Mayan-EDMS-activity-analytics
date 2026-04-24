@@ -1,4 +1,6 @@
-from django.core.exceptions import ValidationError as DjangoValidationError
+from django.core.exceptions import (
+    ImproperlyConfigured, ValidationError as DjangoValidationError
+)
 from django.utils.translation import gettext_lazy as _
 
 from rest_framework.exceptions import ValidationError
@@ -15,6 +17,7 @@ from mayan.apps.rest_api.relations import (
     FilteredPrimaryKeyRelatedField, FilteredSimplePrimaryKeyRelatedField
 )
 
+from .classes import MetadataParser, MetadataValidator
 from .models.document_type_metadata_type_models import (
     DocumentTypeMetadataType
 )
@@ -40,6 +43,32 @@ class MetadataTypeSerializer(serializers.HyperlinkedModelSerializer):
         )
         model = MetadataType
         read_only_fields = ('id', 'url')
+
+    def validate(self, attrs):
+        parser = attrs.get('parser')
+        validation = attrs.get('validation')
+
+        if parser:
+            try:
+                MetadataParser.get_class(dotted_path=parser)
+            except ImproperlyConfigured as exception:
+                raise ValidationError(
+                    {
+                        'parser': exception
+                    }
+                )
+
+        if validation:
+            try:
+                MetadataValidator.get_class(dotted_path=validation)
+            except ImproperlyConfigured as exception:
+                raise ValidationError(
+                    {
+                        'validation': exception
+                    }
+                )
+
+        return attrs
 
 
 class DocumentTypeMetadataTypeSerializer(

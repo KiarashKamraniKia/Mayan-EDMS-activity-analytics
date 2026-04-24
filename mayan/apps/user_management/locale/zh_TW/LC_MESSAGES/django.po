@@ -77,7 +77,7 @@ msgstr "姓氏"
 
 #: apps.py:130
 msgid "Is active?"
-msgstr "已激活？"
+msgstr "已啟用？"
 
 #: apps.py:133
 msgid "Is super user?"
@@ -376,7 +376,7 @@ msgstr ""
 #: views/user_views.py:101
 #, python-format
 msgid "Details of user: %s"
-msgstr "用户详情：%s"
+msgstr "使用者詳細資訊：%s"
 
 #: views/user_views.py:120
 #, python-format

@@ -60,20 +60,20 @@ msgstr ""
 "לבצע סריקת קוד ה-QR או הזנה של הקוד הסודי במכשיר האימות. אין לשתף את מידע "
 "זה, ויש התייחס אליו כאל סיסמה."
 
-#: forms.py:107 forms.py:112
+#: forms.py:108 forms.py:113
 msgid "Secret"
 msgstr "קוד סודי"
 
-#: forms.py:118
+#: forms.py:119
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr "הזן את האסימון המתאים כדי לוודא שהקוד הסודי נשמר נכון."
 
-#: forms.py:121
+#: forms.py:122
 msgid "Token"
 msgstr ""
 
-#: forms.py:157
+#: forms.py:158
 msgid "Token is incorrect for the specified secret."
 msgstr "האסימון שגוי עבור הקוד הסודי שצויין."
 

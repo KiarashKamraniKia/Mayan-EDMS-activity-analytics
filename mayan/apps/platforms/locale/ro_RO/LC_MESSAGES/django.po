@@ -63,6 +63,7 @@ msgid "Load an alternate settings file."
 msgstr "Încărcați un fișier de setări alternative."
 
 #: settings.py:50
+<<<<<<< HEAD:mayan/apps/platforms/locale/ro_RO/LC_MESSAGES/django.po
 msgid "Allows setting Gunicorn's `limit_request_line` value."
 msgstr "Permite setarea valorii `limit_request_line` a lui Gunicorn."
 
@@ -85,3 +86,27 @@ msgstr "Permite setarea valorii `worker_class` a lui Gunicorn."
 #: settings.py:81
 msgid "Allows setting Gunicorn's `workers` value."
 msgstr "Permite setarea valorii `workers` a lui Gunicorn."
+=======
+msgid "Allows setting Gunicorn's `workers` value."
+msgstr "Permite setarea valorii `workers` a lui Gunicorn."
+
+#: settings.py:56
+msgid "Allows setting Gunicorn's `worker_class` value."
+msgstr "Permite setarea valorii `worker_class` a lui Gunicorn."
+
+#: settings.py:63
+msgid "Allows setting Gunicorn's `timeout` value."
+msgstr "Permite setarea valorii `timeout` a funcției Gunicorn."
+
+#: settings.py:69
+msgid "Allows setting Gunicorn's `max_requests_jitter` value."
+msgstr "Permite setarea valorii `max_requests_jitter` a funcției Gunicorn."
+
+#: settings.py:75
+msgid "Allows setting Gunicorn's `max_requests` value."
+msgstr "Permite setarea valorii `max_requests` pentru Gunicorn."
+
+#: settings.py:81
+msgid "Allows setting Gunicorn's `limit_request_line` value."
+msgstr "Permite setarea valorii `limit_request_line` a lui Gunicorn."
+>>>>>>> internal/series/4.9:mayan/apps/platform/locale/ro_RO/LC_MESSAGES/django.po

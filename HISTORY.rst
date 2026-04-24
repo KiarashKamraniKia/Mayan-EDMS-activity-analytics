@@ -1,3 +1,7 @@
+4.10.5 (XXXX-XX-XX)
+===================
+- Merge changes from version 4.9.9.
+
 4.10.4 (2026-02-27)
 ===================
 - Backport changes and improvements from version 4.11.
@@ -308,13 +312,55 @@
   - Russian (Russia)
   - Ukrainian (Ukraine)
 
-4.9.8 (XXXX-XX-XX)
+4.9.9 (2026-04-22)
+==================
+- Merge changes and improvements from version 4.8.11.
+- Backport from series 4.11:
+  - Split smart settings app views.
+  - Rename smart settings app view class names.
+  - Help texts improvements.
+  - Error logging changes:
+
+    - Add more descriptive module error log messages.
+    - Make error log messages translatable.
+    - Error logs are now no longer cleared on success. Users must clear past
+      error logs. This prevents a successful operation from clearing out still
+      valid error logs from a previous operation.
+    - Increase the default error log retention per object from 3 to 15 entries.
+    - Add a subtitle to the object error log view showing the number of entries
+      being retained for the specific object.
+
+  - Fix the math template tag name `math_substract` to `math_subtract`. Update
+    your existing templates if you use this template tag. An alias named
+    `math_substract` was added for backwards compatibility but will be removed
+    in a following minor version.
+  - Improve math tags help texts.
+
+- Update Python dependency versions:
+
+  - Markdown from 3.10 to 3.10.2
+  - Pillow from 12.1.1 to 12.2.0
+  - nh3 from 0.3.2 to 0.3.4
+
+4.9.8 (2025-12-27)
 ==================
 - Merge changes and improvements from version 4.8.10.
+- Backport changes and improvements from version 4.10.3.
 - Update dependencies versions:
 
+  - django-formtools from version 2.3 to 2.5.1.
   - sentry-sdk from 2.46.0 to 2.48.0
-  - pypdf from 6.4.0 to 6.4.2
+  - pypdf from 6.4.0 to 6.5.0
+
+- Skip cabinet and tag wizard step if the user has no access. Update the
+  cabinet and tag upload wizard steps permission logic to match the
+  logic of the metadata wizard steps and skip the step entirely if the user
+  does not have access to any of the objects.
+- Workaround undocumented backward incompatible bug in django-formtools 2.4.0.
+- Modernize `PythonDependency` class version checking. Remove use of
+  deprecated Python library `pkg_resources`.
+- Add target `config-env-copy`, a forward compatible alias for
+  `copy-config-env`.
 
 4.9.7 (2025-12-13)
 ==================
@@ -776,9 +822,19 @@
 - Improve how the select all toolbar checkbox is disabled when there are no
   results.
 
-4.8.11 (XXXX-XX-XX)
+4.8.11 (2026-04-20)
 ===================
-- Changes and improvements from version 4.7.9.
+- Changes and improvements from version 4.6.13, 4.6.14, 4.7.9, 4.7.10, series 4.10 and 4.11.
+- Automate copyright year updates.
+- Refactor `generate_setup.py`.
+- Expose Django's `CACHES` setting as `MAYAN_CACHES`.
+- Remove `importlib-metadata`.
+- Remove the `removals.txt` file.
+- Support partial app template loading for the about view.
+- Modernize the fundraiser app and avoid hardcoding locations.
+- Remove repeated GitLab CI file `apt-get update`.
+- Import `setting_cluster` from the correct module.
+- Update Docker Redis image tag from 7.2.10-alpine3.21 to 7.2.10.
 
 4.8.10 (2025-12-13)
 ===================
@@ -1078,9 +1134,41 @@
   The workflow state action context is now composed of the keys:
   `workflow_instance`, `workflow_instance_context`, `action`, and `log_entry`.
 
-4.7.9 (XXXX-XX-XX)
+4.7.10 (2026-04-19)
+===================
+- Merge and improvements from versions 4.6.14 which in turn
+  include backports from series 4.9, 4.10 and 4.11.
+- Add default makefile target that does nothing and instructs to use the
+  `help` target instead.
+- Update Python dependency versions:
+
+  - CairoSVG from 2.8.2 to 2.9.0
+  - dateparser from 1.3.0 to 1.4.0
+  - elasticsearch from 7.17.12 to 7.17.13
+  - gevent from 25.9.1 to 26.4.0
+  - greenlet from 3.3.2 to 3.4.0
+  - gunicorn from 25.1.0 to 25.3.0
+  - pypdf from 6.7.5 to 6.10.2
+  - redis from 7.2.1 to 7.4.0
+  - requests from 2.32.5 to 2.33.1
+  - sentry-sdk from 2.54.0 to 2.58.0
+
+- Update Docker image tags:
+
+  - PostgreSQL from 14.18-alpine to 14.22
+  - RabbitMQ from 3.13.7-management-alpine to 3.13.7-management
+
+4.7.9 (2026-03-10)
 ==================
-- Merge and improvements from version 4.6.12.
+- Merge and improvements from versions 4.6.12 and 4.6.13 which in turn
+  include backports from series 4.10 and 4.11.
+- Update safety from version 3.2.3 to 3.7.0.
+- Update setting `SEARCH_STORE_RESULTS_DEFAULT_VALUE` to be a choice field.
+- Rename internal references of `DOCKER_ELASTIC_` to `DOCKER_ELASTICSEARCH_`.
+- Fix documentation build warnings.
+- Update copyright year.
+- Update the Python package target to allow the `wheel` build environment
+  to download its own dependencies.
 
 4.7.8 (2025-12-13)
 ==================
@@ -1409,6 +1497,158 @@
 - Add the ID field of primary models as search fields.
 - Expose the document index instance depth and node count values via the API.
 - Add a document type API view to return all documents of that type.
+
+4.6.14 (2026-04-16)
+===================
+- Split the templating app template tags module.
+- Prefix the templating app tags and filter functions to avoid name or
+  reserved word clashes.
+- Add support for marking template tags and filters as "dangerous". These are
+  tags or filters that if not properly used or controlled with adequate
+  permissions can allow more access than intended. Adds the setting
+  `TEMPLATING_TAGS_DANGEROUS_ALLOW_LIST`, which defaults to allowing the
+  existing tags for backward compatibility.
+- Backport AJAX template deterministic assurance code.
+- Split metadata models.
+- Improve `SourceStoredFile` filename decoding.
+- Ensure metadata type parser and validator exist.
+- Harden form widget `PlainWidget` and remove usage of `mark_safe`.
+- Clean up and harden document indexing widgets.
+- Update Django from version 4.2.29 to 4.2.30.
+- Update base Docker image from debian:12.13-slim to debian:bookworm-20260406-slim.
+- Remove hardcoded Alpine Docker build package names.
+
+4.6.13 (2026-03-07)
+===================
+- Skip cabinet and tag wizard step if the user has no access. Update the
+  cabinet and tag upload wizard steps permission logic to match the
+  logic of the metadata wizard steps and skip the step entirely if the user
+  does not have access to any of the objects.
+- Modernize `PythonDependency` class version checking. Remove use of
+  deprecated Python library `pkg_resources`.
+- Update django-formtools from version 2.3 to 2.5.1.
+- Workaround undocumented backward incompatible bug in django-formtools 2.4.0.
+- Backport settings class split and duplicate namespace detection.
+- Backport `forms` app to increase forward compatibility.
+- Move the DropZone widget from the views to the forms app.
+- Remove dropzone hard coded icons.
+- Breaking change: the setting `VIEWS_SHOW_DROPZONE_SUBMIT_BUTTON`
+  is now named `FORMS_SHOW_DROPZONE_SUBMIT_BUTTON`.
+- Add test to ensure all setting namespaces render correctly.
+- Use the TLS version of NPM to download JavaScript packages.
+- Update password reset form to navigate to the login URL instead of the
+  logout URL.
+- Add a reusable chunked hashing function optimized for large files.
+- Default chunked hashing block size to 65536 bytes for better alignment with
+  memory allocation, file system buffers, and CPU cache lines.
+- Add the management command `dependencies_uninstall` to uninstall JavaScript
+  and Google Font dependencies.
+- Move `mayan/settings/literals.py` to `mayan/literals.py` to prevent
+  circular dependencies.
+- Add thousand separator to the pager.
+- Change the default value of `SEARCH_MATCH_ALL_DEFAULT_VALUE` to be a
+  boolean.
+- Update setting `SEARCH_MATCH_ALL_DEFAULT_VALUE` to be a choice field.
+- Add kwargs to `sh.Command`.
+- Add help text to settings:
+
+  - DOCUMENTS_DISPLAY_HEIGHT
+  - DOCUMENTS_DISPLAY_WIDTH
+  - DOCUMENTS_PREVIEW_HEIGHT
+  - DOCUMENTS_PREVIEW_WIDTH
+  - DOCUMENTS_PRINT_HEIGHT
+  - DOCUMENTS_PRINT_WIDTH
+
+- Translation code update
+- Add help text for `SIGNATURES_BACKEND_ARGUMENTS` and
+  `STORAGE_DOWNLOAD_FILE_STORAGE_ARGUMENTS`.
+- Missing `message=` keyword argument.
+- Improve and simplify help text wording.
+- Backport settings updates:
+
+  - Split class modules.
+  - Split test modules.
+  - Backport setting and namespace deregistration improvements.
+
+- Reinforce pruning of empty index instance nodes.
+- Reduce logging output.
+- Add `libfuse2` as a production dependency.
+- Replace the use of `sh` with upstream Python `subprocess` for the
+  `MIMETypeBackendFileCommand` class.
+- Replace the use of `sh` with upstream Python `subprocess` for the
+  `MIMETypeBackendPerlFileMIMEInfo` class.
+- Use general purpose environment variable loader for the documentation.
+- Improve setting view return navigation.
+- Fix repeated setting edit view return link.
+- Update the version check code to use the new version of the PyPI API.
+- Harden outbound HTTP requests, add timeouts defaults:
+
+  - Add a timeout of 10 seconds for initial connection and 30 seconds for
+    initial data transfer for dependency downloads.
+  - Add the `oidc_discovery_timeout` keyword argument to
+    `AuthenticationBackendOIDC`. Defaults to 5 seconds for connection and 15
+    seconds for data response.
+
+- Update Docker image tags:
+
+  - docker from 23.0.6 to 28.2.2
+  - debian from 12.12-slim to 12.13-slim
+  - postgresql from 13.22-alpine to 13.23
+  - python from 3.11.13-slim to 3.11.15-slim
+  - rabbitmq from 3.12.14-management-alpine to 3.13.7-management
+  - redis from 7.0.15-alpine to 7.0.15
+  - forge base from noble-20250910 to noble-20260210.1
+
+- Update Python dependency versions:
+
+  - amqp from 5.2.0 to 5.3.1
+  - boto3 from 1.33.7 to 1.40.24
+  - dateparser from 1.2.0 to 1.3.0
+  - django from 4.2.27 to 4.2.29
+  - django-auth-ldap from 5.2.0 to 5.3.0
+  - django-model-utils from 4.5.1 to 5.0.0
+  - django-solo from 2.4.0 to 2.5.1
+  - django-test-migrations from 1.3.0 to 1.4.0
+  - django-widget-tweaks from 1.5.0 to 1.5.1
+  - drf-yasg from 1.21.1 to 1.21.15
+  - fancycomplete from 0.8 to 0.11.1
+  - gevent from 23.9.1 to 25.9.1
+  - greenlet from 3.0.3 to 3.3.2
+  - gunicorn from 21.2.0 to 25.1.0
+  - jsonschema from 4.25.1 to 4.26.0
+  - mozilla-django-oidc from 4.0.1 to 5.0.2
+  - mysql from 2.0.3 to 2.2.7
+  - pillow from 10.4.0 to 12.1.1
+  - pip from 25.3 to 26.0.1
+  - psutil from 5.9.8 to 6.1.1
+  - psycopg from 3.1.20 to 3.3.3
+  - pycountry from 24.6.1 to 26.2.16
+  - pypdf from 6.1.3 to 6.7.5
+  - python_gnupg from 0.5.5 to 0.5.6
+  - pytz from 2025.2 to 2026.1.post1
+  - redis from 5.0.8 to 7.2.1
+  - requests from 2.31.0 to 2.32.5
+  - sentry-sdk from 2.43.0 to 2.54.0
+  - setuptools from 69.5.1 to 80.9.0
+  - wheel from 0.45.1 to 0.46.3
+  - whitenoise from 6.11.0 to 6.12.0
+
+- Change gunicorn default worker class from sync to gevent.
+- Install `setuptools` in the GitLab CI job named `job_docker_build`.
+- Add `pkg-config` as a build time dependency.
+- Prefix all GitLab CI branch with `ci`.
+- Backport Dockerfile improvements.
+- Remove older aarch64 and armv7l compatibility.
+- Move the model `WorkflowTransitionField` to its own module.
+- Remove dependency on Django's `make_random_password` method.
+- Use an explicit iterator chunk size.
+- Remove dependency on Django `utils.timezone`.
+- Refactor `ContentTypeCheckTestCaseMixin`.
+- Add note so that users don't break their installations when attempting to
+  bypass localization.
+- Update series support chart. Series 4.6 is now End-Of-Life. Series 4.6
+  was supported since January 2024 up until March 2026 for a total of 2 years
+  and 2 months. Series 4.6 users must upgrade to at least series 4.7.
 
 4.6.12 (2025-12-14)
 ===================

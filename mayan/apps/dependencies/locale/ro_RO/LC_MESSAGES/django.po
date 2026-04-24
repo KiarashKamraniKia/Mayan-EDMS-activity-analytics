@@ -275,11 +275,11 @@ msgstr ""
 "Mediu normal pentru utilizatorii finali. O dependență lipsă în acest mediu "
 "va duce la probleme și erori în timpul utilizării normale."
 
-#: environments.py:47
+#: environments.py:48
 msgid "Production"
 msgstr "Producție"
 
-#: environments.py:51
+#: environments.py:52
 msgid ""
 "Environment used running the test suit to verify the functionality of the "
 "code. Dependencies in this environment are not needed for normal production "
@@ -289,7 +289,7 @@ msgstr ""
 "codului. Dependențele în acest mediu nu sunt necesare pentru utilizarea "
 "normală în  producție."
 
-#: environments.py:54
+#: environments.py:55
 msgid "Testing"
 msgstr "Testare"
 
@@ -313,7 +313,7 @@ msgstr "Detalii"
 msgid "Dependencies licenses"
 msgstr "Licențe de dependență"
 
-#: literals.py:10
+#: literals.py:12
 #, python-format
 msgid ""
 "Your version (%(version_local)s), is more recent than the published version "
@@ -322,7 +322,7 @@ msgstr ""
 "Versiunea dvs. ( %(version_local)s ) este mai recentă decât versiunea "
 "publicată ( %(version_server)s )."
 
-#: literals.py:14
+#: literals.py:16
 #, python-format
 msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
@@ -331,11 +331,11 @@ msgstr ""
 "Versiunea pe care o utilizați ( %(version_local)s ) este învechită. Cea mai "
 "recentă versiune este %(version_server)s ."
 
-#: literals.py:18
+#: literals.py:20
 msgid "It is not possible to determine the latest version available."
 msgstr "Nu este posibil să se determine cea mai recentă versiune disponibilă."
 
-#: literals.py:21
+#: literals.py:23
 #, python-format
 msgid ""
 "Unexpected error trying to determine the latest version available. Make sure"

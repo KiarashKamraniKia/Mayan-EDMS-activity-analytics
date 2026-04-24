@@ -7,28 +7,38 @@ from django.db.models import Q
 class ContentTypeCheckTestCaseMixin:
     expected_content_types = ('text/html', 'text/html; charset=utf-8')
 
-    def _pre_setup(self):
-        super()._pre_setup()
-        test_instance = self
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
 
-        class CustomClient(self.client_class):
+        class MayanCustomClient(cls.client_class):
+            def __init__(self, *args, testcase, **kwargs):
+                self.testcase = testcase
+                super().__init__(*args, **kwargs)
+
             def request(self, *args, **kwargs):
                 response = super().request(*args, **kwargs)
 
-                content_type = response.headers.get('content-type', '')
-                if test_instance.expected_content_types:
-                    test_instance.assertTrue(
-                        content_type in test_instance.expected_content_types,
+                expected_content_types = getattr(
+                    self.testcase, 'expected_content_types', None
+                )
+
+                if expected_content_types:
+                    content_type = response.headers.get('content-type', '')
+                    self.testcase.assertTrue(
+                        content_type in expected_content_types,
                         msg='Unexpected response content type: {}, expected: {}.'.format(
-                            content_type, ' or '.join(
-                                test_instance.expected_content_types
-                            )
+                            content_type, ' or '.join(expected_content_types)
                         )
                     )
 
                 return response
 
-        self.client = CustomClient()
+        cls.MayanCustomClient = MayanCustomClient
+
+    def setUp(self):
+        self.client = self.MayanCustomClient(testcase=self)
+        super().setUp()
 
 
 class DelayTestCaseMixin:

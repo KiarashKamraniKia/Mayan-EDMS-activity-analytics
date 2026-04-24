@@ -5,9 +5,9 @@
 # 
 # Translators:
 # Badea Gabriel <gcbadea@gmail.com>, 2025
-# Roberto Rosario, 2025
 # Stefaniu Criste <gupi@hangar.ro>, 2025
 # Harald Ersch, 2025
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
@@ -27,11 +27,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr "Fișiere stocate sursă"
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr "mărime"
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "Miniatură"
 
@@ -171,10 +171,8 @@ msgid "No source files available"
 msgstr "Nu există fișiere sursă disponibile"
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
-msgstr ""
-"Valoarea lățimii care trebuie transmisă backend-ului convertorului de "
-"imagini."
+msgid "Width value to be passed to the converter backend."
+msgstr "Valoarea lățime trecuta convertorului."
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"
