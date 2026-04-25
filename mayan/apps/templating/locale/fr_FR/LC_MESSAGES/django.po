@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-30 19:40+0000\n"
+"POT-Creation-Date: 2026-04-24 06:37+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
 "Last-Translator: Roberto Rosario, 2025\n"
 "Language-Team: French (France) (https://app.transifex.com/rosarior/teams/13584/fr_FR/)\n"
@@ -109,7 +109,7 @@ msgid ""
 " template preview."
 msgstr ""
 
-#: templatetags/templating_tags.py:100
+#: templatetags/templating_tags.py:99
 msgid "Tag can bypass access controls and create permanent changes."
 msgstr ""
 

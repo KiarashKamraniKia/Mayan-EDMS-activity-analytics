@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 19:29+0000\n"
+"POT-Creation-Date: 2026-04-24 04:32+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
 "Last-Translator: Leon Chu, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/rosarior/teams/13584/zh_TW/)\n"
@@ -124,7 +124,7 @@ msgstr "创建索引"
 msgid "Delete"
 msgstr "刪除"
 
-#: links.py:88 models/index_template_models.py:50
+#: links.py:88 models/index_template_models.py:51
 #: serializers/index_template_serializers.py:196
 msgid "Document types"
 msgstr "文件類型"

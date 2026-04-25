@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 19:29+0000\n"
+"POT-Creation-Date: 2026-04-24 04:32+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
 "Last-Translator: Csaba Tarjányi, 2025\n"
 "Language-Team: Hungarian (Slovakia) (https://app.transifex.com/rosarior/teams/13584/hu_SK/)\n"
@@ -230,11 +230,11 @@ msgstr ""
 "A kulcsok és aláírások kezelésére szolgáló háttérrendszer teljes elérési "
 "útja."
 
-#: settings.py:25
+#: settings.py:26
 msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
 msgstr ""
 
-#: settings.py:30
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "A kulcsok lekérdezésére használt kulcsszerver."
 

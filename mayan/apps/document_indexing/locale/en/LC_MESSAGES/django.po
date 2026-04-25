@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 19:29+0000\n"
+"POT-Creation-Date: 2026-04-24 04:32+0000\n"
 "PO-Revision-Date: 2020-04-02 07:08+0000\n"
 "Last-Translator: Roberto Rosario\n"
 "Language-Team: English (http://www.transifex.com/rosarior/mayan-edms/"
@@ -117,7 +117,7 @@ msgstr ""
 msgid "Delete"
 msgstr ""
 
-#: links.py:88 models/index_template_models.py:50
+#: links.py:88 models/index_template_models.py:51
 #: serializers/index_template_serializers.py:196
 msgid "Document types"
 msgstr ""

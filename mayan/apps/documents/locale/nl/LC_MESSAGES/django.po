@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 19:29+0000\n"
+"POT-Creation-Date: 2026-04-24 04:32+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
 "Last-Translator: bwakkie <bwakkie@gmail.com>, 2025\n"
 "Language-Team: Dutch (https://app.transifex.com/rosarior/teams/13584/nl/)\n"
@@ -303,7 +303,7 @@ msgid "Encoding"
 msgstr "Encodering"
 
 #: forms/document_file_forms.py:71 models/document_file_model_mixins.py:380
-#: models/document_file_models.py:102
+#: models/document_file_models.py:103
 msgid "Size"
 msgstr "Maat"
 
@@ -669,7 +669,7 @@ msgid "All pages"
 msgstr "Alle pagina's"
 
 #: models/document_file_model_mixins.py:365
-#: models/document_file_page_model_mixins.py:253
+#: models/document_file_page_model_mixins.py:256
 #: models/document_model_mixins.py:179 models/document_models.py:64
 #: models/document_type_models.py:43 models/document_type_models.py:156
 #: models/document_version_model_mixins.py:133
@@ -679,7 +679,12 @@ msgstr "Alle pagina's"
 msgid "Label"
 msgstr "Label"
 
-#: models/document_file_model_mixins.py:521
+#: models/document_file_model_mixins.py:418
+#, python-format
+msgid "Error updating page count; %(exception)s"
+msgstr ""
+
+#: models/document_file_model_mixins.py:520
 msgid "Controls what happens when a new document file is uploaded."
 msgstr ""
 

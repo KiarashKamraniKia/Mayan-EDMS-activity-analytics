@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-30 19:40+0000\n"
+"POT-Creation-Date: 2026-04-24 06:37+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
 "Last-Translator: KarmaBuildsApps, 2025\n"
 "Language-Team: Tibetan (https://app.transifex.com/rosarior/teams/13584/bo/)\n"
@@ -31,17 +31,6 @@ msgstr ""
 #: classes.py:96
 #, python-format
 msgid "Model `%s` is not available for template sandbox."
-msgstr ""
-
-#: decorators.py:20
-msgid "None provided."
-msgstr ""
-
-#: decorators.py:22
-#, python-format
-msgid ""
-"Filter or tag \"%(name)s\" is considered dangerous and not allowed. Reason: "
-"%(reason)s Change setting `%(setting)s` to allow it."
 msgstr ""
 
 #: decorators.py:20
@@ -114,10 +103,6 @@ msgstr ""
 msgid ""
 "Theme name of the CSS stylesheet used to change the visual appearance of the"
 " template preview."
-msgstr ""
-
-#: templatetags/templating_tags.py:100
-msgid "Tag can bypass access controls and create permanent changes."
 msgstr ""
 
 #: templatetags/templating_tags.py:99

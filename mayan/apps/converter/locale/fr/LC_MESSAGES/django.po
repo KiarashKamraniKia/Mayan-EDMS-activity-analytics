@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 19:28+0000\n"
+"POT-Creation-Date: 2026-04-24 04:32+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
 "Last-Translator: Frédéric Sheedy <sheedf@gmail.com>, 2025\n"
 "Language-Team: French (https://app.transifex.com/rosarior/teams/13584/fr/)\n"
@@ -391,11 +391,11 @@ msgstr "Niveau d'opacité de l'image en pourcentage"
 msgid "Transparency"
 msgstr "Transparence"
 
-#: transformation_mixins.py:27 transformations.py:776
+#: transformation_mixins.py:27 transformations.py:777
 msgid "Zoom level in percent."
 msgstr "Niveau de zoom en pourcentage."
 
-#: transformation_mixins.py:28 transformations.py:771
+#: transformation_mixins.py:28 transformations.py:772
 msgid "Zoom"
 msgstr "Agrandir"
 
@@ -489,7 +489,7 @@ msgstr "Nom de l'actif"
 msgid "Color used to fill the rectangle."
 msgstr "Couleur utilisée pour remplir le rectangle."
 
-#: transformation_mixins.py:355 transformations.py:677
+#: transformation_mixins.py:355 transformations.py:678
 msgid "Fill color"
 msgstr "Couleur de remplissage"
 
@@ -593,7 +593,7 @@ msgstr "Retourner"
 msgid "Gaussian blur"
 msgstr "Flou gaussien"
 
-#: transformations.py:545 transformations.py:746
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr "Rayon"
 
@@ -649,39 +649,39 @@ msgstr "Degrés"
 msgid "Color to be used for area outside of the rotated image."
 msgstr "Couleur à utiliser pour la zone en dehors de l'image pivotée."
 
-#: transformations.py:708
+#: transformations.py:709
 msgid "Rotate 90 degrees"
 msgstr "Rotation à 90 degrées"
 
-#: transformations.py:719
+#: transformations.py:720
 msgid "Rotate 180 degrees"
 msgstr "Rotation à 180 degrées"
 
-#: transformations.py:730
+#: transformations.py:731
 msgid "Rotate 270 degrees"
 msgstr "Rotation à 270 degrées"
 
-#: transformations.py:740
+#: transformations.py:741
 msgid "Unsharp masking"
 msgstr "Masquage flou"
 
-#: transformations.py:745
+#: transformations.py:746
 msgid "The blur radius in pixels."
 msgstr "Le rayon de flou en pixels."
 
-#: transformations.py:749
+#: transformations.py:750
 msgid "Unsharp strength in percent."
 msgstr "Force du flou en pourcentage."
 
-#: transformations.py:750 transformations.py:777
+#: transformations.py:751 transformations.py:778
 msgid "Percent"
 msgstr "Pourcent"
 
-#: transformations.py:754
+#: transformations.py:755
 msgid "Minimum brightness change that will be sharpened."
 msgstr "Changement de luminosité minimum qui sera accentué."
 
-#: transformations.py:755
+#: transformations.py:756
 msgid "Tthreshold"
 msgstr "Limite"
 

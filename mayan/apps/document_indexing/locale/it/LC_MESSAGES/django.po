@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 19:29+0000\n"
+"POT-Creation-Date: 2026-04-24 04:32+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
 "Last-Translator: piera.daraio, 2025\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
@@ -124,7 +124,7 @@ msgstr "Crea indice"
 msgid "Delete"
 msgstr "Cancella"
 
-#: links.py:88 models/index_template_models.py:50
+#: links.py:88 models/index_template_models.py:51
 #: serializers/index_template_serializers.py:196
 msgid "Document types"
 msgstr "Tipi documento"
@@ -200,7 +200,7 @@ msgstr "Valore"
 
 #: models/index_instance_models.py:73 models/index_instance_models.py:103
 msgid "Index instance node"
-msgstr "Nodo della'istanza indice"
+msgstr "Nodo dell'istanza indice"
 
 #: models/index_instance_models.py:74
 msgid "Indexes instances node"

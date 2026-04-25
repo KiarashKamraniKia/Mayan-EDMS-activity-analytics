@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 19:29+0000\n"
+"POT-Creation-Date: 2026-04-24 04:32+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
 "Last-Translator: yan songwei <yansw@vip.163.com>, 2025\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/rosarior/teams/13584/zh_TW/)\n"
@@ -40,11 +40,11 @@ msgstr "内部名称"
 msgid "Description"
 msgstr "描述"
 
-#: apps.py:45 classes.py:220
+#: apps.py:45 classes.py:221
 msgid "Type"
 msgstr "類型"
 
-#: apps.py:49 classes.py:223
+#: apps.py:49 classes.py:224
 msgid "Other data"
 msgstr "其他数据"
 
@@ -52,7 +52,7 @@ msgstr "其他数据"
 msgid "Declared by"
 msgstr "声明"
 
-#: apps.py:57 classes.py:221
+#: apps.py:57 classes.py:222
 msgid "Version"
 msgstr "版本"
 
@@ -60,149 +60,149 @@ msgstr "版本"
 msgid "Environment"
 msgstr "环境"
 
-#: apps.py:64 classes.py:223
+#: apps.py:64 classes.py:224
 msgid "Check"
 msgstr "检查"
 
-#: classes.py:220
+#: classes.py:221
 msgid "Name"
 msgstr "名称"
 
-#: classes.py:221
+#: classes.py:222
 msgid "App"
 msgstr "APP"
 
-#: classes.py:222 classes.py:1039
+#: classes.py:223 classes.py:1043
 msgid "Environments"
 msgstr ""
 
-#: classes.py:342
+#: classes.py:343
 msgid "Need to specify at least one: app_label or module."
 msgstr "需要至少指定一个：app_label或模块。"
 
-#: classes.py:347
+#: classes.py:348
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "相依性 \"%s\"已被註冊"
 
-#: classes.py:399
+#: classes.py:400
 #, python-format
 msgid "Installing package: %s... "
 msgstr "正在安裝封裝包 : %s..."
 
-#: classes.py:406
+#: classes.py:407
 msgid "Already installed."
 msgstr "已安装。"
 
-#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
+#: classes.py:412 classes.py:419 classes.py:425 classes.py:437
 msgid "Complete."
 msgstr "已完成。"
 
-#: classes.py:431
+#: classes.py:432
 #, python-format
 msgid "Uninstalling package: %s... "
 msgstr ""
 
-#: classes.py:463
+#: classes.py:464
 msgid "Installed and correct version"
 msgstr "安装正确的版本"
 
-#: classes.py:465
+#: classes.py:466
 msgid "Missing or incorrect version"
 msgstr "版本缺失或不正确"
 
-#: classes.py:502
+#: classes.py:503
 msgid "None"
 msgstr "没有"
 
-#: classes.py:511
+#: classes.py:512
 msgid "Not specified"
 msgstr "未标明"
 
-#: classes.py:514
+#: classes.py:515
 msgid "Patching files... "
 msgstr "正在修补文件。。。"
 
-#: classes.py:542
+#: classes.py:543
 msgid "Executables that are called directly by the code."
 msgstr "由代码直接调用的可执行文件。"
 
-#: classes.py:544
+#: classes.py:545
 msgid "Binary"
 msgstr "二进制"
 
-#: classes.py:562
+#: classes.py:563
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
 msgstr "JavaScript库从NPM注册表中已下载，并用于前端功能。"
 
-#: classes.py:565
+#: classes.py:566
 msgid "JavaScript"
 msgstr "JavaScript"
 
-#: classes.py:597 classes.py:931
+#: classes.py:598 classes.py:933
 msgid "Downloading... "
 msgstr "正在下载..."
 
-#: classes.py:602
+#: classes.py:603
 msgid "Verifying... "
 msgstr "验证中..."
 
-#: classes.py:607 classes.py:936
+#: classes.py:608 classes.py:938
 msgid "Extracting... "
 msgstr "提取中..."
 
-#: classes.py:622 classes.py:943
+#: classes.py:623 classes.py:945
 msgid "Uninstalling... "
 msgstr ""
 
-#: classes.py:840
+#: classes.py:841
 msgid "Python packages downloaded from PyPI."
 msgstr "从PyPI下载的Python软件包。"
 
-#: classes.py:842
+#: classes.py:843
 msgid "Python"
 msgstr "Python"
 
-#: classes.py:910
+#: classes.py:912
 msgid "Fonts downloaded from fonts.googleapis.com."
 msgstr "从fonts.googleapis.com下载字体。"
 
-#: classes.py:912
+#: classes.py:914
 msgid "Google font"
 msgstr "Google字体"
 
-#: classes.py:1020
+#: classes.py:1023
 msgid "Declared in app"
 msgstr "在应用中声明"
 
-#: classes.py:1021
+#: classes.py:1024
 msgid "Show dependencies by the app that declared them."
 msgstr "通过声明它们的应用程序显示依赖关系。"
 
-#: classes.py:1025
+#: classes.py:1028
 msgid "Class"
 msgstr "类"
 
-#: classes.py:1026
+#: classes.py:1029
 msgid ""
 "Show the different classes of dependencies. Classes are usually divided by "
 "language or the file types of the dependency."
 msgstr "显示依赖关系的不同类别。类通常按语言或依赖项的文件类型划分。"
 
-#: classes.py:1031
+#: classes.py:1034
 msgid "State"
 msgstr "状态"
 
-#: classes.py:1032
+#: classes.py:1035
 msgid ""
 "Show the different states of the dependencies. True means that the "
 "dependencies is installed and is of a correct version. False means the "
 "dependencies is missing or an incorrect version is present."
 msgstr ""
 
-#: classes.py:1040
+#: classes.py:1044
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."

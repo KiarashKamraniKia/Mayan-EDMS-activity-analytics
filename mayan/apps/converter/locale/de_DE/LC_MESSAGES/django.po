@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-27 19:28+0000\n"
+"POT-Creation-Date: 2026-04-24 04:32+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
 "Last-Translator: Mathias Behrle <mathiasb@m9s.biz>, 2025\n"
 "Language-Team: German (Germany) (https://app.transifex.com/rosarior/teams/13584/de_DE/)\n"
@@ -387,11 +387,11 @@ msgstr "Opazität des Bildes in Prozent"
 msgid "Transparency"
 msgstr "Transparenz"
 
-#: transformation_mixins.py:27 transformations.py:776
+#: transformation_mixins.py:27 transformations.py:777
 msgid "Zoom level in percent."
 msgstr "Zoom in Prozent."
 
-#: transformation_mixins.py:28 transformations.py:771
+#: transformation_mixins.py:28 transformations.py:772
 msgid "Zoom"
 msgstr "Zoom"
 
@@ -485,7 +485,7 @@ msgstr "Name des Asset"
 msgid "Color used to fill the rectangle."
 msgstr "Verwendete Füllfarbe für das Rechteck."
 
-#: transformation_mixins.py:355 transformations.py:677
+#: transformation_mixins.py:355 transformations.py:678
 msgid "Fill color"
 msgstr "Füllfarbe"
 
@@ -589,7 +589,7 @@ msgstr "Drehen"
 msgid "Gaussian blur"
 msgstr "Gaußsche Unschärfe"
 
-#: transformations.py:545 transformations.py:746
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr "Radius"
 
@@ -645,39 +645,39 @@ msgstr "Grade"
 msgid "Color to be used for area outside of the rotated image."
 msgstr "Zu verwendende Farbe für den Bereich außerhalb des rotierten Bildes."
 
-#: transformations.py:708
+#: transformations.py:709
 msgid "Rotate 90 degrees"
 msgstr "Um 90° drehen"
 
-#: transformations.py:719
+#: transformations.py:720
 msgid "Rotate 180 degrees"
 msgstr "Um 180° drehen"
 
-#: transformations.py:730
+#: transformations.py:731
 msgid "Rotate 270 degrees"
 msgstr "Um 270° drehen"
 
-#: transformations.py:740
+#: transformations.py:741
 msgid "Unsharp masking"
 msgstr "Unscharf maskieren"
 
-#: transformations.py:745
+#: transformations.py:746
 msgid "The blur radius in pixels."
 msgstr "Unschärferadius in Pixeln."
 
-#: transformations.py:749
+#: transformations.py:750
 msgid "Unsharp strength in percent."
 msgstr "Unschärferadius in Prozent"
 
-#: transformations.py:750 transformations.py:777
+#: transformations.py:751 transformations.py:778
 msgid "Percent"
 msgstr "Prozent"
 
-#: transformations.py:754
+#: transformations.py:755
 msgid "Minimum brightness change that will be sharpened."
 msgstr "Minimale Helligkeitsänderung, die schärfer gezeichnet wird."
 
-#: transformations.py:755
+#: transformations.py:756
 msgid "Tthreshold"
 msgstr "Grenzwert"
 

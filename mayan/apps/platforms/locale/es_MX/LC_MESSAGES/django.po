@@ -10,13 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD:mayan/apps/platforms/locale/es_MX/LC_MESSAGES/django.po
 "POT-Creation-Date: 2026-02-27 19:30+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
-=======
-"POT-Creation-Date: 2025-01-20 12:32+0000\n"
-"PO-Revision-Date: 2025-01-20 12:34+0000\n"
->>>>>>> internal/series/4.9:mayan/apps/platform/locale/es_MX/LC_MESSAGES/django.po
 "Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Spanish (Mexico) (https://app.transifex.com/rosarior/teams/13584/es_MX/)\n"
 "MIME-Version: 1.0\n"
@@ -67,7 +62,6 @@ msgid "Load an alternate settings file."
 msgstr "Cargar un archivo alternativo de configuración."
 
 #: settings.py:50
-<<<<<<< HEAD:mayan/apps/platforms/locale/es_MX/LC_MESSAGES/django.po
 msgid "Allows setting Gunicorn's `limit_request_line` value."
 msgstr "Permite establecer el valor `limit_request_line` de Gunicorn."
 
@@ -90,27 +84,3 @@ msgstr "Permite establecer el valor `worker_class` de Gunicorn."
 #: settings.py:81
 msgid "Allows setting Gunicorn's `workers` value."
 msgstr "Permite establecer el valor de `workers` de Gunicorn."
-=======
-msgid "Allows setting Gunicorn's `workers` value."
-msgstr "Permite establecer el valor de `workers` de Gunicorn."
-
-#: settings.py:56
-msgid "Allows setting Gunicorn's `worker_class` value."
-msgstr "Permite establecer el valor `worker_class` de Gunicorn."
-
-#: settings.py:63
-msgid "Allows setting Gunicorn's `timeout` value."
-msgstr "Permite establecer el valor de `timeout` de Gunicorn."
-
-#: settings.py:69
-msgid "Allows setting Gunicorn's `max_requests_jitter` value."
-msgstr "Permite establecer el valor `max_requests_jitter` de Gunicorn."
-
-#: settings.py:75
-msgid "Allows setting Gunicorn's `max_requests` value."
-msgstr "Permite establecer el valor `max_requests` de Gunicorn."
-
-#: settings.py:81
-msgid "Allows setting Gunicorn's `limit_request_line` value."
-msgstr "Permite establecer el valor `limit_request_line` de Gunicorn."
->>>>>>> internal/series/4.9:mayan/apps/platform/locale/es_MX/LC_MESSAGES/django.po

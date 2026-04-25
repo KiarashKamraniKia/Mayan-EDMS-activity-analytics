@@ -10,13 +10,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD:mayan/apps/platforms_docker/locale/es/LC_MESSAGES/django.po
 "POT-Creation-Date: 2025-10-30 19:39+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
-=======
-"POT-Creation-Date: 2025-01-20 12:33+0000\n"
-"PO-Revision-Date: 2025-01-20 12:34+0000\n"
->>>>>>> internal/series/4.9:mayan/apps/platform_docker/locale/es/LC_MESSAGES/django.po
 "Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Spanish (https://app.transifex.com/rosarior/teams/13584/es/)\n"
 "MIME-Version: 1.0\n"

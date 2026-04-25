@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-30 19:39+0000\n"
+"POT-Creation-Date: 2026-04-24 04:33+0000\n"
 "PO-Revision-Date: 2025-10-30 19:40+0000\n"
 "Last-Translator: serhatcan77 <serhat_can@yahoo.com>, 2025\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
@@ -179,7 +179,7 @@ msgstr ""
 msgid "Full path to the backend to be used to do OCR."
 msgstr "OCR yapmak için kullanılacak arka uç için tam yol."
 
-#: settings.py:29
+#: settings.py:30
 msgid "Arguments to pass to `OCR_BACKEND`."
 msgstr ""
 
