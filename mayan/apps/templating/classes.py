@@ -1,5 +1,4 @@
 import hashlib
-import re
 
 from django.template.response import TemplateResponse
 from django.utils.translation import gettext_lazy as _
@@ -54,7 +53,7 @@ class AJAXTemplate:
         self.html = result.rendered_content.replace('\n', '')
 
         hash_string_raw = result.content.decode()
-        hash_string_cleaned = REGEX_COMPILED_AJAX_TEMPLATE_HASH_EXCLUDE.sub(
+        hash_string_cleaned = REGULAR_AJAX_TEMPLATE_HASH_EXCLUDE_PAIR.sub(
             repl='', string=hash_string_raw
         )
         hash_string_final = hash_string_cleaned.encode()
