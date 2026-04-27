@@ -386,11 +386,11 @@ msgstr "Livello di opacità dell'immagine, in percentuale"
 msgid "Transparency"
 msgstr "Trasparenza"
 
-#: transformation_mixins.py:27 transformations.py:776
+#: transformation_mixins.py:27 transformations.py:777
 msgid "Zoom level in percent."
 msgstr "Livello di ingrandimento, in percentuale"
 
-#: transformation_mixins.py:28 transformations.py:771
+#: transformation_mixins.py:28 transformations.py:772
 msgid "Zoom"
 msgstr "Ingrandimento"
 
@@ -484,7 +484,7 @@ msgstr "Nome risorsa"
 msgid "Color used to fill the rectangle."
 msgstr "Colore utilizzato per il riempimento del rettangolo."
 
-#: transformation_mixins.py:355 transformations.py:677
+#: transformation_mixins.py:355 transformations.py:678
 msgid "Fill color"
 msgstr "Colore di riempimento"
 
@@ -588,7 +588,7 @@ msgstr "Capovolgi"
 msgid "Gaussian blur"
 msgstr "Sfocatura gaussiana"
 
-#: transformations.py:545 transformations.py:746
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr "Raggio"
 
@@ -644,39 +644,39 @@ msgstr "Gradi"
 msgid "Color to be used for area outside of the rotated image."
 msgstr "Colore da utilizzare per l'area esterna all'immagine ruotata."
 
-#: transformations.py:708
+#: transformations.py:709
 msgid "Rotate 90 degrees"
 msgstr "Ruota di 90 Gradi"
 
-#: transformations.py:719
+#: transformations.py:720
 msgid "Rotate 180 degrees"
 msgstr "Ruota di 180 gradi"
 
-#: transformations.py:730
+#: transformations.py:731
 msgid "Rotate 270 degrees"
 msgstr "Ruota di 270 gradi"
 
-#: transformations.py:740
+#: transformations.py:741
 msgid "Unsharp masking"
 msgstr "Maschera di contrasto"
 
-#: transformations.py:745
+#: transformations.py:746
 msgid "The blur radius in pixels."
 msgstr "Raggio della sfocatura in pixel."
 
-#: transformations.py:749
+#: transformations.py:750
 msgid "Unsharp strength in percent."
 msgstr "Intensità dell'unsharp in percentuale."
 
-#: transformations.py:750 transformations.py:777
+#: transformations.py:751 transformations.py:778
 msgid "Percent"
 msgstr "Percentuale"
 
-#: transformations.py:754
+#: transformations.py:755
 msgid "Minimum brightness change that will be sharpened."
 msgstr "Variazione minima di luminosità che verrà messa a fuoco."
 
-#: transformations.py:755
+#: transformations.py:756
 msgid "Tthreshold"
 msgstr "Soglia"
 

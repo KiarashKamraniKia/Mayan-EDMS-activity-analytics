@@ -183,7 +183,7 @@ msgstr "URL །"
 #: settings.py:22
 msgid ""
 "The threshold at which the "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND will start "
+"`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND` will start "
 "deleting the oldest signature capture cache files. Specify the size in "
 "bytes."
 msgstr ""
@@ -197,7 +197,7 @@ msgstr ""
 #: settings.py:39
 msgid ""
 "Arguments to pass to the "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND."
+"`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND`."
 msgstr ""
 
 #: storages.py:14

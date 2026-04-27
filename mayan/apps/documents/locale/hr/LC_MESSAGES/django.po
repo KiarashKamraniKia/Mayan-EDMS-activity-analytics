@@ -282,16 +282,16 @@ msgstr ""
 msgid "Date added"
 msgstr ""
 
-#: forms/document_file_forms.py:63 models/document_file_models.py:84
+#: forms/document_file_forms.py:63 models/document_file_models.py:85
 msgid "MIME type"
 msgstr ""
 
-#: forms/document_file_forms.py:67 models/document_file_models.py:90
+#: forms/document_file_forms.py:67 models/document_file_models.py:91
 msgid "Encoding"
 msgstr ""
 
 #: forms/document_file_forms.py:71 models/document_file_model_mixins.py:380
-#: models/document_file_models.py:102
+#: models/document_file_models.py:103
 msgid "Size"
 msgstr ""
 
@@ -303,7 +303,7 @@ msgstr ""
 msgid "Path in storage"
 msgstr ""
 
-#: forms/document_file_forms.py:83 models/document_file_models.py:97
+#: forms/document_file_forms.py:83 models/document_file_models.py:98
 msgid "Checksum"
 msgstr ""
 
@@ -451,7 +451,7 @@ msgstr ""
 msgid "Next page"
 msgstr ""
 
-#: links/document_file_page_links.py:76 models/document_file_models.py:107
+#: links/document_file_page_links.py:76 models/document_file_models.py:108
 #: models/document_file_page_models.py:28 search.py:55
 msgid "Document file"
 msgstr ""
@@ -675,40 +675,40 @@ msgstr ""
 msgid "The server date and time when the document file was processed."
 msgstr ""
 
-#: models/document_file_models.py:63 models/document_version_models.py:36
+#: models/document_file_models.py:64 models/document_version_models.py:36
 msgid "Timestamp"
 msgstr ""
 
-#: models/document_file_models.py:67
+#: models/document_file_models.py:68
 msgid "An optional short text describing the document file."
 msgstr ""
 
-#: models/document_file_models.py:68 models/document_version_models.py:41
+#: models/document_file_models.py:69 models/document_version_models.py:41
 msgid "Comment"
 msgstr "Komentar"
 
-#: models/document_file_models.py:73 serializers/document_serializers.py:93
+#: models/document_file_models.py:74 serializers/document_serializers.py:93
 msgid "File"
 msgstr ""
 
-#: models/document_file_models.py:76
+#: models/document_file_models.py:77
 msgid "Filename"
 msgstr ""
 
-#: models/document_file_models.py:80
+#: models/document_file_models.py:81
 msgid ""
 "The document file's file mimetype. MIME types are a standard way to describe"
 " the format of a file, in this case the file format of the document. Some "
 "examples: \"text/plain\" or \"image/jpeg\". "
 msgstr ""
 
-#: models/document_file_models.py:88
+#: models/document_file_models.py:89
 msgid ""
 "The document file file encoding. binary 7-bit, binary 8-bit, text, base64, "
 "etc."
 msgstr ""
 
-#: models/document_file_models.py:108 storages.py:27
+#: models/document_file_models.py:109 storages.py:27
 msgid "Document files"
 msgstr ""
 

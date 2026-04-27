@@ -12,7 +12,7 @@ class SettingNamespaceMetaclass(type):
     def __call__(mcls, cluster, name, **kwargs):
         if name in mcls._registry:
             raise ImproperlyConfigured(
-                'Namespace `{}` already exists.'.format(name)
+                'Setting namespace `{}` already exists.'.format(name)
             )
         else:
             instance = super().__call__(

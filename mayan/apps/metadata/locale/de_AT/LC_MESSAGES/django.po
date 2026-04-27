@@ -95,7 +95,7 @@ msgstr "Wert"
 msgid "Update"
 msgstr "Aktualisieren"
 
-#: forms.py:50 forms.py:233 models/document_type_metadata_type_models.py:31
+#: forms.py:50 forms.py:234 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "Erforderlich"
 
@@ -114,7 +114,7 @@ msgstr "Fehler für Standardwert: %s"
 msgid "\"%s\" is required for this document type."
 msgstr "\"%s\" wird für diesen Dokumententyp benötigt."
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr "Metadatentypen für die ausgewählten Dokumente."
 
@@ -124,31 +124,31 @@ msgstr "Metadatentypen für die ausgewählten Dokumente."
 msgid "Metadata type"
 msgstr "Metadatentyp"
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Entfernen"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr "Basis"
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr "Werte"
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr "Validierung"
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr "Parsing"
 
-#: forms.py:231
+#: forms.py:232
 msgid "None"
 msgstr "Keine"
 
-#: forms.py:232
+#: forms.py:233
 msgid "Optional"
 msgstr "Optional"
 

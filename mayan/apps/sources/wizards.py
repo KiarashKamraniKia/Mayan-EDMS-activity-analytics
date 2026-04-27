@@ -63,8 +63,8 @@ class DocumentCreateWizard(ViewIconMixin, wizards.SessionWizardView):
 
         messages.error(
             message=_(
-                message='No interactive document sources have been defined or '
-                'none have been enabled, create one before proceeding.'
+                message='No interactive document sources have been defined '
+                'or none have been enabled, create one before proceeding.'
             ), request=request
         )
         return HttpResponseRedirect(

@@ -26,13 +26,13 @@ msgstr ""
 msgid "Document parsing"
 msgstr "Analiza documentelor"
 
-#: apps.py:113 apps.py:119
+#: apps.py:113 apps.py:120
 msgid "A generator returning the document file's pages parsed content."
 msgstr ""
 "Un generator care returnează conținutul analizat din paginile fișierului "
 "documentului."
 
-#: apps.py:114 apps.py:120 links.py:26 links.py:65 models.py:27 search.py:18
+#: apps.py:115 apps.py:121 links.py:26 links.py:65 models.py:27 search.py:18
 msgid "Content"
 msgstr "Conținut"
 
@@ -168,7 +168,7 @@ msgstr ""
 "Setați tipuri noi de documente pentru a efectua analiza în mod automat în "
 "mod prestabilit."
 
-#: settings.py:24
+#: settings.py:25
 msgid ""
 "File path to poppler's pdftotext program used to extract text from PDF "
 "files."
@@ -188,52 +188,52 @@ msgstr ""
 msgid "Content of %(count)d document versions deleted successfully."
 msgstr "Conținutul versiunilor documentului %(count)d a fost șters cu succes."
 
-#: views.py:48
+#: views.py:49
 #, python-format
 msgid "Content of \"%(object)s\" deleted successfully."
 msgstr "Conținutul „%(object)s” a fost șters cu succes."
 
-#: views.py:51
+#: views.py:52
 #, python-format
 msgid "Content of %(count)d document version deleted successfully."
 msgstr "Conținutul versiunii documentului %(count)d a fost șters cu succes."
 
-#: views.py:53
+#: views.py:54
 #, python-format
 msgid "Delete the content of: %(object)s."
 msgstr "Ștergeți conținutul din: %(object)s."
 
-#: views.py:55
+#: views.py:56
 #, python-format
 msgid "Delete the content of the %(count)d selected document version."
 msgstr "Ștergeți conținutul versiunii documentului selectat %(count)d."
 
-#: views.py:58
+#: views.py:60
 #, python-format
 msgid "Delete the content of the %(count)d selected document versions."
 msgstr "Ștergeți conținutul versiunilor de document %(count)d selectate."
 
-#: views.py:99
+#: views.py:102
 #, python-format
 msgid "Content for document file: %s"
 msgstr "Conținut pentru fișierul document: %s"
 
-#: views.py:121
+#: views.py:124
 #, python-format
 msgid "Content for document file page: %s"
 msgstr "Conținut pentru pagina fișierului document: %s"
 
-#: views.py:136
+#: views.py:139
 #, python-format
 msgid "%(count)d document file added to the parsing queue"
 msgstr "Fișierul document %(count)d adăugat la coada de analiză"
 
-#: views.py:139
+#: views.py:142
 #, python-format
 msgid "%(count)d documents files added to the parsing queue"
 msgstr "%(count)d fișiere document adăugate la coada de analiză"
 
-#: views.py:148
+#: views.py:151
 #, python-format
 msgid "Submit %(count)d document file to the parsing queue?"
 msgid_plural "Submit %(count)d documents files to the parsing queue?"
@@ -241,21 +241,21 @@ msgstr[0] "Trimiteți fișierul document %(count)d la coada de analiză?"
 msgstr[1] "Trimiteți fișierele documentelor %(count)d la coada de analiză?"
 msgstr[2] "Trimiteți  %(count)d fișiere document la coada de analiză?"
 
-#: views.py:161
+#: views.py:164
 #, python-format
 msgid "Submit document file \"%s\" to the parsing queue"
 msgstr "Trimiteți fișierul document „%s” la coada de analiză"
 
-#: views.py:191
+#: views.py:195
 #, python-format
 msgid "Edit parsing settings for document type: %s."
 msgstr "Editați setările de analiză pentru tipul de document: %s."
 
-#: views.py:201
+#: views.py:205
 msgid "Submit all documents of a type for parsing"
 msgstr "Trimiteți toate documentele de un tip la analiză"
 
-#: views.py:223
+#: views.py:227
 #, python-format
 msgid "%(count)d documents added to the parsing queue."
 msgstr "%(count)d documente adăugate la coada de analiză."

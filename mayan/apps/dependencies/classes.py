@@ -561,8 +561,8 @@ class BinaryDependency(Dependency):
 class JavaScriptDependency(Dependency):
     class_name = 'javascript'
     class_name_help_text = _(
-        message='JavaScript libraries downloaded the from NPM registry and used for '
-        'front-end functionality.'
+        message='JavaScript libraries downloaded the from NPM registry and '
+        'used for front-end functionality.'
     )
     class_name_verbose_name = _(message='JavaScript')
     provider_class = NPMRegistryRespository
@@ -1027,21 +1027,23 @@ DependencyGroup(
 )
 DependencyGroup(
     attribute_name='class_name', label=_(message='Class'), help_text=_(
-        message='Show the different classes of dependencies. Classes are usually '
-        'divided by language or the file types of the dependency.'
+        message='Show the different classes of dependencies. Classes are '
+        'usually divided by language or the file types of the dependency.'
     ), name='class'
 )
 DependencyGroup(
     attribute_name='check_string', label=_(message='State'), help_text=_(
-        message='Show the different states of the dependencies. True means that the '
-        'dependencies is installed and is of a correct version. False means '
-        'the dependencies is missing or an incorrect version is present.'
+        message='Show the different states of the dependencies. True means '
+        'that the dependencies is installed and is of a correct version. '
+        'False means the dependencies is missing or an incorrect version is '
+        'present.'
     ), name='state'
 )
 DependencyGroup(
     allow_multiple=True, attribute_name='get_environments',
     label=_(message='Environments'), help_text=_(
-        message='Dependencies required for an environment might not be required for '
-        'another. Example environments: Production, Development.'
+        message='Dependencies required for an environment might not be '
+        'required for another. Example environments: Production, '
+        'Development.'
     ), name='environment'
 )

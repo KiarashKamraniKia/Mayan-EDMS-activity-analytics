@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_GRAPHVIZ_DOT_PATH, DEFAULT_WORKFLOWS_IMAGE_CACHE_MAXIMUM_SIZE,
@@ -26,17 +26,16 @@ setting_workflow_image_cache_maximum_size = setting_namespace.do_setting_add(
     global_name='WORKFLOWS_IMAGE_CACHE_MAXIMUM_SIZE',
     help_text=_(
         message='The threshold at which the '
-        '`WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` '
-        'will start deleting the oldest workflow image cache files. '
-        'Specify the size in bytes.'
+        '`WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` will start deleting the '
+        'oldest workflow image cache files. Specify the size in bytes.'
     ), post_edit_function=callback_update_workflow_image_cache_size
 )
 
 setting_workflow_image_cache_storage_backend = setting_namespace.do_setting_add(
     default=DEFAULT_WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND,
     global_name='WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND', help_text=_(
-        message='Path to the Storage subclass to use when storing the cached '
-        'workflow image files.'
+        message='Path to the Storage subclass to use when storing the '
+        'cached workflow image files.'
     )
 )
 setting_workflow_image_cache_storage_backend_arguments = setting_namespace.do_setting_add(

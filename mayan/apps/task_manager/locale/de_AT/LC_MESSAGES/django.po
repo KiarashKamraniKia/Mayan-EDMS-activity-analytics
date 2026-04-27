@@ -29,11 +29,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Task-Manager"
 
-#: apps.py:123 apps.py:200 classes.py:64
+#: apps.py:123 apps.py:201 classes.py:64
 msgid "Label"
 msgstr "Bezeichner"
 
-#: apps.py:127 apps.py:204 classes.py:71
+#: apps.py:127 apps.py:205 classes.py:71
 msgid "Name"
 msgstr "Name"
 
@@ -52,35 +52,35 @@ msgstr ""
 "Warteschlangen benötigen weniger Ressourcen und werden für unkritische Tasks"
 " verwendet."
 
-#: apps.py:140
+#: apps.py:141
 msgid "Is transient?"
 msgstr "Vorübergehend"
 
-#: apps.py:171
+#: apps.py:172
 msgid "Type"
 msgstr "Typ"
 
-#: apps.py:176
+#: apps.py:177
 msgid "Start time"
 msgstr "Startzeit"
 
-#: apps.py:180
+#: apps.py:181
 msgid "Host"
 msgstr "Host"
 
-#: apps.py:184
+#: apps.py:185
 msgid "Arguments"
 msgstr "Argumente"
 
-#: apps.py:188
+#: apps.py:189
 msgid "Keyword arguments"
 msgstr "Schlüsselwortargumente"
 
-#: apps.py:193
+#: apps.py:194
 msgid "Worker process ID"
 msgstr "Worker Prozess-ID"
 
-#: apps.py:213
+#: apps.py:214
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
@@ -88,11 +88,11 @@ msgstr ""
 "Maximale Anzahl an Tasks, die ein Worker ausführen kann, bevor er durch "
 "einen neuen Prozess ersetzt wird."
 
-#: apps.py:215
+#: apps.py:216
 msgid "Maximum tasks per child"
 msgstr "Maximale Tasks pro Kindprozess"
 
-#: apps.py:220
+#: apps.py:221
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
@@ -100,11 +100,11 @@ msgstr ""
 "Die Anzahl an Workerprozessen/-threads. Standard ist die Anzahl an "
 "verfügbaren CPUs."
 
-#: apps.py:222
+#: apps.py:223
 msgid "Concurrency"
 msgstr "Nebenläufigkeit"
 
-#: apps.py:227
+#: apps.py:228
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
@@ -112,7 +112,7 @@ msgstr ""
 "Der Nice Wert bestimmt die Priorität eines Prozesses. Ein höherer Wert setzt"
 " die Priorität herunter. Standard ist 0."
 
-#: apps.py:230
+#: apps.py:231
 msgid "Nice level"
 msgstr "Nice Level"
 

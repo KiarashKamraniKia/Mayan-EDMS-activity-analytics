@@ -144,6 +144,10 @@ msgstr ""
 msgid "Settings namespace"
 msgstr "Пространство на имената на настройките"
 
+#: namespaces.py:94
+msgid "Settings namespace"
+msgstr "Пространство на имената на настройките"
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr "Редактиране на настройките"
@@ -500,13 +504,10 @@ msgstr ""
 
 #: settings.py:286
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"По подразбиране: &#39;sessionid&#39;. Името на бисквитката, която да "
-"използвате за сесии. Това може да бъде каквото искате (стига да е различно "
-"от другите имена на бисквитки във вашето приложение)."
 
 #: settings.py:294
 msgid ""

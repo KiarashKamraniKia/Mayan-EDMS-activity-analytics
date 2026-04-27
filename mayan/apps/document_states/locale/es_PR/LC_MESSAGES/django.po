@@ -649,15 +649,15 @@ msgstr "Proxies de tiempo de ejecución de estado de flujo de trabajo"
 msgid "Lookup value error: %s"
 msgstr "Error en valor de búsqueda: %s"
 
-#: models/workflow_transition_field_model_mixins.py:111
+#: models/workflow_transition_field_model_mixins.py:110
 msgid "Has a default?"
 msgstr "¿Tiene un valor predeterminado?"
 
-#: models/workflow_transition_field_model_mixins.py:119
+#: models/workflow_transition_field_model_mixins.py:118
 msgid "Has a lookup?"
 msgstr "¿Tiene una búsqueda?"
 
-#: models/workflow_transition_field_model_mixins.py:130
+#: models/workflow_transition_field_model_mixins.py:129
 msgid "Value is not one of the provided options."
 msgstr "El valor no es una de las opciones provistas."
 
@@ -970,7 +970,7 @@ msgstr ""
 "Llave principal del tipo de documento para agregar al flujo de trabajo."
 
 #: serializers/workflow_template_serializers.py:71
-#: serializers/workflow_template_serializers.py:80
+#: serializers/workflow_template_serializers.py:81
 msgid "Document type ID"
 msgstr "ID del tipo de documento"
 
@@ -995,11 +995,11 @@ msgstr ""
 "Llave principal de la transición de la plantilla de flujo de trabajo que se "
 "agregará."
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "ID de transición de plantilla de flujo de trabajo"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "URL de transición de plantilla de flujo de trabajo"
 
@@ -1389,33 +1389,33 @@ msgstr ""
 msgid "Workflow transition trigger events for: %s"
 msgstr "Eventos de disparo de transición de flujo de trabajo para: %s"
 
-#: views/workflow_template_transition_views.py:39
+#: views/workflow_template_transition_views.py:40
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "Crear transiciones para el flujo de trabajo: %s"
 
-#: views/workflow_template_transition_views.py:79
+#: views/workflow_template_transition_views.py:80
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "Eliminar la transición del flujo de trabajo: %s?"
 
-#: views/workflow_template_transition_views.py:106
+#: views/workflow_template_transition_views.py:107
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "Editar la transición del flujo de trabajo: %s"
 
-#: views/workflow_template_transition_views.py:146
+#: views/workflow_template_transition_views.py:147
 msgid ""
 "Create a transition and use it to move a workflow from one state to another."
 msgstr ""
 "Crea una transición y úsala para mover un flujo de tareas de un estado a "
 "otro."
 
-#: views/workflow_template_transition_views.py:150
+#: views/workflow_template_transition_views.py:151
 msgid "This workflow doesn't have any transitions"
 msgstr "Este flujo de trabajo no tiene ninguna transición"
 
-#: views/workflow_template_transition_views.py:154
+#: views/workflow_template_transition_views.py:155
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "Transiciones de flujo de trabajo: %s"

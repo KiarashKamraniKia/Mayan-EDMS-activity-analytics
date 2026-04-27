@@ -8,6 +8,7 @@ from django.urls import reverse
 from mayan.apps.acls.classes import ModelPermission
 from mayan.apps.common.menus import menu_list_facet
 
+from .literals import REGULAR_AJAX_TEMPLATE_HASH_EXCLUDE_PAIR
 from .links import link_object_template_sandbox
 from .literals import REGULAR_AJAX_TEMPLATE_HASH_EXCLUDE_PAIR
 from .permissions import permission_template_sandbox

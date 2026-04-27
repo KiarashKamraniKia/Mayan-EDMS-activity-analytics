@@ -228,11 +228,11 @@ msgstr "签名"
 msgid "Full path to the backend to be used to handle keys and signatures."
 msgstr "后端的完整路径，用于处理密钥和签名。"
 
-#: settings.py:25
+#: settings.py:26
 msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
 msgstr ""
 
-#: settings.py:30
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "用于查询密钥的密钥服务器。"
 

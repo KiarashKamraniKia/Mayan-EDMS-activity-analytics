@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_APPEARANCE_ELIDED_PAGER_ON_EACH_SIDE,
@@ -39,8 +39,8 @@ setting_elided_pager_on_ends = setting_namespace.do_setting_add(
 setting_max_title_length = setting_namespace.do_setting_add(
     data_type=int, default=DEFAULT_MAXIMUM_TITLE_LENGTH,
     global_name='APPEARANCE_MAXIMUM_TITLE_LENGTH', help_text=_(
-        message='Maximum number of characters that will be displayed as the view '
-        'title.'
+        message='Maximum number of characters that will be displayed as the '
+        'view title.'
     )
 )
 setting_message_position = setting_namespace.do_setting_add(

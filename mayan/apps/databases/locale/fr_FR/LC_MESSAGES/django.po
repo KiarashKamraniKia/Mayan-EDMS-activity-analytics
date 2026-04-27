@@ -98,7 +98,7 @@ msgstr "Propriétés"
 msgid "Property models"
 msgstr ""
 
-#: literals.py:16
+#: literals.py:18
 msgid ""
 "Your database backend is set to use SQLite. SQLite should only be used for "
 "development and testing, not for production."

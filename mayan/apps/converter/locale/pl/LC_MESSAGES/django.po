@@ -383,11 +383,11 @@ msgstr "Poziom przezroczystości obrazu w procentach"
 msgid "Transparency"
 msgstr "Przejrzystość"
 
-#: transformation_mixins.py:27 transformations.py:776
+#: transformation_mixins.py:27 transformations.py:777
 msgid "Zoom level in percent."
 msgstr "Poziom powiększenia w procentach."
 
-#: transformation_mixins.py:28 transformations.py:771
+#: transformation_mixins.py:28 transformations.py:772
 msgid "Zoom"
 msgstr "Powiększenie"
 
@@ -481,7 +481,7 @@ msgstr "Nazwa zasobu"
 msgid "Color used to fill the rectangle."
 msgstr "Kolor używany do wypełnienia prostokąta."
 
-#: transformation_mixins.py:355 transformations.py:677
+#: transformation_mixins.py:355 transformations.py:678
 msgid "Fill color"
 msgstr "Kolor wypełnienia"
 
@@ -585,7 +585,7 @@ msgstr "Odbicie"
 msgid "Gaussian blur"
 msgstr "Rozmycie Gaussa"
 
-#: transformations.py:545 transformations.py:746
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr "Stopień"
 
@@ -641,39 +641,39 @@ msgstr "Stopnie"
 msgid "Color to be used for area outside of the rotated image."
 msgstr "Kolor do użycia dla obszaru poza obróconym obrazem."
 
-#: transformations.py:708
+#: transformations.py:709
 msgid "Rotate 90 degrees"
 msgstr "Obrócenie o 90 stopni"
 
-#: transformations.py:719
+#: transformations.py:720
 msgid "Rotate 180 degrees"
 msgstr "Obrócenie o 180 stopni"
 
-#: transformations.py:730
+#: transformations.py:731
 msgid "Rotate 270 degrees"
 msgstr "Obrócenie o 270 stopni"
 
-#: transformations.py:740
+#: transformations.py:741
 msgid "Unsharp masking"
 msgstr "Maska wyostrzająca"
 
-#: transformations.py:745
+#: transformations.py:746
 msgid "The blur radius in pixels."
 msgstr "Stopień rozmycia w pikselach."
 
-#: transformations.py:749
+#: transformations.py:750
 msgid "Unsharp strength in percent."
 msgstr "Siła wyostrzania w procentach."
 
-#: transformations.py:750 transformations.py:777
+#: transformations.py:751 transformations.py:778
 msgid "Percent"
 msgstr "Procent"
 
-#: transformations.py:754
+#: transformations.py:755
 msgid "Minimum brightness change that will be sharpened."
 msgstr "Minimalna zmiana jasności, która zostanie wyostrzona."
 
-#: transformations.py:755
+#: transformations.py:756
 msgid "Tthreshold"
 msgstr "Próg"
 

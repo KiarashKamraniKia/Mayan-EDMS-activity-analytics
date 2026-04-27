@@ -90,7 +90,7 @@ msgstr "Значення"
 msgid "Update"
 msgstr "Оновлення"
 
-#: forms.py:50 forms.py:233 models/document_type_metadata_type_models.py:31
+#: forms.py:50 forms.py:234 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "Обов'язково"
 
@@ -109,7 +109,7 @@ msgstr "Помилка значення за замовчуванням: %s"
 msgid "\"%s\" is required for this document type."
 msgstr "\"%s\" потрібно для цього типу документа."
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr "Типи метаданих, які потрібно додати до вибраних документів."
 
@@ -119,31 +119,31 @@ msgstr "Типи метаданих, які потрібно додати до �
 msgid "Metadata type"
 msgstr "Тип метаданих"
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Видалити"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr "Основний"
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr "Значення"
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr "Перевірка"
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr "Аналіз"
 
-#: forms.py:231
+#: forms.py:232
 msgid "None"
 msgstr "None"
 
-#: forms.py:232
+#: forms.py:233
 msgid "Optional"
 msgstr "Додатково"
 

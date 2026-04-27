@@ -353,11 +353,11 @@ msgstr "画像の不透明度をパーセントで指定"
 msgid "Transparency"
 msgstr "透明度"
 
-#: transformation_mixins.py:27 transformations.py:776
+#: transformation_mixins.py:27 transformations.py:777
 msgid "Zoom level in percent."
 msgstr "ズームレベルをパーセントで指定"
 
-#: transformation_mixins.py:28 transformations.py:771
+#: transformation_mixins.py:28 transformations.py:772
 msgid "Zoom"
 msgstr "ズーム"
 
@@ -451,7 +451,7 @@ msgstr "アセット名"
 msgid "Color used to fill the rectangle."
 msgstr "四角形を塗りつぶす色"
 
-#: transformation_mixins.py:355 transformations.py:677
+#: transformation_mixins.py:355 transformations.py:678
 msgid "Fill color"
 msgstr "塗りつぶし色"
 
@@ -555,7 +555,7 @@ msgstr "反転"
 msgid "Gaussian blur"
 msgstr "ガウスぼかし"
 
-#: transformations.py:545 transformations.py:746
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr "半径"
 
@@ -611,39 +611,39 @@ msgstr "回転角"
 msgid "Color to be used for area outside of the rotated image."
 msgstr "回転後の画像外側に使用する色"
 
-#: transformations.py:708
+#: transformations.py:709
 msgid "Rotate 90 degrees"
 msgstr "90度回転"
 
-#: transformations.py:719
+#: transformations.py:720
 msgid "Rotate 180 degrees"
 msgstr "180度回転"
 
-#: transformations.py:730
+#: transformations.py:731
 msgid "Rotate 270 degrees"
 msgstr "270度回転"
 
-#: transformations.py:740
+#: transformations.py:741
 msgid "Unsharp masking"
 msgstr "アンシャープマスク"
 
-#: transformations.py:745
+#: transformations.py:746
 msgid "The blur radius in pixels."
 msgstr "ぼかしの半径をピクセルで指定"
 
-#: transformations.py:749
+#: transformations.py:750
 msgid "Unsharp strength in percent."
 msgstr "アンシャープの強さをパーセントで指定"
 
-#: transformations.py:750 transformations.py:777
+#: transformations.py:751 transformations.py:778
 msgid "Percent"
 msgstr "パーセント"
 
-#: transformations.py:754
+#: transformations.py:755
 msgid "Minimum brightness change that will be sharpened."
 msgstr "シャープ処理される最小の明るさの変化"
 
-#: transformations.py:755
+#: transformations.py:756
 msgid "Tthreshold"
 msgstr "閾値"
 

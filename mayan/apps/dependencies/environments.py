@@ -14,7 +14,7 @@ class DependencyEnvironment:
 
 environment_build = DependencyEnvironment(
     help_text=_(
-        message='Environment used for building redistributable packages of '
+        message='Environment used for building distributable packages of '
         'the software. End users can ignore missing dependencies under this '
         'environment.'
     ), label=_(message='Build'), name='build'
@@ -35,8 +35,8 @@ environment_documentation_override = DependencyEnvironment(
     help_text=_(
         message='Environment used to specify direct documentation '
         'dependencies to workaround unpinned or immutable dependency bugs '
-        'in third party libraries. End users can ignore missing '
-        'dependencies under this environment.'
+        'in third party libraries. End users can ignore missing dependencies '
+        'under this environment.'
     ), label=_(message='Documentation (override)'),
     name='documentation_override'
 )
@@ -57,7 +57,7 @@ environment_publish = DependencyEnvironment(
 environment_testing = DependencyEnvironment(
     help_text=_(
         message='Environment used running the test suit to verify the '
-        'functionality of the code. Dependencies in this environment are '
-        'not needed for normal production usage.'
+        'functionality of the code. Dependencies in this environment are not '
+        'needed for normal production usage.'
     ), label=_(message='Testing'), name='testing'
 )

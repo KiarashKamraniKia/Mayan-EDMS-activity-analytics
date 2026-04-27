@@ -26,11 +26,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "Gestionar de sarcini"
 
-#: apps.py:123 apps.py:200 classes.py:64
+#: apps.py:123 apps.py:201 classes.py:64
 msgid "Label"
 msgstr "Conținut etichetă"
 
-#: apps.py:127 apps.py:204 classes.py:71
+#: apps.py:127 apps.py:205 classes.py:71
 msgid "Name"
 msgstr "Nume"
 
@@ -48,35 +48,35 @@ msgstr ""
 "se pierd dacă brokerul este repornit. Cozile tranzitorii folosesc mai puține"
 " resurse și gestionează sarcini non-critice."
 
-#: apps.py:140
+#: apps.py:141
 msgid "Is transient?"
 msgstr "Este tranzitorie?"
 
-#: apps.py:171
+#: apps.py:172
 msgid "Type"
 msgstr "Tip"
 
-#: apps.py:176
+#: apps.py:177
 msgid "Start time"
 msgstr "Timpul de începere"
 
-#: apps.py:180
+#: apps.py:181
 msgid "Host"
 msgstr "Gazdă"
 
-#: apps.py:184
+#: apps.py:185
 msgid "Arguments"
 msgstr "Argumente"
 
-#: apps.py:188
+#: apps.py:189
 msgid "Keyword arguments"
 msgstr "Argumentele cuvinte cheie"
 
-#: apps.py:193
+#: apps.py:194
 msgid "Worker process ID"
 msgstr "ID-ul procesului de lucru"
 
-#: apps.py:213
+#: apps.py:214
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
@@ -84,11 +84,11 @@ msgstr ""
 "Numărul maxim de sarcini pe care un lucrător le poate executa înainte de a "
 "fi înlocuit cu un nou proces."
 
-#: apps.py:215
+#: apps.py:216
 msgid "Maximum tasks per child"
 msgstr "Sarcini maxime per copil"
 
-#: apps.py:220
+#: apps.py:221
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
@@ -96,11 +96,11 @@ msgstr ""
 "Numărul de procese/fire de execuție care sunt lansate. Implicit, numărul de "
 "procesoare disponibile pe mașină."
 
-#: apps.py:222
+#: apps.py:223
 msgid "Concurrency"
 msgstr "Concurență"
 
-#: apps.py:227
+#: apps.py:228
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
@@ -108,7 +108,7 @@ msgstr ""
 "Valoarea -nice- determină prioritatea procesului. O valoare mai mare scade "
 "prioritatea. Valoarea implicită este 0."
 
-#: apps.py:230
+#: apps.py:231
 msgid "Nice level"
 msgstr "Nivel nice"
 

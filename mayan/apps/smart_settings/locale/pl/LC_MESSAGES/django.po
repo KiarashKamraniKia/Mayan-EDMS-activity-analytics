@@ -145,6 +145,10 @@ msgstr ""
 msgid "Settings namespace"
 msgstr ""
 
+#: namespaces.py:94
+msgid "Settings namespace"
+msgstr ""
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr "Edytuj ustawienia"
@@ -498,13 +502,10 @@ msgstr ""
 
 #: settings.py:286
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"Domyślnie: „sessionid”. Nazwa pliku cookie wykorzystywanego podczas sesji. "
-"Może to być dowolna nazwa (pod warunkiem, że różni się od innych nazw plików"
-" cookie w aplikacji)."
 
 #: settings.py:294
 msgid ""

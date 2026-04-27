@@ -77,34 +77,34 @@ msgstr "التطبيقات"
 msgid "Need to specify at least one: app_label or module."
 msgstr "بحاجة الى تحديد: app_label or module."
 
-#: classes.py:347
+#: classes.py:348
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "الارتباطات \"%s\" معرفة سابقاً."
 
-#: classes.py:399
+#: classes.py:400
 #, python-format
 msgid "Installing package: %s... "
 msgstr "تم تنصيب الملفات: %s... "
 
-#: classes.py:406
+#: classes.py:407
 msgid "Already installed."
 msgstr "التنصيب معرف مسبقاً"
 
-#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
+#: classes.py:412 classes.py:419 classes.py:425 classes.py:437
 msgid "Complete."
 msgstr "أكتمل"
 
-#: classes.py:431
+#: classes.py:432
 #, python-format
 msgid "Uninstalling package: %s... "
 msgstr ""
 
-#: classes.py:463
+#: classes.py:464
 msgid "Installed and correct version"
 msgstr "الإصدار الصحيح"
 
-#: classes.py:465
+#: classes.py:466
 msgid "Missing or incorrect version"
 msgstr "تفتقد او إصدار غير متطابق"
 

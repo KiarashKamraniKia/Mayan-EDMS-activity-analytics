@@ -33,8 +33,8 @@ class IndexInstanceBusinessLogicMixin:
             except Exception as exception:
                 logger.error('Evaluating error: %s', exception)
                 error_message = _(
-                    message='Error indexing document: %(document)s; expression: '
-                    '%(expression)s; %(exception)s'
+                    message='Error indexing document: %(document)s; '
+                    'expression: %(expression)s; %(exception)s'
                 ) % {
                     'document': document,
                     'exception': exception,

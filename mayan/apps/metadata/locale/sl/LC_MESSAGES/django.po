@@ -88,7 +88,7 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: forms.py:50 forms.py:233 models/document_type_metadata_type_models.py:31
+#: forms.py:50 forms.py:234 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr ""
 
@@ -107,7 +107,7 @@ msgstr ""
 msgid "\"%s\" is required for this document type."
 msgstr ""
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr ""
 
@@ -117,31 +117,31 @@ msgstr ""
 msgid "Metadata type"
 msgstr ""
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Odstrani"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr ""
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr ""
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr ""
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr ""
 
-#: forms.py:231
+#: forms.py:232
 msgid "None"
 msgstr "Nobenega"
 
-#: forms.py:232
+#: forms.py:233
 msgid "Optional"
 msgstr ""
 

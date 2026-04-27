@@ -90,7 +90,7 @@ msgstr "Valoare"
 msgid "Update"
 msgstr "Actualizați"
 
-#: forms.py:50 forms.py:233 models/document_type_metadata_type_models.py:31
+#: forms.py:50 forms.py:234 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "Necesară"
 
@@ -109,7 +109,7 @@ msgstr "Valoare eroare standard: %s"
 msgid "\"%s\" is required for this document type."
 msgstr "\"%s\" este necesar pentru acest tip de document."
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr ""
 "Tipurile de metadate care urmează să fie adăugate la documentele selectate."
@@ -120,31 +120,31 @@ msgstr ""
 msgid "Metadata type"
 msgstr "Tip de metadate"
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Eliminați"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr "De bază"
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr "Valori"
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr "Validare"
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr "Analizare"
 
-#: forms.py:231
+#: forms.py:232
 msgid "None"
 msgstr "Nici unul"
 
-#: forms.py:232
+#: forms.py:233
 msgid "Optional"
 msgstr "Facultativ"
 

@@ -1,7 +1,7 @@
 from mayan.apps.smart_settings.namespace_migrations import (
     SettingNamespaceMigration
 )
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 from mayan.apps.smart_settings.utils import smart_yaml_load
 
 

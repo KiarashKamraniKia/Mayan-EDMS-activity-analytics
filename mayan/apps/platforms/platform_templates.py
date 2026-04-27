@@ -107,7 +107,7 @@ class PlatformTemplate(BaseBackend):
         context.update(
             self.get_variables_context()
         )
-        # get_context goes last to server as the override.
+        # get_context goes last to serve as the override.
         context.update(
             self.get_context()
         )

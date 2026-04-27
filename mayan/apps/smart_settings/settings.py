@@ -25,11 +25,11 @@ setting_namespace = setting_cluster.do_namespace_add(
 
 setting_django_allowed_hosts = setting_namespace.do_setting_add(
     default=DEFAULT_ALLOWED_HOSTS, global_name='ALLOWED_HOSTS', help_text=_(
-        message='A list of strings representing the host/domain names that this site '
-        'can serve. This is a security measure to prevent HTTP Host header '
-        'attacks, which are possible even under many seemingly-safe web '
-        'server configurations. Values in this list can be '
-        'fully qualified names (e.g. \'www.example.com\'), in which case '
+        message='A list of strings representing the host/domain names that '
+        'this site can serve. This is a security measure to prevent HTTP '
+        'Host header attacks, which are possible even under many '
+        'seemingly-safe web server configurations. Values in this list can '
+        'be fully qualified names (e.g. \'www.example.com\'), in which case '
         'they will be matched against the request\'s Host header exactly '
         '(case-insensitive, not including port). A value beginning with a '
         'period can be used as a subdomain wildcard: \'.example.com\' will '
@@ -42,8 +42,8 @@ setting_django_allowed_hosts = setting_namespace.do_setting_add(
 )
 setting_django_append_slash = setting_namespace.do_setting_add(
     default=DEFAULT_APPEND_SLASH, global_name='APPEND_SLASH', help_text=_(
-        message='When set to True, if the request URL does not match any of the '
-        'patterns in the URLconf and it doesn\'t end in a slash, an HTTP '
+        message='When set to True, if the request URL does not match any of '
+        'the patterns in the URLconf and it doesn\'t end in a slash, an HTTP '
         'redirect is issued to the same URL with a slash appended. Note '
         'that the redirect may cause any data submitted in a POST request '
         'to be lost. The APPEND_SLASH setting is only used if '
@@ -54,15 +54,15 @@ setting_django_append_slash = setting_namespace.do_setting_add(
 setting_django_auth_password_validators = setting_namespace.do_setting_add(
     default=DEFAULT_AUTH_PASSWORD_VALIDATORS,
     global_name='AUTH_PASSWORD_VALIDATORS', help_text=_(
-        message='The list of validators that are used to check the strength of '
-        'user\'s passwords.'
+        message='The list of validators that are used to check the strength '
+        'of user\'s passwords.'
     )
 )
 setting_django_authentication_backends = setting_namespace.do_setting_add(
     default=DEFAULT_AUTHENTICATION_BACKENDS,
     global_name='AUTHENTICATION_BACKENDS', help_text=_(
-        message='A list of authentication backend classes (as strings) to use when '
-        'attempting to authenticate a user.'
+        message='A list of authentication backend classes (as strings) to '
+        'use when attempting to authenticate a user.'
     )
 )
 setting_django_caches = setting_namespace.do_setting_add(
@@ -101,9 +101,9 @@ setting_django_csrf_use_sessions = setting_namespace.do_setting_add(
 )
 setting_django_databases = setting_namespace.do_setting_add(
     default=DEFAULT_DATABASES, global_name='DATABASES', help_text=_(
-        message='A dictionary containing the settings for all databases to be used '
-        'with Django. It is a nested dictionary whose contents map a '
-        'database alias to a dictionary containing the options for an '
+        message='A dictionary containing the settings for all databases to '
+        'be used with Django. It is a nested dictionary whose contents map '
+        'a database alias to a dictionary containing the options for an '
         'individual database. The DATABASES setting must configure a '
         'default database; any number of additional databases may also '
         'be specified.'
@@ -112,8 +112,8 @@ setting_django_databases = setting_namespace.do_setting_add(
 setting_django_data_upload_max_memory_size = setting_namespace.do_setting_add(
     default=DEFAULT_DATA_UPLOAD_MAX_MEMORY_SIZE,
     global_name='DATA_UPLOAD_MAX_MEMORY_SIZE', help_text=_(
-        message='Default: 2621440 (i.e. 2.5 MB). The maximum size in bytes that a '
-        'request body may be before a SuspiciousOperation '
+        message='Default: 2621440 (i.e. 2.5 MB). The maximum size in bytes '
+        'that a request body may be before a SuspiciousOperation '
         '(RequestDataTooBig) is raised. The check is done when accessing '
         'request.body or request.POST and is calculated against the total '
         'request size excluding any file upload data. You can set this to '
@@ -140,17 +140,17 @@ setting_django_default_from_email = setting_namespace.do_setting_add(
 setting_django_disallowed_user_agents = setting_namespace.do_setting_add(
     default=DEFAULT_DISALLOWED_USER_AGENTS,
     global_name='DISALLOWED_USER_AGENTS', help_text=_(
-        message='Default: [] (Empty list). List of compiled regular expression '
-        'objects representing User-Agent strings that are not allowed to '
-        'visit any page, systemwide. Use this for bad robots/crawlers. '
-        'This is only used if CommonMiddleware is installed '
-        '(see Middleware).'
+        message='Default: [] (Empty list). List of compiled regular '
+        'expression objects representing User-Agent strings that are not '
+        'allowed to visit any page, systemwide. Use this for bad '
+        'robots/crawlers. This is only used if CommonMiddleware is '
+        'installed (see Middleware).'
     )
 )
 setting_django_email_backend = setting_namespace.do_setting_add(
     default=DEFAULT_EMAIL_BACKEND, global_name='EMAIL_BACKEND', help_text=_(
-        message='Default: \'django.core.mail.backends.smtp.EmailBackend\'. The '
-        'backend to use for sending emails.'
+        message='Default: \'django.core.mail.backends.smtp.EmailBackend\'. '
+        'The backend to use for sending emails.'
     )
 )
 setting_django_email_host = setting_namespace.do_setting_add(
@@ -178,7 +178,8 @@ setting_django_email_host_user = setting_namespace.do_setting_add(
 )
 setting_django_email_port = setting_namespace.do_setting_add(
     default=DEFAULT_EMAIL_PORT, global_name='EMAIL_PORT', help_text=_(
-        message='Default: 25. Port to use for the SMTP server defined in EMAIL_HOST.'
+        message='Default: 25. Port to use for the SMTP server defined in '
+        'EMAIL_HOST.'
     )
 )
 setting_django_email_timeout = setting_namespace.do_setting_add(
@@ -189,18 +190,19 @@ setting_django_email_timeout = setting_namespace.do_setting_add(
 )
 setting_django_email_user_ssl = setting_namespace.do_setting_add(
     default=DEFAULT_EMAIL_USE_SSL, global_name='EMAIL_USE_SSL', help_text=_(
-        message='Default: False. Whether to use an implicit TLS (secure) connection '
-        'when talking to the SMTP server. In most email documentation this '
-        'type of TLS connection is referred to as SSL. It is generally used '
-        'on port 465. If you are experiencing problems, see the explicit '
-        'TLS setting EMAIL_USE_TLS. Note that EMAIL_USE_TLS/EMAIL_USE_SSL '
-        'are mutually exclusive, so only set one of those settings to True.'
+        message='Default: False. Whether to use an implicit TLS (secure) '
+        'connection when talking to the SMTP server. In most email '
+        'documentation this type of TLS connection is referred to as SSL. '
+        'It is generally used on port 465. If you are experiencing problems, '
+        'see the explicit TLS setting EMAIL_USE_TLS. Note that '
+        'EMAIL_USE_TLS/EMAIL_USE_SSL are mutually exclusive, so only set '
+        'one of those settings to True.'
     )
 )
 setting_django_email_user_tls = setting_namespace.do_setting_add(
     default=DEFAULT_EMAIL_USE_TLS, global_name='EMAIL_USE_TLS', help_text=_(
-        message='Default: False. Whether to use a TLS (secure) connection when '
-        'talking to the SMTP server. This is used for explicit TLS '
+        message='Default: False. Whether to use a TLS (secure) connection '
+        'when talking to the SMTP server. This is used for explicit TLS '
         'connections, generally on port 587. If you are experiencing '
         'hanging connections, see the implicit TLS setting EMAIL_USE_SSL.'
     )
@@ -238,11 +240,11 @@ setting_django_login_redirect_url = setting_namespace.do_setting_add(
 setting_django_logout_redirect_url = setting_namespace.do_setting_add(
     default=DEFAULT_LOGOUT_REDIRECT_URL, global_name='LOGOUT_REDIRECT_URL',
     help_text=_(
-        message='Default: None. The URL where requests are redirected after a user '
-        'logs out using LogoutView (if the view doesn\'t get a next_page '
-        'argument). If None, no redirect will be performed and the logout '
-        'view will be rendered. This setting also accepts named URL '
-        'patterns which can be used to reduce configuration duplication '
+        message='Default: None. The URL where requests are redirected after '
+        'a user logs out using LogoutView (if the view doesn\'t get a '
+        'next_page argument). If None, no redirect will be performed and '
+        'the logout view will be rendered. This setting also accepts named '
+        'URL patterns which can be used to reduce configuration duplication '
         'since you don\'t have to define the URL in two places (settings '
         'and URLconf).'
     )
@@ -269,30 +271,30 @@ setting_django_languages = setting_namespace.do_setting_add(
 )
 setting_django_language_code = setting_namespace.do_setting_add(
     default=DEFAULT_LANGUAGE_CODE, global_name='LANGUAGE_CODE', help_text=_(
-        message='A string representing the language code for this installation. '
-        'This should be in standard language ID format. For example, U.S. '
-        'English is "en-us". It serves two purposes: If the locale '
-        'middleware isn\'t in use, it decides which translation is served '
-        'to all users. If the locale middleware is active, it provides a '
-        'fallback language in case the user\'s preferred language can\'t '
-        'be determined or is not supported by the website. It also provides '
-        'the fallback translation when a translation for a given literal '
-        'doesn\'t exist for the user\'s preferred language.'
+        message='A string representing the language code for this '
+        'installation. This should be in standard language ID format. For '
+        'example, U.S. English is "en-us". It serves two purposes: If the '
+        'locale middleware isn\'t in use, it decides which translation is '
+        'served to all users. If the locale middleware is active, it '
+        'provides a fallback language in case the user\'s preferred language '
+        'can\'t be determined or is not supported by the website. It also '
+        'provides the fallback translation when a translation for a given '
+        'literal doesn\'t exist for the user\'s preferred language.'
     )
 )
 setting_django_cookie_name = setting_namespace.do_setting_add(
     default=DEFAULT_SESSION_COOKIE_NAME, global_name='SESSION_COOKIE_NAME',
     help_text=_(
-        message='Default: \'sessionid\'. The name of the cookie to use for sessions.'
-        'This can be whatever you want (as long as it\'s different from the '
-        'other cookie names in your application).'
+        message='Default: \'sessionid\'. The name of the cookie to use for '
+        'sessions. This can be whatever you want (as long as it\'s different '
+        'from the other cookie names in your application).'
     )
 )
 setting_django_session_engine = setting_namespace.do_setting_add(
     default=DEFAULT_SESSION_ENGINE, global_name='SESSION_ENGINE',
     help_text=_(
-        message='Default: \'django.contrib.sessions.backends.db\'. Controls where '
-        'Django stores session data.'
+        message='Default: \'django.contrib.sessions.backends.db\'. Controls '
+        'where Django stores session data.'
     )
 )
 setting_django_secure_proxy_ssl_header = setting_namespace.do_setting_add(
@@ -307,8 +309,8 @@ setting_django_secure_proxy_ssl_header = setting_namespace.do_setting_add(
 )
 setting_django_static_url = setting_namespace.do_setting_add(
     default=DEFAULT_STATIC_URL, global_name='STATIC_URL', help_text=_(
-        message='URL to use when referring to static files located in STATIC_ROOT. '
-        'Example: "/static/" or "http://static.example.com/" '
+        message='URL to use when referring to static files located in '
+        'STATIC_ROOT. Example: "/static/" or "http://static.example.com/" '
         'If not None, this will be used as the base path for asset '
         'definitions (the Media class) and the staticfiles app. '
         'It must end in a slash if set to a non-empty value.'
@@ -317,8 +319,8 @@ setting_django_static_url = setting_namespace.do_setting_add(
 setting_django_storages = setting_namespace.do_setting_add(
     default=DEFAULT_STORAGES, global_name='STORAGES',
     help_text=_(
-        message='A dictionary containing the settings for all storages to be used '
-        'with Django. It is a nested dictionary whose contents map a '
+        message='A dictionary containing the settings for all storages to '
+        'be used with Django. It is a nested dictionary whose contents map a '
         'storage alias to a dictionary containing the options for an '
         'individual storage.'
     )
@@ -342,19 +344,20 @@ setting_django_wsgi_application = setting_namespace.do_setting_add(
 setting_django_wsgi_application = setting_namespace.do_setting_add(
     default=DEFAULT_USE_X_FORWARDED_PORT, global_name='USE_X_FORWARDED_PORT',
     help_text=_(
-        message='A boolean that specifies whether to use the X-Forwarded-Port '
-        'header in preference to the SERVER_PORT META variable. This '
-        'should only be enabled if a proxy which sets this header is in '
-        'use. USE_X_FORWARDED_HOST takes priority over this setting.'
+        message='A boolean that specifies whether to use the '
+        'X-Forwarded-Port header in preference to the SERVER_PORT META '
+        'variable. This should only be enabled if a proxy which sets this '
+        'header is in use. USE_X_FORWARDED_HOST takes priority over this '
+        'setting.'
     )
 )
 setting_django_wsgi_application = setting_namespace.do_setting_add(
     default=DEFAULT_WSGI_APPLICATION, global_name='WSGI_APPLICATION',
     help_text=_(
-        message='The full Python path of the WSGI application object that Django\'s '
-        'built-in servers (e.g. runserver) will use. The django-admin '
-        'startproject management command will create a simple wsgi.py '
-        'file with an application callable in it, and point this setting '
-        'to that application.'
+        message='The full Python path of the WSGI application object that '
+        'Django\'s built-in servers (e.g. runserver) will use. The '
+        'django-admin startproject management command will create a simple '
+        'wsgi.py file with an application callable in it, and point this '
+        'setting to that application.'
     )
 )

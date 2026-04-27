@@ -75,34 +75,34 @@ msgstr "App"
 msgid "Need to specify at least one: app_label or module."
 msgstr "Trebuie să specificați cel puțin una: app_label sau modul."
 
-#: classes.py:347
+#: classes.py:348
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "Dependența \"%s\" deja înregistrată."
 
-#: classes.py:399
+#: classes.py:400
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Instalarea pachetului: %s ..."
 
-#: classes.py:406
+#: classes.py:407
 msgid "Already installed."
 msgstr "Deja instalat."
 
-#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
+#: classes.py:412 classes.py:419 classes.py:425 classes.py:437
 msgid "Complete."
 msgstr "Complet."
 
-#: classes.py:431
+#: classes.py:432
 #, python-format
 msgid "Uninstalling package: %s... "
 msgstr ""
 
-#: classes.py:463
+#: classes.py:464
 msgid "Installed and correct version"
 msgstr "Versiunea instalată și corectă"
 
-#: classes.py:465
+#: classes.py:466
 msgid "Missing or incorrect version"
 msgstr "Versiune lipsă sau incorectă"
 

@@ -54,7 +54,7 @@ msgid "Sets the email of the automatically created super user account."
 msgstr ""
 "Beállítja az automatikusan létrehozott szuper felhasználói fiók email címét."
 
-#: settings.py:18
+#: settings.py:19
 msgid ""
 "The password of the automatically created super user account. If it is equal"
 " to None, the password is randomly generated."
@@ -62,7 +62,7 @@ msgstr ""
 "Az automatikusan létrehozott szuperfelhasználói fiók jelszava. Ha egyenlő a "
 "Nincs értékkel, a jelszó véletlenszerűen generálódik."
 
-#: settings.py:24
+#: settings.py:26
 msgid "The username of the automatically created super user account."
 msgstr "Az automatikusan létrehozott szuperfelhasználói fiók felhasználóneve."
 

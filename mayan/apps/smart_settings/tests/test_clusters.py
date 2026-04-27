@@ -6,7 +6,7 @@ from django.utils.translation import gettext_lazy as _
 from mayan.apps.testing.tests.base import BaseTestCase
 
 from ..exceptions import SettingsDomainError
-from ..settings import setting_cluster
+from ..setting_clusters import setting_cluster
 from ..utils import get_environment_variable_full_name
 
 from .literals import (

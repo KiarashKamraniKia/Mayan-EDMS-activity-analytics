@@ -10,7 +10,6 @@ from ..decorators import templating_dangerous_tag
 
 register = Library()
 
-
 # Filters
 
 

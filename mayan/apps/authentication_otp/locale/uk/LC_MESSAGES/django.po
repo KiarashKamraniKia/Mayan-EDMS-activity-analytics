@@ -61,21 +61,21 @@ msgstr ""
 "Відскануйте QR-код або введіть ключ у свій пристрій автентифікації. Не "
 "розголошуйте цей ключ, ставтеся до нього як до пароля."
 
-#: forms.py:107 forms.py:112
+#: forms.py:108 forms.py:113
 msgid "Secret"
 msgstr "Ключ"
 
-#: forms.py:118
+#: forms.py:119
 msgid ""
 "Enter the corresponding token to validate that the secret was saved correct."
 msgstr ""
 "Введіть відповідний маркер, щоб підтвердити правильність збереження ключа."
 
-#: forms.py:121
+#: forms.py:122
 msgid "Token"
 msgstr "Токен"
 
-#: forms.py:157
+#: forms.py:158
 msgid "Token is incorrect for the specified secret."
 msgstr "Неправильний маркер для вказаного ключа."
 

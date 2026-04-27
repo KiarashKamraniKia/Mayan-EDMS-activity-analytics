@@ -25,11 +25,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr "Збережені вихідні файли"
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr "Розмір"
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "Мініатюра"
 
@@ -164,8 +164,8 @@ msgid "No source files available"
 msgstr "Немає доступних вихідних файлів"
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
-msgstr ""
+msgid "Width value to be passed to the converter backend."
+msgstr "Значення ширини, яке буде передано серверній частині конвертера."
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

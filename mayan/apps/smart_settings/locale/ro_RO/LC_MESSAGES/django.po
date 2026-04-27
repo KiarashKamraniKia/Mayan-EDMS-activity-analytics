@@ -149,6 +149,10 @@ msgstr ""
 msgid "Settings namespace"
 msgstr "Setări spațiu de nume"
 
+#: namespaces.py:94
+msgid "Settings namespace"
+msgstr "Setări spațiu de nume"
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr "Editează setările"
@@ -519,13 +523,10 @@ msgstr ""
 
 #: settings.py:286
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"Implicit: „idsesiune”. Numele cookie-ului pe care îl folosiți pentru "
-"sesiuni. Acesta poate fi orice doriți (atât timp cât este diferit de "
-"celelalte nume cookie din aplicația dvs.)."
 
 #: settings.py:294
 msgid ""

@@ -29,8 +29,8 @@ class NewDocumentFileForm(forms.Form):
     )
     action_name = form_fields.ChoiceField(
         label=_(message='Action'), help_text=_(
-            message='The action to take in regards to the pages of the new file '
-            'being uploaded.'
+            message='The action to take in regards to the pages of the new '
+            'file being uploaded.'
         )
     )
 

@@ -189,13 +189,10 @@ msgstr "URL"
 #: settings.py:22
 msgid ""
 "The threshold at which the "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND will start "
+"`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND` will start "
 "deleting the oldest signature capture cache files. Specify the size in "
 "bytes."
 msgstr ""
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND'in en eski imza "
-"yakalama önbellek dosyalarını silmeye başlayacağı eşik. Boyutu bayt olarak "
-"belirtin."
 
 #: settings.py:31
 msgid ""
@@ -208,10 +205,8 @@ msgstr ""
 #: settings.py:39
 msgid ""
 "Arguments to pass to the "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND."
+"`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND`."
 msgstr ""
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND'e geçilecek "
-"argümanlar."
 
 #: storages.py:14
 msgid ""

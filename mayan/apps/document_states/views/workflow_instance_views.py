@@ -41,8 +41,8 @@ class WorkflowInstanceListView(ExternalObjectViewMixin, SingleObjectListView):
             'hide_link': True,
             'no_results_icon': icon_workflow_template_list,
             'no_results_text': _(
-                message='Assign workflows to the document type of this document '
-                'to have this document execute those workflows. '
+                message='Assign workflows to the document type of this '
+                'document to have this document execute those workflows. '
             ),
             'no_results_title': _(
                 message='There are no workflows for this document'
@@ -277,7 +277,8 @@ class WorkflowInstanceTransitionSelectView(
             'object': self.external_object.document,
             'submit_label': _(message='Select'),
             'title': _(
-                message='Select transition for workflow "%(workflow)s" of document "%(document)s"'
+                message='Select transition for workflow "%(workflow)s" of '
+                'document "%(document)s"'
             ) % {
                 'document': self.external_object.document,
                 'workflow': self.external_object

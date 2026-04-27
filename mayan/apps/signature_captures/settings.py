@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_MAXIMUM_SIZE,
@@ -19,7 +19,8 @@ setting_signature_capture_cache_maximum_size = setting_namespace.do_setting_add(
     default=DEFAULT_SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_MAXIMUM_SIZE,
     global_name='SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_MAXIMUM_SIZE',
     help_text=_(
-        message='The threshold at which the SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND '
+        message='The threshold at which the '
+        '`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND` '
         'will start deleting the oldest signature capture cache files. '
         'Specify the size in bytes.'
     ), post_edit_function=callback_update_signature_capture_cache_size
@@ -36,6 +37,7 @@ setting_signature_capture_cache_storage_backend_arguments = setting_namespace.do
     default=DEFAULT_SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND_ARGUMENTS,
     global_name='SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND_ARGUMENTS',
     help_text=_(
-        message='Arguments to pass to the SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND.'
+        message='Arguments to pass to the '
+        '`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND`.'
     )
 )

@@ -123,39 +123,39 @@ msgid "Statistics namespaces group statistics into logical units. "
 msgstr ""
 "Spațiile de nume pentru statistici grupează statisticile în unități logice."
 
-#: views.py:25
+#: views.py:26
 msgid "No statistic namespaces available"
 msgstr "Nu sunt disponibile spații de nume statistice"
 
-#: views.py:26
+#: views.py:27
 msgid "Statistics namespaces"
 msgstr "Numele de spațiu pentru statistici"
 
-#: views.py:49
+#: views.py:50
 msgid "Statistics are metrics and chart representations of existing data."
 msgstr ""
 "Statisticile sunt valori și reprezentări grafice ale datelor existente."
 
-#: views.py:52
+#: views.py:53
 msgid "No statistic available"
 msgstr "Nu există statistici disponibile"
 
-#: views.py:54
+#: views.py:55
 #, python-format
 msgid "Namespace details for: %s"
 msgstr "Detalii despre spațiul de nume pentru: %s"
 
-#: views.py:77
+#: views.py:78
 #, python-format
 msgid "Results for: %s"
 msgstr "Rezultate pentru: %s"
 
-#: views.py:97
+#: views.py:98
 #, python-format
 msgid "Queue statistic \"%s\" to be updated?"
 msgstr "Trimite în coada de statistici \"%s\" pentru a fi actualizată?"
 
-#: views.py:105
+#: views.py:106
 #, python-format
 msgid "Statistic \"%s\" queued successfully for update."
 msgstr "Statistica \"%s\" a fost așezată cu succes  la coada pentru actualizare."

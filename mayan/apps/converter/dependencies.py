@@ -30,7 +30,7 @@ PythonDependency(
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='pypdf',
-    version_string='==6.10.0'
+    version_string='==6.10.2'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='qrcode',

@@ -88,7 +88,7 @@ msgstr "Τιμή"
 msgid "Update"
 msgstr "Ενημέρωση"
 
-#: forms.py:50 forms.py:233 models/document_type_metadata_type_models.py:31
+#: forms.py:50 forms.py:234 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "Απαιτείται"
 
@@ -107,7 +107,7 @@ msgstr "Σφάλμα προεπιλεγμένης τιμής:%s"
 msgid "\"%s\" is required for this document type."
 msgstr "Απαιτείται \"%s\" για αυτόν τον τύπο εγγράφου."
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr "Τύποι μεταδεδομένων που θα προστεθούν στα επιλεγμένα έγγραφα."
 
@@ -117,31 +117,31 @@ msgstr "Τύποι μεταδεδομένων που θα προστεθούν �
 msgid "Metadata type"
 msgstr "Τύπος μεταδεδομένων"
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Αφαίρεση"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr ""
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr ""
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr ""
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr "Ανάλυση"
 
-#: forms.py:231
+#: forms.py:232
 msgid "None"
 msgstr "Κανένα"
 
-#: forms.py:232
+#: forms.py:233
 msgid "Optional"
 msgstr "Προαιρετικό"
 

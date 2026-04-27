@@ -1,7 +1,7 @@
 from mayan.apps.common.serialization import yaml_dump
 from mayan.apps.documents.events import event_document_type_created
 from mayan.apps.testing.tests.base import BaseTestCase
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 from mayan.apps.smart_settings.utils import get_environment_variable_full_name
 
 from ..settings import setting_auto_process, setting_drivers_arguments

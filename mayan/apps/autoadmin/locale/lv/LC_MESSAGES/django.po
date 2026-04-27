@@ -50,7 +50,7 @@ msgstr "Autoadmin iestatījumi"
 msgid "Sets the email of the automatically created super user account."
 msgstr "Iestata automātiski izveidotā super lietotāja konta e-pastu."
 
-#: settings.py:18
+#: settings.py:19
 msgid ""
 "The password of the automatically created super user account. If it is equal"
 " to None, the password is randomly generated."
@@ -58,7 +58,7 @@ msgstr ""
 "Automātiski izveidotā super lietotāja konta parole. Ja tā ir vienāds ar "
 "Neko, parole tiek ģenerēta automātiski."
 
-#: settings.py:24
+#: settings.py:26
 msgid "The username of the automatically created super user account."
 msgstr "Automātiski izveidotā super lietotāja konta lietotājvārds."
 

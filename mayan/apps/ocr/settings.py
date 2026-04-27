@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (
     DEFAULT_OCR_AUTO_OCR, DEFAULT_OCR_BACKEND, DEFAULT_OCR_BACKEND_ARGUMENTS
@@ -15,7 +15,8 @@ setting_namespace = setting_cluster.do_namespace_add(
 setting_auto_ocr = setting_namespace.do_setting_add(
     choices=('false', 'true'), default=DEFAULT_OCR_AUTO_OCR,
     global_name='OCR_AUTO_OCR', help_text=_(
-        message='Set new document types to perform OCR automatically by default.'
+        message='Set new document types to perform OCR automatically by '
+        'default.'
     )
 )
 setting_ocr_backend = setting_namespace.do_setting_add(

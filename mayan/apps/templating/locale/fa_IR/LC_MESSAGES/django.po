@@ -106,7 +106,7 @@ msgid ""
 " template preview."
 msgstr ""
 
-#: templatetags/templating_tags.py:100
+#: templatetags/templating_tags.py:99
 msgid "Tag can bypass access controls and create permanent changes."
 msgstr ""
 

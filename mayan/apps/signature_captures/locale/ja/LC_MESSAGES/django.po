@@ -185,12 +185,10 @@ msgstr "URL"
 #: settings.py:22
 msgid ""
 "The threshold at which the "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND will start "
+"`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND` will start "
 "deleting the oldest signature capture cache files. Specify the size in "
 "bytes."
 msgstr ""
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND "
-"が最も古い署名キャプチャのキャッシュファイルを削除し始める閾値です。サイズはバイト単位で指定してください。"
 
 #: settings.py:31
 msgid ""
@@ -201,8 +199,8 @@ msgstr "キャッシュ署名キャプチャファイルを保存する際に使
 #: settings.py:39
 msgid ""
 "Arguments to pass to the "
-"SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND."
-msgstr "SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND に渡す引数"
+"`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND`."
+msgstr ""
 
 #: storages.py:14
 msgid ""

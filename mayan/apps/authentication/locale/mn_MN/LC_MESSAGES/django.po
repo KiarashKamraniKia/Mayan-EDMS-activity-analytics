@@ -90,7 +90,7 @@ msgstr "\"Нууц үгээ мартсан уу?\" холбоосыг байхг
 msgid "Dotted path to the backend used to process user authentication."
 msgstr ""
 
-#: settings.py:31
+#: settings.py:32
 msgid "Arguments for the AUTHENTICATION_BACKEND."
 msgstr ""
 

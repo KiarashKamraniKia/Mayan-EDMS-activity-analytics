@@ -54,13 +54,13 @@ msgstr "خصائص المشرف التلقائي"
 msgid "Sets the email of the automatically created super user account."
 msgstr "ضبط البريد الإلكتروني لحساب المستخدم  "
 
-#: settings.py:18
+#: settings.py:19
 msgid ""
 "The password of the automatically created super user account. If it is equal"
 " to None, the password is randomly generated."
 msgstr "تم إنشاء كلمة المرور للحساب"
 
-#: settings.py:24
+#: settings.py:26
 msgid "The username of the automatically created super user account."
 msgstr "تم إنشاء اسم المستخدم "
 

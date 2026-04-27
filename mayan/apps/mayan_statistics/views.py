@@ -20,7 +20,8 @@ class StatisticNamespaceListView(SingleObjectListView):
         'hide_link': True,
         'no_results_icon': icon_statistic_namespace_list,
         'no_results_text': _(
-            message='Statistics namespaces group statistics into logical units. '
+            message='Statistics namespaces group statistics into logical '
+            'units. '
         ),
         'no_results_title': _(message='No statistic namespaces available'),
         'title': _(message='Statistics namespaces')

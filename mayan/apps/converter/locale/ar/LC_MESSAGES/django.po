@@ -371,11 +371,11 @@ msgstr "مستوى عتامة الصورة كنسبة مئوية"
 msgid "Transparency"
 msgstr "الشفافية"
 
-#: transformation_mixins.py:27 transformations.py:776
+#: transformation_mixins.py:27 transformations.py:777
 msgid "Zoom level in percent."
 msgstr "مستوى التكبير/التصغير كنسبة مئوية"
 
-#: transformation_mixins.py:28 transformations.py:771
+#: transformation_mixins.py:28 transformations.py:772
 msgid "Zoom"
 msgstr "التكبير"
 
@@ -469,7 +469,7 @@ msgstr "اسم الأصل"
 msgid "Color used to fill the rectangle."
 msgstr "اللون المستخدم لتعبئة المستطيل."
 
-#: transformation_mixins.py:355 transformations.py:677
+#: transformation_mixins.py:355 transformations.py:678
 msgid "Fill color"
 msgstr "لون التعبئة"
 
@@ -573,7 +573,7 @@ msgstr "عرض"
 msgid "Gaussian blur"
 msgstr "الضبابي"
 
-#: transformations.py:545 transformations.py:746
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr "نطاق"
 
@@ -629,39 +629,39 @@ msgstr "درجات"
 msgid "Color to be used for area outside of the rotated image."
 msgstr "اللون الذي سيتم استخدامه للمنطقة خارج الصورة الدائرية."
 
-#: transformations.py:708
+#: transformations.py:709
 msgid "Rotate 90 degrees"
 msgstr "استدارة 90 درجة"
 
-#: transformations.py:719
+#: transformations.py:720
 msgid "Rotate 180 degrees"
 msgstr "استدارة 180 درجة"
 
-#: transformations.py:730
+#: transformations.py:731
 msgid "Rotate 270 degrees"
 msgstr "استدارة 270 درجة"
 
-#: transformations.py:740
+#: transformations.py:741
 msgid "Unsharp masking"
 msgstr "اخفاء"
 
-#: transformations.py:745
+#: transformations.py:746
 msgid "The blur radius in pixels."
 msgstr "مدى التمويه بالبكسل."
 
-#: transformations.py:749
+#: transformations.py:750
 msgid "Unsharp strength in percent."
 msgstr "قوة الحدّة بالنسبة المئوية"
 
-#: transformations.py:750 transformations.py:777
+#: transformations.py:751 transformations.py:778
 msgid "Percent"
 msgstr "نسبة مئوية"
 
-#: transformations.py:754
+#: transformations.py:755
 msgid "Minimum brightness change that will be sharpened."
 msgstr "الحد الأدنى لتباين السطوع الذي سيُطبَّق عليه التشديد"
 
-#: transformations.py:755
+#: transformations.py:756
 msgid "Tthreshold"
 msgstr "الحد الأدنى للتغير "
 

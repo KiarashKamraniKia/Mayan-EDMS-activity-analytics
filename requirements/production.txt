@@ -41,7 +41,7 @@ openai==1.109.1
 pycountry==26.2.16
 pycryptodome==3.23.0
 pyotp==2.9.0
-pypdf==6.10.0
+pypdf==6.10.2
 python-dateutil==2.9.0.post0
 python_gnupg==0.5.6
 pytz==2026.1.post1

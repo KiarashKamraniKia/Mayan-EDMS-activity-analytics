@@ -384,7 +384,11 @@ SettingNamespaceSingleton.register_setting(
 )
 SettingNamespaceSingleton.register_setting(
     klass=BaseSetting, kwargs={
-        'has_default': True, 'default_value': None
+        'has_default': True, 'default_value': {
+            'default': {
+                'BACKEND': 'django.core.cache.backends.locmem.LocMemCache'
+            }
+        }
     }, name='CACHES'
 )
 SettingNamespaceSingleton.register_setting(

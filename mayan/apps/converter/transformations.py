@@ -667,13 +667,14 @@ class TransformationRotate(BaseTransformation):
     class Form(forms.Form):
         degrees = form_fields.IntegerField(
             help_text=_(
-                message='Number of degrees to rotate the image counter clockwise '
-                'around its center.'
+                message='Number of degrees to rotate the image counter '
+                'clockwise around its center.'
             ), label=_(message='Degrees'), required=True
         )
         fillcolor = form_fields.CharField(
             help_text=_(
-                message='Color to be used for area outside of the rotated image.'
+                message='Color to be used for area outside of the rotated '
+                'image.'
             ), label=_(message='Fill color'), required=False,
             widget=form_widgets.ColorWidget()
         )

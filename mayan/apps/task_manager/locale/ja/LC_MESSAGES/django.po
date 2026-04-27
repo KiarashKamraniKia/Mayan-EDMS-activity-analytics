@@ -24,11 +24,11 @@ msgstr ""
 msgid "Task manager"
 msgstr "タスクマネージャー"
 
-#: apps.py:123 apps.py:200 classes.py:64
+#: apps.py:123 apps.py:201 classes.py:64
 msgid "Label"
 msgstr "ラベル"
 
-#: apps.py:127 apps.py:204 classes.py:71
+#: apps.py:127 apps.py:205 classes.py:71
 msgid "Name"
 msgstr "名前"
 
@@ -44,61 +44,61 @@ msgid ""
 msgstr ""
 "一時的なキューは永続的ではありません。ブローカーが再起動されると、一時キュー内のタスクは失われます。一時キューはリソースを少なく使用し、重要でないタスクの管理に適しています。"
 
-#: apps.py:140
+#: apps.py:141
 msgid "Is transient?"
 msgstr "一時キューですか？"
 
-#: apps.py:171
+#: apps.py:172
 msgid "Type"
 msgstr "タイプ"
 
-#: apps.py:176
+#: apps.py:177
 msgid "Start time"
 msgstr "開始時刻"
 
-#: apps.py:180
+#: apps.py:181
 msgid "Host"
 msgstr "ホスト"
 
-#: apps.py:184
+#: apps.py:185
 msgid "Arguments"
 msgstr "引数"
 
-#: apps.py:188
+#: apps.py:189
 msgid "Keyword arguments"
 msgstr "キーワード引数"
 
-#: apps.py:193
+#: apps.py:194
 msgid "Worker process ID"
 msgstr "ワーカープロセス ID"
 
-#: apps.py:213
+#: apps.py:214
 msgid ""
 "Maximum number of tasks a worker can execute before it's replaced by a new "
 "process."
 msgstr "ワーカーが置き換えられる前に実行できるタスクの最大数"
 
-#: apps.py:215
+#: apps.py:216
 msgid "Maximum tasks per child"
 msgstr "子プロセスごとの最大タスク数"
 
-#: apps.py:220
+#: apps.py:221
 msgid ""
 "The number of worker processes/threads to launch. Defaults to the number of "
 "CPUs available on the machine."
 msgstr "起動するワーカープロセス/スレッドの数。デフォルトはマシンの利用可能なCPU数です。"
 
-#: apps.py:222
+#: apps.py:223
 msgid "Concurrency"
 msgstr "同時実行数"
 
-#: apps.py:227
+#: apps.py:228
 msgid ""
 "The nice value determines the priority of the process. A higher value lowers"
 " the priority. The default value is 0."
 msgstr "プロセスの優先度を決定するnice値。値が大きいほど優先度は低くなります。デフォルト値は0です。"
 
-#: apps.py:230
+#: apps.py:231
 msgid "Nice level"
 msgstr "Niceレベル"
 

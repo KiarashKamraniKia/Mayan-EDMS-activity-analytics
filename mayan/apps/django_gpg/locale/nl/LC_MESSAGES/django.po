@@ -229,11 +229,11 @@ msgstr ""
 "Volledige pad naar backend die gebruikt wordt om sleutels en handtekeningen "
 "af te handelen."
 
-#: settings.py:25
+#: settings.py:26
 msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
 msgstr ""
 
-#: settings.py:30
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "Sleutelserver om naar sleutels te zoeken."
 

@@ -143,6 +143,10 @@ msgstr ""
 msgid "Settings namespace"
 msgstr ""
 
+#: namespaces.py:94
+msgid "Settings namespace"
+msgstr ""
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr "Τροποποίηση ρυθμίσεων"
@@ -511,13 +515,10 @@ msgstr ""
 
 #: settings.py:286
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"Προεπιλογή: 'sessionid'. Το όνομα του cookie που θα χρησιμοποιηθεί για "
-"περιόδους σύνδεσης. Αυτό μπορεί να είναι ό,τι επιθυμείτε (αρκεί να είναι "
-"διαφορετικό από τα άλλα ονόματα cookie στην εφαρμογή σας)."
 
 #: settings.py:294
 msgid ""

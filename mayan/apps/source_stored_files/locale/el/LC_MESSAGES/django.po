@@ -25,11 +25,11 @@ msgstr ""
 msgid "Source stored files"
 msgstr ""
 
-#: classes.py:45
+#: classes.py:48
 msgid "Size"
 msgstr ""
 
-#: classes.py:49
+#: classes.py:52
 msgid "Thumbnail"
 msgstr "Μικρογραφία"
 
@@ -154,8 +154,9 @@ msgid "No source files available"
 msgstr ""
 
 #: source_backends/stored_file_mixins.py:191
-msgid "Width value to be passed to the image converter backend."
+msgid "Width value to be passed to the converter backend."
 msgstr ""
+"Τιμή πλάτους που θα διαβιβαστεί στον μετατροπέα του υποκείμενου συστήματος."
 
 #: source_backends/stored_file_mixins.py:197
 msgid "Preview width"

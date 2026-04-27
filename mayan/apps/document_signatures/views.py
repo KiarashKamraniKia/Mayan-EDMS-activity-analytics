@@ -309,8 +309,8 @@ class DocumentFileSignatureListView(
             'hide_object': True,
             'no_results_icon': icon_document_file_signature_list,
             'no_results_text': _(
-                message='Signatures help provide authorship evidence and tamper '
-                'detection. They are very secure and hard to '
+                message='Signatures help provide authorship evidence and '
+                'tamper detection. They are very secure and hard to '
                 'forge. A signature can be embedded as part of the document '
                 'itself or uploaded as a separate file.'
             ),
@@ -375,8 +375,8 @@ class AllDocumentSignatureRefreshView(ConfirmView):
 class AllDocumentSignatureVerifyView(ConfirmView):
     extra_context = {
         'message': _(
-            message='On large databases this operation may take some time to '
-            'execute.'
+            message='On large databases this operation may take some time '
+            'to execute.'
         ), 'title': _(message='Verify all document for signatures?')
     }
     view_icon = icon_document_file_all_signature_verify

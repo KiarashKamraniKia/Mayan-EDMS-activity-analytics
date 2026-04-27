@@ -5,7 +5,6 @@ from ..decorators import templating_dangerous_tag
 
 register = Library()
 
-
 if settings.TESTING:
     from ..tests.literals import TEST_TEMPLATE_TAG_RESULT
     # Hidden import.

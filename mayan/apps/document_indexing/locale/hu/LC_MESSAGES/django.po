@@ -71,8 +71,8 @@ msgstr "Névtér"
 msgid "Label"
 msgstr "Cimke"
 
-#: forms.py:32 models/index_template_models.py:46
-#: models/index_template_models.py:166
+#: forms.py:32 models/index_template_models.py:47
+#: models/index_template_models.py:167
 msgid "Enabled"
 msgstr "Engedélyezett"
 
@@ -80,7 +80,7 @@ msgstr "Engedélyezett"
 msgid "Index templates to be queued for rebuilding."
 msgstr "Sorbaállítandó indexsablonok az újraépítéshez."
 
-#: forms.py:47 links.py:37 links.py:101 models/index_template_models.py:58
+#: forms.py:47 links.py:37 links.py:101 models/index_template_models.py:59
 #: views/index_template_views.py:95
 msgid "Index templates"
 msgstr "Indexsablonok"
@@ -109,7 +109,7 @@ msgstr "Törli és a nulláról létrehozza az összes dokumentumindexet."
 msgid "Rebuild indexes"
 msgstr "Indexek újraépítése"
 
-#: links.py:69 views/index_template_views.py:448
+#: links.py:69 views/index_template_views.py:449
 msgid "Reset indexes"
 msgstr "Indexek visszaállítása"
 
@@ -121,7 +121,7 @@ msgstr "Index létrehozása"
 msgid "Delete"
 msgstr "Törlés"
 
-#: links.py:88 models/index_template_models.py:50
+#: links.py:88 models/index_template_models.py:51
 #: serializers/index_template_serializers.py:196
 msgid "Document types"
 msgstr "Dokumentumtípusok"
@@ -187,7 +187,7 @@ msgstr "index instance"
 msgid "Index instances"
 msgstr "Index példányok"
 
-#: models/index_instance_models.py:59 models/index_template_models.py:178
+#: models/index_instance_models.py:59 models/index_template_models.py:179
 msgid "Index template node"
 msgstr "Indexsablon csomópont"
 
@@ -225,56 +225,56 @@ msgstr ""
 "Más alkalmazások ezt az értéket fogják használni az indexre való "
 "hivatkozáshoz."
 
-#: models/index_template_models.py:40
+#: models/index_template_models.py:41
 msgid "Slug"
 msgstr "Hivatkozás"
 
-#: models/index_template_models.py:44
+#: models/index_template_models.py:45
 msgid ""
 "Causes this index to be visible and updated when document data changes."
 msgstr ""
 "Ez az index látható és frissül, amikor a dokumentum adatai megváltoznak."
 
-#: models/index_template_models.py:57 models/index_template_models.py:97
+#: models/index_template_models.py:58 models/index_template_models.py:98
 msgid "Index template"
 msgstr "Indexsablon"
 
-#: models/index_template_models.py:101
+#: models/index_template_models.py:102
 msgid "Event type"
 msgstr "Esemény típus"
 
-#: models/index_template_models.py:106
+#: models/index_template_models.py:107
 msgid "Index template event trigger"
 msgstr "Indexsablon eseményindító"
 
-#: models/index_template_models.py:107
+#: models/index_template_models.py:108
 msgid "Index template event triggers"
 msgstr "Indexsablon eseményindítók"
 
-#: models/index_template_models.py:145
+#: models/index_template_models.py:146
 msgid "Parent index template node of this node."
 msgstr "Ennek a csomópontnak a fölérendelt indexsablon csomópontja."
 
-#: models/index_template_models.py:151
+#: models/index_template_models.py:152
 msgid "Index"
 msgstr "Index"
 
-#: models/index_template_models.py:155
+#: models/index_template_models.py:156
 msgid "Enter a template to render. Use Django's default templating language."
 msgstr ""
 "Adjon meg egy sablont a megjelenítéshez. Használja a Django alapértelmezett "
 "sablonnyelvét."
 
-#: models/index_template_models.py:158
+#: models/index_template_models.py:159
 msgid "Indexing expression"
 msgstr "Indexelő kifejezés"
 
-#: models/index_template_models.py:163
+#: models/index_template_models.py:164
 msgid "Causes this node to be visible and updated when document data changes."
 msgstr ""
 "Ez az index látható és frissül, amikor a dokumentum adatai megváltoznak."
 
-#: models/index_template_models.py:171
+#: models/index_template_models.py:172
 msgid ""
 "Check this option to have this node act as a container for documents and not"
 " as a parent for further nodes."
@@ -283,15 +283,15 @@ msgstr ""
 "dokumentumok tárolójaként működjön, nem pedig fölérendelt csomópontként a "
 "további csomópontok számára."
 
-#: models/index_template_models.py:174
+#: models/index_template_models.py:175
 msgid "Link documents"
 msgstr "Dokumentumok linkelése"
 
-#: models/index_template_models.py:179
+#: models/index_template_models.py:180
 msgid "Index template nodes"
 msgstr "Sablon csomópontok indexelése"
 
-#: models/index_template_models.py:183
+#: models/index_template_models.py:184
 msgid "Root"
 msgstr "Gyökér"
 
@@ -319,7 +319,7 @@ msgstr "Indexsablonok törlése"
 msgid "View index templates"
 msgstr "Indexsablonok megtekintése"
 
-#: permissions.py:25 views/index_template_views.py:412
+#: permissions.py:25 views/index_template_views.py:413
 msgid "Rebuild index templates"
 msgstr "Indexsablonok újraépítése"
 
@@ -583,7 +583,7 @@ msgstr "Hiba az indexsablon eseményindítójának frissítésekor; %s"
 msgid "Index template event triggers updated successfully."
 msgstr "Az indexsablon eseményindítói sikeresen frissítve."
 
-#: views/index_template_views.py:234
+#: views/index_template_views.py:235
 msgid ""
 "Triggers are document events that cause instances of this index template to "
 "be updated."
@@ -591,54 +591,54 @@ msgstr ""
 "Az eseményindítók olyan dokumentumesemények, amelyek az indexsablon "
 "példányainak frissítését okozzák."
 
-#: views/index_template_views.py:239
+#: views/index_template_views.py:240
 #, python-format
 msgid "Index template event triggers for: %s"
 msgstr "Indexsablon eseményindítói a következőhöz: %s"
 
-#: views/index_template_views.py:284
+#: views/index_template_views.py:285
 #, python-format
 msgid "Tree template nodes for index: %s"
 msgstr "Fastruktúra sablon csomópontjai az indexhez: %s"
 
-#: views/index_template_views.py:311
+#: views/index_template_views.py:312
 #, python-format
 msgid "Create child node of: %s"
 msgstr "Gyermekcsomópont létrehozása: %s"
 
-#: views/index_template_views.py:337
+#: views/index_template_views.py:338
 #, python-format
 msgid "Delete the index template node: %s?"
 msgstr "Az indexsablon csomópontjának törlése: %s ?"
 
-#: views/index_template_views.py:361
+#: views/index_template_views.py:362
 #, python-format
 msgid "Edit the index template node: %s"
 msgstr "Az indexsablon csomópontjának szerkesztése: %s"
 
-#: views/index_template_views.py:382
+#: views/index_template_views.py:383
 #, python-format
 msgid "Rebuild index template: %s"
 msgstr "Indexsablon újraépítése: %s"
 
-#: views/index_template_views.py:405
+#: views/index_template_views.py:406
 msgid "Index template queued for rebuild."
 msgstr "Az indexsablon újraépítésre vár."
 
-#: views/index_template_views.py:429
+#: views/index_template_views.py:430
 #, python-format
 msgid "%(count)d index template queued for rebuild."
 msgid_plural "%(count)d index templates queued for rebuild."
 msgstr[0] "%(count)d indexsablon újraépítésre vár."
 msgstr[1] "%(count)d indexsablon újjáépítésre vár."
 
-#: views/index_template_views.py:461
+#: views/index_template_views.py:462
 #, python-format
 msgid "%(count)d index reset."
 msgid_plural "%(count)d indexes reset."
 msgstr[0] "%(count)d index visszaállítása."
 msgstr[1] "%(count)d index visszaállítása."
 
-#: views/index_template_views.py:474
+#: views/index_template_views.py:475
 msgid "Index templates for which their instances will be deleted."
 msgstr "Indexsablonok, amelyek példányai törlésre kerülnek."

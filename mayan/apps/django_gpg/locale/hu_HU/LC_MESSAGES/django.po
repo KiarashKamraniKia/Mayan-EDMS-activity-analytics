@@ -230,11 +230,11 @@ msgstr ""
 "A kulcsok és aláírások kezelésére szolgáló háttérrendszer teljes elérési "
 "útja."
 
-#: settings.py:25
+#: settings.py:26
 msgid "Keyword arguments to pass to the `SIGNATURES_BACKEND`."
 msgstr ""
 
-#: settings.py:30
+#: settings.py:31
 msgid "Keyserver used to query for keys."
 msgstr "A kulcsok lekérdezésére használt kulcsszerver."
 

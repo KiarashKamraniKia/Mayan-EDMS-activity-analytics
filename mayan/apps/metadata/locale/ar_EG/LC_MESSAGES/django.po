@@ -94,7 +94,7 @@ msgstr "قيمة"
 msgid "Update"
 msgstr "تحديث"
 
-#: forms.py:50 forms.py:233 models/document_type_metadata_type_models.py:31
+#: forms.py:50 forms.py:234 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "متطلب"
 
@@ -113,7 +113,7 @@ msgstr "خطأ القيمة الافتراضية: %s"
 msgid "\"%s\" is required for this document type."
 msgstr "مطلوب &quot;%s&quot; لنوع المستند هذا."
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr "يرجى الإختيار لإكمال عملية الإضافة"
 
@@ -123,31 +123,31 @@ msgstr "يرجى الإختيار لإكمال عملية الإضافة"
 msgid "Metadata type"
 msgstr "نوع البيانات الوصفية"
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "حذف"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr "أساسي"
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr "القيم"
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr "التحقق"
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr "تفسير"
 
-#: forms.py:231
+#: forms.py:232
 msgid "None"
 msgstr "لا شيء"
 
-#: forms.py:232
+#: forms.py:233
 msgid "Optional"
 msgstr "اختياري"
 

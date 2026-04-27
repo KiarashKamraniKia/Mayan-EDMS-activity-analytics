@@ -107,7 +107,7 @@ msgstr ""
 "Nombre del tema de la hoja de estilo CSS utilizada para cambiar la "
 "apariencia visual de la vista previa de la plantilla ."
 
-#: templatetags/templating_tags.py:100
+#: templatetags/templating_tags.py:99
 msgid "Tag can bypass access controls and create permanent changes."
 msgstr ""
 

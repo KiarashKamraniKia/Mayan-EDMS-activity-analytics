@@ -386,11 +386,11 @@ msgstr "Рівень непрозорості зображення у відсо
 msgid "Transparency"
 msgstr "Прозорість"
 
-#: transformation_mixins.py:27 transformations.py:776
+#: transformation_mixins.py:27 transformations.py:777
 msgid "Zoom level in percent."
 msgstr "Рівень масштабування у відсотках."
 
-#: transformation_mixins.py:28 transformations.py:771
+#: transformation_mixins.py:28 transformations.py:772
 msgid "Zoom"
 msgstr "Збільшення"
 
@@ -484,7 +484,7 @@ msgstr "Назва ресурсу"
 msgid "Color used to fill the rectangle."
 msgstr "Колір, який використовується для заповнення прямокутника."
 
-#: transformation_mixins.py:355 transformations.py:677
+#: transformation_mixins.py:355 transformations.py:678
 msgid "Fill color"
 msgstr "Колір заповнення"
 
@@ -588,7 +588,7 @@ msgstr "Перевернути"
 msgid "Gaussian blur"
 msgstr "Гаусове розмиття"
 
-#: transformations.py:545 transformations.py:746
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr "Радіус"
 
@@ -645,39 +645,39 @@ msgid "Color to be used for area outside of the rotated image."
 msgstr ""
 "Колір, який буде використовуватися для області поза поверненим зображенням."
 
-#: transformations.py:708
+#: transformations.py:709
 msgid "Rotate 90 degrees"
 msgstr "Поворот на 90 градусів"
 
-#: transformations.py:719
+#: transformations.py:720
 msgid "Rotate 180 degrees"
 msgstr "Поворот на 180 градусів"
 
-#: transformations.py:730
+#: transformations.py:731
 msgid "Rotate 270 degrees"
 msgstr "Поворот на 270 градусів"
 
-#: transformations.py:740
+#: transformations.py:741
 msgid "Unsharp masking"
 msgstr "Нерізке маскування"
 
-#: transformations.py:745
+#: transformations.py:746
 msgid "The blur radius in pixels."
 msgstr "Радіус розмиття в пікселях."
 
-#: transformations.py:749
+#: transformations.py:750
 msgid "Unsharp strength in percent."
 msgstr "Сила нерізкості у відсотках."
 
-#: transformations.py:750 transformations.py:777
+#: transformations.py:751 transformations.py:778
 msgid "Percent"
 msgstr "Відсоток"
 
-#: transformations.py:754
+#: transformations.py:755
 msgid "Minimum brightness change that will be sharpened."
 msgstr "Мінімальна зміна яскравості, яка буде посилена."
 
-#: transformations.py:755
+#: transformations.py:756
 msgid "Tthreshold"
 msgstr "Tпоріг"
 

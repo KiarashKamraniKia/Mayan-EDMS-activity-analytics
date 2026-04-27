@@ -145,6 +145,10 @@ msgstr ""
 msgid "Settings namespace"
 msgstr "Ayarlar ad alanı"
 
+#: namespaces.py:94
+msgid "Settings namespace"
+msgstr "Ayarlar ad alanı"
+
 #: permissions.py:10
 msgid "Edit settings"
 msgstr "Ayarları düzenle"
@@ -497,13 +501,10 @@ msgstr ""
 
 #: settings.py:286
 msgid ""
-"Default: 'sessionid'. The name of the cookie to use for sessions.This can be"
-" whatever you want (as long as it's different from the other cookie names in"
-" your application)."
+"Default: 'sessionid'. The name of the cookie to use for sessions. This can "
+"be whatever you want (as long as it's different from the other cookie names "
+"in your application)."
 msgstr ""
-"Varsayılan: 'sessionid'. Oturumlar için kullanılacak tanımlama bilgisinin "
-"adı. Bu, istediğiniz her şey olabilir (uygulamanızdaki diğer tanımlama "
-"bilgisi adlarından farklı olduğu sürece)."
 
 #: settings.py:294
 msgid ""

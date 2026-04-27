@@ -355,11 +355,11 @@ msgstr ""
 msgid "Transparency"
 msgstr ""
 
-#: transformation_mixins.py:27 transformations.py:776
+#: transformation_mixins.py:27 transformations.py:777
 msgid "Zoom level in percent."
 msgstr ""
 
-#: transformation_mixins.py:28 transformations.py:771
+#: transformation_mixins.py:28 transformations.py:772
 msgid "Zoom"
 msgstr "放大"
 
@@ -453,7 +453,7 @@ msgstr ""
 msgid "Color used to fill the rectangle."
 msgstr ""
 
-#: transformation_mixins.py:355 transformations.py:677
+#: transformation_mixins.py:355 transformations.py:678
 msgid "Fill color"
 msgstr ""
 
@@ -557,7 +557,7 @@ msgstr "翻动"
 msgid "Gaussian blur"
 msgstr "高斯模糊"
 
-#: transformations.py:545 transformations.py:746
+#: transformations.py:545 transformations.py:747
 msgid "Radius"
 msgstr ""
 
@@ -613,39 +613,39 @@ msgstr ""
 msgid "Color to be used for area outside of the rotated image."
 msgstr ""
 
-#: transformations.py:708
+#: transformations.py:709
 msgid "Rotate 90 degrees"
 msgstr "旋转90度"
 
-#: transformations.py:719
+#: transformations.py:720
 msgid "Rotate 180 degrees"
 msgstr "旋转180度"
 
-#: transformations.py:730
+#: transformations.py:731
 msgid "Rotate 270 degrees"
 msgstr "旋转270度"
 
-#: transformations.py:740
+#: transformations.py:741
 msgid "Unsharp masking"
 msgstr "钝化掩模"
 
-#: transformations.py:745
+#: transformations.py:746
 msgid "The blur radius in pixels."
 msgstr ""
 
-#: transformations.py:749
+#: transformations.py:750
 msgid "Unsharp strength in percent."
 msgstr ""
 
-#: transformations.py:750 transformations.py:777
+#: transformations.py:751 transformations.py:778
 msgid "Percent"
 msgstr ""
 
-#: transformations.py:754
+#: transformations.py:755
 msgid "Minimum brightness change that will be sharpened."
 msgstr ""
 
-#: transformations.py:755
+#: transformations.py:756
 msgid "Tthreshold"
 msgstr ""
 

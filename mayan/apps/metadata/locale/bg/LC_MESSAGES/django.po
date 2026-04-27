@@ -89,7 +89,7 @@ msgstr "Стойност"
 msgid "Update"
 msgstr "Актуализация"
 
-#: forms.py:50 forms.py:233 models/document_type_metadata_type_models.py:31
+#: forms.py:50 forms.py:234 models/document_type_metadata_type_models.py:31
 msgid "Required"
 msgstr "Задължително"
 
@@ -108,7 +108,7 @@ msgstr "Грешка в стойността по подразбиране: %s"
 msgid "\"%s\" is required for this document type."
 msgstr "&quot;%s&quot; е задължително за този тип документ."
 
-#: forms.py:137
+#: forms.py:138
 msgid "Metadata types to be added to the selected documents."
 msgstr "Типове метаданни, които трябва да се добавят към избраните документи."
 
@@ -118,31 +118,31 @@ msgstr "Типове метаданни, които трябва да се до�
 msgid "Metadata type"
 msgstr "Тип метаданни"
 
-#: forms.py:163
+#: forms.py:164
 msgid "Remove"
 msgstr "Премахнете"
 
-#: forms.py:182
+#: forms.py:183
 msgid "Basic"
 msgstr ""
 
-#: forms.py:186
+#: forms.py:187
 msgid "Values"
 msgstr ""
 
-#: forms.py:190
+#: forms.py:191
 msgid "Validation"
 msgstr ""
 
-#: forms.py:194
+#: forms.py:195
 msgid "Parsing"
 msgstr "Анализиране"
 
-#: forms.py:231
+#: forms.py:232
 msgid "None"
 msgstr "Няма"
 
-#: forms.py:232
+#: forms.py:233
 msgid "Optional"
 msgstr "Незадължително"
 

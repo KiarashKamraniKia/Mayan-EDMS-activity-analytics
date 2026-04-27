@@ -54,7 +54,7 @@ msgstr "已刪除的ACL存取控制"
 msgid "ACL edited"
 msgstr "已編輯的ACL存取控制"
 
-#: forms.py:12 models.py:58 serializers.py:79 views.py:73
+#: forms.py:12 models.py:59 serializers.py:79 views.py:73
 msgid "Role"
 msgstr "角色"
 
@@ -100,15 +100,15 @@ msgstr "物件ID"
 msgid "Role to which the access is granted for the specified object."
 msgstr "對於特定物件被允許存取的角色."
 
-#: models.py:66
+#: models.py:67
 msgid "Access entry"
 msgstr "存取項目"
 
-#: models.py:67
+#: models.py:68
 msgid "Access entries"
 msgstr "存取項目-複數項目"
 
-#: models.py:71
+#: models.py:72
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\""
 msgstr "角色%(object)s中“%(role)s”的權限"
@@ -139,7 +139,7 @@ msgstr "角色 ID"
 
 #: serializers.py:85
 msgid "URL"
-msgstr "网址"
+msgstr "網址"
 
 #: serializers.py:118
 msgid "Primary key of the permission to add to the ACL."

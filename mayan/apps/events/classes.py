@@ -13,6 +13,7 @@ from actstream import action
 
 from mayan.apps.common.class_mixins import AppsModuleLoaderMixin
 from mayan.apps.common.menus import menu_list_facet
+from mayan.apps.databases.literals import DEFAULT_QUERYSET_ITERATOR_CHUNK_SIZE
 from mayan.apps.organizations.utils import get_organization_installation_url
 
 from .exceptions import EventError
@@ -63,7 +64,7 @@ class ActionExporter:
             )
         )
 
-        for entry in self.queryset.iterator(chunk_size=2000):
+        for entry in self.queryset.iterator(chunk_size=DEFAULT_QUERYSET_ITERATOR_CHUNK_SIZE):
             row = [
                 str(
                     getattr(entry, field_name)
@@ -121,9 +122,9 @@ class ActionExporter:
                 user=user,
                 subject=_(message='Events exported.'),
                 body=_(
-                    message='The event list has been exported and is available '
-                    'for download using the link: %(download_url)s or from '
-                    'the downloads area (%(download_list_url)s).'
+                    message='The event list has been exported and is '
+                    'available for download using the link: %(download_url)s '
+                    'or from the downloads area (%(download_list_url)s).'
                 ) % {
                     'download_list_url': download_list_url,
                     'download_url': download_url

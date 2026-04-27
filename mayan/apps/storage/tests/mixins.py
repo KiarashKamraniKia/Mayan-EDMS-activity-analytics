@@ -16,7 +16,7 @@ from mayan.apps.common.tests.literals import (
 )
 from mayan.apps.documents.literals import STORAGE_NAME_DOCUMENT_FILES
 from mayan.apps.permissions.tests.mixins import PermissionTestMixin
-from mayan.apps.smart_settings.settings import setting_cluster
+from mayan.apps.smart_settings.setting_clusters import setting_cluster
 from mayan.apps.smart_settings.utils import get_environment_variable_full_name
 
 from ..classes import DefinedStorage

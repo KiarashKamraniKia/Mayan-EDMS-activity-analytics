@@ -645,15 +645,15 @@ msgstr "وقت تشغيل حالة المسار"
 msgid "Lookup value error: %s"
 msgstr "خطأ في قيمة البحث: %s"
 
-#: models/workflow_transition_field_model_mixins.py:111
+#: models/workflow_transition_field_model_mixins.py:110
 msgid "Has a default?"
 msgstr "هل يوجد إعداد افتراضي؟"
 
-#: models/workflow_transition_field_model_mixins.py:119
+#: models/workflow_transition_field_model_mixins.py:118
 msgid "Has a lookup?"
 msgstr "هل لديك بحث؟"
 
-#: models/workflow_transition_field_model_mixins.py:130
+#: models/workflow_transition_field_model_mixins.py:129
 msgid "Value is not one of the provided options."
 msgstr "القيمة ليست من بين الخيارات المتوفرة."
 
@@ -954,7 +954,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr "المفتاح الأساسي لنوع المستند المراد إضافته إلى رابط المسار."
 
 #: serializers/workflow_template_serializers.py:71
-#: serializers/workflow_template_serializers.py:80
+#: serializers/workflow_template_serializers.py:81
 msgid "Document type ID"
 msgstr "مُعرِّف نوع المستند"
 
@@ -976,11 +976,11 @@ msgstr "عنوان URL لحالة قالب سير العمل"
 msgid "Primary key of the workflow template transition to be added."
 msgstr "المفتاح الأساسي لانتقال قالب سير العمل الذي سيتم إضافته."
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr "معرف انتقال قالب سير العمل"
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr "عنوان URL لانتقال قالب سير العمل"
 
@@ -1346,31 +1346,31 @@ msgstr "المشغلات هي الأحداث التي تؤدي إلى تنفيذ
 msgid "Workflow transition trigger events for: %s"
 msgstr "أحداث تشغيل انتقال المسار لـ: %s"
 
-#: views/workflow_template_transition_views.py:39
+#: views/workflow_template_transition_views.py:40
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr "إنشاء تغيرات المسار: %s"
 
-#: views/workflow_template_transition_views.py:79
+#: views/workflow_template_transition_views.py:80
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr "حذف انتقال المسار: %s؟"
 
-#: views/workflow_template_transition_views.py:106
+#: views/workflow_template_transition_views.py:107
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr "تعديل انتقال المسار: %s"
 
-#: views/workflow_template_transition_views.py:146
+#: views/workflow_template_transition_views.py:147
 msgid ""
 "Create a transition and use it to move a workflow from one state to another."
 msgstr "إنشاء انتقال واستخدامه لنقل سير العمل من حالة إلى أخرى."
 
-#: views/workflow_template_transition_views.py:150
+#: views/workflow_template_transition_views.py:151
 msgid "This workflow doesn't have any transitions"
 msgstr "لا يحتوي المسار هذا على أي انتقالات"
 
-#: views/workflow_template_transition_views.py:154
+#: views/workflow_template_transition_views.py:155
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr "تغيرات المسار: %s"

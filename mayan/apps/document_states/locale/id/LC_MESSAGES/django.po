@@ -614,15 +614,15 @@ msgstr ""
 msgid "Lookup value error: %s"
 msgstr ""
 
-#: models/workflow_transition_field_model_mixins.py:111
+#: models/workflow_transition_field_model_mixins.py:110
 msgid "Has a default?"
 msgstr ""
 
-#: models/workflow_transition_field_model_mixins.py:119
+#: models/workflow_transition_field_model_mixins.py:118
 msgid "Has a lookup?"
 msgstr ""
 
-#: models/workflow_transition_field_model_mixins.py:130
+#: models/workflow_transition_field_model_mixins.py:129
 msgid "Value is not one of the provided options."
 msgstr ""
 
@@ -915,7 +915,7 @@ msgid "Primary key of the document type to add to the workflow."
 msgstr ""
 
 #: serializers/workflow_template_serializers.py:71
-#: serializers/workflow_template_serializers.py:80
+#: serializers/workflow_template_serializers.py:81
 msgid "Document type ID"
 msgstr ""
 
@@ -937,11 +937,11 @@ msgstr ""
 msgid "Primary key of the workflow template transition to be added."
 msgstr ""
 
-#: serializers/workflow_template_state_escalation_serializers.py:50
+#: serializers/workflow_template_state_escalation_serializers.py:51
 msgid "Workflow template transition ID"
 msgstr ""
 
-#: serializers/workflow_template_state_escalation_serializers.py:55
+#: serializers/workflow_template_state_escalation_serializers.py:56
 msgid "Workflow template transition URL"
 msgstr ""
 
@@ -1294,31 +1294,31 @@ msgstr ""
 msgid "Workflow transition trigger events for: %s"
 msgstr ""
 
-#: views/workflow_template_transition_views.py:39
+#: views/workflow_template_transition_views.py:40
 #, python-format
 msgid "Create transitions for workflow: %s"
 msgstr ""
 
-#: views/workflow_template_transition_views.py:79
+#: views/workflow_template_transition_views.py:80
 #, python-format
 msgid "Delete workflow transition: %s?"
 msgstr ""
 
-#: views/workflow_template_transition_views.py:106
+#: views/workflow_template_transition_views.py:107
 #, python-format
 msgid "Edit workflow transition: %s"
 msgstr ""
 
-#: views/workflow_template_transition_views.py:146
+#: views/workflow_template_transition_views.py:147
 msgid ""
 "Create a transition and use it to move a workflow from one state to another."
 msgstr ""
 
-#: views/workflow_template_transition_views.py:150
+#: views/workflow_template_transition_views.py:151
 msgid "This workflow doesn't have any transitions"
 msgstr ""
 
-#: views/workflow_template_transition_views.py:154
+#: views/workflow_template_transition_views.py:155
 #, python-format
 msgid "Transitions of workflow: %s"
 msgstr ""
