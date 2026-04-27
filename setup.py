@@ -94,14 +94,14 @@ extract-msg==0.55.0
 flex==6.14.1
 furl==2.1.4
 fusepy==3.0.1
-gevent==25.9.1
+gevent==26.4.0
 google-cloud-storage==3.9.0
 graphviz==0.21
-greenlet==3.3.2
-gunicorn==25.1.0
+greenlet==3.4.0
+gunicorn==25.3.0
 jsonschema==4.26.0
 mozilla-django-oidc==5.0.2
-nh3==0.3.4
+nh3==0.3.5
 node-semver==0.9.0
 ollama==0.6.1
 openai==1.109.1
@@ -114,7 +114,7 @@ python_gnupg==0.5.6
 pytz==2026.1.post1
 qrcode==8.2
 requests==2.33.1
-sentry-sdk==2.57.0
+sentry-sdk==2.58.0
 sh==2.2.2
 swagger-spec-validator==3.0.4
 whitenoise==6.12.0

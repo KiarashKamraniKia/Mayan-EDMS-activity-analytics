@@ -3,15 +3,15 @@ from mayan.apps.dependencies.environments import environment_production
 
 PythonDependency(
     environments=(environment_production,), module=__name__, name='gevent',
-    version_string='==25.9.1'
+    version_string='==26.4.0'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='greenlet',
-    version_string='==3.3.2'
+    version_string='==3.4.0'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='gunicorn',
-    version_string='==25.1.0'
+    version_string='==25.3.0'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__,

@@ -131,7 +131,7 @@ PythonDependency(
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='nh3',
-    version_string='==0.3.4'
+    version_string='==0.3.5'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='requests',

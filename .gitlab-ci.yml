@@ -285,7 +285,7 @@ job_documentation_build:
     - key: pip-cache-4.11
       paths:
         - .cache/pip
-  image: debian:13.4-slim
+  image: debian:trixie-20260421-slim
   only:
     - ci/builds/documentation
     - ci/releases/all/major
@@ -322,7 +322,7 @@ job_documentation_push:
     - key: pip-cache-4.11
       paths:
         - .cache/pip
-  image: debian:13.4-slim
+  image: debian:trixie-20260421-slim
   only:
     - ci/releases/all/major
     - ci/releases/documentation
@@ -361,7 +361,7 @@ job_python_build:
     - key: pip-cache-4.11
       paths:
         - .cache/pip
-  image: debian:13.4-slim
+  image: debian:trixie-20260421-slim
   only:
     - ci/builds/python
     - ci/releases/all/major
@@ -401,7 +401,7 @@ job_python_push_pypi:
     - key: pip-cache-4.11
       paths:
         - .cache/pip
-  image: debian:13.4-slim
+  image: debian:trixie-20260421-slim
   only:
     - ci/releases/all/major
     - ci/releases/all/minor
@@ -440,7 +440,7 @@ job_python_push_pypi:
     - key: pip-cache-4.11
       paths:
         - .cache/pip
-  image: debian:13.4-slim
+  image: debian:trixie-20260421-slim
   only:
     - ci/releases/all/major
     - ci/releases/all/minor
@@ -502,7 +502,7 @@ job_demo_deploy:
         - .cache/apt
   environment:
     name: demo
-  image: debian:13.4-slim
+  image: debian:trixie-20260421-slim
   only:
     - ci/builds/docker/arch/all
     - ci/deployments/demo
@@ -542,7 +542,7 @@ job_staging_deploy_all:
         - .cache/apt
   environment:
     name: staging
-  image: debian:13.4-slim
+  image: debian:trixie-20260421-slim
   only:
     - ci/builds/docker/arch/all
     - ci/deployments/staging/arch/all
@@ -586,7 +586,7 @@ job_staging_deploy_amd64:
         - .cache/apt
   environment:
     name: staging
-  image: debian:13.4-slim
+  image: debian:trixie-20260421-slim
   only:
     - ci/builds/docker/arch/amd64
     - ci/deployments/staging/arch/amd64
@@ -631,7 +631,7 @@ job_staging_deploy_arm64:
         - .cache/apt
   environment:
     name: staging
-  image: debian:13.4-slim
+  image: debian:trixie-20260421-slim
   only:
     - ci/builds/docker/arch/arm64
     - ci/deployments/staging/arch/arm64
