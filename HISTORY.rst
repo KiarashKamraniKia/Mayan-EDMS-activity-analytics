@@ -1,4 +1,4 @@
-4.11.3 (XXXX-XX-XX)
+4.11.3 (2026-04-27)
 ===================
 - Merge changes and improvements from version 4.10.5.
 - Update Docker image tags:
