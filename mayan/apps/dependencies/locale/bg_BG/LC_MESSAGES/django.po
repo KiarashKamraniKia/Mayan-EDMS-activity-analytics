@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 00:04+0000\n"
+"POT-Creation-Date: 2026-04-27 20:43+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Lyudmil Antonov <lantonov.here@gmail.com>, 2026\n"
 "Language-Team: Bulgarian (Bulgaria) (https://app.transifex.com/rosarior/teams/13584/bg_BG/)\n"
@@ -55,7 +55,7 @@ msgstr "Декларирано от"
 msgid "Version"
 msgstr "Версия"
 
-#: apps.py:61 classes.py:223 classes.py:1043
+#: apps.py:61 classes.py:223 classes.py:1044
 msgid "Environments"
 msgstr "Среди"
 
@@ -75,34 +75,34 @@ msgstr "Приложение"
 msgid "Need to specify at least one: app_label or module."
 msgstr "Трябва да посочите поне едно: app_label или модул."
 
-#: classes.py:348
+#: classes.py:347
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "Зависимостта „%s“ вече е регистрирана."
 
-#: classes.py:400
+#: classes.py:399
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Инсталиране на пакет: %s ..."
 
-#: classes.py:407
+#: classes.py:406
 msgid "Already installed."
 msgstr "Вече е инсталирано."
 
-#: classes.py:412 classes.py:419 classes.py:425 classes.py:437
+#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
 msgid "Complete."
 msgstr "Завършено."
 
-#: classes.py:432
+#: classes.py:431
 #, python-format
 msgid "Uninstalling package: %s... "
 msgstr ""
 
-#: classes.py:464
+#: classes.py:463
 msgid "Installed and correct version"
 msgstr "Инсталирана е правилна версия"
 
-#: classes.py:466
+#: classes.py:465
 msgid "Missing or incorrect version"
 msgstr "Липсваща или неправилна версия"
 
@@ -204,7 +204,7 @@ msgstr ""
 "зависимостите са инсталирани и са с правилна версия. Грешно означава, че "
 "зависимостите липсват или е налице неправилна версия."
 
-#: classes.py:1044
+#: classes.py:1045
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."
@@ -214,9 +214,11 @@ msgstr ""
 
 #: environments.py:17
 msgid ""
-"Environment used for building redistributable packages of the software. End "
+"Environment used for building distributable packages of the software. End "
 "users can ignore missing dependencies under this environment."
 msgstr ""
+"Среда, използвана за изграждане на дистрибуторски пакети на софтуера. "
+"Крайните потребители могат да игнорират липсващите зависимости в тази среда."
 
 #: environments.py:20
 msgid "Build"

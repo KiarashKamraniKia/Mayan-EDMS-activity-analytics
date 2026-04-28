@@ -5,17 +5,17 @@
 # 
 # Translators:
 # Nurgül Özkan <nurgulozkan@hotmail.com>, 2026
-# Bedreddin Şahbaz, 2026
 # serhatcan77 <serhat_can@yahoo.com>, 2026
 # Emine Öztürk <oemine075@gmail.com>, 2026
+# Bedreddin Şahbaz, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 00:04+0000\n"
+"POT-Creation-Date: 2026-04-27 20:43+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Emine Öztürk <oemine075@gmail.com>, 2026\n"
+"Last-Translator: Bedreddin Şahbaz, 2026\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -55,7 +55,7 @@ msgstr "Tarafından beyan edildi"
 msgid "Version"
 msgstr "Versiyon"
 
-#: apps.py:61 classes.py:223 classes.py:1043
+#: apps.py:61 classes.py:223 classes.py:1044
 msgid "Environments"
 msgstr "Çevresel değişkenler"
 
@@ -75,34 +75,34 @@ msgstr "Uygulama"
 msgid "Need to specify at least one: app_label or module."
 msgstr "En az birini belirtmeniz gerekiyor: app_label veya modül."
 
-#: classes.py:348
+#: classes.py:347
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "Bağımlılık \"%s\" zaten yüklü."
 
-#: classes.py:400
+#: classes.py:399
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Paket yükleniyor: %s..."
 
-#: classes.py:407
+#: classes.py:406
 msgid "Already installed."
 msgstr "Zaten yüklenmiş."
 
-#: classes.py:412 classes.py:419 classes.py:425 classes.py:437
+#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
 msgid "Complete."
 msgstr "Tamamlandı."
 
-#: classes.py:432
+#: classes.py:431
 #, python-format
 msgid "Uninstalling package: %s... "
 msgstr ""
 
-#: classes.py:464
+#: classes.py:463
 msgid "Installed and correct version"
 msgstr "Yüklü ve doğru sürüm"
 
-#: classes.py:466
+#: classes.py:465
 msgid "Missing or incorrect version"
 msgstr "Eksik veya yanlış sürüm"
 
@@ -204,7 +204,7 @@ msgstr ""
 "olduğu ve doğru bir sürüm olduğu anlamına gelir. False, bağımlılıkların "
 "eksik olduğu veya yanlış bir sürümün mevcut olduğu anlamına gelir."
 
-#: classes.py:1044
+#: classes.py:1045
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."
@@ -214,9 +214,11 @@ msgstr ""
 
 #: environments.py:17
 msgid ""
-"Environment used for building redistributable packages of the software. End "
+"Environment used for building distributable packages of the software. End "
 "users can ignore missing dependencies under this environment."
 msgstr ""
+"Yazılımın dağıtılabilir paketlerini oluşturmak için kullanılan çevre. Son "
+"kullanıcılar, bu çevre altında eksik bağımlılıkları yok sayabilir."
 
 #: environments.py:20
 msgid "Build"

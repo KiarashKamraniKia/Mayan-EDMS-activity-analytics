@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-25 20:33+0000\n"
+"POT-Creation-Date: 2026-04-27 20:45+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/rosarior/teams/13584/es_ES/)\n"
@@ -192,7 +192,7 @@ msgid ""
 "bytes."
 msgstr ""
 
-#: settings.py:31
+#: settings.py:32
 msgid ""
 "Path to the Storage subclass to use when storing the cached signature "
 "capture files."
@@ -200,7 +200,7 @@ msgstr ""
 "Ruta a la subclase de almacenamiento que se usará al almacenar los archivos "
 "de captura de firma en caché."
 
-#: settings.py:39
+#: settings.py:40
 msgid ""
 "Arguments to pass to the "
 "`SIGNATURE_CAPTURES_SIGNATURE_CAPTURE_CACHE_STORAGE_BACKEND`."

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-25 20:32+0000\n"
+"POT-Creation-Date: 2026-04-27 20:44+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/rosarior/teams/13584/es_ES/)\n"
@@ -431,24 +431,24 @@ msgstr ""
 "Inhabilita la búsqueda de barra de término único dejando solo el botón de "
 "búsqueda avanzada."
 
-#: settings.py:57
+#: settings.py:56
 msgid "Amount of objects to process when performing bulk indexing."
 msgstr "Cantidad de objetos a procesar al realizar la indexación masiva."
 
-#: settings.py:63
+#: settings.py:62
 msgid "Sets the default state of the \"Match all\" checkbox."
 msgstr ""
 "Establece el estado predeterminado de la casilla de verificación \"Coincidir"
 " con todos\"."
 
-#: settings.py:70
+#: settings.py:68
 msgid ""
 "Maximum number of search results to fetch and display per search query unit."
 msgstr ""
 "Número máximo de resultados de búsqueda para obtener y mostrar por unidad de"
 " consulta de búsqueda."
 
-#: settings.py:77
+#: settings.py:75
 msgid ""
 "Raise an error when the number of search results exceed the value of "
 "`SEARCH_QUERY_RESULTS_LIMIT`."
@@ -456,33 +456,33 @@ msgstr ""
 "Generar un error cuando el número de resultados de búsqueda excede el valor "
 "de `SEARCH_QUERY_RESULTS_LIMIT`."
 
-#: settings.py:84
+#: settings.py:82
 msgid "Maximum number of search results to fetch and display."
 msgstr "Número máximo de resultados de búsqueda para obtener y mostrar."
 
-#: settings.py:90
+#: settings.py:88
 msgid "Maximum number of saved resultsets to keep per user."
 msgstr ""
 "Número máximo de conjuntos de resultados guardados para conservar por "
 "usuario."
 
-#: settings.py:96
+#: settings.py:94
 msgid "Maximum number of results to store per resultset."
 msgstr ""
 "Número máximo de resultados para almacenar por conjunto de resultados."
 
-#: settings.py:102
+#: settings.py:100
 msgid "Time to keep the resultset in seconds."
 msgstr ""
 "Tiempo en segundo durante el cual de conservará el conjunto de resultados."
 
-#: settings.py:108
+#: settings.py:106
 msgid "Amount to increase the time to live on each access of the resultset."
 msgstr ""
 "Cantidad para aumentar el tiempo de vida en cada acceso al conjunto de "
 "resultados."
 
-#: settings.py:115
+#: settings.py:113
 msgid ""
 "Specifies the fields from which search model are to be disabled. The format "
 "is a dictionary of lists. The search model name is the dictionary key and "
@@ -490,7 +490,7 @@ msgid ""
 "neither be available for search nor be indexed by the search backend."
 msgstr ""
 
-#: settings.py:126
+#: settings.py:124
 msgid "Sets the default state of the \"Store results\" checkbox."
 msgstr ""
 "Establece el estado predeterminado de la casilla \"Almacenar resultados\"."

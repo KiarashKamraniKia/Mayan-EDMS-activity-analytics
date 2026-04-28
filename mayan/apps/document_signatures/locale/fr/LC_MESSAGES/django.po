@@ -6,7 +6,6 @@
 # Translators:
 # 0041b687dd284925c1885ba94464aacd_fde037b <fc746b00d74cefecce9698255909a24f_28512>, 2026
 # Thierry Schott <DarkDare@users.noreply.github.com>, 2026
-# 3d8c9ede7eec1ed3d454abc701cf2020_b5d10da <2cc9776490f3745e0e39b80d9b76a349_955453>, 2026
 # Bruno CAPELETO <bruno.capeleto@abcreseau.com>, 2026
 # Guillaume Trottier <gui.trottier@gmail.com>, 2026
 # Olivier W, 2026
@@ -20,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-04 04:33+0000\n"
+"POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Christophe CHAUVET <christophe.chauvet@gmail.com>, 2026\n"
 "Language-Team: French (https://app.transifex.com/rosarior/teams/13584/fr/)\n"

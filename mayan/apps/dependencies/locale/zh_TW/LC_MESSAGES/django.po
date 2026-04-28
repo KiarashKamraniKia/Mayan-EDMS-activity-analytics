@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 00:04+0000\n"
+"POT-Creation-Date: 2026-04-27 20:43+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: dave cheng, 2026\n"
 "Language-Team: Chinese (Taiwan) (https://app.transifex.com/rosarior/teams/13584/zh_TW/)\n"
@@ -56,7 +56,7 @@ msgstr "声明"
 msgid "Version"
 msgstr "版本"
 
-#: apps.py:61 classes.py:223 classes.py:1043
+#: apps.py:61 classes.py:223 classes.py:1044
 msgid "Environments"
 msgstr ""
 
@@ -76,34 +76,34 @@ msgstr "APP"
 msgid "Need to specify at least one: app_label or module."
 msgstr "需要至少指定一个：app_label或模块。"
 
-#: classes.py:348
+#: classes.py:347
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "相依性 \"%s\"已被註冊"
 
-#: classes.py:400
+#: classes.py:399
 #, python-format
 msgid "Installing package: %s... "
 msgstr "正在安裝封裝包 : %s..."
 
-#: classes.py:407
+#: classes.py:406
 msgid "Already installed."
 msgstr "已安装。"
 
-#: classes.py:412 classes.py:419 classes.py:425 classes.py:437
+#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
 msgid "Complete."
 msgstr "已完成。"
 
-#: classes.py:432
+#: classes.py:431
 #, python-format
 msgid "Uninstalling package: %s... "
 msgstr ""
 
-#: classes.py:464
+#: classes.py:463
 msgid "Installed and correct version"
 msgstr "安装正确的版本"
 
-#: classes.py:466
+#: classes.py:465
 msgid "Missing or incorrect version"
 msgstr "版本缺失或不正确"
 
@@ -198,7 +198,7 @@ msgid ""
 "dependencies is missing or an incorrect version is present."
 msgstr ""
 
-#: classes.py:1044
+#: classes.py:1045
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."
@@ -206,7 +206,7 @@ msgstr ""
 
 #: environments.py:17
 msgid ""
-"Environment used for building redistributable packages of the software. End "
+"Environment used for building distributable packages of the software. End "
 "users can ignore missing dependencies under this environment."
 msgstr ""
 

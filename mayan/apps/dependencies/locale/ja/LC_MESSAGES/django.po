@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 00:04+0000\n"
+"POT-Creation-Date: 2026-04-27 20:43+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: lockdlock, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -52,7 +52,7 @@ msgstr "定義元"
 msgid "Version"
 msgstr "バージョン"
 
-#: apps.py:61 classes.py:223 classes.py:1043
+#: apps.py:61 classes.py:223 classes.py:1044
 msgid "Environments"
 msgstr "環境"
 
@@ -72,34 +72,34 @@ msgstr "App"
 msgid "Need to specify at least one: app_label or module."
 msgstr "少なくとも1つ指定してください: アプリラベル または モジュール"
 
-#: classes.py:348
+#: classes.py:347
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "依存関係 \"%s\" は既に登録済みです"
 
-#: classes.py:400
+#: classes.py:399
 #, python-format
 msgid "Installing package: %s... "
 msgstr "パッケージ:%sをインストール中... "
 
-#: classes.py:407
+#: classes.py:406
 msgid "Already installed."
 msgstr "すでにインストールされています。"
 
-#: classes.py:412 classes.py:419 classes.py:425 classes.py:437
+#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
 msgid "Complete."
 msgstr "完了しました。"
 
-#: classes.py:432
+#: classes.py:431
 #, python-format
 msgid "Uninstalling package: %s... "
 msgstr ""
 
-#: classes.py:464
+#: classes.py:463
 msgid "Installed and correct version"
 msgstr "インストール済みかつ正しいバージョン"
 
-#: classes.py:466
+#: classes.py:465
 msgid "Missing or incorrect version"
 msgstr "バージョンが存在しない、または正しくありません"
 
@@ -196,7 +196,7 @@ msgstr ""
 "依存関係の状態を表示します。True は依存関係がインストール済みで正しいバージョンであることを示します。False "
 "は依存関係が存在しないか、バージョンが正しくないことを示します。"
 
-#: classes.py:1044
+#: classes.py:1045
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."
@@ -204,9 +204,9 @@ msgstr "ある環境で必要な依存関係が、別の環境では不要な場
 
 #: environments.py:17
 msgid ""
-"Environment used for building redistributable packages of the software. End "
+"Environment used for building distributable packages of the software. End "
 "users can ignore missing dependencies under this environment."
-msgstr ""
+msgstr "ソフトウェアの配布用パッケージを作成する環境です。エンドユーザーは、この環境で不足している依存関係を無視できます。"
 
 #: environments.py:20
 msgid "Build"

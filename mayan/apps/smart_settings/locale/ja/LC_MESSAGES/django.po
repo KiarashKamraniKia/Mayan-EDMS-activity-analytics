@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-25 20:33+0000\n"
+"POT-Creation-Date: 2026-04-27 20:55+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: lockdlock, 2026\n"
 "Language-Team: Japanese (https://app.transifex.com/rosarior/teams/13584/ja/)\n"
@@ -139,10 +139,6 @@ msgid "Updated stored settings"
 msgstr ""
 
 #: namespaces.py:128
-msgid "Settings namespace"
-msgstr "設定の名前空間"
-
-#: namespaces.py:94
 msgid "Settings namespace"
 msgstr "設定の名前空間"
 
@@ -330,13 +326,13 @@ msgstr ""
 msgid "Default: 25. Port to use for the SMTP server defined in EMAIL_HOST."
 msgstr "既定値：25 : EMAIL_HOST で指定されたSMTPサーバーのポート番号を指定します。"
 
-#: settings.py:186
+#: settings.py:187
 msgid ""
 "Default: None. Specifies a timeout in seconds for blocking operations like "
 "the connection attempt."
 msgstr "既定値：None : 接続試行などのブロッキング操作に対する秒単位のタイムアウト時間を指定します。"
 
-#: settings.py:192
+#: settings.py:193
 msgid ""
 "Default: False. Whether to use an implicit TLS (secure) connection when "
 "talking to the SMTP server. In most email documentation this type of TLS "
@@ -350,7 +346,7 @@ msgstr ""
 " EMAIL_USE_TLS を確認してください。なお、EMAIL_USE_TLS と EMAIL_USE_SSL は相互に排他的であり、同時に "
 "True に設定することはできません。"
 
-#: settings.py:202
+#: settings.py:204
 msgid ""
 "Default: False. Whether to use a TLS (secure) connection when talking to the"
 " SMTP server. This is used for explicit TLS connections, generally on port "
@@ -361,7 +357,7 @@ msgstr ""
 "SMTPサーバーとの通信でTLS（セキュア）接続を使用するかどうかを指定します。これは明示的TLS接続であり、一般的にポート587で使用されます。接続がハングする場合は、暗黙的TLS設定である"
 " EMAIL_USE_SSL を確認してください。"
 
-#: settings.py:211
+#: settings.py:213
 msgid ""
 "Default: 2621440 (i.e. 2.5 MB). The maximum size (in bytes) that an upload "
 "will be before it gets streamed to the file system. See Managing files for "
@@ -370,7 +366,7 @@ msgstr ""
 "既定値：2621440（2.5MB） : "
 "アップロードがこのサイズ（バイト単位）を超えると、ファイルシステムへストリーミングされる上限値です。詳細は「ファイルの管理」を参照してください。関連項目：DATA_UPLOAD_MAX_MEMORY_SIZE"
 
-#: settings.py:219
+#: settings.py:221
 msgid ""
 "Default: '/accounts/login/' The URL where requests are redirected for login,"
 " especially when using the login_required() decorator. This setting also "
@@ -382,7 +378,7 @@ msgstr ""
 "ログインが必要なページへアクセスした際にリクエストがリダイレクトされるURLを指定します（例：login_required() "
 "デコレーター使用時）。この設定は、名前付きURLパターンも受け付けるため、設定とURLconfの重複を避けることができます。"
 
-#: settings.py:230
+#: settings.py:232
 msgid ""
 "Default: '/accounts/profile/' The URL where requests are redirected after "
 "login when the contrib.auth.login view gets no next parameter. This is used "
@@ -395,7 +391,7 @@ msgstr ""
 "デコレーターで使用されます。また、この設定には名前付きURLパターンを指定することもでき、これによりURLを2か所（settings and "
 "URLconf）で定義する必要がなくなります。"
 
-#: settings.py:241
+#: settings.py:243
 msgid ""
 "Default: None. The URL where requests are redirected after a user logs out "
 "using LogoutView (if the view doesn't get a next_page argument). If None, no"
@@ -409,7 +405,7 @@ msgstr ""
 "の場合、リダイレクトは行われず、ログアウトビューがそのまま表示されます。この設定には名前付きURLパターンを指定することもでき、URLを2か所（settings"
 " and URLconf）で定義する必要を減らすことができます。"
 
-#: settings.py:252
+#: settings.py:254
 msgid ""
 "A list of IP addresses, as strings, that: Allow the debug() context "
 "processor to add some variables to the template context. Can use the "
@@ -421,7 +417,7 @@ msgstr ""
 "・スタッフユーザーとしてログインしていなくても、admindocsブックマークレットを使用できる。\n"
 "・AdminEmailHandler で送信されるメール内で「内部（internal）」として扱われる（「外部（EXTERNAL）」ではない）。"
 
-#: settings.py:261
+#: settings.py:263
 msgid ""
 "A list of all available languages. The list is a list of two-tuples in the "
 "format (language code, language name) for example, ('ja', 'Japanese'). This "
@@ -433,7 +429,7 @@ msgstr ""
 "'Japanese')。この設定により、ユーザーが選択可能な言語を指定できます。通常はデフォルト値で十分です。Django "
 "が提供する言語の一部に制限したい場合のみ設定してください。"
 
-#: settings.py:272
+#: settings.py:274
 msgid ""
 "A string representing the language code for this installation. This should "
 "be in standard language ID format. For example, U.S. English is \"en-us\". "
@@ -447,20 +443,20 @@ msgstr ""
 "このインストールで使用する言語コードを表す文字列。標準的な言語ID形式で指定します。例：米国英語は \"en-"
 "us\"。ロケールミドルウェアを使用していない場合は、全ユーザーに提供される翻訳を決定します。ロケールミドルウェアを使用している場合は、ユーザーの希望する言語が判別できない、またはサポートされていない場合のフォールバック言語として使用されます。また、特定の文字列に対する翻訳がユーザーの希望する言語で存在しない場合もフォールバック翻訳として使用されます。"
 
-#: settings.py:286
+#: settings.py:288
 msgid ""
 "Default: 'sessionid'. The name of the cookie to use for sessions. This can "
 "be whatever you want (as long as it's different from the other cookie names "
 "in your application)."
 msgstr ""
 
-#: settings.py:294
+#: settings.py:296
 msgid ""
 "Default: 'django.contrib.sessions.backends.db'. Controls where Django stores"
 " session data."
 msgstr "既定値: 'django.contrib.sessions.backends.db'. : "
 
-#: settings.py:301
+#: settings.py:303
 msgid ""
 "A tuple representing a HTTP header/value combination that signifies a "
 "request is secure. This controls the behavior of the request object’s "
@@ -471,7 +467,7 @@ msgstr ""
 "メソッドの挙動に影響します。警告: "
 "この設定を変更するとサイトのセキュリティが損なわれる可能性があります。変更する前に、設定内容を十分に理解していることを確認してください。"
 
-#: settings.py:310
+#: settings.py:312
 msgid ""
 "URL to use when referring to static files located in STATIC_ROOT. Example: "
 "\"/static/\" or \"http://static.example.com/\" If not None, this will be "
@@ -482,7 +478,7 @@ msgstr ""
 "\"http://static.example.com/\" None でない場合、この URL がアセット定義（Media クラス）および "
 "staticfiles アプリの基準パスとして使用されます。値を設定する場合は、末尾にスラッシュ / を付ける必要があります。"
 
-#: settings.py:320
+#: settings.py:322
 msgid ""
 "A dictionary containing the settings for all storages to be used with "
 "Django. It is a nested dictionary whose contents map a storage alias to a "
@@ -491,7 +487,7 @@ msgstr ""
 "Django "
 "で使用されるすべてのストレージの設定を格納する辞書。内容はネストされた辞書で、ストレージのエイリアスをキーとして、個々のストレージのオプションを格納した辞書に対応しています。"
 
-#: settings.py:328
+#: settings.py:330
 msgid ""
 "A string representing the time zone for this installation. Note that this "
 "isn't necessarily the time zone of the server. For example, one server may "
@@ -500,7 +496,7 @@ msgstr ""
 "このインストールで使用するタイムゾーンを表す文字列。サーバーのタイムゾーンとは限りません。たとえば、1台のサーバーで複数の Django "
 "サイトを運用している場合、それぞれ別のタイムゾーン設定を持つことがあります。"
 
-#: settings.py:337
+#: settings.py:339
 msgid ""
 "A boolean that specifies whether to use the X-Forwarded-Host header in "
 "preference to the Host header. This should only be enabled if a proxy which "
@@ -509,7 +505,7 @@ msgstr ""
 "X-Forwarded-Host ヘッダーを Host "
 "ヘッダーより優先して使用するかどうかを指定するブール値。このヘッダーを設定するプロキシを使用している場合にのみ有効にしてください。"
 
-#: settings.py:345
+#: settings.py:347
 msgid ""
 "A boolean that specifies whether to use the X-Forwarded-Port header in "
 "preference to the SERVER_PORT META variable. This should only be enabled if "
@@ -520,7 +516,7 @@ msgstr ""
 "変数より優先して使用するかどうかを指定するブール値。このヘッダーを設定するプロキシを使用している場合にのみ有効にしてください。USE_X_FORWARDED_HOST"
 " の設定が優先されます。"
 
-#: settings.py:354
+#: settings.py:357
 msgid ""
 "The full Python path of the WSGI application object that Django's built-in "
 "servers (e.g. runserver) will use. The django-admin startproject management "

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-25 20:33+0000\n"
+"POT-Creation-Date: 2026-04-27 21:16+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Lyudmil Antonov <lantonov.here@gmail.com>, 2026\n"
 "Language-Team: Bulgarian (Bulgaria) (https://app.transifex.com/rosarior/teams/13584/bg_BG/)\n"
@@ -214,7 +214,7 @@ msgstr ""
 "частта от схемата (transport://), останалото е по избор и по подразбиране "
 "към конкретните стойности на транспортиране по подразбиране."
 
-#: settings.py:44
+#: settings.py:45
 msgid ""
 "Default: \"Disabled\". Toggles SSL usage on broker connection and SSL "
 "settings. The valid values for this option vary by transport."
@@ -223,7 +223,7 @@ msgstr ""
 "връзка с брокера и настройките на SSL. Валидните стойности за тази опция "
 "варират в зависимост от транспорта."
 
-#: settings.py:52
+#: settings.py:53
 msgid ""
 "Default: No result backend enabled by default. The backend used to store "
 "task results (tombstones). Refer to "

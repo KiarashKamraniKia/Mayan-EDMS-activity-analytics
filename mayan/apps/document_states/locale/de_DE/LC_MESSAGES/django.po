@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-25 20:32+0000\n"
+"POT-Creation-Date: 2026-04-27 20:44+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Mathias Behrle <mathiasb@m9s.biz>, 2026\n"
 "Language-Team: German (Germany) (https://app.transifex.com/rosarior/teams/13584/de_DE/)\n"
@@ -1082,7 +1082,7 @@ msgstr ""
 "Der Wert ab dem das `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` mit der Löschung"
 " der ältesten Cachedateien beginnt. Größe in Bytes angeben."
 
-#: settings.py:38
+#: settings.py:37
 msgid ""
 "Path to the Storage subclass to use when storing the cached workflow image "
 "files."
@@ -1090,13 +1090,13 @@ msgstr ""
 "Pfad zur Speicherunterklasse, die zum Speichern der zwischengespeicherten "
 "Workflow-Bilddateien verwendet werden soll."
 
-#: settings.py:46
+#: settings.py:45
 msgid "Arguments to pass to the `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND`."
 msgstr ""
 "Argumente, die an das `WORKFLOWS_IMAGE_CACHE_STORAGE_BACKEND` übergeben "
 "werden."
 
-#: settings.py:55
+#: settings.py:54
 msgid ""
 "Interval in seconds on which the task to check for expired workflow states "
 "will be launched."

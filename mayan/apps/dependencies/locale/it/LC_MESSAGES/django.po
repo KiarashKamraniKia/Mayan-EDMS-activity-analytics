@@ -7,16 +7,16 @@
 # Marco Camplese <marco.camplese.mc@gmail.com>, 2026
 # Pierpaolo Baldan <pierpaolo.baldan@gmail.com>, 2026
 # Giovanni Tricarico <gtricarico92@gmail.com>, 2026
-# Roberto Rosario, 2026
 # piera.daraio, 2026
+# Roberto Rosario, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-04 00:04+0000\n"
+"POT-Creation-Date: 2026-04-27 20:43+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: piera.daraio, 2026\n"
+"Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Italian (https://app.transifex.com/rosarior/teams/13584/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -56,7 +56,7 @@ msgstr "Dichiarato da"
 msgid "Version"
 msgstr "Versione"
 
-#: apps.py:61 classes.py:223 classes.py:1043
+#: apps.py:61 classes.py:223 classes.py:1044
 msgid "Environments"
 msgstr "Ambienti"
 
@@ -76,34 +76,34 @@ msgstr "App"
 msgid "Need to specify at least one: app_label or module."
 msgstr "È necessario specificarne almeno uno: app_label o module."
 
-#: classes.py:348
+#: classes.py:347
 #, python-format
 msgid "Dependency \"%s\" already registered."
 msgstr "Dipendenza \"%s\" già registrata."
 
-#: classes.py:400
+#: classes.py:399
 #, python-format
 msgid "Installing package: %s... "
 msgstr "Pacchetto di installazione: %s ..."
 
-#: classes.py:407
+#: classes.py:406
 msgid "Already installed."
 msgstr "Già installato."
 
-#: classes.py:412 classes.py:419 classes.py:425 classes.py:437
+#: classes.py:411 classes.py:418 classes.py:424 classes.py:436
 msgid "Complete."
 msgstr "Completare."
 
-#: classes.py:432
+#: classes.py:431
 #, python-format
 msgid "Uninstalling package: %s... "
 msgstr ""
 
-#: classes.py:464
+#: classes.py:463
 msgid "Installed and correct version"
 msgstr "Versione installata e corretta"
 
-#: classes.py:466
+#: classes.py:465
 msgid "Missing or incorrect version"
 msgstr "Versione mancante o errata"
 
@@ -205,7 +205,7 @@ msgstr ""
 "sono installate e hanno una versione corretta. Falso significa che mancano "
 "le dipendenze o è presente una versione errata."
 
-#: classes.py:1044
+#: classes.py:1045
 msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."
@@ -215,9 +215,11 @@ msgstr ""
 
 #: environments.py:17
 msgid ""
-"Environment used for building redistributable packages of the software. End "
+"Environment used for building distributable packages of the software. End "
 "users can ignore missing dependencies under this environment."
 msgstr ""
+"Ambiente utilizzato per creare pacchetti distribuibili del software. Gli "
+"utenti finali possono ignorare le dipendenze mancanti in questo ambiente."
 
 #: environments.py:20
 msgid "Build"
