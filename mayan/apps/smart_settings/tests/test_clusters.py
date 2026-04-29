@@ -4,7 +4,7 @@ from django.utils.translation import gettext_lazy as _
 
 from mayan.apps.testing.tests.base import BaseTestCase
 
-from ..settings import setting_cluster
+from ..setting_clusters import setting_cluster
 
 from .literals import (
     TEST_SETTING_GLOBAL_NAME, TEST_SETTING_VALIDATION_BAD_VALUE,

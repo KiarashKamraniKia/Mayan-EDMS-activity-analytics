@@ -7,7 +7,7 @@ from mayan.apps.storage.utils import NamedTemporaryFile, fs_cleanup
 from mayan.apps.testing.tests.mixins import EnvironmentTestCaseMixin
 
 from ..classes import Setting
-from ..settings import setting_cluster
+from ..setting_clusters import setting_cluster
 from ..utils import BaseSetting, SettingNamespaceSingleton
 
 from .literals import (
