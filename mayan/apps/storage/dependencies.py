@@ -13,7 +13,7 @@ PythonDependency(
     module=__name__, name='extract-msg', version_string='==0.55.0'
 )
 PythonDependency(
-    module=__name__, name='google-cloud-storage', version_string='==3.9.0'
+    module=__name__, name='google-cloud-storage', version_string='==3.10.1'
 )
 PythonDependency(
     environment=environment_testing, module=__name__, name='psutil',
