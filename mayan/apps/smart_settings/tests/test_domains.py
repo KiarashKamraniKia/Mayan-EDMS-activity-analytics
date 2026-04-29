@@ -7,7 +7,7 @@ from mayan.apps.storage.utils import NamedTemporaryFile, fs_cleanup
 from mayan.apps.testing.tests.base import BaseTestCase
 from mayan.apps.views.settings import setting_paginate_by
 
-from ..settings import setting_cluster
+from ..setting_clusters import setting_cluster
 
 from .literals import ENVIRONMENT_TEST_NAME, ENVIRONMENT_TEST_VALUE
 

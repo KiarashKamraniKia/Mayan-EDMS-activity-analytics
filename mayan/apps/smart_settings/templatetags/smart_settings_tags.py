@@ -1,6 +1,6 @@
 from django.template import Library
 
-from ..settings import setting_cluster
+from ..setting_clusters import setting_cluster
 
 register = Library()
 

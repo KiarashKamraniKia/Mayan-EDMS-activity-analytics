@@ -16,8 +16,8 @@ from .links import (
     link_setting_revert
 )
 from .namespaces import SettingNamespace
-from .setting_clusters import SettingCluster
-from .settings import setting_cluster
+from .clusters import SettingCluster
+from .setting_clusters import setting_cluster
 from .widgets import setting_widget
 
 

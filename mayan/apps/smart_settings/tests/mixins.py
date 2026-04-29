@@ -6,8 +6,8 @@ from django.utils.encoding import force_bytes
 from mayan.apps.storage.utils import NamedTemporaryFile, fs_cleanup
 from mayan.apps.testing.tests.mixins import EnvironmentTestCaseMixin
 
+from ..setting_clusters import setting_cluster
 from ..setting_domains.configuration_files import SettingDomainConfigurationFile
-from ..settings import setting_cluster
 from ..utils import (
     BaseSetting, SettingNamespaceSingleton, get_environment_variable_full_name
 )

@@ -1,6 +1,6 @@
 from django.core import management
 
-from ...settings import setting_cluster
+from ...setting_clusters import setting_cluster
 
 
 class Command(management.BaseCommand):
