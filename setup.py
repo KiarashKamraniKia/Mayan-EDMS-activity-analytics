@@ -95,9 +95,9 @@ flex==6.14.1
 furl==2.1.4
 fusepy==3.0.1
 gevent==26.4.0
-google-cloud-storage==3.9.0
+google-cloud-storage==3.10.1
 graphviz==0.21
-greenlet==3.4.0
+greenlet==3.5.0
 gunicorn==25.3.0
 jsonschema==4.26.0
 mozilla-django-oidc==5.0.2

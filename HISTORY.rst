@@ -350,6 +350,21 @@
   environment variable and use the regular entrypoint.
 - Normalize environment variable usage in the Docker shell files.
 
+4.10.6 (2026-05-01)
+===================
+- Update Python dependency versions:
+
+  - PIP from 26.0.1 to 26.1
+  - django-celery-beat from 2.8.1 to 2.9.0
+  - gevent from 25.9.1 to 26.4.0
+  - google-cloud-storage from 3.9.0 to 3.10.1
+  - greenlet from 3.3.2 to 3.5.0
+  - gunicorn from 25.1.0 to 25.3.0
+  - nh3 from 0.3.4 to 0.3.5
+  - sentry-sdk from 2.53.0 to 2.58.0
+  - setuptools from 80.9.0 to 82.0.1
+  - wheel from 0.46.3 to 0.47.0
+
 4.10.5 (2026-04-24)
 ===================
 - Merge changes from version 4.9.9.

@@ -7,7 +7,7 @@ PythonDependency(
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='greenlet',
-    version_string='==3.4.0'
+    version_string='==3.5.0'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='gunicorn',
