@@ -1,4 +1,4 @@
-4.10.6 (XXXX-XX-XX)
+4.10.6 (2026-05-01)
 ===================
 - Update Python dependency versions:
 
