@@ -1,0 +1,10 @@
+Version 4.11.4
+==============
+
+Released: May 1, 2026
+
+
+Summary
+-------
+
+Version 4.11.4 is a maintenance release focused on merging changes from version 4.10.6 and fixing a minor templating bug.

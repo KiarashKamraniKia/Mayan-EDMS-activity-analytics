@@ -1,3 +1,8 @@
+4.11.4 (2026-05-01)
+===================
+- Merge changes and improvements from version 4.10.6.
+- Fix bad template engine regular expression merge bug.
+
 4.11.3 (2026-04-27)
 ===================
 - Merge changes and improvements from version 4.10.5.
