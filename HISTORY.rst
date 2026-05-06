@@ -1,3 +1,7 @@
+4.11.5 (XXXX-XX-XX)
+===================
+- Improve compatibility with Python 3.14.
+
 4.11.4 (2026-05-01)
 ===================
 - Merge changes and improvements from version 4.10.6.
