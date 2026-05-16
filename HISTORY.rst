@@ -5,6 +5,8 @@
 
   - sentry-sdk from 2.58.0 to 2.65.0
 
+- Improve `chunk_hash_file_object`.
+
 4.11.4 (2026-05-01)
 ===================
 - Merge changes and improvements from version 4.10.6.
