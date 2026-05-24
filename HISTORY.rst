@@ -7,8 +7,9 @@
 
 - Improve `chunk_hash_file_object`.
 - Fix the document signature ID being empty for every signature when
-  using python-gnupg 0.5.x. Run the "Refresh all signatures" tool to update
+  using `python-gnupg` 0.5.x. Run the "Refresh all signatures" tool to update
   existing signatures.
+- Fix false error when attempting to search de-index deleted instances.
 
 4.11.4 (2026-05-01)
 ===================

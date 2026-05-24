@@ -6,6 +6,7 @@ from mayan.apps.testing.tests.base import BaseTestCase
 
 from ..search_backends import SearchBackend
 from ..search_models import SearchModel
+from ..tasks import task_deindex_instance
 
 from .mixins.search_task_mixins import SearchTaskTestMixin
 
@@ -72,3 +73,18 @@ class SearchTaskTestCase(SearchTaskTestMixin, BaseTestCase):
             search_terms=self._test_object_list[0].test_field
         )
         self.assertTrue(self._test_object_list[0] in queryset)
+
+    def test_task_deindex_instance_with_deleted_instance(self):
+        app_label = self._test_object._meta.app_label
+        model_name = self._test_object._meta.model_name
+        object_id = self._test_object.pk
+
+        self._test_object.delete()
+
+        task = task_deindex_instance.apply_async(
+            kwargs={
+                'app_label': app_label, 'model_name': model_name,
+                'object_id': object_id
+            }
+        )
+        task.get()
