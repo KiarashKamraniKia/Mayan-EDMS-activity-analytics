@@ -10,6 +10,8 @@
   using `python-gnupg` 0.5.x. Run the "Refresh all signatures" tool to update
   existing signatures.
 - Fix false error when attempting to search de-index deleted instances.
+- Avoid a rare `UnboundLocalError` in the `file` based MIME type detection
+  backend.
 
 4.11.4 (2026-05-01)
 ===================
