@@ -12,6 +12,7 @@
 - Fix false error when attempting to search de-index deleted instances.
 - Avoid a rare `UnboundLocalError` in the `file` based MIME type detection
   backend.
+- Ensure `PassthroughStorageProcessor` log is properly closed.
 
 4.11.4 (2026-05-01)
 ===================
