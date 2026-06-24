@@ -14,6 +14,7 @@
   backend.
 - Ensure `PassthroughStorageProcessor` log is properly closed.
 - Fix storage test mixin kwargs isolation leak.
+- Fix `ValidationError` raising in OTP form.
 
 4.11.4 (2026-05-01)
 ===================
