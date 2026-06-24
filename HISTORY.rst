@@ -13,6 +13,7 @@
 - Avoid a rare `UnboundLocalError` in the `file` based MIME type detection
   backend.
 - Ensure `PassthroughStorageProcessor` log is properly closed.
+- Fix storage test mixin kwargs isolation leak.
 
 4.11.4 (2026-05-01)
 ===================
