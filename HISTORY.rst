@@ -100,6 +100,8 @@
 - Improve panel section function.
 - Improve appearance of tags when using the Select2 widget.
 
+- Support parallel testing.
+
 4.11.4 (2026-05-01)
 ===================
 - Merge changes and improvements from version 4.10.6.

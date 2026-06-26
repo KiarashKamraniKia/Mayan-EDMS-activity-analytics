@@ -10,6 +10,10 @@ ifdef TAG
 override ARGUMENT_TAG = --tag=$(TAG)
 endif
 
+ifdef PARALLEL
+override ARGUMENT_PARALLEL = --parallel=$(PARALLEL)
+endif
+
 ifndef SKIPMIGRATIONS
 override SKIPMIGRATIONS = --skip-migrations
 endif
@@ -40,7 +44,7 @@ COMMAND_SENTRY = \
 	export MAYAN_PLATFORMS_CLIENT_BACKEND_ARGUMENTS='{"mayan.apps.platforms_sentry.client_backends.ClientBackendSentry":{"dsn":"$(SENTRY_DSN)","environment":"development"}}'; \
 	fi
 
-COMMAND_TEST = ./manage.py test $(MODULE) --settings=$(SETTINGS) $(SKIPMIGRATIONS) $(DEBUG) $(ARGUMENTS) $(ARGUMENT_TAG)
+COMMAND_TEST = ./manage.py test $(MODULE) --settings=$(SETTINGS) $(SKIPMIGRATIONS) $(DEBUG) $(ARGUMENTS) $(ARGUMENT_TAG) $(ARGUMENT_PARALLEL)
 COMMAND_TEST_MIGRATIONS = ./manage.py test $(MODULE) --no-exclude --settings=$(SETTINGS) --tag=migration_test $(DEBUG) $(ARGUMENTS)
 
 .PHONY: clean clean-pyc clean-build default help test

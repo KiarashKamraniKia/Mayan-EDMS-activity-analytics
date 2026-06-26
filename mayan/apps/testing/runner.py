@@ -1,13 +1,55 @@
 import logging
+from pathlib import Path
 import shutil
 
 from django import apps
 from django.conf import settings
-from django.test.runner import DiscoverRunner
+from django.test import runner as django_test_runner
+from django.test.runner import DiscoverRunner, ParallelTestSuite
 
+from .classes import (
+    TestWorkerInitialization, TestWorkerInitializationContext
+)
 from .literals import EXCLUDE_TEST_TAG
 
 logger = logging.getLogger(name=__name__)
+
+
+def get_worker_initialization_context(django_test_runner):
+    path_media_root_old = settings.MEDIA_ROOT
+
+    worker_name = 'worker_{}'.format(django_test_runner._worker_id)
+    path_media_root_new = Path(path_media_root_old, worker_name)
+
+    worker_initialization_context = TestWorkerInitializationContext(
+        worker_id=django_test_runner._worker_id,
+        path_media_root_old=path_media_root_old,
+        path_media_root_new=path_media_root_new
+    )
+
+    return worker_initialization_context
+
+
+def init_worker_mayan(*args, **kwargs):
+    django_test_runner._init_worker(*args, **kwargs)
+
+    worker_initialization_context = get_worker_initialization_context(
+        django_test_runner=django_test_runner
+    )
+
+    Path(worker_initialization_context.path_media_root_new).mkdir(exist_ok=True)
+
+    settings.MEDIA_ROOT = worker_initialization_context.path_media_root_new
+
+    TestWorkerInitialization.load_modules()
+
+    TestWorkerInitialization.do_initialize(
+        context=worker_initialization_context
+    )
+
+
+class MayanParallelTestSuite(ParallelTestSuite):
+    init_worker = init_worker_mayan
 
 
 class NullMigrationsClass:
@@ -19,6 +61,8 @@ class NullMigrationsClass:
 
 
 class MayanTestRunner(DiscoverRunner):
+    parallel_test_suite = MayanParallelTestSuite
+
     @classmethod
     def add_arguments(cls, parser):
         DiscoverRunner.add_arguments(parser)
