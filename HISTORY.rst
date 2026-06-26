@@ -20,6 +20,7 @@
   backend.
 - Ensure `PassthroughStorageProcessor` log is properly closed.
 - Fix storage test mixin kwargs isolation leak.
+<<<<<<< HEAD
 - Fix `ValidationError` raising in OTP form.
 
 - Added proactive defenses to the compressed-archive code paths against
@@ -104,6 +105,10 @@
 - Test suit speedups.
 - Split translation testing.
 - Remove hardcoded test tags.
+- `AppsModuleLoaderMixin` improvements:
+
+  - Use a robust method to determine when to ignore or re-raise `ImportError`.
+  - Add `get_loader_app_configs` to allow subclasses from which apps to load modules.
 
 4.11.4 (2026-05-01)
 ===================

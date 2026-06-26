@@ -16,13 +16,17 @@ class AppsModuleLoaderMixin:
     _loader_module_name = None
 
     @classmethod
+    def get_loader_app_configs(cls):
+        return apps.get_app_configs()
+
+    @classmethod
     def load_modules(cls):
         # This set keeps track of what apps have already been processed.
         cls.__loader_module_sets.setdefault(
             cls._loader_module_name, set()
         )
 
-        for app in apps.get_app_configs():
+        for app in cls.get_loader_app_configs():
             if app not in cls.__loader_module_sets[cls._loader_module_name]:
                 try:
                     import_module(
@@ -33,20 +37,21 @@ class AppsModuleLoaderMixin:
                 except ImportError as exception:
                     # Determine which errors during import should be ignored
                     # and which are serious enough to raise.
-                    non_fatal_messages = (
-                        'No module named {module_name}'.format(
-                            module_name=cls._loader_module_name
-                        ),
-                        'No module named \'{app_label}.{module_name}\''.format(
-                            app_label=app.name, module_name=cls._loader_module_name
-                        )
+                    full_module_name = '{}.{}'.format(
+                        app.name, cls._loader_module_name
                     )
-                    if str(exception) not in non_fatal_messages:
-                        logger.error(
-                            'Error importing %s %s.py file; %s', app.name,
-                            cls._loader_module_name, exception, exc_info=True
-                        )
+                    missing_module_name = getattr(exception, 'name', None)
+                    missing_module_name_string = '{}.'.format(missing_module_name)
+
+                    app_lacks_module = False
+                    if isinstance(exception, ModuleNotFoundError) and missing_module_name:
+                        app_lacks_module = (
+                            full_module_name == missing_module_name
+                        ) or full_module_name.startswith(missing_module_name_string)
+
+                    if not app_lacks_module:
                         raise
+
                 finally:
                     cls.__loader_module_sets[
                         cls._loader_module_name
