@@ -45,7 +45,7 @@ COMMAND_SENTRY = \
 	fi
 
 COMMAND_TEST = ./manage.py test $(MODULE) --settings=$(SETTINGS) $(SKIPMIGRATIONS) $(DEBUG) $(ARGUMENTS) $(ARGUMENT_TAG) $(ARGUMENT_PARALLEL)
-COMMAND_TEST_MIGRATIONS = ./manage.py test $(MODULE) --no-exclude --settings=$(SETTINGS) --tag=migration_test $(DEBUG) $(ARGUMENTS)
+COMMAND_TEST_MIGRATIONS = ./manage.py test $(MODULE) --no-exclude --settings=$(SETTINGS) --tag=$(CONFIG_TEST_TAG_MIGRATION) $(DEBUG) $(ARGUMENTS)
 
 .PHONY: clean clean-pyc clean-build default help test
 
@@ -115,7 +115,7 @@ test-all-with-postgresql:
 # Migrations
 
 _test-migrations:
-_test-migrations: ARGUMENTS=--no-exclude --tag=migration_test
+_test-migrations: ARGUMENTS=--no-exclude --tag=$(CONFIG_TEST_TAG_MIGRATION)
 _test-migrations: SKIPMIGRATIONS=
 _test-migrations: clean-pyc _test-command
 
@@ -139,6 +139,11 @@ test-migrations-with-postgresql: ## MODULE=<python module name> - Run migration 
 test-migrations-with-postgresql:
 	export MAYAN_DATABASES="{'default':{'ENGINE':'django.db.backends.postgresql','NAME':'$(CONFIG_DEFAULT_DATABASE_NAME)','PASSWORD':'$(CONFIG_DEFAULT_DATABASE_PASSWORD)','USER':'$(CONFIG_DEFAULT_DATABASE_USER)','HOST':'127.0.0.1'}}"; \
 	$(COMMAND_TEST_MIGRATIONS)
+
+test-translations: ## Run the translation tests with internationalization enabled.
+test-translations: ARGUMENTS=--no-exclude --tag=$(CONFIG_TEST_TAG_TRANSLATION)
+test-translations: SETTINGS=mayan.settings.testing.translations
+test-translations: clean-pyc _test-command
 
 # Coverage
 

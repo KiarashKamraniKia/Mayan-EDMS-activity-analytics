@@ -82,3 +82,5 @@ TEMPLATES[0]['OPTIONS']['loaders'] = (  # NOQA: F405
 )
 
 TESTING = True  # Silence the error logger for non critical `Http404` and `PermissionDenied`.
+
+USE_I18N = False

@@ -1,10 +1,14 @@
+from django.test import tag
+
 from mayan.apps.authentication.tests.mixins import (
     LoginViewTestMixin, LogoutViewTestMixin
 )
+from mayan.apps.testing.literals import EXCLUDE_TEST_TAG
 from mayan.apps.testing.tests.base import GenericViewTestCase
 from mayan.apps.user_management.permissions import (
     permission_user_edit, permission_user_view
 )
+from mayan.literals import TEST_TAG_TRANSLATION
 
 from ..events import event_user_locale_profile_edited
 
@@ -205,6 +209,7 @@ class UserLocaleProfileViewTestCase(
         self.assertEqual(events[0].verb, event_user_locale_profile_edited.id)
 
 
+@tag(EXCLUDE_TEST_TAG, TEST_TAG_TRANSLATION)
 class LanguageSelectionViewTestCase(
     LoginViewTestMixin, LogoutViewTestMixin, UserLocaleProfileViewMixin,
     GenericViewTestCase

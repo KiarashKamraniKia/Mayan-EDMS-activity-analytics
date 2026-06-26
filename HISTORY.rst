@@ -101,6 +101,9 @@
 - Improve appearance of tags when using the Select2 widget.
 
 - Support parallel testing.
+- Test suit speedups.
+- Split translation testing.
+- Remove hardcoded test tags.
 
 4.11.4 (2026-05-01)
 ===================
