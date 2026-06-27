@@ -16,6 +16,20 @@
 - Fix storage test mixin kwargs isolation leak.
 - Fix `ValidationError` raising in OTP form.
 
+- Added proactive defenses to the compressed-archive code paths against
+  memory-exhaustion payloads: zip-bombs, tar-bombs, oversized EML/MSG/PDF
+  inputs, and compression-ratio bombs. Add the configurable settings:
+
+  - `STORAGE_COMPRESSED_FILE_COMPRESSION_RATIO_MAXIMUM` (default
+    100) rejecting zip members whose declared-to-compressed size ratio
+    exceeds the cap (zip-bomb defense).
+  - `STORAGE_COMPRESSED_FILE_INPUT_SIZE_MAXIMUM` (default 1 GiB)
+    capping the size of compressed-archive input files (EML, MSG, PDF,
+    TAR, ZIP) before parsing.
+  - `STORAGE_COMPRESSED_FILE_MEMBER_SIZE_MAXIMUM` (default
+    64 MiB) capping the declared size of individual archive members
+    before decompression.
+
 4.11.4 (2026-05-01)
 ===================
 - Merge changes and improvements from version 4.10.6.
