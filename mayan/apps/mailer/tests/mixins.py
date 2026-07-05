@@ -20,8 +20,17 @@ from .literals import (
 )
 
 
+class MailingTestMixin:
+    def setUp(self):
+        super().setUp()
+        # Hidden import to register the test mailing profile backend and
+        # allow tests to access it.
+        from .mailers import MailingProfileTest  # NOQA
+
+
 class MailingProfileTestMixin(
-    StoredCredentialPasswordUsernameTestMixin, TestMixinObjectCreationTrack
+    MailingTestMixin, StoredCredentialPasswordUsernameTestMixin,
+    TestMixinObjectCreationTrack
 ):
     _test_mailing_profile_auto_create = False
     _test_mailing_profile_backend_path = TEST_MAILING_PROFILE_BACKEND_PATH

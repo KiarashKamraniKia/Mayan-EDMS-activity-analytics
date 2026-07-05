@@ -30,6 +30,9 @@
     64 MiB) capping the declared size of individual archive members
     before decompression.
 
+- Add `MailingTestMixin` to registering the test mailing profile backend,
+  and avoid order-dependent test-isolation artifacts.
+
 4.11.4 (2026-05-01)
 ===================
 - Merge changes and improvements from version 4.10.6.
