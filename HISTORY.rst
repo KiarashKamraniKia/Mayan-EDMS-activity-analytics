@@ -43,6 +43,8 @@
 - Elasticsearch transient transport errors are now retried instead of being
   allowed to propagate as a permanent failure that would leave the instance
   missing from the search index.
+- Attempt to deindex deleted instances. This avoids the possibility of search
+  backend indexes accumulating stale entries.
 
 4.11.4 (2026-05-01)
 ===================
