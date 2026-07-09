@@ -33,6 +33,8 @@
 - Add `MailingTestMixin` to registering the test mailing profile backend,
   and avoid order-dependent test-isolation artifacts.
 - Add workaround for the Elasticsearch Python client socket leak.
+- Makes the search m2m signal handler ignore actions other than
+  `post_add` and `pre_remove`.
 
 4.11.4 (2026-05-01)
 ===================
