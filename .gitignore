@@ -1,4 +1,5 @@
 *.orig
+*.rej
 *.pyc
 *.pyo
 *.sqlite
