@@ -40,6 +40,9 @@
 - Wrap the Whoosh writer in try/finally so it always closes and prevents a
   leaked segment lock.
 - Fix Whoosh writer error log stray comma.
+- Elasticsearch transient transport errors are now retried instead of being
+  allowed to propagate as a permanent failure that would leave the instance
+  missing from the search index.
 
 4.11.4 (2026-05-01)
 ===================
