@@ -37,6 +37,8 @@
   `post_add` and `pre_remove`.
 - Don't raise an error when the Elasticsearch backend tries to deindex a non
   existing document.
+- Wrap the Whoosh writer in try/finally so it always closes and prevents a
+  leaked segment lock.
 
 4.11.4 (2026-05-01)
 ===================
