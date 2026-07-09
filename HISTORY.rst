@@ -39,6 +39,7 @@
   existing document.
 - Wrap the Whoosh writer in try/finally so it always closes and prevents a
   leaked segment lock.
+- Fix Whoosh writer error log stray comma.
 
 4.11.4 (2026-05-01)
 ===================
