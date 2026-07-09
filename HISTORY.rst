@@ -35,6 +35,8 @@
 - Add workaround for the Elasticsearch Python client socket leak.
 - Makes the search m2m signal handler ignore actions other than
   `post_add` and `pre_remove`.
+- Don't raise an error when the Elasticsearch backend tries to deindex a non
+  existing document.
 
 4.11.4 (2026-05-01)
 ===================
