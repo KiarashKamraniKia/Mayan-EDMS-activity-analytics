@@ -66,6 +66,7 @@
 - Fix a variable shadowing and a dead code path in the Elastisearch backend.
 - Retry race related `task_index_related_instance_m2m` errors instead of
   exiting.
+- Harden Toastr message to prevent possible JavaScript scripting attacks.
 
 4.11.4 (2026-05-01)
 ===================
