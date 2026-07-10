@@ -52,6 +52,9 @@
 - Fix server status modal error 403/404/500 whitelist check.
 - Improve DropZone submit button selector. Fixes browser edge case when
   setting `FORMS_SHOW_DROPZONE_SUBMIT_BUTTON` to `True`.
+- Improve Elasticsearch index refresh. Non existent indexes are now skipped.
+  A failed index refresh does not abort the entire operation. Index refresh
+  errors are not longer retried in the backend code.
 
 4.11.4 (2026-05-01)
 ===================
