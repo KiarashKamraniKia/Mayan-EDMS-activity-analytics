@@ -6,7 +6,7 @@ class MayanImage {
 
         $().fancybox({
             afterShow: function (instance, current) {
-                $('a.a-caption').on('click', function(event) {
+                $('a.a-caption').off('click').on('click', function(event) {
                     instance.close(true);
                 });
             },

@@ -45,6 +45,7 @@
   missing from the search index.
 - Attempt to deindex deleted instances. This avoids the possibility of search
   backend indexes accumulating stale entries.
+- Remove FancyBox caption handlers before attaching a new one.
 
 4.11.4 (2026-05-01)
 ===================
