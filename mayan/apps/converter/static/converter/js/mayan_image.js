@@ -16,6 +16,7 @@ class MayanImage {
                 'fullScreen',
                 'close'
             ],
+            hash: false,
             idleTime: false,
             infobar: true,
             selector: 'a.fancybox'

@@ -59,6 +59,8 @@
   indexing status.
 - Make the template cache language aware. Helps address search box language
   flipping.
+- Stop FancyBox from mangling the URL hash. Fixes user interface reloads
+  after closing a FancyBox preview.
 
 4.11.4 (2026-05-01)
 ===================
