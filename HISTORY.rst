@@ -61,6 +61,8 @@
   flipping.
 - Stop FancyBox from mangling the URL hash. Fixes user interface reloads
   after closing a FancyBox preview.
+- Improve Whoosh indexing and deletion locking.
+- Improve Whoosh indexing and deletion error messages.
 
 4.11.4 (2026-05-01)
 ===================
