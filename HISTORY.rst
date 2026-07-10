@@ -50,6 +50,8 @@
   Solves the search form clearing its content while users type and the main
   navigation menu closing while being used it.
 - Fix server status modal error 403/404/500 whitelist check.
+- Improve DropZone submit button selector. Fixes browser edge case when
+  setting `FORMS_SHOW_DROPZONE_SUBMIT_BUTTON` to `True`.
 
 4.11.4 (2026-05-01)
 ===================

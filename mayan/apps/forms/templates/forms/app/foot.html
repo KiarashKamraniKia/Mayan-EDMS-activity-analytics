@@ -69,7 +69,7 @@
 
                     {% if setting_forms_show_dropzone_submit_button %}
                         dropzoneInstance.options.autoProcessQueue=false;
-                        dropzoneInstance.element.closest('form').querySelector('button[type=submit').addEventListener('click', function(event) {
+                        dropzoneInstance.element.closest('form').querySelector('button[type="submit"]').addEventListener('click', function(event) {
                             event.preventDefault();
                             event.stopPropagation();
                             dropzoneInstance.processQueue();
