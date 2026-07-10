@@ -23,7 +23,7 @@
     const messageFallbackMessage = gettext('Your browser does not support drag and drop file uploads.');
     const messageFallbackText = gettext('Please use the fallback form below to upload your files.');
     const messageRemoveFile = gettext('Clear');
-    const messageResponseError = gettext('Server responded with {{statusCode}} code.');
+    const messageResponseError = gettext('Server responded with {% templatetag openvariable %}statusCode{% templatetag closevariable %} code.');
     const paramName = 'source-file'
 
     Dropzone.autoDiscover = false;

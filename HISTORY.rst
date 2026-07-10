@@ -70,6 +70,7 @@
 - Harden cabinets jsTree usage. Remove hand-built a JS object literal.
   Pass a Python structured dict and emit it with Django's `json_script` +
   JSON.parse. Future prevention of possible JavaScript attacks.
+- Prevent Django's template engine from consuming Dropzone's `{{statusCode}}`.
 
 4.11.4 (2026-05-01)
 ===================
