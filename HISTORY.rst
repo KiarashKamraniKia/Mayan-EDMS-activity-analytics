@@ -46,6 +46,9 @@
 - Attempt to deindex deleted instances. This avoids the possibility of search
   backend indexes accumulating stale entries.
 - Remove FancyBox caption handlers before attaching a new one.
+- Stop menu refreshes if a user is interacting with a control inside of it.
+  Solves the search form clearing its content while users type and the main
+  navigation menu closing while being used it.
 
 4.11.4 (2026-05-01)
 ===================

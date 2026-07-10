@@ -140,7 +140,15 @@ class MayanApp {
                 const menuHash = options.app.ajaxMenuHashes[data.name];
 
                 if ((menuHash === undefined) || (menuHash !== data.hex_hash)) {
-                    $(options.menuSelector).html(data.html);
+                    const $menu = $(options.menuSelector);
+
+                    // Do not replace the menu while the user is interacting
+                    // with a control inside it.
+                    if ($menu.find(':focus').length) {
+                        return;
+                    }
+
+                    $menu.html(data.html);
                     options.app.ajaxMenuHashes[data.name] = data.hex_hash;
                     if (options.callback !== undefined) {
                         options.callback(options);
