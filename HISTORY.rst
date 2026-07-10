@@ -64,6 +64,8 @@
 - Improve Whoosh indexing and deletion locking.
 - Improve Whoosh indexing and deletion error messages.
 - Fix a variable shadowing and a dead code path in the Elastisearch backend.
+- Retry race related `task_index_related_instance_m2m` errors instead of
+  exiting.
 
 4.11.4 (2026-05-01)
 ===================
