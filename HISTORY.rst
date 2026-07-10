@@ -55,6 +55,8 @@
 - Improve Elasticsearch index refresh. Non existent indexes are now skipped.
   A failed index refresh does not abort the entire operation. Index refresh
   errors are not longer retried in the backend code.
+- The Elasticsearch backend no longer forces a refresh when retrieving the
+  indexing status.
 
 4.11.4 (2026-05-01)
 ===================
