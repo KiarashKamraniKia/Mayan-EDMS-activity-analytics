@@ -57,6 +57,8 @@
   errors are not longer retried in the backend code.
 - The Elasticsearch backend no longer forces a refresh when retrieving the
   indexing status.
+- Make the template cache language aware. Helps address search box language
+  flipping.
 
 4.11.4 (2026-05-01)
 ===================

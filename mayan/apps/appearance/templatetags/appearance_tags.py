@@ -4,7 +4,7 @@ from django.template import Library
 from django.template.exceptions import TemplateDoesNotExist
 from django.template.loader import get_template
 from django.utils.safestring import mark_safe
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import get_language, gettext_lazy as _
 
 from ..literals import COMMENT_APP_TEMPLATE_CACHE_DISABLE
 
@@ -57,12 +57,16 @@ def tag_appearance_app_templates(context, template_name):
     """
     Fetch the app templates for the requested `template_name`, render it with
     the current `request` from the `context`, and cache it for future use
-    unless the template has the no caching comment.
+    unless the template has the no caching comment. The cache entries are
+    keyed by the active language. App templates contain translatable
+    strings which are rendered in the language active during the request.
     """
     result = []
 
+    language = get_language() or settings.LANGUAGE_CODE
+
     for app in apps.get_app_configs():
-        template_id = '{}.{}'.format(app.label, template_name)
+        template_id = '{}.{}.{}'.format(app.label, template_name, language)
         if template_id not in app_templates_cache or settings.DEBUG:
             try:
                 app_template = get_template(
