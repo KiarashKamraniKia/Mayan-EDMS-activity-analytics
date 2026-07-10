@@ -49,6 +49,7 @@
 - Stop menu refreshes if a user is interacting with a control inside of it.
   Solves the search form clearing its content while users type and the main
   navigation menu closing while being used it.
+- Fix server status modal error 403/404/500 whitelist check.
 
 4.11.4 (2026-05-01)
 ===================

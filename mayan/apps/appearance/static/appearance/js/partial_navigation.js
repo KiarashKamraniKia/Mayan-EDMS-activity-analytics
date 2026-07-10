@@ -283,11 +283,12 @@ class PartialNavigation {
         } else {
             if (jqXHR.status === 0) {
                 if (jqXHR.statusText !== "abort") {
-                    $('#modal-server-error .modal-body').html($('#template-error').html());
-                    $('#modal-server-error').modal('show')
+                    const htmlContent = $('#template-error').html();
+                    $('#modal-server-error .modal-body').html(htmlContent);
+                    $('#modal-server-error').modal('show');
                 }
             } else {
-                if ([403, 404, 500].indexOf(jqXHR.status !== -1)) {
+                if ([403, 404, 500].indexOf(jqXHR.status) !== -1) {
                     app.ajaxContentSet(jqXHR.responseText);
                 } else {
                     app.ajaxContentSet(jqXHR.statusText);
