@@ -71,6 +71,8 @@
   Pass a Python structured dict and emit it with Django's `json_script` +
   JSON.parse. Future prevention of possible JavaScript attacks.
 - Prevent Django's template engine from consuming Dropzone's `{{statusCode}}`.
+- Harden the template system. Remove eval usage in the template
+  "model attributes" and "filters and tags" dropdowns.
 
 4.11.4 (2026-05-01)
 ===================
