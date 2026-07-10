@@ -213,19 +213,19 @@ class ElasticsearchSearchBackend(SearchBackend):
         if isinstance(search_field, SearchFieldVirtualAllFields):
             seen = set()
 
-            for search_field in search_field.field_composition:
+            for composition_search_field in search_field.field_composition:
                 try:
                     search_field_query = query_type.resolve_for_backend(
                         is_quoted_value=is_quoted_value,
                         is_raw_value=is_raw_value, search_backend=self,
-                        search_field=search_field, value=value
+                        search_field=composition_search_field, value=value
                     )
                 except DynamicSearchValueTransformationError:
                     """Skip the search field."""
                 else:
                     if search_field_query is not None:
                         index_name = self._get_index_name(
-                            search_model=search_field.search_model
+                            search_model=composition_search_field.search_model
                         )
 
                         search = Search(index=index_name, using=self._client)
@@ -238,8 +238,6 @@ class ElasticsearchSearchBackend(SearchBackend):
                             if item not in seen:
                                 seen.add(item)
                                 yield item
-            else:
-                return
         else:
             search = Search(index=index_name, using=self._client)
 

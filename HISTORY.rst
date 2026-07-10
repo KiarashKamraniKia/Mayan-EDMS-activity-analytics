@@ -63,6 +63,7 @@
   after closing a FancyBox preview.
 - Improve Whoosh indexing and deletion locking.
 - Improve Whoosh indexing and deletion error messages.
+- Fix a variable shadowing and a dead code path in the Elastisearch backend.
 
 4.11.4 (2026-05-01)
 ===================
