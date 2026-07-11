@@ -82,6 +82,13 @@
 - Consolidate duplicated CSS rules.
 - Set the HTML language to the user's active language.
 - Improve non AJAX loading redirection.
+- Docker Compose improvements:
+
+  - Fix Redis healthcheck.
+  - Remove unused `mountindex:` volume.
+  - Disable Elasticsearch HTTPS.
+  - Add service resource YAML extension field.
+  - Split service logging into its own YAML extension field.
 
 4.11.4 (2026-05-01)
 ===================

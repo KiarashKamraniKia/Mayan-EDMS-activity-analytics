@@ -33,6 +33,15 @@ x-mayan-depends_on-advanced:
       condition: service_completed_successfully
       required: false
 
+x-mayan-deploy:
+  &mayan-deploy
+  deploy:
+    resources:
+      limits:
+        cpus: '4.0'
+      reservations:
+        cpus: '2.0'
+
 x-mayan-environment:
   &mayan-environment
   MAYAN_CELERY_BROKER_URL: amqp://${MAYAN_RABBITMQ_USER:-mayan}:${MAYAN_RABBITMQ_PASSWORD:-mayanrabbitpass}@${MAYAN_DOCKER_RABBITMQ_HOSTNAME:-rabbitmq}:${MAYAN_DOCKER_RABBITMQ_PORT:-5672}/${MAYAN_RABBITMQ_VHOST:-mayan}
@@ -41,9 +50,18 @@ x-mayan-environment:
   MAYAN_LOCK_MANAGER_BACKEND: mayan.apps.lock_manager.backends.redis_lock.RedisLock
   MAYAN_LOCK_MANAGER_BACKEND_ARGUMENTS: "{'redis_url':'redis://:${MAYAN_REDIS_PASSWORD:-mayanredispassword}@${MAYAN_DOCKER_REDIS_HOSTNAME:-redis}:${MAYAN_DOCKER_REDIS_PORT:-6379}/${MAYAN_REDIS_LOCK_MANAGER_DATABASE:-2}'}"
 
+x-mayan-logging:
+  &mayan-logging
+  logging:
+    driver: "json-file"
+    options:
+      max-size: "100m"
+      max-file: "3"
+      mode: "non-blocking"
+
 x-mayan-container:
   &mayan-container
-  <<: [*mayan-depends_on-basic]
+  <<: [*mayan-depends_on-basic, *mayan-deploy, *mayan-logging]
   env_file:
     - ${MAYAN_DOCKER_ENV_FILE:-.env}
     - path: .env-local
@@ -51,12 +69,6 @@ x-mayan-container:
   environment:
     <<: [*mayan-environment]
   image: ${MAYAN_DOCKER_IMAGE_NAME:-mayanedms/mayanedms}:${MAYAN_DOCKER_IMAGE_TAG:-s4.11}
-  logging:
-    driver: "json-file"
-    options:
-      max-size: "100m"
-      max-file: "3"
-      mode: "non-blocking"
   networks:
     - mayan
   restart: unless-stopped
@@ -116,6 +128,7 @@ services:
       - bootstrap.memory_lock=true
       - discovery.type=single-node
       - http.max_content_length=400mb
+      - xpack.security.http.ssl.enabled=false
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
       - ELASTIC_PASSWORD=${MAYAN_ELASTICSEARCH_PASSWORD:-mayanespassword}
     healthcheck:
@@ -254,7 +267,7 @@ services:
       - --requirepass
       - "${MAYAN_REDIS_PASSWORD:-mayanredispassword}"
     healthcheck:
-      test: ["CMD", "redis-cli", "-a", "${MAYAN_REDIS_PASSWORD:-mayanredispassword}", "ping | grep PONG"]
+      test: ["CMD-SHELL", "redis-cli -a ${MAYAN_REDIS_PASSWORD:-mayanredispassword} ping | grep -q PONG"]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -470,7 +483,6 @@ volumes:
   postgres:
   postgres-backups:
   postgres-initdb:
-  mountindex:
   rabbitmq:
   redis:
   traefik-certificates-letsencrypt:
