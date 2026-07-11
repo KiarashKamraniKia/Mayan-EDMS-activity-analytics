@@ -87,8 +87,11 @@ class MayanApp {
 
     static async updateNavbarState () {
         const uriFragment = window.location.hash.substring(1);
+        const uriFragmentPath = new URL(
+            uriFragment, window.location.origin
+        ).pathname;
         $('#accordion-sidebar a').each(function (index, value) {
-            if (value.pathname === uriFragment) {
+            if (value.pathname === uriFragmentPath) {
                 const $this = $(this);
 
                 $this.closest('.collapse').addClass('in').parent().find('.collapsed').removeClass('collapsed').attr('aria-expanded', 'true');

@@ -77,6 +77,7 @@
 - Improve Whoosh write speed. Make the write locks smarter and more atomic.
 - Remove an `ajaxForm` serialization double-decode.
 - Improve how the multi action form an ID list is merged into the base URL.
+- Improve how the the main navigation menu highlights the current menu entry.
 
 4.11.4 (2026-05-01)
 ===================
