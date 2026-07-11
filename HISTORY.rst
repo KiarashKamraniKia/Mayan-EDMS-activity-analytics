@@ -78,6 +78,7 @@
 - Remove an `ajaxForm` serialization double-decode.
 - Improve how the multi action form an ID list is merged into the base URL.
 - Improve how the the main navigation menu highlights the current menu entry.
+- Remove left over dead code from search forms.
 
 4.11.4 (2026-05-01)
 ===================

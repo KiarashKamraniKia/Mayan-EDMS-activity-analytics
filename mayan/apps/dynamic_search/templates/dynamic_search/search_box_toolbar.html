@@ -14,7 +14,6 @@
     <div class="form-group">
         <select  class="form-control search-select-search-model" name="{% search_get_search_model_name_query_variable %}">
             {% for search_model in search_models %}
-            {{ search_model.self.full_name }}
                 <option {% if search_model.full_name == default_search_model.full_name %}selected{% endif %} value="{{ search_model.full_name }}">{{ search_model }}</option>
             {% endfor %}
         </select>
