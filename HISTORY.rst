@@ -79,6 +79,7 @@
 - Improve how the multi action form an ID list is merged into the base URL.
 - Improve how the the main navigation menu highlights the current menu entry.
 - Remove left over dead code from search forms.
+- Consolidate duplicated CSS rules.
 
 4.11.4 (2026-05-01)
 ===================
