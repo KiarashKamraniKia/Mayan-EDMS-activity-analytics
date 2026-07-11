@@ -1,9 +1,13 @@
+from django.test import tag
+
 from mayan.apps.documents.models.document_file_models import DocumentFile
 from mayan.apps.documents.tests.base import GenericDocumentTestCase
 from mayan.apps.messaging.events import event_message_created
 from mayan.apps.messaging.models import Message
 from mayan.apps.storage.events import event_download_file_created
 from mayan.apps.storage.models import DownloadFile
+from mayan.apps.testing.literals import EXCLUDE_TEST_TAG
+from mayan.literals import TEST_TAG_TRANSLATION
 
 from ..classes import DocumentFileCompressor
 
@@ -11,6 +15,7 @@ from .literals import TEST_DOCUMENT_FILE_DOWNLOAD_MESSAGE_SUBJECT
 
 
 class DocumentFileCompressorClassTestCase(GenericDocumentTestCase):
+    @tag(EXCLUDE_TEST_TAG, TEST_TAG_TRANSLATION)
     def test_document_file_download(self):
         self._create_test_user()
 
