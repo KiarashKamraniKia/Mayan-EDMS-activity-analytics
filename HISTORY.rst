@@ -80,6 +80,7 @@
 - Improve how the the main navigation menu highlights the current menu entry.
 - Remove left over dead code from search forms.
 - Consolidate duplicated CSS rules.
+- Set the HTML language to the user's active language.
 
 4.11.4 (2026-05-01)
 ===================

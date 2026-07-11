@@ -22,6 +22,11 @@
     }
 </script>
 
+<script>
+    /* Set the document language on AJAX updates */
+    {% if LANGUAGE_CODE %}document.documentElement.lang = '{{ LANGUAGE_CODE|escapejs }}';{% endif %}
+</script>
+
 {% block stylesheets %}{% endblock %}
 
 {% if appearance_type != 'plain' %}
