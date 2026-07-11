@@ -18,7 +18,7 @@
         document.write('<script type="text/undefined">')
         const currentLocation = '#' + window.location.pathname + window.location.search;
         const url = new URL(currentLocation, window.location.origin)
-        window.location = url;
+        window.location.replace(url.href);
     }
 </script>
 
