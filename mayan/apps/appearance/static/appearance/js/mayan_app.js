@@ -69,12 +69,12 @@ class MayanApp {
                 );
             });
 
-            const urlSearchParameters = new URLSearchParams({[
-                app.options.multiItemActionsPrimaryKey]:idList
-            });
-            const newURL = `${href}?${urlSearchParameters}`;
+            const url = new URL(href, window.location.origin);
+            url.searchParams.set(
+                app.options.multiItemActionsPrimaryKey, idList
+            );
 
-            $this.attr('href', newURL);
+            $this.attr('href', `${url.pathname}${url.search}`);
         });
     }
 
