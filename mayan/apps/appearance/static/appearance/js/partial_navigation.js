@@ -348,7 +348,7 @@ class PartialNavigation {
                 options.url = stringFormAction;
 
                 const urlSearchParamForm = new URLSearchParams(
-                    decodeURIComponent($form.serialize())
+                    $form.serialize()
                 );
                 const urlFormAction = new URL(stringFormAction, window.location);
 
