@@ -74,6 +74,7 @@
 - Harden the template system. Remove eval usage in the template
   "model attributes" and "filters and tags" dropdowns.
 - Increase the default value of `SEARCH_INDEXING_CHUNK_SIZE` from 25 to 500.
+- Improve Whoosh write speed. Make the write locks smarter and more atomic.
 
 4.11.4 (2026-05-01)
 ===================
