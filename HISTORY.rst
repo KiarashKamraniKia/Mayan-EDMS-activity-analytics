@@ -73,6 +73,7 @@
 - Prevent Django's template engine from consuming Dropzone's `{{statusCode}}`.
 - Harden the template system. Remove eval usage in the template
   "model attributes" and "filters and tags" dropdowns.
+- Increase the default value of `SEARCH_INDEXING_CHUNK_SIZE` from 25 to 500.
 
 4.11.4 (2026-05-01)
 ===================
