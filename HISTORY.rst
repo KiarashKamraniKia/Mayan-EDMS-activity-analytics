@@ -1,6 +1,9 @@
 4.11.5 (XXXX-XX-XX)
 ===================
 - Improve compatibility with Python 3.14.
+- Update dependency versions:
+
+  - sentry-sdk from 2.58.0 to 2.65.0
 
 4.11.4 (2026-05-01)
 ===================

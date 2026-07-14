@@ -114,7 +114,7 @@ python_gnupg==0.5.6
 pytz==2026.1.post1
 qrcode==8.2
 requests==2.33.1
-sentry-sdk==2.58.0
+sentry-sdk==2.65.0
 sh==2.2.2
 swagger-spec-validator==3.0.4
 whitenoise==6.12.0
