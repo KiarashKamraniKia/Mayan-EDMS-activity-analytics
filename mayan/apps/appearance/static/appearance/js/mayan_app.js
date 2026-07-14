@@ -456,44 +456,55 @@ class MayanApp {
             }
         });
 
+        // Panel selection.
+        $('body').on('mousedown', '.panel-item', function (event) {
+            app.panelPointerDownPosition = {x: event.clientX, y: event.clientY};
+        });
+
         $('body').on('click', '.panel-item', function (event) {
-            const targetSelection = window.getSelection().toString();
-            if (!targetSelection) {
-                const $this = $(this);
-                const targetSrc = $(event.target).prop('src');
-                const targetHref = $(event.target).prop('href');
-                const targetIsButton = event.target.tagName === 'BUTTON';
-                let lastChecked = null;
+            const pointerDownPosition = app.panelPointerDownPosition;
+            app.panelPointerDownPosition = null;
 
-                if ((targetSrc === undefined) && (targetHref === undefined) && (targetIsButton === false)) {
-                    const $checkbox = $this.find('.check-all-slave');
-                    const checked = $checkbox.prop('checked');
+            if (pointerDownPosition && (
+                Math.abs(event.clientX - pointerDownPosition.x) > 5 ||
+                Math.abs(event.clientY - pointerDownPosition.y) > 5
+            )) {
+                return;
+            }
 
-                    if (checked) {
-                        $checkbox.prop('checked', '');
-                        $checkbox.trigger('change');
-                    } else {
-                        $checkbox.prop('checked', 'checked');
-                        $checkbox.trigger('change');
-                    }
+            const $this = $(this);
+            const targetSrc = $(event.target).prop('src');
+            const targetHref = $(event.target).prop('href');
+            const targetIsButton = event.target.tagName === 'BUTTON';
 
-                    if(!app.lastChecked) {
-                        app.lastChecked = $checkbox;
-                    }
+            if ((targetSrc === undefined) && (targetHref === undefined) && (targetIsButton === false)) {
+                const $checkbox = $this.find('.check-all-slave');
+                const checked = $checkbox.prop('checked');
 
-                    if (event.shiftKey) {
-                        const $checkBoxes = $('.check-all-slave');
-
-                        const start = $checkBoxes.index($checkbox);
-                        const end = $checkBoxes.index(app.lastChecked);
-
-                        $checkBoxes.slice(
-                            Math.min(start, end), Math.max(start, end) + 1
-                        ).prop('checked', app.lastChecked.prop('checked')).trigger('change');
-                    }
-                    app.lastChecked = $checkbox;
-                    window.getSelection().removeAllRanges();
+                if (checked) {
+                    $checkbox.prop('checked', '');
+                    $checkbox.trigger('change');
+                } else {
+                    $checkbox.prop('checked', 'checked');
+                    $checkbox.trigger('change');
                 }
+
+                if (!app.lastChecked) {
+                    app.lastChecked = $checkbox;
+                }
+
+                if (event.shiftKey) {
+                    const $checkBoxes = $('.check-all-slave');
+
+                    const start = $checkBoxes.index($checkbox);
+                    const end = $checkBoxes.index(app.lastChecked);
+
+                    $checkBoxes.slice(
+                        Math.min(start, end), Math.max(start, end) + 1
+                    ).prop('checked', app.lastChecked.prop('checked')).trigger('change');
+                }
+                app.lastChecked = $checkbox;
+                window.getSelection().removeAllRanges();
             }
         });
     }
