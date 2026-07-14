@@ -90,6 +90,8 @@
   - Add service resource YAML extension field.
   - Split service logging into its own YAML extension field.
 
+- Constrain the thumbnail's fancybox link to the image's visible bounds.
+
 4.11.4 (2026-05-01)
 ===================
 - Merge changes and improvements from version 4.10.6.
