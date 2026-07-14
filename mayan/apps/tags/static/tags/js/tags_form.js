@@ -8,7 +8,6 @@ jQuery(document).ready(function() {
     }
 
     const tagSelectionTemplate = function (object, container) {
-        container[0].style.background = object.element.dataset.color;
         return tagsTagTemplate(object);
     }
 

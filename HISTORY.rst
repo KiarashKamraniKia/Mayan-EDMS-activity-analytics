@@ -92,6 +92,7 @@
 
 - Constrain the thumbnail's fancybox link to the image's visible bounds.
 - Improve panel section function.
+- Improve appearance of tags when using the Select2 widget.
 
 4.11.4 (2026-05-01)
 ===================
