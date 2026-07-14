@@ -3,7 +3,13 @@
 - Improve compatibility with Python 3.14.
 - Update dependency versions:
 
+  - django from 5.2.13 to 5.2.16
+  - nh3 from 0.3.5 to 0.3.6
+  - pip from 26.1 to 26.1.2
+  - psycopg from 3.3.3 to 3.3.4
+  - redis from 7.4.0 to 7.4.1
   - sentry-sdk from 2.58.0 to 2.65.0
+  - sh from 2.2.2 to 2.2.6
 
 - Improve `chunk_hash_file_object`.
 - Fix the document signature ID being empty for every signature when
