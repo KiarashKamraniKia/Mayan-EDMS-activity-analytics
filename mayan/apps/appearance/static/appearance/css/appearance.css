@@ -154,6 +154,11 @@ a i {
     margin-top: 3px;
 }
 
+/* Must go after .lazyload-spinner-container */
+.panel-body a.fancybox span.instance-image-widget span.lazyload-spinner-container {
+    border-color: transparent;
+}
+
 #ajax-spinner {
     -webkit-animation: .5s spin linear infinite;
     animation: .5s spin linear infinite;
