@@ -111,6 +111,8 @@
   - Add `get_loader_app_configs` to allow subclasses from which apps to load modules.
 
 - Unify Elasticsearch tests mock backend into its own module.
+- Convert the Elasticsearch static refresh before every search into an option
+  named `refresh_on_search` and set the default to `True` for compatibility.
 
 4.11.4 (2026-05-01)
 ===================
