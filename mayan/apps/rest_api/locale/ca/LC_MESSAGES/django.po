@@ -3,12 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Translators:
+# Isaac Torres, 2026
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-07 07:29+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -54,7 +58,7 @@ msgstr ""
 
 #: serializers.py:36
 msgid "Content"
-msgstr ""
+msgstr "Contingut"
 
 #: serializers.py:39
 msgid "Data"
@@ -66,7 +70,7 @@ msgstr ""
 
 #: serializers.py:45
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: serializers.py:48
 msgid "Status code"
@@ -78,11 +82,11 @@ msgstr ""
 
 #: serializers.py:74
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #: serializers.py:77
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: serializers.py:105
 msgid "Author"
@@ -106,7 +110,7 @@ msgstr ""
 
 #: serializers.py:120
 msgid "Description"
-msgstr ""
+msgstr "Descripció"
 
 #: serializers.py:123
 msgid "Django version"
@@ -114,7 +118,7 @@ msgstr ""
 
 #: serializers.py:126
 msgid "License"
-msgstr ""
+msgstr "Llicència"
 
 #: serializers.py:129
 msgid "Title"
@@ -122,7 +126,7 @@ msgstr ""
 
 #: serializers.py:132
 msgid "Version"
-msgstr ""
+msgstr "Versió"
 
 #: serializers.py:135
 msgid "Website"

@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 20:44+0000\n"
+"POT-Creation-Date: 2026-07-15 16:54+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Mathias Behrle <mathiasb@m9s.biz>, 2026\n"
 "Language-Team: German (Germany) (https://app.transifex.com/rosarior/teams/13584/de_DE/)\n"
@@ -72,8 +72,8 @@ msgid "Description"
 msgstr "Beschreibung"
 
 #: events.py:6 permissions.py:6 queues.py:11 settings.py:20
-#: templates/dynamic_search/search_box.html:47
-#: templates/dynamic_search/search_box_toolbar.html:30
+#: templates/dynamic_search/search_box.html:46
+#: templates/dynamic_search/search_box_toolbar.html:29
 #: views/search_views.py:106
 msgid "Search"
 msgstr "Suche"
@@ -108,8 +108,8 @@ msgstr "Nur Resultate zurückgeben, die für alle Felder zutreffen."
 msgid "Search logic"
 msgstr "Suchlogik"
 
-#: forms.py:104 templates/dynamic_search/search_box.html:43
-#: templates/dynamic_search/search_box_toolbar.html:25
+#: forms.py:104 templates/dynamic_search/search_box.html:42
+#: templates/dynamic_search/search_box_toolbar.html:24
 msgid "Search terms"
 msgstr "Suchbegriffe"
 
@@ -133,8 +133,8 @@ msgstr "Ergebnisse"
 msgid "Basic search"
 msgstr "Basissuche"
 
-#: links.py:40 templates/dynamic_search/search_box.html:49
-#: templates/dynamic_search/search_box_toolbar.html:33
+#: links.py:40 templates/dynamic_search/search_box.html:48
+#: templates/dynamic_search/search_box_toolbar.html:32
 msgid "Advanced search"
 msgstr "Erweiterte Suche"
 
@@ -504,8 +504,8 @@ msgstr "Setzt den Defaultwert für die \"Ergebnisse speichern\" Checkbox."
 msgid "Filter terms"
 msgstr "Filterbedingungen"
 
-#: templates/dynamic_search/search_box.html:49
-#: templates/dynamic_search/search_box_toolbar.html:33
+#: templates/dynamic_search/search_box.html:48
+#: templates/dynamic_search/search_box_toolbar.html:32
 msgid "Advanced"
 msgstr "Erweitert"
 

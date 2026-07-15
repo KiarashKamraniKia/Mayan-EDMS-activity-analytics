@@ -3,12 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Isaac Torres, 2026
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-25 20:32+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +35,7 @@ msgstr ""
 
 #: apps.py:181 serializers/file_metadata_serializers.py:16
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #: apps.py:186 serializers/file_metadata_serializers.py:19
 msgid "MIME types"
@@ -39,16 +43,16 @@ msgstr ""
 
 #: apps.py:190 models.py:98 models.py:153
 msgid "Internal name"
-msgstr ""
+msgstr "Nom intern"
 
 #: apps.py:194 serializers/file_metadata_serializers.py:13
 msgid "Description"
-msgstr ""
+msgstr "Descripció"
 
 #: apps.py:198 model_mixins.py:48 models.py:55
 #: serializers/file_metadata_serializers.py:10
 msgid "Arguments"
-msgstr ""
+msgstr "Arguments"
 
 #: apps.py:204
 msgid ""
@@ -88,7 +92,7 @@ msgstr ""
 
 #: links.py:53
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: links.py:60
 msgid "File metadata driver setup"
@@ -112,7 +116,7 @@ msgstr ""
 
 #: model_mixins.py:58
 msgid "Full path"
-msgstr ""
+msgstr "Ruta completa"
 
 #: model_mixins.py:60
 msgid "Path used to access the value of the file metadata entry."
@@ -124,7 +128,7 @@ msgstr ""
 
 #: models.py:31 serializers/document_file_serializers.py:18
 msgid "Document file"
-msgstr ""
+msgstr "Fitxer del document"
 
 #: models.py:37 models.py:93
 msgid "Document file driver entry"
@@ -142,7 +146,7 @@ msgstr ""
 
 #: models.py:60 serializers/document_type_serializers.py:16
 msgid "Document type"
-msgstr ""
+msgstr "Tipus del document"
 
 #: models.py:69
 msgid ""
@@ -151,7 +155,7 @@ msgstr ""
 
 #: models.py:71
 msgid "Enabled"
-msgstr ""
+msgstr "Activat"
 
 #: models.py:83 models.py:84
 msgid "Document type driver settings"
@@ -167,7 +171,7 @@ msgstr ""
 
 #: models.py:104
 msgid "Key"
-msgstr ""
+msgstr "Clau"
 
 #: models.py:107
 msgid "Value of the file metadata entry."
@@ -175,7 +179,7 @@ msgstr ""
 
 #: models.py:108
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #: models.py:114
 msgid "File metadata entry"
@@ -238,7 +242,7 @@ msgstr ""
 #: serializers/document_file_serializers.py:70
 #: serializers/document_type_serializers.py:22
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: serializers/document_file_serializers.py:37
 #: serializers/document_type_serializers.py:19

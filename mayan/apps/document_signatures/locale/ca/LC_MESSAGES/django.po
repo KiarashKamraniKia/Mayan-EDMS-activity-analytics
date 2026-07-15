@@ -5,6 +5,7 @@
 # Translators:
 # Translators:
 # Jorge <emailcurro@gmail.com>, 2026
+# Isaac Torres, 2026
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-19 18:48+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Jorge <emailcurro@gmail.com>, 2026\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -30,11 +31,11 @@ msgstr ""
 
 #: apps.py:114 models.py:53 serializers.py:61
 msgid "Key ID"
-msgstr ""
+msgstr "ID de la clau"
 
 #: apps.py:118 forms.py:78
 msgid "None"
-msgstr ""
+msgstr "Cap"
 
 #: apps.py:119 forms.py:65 models.py:58
 msgid "Signature ID"
@@ -42,7 +43,7 @@ msgstr ""
 
 #: apps.py:124
 msgid "Type"
-msgstr ""
+msgstr "Tipus"
 
 #: events.py:10
 msgid "Detached signature created"
@@ -62,7 +63,7 @@ msgstr ""
 
 #: forms.py:17 forms.py:30 workflow_actions.py:69
 msgid "Key"
-msgstr ""
+msgstr "Clau"
 
 #: forms.py:21 serializers.py:66 workflow_actions.py:31
 msgid ""
@@ -132,7 +133,7 @@ msgstr "Esborrar"
 
 #: links.py:59
 msgid "Download"
-msgstr ""
+msgstr "Descarregar"
 
 #: links.py:66
 msgid "Upload signature"
@@ -144,11 +145,11 @@ msgstr ""
 
 #: links.py:86
 msgid "Details"
-msgstr ""
+msgstr "Detalls"
 
 #: links.py:92 queues.py:7
 msgid "Signatures"
-msgstr ""
+msgstr "Signatures"
 
 #: links.py:100
 msgid "Refresh all signatures"
@@ -172,7 +173,7 @@ msgstr ""
 
 #: models.py:42
 msgid "Document file"
-msgstr ""
+msgstr "Fitxer del document"
 
 #: models.py:47
 msgid "Date and time signed"
@@ -284,7 +285,7 @@ msgstr ""
 
 #: serializers.py:110
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: settings.py:20
 msgid "Path to the Storage subclass to use when storing detached signatures."

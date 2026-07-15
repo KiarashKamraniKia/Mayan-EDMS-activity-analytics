@@ -5,6 +5,7 @@
 # Translators:
 # Translators:
 # Jorge <emailcurro@gmail.com>, 2026
+# Isaac Torres, 2026
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-19 18:47+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Jorge <emailcurro@gmail.com>, 2026\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,10 +30,12 @@ msgid ""
 "Object for which the access is granted. When sorting objects, only the type "
 "is used and not the actual label of the object."
 msgstr ""
+"Objecte per al qual s'atorga l'accés. Quan s'ordenen els objectes, només "
+"s'utilitza el tipus i no l'etiqueta real de l'objecte."
 
 #: apps.py:65 workflow_actions.py:129
 msgid "Object"
-msgstr ""
+msgstr "Objecte"
 
 #: events.py:6 permissions.py:6
 msgid "Access control lists"
@@ -44,7 +47,7 @@ msgstr "LCA creada"
 
 #: events.py:13
 msgid "ACL deleted"
-msgstr ""
+msgstr "LCA esborrada"
 
 #: events.py:16
 msgid "ACL edited"
@@ -68,7 +71,7 @@ msgstr "Permisos"
 
 #: links.py:34
 msgid "Global ACLs"
-msgstr ""
+msgstr "LCAs globals"
 
 #: managers.py:276
 #, python-format
@@ -82,19 +85,19 @@ msgstr "Accés insuficient per: \"%s\""
 
 #: model_mixins.py:23
 msgid "Permission count"
-msgstr ""
+msgstr "Recompte de permisos"
 
 #: models.py:42 serializers.py:16
 msgid "Content type"
-msgstr ""
+msgstr "Tipus de contingut"
 
 #: models.py:45 workflow_actions.py:54
 msgid "Object ID"
-msgstr ""
+msgstr "ID de l'objecte"
 
 #: models.py:56
 msgid "Role to which the access is granted for the specified object."
-msgstr ""
+msgstr "Rol al qual s'atorga l'accés per a l'objecte especificat."
 
 #: models.py:67
 msgid "Access entry"
@@ -119,35 +122,35 @@ msgstr "Veure LCAs"
 
 #: serializers.py:19
 msgid "Permissions add URL"
-msgstr ""
+msgstr "Permisos afegir URL"
 
 #: serializers.py:39
 msgid "Permissions remove URL"
-msgstr ""
+msgstr "Permisos esborrar URL"
 
 #: serializers.py:59
 msgid "Permissions URL"
-msgstr ""
+msgstr "Permisos URL"
 
 #: serializers.py:82
 msgid "Role ID"
-msgstr ""
+msgstr "ID del rol"
 
 #: serializers.py:85
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: serializers.py:118
 msgid "Primary key of the permission to add to the ACL."
-msgstr ""
+msgstr "Clau primària del permís per afegir a la LCA."
 
 #: serializers.py:119 serializers.py:126
 msgid "Permission ID"
-msgstr ""
+msgstr "ID del permís"
 
 #: serializers.py:125
 msgid "Primary key of the permission to remove from the ACL."
-msgstr ""
+msgstr "Clau primària del permís per esborrar de la LCA."
 
 #: views.py:44
 #, python-format
@@ -155,20 +158,22 @@ msgid ""
 "An ACL for \"%(object)s\" using role \"%(role)s\" already exists. Edit that "
 "ACL entry instead."
 msgstr ""
+"Una LCA per \"%(object)s\" utilitzant el rol \"%(role)s\" ja existeix. "
+"Editeu aquesta LCA."
 
 #: views.py:59
 #, python-format
 msgid "New access control lists for: %s"
-msgstr ""
+msgstr "Nova llista de control d'accés per: %s"
 
 #: views.py:103
 #, python-format
 msgid "Delete ACL: %s"
-msgstr ""
+msgstr "Esborar LCA: %s"
 
 #: views.py:147
 msgid "There are no ACLs for this object"
-msgstr ""
+msgstr "No hi ha LCAs per aquest objecte"
 
 #: views.py:150 views.py:273
 msgid ""
@@ -196,7 +201,7 @@ msgstr "Permisos disponibles"
 #: views.py:221
 #, python-format
 msgid "Role \"%(role)s\" permission's for \"%(object)s\"."
-msgstr ""
+msgstr "El permís de la funció \"%(role)s\" es per a \"%(object)s\"."
 
 #: views.py:231
 msgid ""
@@ -205,57 +210,63 @@ msgid ""
 "to be removed from the parent object's ACL or from them role via the Setup "
 "menu."
 msgstr ""
+"Els permisos desactivats són heretats d'un objecte pare o concedits "
+"directament al rol, i no es poden suprimir des d'aquesta vista. Els permisos"
+" heretats s'han de suprimir de la LCA de l'objecte pare o del rol mitjançant"
+" el menú Configuració."
 
 #: views.py:271
 msgid "There are no ACLs"
-msgstr ""
+msgstr "No hi ha LCAs"
 
 #: views.py:278
 msgid "Global access control lists"
-msgstr ""
+msgstr "Llistes de control d'accés globals"
 
 #: workflow_actions.py:44
 msgid "Object type"
-msgstr ""
+msgstr "Tipus de l'objecte"
 
 #: workflow_actions.py:47
 msgid "Type of the object for which the access will be modified."
-msgstr ""
+msgstr "Tipus d'objecte per al qual es modificarà l'accés."
 
 #: workflow_actions.py:57
 msgid ""
 "Numeric identifier of the object for which the access will be modified."
-msgstr ""
+msgstr "Identificador numèric de l'objecte per al qual es modificarà l'accés."
 
 #: workflow_actions.py:62 workflow_actions.py:198
 msgid "Roles"
-msgstr ""
+msgstr "Rols"
 
 #: workflow_actions.py:64 workflow_actions.py:200
 msgid "Roles whose access will be modified."
-msgstr ""
+msgstr "Rols per als quals es modificarà l'accés."
 
 #: workflow_actions.py:71 workflow_actions.py:207
 msgid ""
 "Permissions to grant/revoke to/from the role for the object selected above."
 msgstr ""
+"Permisos que es volen concedir o revocar al rol per al tipus d'objecte "
+"seleccionat anteriorment."
 
 #: workflow_actions.py:78
 msgid "Grant object access"
-msgstr ""
+msgstr "Concedir accés a l'objecte"
 
 #: workflow_actions.py:133 workflow_actions.py:232
 msgid "Access"
-msgstr ""
+msgstr "Accés"
 
 #: workflow_actions.py:171
 msgid "Revoke object access"
-msgstr ""
+msgstr "Revocar accés a l'objecte"
 
 #: workflow_actions.py:214
 msgid "Grant document access"
-msgstr ""
+msgstr "Concedir accés al document"
 
 #: workflow_actions.py:261
 msgid "Revoke document access"
-msgstr ""
+msgstr "Revocar accés al document"

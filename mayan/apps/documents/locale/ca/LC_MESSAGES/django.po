@@ -5,6 +5,7 @@
 # Translators:
 # Translators:
 # Jorge <emailcurro@gmail.com>, 2026
+# Isaac Torres, 2026
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-25 20:32+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Jorge <emailcurro@gmail.com>, 2026\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,7 +25,7 @@ msgstr ""
 #: models/document_models.py:113 permissions.py:6 settings.py:36
 #: statistics.py:286
 msgid "Documents"
-msgstr ""
+msgstr "Documents"
 
 #: apps.py:236 models/favorite_document_models.py:33
 msgid "Date and time added"
@@ -43,7 +44,7 @@ msgstr ""
 #: serializers/favorite_document_serializers.py:13
 #: serializers/recently_accessed_document_serializers.py:15
 msgid "Document"
-msgstr ""
+msgstr "Document"
 
 #: apps.py:339 apps.py:371 apps.py:765 apps.py:790 apps.py:985
 msgid "Thumbnail"
@@ -81,7 +82,7 @@ msgstr ""
 
 #: apps.py:990
 msgid "Type"
-msgstr ""
+msgstr "Tipus"
 
 #: classes.py:65 forms/document_file_forms.py:37
 msgid "Original"
@@ -115,7 +116,7 @@ msgstr ""
 
 #: dashboard_widgets.py:52
 msgid "Total documents"
-msgstr ""
+msgstr "Documents totals"
 
 #: dashboard_widgets.py:70 views/trashed_document_views.py:164
 msgid "Documents in trash"
@@ -125,7 +126,7 @@ msgstr ""
 #: links/document_type_links.py:82 models/document_type_models.py:105
 #: permissions.py:78 views/document_type_views.py:83
 msgid "Document types"
-msgstr ""
+msgstr "Tipus de documents"
 
 #: dashboard_widgets.py:106
 msgid "New documents this month"
@@ -312,7 +313,7 @@ msgstr ""
 #: models/document_model_mixins.py:188
 #: models/document_version_model_mixins.py:165
 msgid "Pages"
-msgstr ""
+msgstr "Pàgines"
 
 #: forms/document_forms.py:45
 msgid "Quick document rename"
@@ -341,7 +342,7 @@ msgstr ""
 #: serializers/document_serializers.py:28 workflow_actions.py:18
 #: workflow_actions.py:34
 msgid "Document type"
-msgstr ""
+msgstr "Tipus del document"
 
 #: forms/document_version_forms.py:19
 msgid ""
@@ -350,16 +351,16 @@ msgstr ""
 
 #: forms/document_version_forms.py:21
 msgid "Backend"
-msgstr ""
+msgstr "Backend"
 
 #: forms/document_version_page_forms.py:29
 #: serializers/document_version_serializers.py:38
 msgid "Content type"
-msgstr ""
+msgstr "Tipus de contingut"
 
 #: forms/document_version_page_forms.py:32
 msgid "Object ID"
-msgstr ""
+msgstr "ID de l'objecte"
 
 #: forms/document_version_page_forms.py:35
 msgid "Source"
@@ -398,7 +399,7 @@ msgstr "Esborrar"
 #: links/document_file_links.py:37 links/document_type_links.py:31
 #: links/document_type_links.py:52 links/document_version_links.py:50
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: links/document_file_links.py:41 links/document_file_links.py:48
 msgid "Introspect"
@@ -414,7 +415,7 @@ msgstr ""
 
 #: links/document_file_links.py:64 links/document_links.py:26
 msgid "Properties"
-msgstr ""
+msgstr "Propietats"
 
 #: links/document_file_links.py:82 links/document_links.py:21
 #: links/document_version_links.py:64
@@ -453,7 +454,7 @@ msgstr ""
 #: links/document_file_page_links.py:76 models/document_file_models.py:108
 #: models/document_file_page_models.py:28 search.py:55
 msgid "Document file"
-msgstr ""
+msgstr "Fitxer del document"
 
 #: links/document_file_page_links.py:83 models/document_file_page_models.py:41
 #: models/document_file_page_models.py:86
@@ -659,7 +660,7 @@ msgstr ""
 #: serializers/document_serializers.py:22
 #: serializers/document_version_serializers.py:17
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #: models/document_file_model_mixins.py:418
 #, python-format
@@ -684,11 +685,11 @@ msgstr ""
 
 #: models/document_file_models.py:69 models/document_version_models.py:41
 msgid "Comment"
-msgstr ""
+msgstr "Comentari"
 
 #: models/document_file_models.py:74 serializers/document_serializers.py:93
 msgid "File"
-msgstr ""
+msgstr "Fitxer"
 
 #: models/document_file_models.py:77
 msgid "Filename"
@@ -729,7 +730,7 @@ msgstr ""
 #: models/document_file_page_models.py:40
 #: models/document_file_page_models.py:85 search.py:92
 msgid "Document file page"
-msgstr ""
+msgstr "Pàgina del fitxer del document"
 
 #: models/document_model_mixins.py:176
 #, python-format
@@ -762,7 +763,7 @@ msgstr ""
 
 #: models/document_models.py:69 serializers/document_version_serializers.py:20
 msgid "Description"
-msgstr ""
+msgstr "Descripció"
 
 #: models/document_models.py:73
 msgid "The date and time of the document creation."
@@ -880,7 +881,7 @@ msgstr ""
 
 #: models/document_type_models.py:159
 msgid "Enabled"
-msgstr ""
+msgstr "Activat"
 
 #: models/document_type_models.py:165
 msgid "Quick label"
@@ -933,7 +934,7 @@ msgstr ""
 #: serializers/favorite_document_serializers.py:20
 #: serializers/recently_accessed_document_serializers.py:18
 msgid "User"
-msgstr ""
+msgstr "Usuari"
 
 #: models/favorite_document_models.py:42
 msgid "Favorite document"
@@ -1170,7 +1171,7 @@ msgstr ""
 #: search.py:32 serializers/document_serializers.py:32
 #: serializers/document_serializers.py:78
 msgid "Document type ID"
-msgstr ""
+msgstr "ID del tipus de document"
 
 #: search.py:35 search.py:67 search.py:104 search.py:142 search.py:174
 msgid "Document type label"
@@ -1178,7 +1179,7 @@ msgstr ""
 
 #: search.py:43 search.py:110
 msgid "Document file checksum"
-msgstr ""
+msgstr "Suma de verificació del fitxer del document"
 
 #: search.py:46
 msgid "Document file filename"
@@ -1186,11 +1187,11 @@ msgstr ""
 
 #: search.py:49
 msgid "Document file MIME type"
-msgstr ""
+msgstr "Tipus MIME del fitxer del document"
 
 #: search.py:70 search.py:153
 msgid "Document description"
-msgstr ""
+msgstr "Descripció del document"
 
 #: search.py:74 search.py:146
 msgid "The database ID of the document."
@@ -1198,15 +1199,15 @@ msgstr ""
 
 #: search.py:75 search.py:147 serializers/favorite_document_serializers.py:17
 msgid "Document ID"
-msgstr ""
+msgstr "ID del document"
 
 #: search.py:78 search.py:107 search.py:150 search.py:178
 msgid "Document label"
-msgstr ""
+msgstr "Etiqueta del document"
 
 #: search.py:81 search.py:113 search.py:156 search.py:182
 msgid "Document UUID"
-msgstr ""
+msgstr "UUID del document"
 
 #: serializers/document_file_serializers.py:12
 msgid "Document file URL"
@@ -1216,7 +1217,7 @@ msgstr ""
 #: serializers/document_version_serializers.py:57
 #: serializers/trashed_document_serializers.py:12
 msgid "Image URL"
-msgstr ""
+msgstr "URL de la imatge"
 
 #: serializers/document_file_serializers.py:40
 #: serializers/document_file_serializers.py:95
@@ -1228,7 +1229,7 @@ msgstr ""
 #: serializers/favorite_document_serializers.py:26
 #: serializers/trashed_document_serializers.py:23
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: serializers/document_file_serializers.py:69
 msgid "Action name"
@@ -1298,7 +1299,7 @@ msgstr ""
 #: serializers/document_type_serializers.py:35
 #: serializers/document_type_serializers.py:47
 msgid "Documents URL"
-msgstr ""
+msgstr "URL dels documents"
 
 #: serializers/document_type_serializers.py:39
 msgid "Quick label list URL"
@@ -1883,7 +1884,7 @@ msgstr ""
 
 #: views/document_version_page_views.py:160
 msgid "None"
-msgstr ""
+msgstr "Cap"
 
 #: views/document_version_page_views.py:187
 msgid "There are no sources available to remap for this document version."

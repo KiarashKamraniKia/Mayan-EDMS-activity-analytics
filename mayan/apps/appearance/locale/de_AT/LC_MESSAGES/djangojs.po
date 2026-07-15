@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-27 11:46+0000\n"
+"POT-Creation-Date: 2026-07-15 16:56+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Mathias Behrle <mathiasb@m9s.biz>, 2026\n"
 "Language-Team: German (Austria) (https://app.transifex.com/rosarior/teams/13584/de_AT/)\n"
@@ -20,16 +20,16 @@ msgstr ""
 "Language: de_AT\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: static/appearance/js/mayan_app.js:267
+#: static/appearance/js/mayan_app.js:280
 msgid "Copied!"
 msgstr "Kopiert"
 
-#: static/appearance/js/mayan_app.js:269
+#: static/appearance/js/mayan_app.js:282
 msgid "Failed. Check clipboard permissions."
 msgstr ""
 "Fehlgeschlagen. Überprüfen Sie die Berechtigungen für die Zwischenablage."
 
-#: static/appearance/js/mayan_app.js:566
+#: static/appearance/js/mayan_app.js:590
 msgid "Done!"
 msgstr "Erledigt"
 

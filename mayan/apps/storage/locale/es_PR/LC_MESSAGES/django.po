@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-25 20:33+0000\n"
+"POT-Creation-Date: 2026-07-15 16:55+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Roberto Rosario, 2026\n"
 "Language-Team: Spanish (Puerto Rico) (https://app.transifex.com/rosarior/teams/13584/es_PR/)\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Language: es_PR\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: apps.py:30 permissions.py:6 queues.py:13 settings.py:15
+#: apps.py:30 permissions.py:6 queues.py:13 settings.py:18
 msgid "Storage"
 msgstr "Almacenamiento"
 
@@ -167,12 +167,34 @@ msgstr "URL de descarga"
 msgid "URL"
 msgstr "URL"
 
-#: settings.py:21
+#: settings.py:25
+msgid ""
+"Maximum size in bytes of a compressed-archive input file (EML, MSG, PDF, "
+"TAR, ZIP, and friends) that will be attempted to parse. Files larger than "
+"this are rejected before being read into memory, to prevent memory-"
+"exhaustion attacks. Set to 0 to disable."
+msgstr ""
+
+#: settings.py:36
+msgid ""
+"Maximum size in bytes of a single member inside a compressed archive. "
+"Members whose declared (uncompressed) size exceeds this value are rejected "
+"before being decompressed. Set to 0 to disable."
+msgstr ""
+
+#: settings.py:47
+msgid ""
+"Maximum ratio of uncompressed size to compressed size permitted for a single"
+" archive member. Ratios above this value are characteristic of zip-bomb / "
+"tar-bomb payloads and are rejected. Set to 0 to disable."
+msgstr ""
+
+#: settings.py:56
 msgid "Time in seconds, after which download files will be deleted."
 msgstr ""
 "Tiempo en segundos, después del cual se eliminarán los archivos descargados."
 
-#: settings.py:27
+#: settings.py:62
 msgid ""
 "A storage backend that all workers can use to generate and hold files for "
 "download."
@@ -180,22 +202,22 @@ msgstr ""
 "Un controlador de almacenamiento que todos los trabajadores pueden usar para"
 " generar y almacenar archivos para descargar."
 
-#: settings.py:35
+#: settings.py:70
 msgid ""
 "Keyword arguments to pass to the `STORAGE_DOWNLOAD_FILE_STORAGE` backend."
 msgstr ""
 
-#: settings.py:42
+#: settings.py:77
 msgid "A storage backend that all workers can use to share files."
 msgstr ""
 "Un controlador de almacenamiento que todos los trabajadores pueden utilizar "
 "para compartir archivos."
 
-#: settings.py:49
+#: settings.py:84
 msgid "Keyword arguments to pass to the `STORAGE_SHARED_STORAGE` backend."
 msgstr ""
 
-#: settings.py:56
+#: settings.py:91
 msgid ""
 "Temporary directory used site wide to store thumbnails, previews and "
 "temporary files."
@@ -203,7 +225,7 @@ msgstr ""
 "Directorio temporero utilizado en todo la instalación para almacenar "
 "imágenes en miniatura, visualizaciones y archivos temporeros."
 
-#: settings.py:63
+#: settings.py:98
 msgid "Time in seconds, after which temporary uploaded files will be deleted."
 msgstr ""
 "Tiempo en segundos, después del cual se eliminarán los archivos cargados "

@@ -5,6 +5,7 @@
 # Translators:
 # Translators:
 # Jorge <emailcurro@gmail.com>, 2026
+# Isaac Torres, 2026
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-27 20:44+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Jorge <emailcurro@gmail.com>, 2026\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -77,11 +78,11 @@ msgstr ""
 
 #: forms.py:17 models/metadata_type_models.py:33
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: forms.py:25 models/metadata_instance_models.py:43 workflow_actions.py:112
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #: forms.py:30
 msgid "Update"
@@ -134,11 +135,11 @@ msgstr ""
 
 #: forms.py:195
 msgid "Parsing"
-msgstr ""
+msgstr "Anàlisi"
 
 #: forms.py:232
 msgid "None"
-msgstr ""
+msgstr "Cap"
 
 #: forms.py:233
 msgid "Optional"
@@ -164,7 +165,7 @@ msgstr ""
 
 #: links.py:72
 msgid "Document types"
-msgstr ""
+msgstr "Tipus de documents"
 
 #: links.py:76
 msgid "Create new"
@@ -176,7 +177,7 @@ msgstr "Esborrar"
 
 #: links.py:92
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: metadata_parsers.py:11
 msgid "Date and time parser"
@@ -224,7 +225,7 @@ msgstr ""
 
 #: models/document_type_metadata_type_models.py:24 serializers.py:78
 msgid "Document type"
-msgstr ""
+msgstr "Tipus del document"
 
 #: models/document_type_metadata_type_models.py:39
 msgid "Document type metadata type options"
@@ -236,11 +237,11 @@ msgstr ""
 
 #: models/metadata_instance_models.py:32 serializers.py:140
 msgid "Document"
-msgstr ""
+msgstr "Document"
 
 #: models/metadata_instance_models.py:36
 msgid "Type"
-msgstr ""
+msgstr "Tipus"
 
 #: models/metadata_instance_models.py:41
 msgid "The actual value stored in the metadata type field for the document."
@@ -271,7 +272,7 @@ msgstr ""
 
 #: models/metadata_type_models.py:37
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #: models/metadata_type_models.py:41
 msgid "Enter a template to render."
@@ -380,7 +381,7 @@ msgstr ""
 
 #: search.py:33
 msgid "Document type ID"
-msgstr ""
+msgstr "ID del tipus de document"
 
 #: search.py:37
 msgid "Document type label"
@@ -392,7 +393,7 @@ msgstr ""
 
 #: serializers.py:35 serializers.py:90 serializers.py:146
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: serializers.py:85
 msgid "Primary key of the metadata type to be added."

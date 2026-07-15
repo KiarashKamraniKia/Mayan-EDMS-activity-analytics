@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Jorge <emailcurro@gmail.com>, 2026
+# Isaac Torres, 2026
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-11 12:51+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Jorge <emailcurro@gmail.com>, 2026\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,7 +36,7 @@ msgstr ""
 
 #: classes.py:165 classes.py:169
 msgid "Null backend"
-msgstr ""
+msgstr "Backend null"
 
 #: events.py:10
 msgid "Quota created"
@@ -47,7 +48,7 @@ msgstr ""
 
 #: forms.py:14 model_mixins.py:16
 msgid "Backend"
-msgstr ""
+msgstr "Backend"
 
 #: forms.py:15
 msgid "The quota driver for this entry."
@@ -63,7 +64,7 @@ msgstr "Esborrar"
 
 #: links.py:26
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: links.py:30
 msgid "Quotas list"
@@ -81,7 +82,7 @@ msgstr ""
 
 #: mixins.py:26
 msgid "Document types"
-msgstr ""
+msgstr "Tipus de documents"
 
 #: mixins.py:33
 msgid "Document types to which the quota will be applied."
@@ -98,7 +99,7 @@ msgstr ""
 
 #: mixins.py:94
 msgid "Groups"
-msgstr ""
+msgstr "Grups"
 
 #: mixins.py:101
 msgid "Groups to which the quota will be applied."
@@ -138,7 +139,7 @@ msgstr ""
 
 #: model_mixins.py:20
 msgid "Arguments"
-msgstr ""
+msgstr "Arguments"
 
 #: model_mixins.py:24
 msgid "Usage"
@@ -146,15 +147,15 @@ msgstr ""
 
 #: models.py:16
 msgid "The dotted Python path to the backend class."
-msgstr ""
+msgstr "La ruta de punts de Python cap a la classe del backend."
 
 #: models.py:17
 msgid "Backend path"
-msgstr ""
+msgstr "Ruta del backend"
 
 #: models.py:20
 msgid "Backend data"
-msgstr ""
+msgstr "Dades del backend"
 
 #: models.py:24
 msgid "Allow quick disable or enable of the quota."
@@ -162,7 +163,7 @@ msgstr ""
 
 #: models.py:25
 msgid "Enabled"
-msgstr ""
+msgstr "Activat"
 
 #: models.py:30
 msgid "Quota"

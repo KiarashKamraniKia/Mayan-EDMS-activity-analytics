@@ -5,14 +5,15 @@
 # Translators:
 # Translators:
 # Jorge <emailcurro@gmail.com>, 2026
+# Isaac Torres, 2026
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-27 20:44+0000\n"
+"POT-Creation-Date: 2026-07-15 16:54+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Jorge <emailcurro@gmail.com>, 2026\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -56,11 +57,11 @@ msgstr ""
 
 #: apps.py:123 serializers.py:67
 msgid "Description"
-msgstr ""
+msgstr "Descripció"
 
 #: events.py:6 permissions.py:6 queues.py:11 settings.py:20
-#: templates/dynamic_search/search_box.html:47
-#: templates/dynamic_search/search_box_toolbar.html:30
+#: templates/dynamic_search/search_box.html:46
+#: templates/dynamic_search/search_box_toolbar.html:29
 #: views/search_views.py:106
 msgid "Search"
 msgstr ""
@@ -93,8 +94,8 @@ msgstr ""
 msgid "Search logic"
 msgstr ""
 
-#: forms.py:104 templates/dynamic_search/search_box.html:43
-#: templates/dynamic_search/search_box_toolbar.html:25
+#: forms.py:104 templates/dynamic_search/search_box.html:42
+#: templates/dynamic_search/search_box_toolbar.html:24
 msgid "Search terms"
 msgstr ""
 
@@ -118,8 +119,8 @@ msgstr ""
 msgid "Basic search"
 msgstr ""
 
-#: links.py:40 templates/dynamic_search/search_box.html:49
-#: templates/dynamic_search/search_box_toolbar.html:33
+#: links.py:40 templates/dynamic_search/search_box.html:48
+#: templates/dynamic_search/search_box_toolbar.html:32
 msgid "Advanced search"
 msgstr ""
 
@@ -141,11 +142,11 @@ msgstr ""
 
 #: literals.py:28
 msgid "Yes"
-msgstr ""
+msgstr "Sí"
 
 #: literals.py:29
 msgid "No"
-msgstr ""
+msgstr "No"
 
 #: models.py:23
 msgid ""
@@ -199,7 +200,7 @@ msgstr ""
 
 #: models.py:55 serializers.py:24
 msgid "User"
-msgstr ""
+msgstr "Usuari"
 
 #: models.py:60 models.py:95
 msgid "Saved resultset"
@@ -297,7 +298,7 @@ msgstr ""
 
 #: search_fields.py:267
 msgid "Related"
-msgstr ""
+msgstr "Relacionat"
 
 #: search_fields.py:325
 msgid "Virtual"
@@ -318,7 +319,7 @@ msgstr ""
 
 #: search_models.py:199
 msgid "Full name"
-msgstr ""
+msgstr "Nom complet"
 
 #: search_query_types.py:171
 msgid "Exact"
@@ -366,7 +367,7 @@ msgstr ""
 
 #: serializers.py:30 serializers.py:91
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: serializers.py:53
 msgid "User must be authenticated."
@@ -374,7 +375,7 @@ msgstr ""
 
 #: serializers.py:73
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #: serializers.py:85
 msgid "Primary key"
@@ -458,8 +459,8 @@ msgstr ""
 msgid "Filter terms"
 msgstr ""
 
-#: templates/dynamic_search/search_box.html:49
-#: templates/dynamic_search/search_box_toolbar.html:33
+#: templates/dynamic_search/search_box.html:48
+#: templates/dynamic_search/search_box_toolbar.html:32
 msgid "Advanced"
 msgstr ""
 

@@ -3,12 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Isaac Torres, 2026
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-27 20:43+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,27 +22,27 @@ msgstr ""
 
 #: apps.py:24 links.py:38 permissions.py:6
 msgid "Dependencies"
-msgstr ""
+msgstr "Dependències"
 
 #: apps.py:32 apps.py:69 apps.py:78
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #: apps.py:36
 msgid "Internal name"
-msgstr ""
+msgstr "Nom intern"
 
 #: apps.py:41 apps.py:74 apps.py:83
 msgid "Description"
-msgstr ""
+msgstr "Descripció"
 
 #: apps.py:45 classes.py:221
 msgid "Type"
-msgstr ""
+msgstr "Tipus"
 
 #: apps.py:49 classes.py:224
 msgid "Other data"
-msgstr ""
+msgstr "Altres dades"
 
 #: apps.py:53
 msgid "Declared by"
@@ -46,23 +50,23 @@ msgstr ""
 
 #: apps.py:57 classes.py:222
 msgid "Version"
-msgstr ""
+msgstr "Versió"
 
 #: apps.py:61 classes.py:223 classes.py:1044
 msgid "Environments"
-msgstr ""
+msgstr "Entorns"
 
 #: apps.py:64 classes.py:224
 msgid "Check"
-msgstr ""
+msgstr "Comprovar"
 
 #: classes.py:221
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: classes.py:222
 msgid "App"
-msgstr ""
+msgstr "Aplicació"
 
 #: classes.py:342
 msgid "Need to specify at least one: app_label or module."
@@ -71,7 +75,7 @@ msgstr ""
 #: classes.py:347
 #, python-format
 msgid "Dependency \"%s\" already registered."
-msgstr ""
+msgstr "La dependència \"%s\" ja està registrada."
 
 #: classes.py:399
 #, python-format
@@ -93,15 +97,15 @@ msgstr ""
 
 #: classes.py:463
 msgid "Installed and correct version"
-msgstr ""
+msgstr "Instal·lat i versió correcta."
 
 #: classes.py:465
 msgid "Missing or incorrect version"
-msgstr ""
+msgstr "No instal·lat o versió incorrecta"
 
 #: classes.py:504
 msgid "None"
-msgstr ""
+msgstr "Cap"
 
 #: classes.py:513
 msgid "Not specified"
@@ -109,7 +113,7 @@ msgstr ""
 
 #: classes.py:516
 msgid "Patching files... "
-msgstr ""
+msgstr "Parxejant fitxers..."
 
 #: classes.py:544
 msgid "Executables that are called directly by the code."
@@ -117,29 +121,31 @@ msgstr ""
 
 #: classes.py:546
 msgid "Binary"
-msgstr ""
+msgstr "Binari"
 
 #: classes.py:564
 msgid ""
 "JavaScript libraries downloaded the from NPM registry and used for front-end"
 " functionality."
 msgstr ""
+"Biblioteques de JavaScript baixades del registre NPM i utilitzades per a la "
+"funcionalitat del front-end."
 
 #: classes.py:567
 msgid "JavaScript"
-msgstr ""
+msgstr "JavaScript"
 
 #: classes.py:599 classes.py:934
 msgid "Downloading... "
-msgstr ""
+msgstr "Descarregant..."
 
 #: classes.py:604
 msgid "Verifying... "
-msgstr ""
+msgstr "Verificant..."
 
 #: classes.py:609 classes.py:939
 msgid "Extracting... "
-msgstr ""
+msgstr "Extraient..."
 
 #: classes.py:624 classes.py:946
 msgid "Uninstalling... "
@@ -151,7 +157,7 @@ msgstr ""
 
 #: classes.py:844
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: classes.py:913
 msgid "Fonts downloaded from fonts.googleapis.com."
@@ -163,11 +169,11 @@ msgstr ""
 
 #: classes.py:1024
 msgid "Declared in app"
-msgstr ""
+msgstr "Declarat a l'aplicació"
 
 #: classes.py:1025
 msgid "Show dependencies by the app that declared them."
-msgstr ""
+msgstr "Mostra les dependències segons l'aplicació que les ha declarat."
 
 #: classes.py:1029
 msgid "Class"
@@ -181,7 +187,7 @@ msgstr ""
 
 #: classes.py:1035
 msgid "State"
-msgstr ""
+msgstr "Estat"
 
 #: classes.py:1036
 msgid ""
@@ -195,6 +201,8 @@ msgid ""
 "Dependencies required for an environment might not be required for another. "
 "Example environments: Production, Development."
 msgstr ""
+"Les dependències necessàries per a un entorn poden no ser necessàries per a "
+"un altre. Exemples d'entorns: Producció, Desenvolupament."
 
 #: environments.py:17
 msgid ""
@@ -224,7 +232,7 @@ msgstr ""
 
 #: environments.py:32
 msgid "Documentation"
-msgstr ""
+msgstr "Documentaciío"
 
 #: environments.py:36
 msgid ""
@@ -235,17 +243,19 @@ msgstr ""
 
 #: environments.py:40
 msgid "Documentation (override)"
-msgstr ""
+msgstr "Documentació (sobrescriure)"
 
 #: environments.py:45
 msgid ""
 "Normal environment for end users. A missing dependency under this "
 "environment will result in issues and errors during normal use."
 msgstr ""
+"Entorn normal per a usuaris finals. Una dependència que falti en aquest "
+"entorn provocarà problemes i errors durant l'ús normal."
 
 #: environments.py:48
 msgid "Production"
-msgstr ""
+msgstr "Producció"
 
 #: environments.py:52
 msgid ""
@@ -263,6 +273,9 @@ msgid ""
 "code. Dependencies in this environment are not needed for normal production "
 "usage."
 msgstr ""
+"Entorn utilitzat per executar el conjunt de proves per verificar la "
+"funcionalitat del codi. Les dependències d'aquest entorn no són necessàries "
+"per a l'ús normal de producció."
 
 #: environments.py:62
 msgid "Testing"
@@ -274,19 +287,19 @@ msgstr ""
 
 #: links.py:18
 msgid "Groups"
-msgstr ""
+msgstr "Grups"
 
 #: links.py:23
 msgid "Entries"
-msgstr ""
+msgstr "Entrades"
 
 #: links.py:29
 msgid "Details"
-msgstr ""
+msgstr "Detalls"
 
 #: links.py:33
 msgid "Dependencies licenses"
-msgstr ""
+msgstr "Llicències de les dependències"
 
 #: literals.py:12
 #, python-format
@@ -301,6 +314,8 @@ msgid ""
 "The version you are using (%(version_local)s) is outdated. The latest "
 "version is %(version_server)s."
 msgstr ""
+"La versió que esteu utilitzant ( %(version_local)s ) està desactualitzada. "
+"L'última versió és %(version_server)s ."
 
 #: literals.py:20
 msgid "It is not possible to determine the latest version available."
@@ -321,12 +336,16 @@ msgstr ""
 msgid ""
 "Comma separated names of dependencies to exclude from the list generated."
 msgstr ""
+"Noms de dependències separats per comes que s'exclouran de la llista "
+"generada."
 
 #: management/commands/dependencies_generate_requirements.py:20
 msgid ""
 "Comma separated names of dependencies to show in the list while excluding "
 "every other one."
 msgstr ""
+"Noms de dependències separats per comes que es mostraran a la llista i "
+"s'exclouran tots els altres."
 
 #: management/commands/dependencies_install.py:13
 #: management/commands/dependencies_uninstall.py:13
@@ -339,7 +358,7 @@ msgstr ""
 
 #: permissions.py:10
 msgid "View dependencies"
-msgstr ""
+msgstr "Veure dependències"
 
 #: views.py:27
 msgid "This process only checks the Python component of Mayan EDMS."
@@ -350,6 +369,8 @@ msgid ""
 "It does not verify versions of other components like packaging or deployment"
 " technologies, such as container or virtual machine images."
 msgstr ""
+"No verifica versions d'altres components com ara tecnologies d'empaquetatge "
+"o de desplegament, com ara imatges de contenidors o de màquines virtuals."
 
 #: views.py:51
 #, python-format
@@ -359,7 +380,7 @@ msgstr ""
 #: views.py:65 views.py:114
 #, python-format
 msgid "Group %s not found."
-msgstr ""
+msgstr "No s'ha trobat el grup %s ."
 
 #: views.py:79
 msgid "Dependency groups"
@@ -373,7 +394,7 @@ msgstr ""
 #: views.py:126
 #, python-format
 msgid "Entry %s not found."
-msgstr ""
+msgstr "No s'ha trobat l'entrada %s ."
 
 #: views.py:145
 msgid "Other packages licenses"

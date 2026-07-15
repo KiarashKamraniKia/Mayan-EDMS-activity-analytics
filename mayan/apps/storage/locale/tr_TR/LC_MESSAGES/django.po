@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-25 20:33+0000\n"
+"POT-Creation-Date: 2026-07-15 16:55+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
 "Last-Translator: Bedreddin Şahbaz, 2026\n"
 "Language-Team: Turkish (Turkey) (https://app.transifex.com/rosarior/teams/13584/tr_TR/)\n"
@@ -25,7 +25,7 @@ msgstr ""
 "Language: tr_TR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: apps.py:30 permissions.py:6 queues.py:13 settings.py:15
+#: apps.py:30 permissions.py:6 queues.py:13 settings.py:18
 msgid "Storage"
 msgstr "Depolama"
 
@@ -172,11 +172,33 @@ msgstr ""
 msgid "URL"
 msgstr "URL"
 
-#: settings.py:21
+#: settings.py:25
+msgid ""
+"Maximum size in bytes of a compressed-archive input file (EML, MSG, PDF, "
+"TAR, ZIP, and friends) that will be attempted to parse. Files larger than "
+"this are rejected before being read into memory, to prevent memory-"
+"exhaustion attacks. Set to 0 to disable."
+msgstr ""
+
+#: settings.py:36
+msgid ""
+"Maximum size in bytes of a single member inside a compressed archive. "
+"Members whose declared (uncompressed) size exceeds this value are rejected "
+"before being decompressed. Set to 0 to disable."
+msgstr ""
+
+#: settings.py:47
+msgid ""
+"Maximum ratio of uncompressed size to compressed size permitted for a single"
+" archive member. Ratios above this value are characteristic of zip-bomb / "
+"tar-bomb payloads and are rejected. Set to 0 to disable."
+msgstr ""
+
+#: settings.py:56
 msgid "Time in seconds, after which download files will be deleted."
 msgstr "İndirme sonrası silinecek dosyaların, kaç saniye sonra silineceği."
 
-#: settings.py:27
+#: settings.py:62
 msgid ""
 "A storage backend that all workers can use to generate and hold files for "
 "download."
@@ -184,22 +206,22 @@ msgstr ""
 "Tüm çalışanların indirilmek üzere dosya oluşturmak ve tutmak için "
 "kullanabileceği bir depolama alanı."
 
-#: settings.py:35
+#: settings.py:70
 msgid ""
 "Keyword arguments to pass to the `STORAGE_DOWNLOAD_FILE_STORAGE` backend."
 msgstr ""
 
-#: settings.py:42
+#: settings.py:77
 msgid "A storage backend that all workers can use to share files."
 msgstr ""
 "Tüm çalışanların dosyaları paylaşmak için kullanabileceği bir depolama "
 "alanı."
 
-#: settings.py:49
+#: settings.py:84
 msgid "Keyword arguments to pass to the `STORAGE_SHARED_STORAGE` backend."
 msgstr ""
 
-#: settings.py:56
+#: settings.py:91
 msgid ""
 "Temporary directory used site wide to store thumbnails, previews and "
 "temporary files."
@@ -207,7 +229,7 @@ msgstr ""
 "Thumbnail, ön izleme ve geçici dosyaları depolamak için kullanılacak geçici "
 "klasör."
 
-#: settings.py:63
+#: settings.py:98
 msgid "Time in seconds, after which temporary uploaded files will be deleted."
 msgstr "Geçici olarak yüklenen dosyaların, kaç saniye sonra silineceği."
 

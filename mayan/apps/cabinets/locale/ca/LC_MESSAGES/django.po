@@ -5,6 +5,7 @@
 # 
 # Translators:
 # Jorge <emailcurro@gmail.com>, 2026
+# Isaac Torres, 2026
 # 
 msgid ""
 msgstr ""
@@ -12,7 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-24 07:05+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
-"Last-Translator: Jorge <emailcurro@gmail.com>, 2026\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -25,47 +26,47 @@ msgstr ""
 #: permissions.py:6 search.py:54 views/cabinet_views.py:158
 #: workflow_actions.py:39 workflow_actions.py:53
 msgid "Cabinets"
-msgstr ""
+msgstr "Arxius"
 
 #: apps.py:163 models.py:43
 msgid "Documents"
-msgstr ""
+msgstr "Documents"
 
 #: events.py:11
 msgid "Cabinet created"
-msgstr ""
+msgstr "Armari creat"
 
 #: events.py:14
 msgid "Cabinet deleted"
-msgstr ""
+msgstr "Armari esborrat"
 
 #: events.py:17
 msgid "Cabinet edited"
-msgstr ""
+msgstr "Armari editat"
 
 #: events.py:20
 msgid "Document added to cabinet"
-msgstr ""
+msgstr "Document afegit a l'armari"
 
 #: events.py:23
 msgid "Document removed from cabinet"
-msgstr ""
+msgstr "Document esborrat de l'armari"
 
 #: links.py:36 links.py:48 workflow_actions.py:75
 msgid "Remove from cabinets"
-msgstr ""
+msgstr "Esborrar dels armaris"
 
 #: links.py:41 links.py:44 workflow_actions.py:21
 msgid "Add to cabinets"
-msgstr ""
+msgstr "Afegir als armaris"
 
 #: links.py:59
 msgid "Add new level"
-msgstr ""
+msgstr "Afegir nivell nou"
 
 #: links.py:64 views/cabinet_views.py:36
 msgid "Create cabinet"
-msgstr ""
+msgstr "Crear armari"
 
 #: links.py:69
 msgid "Delete"
@@ -73,51 +74,51 @@ msgstr "Esborrar"
 
 #: links.py:73
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: links.py:81
 msgid "All"
-msgstr ""
+msgstr "Tot"
 
 #: links.py:85
 msgid "Details"
-msgstr ""
+msgstr "Detalls"
 
 #: methods.py:21
 msgid "Return a list of cabinets containing the document."
-msgstr ""
+msgstr "Retorna una llista dels gabinets que contenen el document."
 
 #: methods.py:23
 msgid "get_cabinets()"
-msgstr ""
+msgstr "get_cabinets()"
 
 #: model_mixins.py:64
 msgid "The path to the cabinet including all ancestors."
-msgstr ""
+msgstr "La ruta cap a l'arxiu, incloent-hi tots els ascendents."
 
 #: model_mixins.py:66 serializers.py:32
 msgid "Full path"
-msgstr ""
+msgstr "Ruta completa"
 
 #: models.py:35 serializers.py:41
 msgid "Parent"
-msgstr ""
+msgstr "Pare"
 
 #: models.py:38
 msgid "A short text used to identify the cabinet."
-msgstr ""
+msgstr "Un text breu que s'utilitza per identificar l'arxiu."
 
 #: models.py:39
 msgid "Label"
-msgstr ""
+msgstr "Etiqueta"
 
 #: models.py:53 models.py:135 models.py:159
 msgid "Cabinet"
-msgstr ""
+msgstr "Arxiu"
 
 #: models.py:134
 msgid "Parent and Label"
-msgstr ""
+msgstr "Pare i Etiqueta"
 
 #: models.py:142
 #, python-format
@@ -126,88 +127,91 @@ msgstr ""
 
 #: models.py:171
 msgid "Document cabinet"
-msgstr ""
+msgstr "Arxiu del coment"
 
 #: models.py:172
 msgid "Document cabinets"
-msgstr ""
+msgstr "Arxiu dels documents"
 
 #: permissions.py:12
 msgid "Add documents to cabinets"
-msgstr ""
+msgstr "Afegir documents als arxius"
 
 #: permissions.py:15
 msgid "Create cabinets"
-msgstr ""
+msgstr "Crear arxius"
 
 #: permissions.py:18
 msgid "Delete cabinets"
-msgstr ""
+msgstr "Esborrar arxius"
 
 #: permissions.py:21
 msgid "Edit cabinets"
-msgstr ""
+msgstr "Editar arxius"
 
 #: permissions.py:24
 msgid "Remove documents from cabinets"
-msgstr ""
+msgstr "Esborrar documents dels arxius"
 
 #: permissions.py:27
 msgid "View cabinets"
-msgstr ""
+msgstr "Veure arxius"
 
 #: search.py:25
 msgid "Document type"
-msgstr ""
+msgstr "Tipus del document"
 
 #: search.py:28
 msgid "Document label"
-msgstr ""
+msgstr "Etiqueta del document"
 
 #: search.py:31
 msgid "Document description"
-msgstr ""
+msgstr "Descripció del document"
 
 #: search.py:34
 msgid "Document UUID"
-msgstr ""
+msgstr "UUID del document"
 
 #: search.py:40
 msgid "Document file checksum"
-msgstr ""
+msgstr "Suma de verificació del fitxer del document"
 
 #: search.py:43
 msgid "Document file MIME type"
-msgstr ""
+msgstr "Tipus MIME del fitxer del document"
 
 #: search.py:50
 msgid "The database ID of the cabinet."
-msgstr ""
+msgstr "L'D de la base de dades de l'arxiu."
 
 #: search.py:51
 msgid "Cabinet ID"
-msgstr ""
+msgstr "ID de l'arxiu"
 
 #: serializers.py:18
 msgid "List of children cabinets."
-msgstr ""
+msgstr "Llista dels arxius fills"
 
 #: serializers.py:19
 msgid "Children"
-msgstr ""
+msgstr "Fills"
 
 #: serializers.py:23
 msgid ""
 "URL of the API endpoint showing the list documents inside this cabinet."
 msgstr ""
+"URL de l'enpoint de l'API que mostra la llista de documents dins d'aquest "
+"arxiu."
 
 #: serializers.py:25
 msgid "Documents URL"
-msgstr ""
+msgstr "URL dels documents"
 
 #: serializers.py:30
 msgid "The name of this cabinet level appended to the names of its ancestors."
 msgstr ""
+"El nom d'aquest nivell d'arxiu afegit al final del nom dels seus ascendents."
 
 #: serializers.py:35
 msgid "Parents URL"
@@ -215,153 +219,162 @@ msgstr ""
 
 #: serializers.py:51
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: serializers.py:84
 msgid "Primary key of the document to add to the cabinet."
-msgstr ""
+msgstr "Clau primària del document que s'ha d'afegir a l'arxiu."
 
 #: serializers.py:85 serializers.py:95
 msgid "Document ID"
-msgstr ""
+msgstr "ID del document"
 
 #: serializers.py:94
 msgid "Primary key of the document to remove from the cabinet."
-msgstr ""
+msgstr "Clau primària del document que s'ha d'eliminar a l'arxiu."
 
 #: templates/cabinets/cabinet_details.html:17
 msgid "Navigation:"
-msgstr ""
+msgstr "Navegació:"
 
 #: views/cabinet_views.py:53
 #, python-format
 msgid "Add new level to: %s"
-msgstr ""
+msgstr "Afegir nivell a: %s"
 
 #: views/cabinet_views.py:78
 #, python-format
 msgid "Delete the cabinet: %s?"
-msgstr ""
+msgstr "Esborrar l'arxiu: %s?"
 
 #: views/cabinet_views.py:117
 msgid ""
 "Cabinet levels can contain documents or other cabinet sub levels. To add "
 "documents to a cabinet, select the cabinet view of a document view."
 msgstr ""
+"Els nivells d'arxiu poden contenir documents o altres subnivells d'arxiu. "
+"Per afegir documents a un arxiu, seleccioneu la vista d'arxiu d'una vista de"
+" document."
 
 #: views/cabinet_views.py:121
 msgid "This cabinet level is empty"
-msgstr ""
+msgstr "Aquest nivell d'arxiu està buit"
 
 #: views/cabinet_views.py:124
 #, python-format
 msgid "Details of cabinet: %s"
-msgstr ""
+msgstr "Detalls de l'arxiu: %s"
 
 #: views/cabinet_views.py:143
 #, python-format
 msgid "Edit cabinet: %s"
-msgstr ""
+msgstr "Editar arxiu: %s"
 
 #: views/cabinet_views.py:164
 msgid ""
 "Cabinets are a multi-level method to organize documents. Each cabinet can "
 "contain documents as well as other sub level cabinets."
 msgstr ""
+"Els arxius són un mètode multinivell per organitzar documents. Cada arxiu "
+"pot contenir documents i també altres subnivells d'arxiu."
 
 #: views/cabinet_views.py:168
 msgid "No cabinets available"
-msgstr ""
+msgstr "No hi ha arxius disponibles"
 
 #: views/document_views.py:30
 #, python-format
 msgid "Document \"%(object)s\" added to cabinets successfully."
-msgstr ""
+msgstr "El document \"%(object)s\" s'ha afegit correctament als arxius."
 
 #: views/document_views.py:33
 #, python-format
 msgid "%(count)d document added to cabinets successfully."
-msgstr ""
+msgstr "%(count)d docuement afegit als arxius correctament."
 
 #: views/document_views.py:36
 #, python-format
 msgid "%(count)d documents added to cabinets successfully."
-msgstr ""
+msgstr "%(count)ddocuments afegits als arxius corresponent."
 
 #: views/document_views.py:38
 #, python-format
 msgid "Add %(count)d documents to cabinets."
-msgstr ""
+msgstr "Afegir %(count)d documents als arxius."
 
 #: views/document_views.py:39
 #, python-format
 msgid "Add document \"%(object)s\" to cabinets."
-msgstr ""
+msgstr "Afegir document \"%(object)s\" als arxius."
 
 #: views/document_views.py:40
 #, python-format
 msgid "Add %(count)d document to cabinets."
-msgstr ""
+msgstr "Afegir %(count)d document als arxius."
 
 #: views/document_views.py:58
 msgid "Cabinets to which the selected documents will be added."
 msgstr ""
+"Arxius als quals s'afegiran els documents seleccionats.\n"
+" "
 
 #: views/document_views.py:105
 msgid "Documents can be added to many cabinets."
-msgstr ""
+msgstr "Els documents es poden afegir a múltiples arxius."
 
 #: views/document_views.py:108
 msgid "This document is not in any cabinet"
-msgstr ""
+msgstr "Aquest document no està en cap arxiu,"
 
 #: views/document_views.py:112
 #, python-format
 msgid "Cabinets containing document: %s"
-msgstr ""
+msgstr "Arxius que contenen aquest document: %s"
 
 #: views/document_views.py:128
 #, python-format
 msgid "Document \"%(object)s\" removed from cabinets successfully."
-msgstr ""
+msgstr "Document \"%(object)s\" eliminat dels arxius correctament."
 
 #: views/document_views.py:131
 #, python-format
 msgid "%(count)d document removed from cabinets successfully."
-msgstr ""
+msgstr "%(count)d document eliminat dels arxius correctament"
 
 #: views/document_views.py:134
 #, python-format
 msgid "%(count)d documents removed from cabinets successfully."
-msgstr ""
+msgstr "%(count)d documents eliminats dels arxius correctament."
 
 #: views/document_views.py:136
 #, python-format
 msgid "Remove %(count)d documents from cabinets."
-msgstr ""
+msgstr "Eliminar %(count)d documents dels arxius."
 
 #: views/document_views.py:137
 #, python-format
 msgid "Remove document \"%(object)s\" from cabinets."
-msgstr ""
+msgstr "Eliminar document \"%(object)s\" dels arxius."
 
 #: views/document_views.py:138
 #, python-format
 msgid "Remove %(count)d document from cabinets."
-msgstr ""
+msgstr "Eliminar %(count)d document dels arxius,"
 
 #: views/document_views.py:156
 msgid "Cabinets from which the selected documents will be removed."
 msgstr ""
+"Arxius dels quals se suprimiran els documents seleccionats.\n"
+" "
 
 #: wizard_steps.py:20
 msgid "Select cabinets"
-msgstr ""
+msgstr "Seleccionar arxius"
 
 #: wizard_steps.py:90 workflow_actions.py:33
 msgid "Cabinets to which the document will be added."
-msgstr ""
+msgstr "Arxius als que s'afegirà el document."
 
 #: workflow_actions.py:83
 msgid "Cabinets from which the document will be removed"
-msgstr ""
+msgstr "Arxius dels quals s'eliminarà el document."

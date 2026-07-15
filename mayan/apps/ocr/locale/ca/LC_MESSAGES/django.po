@@ -3,12 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Translators:
+# Isaac Torres, 2026
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-25 20:33+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -59,12 +63,12 @@ msgstr ""
 
 #: forms.py:12 forms.py:43 forms.py:63
 msgid "Contents"
-msgstr ""
+msgstr "Continguts"
 
 #: forms.py:98
 #, python-format
 msgid "Page %(page_number)d"
-msgstr ""
+msgstr "Pàgina %(page_number)d"
 
 #: links.py:27
 msgid "OCR setup"
@@ -97,7 +101,7 @@ msgstr ""
 
 #: models.py:24
 msgid "Document type"
-msgstr ""
+msgstr "Tipus del document"
 
 #: models.py:28
 msgid "Automatically queue newly created documents for OCR."
@@ -109,11 +113,11 @@ msgstr ""
 
 #: models.py:35
 msgid "Document type settings"
-msgstr ""
+msgstr "Configuració del tipus de document"
 
 #: models.py:36
 msgid "Document types settings"
-msgstr ""
+msgstr "Configuració dels tipus de document"
 
 #: models.py:50
 msgid "Document version page"
@@ -125,7 +129,7 @@ msgstr ""
 
 #: models.py:56
 msgid "Content"
-msgstr ""
+msgstr "Contingut"
 
 #: models.py:62
 msgid "Document version page OCR content"

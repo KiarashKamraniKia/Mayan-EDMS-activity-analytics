@@ -3,12 +3,16 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Translators:
+# Isaac Torres, 2026
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Mayan EDMS\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-02-25 20:32+0000\n"
 "PO-Revision-Date: 2026-02-25 20:34+0000\n"
+"Last-Translator: Isaac Torres, 2026\n"
 "Language-Team: Catalan (https://app.transifex.com/rosarior/teams/13584/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,11 +22,11 @@ msgstr ""
 
 #: apps.py:25 permissions.py:6 settings.py:13
 msgid "Common"
-msgstr ""
+msgstr "Comú"
 
 #: dependencies.py:196
 msgid "Command line environment with autocompletion."
-msgstr ""
+msgstr "Entorn de línia d'ordres amb autocompletat."
 
 #: dependencies.py:201
 msgid "Checks proper formatting of the README file."
@@ -34,11 +38,11 @@ msgstr ""
 
 #: links.py:39
 msgid "Get the book"
-msgstr ""
+msgstr "Obtenir el llibre"
 
 #: links.py:44
 msgid "Documentation"
-msgstr ""
+msgstr "Documentaciío"
 
 #: links.py:47
 msgid "Forum"
@@ -50,7 +54,7 @@ msgstr ""
 
 #: links.py:55 views.py:55
 msgid "License"
-msgstr ""
+msgstr "Llicència"
 
 #: links.py:58
 msgid "Mailing list"
@@ -58,7 +62,7 @@ msgstr ""
 
 #: links.py:64
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: links.py:69
 msgid "Release notes"
@@ -70,7 +74,7 @@ msgstr ""
 
 #: links.py:76
 msgid "Source code"
-msgstr ""
+msgstr "Codi font"
 
 #: links.py:80
 msgid "Online store"
@@ -78,28 +82,28 @@ msgstr ""
 
 #: links.py:84
 msgid "Support"
-msgstr ""
+msgstr "Suport"
 
 #: links.py:88 views.py:136
 msgid "Tools"
-msgstr ""
+msgstr "Eines"
 
 #: literals.py:19
 msgid ""
 "This feature has been deprecated and will be removed in a future version."
-msgstr ""
+msgstr "Aquesta funció està obsoleta i s'eliminarà en una versió futura."
 
 #: literals.py:28
 msgid "Days"
-msgstr ""
+msgstr "Dies"
 
 #: literals.py:29
 msgid "Hours"
-msgstr ""
+msgstr "Hores"
 
 #: literals.py:30
 msgid "Minutes"
-msgstr ""
+msgstr "Minuts"
 
 #: menus.py:7 menus.py:8
 msgid "Facet"
@@ -107,35 +111,35 @@ msgstr ""
 
 #: menus.py:11
 msgid "Actions"
-msgstr ""
+msgstr "Accions"
 
 #: menus.py:12
 msgid "Related"
-msgstr ""
+msgstr "Relacionat"
 
 #: menus.py:13
 msgid "Secondary"
-msgstr ""
+msgstr "Secundari"
 
 #: menus.py:16
 msgid "System"
-msgstr ""
+msgstr "Sistema"
 
 #: menus.py:18
 msgid "Return"
-msgstr ""
+msgstr "Retornar"
 
 #: menus.py:22
 msgid "User"
-msgstr ""
+msgstr "Usuari"
 
 #: permissions.py:10
 msgid "Copy object"
-msgstr ""
+msgstr "Copiar objecte"
 
 #: serializers.py:11
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: settings.py:20
 msgid ""
@@ -143,6 +147,10 @@ msgid ""
 "apps must be also configured via their respective storage backend settings "
 "to use alternate persistence."
 msgstr ""
+"Desactiva l'ús de la carpeta local `media`. En utilitzar aquesta "
+"configuració, totes les aplicacions també s'han de configurar mitjançant els"
+" seus respectius paràmetres de font d'emmagatzematge per utilitzar una "
+"persistència alternativa."
 
 #: settings.py:28
 msgid ""
@@ -151,6 +159,11 @@ msgid ""
 "Python path to: an application configuration class (preferred), or a package"
 " containing an application. Example: ['app_1', 'app_2']"
 msgstr ""
+"Una llista de cadenes que indiquen totes les aplicacions que s'han de "
+"suprimir de la llista que instal·la normalment Mayan EDMS. Cada cadena ha de"
+" ser una ruta de Python amb punts cap a: una classe de configuració de "
+"l'aplicació (preferible) o un paquet que contingui una aplicació. Exemple: "
+"['app_1', 'app_2']"
 
 #: settings.py:38
 msgid ""
@@ -160,6 +173,12 @@ msgid ""
 " containing an application. These apps will be installed after the default "
 "apps. Example: ['app_1', 'app_2']"
 msgstr ""
+"Una llista de cadenes que indiquen totes les aplicacions que s'instal·len a "
+"més de les que instal·la normalment Mayan EDMS. Cada cadena ha de ser una "
+"ruta de Python amb punts cap a: una classe de configuració de l'aplicació "
+"(preferible) o un paquet que contingui una aplicació. Aquestes aplicacions "
+"s'instal·laran després de les aplicacions per defecte. Exemple: ['app_1', "
+"'app_2']"
 
 #: settings.py:50
 msgid ""
@@ -169,24 +188,37 @@ msgid ""
 " containing an application. These apps will be installed before the default "
 "apps. Example: ['app_1', 'app_2']"
 msgstr ""
+"Una llista de cadenes que indiquen totes les aplicacions que s'instal·len a "
+"més de les que instal·la normalment Mayan EDMS. Cada cadena ha de ser una "
+"ruta de Python amb punts cap a: una classe de configuració de l'aplicació "
+"(preferible) o un paquet que contingui una aplicació. Aquestes aplicacions "
+"s'instal·laran abans de les aplicacions per defecte. Exemple: ['app_1', "
+"'app_2']"
 
 #: settings.py:61
 msgid ""
 "Name of the view attached to the brand anchor in the main menu. This is also"
 " the view to which users will be redirected after log in."
 msgstr ""
+"Nom de la vista associada a l'enllaç de la marca al menú principal. Aquesta "
+"és també la vista a la qual es redirigirà els usuaris després d'iniciar la "
+"sessió."
 
 #: settings.py:70
 msgid "Name of the dashboard to display in the home view."
 msgstr ""
+"Nom del tauler de control que es mostrarà a la vista d'inici.\n"
+" "
 
 #: settings.py:75
 msgid "Sets the project's name."
-msgstr ""
+msgstr "Estableix el nom del projecte."
 
 #: templates/common/app/viewport.html:15
 msgid "Click here to fix this."
 msgstr ""
+"Feu clic aquí per solucionar-ho.\n"
+" "
 
 #: validators.py:42
 msgid "Enter a valid JSON value."
@@ -201,10 +233,12 @@ msgid ""
 "Enter a valid 'internal name' consisting of letters, numbers, and "
 "underscores."
 msgstr ""
+"Introduïu un 'internal name' vàlid que consti de lletres, números i "
+"subratllats."
 
 #: views.py:26
 msgid "About"
-msgstr ""
+msgstr "Sobre"
 
 #: views.py:45
 msgid "Home"
@@ -213,16 +247,16 @@ msgstr ""
 #: views.py:71
 #, python-format
 msgid "Fields to be copied: %s"
-msgstr ""
+msgstr "Camps que s'han de copiar: %s"
 
 #: views.py:81
 #, python-format
 msgid "Make a copy of %(object_name)s \"%(object)s\"?"
-msgstr ""
+msgstr "Feu una còpia de %(object_name)s \"%(object)s\"?"
 
 #: views.py:92
 msgid "Object copied successfully."
-msgstr ""
+msgstr "Objecte copiat correctament."
 
 #: views.py:110
 msgid ""
@@ -244,4 +278,4 @@ msgstr ""
 
 #: views.py:134
 msgid "These modules are used to do system maintenance."
-msgstr ""
+msgstr "Aquests mòduls s'utilitzen per fer el manteniment sistema ."
