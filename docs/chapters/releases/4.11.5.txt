@@ -1,0 +1,267 @@
+Version 4.11.5
+==============
+
+Released: July 15, 2026
+
+
+Summary
+-------
+
+This maintenance release improves security, search reliability, user interface
+stability, test performance, and build automation.
+
+Key highlights include:
+
+- Improved compatibility with Python 3.14.
+- Stronger protections for compressed archive processing.
+- Search backend reliability improvements for Elasticsearch and Whoosh.
+- User interface fixes for FancyBox, Dropzone, Toastr, menus, and language
+  handling.
+- Safer template and JavaScript handling.
+- Faster and more reliable test execution, including parallel test support.
+- Significant GitLab CI and Docker build improvements.
+- Dependency updates for Django, Redis, Sentry SDK, psycopg, and other
+  libraries.
+
+This release focuses on hardening Mayan EDMS, reducing operational edge cases,
+and improving the reliability of search indexing, testing, and deployment
+workflows.
+
+
+Changes
+-------
+
+
+Security
+^^^^^^^^
+
+- Added proactive defenses to compressed archive processing to help protect
+  deployments from memory-exhaustion payloads, including zip bombs, tar bombs,
+  oversized EML, MSG, and PDF files, and compression-ratio bombs.
+- Added setting
+  `STORAGE_COMPRESSED_FILE_COMPRESSION_RATIO_MAXIMUM` with a default value
+  of `100`. This setting rejects ZIP members whose declared-to-compressed
+  size ratio exceeds the configured limit.
+- Added setting `STORAGE_COMPRESSED_FILE_INPUT_SIZE_MAXIMUM` with a default
+  value of `1 GiB`. This setting caps the size of compressed archive input
+  files before parsing.
+- Added setting `STORAGE_COMPRESSED_FILE_MEMBER_SIZE_MAXIMUM` with a default
+  value of `64 MiB`. This setting caps the declared size of individual
+  archive members before decompression.
+- Hardened Toastr messages to prevent possible JavaScript injection.
+- Hardened the cabinets `jsTree` integration by replacing hand-built
+  JavaScript object literals with structured Python dictionaries emitted
+  through Django's `json_script` and parsed with `JSON.parse`.
+- Hardened the template system by removing `eval` usage from the template
+  model attributes, filters, and tags dropdowns.
+
+
+Search
+^^^^^^
+
+- Fixed a false error when attempting to de-index deleted instances.
+- Added an Elasticsearch Python client workaround for a socket leak.
+- Updated the many-to-many search signal handler to ignore actions other than
+  `post_add` and `pre_remove`.
+- The Elasticsearch backend no longer raises an error when attempting to
+  de-index a document that does not exist.
+- Elasticsearch transient transport errors are now retried instead of being
+  treated as permanent failures that could leave instances missing from the
+  search index.
+- Deleted instances are now de-indexed when possible, reducing the chance of
+  stale entries accumulating in search backend indexes.
+- Improved Elasticsearch index refresh behavior:
+
+  - Non-existent indexes are skipped.
+  - A failed index refresh no longer aborts the entire operation.
+  - Index refresh errors are no longer retried by the backend code.
+
+- The Elasticsearch backend no longer forces an index refresh when retrieving
+  indexing status.
+- Converted the Elasticsearch static refresh before every search into a
+  backend option named `refresh_on_search`. The default remains `True` for
+  compatibility.
+- Fixed a variable shadowing issue and a dead code path in the Elasticsearch
+  backend.
+- Retried race-related `task_index_related_instance_m2m` errors instead of
+  exiting.
+- Wrapped the Whoosh writer in `try`/`finally` so it always closes and
+  avoids leaked segment locks.
+- Fixed a stray comma in a Whoosh writer error log.
+- Improved Whoosh indexing and deletion locking.
+- Improved Whoosh indexing and deletion error messages.
+- Improved Whoosh write speed by making write locks smarter and more atomic.
+- Increased the default value of `SEARCH_INDEXING_CHUNK_SIZE` from `25` to
+  `500`.
+
+
+Signatues
+^^^^^^^^^
+
+- Fixed document signature IDs being empty for every signature when using
+  `python-gnupg` 0.5.x. Existing installations affected by the signature ID
+  issue should run the "Refresh all signatures" tool to update existing
+  signatures.
+
+
+Storage
+^^^^^^^
+
+- Prevent a rare `UnboundLocalError` in the `file`-based MIME type
+  detection backend.
+- Ensured `PassthroughStorageProcessor` logs are properly closed.
+- Fixed storage test mixin keyword argument isolation leaks.
+- Improved `chunk_hash_file_object`.
+
+
+Authentication
+^^^^^^^^^^^^^^
+
+- Fixed `ValidationError` raising in the OTP form.
+
+
+Mailing
+^^^^^^^
+
+- Added `MailingTestMixin` to register the test mailing profile backend and
+  avoid order-dependent test isolation artifacts.
+
+
+UI / UX
+^^^^^^^
+
+- Removed FancyBox caption handlers before attaching new ones.
+- Stopped menu refreshes while a user is interacting with controls inside the
+  menu. This prevents the search form from clearing while users type and stops
+  the main navigation menu from closing while it is being used.
+- Fixed server status modal error code whitelist checks for 403, 404, and 500
+  responses.
+- Improved the Dropzone submit button selector, fixing a browser edge case
+  when `FORMS_SHOW_DROPZONE_SUBMIT_BUTTON` is set to `True`.
+- Made the template cache language-aware, helping address search box language
+  flipping.
+- Stopped FancyBox from changing the URL hash, preventing interface reloads
+  after closing a FancyBox preview.
+- Removed an `ajaxForm` serialization double-decode.
+- Improved how the multi-action form merges an ID list into the base URL.
+- Improved how the main navigation menu highlights the current menu entry.
+- Removed leftover dead code from search forms.
+- Consolidated duplicated CSS rules.
+- Set the HTML language attribute to the user's active language.
+- Improved non-AJAX loading redirection.
+- Constrained thumbnail FancyBox links to the visible bounds of the image.
+- Improved the panel section function.
+- Improved the appearance of tags when using the Select2 widget.
+- Prevented Django's template engine from consuming Dropzone's
+  `{{statusCode}}` placeholder.
+
+
+Docker
+^^^^^^
+
+- Improved Docker Compose configuration:
+
+  - Fixed the Redis healthcheck.
+  - Removed the unused `mountindex:` volume.
+  - Disabled Elasticsearch HTTPS.
+  - Added a service resource YAML extension field.
+  - Split service logging into its own YAML extension field.
+
+
+Testing
+^^^^^^^
+
+- Added support for parallel testing.
+- Improved test suite speed.
+- Split translation testing.
+- Removed hardcoded test tags.
+- Improved `AppsModuleLoaderMixin`:
+
+  - Added a more robust method to determine when to ignore or re-raise
+    `ImportError`.
+  - Added `get_loader_app_configs` so subclasses can define which apps
+    should be used to load modules.
+
+- Moved the unified Elasticsearch test mock backend into its own module.
+- Added `tblib` so test failures in parallel workers preserve their
+  tracebacks.
+
+
+Developer & Build System
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Improved compatibility with Python 3.14.
+- Improved GitLab CI configuration and release automation:
+
+  - Fixed the `gitlab-ci-builds-docker` and
+    `gitlab-ci-deployments-staging` targets pushing to an empty branch name.
+  - Fixed the `ci/releases/*/major` and `ci/releases/*/minor` pipelines
+    publishing the `s` Docker tag instead of `s<major>` and
+    `s<minor>`.
+  - Fixed `job_docker_build_all` so it creates the multi-architecture
+    manifest required by `job_staging_deploy_all`.
+  - Fixed `job_demo_deploy` invoking a Make target as if it were a command
+    and calling the staging deployment instead of the demo deployment.
+  - Fixed the unexpanded `STAGING_SSH_USERNAME` reference in
+    `job_staging_deploy_all`.
+  - Fixed `job_docker_push_nightly` aborting on an unset `APK_CACHE_DIR`.
+  - Fixed the `ci/try/staging/arch/all` pipeline being rejected by adding
+    per-architecture try builds to that branch.
+  - Cached the Python virtual environment, keyed by the base image and
+    requirement files.
+  - Added cache fallback keys, cache policies, and cache saving on job failure.
+  - Added the `TEST_PARALLEL_PROCESSES` configuration variable.
+  - Improved pipeline efficiency.
+  - Configured `FF_USE_FASTZIP` and compression levels to reduce cache and
+    artifact processing times.
+  - Bound repository checkouts to shallow Git clones.
+  - Disabled auto-cancellation on push and deploy jobs so in-flight publishing
+    or deployment jobs are not interrupted.
+  - Removed distribution artifacts from Docker image builds.
+  - Restricted documentation artifacts to `docs/_build/html`.
+  - Restricted job retries to infrastructure errors only.
+  - Added the `platforms_gitlab_ci_docker_variables` tag so Docker in Docker
+    variables are declared once.
+  - Split `platforms_gitlab_tags` code into multiple modules.
+  - Renamed SSH known hosts variables to use the `..._KNOWN_HOSTS` suffix.
+  - Renamed the `hostname` argument of the
+    `platforms_gitlab_ci_ssh_before_script` tag to `known_hosts`.
+  - Removed the `psutil` install from ARM image builds.
+  - Added a dedicated cache manifest tag so ARM64 builds no longer rebuild
+    from scratch on every run.
+  - Added `GITLAB_CI_RUNNER_TAG_AMD64` and
+    `GITLAB_CI_RUNNER_TAG_ARM64` settings to pin image builds to
+    architecture-specific runners. Both default to empty values.
+  - Fixed `ci/releases/nightly` publication.
+  - Used `extends` instead of a YAML merge key for `.job_base_test`.
+  - Added the `platforms_gitlab_ci_package_list` tag to merge, deduplicate,
+    and sort package groups instead of concatenating them.
+  - Removed the unused MySQL image context from the GitLab CI platform
+    template.
+  - Quoted the `DOCKER_MIRROR` test and corrected indentation in the Docker
+    makefiles.
+  - Enabled the builder stage pip cache mount.
+  - Reused `apt-get` package downloads between build stages.
+  - Fixed `job_documentation_push` publishing without waiting for tests.
+  - Prevented push and deploy jobs from downloading unused artifacts.
+  - Changed CI builds to push images directly from BuildKit instead of loading
+    them into the local Docker daemon first.
+  - Added the `DOCKER_IMAGE_BUILD_OUTPUT` variable.
+  - Added the `DOCKER_BUILDX_BUILDER_NAME` and
+    `DOCKER_BUILDX_CONTEXT_NAME` variables.
+  - Reused an existing Buildx builder instead of deleting it before every
+    build so local build caches can survive between runs.
+
+
+Dependency & Library Management
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- Updated dependency versions:
+
+  - `django` from 5.2.13 to 5.2.16
+  - `nh3` from 0.3.5 to 0.3.6
+  - `pip` from 26.1 to 26.1.2
+  - `psycopg` from 3.3.3 to 3.3.4
+  - `redis` from 7.4.0 to 7.4.1
+  - `sentry-sdk` from 2.58.0 to 2.65.0
+  - `sh` from 2.2.2 to 2.2.6

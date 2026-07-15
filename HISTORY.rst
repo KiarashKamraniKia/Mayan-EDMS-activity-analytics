@@ -1,4 +1,4 @@
-4.11.5 (XXXX-XX-XX)
+4.11.5 (2026-07-15)
 ===================
 - Improve compatibility with Python 3.14.
 - Update dependency versions:
