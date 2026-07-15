@@ -110,6 +110,8 @@
   - Use a robust method to determine when to ignore or re-raise `ImportError`.
   - Add `get_loader_app_configs` to allow subclasses from which apps to load modules.
 
+- Unify Elasticsearch tests mock backend into its own module.
+
 4.11.4 (2026-05-01)
 ===================
 - Merge changes and improvements from version 4.10.6.
