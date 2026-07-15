@@ -1,16 +1,21 @@
 job_docker_build_try_all:
   extends: job_docker_build_all
+  needs:
+    - job_docker_build_try_amd64
+    - job_docker_build_try_arm64
   only:
     - {{ GITLAB_CI_BRANCH_TRY_STAGING_ALL }}
 
 job_docker_build_try_amd64:
   extends: job_docker_build_amd64
   only:
+    - {{ GITLAB_CI_BRANCH_TRY_STAGING_ALL }}
     - {{ GITLAB_CI_BRANCH_TRY_STAGING_AMD64 }}
 
 job_docker_build_try_arm64:
   extends: job_docker_build_arm64
   only:
+    - {{ GITLAB_CI_BRANCH_TRY_STAGING_ALL }}
     - {{ GITLAB_CI_BRANCH_TRY_STAGING_ARM64 }}
 
 job_staging_deploy_try_all:

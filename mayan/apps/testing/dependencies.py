@@ -17,3 +17,7 @@ PythonDependency(
     environments=(environment_testing,), module=__name__,
     name='django-test-migrations', version_string='==1.5.0'
 )
+PythonDependency(
+    environments=(environment_testing,), module=__name__, name='tblib',
+    version_string='==3.2.2'
+)

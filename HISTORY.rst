@@ -20,7 +20,6 @@
   backend.
 - Ensure `PassthroughStorageProcessor` log is properly closed.
 - Fix storage test mixin kwargs isolation leak.
-<<<<<<< HEAD
 - Fix `ValidationError` raising in OTP form.
 
 - Added proactive defenses to the compressed-archive code paths against
@@ -113,6 +112,73 @@
 - Unify Elasticsearch tests mock backend into its own module.
 - Convert the Elasticsearch static refresh before every search into an option
   named `refresh_on_search` and set the default to `True` for compatibility.
+- GitLab CI improvements:
+
+  - Fix the `gitlab-ci-builds-docker` and the `gitlab-ci-deployments-staging`
+    targets pushing to an empty branch name.
+  - Fix the `ci/releases/*/major` and the `ci/releases/*/minor` pipelines
+    publishing the `s` Docker tag instead of `s<major>` and `s<minor>`.
+  - Fix `job_docker_build_all` never creating the multi architecture
+    manifest it is named after, which left `job_staging_deploy_all` with no
+    image to pull.
+  - Fix `job_demo_deploy` invoking a Make target as if it were a command,
+    and calling the staging deployment instead of the demo deployment.
+  - Fix the unexpanded `STAGING_SSH_USERNAME` reference in
+    `job_staging_deploy_all`.
+  - Fix `job_docker_push_nightly` aborting on an unset `APK_CACHE_DIR`.
+  - Fix the `ci/try/staging/arch/all` pipeline being rejected. The try job
+    inherited a `needs` list referencing jobs excluded by its own `only`
+    list. Add the per architecture try builds to that branch.
+  - Cache the Python virtual environment, keyed by the base image and the
+    requirement files.
+  - Add cache fallback keys, cache policies, and save caches on job failure.
+  - Run the Python tests in parallel. Add the `TEST_PARALLEL_PROCESSES`
+    config variable.
+  - Improved pipeline efficiency.
+  - Configured `FF_USE_FASTZIP` and compression levels to reduce cache and
+    artifact processing times.
+  - Bound repository to a shallow git clone.
+  - Disabled auto-cancellation on push and deploy jobs to ensure in-flight
+    publishing or deployment operations are never aborted.
+  - Removed dist artifacts for Docker image builds.
+  - Restricted documentation artifacts strictly to `docs/_build/html`.
+  - Restricted job retries exclusively to infrastructure errors,
+    disabling retries on test or build failures.
+  - Add the `platforms_gitlab_ci_docker_variables` tag so the Docker in
+    Docker variables are declared once.
+  - Split `platforms_gitlab_tags` code into multiple modules.
+  - Rename the SSH known hosts variables to `..._KNOWN_HOSTS` for
+    consistency.
+  - Rename the `hostname` argument of the
+    `platforms_gitlab_ci_ssh_before_script` tag to `known_hosts`.
+  - Add `tblib` so that test failures in a parallel worker keep their
+    traceback.
+  - Remove the `psutil` install from the ARM image builds.
+  - Give the cache manifest its own tag so the ARM64 build stops rebuilding
+    from scratch on every run.
+  - Add the `GITLAB_CI_RUNNER_TAG_AMD64` and `GITLAB_CI_RUNNER_TAG_ARM64`
+    settings to pin the image builds to per architecture runners. Both
+    default to empty.
+  - Fix the `ci/releases/nightly` publication.
+  - Use `extends` instead of a YAML merge key for `.job_base_test`.
+  - Add the `platforms_gitlab_ci_package_list` tag to merge, deduplicate and
+    sort the package groups instead of concatenating them.
+  - Remove the unused MySQL image context from the GitLab CI platform
+    template.
+  - Quote the `DOCKER_MIRROR` test and correct two indentation slips in the
+    Docker makefiles.
+  - Enable the builder stage pip cache mount.
+  - Reused the packages `apt-get` downloads between stages.
+  - Fix `job_documentation_push` publishing without waiting for the tests.
+  - Stop the push and deploy jobs from downloading artifacts they do not
+    use.
+  - Push the image directly from BuildKit in the CI builds instead of loading
+    it into the local daemon first. Add the `DOCKER_IMAGE_BUILD_OUTPUT`
+    variable.
+  - Add the `DOCKER_BUILDX_BUILDER_NAME` and `DOCKER_BUILDX_CONTEXT_NAME`
+    variables.
+  - Reuse the buildx builder when it already exists instead of deleting it
+    before every build, so that its caches survive between local builds.
 
 4.11.4 (2026-05-01)
 ===================

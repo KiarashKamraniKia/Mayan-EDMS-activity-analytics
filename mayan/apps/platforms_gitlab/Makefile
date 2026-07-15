@@ -81,8 +81,8 @@ gitlab-ci-release-testing:
 
 gitlab-ci-builds-docker: ## Trigger building the Docker image for all architectures.
 gitlab-ci-builds-docker:
-	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) :$(CONFIG_GITLAB_CI_BRANCH_BUILDS_DOCKER) || true
-	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) HEAD:$(CONFIG_GITLAB_CI_BRANCH_BUILDS_DOCKER)
+	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) :$(CONFIG_GITLAB_CI_BRANCH_BUILDS_DOCKER_ALL) || true
+	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) HEAD:$(CONFIG_GITLAB_CI_BRANCH_BUILDS_DOCKER_ALL)
 
 gitlab-ci-builds-docker-amd64: ## Trigger building the Docker image for AMD64.
 gitlab-ci-builds-docker-amd64:
@@ -113,8 +113,8 @@ gitlab-ci-deployments-demo:
 
 gitlab-ci-deployments-staging: ## Trigger the staging deployment
 gitlab-ci-deployments-staging:
-	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) :$(CONFIG_GITLAB_CI_BRANCH_DEPLOYMENTS_STAGING) || true
-	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) HEAD:$(CONFIG_GITLAB_CI_BRANCH_DEPLOYMENTS_STAGING)
+	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) :$(CONFIG_GITLAB_CI_BRANCH_DEPLOYMENTS_STAGING_ALL) || true
+	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) HEAD:$(CONFIG_GITLAB_CI_BRANCH_DEPLOYMENTS_STAGING_ALL)
 
 gitlab-ci-deployments-staging-amd64: ## Trigger the AMD64 staging deployment
 gitlab-ci-deployments-staging-amd64:
@@ -147,15 +147,15 @@ gitlab-ci-tests-python:
 
 gitlab-ci-try-staging: ## Trigger a multi arch build and deploy to staging.
 gitlab-ci-try-staging:
-	git push $(CONFIG_GITLAB_CI_REMOTE_NAME)	:$(CONFIG_GITLAB_CI_BRANCH_TRY_STAGING_ALL) || true
+	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) :$(CONFIG_GITLAB_CI_BRANCH_TRY_STAGING_ALL) || true
 	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) HEAD:$(CONFIG_GITLAB_CI_BRANCH_TRY_STAGING_ALL)
 
 gitlab-ci-try-staging-amd64: ## Trigger an AMD64 build and deploy to staging.
 gitlab-ci-try-staging-amd64:
-	git push $(CONFIG_GITLAB_CI_REMOTE_NAME)	:$(CONFIG_GITLAB_CI_BRANCH_TRY_STAGING_AMD64) || true
+	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) :$(CONFIG_GITLAB_CI_BRANCH_TRY_STAGING_AMD64) || true
 	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) HEAD:$(CONFIG_GITLAB_CI_BRANCH_TRY_STAGING_AMD64)
 
 gitlab-ci-try-staging-arm64: ## Trigger an ARM64 build and deploy to staging.
 gitlab-ci-try-staging-arm64:
-	git push $(CONFIG_GITLAB_CI_REMOTE_NAME)	:$(CONFIG_GITLAB_CI_BRANCH_TRY_STAGING_ARM64) || true
+	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) :$(CONFIG_GITLAB_CI_BRANCH_TRY_STAGING_ARM64) || true
 	git push $(CONFIG_GITLAB_CI_REMOTE_NAME) HEAD:$(CONFIG_GITLAB_CI_BRANCH_TRY_STAGING_ARM64)

@@ -13,7 +13,7 @@ docker-registry-public-login: ## Login to the public registry.
 	@docker login \
 	--password "$(DOCKER_REGISTRY_PUBLIC_PASSWORD)" \
 	--username "$(DOCKER_REGISTRY_PUBLIC_USERNAME_ESCAPED)" \
-	 $(DOCKER_REGISTRY_PUBLIC_NAME)
+	$(DOCKER_REGISTRY_PUBLIC_NAME)
 
 docker-registry-run: # Launch a test Docker registry.
 	docker container run \

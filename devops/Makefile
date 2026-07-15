@@ -10,10 +10,12 @@ devops-docker-build-all: ## Build images for all architectures and push them.
 devops-docker-build-all: devops-docker-build-amd64 devops-docker-build-arm64 docker-manifest-create docker-manifest-push
 
 devops-docker-build-amd64: ## Build the AMD64 image and push it to the registry.
-devops-docker-build-amd64: docker-registry-login docker-dockerfile-update docker-buildx-create docker-build-amd64 docker-image-push-amd64
+devops-docker-build-amd64: DOCKER_IMAGE_BUILD_OUTPUT = type=registry
+devops-docker-build-amd64: docker-registry-login docker-dockerfile-update docker-buildx-create docker-build-amd64
 
 devops-docker-build-arm64: ## Build the ARM64 image and push it to the registry.
-devops-docker-build-arm64: docker-registry-login docker-dockerfile-update docker-buildx-create docker-build-arm64 docker-image-push-arm64
+devops-docker-build-arm64: DOCKER_IMAGE_BUILD_OUTPUT = type=registry
+devops-docker-build-arm64: docker-registry-login docker-dockerfile-update docker-buildx-create docker-build-arm64
 
 # Release
 
@@ -68,12 +70,13 @@ devops-docker-minor-publish:
 
 devops-docker-nightly-publish:
 	$(MAKE) docker-registry-login
+	$(MAKE) docker-registry-public-login
 	$(MAKE) docker-image-pull-amd64
 	docker tag \
-	$(DOCKER_IMAGE_NAME_FULL_TAGGED) \
-	$(DOCKER_IMAGE_PUBLIC_NAME_FULL):$(DOCKER_IMAGE_TAG)-amd64
-	$(MAKE) docker-registry-public-login
-	docker push $(DOCKER_IMAGE_PUBLIC_NAME_FULL):v$(DOCKER_IMAGE_TAG)-amd64
+	$(DOCKER_IMAGE_NAME_FULL_TAGGED)-amd64 \
+	$(DOCKER_IMAGE_PUBLIC_NAME_FULL):$(DOCKER_IMAGE_PUBLIC_TAG)-amd64
+	docker push \
+	$(DOCKER_IMAGE_PUBLIC_NAME_FULL):$(DOCKER_IMAGE_PUBLIC_TAG)-amd64
 
 # Remotes
 

@@ -35,11 +35,13 @@ ENV MAYAN_MEDIA_ROOT=/var/lib/mayan \
 # Debian package caching.
 ARG APT_PROXY
 
-RUN --mount=type=cache,target=/var/cache/apt --mount=type=cache,target=/root/.cache/pip \
+RUN --mount=type=cache,target=/var/cache/apt \
 set -x \
 && if [ "${APT_PROXY}" ]; \
     then echo "Acquire::http { Proxy \"http://${APT_PROXY}\"; };" > /etc/apt/apt.conf.d/01proxy \
 ; fi \
+&& rm -f /etc/apt/apt.conf.d/docker-clean \
+&& echo 'Binary::apt::APT::Keep-Downloaded-Packages "true";' > /etc/apt/apt.conf.d/keep-cache \
 # Install base OS packages to run Mayan EDMS.
 && apt-get update \
 && apt-get install --no-install-recommends --yes \
@@ -116,22 +118,17 @@ set -a \
 && set +a \
 && python3 -m venv "${PROJECT_INSTALL_DIR}" \
 && . "${PROJECT_INSTALL_DIR}bin/activate" \
-&& pip install --no-cache-dir \
+&& pip install \
     pip==${PYTHON_PIP_VERSION} \
     setuptools==${PYTHON_SETUPTOOLS_VERSION} \
     wheel==${PYTHON_WHEEL_VERSION} \
-&& pip install --no-cache-dir \
+&& pip install \
     amqp==${PYTHON_AMQP_VERSION} \
     mysqlclient==${PYTHON_MYSQL_VERSION} \
     psycopg==${PYTHON_PSYCOPG_VERSION} \
     redis==${PYTHON_REDIS_VERSION} \
-# psutil is needed by ARM builds otherwise gevent and gunicorn fail to start.
-&& UNAME=`uname --machine` && if [ "${UNAME#*arm}" != ${UNAME} ]; then \
-    pip install --no-cache-dir \
-    psutil==${PYTHON_PSUTIL_VERSION} \
-; fi \
 # Install the Python packages needed to build Mayan EDMS.
-&& pip install --no-cache-dir \
+&& pip install \
     --requirement /src/requirements/build.txt \
 # Build Mayan EDMS.
 && cp MANIFEST-PRODUCTION.in MANIFEST.in \
@@ -140,7 +137,7 @@ set -a \
     --wheel-dir dist \
     dist/mayan_edms-*.tar.gz \
 # Install the built Mayan EDMS package.
-&& pip install --no-cache-dir \
+&& pip install \
     dist/mayan_edms-*.whl \
 # Install the static content.
 && ${PROJECT_INSTALL_DIR}bin/mayan-edms.py dependencies_install \
