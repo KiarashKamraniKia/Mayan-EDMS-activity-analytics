@@ -179,6 +179,9 @@
     variables.
   - Reuse the buildx builder when it already exists instead of deleting it
     before every build, so that its caches survive between local builds.
+  - Disable the BuildKit provenance attestation. It turns each single
+    architecture image into a manifest list, which `docker manifest create`
+    refuses to accept as a component.
 
 4.11.4 (2026-05-01)
 ===================
