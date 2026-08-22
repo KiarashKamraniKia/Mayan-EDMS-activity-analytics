@@ -1,48 +1,69 @@
+# Version control artifacts.
 *.orig
 *.rej
+
+# Editor, IDE, and operating system files.
+*.swp
+.DS_Store
+.idea/
+/misc/mayan.geany
+
+# Python bytecode, packaging, and virtual environments.
 *.pyc
 *.pyo
-*.sqlite
-*.sqlite3
 *egg-info*
-.coverage
-.coverage.tox*
-.idea/
-*.swp
-.tox/
-.vagrant
-_build/
 /build/
-docker/Dockerfile
-coverage.xml
-document_storage/
-gpg_home/
-htmlcov/
-mayan/media/
-mayan/media/document_cache/
-mayan/settings/local.py
-mayan/error.log
-settings_local.py
-static_collected/
-/celerybeat-schedule
-/fabfile_install
 /dist/
-/misc/mayan.geany
-/mayan/media/static/
 /venv/
 /venv3/
+__pycache__/
+
+# Test and coverage output.
+.coverage
+.coverage.tox*
+.tox/
+coverage.xml
+htmlcov/
+
+# Documentation build output.
+_build/
+docs/_templates/footer.html
+docs/_templates/layout.html
+docs/build/
+docs/chapters/apps/
+docs/chapters/features.txt
+
+# Files generated from a template or another source file.
+.config.env.mk
+MANIFEST.in
+docker/Dockerfile
+
+# Local configuration overrides.
+config-local.env
+docker/.env.extra
+forge/.env-local
+mayan/settings/local.py
+settings_local.py
+
+# Runtime data and instance state.
+*.sqlite
+*.sqlite3
+.local/
+/celerybeat-schedule
+/mayan/media/static/
 /whoosh_index/
+document_storage/
+gpg_home/
+mayan/error.log
+mayan/media/
+mayan/media/document_cache/
+
+# Third party and collected static assets.
 google_fonts/
 node_modules/
-docs/build/
-docs/_templates/layout.html
-docs/_templates/footer.html
-docs/chapters/features.txt
-docs/chapters/apps/
+static_collected/
+
+# Local development and provisioning.
+.vagrant
+/fabfile_install
 gitlab-ci-volume/
-.DS_Store
-config-local.env
-MANIFEST.in
-forge/.env-local
-__pycache__/
-.config.env.mk

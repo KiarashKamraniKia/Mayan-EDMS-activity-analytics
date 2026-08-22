@@ -11,13 +11,10 @@ from django.utils.translation import gettext_lazy as _
 from mayan.apps.acls.models import AccessControlList
 from mayan.apps.common.signals import signal_mayan_pre_save
 from mayan.apps.converter.classes import ConverterBase
-from mayan.apps.converter.exceptions import (
-    AppImageError, InvalidOfficeFormat, PageCountError
-)
+from mayan.apps.converter.exceptions import AppImageError, PageCountError
 from mayan.apps.databases.classes import ModelQueryFields
 from mayan.apps.events.decorators import method_event
 from mayan.apps.events.event_managers import EventManagerMethodAfter
-from mayan.apps.file_caching.models import CachePartitionFile
 from mayan.apps.mime_types.classes import MIMETypeBackend
 from mayan.apps.storage.hashing import chunk_hash_file_object
 from mayan.apps.storage.model_mixins import ModelMixinFileFieldOpen
@@ -43,10 +40,6 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
 
     @classmethod
     def execute_pre_create_hooks(cls, kwargs=None):
-        """
-        Helper method to allow checking if it is possible to create
-        a new document file.
-        """
         cls._execute_hooks(
             hook_list=cls._hooks_pre_create, instance=None, kwargs=kwargs
         )
@@ -160,10 +153,6 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
             self.upload_complete()
 
     def _open(self, raw=False, **kwargs):
-        """
-        Return a file descriptor to a document file's file irrespective of
-        the storage backend.
-        """
         DocumentFile = apps.get_model(
             app_label='documents', model_name='DocumentFile'
         )
@@ -228,25 +217,27 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
     @cached_property
     def cache_partition(self):
         partition, created = self.cache.partitions.get_or_create(
-            name='file-{}'.format(self.uuid)
+            name=self.cache_partition_name
         )
         return partition
 
+    @property
+    def cache_partition_name(self):
+        return 'file-{}'.format(self.uuid)
+
+    def cache_partition_delete(self):
+        for partition in self.cache.partitions.filter(
+            name=self.cache_partition_name
+        ):
+            partition.delete()
+
     def checksum_update(self, save=True):
-        """
-        Open a document file's file and update the checksum field using
-        the user provided checksum function.
-        """
         DocumentFile = apps.get_model(
             app_label='documents', model_name='DocumentFile'
         )
 
         block_size = setting_hash_block_size.value
         if block_size == 0:
-            # If the setting value is 0 that means disable read limit.
-            # To disable the read limit passing None won't work, we pass
-            # -1 instead as per the Python documentation.
-            # https://docs.python.org/2/tutorial/inputoutput.html#methods-of-file-objects
             block_size = -1
 
         if self.exists():
@@ -267,11 +258,6 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
             return self.checksum
 
     def execute_pre_save_hooks(self):
-        """
-        Helper method to allow checking if new files are possible from
-        outside the model. Currently used by the document file upload link
-        condition.
-        """
         DocumentFile = apps.get_model(
             app_label='documents', model_name='DocumentFile'
         )
@@ -281,12 +267,6 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
         )
 
     def exists(self):
-        """
-        Returns a boolean value that indicates if the document's file
-        exists in storage. Returns True if the document's file is verified to
-        be in the document storage. This is a diagnostic flag to help users
-        detect if the storage has desynchronized (ie: Amazon's S3).
-        """
         name = self.file.name
         self.file.close()
 
@@ -319,46 +299,10 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
         return self.document.files.exclude(pk=self.pk).order_by('timestamp').only('id').last()
 
     def get_intermediate_file(self):
-        cache_filename = 'intermediate_file'
-
-        try:
-            cache_file = self.cache_partition.get_file(
-                filename=cache_filename
-            )
-        except CachePartitionFile.DoesNotExist:
-            logger.debug(msg='Intermediate file not found.')
-
-            try:
-                with self.open() as file_object:
-                    converter = ConverterBase.get_converter_class()(
-                        file_object=file_object
-                    )
-                    with converter.to_pdf() as pdf_file_object:
-                        with self.cache_partition.create_file(filename=cache_filename) as file_object:
-                            shutil.copyfileobj(
-                                fsrc=pdf_file_object, fdst=file_object
-                            )
-
-                        return self.cache_partition.get_file(filename=cache_filename).open()
-            except InvalidOfficeFormat:
-                return self.open()
-            except Exception as exception:
-                logger.error(
-                    'Error creating intermediate file "%s"; %s.',
-                    cache_filename, exception, exc_info=True
-                )
-                try:
-                    cache_file = self.cache_partition.get_file(
-                        filename=cache_filename
-                    )
-                except CachePartitionFile.DoesNotExist:
-                    """Non fatal, ignore."""
-                else:
-                    cache_file.delete()
-                raise exception
-        else:
-            logger.debug(msg='Intermediate file found.')
-            return cache_file.open()
+        return ConverterBase.get_intermediate_file(
+            cache_partition=self.cache_partition, mime_type=self.mimetype,
+            source_file_object_opener=self.open
+        )
 
     def get_label(self):
         return self.filename
@@ -384,10 +328,6 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
         return self.document.is_in_trash
 
     def mimetype_update(self, save=True):
-        """
-        Read a document version's file and determine the mime type by using
-        the MIME type backend.
-        """
         if self.exists():
             try:
                 with self.open() as file_object:
@@ -473,19 +413,11 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
     def pages_first(self):
         return self.pages.first()
 
-    def save_to_file(self, file_object):
-        """
-        Save a copy of the document from the document storage backend
-        to the local filesystem.
-        """
-        with self.open() as input_file_object:
+    def save_to_file(self, file_object, raw=False):
+        with self.open(raw=raw) as input_file_object:
             shutil.copyfileobj(fsrc=input_file_object, fdst=file_object)
 
     def size_update(self, save=True):
-        """
-        Get a document file's disk file size from the storage layer and store
-        it into the model.
-        """
         if self.exists():
             name = self.file.name
             self.file.close()
@@ -507,7 +439,6 @@ class DocumentFileBusinessLogicMixin(ModelMixinFileFieldOpen):
 
     @property
     def uuid(self):
-        # Make cache UUID a mix of document UUID, file ID.
         return '{}-{}'.format(self.document.uuid, self.pk)
 
     def versions_new(self, action_name, comment=None, user=None):

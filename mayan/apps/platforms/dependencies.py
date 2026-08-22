@@ -11,7 +11,7 @@ PythonDependency(
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='gunicorn',
-    version_string='==25.3.0'
+    version_string='==26.0.0'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__,

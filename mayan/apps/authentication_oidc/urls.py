@@ -9,9 +9,6 @@ passthru_urlpatterns = [
 ]
 
 urlpatterns = [
-    # Directly override oidc/callback as ``OIDC_CALLBACK_CLASS`` is read
-    # before the app loads therefore setting it in the .ready() method has
-    # no effect.
     path(
         'oidc/callback/', MayanOIDCAuthenticationCallbackView.as_view(),
         name='oidc_authentication_callback'

@@ -12,7 +12,7 @@ from mayan.apps.common.menus import (
 from mayan.apps.events.classes import EventModelRegistry, ModelEventType
 from mayan.apps.navigation.source_columns import SourceColumn
 
-from .classes import AppImageErrorImage
+from .classes import AppImageErrorImage, ThumbnailClickBehaviorBackend
 from .events import event_asset_edited
 from .handlers import handler_create_asset_cache
 from .links import (
@@ -21,7 +21,10 @@ from .links import (
     link_transformation_delete_multiple, link_transformation_delete_single,
     link_transformation_edit, link_transformation_select
 )
-from .literals import IMAGE_ERROR_BROKEN_FILE
+from .literals import (
+    IMAGE_ERROR_BROKEN_FILE, IMAGE_ERROR_IMAGE_BUSY,
+    IMAGE_ERROR_REQUEST_THROTTLED, IMAGE_ERROR_UNEXPECTED
+)
 from .permissions import (
     permission_asset_delete, permission_asset_edit, permission_asset_view
 )
@@ -39,6 +42,8 @@ class ConverterApp(MayanAppConfig):
     def ready(self):
         super().ready()
 
+        ThumbnailClickBehaviorBackend.load_modules()
+
         Asset = self.get_model(model_name='Asset')
         LayerTransformation = self.get_model(
             model_name='LayerTransformation'
@@ -47,6 +52,18 @@ class ConverterApp(MayanAppConfig):
         AppImageErrorImage(
             name=IMAGE_ERROR_BROKEN_FILE,
             template_name='converter/errors/broken_file.html'
+        )
+        AppImageErrorImage(
+            name=IMAGE_ERROR_IMAGE_BUSY,
+            template_name='converter/errors/image_busy.html'
+        )
+        AppImageErrorImage(
+            name=IMAGE_ERROR_REQUEST_THROTTLED,
+            template_name='converter/errors/request_throttled.html'
+        )
+        AppImageErrorImage(
+            catch_all=True, name=IMAGE_ERROR_UNEXPECTED,
+            template_name='converter/errors/unexpected.html'
         )
         EventModelRegistry.register(model=Asset)
 
@@ -143,5 +160,5 @@ class ConverterApp(MayanAppConfig):
 
         post_migrate.connect(
             dispatch_uid='converter_handler_create_asset_cache',
-            receiver=handler_create_asset_cache
+            receiver=handler_create_asset_cache, sender=self
         )

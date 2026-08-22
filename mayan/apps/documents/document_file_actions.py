@@ -6,7 +6,9 @@ from .classes import DocumentFileAction
 
 class DocumentFileActionAppendNewPages(DocumentFileAction):
     action_id = 'append'
-    label = _(message='Append. Create a new version and append the new file pages.')
+    label = _(
+        message='Append. Create a new version and append the new file pages.'
+    )
 
     @staticmethod
     def execute(document, document_file, comment, user):
@@ -15,25 +17,28 @@ class DocumentFileActionAppendNewPages(DocumentFileAction):
         )
 
         annotated_content_object_list = []
+
+        content_object_list = document.version_active.page_content_objects
+        annotated_content_object_list_original = DocumentVersion.annotate_content_object_list(
+            content_object_list=content_object_list
+        )
         annotated_content_object_list.extend(
-            DocumentVersion.annotate_content_object_list(
-                content_object_list=document.version_active.page_content_objects
-            )
+            annotated_content_object_list_original
         )
 
+        content_object_list = document_file.pages.all()
+        start_page_number = document.version_active.pages.count() + 1
+        annotated_content_object_list_new = DocumentVersion.annotate_content_object_list(
+            content_object_list=content_object_list,
+            start_page_number=start_page_number
+        )
         annotated_content_object_list.extend(
-            DocumentVersion.annotate_content_object_list(
-                content_object_list=document_file.pages.all(),
-                start_page_number=document.version_active.pages.count() + 1
-            )
+            annotated_content_object_list_new
         )
 
         document_version = DocumentVersion(
-            active=True, document=document, comment=comment
+            active=True, comment=comment, document=document
         )
-        document_version._event_actor = user
-        document_version.save()
-
         document_version.pages_remap(
             annotated_content_object_list=annotated_content_object_list,
             user=user
@@ -62,16 +67,14 @@ class DocumentFileActionUseNewPages(DocumentFileAction):
             app_label='documents', model_name='DocumentVersion'
         )
 
-        document_version = DocumentVersion(
-            active=True, document=document, comment=comment
-        )
-        document_version._event_actor = user
-        document_version.save()
-
+        content_object_list = document_file.pages.all()
         annotated_content_object_list = DocumentVersion.annotate_content_object_list(
-            content_object_list=document_file.pages.all()
+            content_object_list=content_object_list
         )
 
+        document_version = DocumentVersion(
+            active=True, comment=comment, document=document
+        )
         document_version.pages_remap(
             annotated_content_object_list=annotated_content_object_list,
             user=user

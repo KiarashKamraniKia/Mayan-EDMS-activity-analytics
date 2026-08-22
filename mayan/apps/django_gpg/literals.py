@@ -2,22 +2,18 @@ import platform
 
 from django.utils.translation import gettext_lazy as _
 
-if platform.system() in ('FreeBSD', 'Darwin'):
-    DEFAULT_GPG_PATH = '/usr/local/bin/gpg1'
-elif platform.system() == 'OpenBSD':
+if platform.system() in ('FreeBSD', 'Darwin', 'OpenBSD'):
     DEFAULT_GPG_PATH = '/usr/local/bin/gpg'
 else:
-    DEFAULT_GPG_PATH = '/usr/bin/gpg1'
+    DEFAULT_GPG_PATH = '/usr/bin/gpg'
 
 DEFAULT_SIGNATURES_BACKEND = 'mayan.apps.django_gpg.backends.python_gnupg.PythonGNUPGBackend'
+DEFAULT_GPG_TIMEOUT = 60
+DEFAULT_GPG_KEYSERVER_TIMEOUT = 120
 DEFAULT_DEFAULT_GPG_PATH = {
     'gpg_path': DEFAULT_GPG_PATH
 }
 DEFAULT_SIGNATURES_KEYSERVER = 'pool.sks-keyservers.net'
-
-ERROR_MSG_BAD_PASSPHRASE = 'BAD_PASSPHRASE'
-ERROR_MSG_GOOD_PASSPHRASE = 'GOOD_PASSPHRASE'
-ERROR_MSG_MISSING_PASSPHRASE = 'MISSING_PASSPHRASE'
 
 KEY_TYPES = {
     'pub': _(message='Public'),
@@ -55,8 +51,6 @@ KEY_SECONDARY_CLASSES = (
 )
 
 KEYSERVER_DEFAULT_PORT = 11371
-
-OUTPUT_MESSAGE_CONTAINS_PRIVATE_KEY = 'Contains private key'
 
 SIGNATURE_STATE_BAD = 'signature bad'
 SIGNATURE_STATE_NONE = None

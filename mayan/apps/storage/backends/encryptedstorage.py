@@ -1,3 +1,5 @@
+from io import UnsupportedOperation
+
 from Crypto.Cipher import AES
 from Crypto.Hash import SHA256
 from Crypto.Protocol.KDF import PBKDF2
@@ -21,15 +23,34 @@ class BufferedEncryptedFile(BufferedFile):
 
         super().__init__(*args, **kwargs)
 
-        self.initial_vector = self.file_object.read(16)
+        self.binary_mode = 'b' in self.mode
+        self.write_buffer = b''
+
+        if self.is_write_mode():
+            self.cipher = None
+            self.initial_vector = None
+        else:
+            self._cipher_initialize()
+
+    def _cipher_initialize(self):
+        self.initial_vector = self.file_object.read(AES.block_size)
         self.cipher = AES.new(
             key=self.key, mode=AES.MODE_CBC, iv=self.initial_vector
         )
-        self.binary_mode = 'b' in self.mode
-        self.position = 0
+
+    def _source_reset(self):
+        if self.is_write_mode():
+            raise UnsupportedOperation(
+                'Encrypted files opened for writing cannot be rewound.'
+            )
+
+        super()._source_reset()
+        self._cipher_initialize()
 
     def _get_file_object_chunk(self):
-        chunk = self.file_object.read(ENCRYPTION_FILE_CHUNK_SIZE)
+        chunk = self.file_object.read(
+            ENCRYPTION_FILE_CHUNK_SIZE + AES.block_size
+        )
 
         if chunk:
             data = unpad(
@@ -42,47 +63,53 @@ class BufferedEncryptedFile(BufferedFile):
             else:
                 return force_str(s=data)
 
-    def seek(self, pos, whence=0):
-        if whence == 0:
-            self.position = pos
-            self.file_object.seek(pos, whence)
+    def close(self):
+        self.write_buffer_flush()
+        super().close()
 
-        if whence == 2:
-            raise AttributeError('Only whence 0 is supported.')
-
-    def tell(self):
-        return self.position
+    def is_write_mode(self):
+        return 'a' in self.mode or 'w' in self.mode
 
     def write(self, data):
-        if self.position == 0:
+        try:
+            data = data.encode('utf-8')
+        except AttributeError:
+            """Already a byte string."""
+
+        if self.cipher is None:
             self.cipher = AES.new(key=self.key, mode=AES.MODE_CBC)
-            self.file_object.write(self.cipher.iv)
-
-        content = ContentFile(content=data)
-
-        count = 0
-        while True:
-            chunk = content.read(ENCRYPTION_FILE_CHUNK_SIZE)
-
+            self.initial_vector = self.cipher.iv
+            self.file_object.seek(0)
             try:
-                chunk = chunk.encode('utf-8')
-            except AttributeError:
-                """Already a byte string."""
+                self.file_object.truncate()
+            except (AttributeError, OSError):
+                """Storage file object without truncation support."""
+            self.file_object.write(self.initial_vector)
 
-            count = count + len(chunk)
-            if chunk:
-                chunk = pad(
-                    data_to_pad=chunk, block_size=AES.block_size
-                )
-            else:
-                break
+        self.write_buffer = self.write_buffer + data
 
-            self.file_object.write(
-                self.cipher.encrypt(chunk)
-            )
+        while len(self.write_buffer) >= ENCRYPTION_FILE_CHUNK_SIZE:
+            chunk = self.write_buffer[:ENCRYPTION_FILE_CHUNK_SIZE]
+            self.write_buffer = self.write_buffer[ENCRYPTION_FILE_CHUNK_SIZE:]
+            self.write_chunk(chunk=chunk)
 
+        count = len(data)
         self.position = self.position + count
         return count
+
+    def write_buffer_flush(self):
+        if self.write_buffer:
+            self.write_chunk(chunk=self.write_buffer)
+            self.write_buffer = b''
+
+    def write_chunk(self, chunk):
+        padded_chunk = pad(
+            data_to_pad=chunk, block_size=AES.block_size
+        )
+
+        self.file_object.write(
+            self.cipher.encrypt(padded_chunk)
+        )
 
 
 class EncryptedPassthroughStorage(PassthroughStorage):
@@ -112,7 +139,6 @@ class EncryptedPassthroughStorage(PassthroughStorage):
                 method_name='open', kwargs=next_kwargs
             )
         else:
-            # Mode is always 'rb' when reading the encrypted file
             next_kwargs['mode'] = 'rb+'
             storage_file = self._call_backend_method(
                 method_name='open', kwargs=next_kwargs

@@ -1,9 +1,13 @@
+import re
+
 from django.utils.translation import gettext_lazy as _
 
 COMMAND_NAME_DEPENDENCIES_CHECK_VERSION = 'dependencies_check_version'
 COMMAND_NAME_DEPENDENCIES_INSTALL = 'dependencies_install'
 COMMAND_NAME_DEPENDENCIES_SHOW_VERSION = 'dependencies_show_version'
 
+DEFAULT_DEPENDENCIES_GOOGLE_FONTS_URL = 'https://fonts.googleapis.com'
+DEFAULT_DEPENDENCIES_NPM_REGISTRY_URL = 'https://registry.npmjs.com'
 DEFAULT_HTTP_TIMEOUT = (10, 30)
 
 MAYAN_PYPI_NAME = 'mayan-edms'
@@ -27,3 +31,5 @@ MESSAGE_UNEXPECTED_ERROR = _(
 MESSAGE_UP_TO_DATE = 'Your version (%(version_local)s), is up-to-date.'
 
 PYPI_URL = 'pypi.org'
+
+REGULAR_EXPRESSION_CSS_URL = re.compile(pattern=r'url\((.*?)\)')

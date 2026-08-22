@@ -162,7 +162,6 @@ PythonDependency(
     ''', module=__name__, name='sh', version_string='==2.2.6'
 )
 
-# Build
 
 PythonDependency(
     environments=(environment_build,), module=__name__, name='setuptools',
@@ -177,7 +176,6 @@ PythonDependency(
     version_string='=={}'.format(PYTHON_WHEEL_VERSION)
 )
 
-# Development
 
 PythonDependency(
     environments=(environment_development,), module=__name__,

@@ -1,11 +1,14 @@
 {% load i18n %}
 {% load static %}
 
+{% load appearance_bootstrap_tags %}
 {% load appearance_tags %}
 {% load common_tags %}
 {% load navigation_tags %}
 {% load smart_settings_tags %}
 {% load templating_tags %}
+
+{% appearance_bootstrap_text_direction_get as appearance_text_direction %}
 
 {% spaceless %}
 
@@ -23,19 +26,20 @@
 </script>
 
 <script>
-    /* Set the document language on AJAX updates */
+    /* Set the document language and text direction on AJAX updates */
     {% if LANGUAGE_CODE %}document.documentElement.lang = '{{ LANGUAGE_CODE|escapejs }}';{% endif %}
+    document.documentElement.dir = '{{ appearance_text_direction|escapejs }}';
 </script>
 
 {% block stylesheets %}{% endblock %}
 
 {% if appearance_type != 'plain' %}
-    <div class="">
+    <div class="{% block base_layout_class %}{% endblock %}">
         {% navigation_resolve_menus names='facet,list facet,related,return,sources' sort_results=True as sidebar_menus_link_results %}
-        <div class="row zero-margin">
-            <div class="col-xs-12 {% if sidebar_menus_link_results %}has-sidebar{% endif %}" id="viewport">
+        <div class="d-flex flex-column flex-md-row gap-md-2">
+            <div class="flex-md-fill" id="viewport">
                 <div class="row zero-margin">
-                    <div class="col-xs-12">
+                    <div class="col-12">
                         {% block messages %}
                         {% endblock %}
 
@@ -57,21 +61,14 @@
 {% block javascript %}{% endblock %}
 
 <script>
-    document.title = $('#appearance-title-text').text() + ' :: {% block project_name %}{% common_get_project_title %}{% endblock %}';
+    document.title = $('#mayan-appearance-title-text').text() + ' :: {% block project_name %}{% common_get_project_title %}{% endblock %}';
 
     jQuery(document).ready(function() {
-        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-bs-toggle="tooltip"]').tooltip({placement:'top'});
 
-        let djangoMessages = [
-            {% for message in messages %}
-                {
-                    tags: '{{ message.tags|escapejs }}',
-                    message: '{{ message.message|escapejs }}'
-                },
-            {% endfor %}
-        ];
-
-        app.afterBaseLoad({'djangoMessages': djangoMessages});
+        
+        
+        app.afterBaseLoad({});
     });
 </script>
 {% endspaceless %}

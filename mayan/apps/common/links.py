@@ -18,7 +18,6 @@ from .permissions import permission_object_copy
 
 
 def object_copy_conditional_disable(context, resolved_object):
-    # Hidden import.
     from .classes import ModelCopy
 
     if not resolved_object:
@@ -55,8 +54,8 @@ link_license = Link(
     icon=icon_license, text=_(message='License'), view='common:license_view'
 )
 link_mailing_list = Link(
-    icon=icon_mailing_list, text=_(message='Mailing list'),
-    url=URL_MAILING_LIST
+    icon=icon_mailing_list, tags='new_window',
+    text=_(message='Mailing list'), url=URL_MAILING_LIST
 )
 link_object_copy = Link(
     condition=object_copy_conditional_disable,

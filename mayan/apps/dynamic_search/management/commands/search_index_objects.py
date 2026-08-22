@@ -31,7 +31,7 @@ class Command(BaseCommand):
 
         try:
             id_range = parse_range(range_string=id_range_string)
-        except Exception as exception:
+        except ValueError as exception:
             self.stderr.write(
                 msg='Unknown or invalid range format `{}`; {}'.format(
                     id_range_string, exception

@@ -21,6 +21,9 @@ from .literals import (
 
 
 class AuthenticationBackendOIDC(AuthenticationBackend):
+    django_authentication_backend_paths = (
+        get_class_full_name(klass=DjangoAuthenticationBackendOIDC),
+    )
     login_form_class = AuthenticationFormOIDC
 
     def __init__(
@@ -82,10 +85,23 @@ class AuthenticationBackendOIDC(AuthenticationBackend):
 
         super().__init__()
 
-    def initialize(self):
-        settings.AUTHENTICATION_BACKENDS = (
-            get_class_full_name(klass=DjangoAuthenticationBackendOIDC),
+    def do_deinitialize(self):
+        super().do_deinitialize()
+
+        settings.MIDDLEWARE = tuple(
+            [
+                item for item in settings.MIDDLEWARE if item != 'mozilla_django_oidc.middleware.SessionRefresh'
+            ]
         )
+
+        settings.REST_FRAMEWORK['DEFAULT_AUTHENTICATION_CLASSES'] = tuple(
+            [
+                item for item in settings.REST_FRAMEWORK['DEFAULT_AUTHENTICATION_CLASSES'] if item != 'mozilla_django_oidc.contrib.drf.OIDCAuthentication'
+            ]
+        )
+
+    def do_initialize(self):
+        super().do_initialize()
 
         settings.MIDDLEWARE += (
             'mozilla_django_oidc.middleware.SessionRefresh',

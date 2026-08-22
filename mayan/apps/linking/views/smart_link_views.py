@@ -58,8 +58,6 @@ class DocumentResolvedSmartLinkDocumentListView(
         except Exception as exception:
             queryset = Document.objects.none()
 
-            # Check if the user has the smart link edit permission before
-            # showing the exception text.
             try:
                 AccessControlList.objects.check_access(
                     obj=self.resolved_smart_link,
@@ -85,8 +83,6 @@ class DocumentResolvedSmartLinkDocumentListView(
         except Exception as exception:
             resolved_smart_link_label = self.resolved_smart_link.label
 
-            # Check if the user has the smart link edit permission before
-            # showing the exception text.
             try:
                 AccessControlList.objects.check_access(
                     obj=self.resolved_smart_link,

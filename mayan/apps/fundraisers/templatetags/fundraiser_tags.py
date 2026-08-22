@@ -1,27 +1,28 @@
+import markdown
+import nh3
+import requests
+
 from django.template import Library
 from django.utils.safestring import mark_safe
 
 from mayan.apps.views.http import URL
 
-import markdown
-import nh3
-import requests
-
 from ..literals import DEFAULT_HTTP_TIMEOUT, URL_FUNDRAISER_API
+from ..markdown_extensions import ExternalLinkExtension
 
 register = Library()
 
 
 def markdown_render(source):
     md = markdown.Markdown(
-        extensions=('attr_list', 'nl2br')
+        extensions=('attr_list', 'nl2br', ExternalLinkExtension())
     )
 
     html = md.convert(source=source)
 
     html_clean = nh3.clean(
         attributes={
-            'a': {'href'},
+            'a': {'href', 'target'},
             'img': {'alt', 'class', 'src', 'style'}
         }, html=html
     )

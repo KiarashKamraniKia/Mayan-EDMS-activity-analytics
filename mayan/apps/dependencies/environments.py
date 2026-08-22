@@ -40,6 +40,15 @@ environment_documentation_override = DependencyEnvironment(
     ), label=_(message='Documentation (override)'),
     name='documentation_override'
 )
+environment_linting = DependencyEnvironment(
+    help_text=_(
+        message='Environment used for running code linters and style checkers '
+        'to ensure code quality and formatting compliance. Dependencies in this '
+        'environment are not needed for normal production usage.'
+    ),
+    label=_(message='Linting'),
+    name='linting'
+)
 environment_production = DependencyEnvironment(
     help_text=_(
         message='Normal environment for end users. A missing dependency '

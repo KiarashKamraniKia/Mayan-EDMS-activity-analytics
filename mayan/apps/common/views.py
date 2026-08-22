@@ -1,9 +1,9 @@
 from django.contrib import messages
+from django.contrib.auth.decorators import login_not_required
 from django.templatetags.static import static
+from django.utils.decorators import method_decorator
 from django.utils.translation import gettext_lazy as _
 from django.views.generic import RedirectView
-
-from stronghold.views import StrongholdPublicMixin
 
 from mayan.apps.views.generics import ConfirmView, SimpleView
 from mayan.apps.views.view_mixins import (
@@ -29,14 +29,11 @@ class AboutView(SimpleView):
     view_icon = icon_about
 
 
+@method_decorator(login_not_required, name='dispatch')
 class FaviconRedirectView(RedirectView):
     permanent = True
 
     def get_redirect_url(self, *args, **kwargs):
-        """
-        Hide the static tag import to avoid errors with static file
-        processors.
-        """
         return static(path='appearance/images/favicon.ico')
 
 
@@ -68,6 +65,7 @@ class ObjectCopyView(
         model_copy = ModelCopy.get(model=self.external_object._meta.model)
         context = {
             'object': self.external_object,
+            'submit_label': _(message='Copy'),
             'subtitle': _(message='Fields to be copied: %s') % ', '.join(
                 sorted(
                     map(
@@ -94,7 +92,7 @@ class ObjectCopyView(
         )
 
 
-class RootView(StrongholdPublicMixin, SimpleView):
+class RootView(SimpleView):
     extra_context = {'home_view': setting_home_view.value}
     template_name = 'appearance/root.html'
 
@@ -110,7 +108,7 @@ class SetupListView(SimpleView):
                 message='No results here means that don\'t have the required '
                 'permissions to perform administrative task.'
             ),
-            'no_results_title': _(message='No setup options available.'),
+            'no_results_title': _(message='No setup options available'),
             'resolved_links': menu_setup.resolve(
                 request=self.request, sort_results=True
             ),

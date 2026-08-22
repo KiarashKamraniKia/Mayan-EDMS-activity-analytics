@@ -7,15 +7,15 @@ PythonDependency(
 )
 PythonDependency(
     environments=(environment_documentation,), module=__name__,
+    name='furo', version_string='==2025.12.19'
+)
+PythonDependency(
+    environments=(environment_documentation,), module=__name__,
     name='Sphinx', version_string='==9.1.0'
 )
 PythonDependency(
     environments=(environment_documentation,), module=__name__,
     name='sphinx-sitemap', version_string='==2.9.0'
-)
-PythonDependency(
-    environments=(environment_documentation,), module=__name__,
-    name='sphinx_rtd_theme', version_string='==3.1.0'
 )
 PythonDependency(
     environments=(environment_documentation,), module=__name__,

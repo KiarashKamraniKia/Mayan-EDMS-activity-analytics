@@ -11,43 +11,35 @@ class MayanApp {
         this.ajaxMenusOptions = options.ajaxMenusOptions;
         this.ajaxMenuHashes = {};
         this.ajaxSpinnerSeletor = '#ajax-spinner';
+        
+        
+        
+        
+        this.menuRefreshRequests = new Set();
         this.window = $(window);
+
+        
+        
+        
+        
+        
+        
+        
+        MayanApp.defaultMessagePosition = this.options.messagePosition;
     }
 
-    // Class methods and variables
+    
 
     static async countChecked() {
         const checkCount = $('.check-all-slave:checked').length;
 
         if (checkCount) {
-            $('#multi-item-title').hide();
-            $('#multi-item-actions').show();
+            $('#mayan-multi-item-title').removeClass('d-xxl-block').hide();
+            $('#mayan-multi-item-actions').show();
         } else {
-            $('#multi-item-title').show();
-            $('#multi-item-actions').hide();
+            $('#mayan-multi-item-title').addClass('d-xxl-block').show();
+            $('#mayan-multi-item-actions').hide();
         }
-    }
-
-    static async setupDropdownDirectionChange () {
-        $('body').on('shown.bs.dropdown', '.dropdown', function () {
-            const $this = $(this);
-            const $elementMenu = $this.children('.dropdown-menu');
-            const $elementMenuButton = $this.children('.dropdown-toggle');
-            const elemenMenuOffset = $elementMenu.offset();
-            const sizeDownwards = elemenMenuOffset.top + $elementMenu.height() + 5;
-            const sizeUpwards = elemenMenuOffset.top - $elementMenu.height() - $elementMenuButton.height();
-
-            const spaceDownwards = $(window).scrollTop() + $(window).height() - sizeDownwards;
-            const spaceUpwards = sizeUpwards - $(window).scrollTop();
-
-            if ((spaceUpwards >= 0 || spaceUpwards > spaceDownwards) && spaceDownwards < 0) {
-              $this.addClass('dropup');
-            }
-        });
-
-        $('body').on('hidden.bs.dropdown', '.dropdown', function() {
-            $(this).removeClass('dropup');
-        });
     }
 
     async setupMultiItemActions () {
@@ -57,13 +49,13 @@ class MayanApp {
             MayanApp.countChecked();
         });
 
-        $('body').on('click', '#multi-item-actions .navigation-btn-dropdown', function (event) {
+        $('body').on('click', '#mayan-multi-item-actions .dropdown-item', function (event) {
             const $this = $(this);
             const href = $this.attr('href');
             let idList = [];
 
             $('.check-all-slave:checked').each(function (index, value) {
-                // Split the name (ie:"pk_200") and extract only the ID.
+                
                 idList.push(
                     value.name.split('_')[1]
                 );
@@ -80,7 +72,9 @@ class MayanApp {
 
     static async setupNavBarState () {
         $('body').on('click', '#accordion-sidebar a', function (event) {
+            $('#accordion-sidebar a').removeClass('active');
             $('#accordion-sidebar li').removeClass('active');
+            $(this).addClass('active');
             $(this).parents('li').addClass('active');
         });
     }
@@ -93,14 +87,21 @@ class MayanApp {
         $('#accordion-sidebar a').each(function (index, value) {
             if (value.pathname === uriFragmentPath) {
                 const $this = $(this);
+                const collapseElement = $this.closest('.accordion-collapse')[0];
 
-                $this.closest('.collapse').addClass('in').parent().find('.collapsed').removeClass('collapsed').attr('aria-expanded', 'true');
+                if (collapseElement) {
+                    bootstrap.Collapse.getOrCreateInstance(
+                        collapseElement, {toggle: false}
+                    ).show();
+                }
+
+                $this.addClass('active');
                 $this.parents('li').addClass('active');
             }
         });
     }
 
-    // Instance methods
+    
 
     async addAfterBaseLoadCallback ({func, self, args=null}) {
         this.afterBaseLoadCallbacks.push({func: func, self: self, args: args});
@@ -133,10 +134,21 @@ class MayanApp {
     }
 
     async doRefreshAJAXMenu (options) {
-        $.ajax({
+        const app = this;
+
+        const menuRequest = $.ajax({
             complete: function() {
+                app.menuRefreshRequests.delete(menuRequest);
+
+                
+                
+                
                 if (options.interval !== null) {
-                    setTimeout(app.doRefreshAJAXMenu, options.interval, options);
+                    setTimeout(
+                        function () {
+                            app.doRefreshAJAXMenu(options);
+                        }, options.interval
+                    );
                 }
             },
             success: function(data) {
@@ -145,8 +157,8 @@ class MayanApp {
                 if ((menuHash === undefined) || (menuHash !== data.hex_hash)) {
                     const $menu = $(options.menuSelector);
 
-                    // Do not replace the menu while the user is interacting
-                    // with a control inside it.
+                    
+                    
                     if ($menu.find(':focus').length) {
                         return;
                     }
@@ -160,42 +172,97 @@ class MayanApp {
             },
             url: options.url,
         });
+
+        app.menuRefreshRequests.add(menuRequest);
     }
 
-    async doToastrMessages (context) {
-        toastr.options = {
-            'closeButton': true,
-            'debug': false,
-            'newestOnTop': true,
-            'positionClass': `toast-${this.options.messagePosition}`,
-            'preventDuplicates': false,
-            'onclick': null,
-            'showDuration': '300',
-            'hideDuration': '1000',
-            'timeOut': '5000',
-            'extendedTimeOut': '1000',
-            'showEasing': 'swing',
-            'hideEasing': 'linear',
-            'showMethod': 'fadeIn',
-            'hideMethod': 'fadeOut'
+    static doAddToast (message, tags, options) {
+        options = options || {};
+
+        
+        const colorClassMap = {
+            'success': 'text-bg-success',
+            'info': 'text-bg-info',
+            'warning': 'text-bg-warning',
+            'error': 'text-bg-danger',
+            'danger': 'text-bg-danger',
+        };
+        const colorClass = colorClassMap[tags] || 'text-bg-info';
+
+        
+        const placementClassMap = {
+            'top-right': 'top-0 end-0',
+            'top-left': 'top-0 start-0',
+            'top-center': 'top-0 start-50 translate-middle-x',
+            'top-full-width': 'top-0 start-50 translate-middle-x',
+            'bottom-right': 'bottom-0 end-0',
+            'bottom-left': 'bottom-0 start-0',
+            'bottom-center': 'bottom-0 start-50 translate-middle-x',
+            'bottom-full-width': 'bottom-0 start-50 translate-middle-x',
+        };
+        
+        
+        
+        
+        
+        
+        let messagePosition = options.position;
+
+        if (!messagePosition) {
+            messagePosition = MayanApp.defaultMessagePosition;
         }
 
-        for (const message of context.djangoMessages) {
-            let options = {};
+        const placementClass = placementClassMap[messagePosition] || 'bottom-0 end-0';
 
-            options['escapeHtml'] = true;
-
-            if (message.tags === 'error') {
-                // Error messages persist.
-                options['timeOut'] = 0;
-            }
-            if (message.tags === 'warning') {
-                // Warning messages stays 10 seconds.
-                options['timeOut'] = 10000;
-            }
-
-            toastr[message.tags](message.message, '', options);
+        let container = document.getElementById('toast-container');
+        if (!container) {
+            container = document.createElement('div');
+            container.id = 'toast-container';
+            document.body.appendChild(container);
         }
+        container.className = `toast-container position-fixed p-3 ${placementClass}`;
+
+        const toastElement = document.createElement('div');
+        toastElement.className = `toast align-items-center ${colorClass} border-0`;
+        toastElement.setAttribute('role', 'alert');
+        toastElement.setAttribute('aria-live', 'assertive');
+        toastElement.setAttribute('aria-atomic', 'true');
+
+        const flexElement = document.createElement('div');
+        flexElement.className = 'd-flex';
+
+        const bodyElement = document.createElement('div');
+        bodyElement.className = 'toast-body';
+        bodyElement.textContent = message;
+
+        const closeButton = document.createElement('button');
+        closeButton.className = 'btn-close btn-close-white me-2 m-auto';
+        closeButton.setAttribute('type', 'button');
+        closeButton.setAttribute('data-bs-dismiss', 'toast');
+        closeButton.setAttribute('aria-label', gettext('Close'));
+
+        flexElement.appendChild(bodyElement);
+        flexElement.appendChild(closeButton);
+        toastElement.appendChild(flexElement);
+
+        if (options.newestOnTop) {
+            container.prepend(toastElement);
+        } else {
+            container.appendChild(toastElement);
+        }
+
+        
+        const timeOut = options.timeOut === undefined ? 5000 : options.timeOut;
+        const toast = new bootstrap.Toast(toastElement, {
+            autohide: timeOut !== 0,
+            delay: timeOut || 5000,
+        });
+
+        toastElement.addEventListener('hidden.bs.toast', function () {
+            toastElement.remove();
+        });
+
+        toast.show();
     }
 
     async initialize () {
@@ -203,17 +270,17 @@ class MayanApp {
 
         this.setupAJAXMenus();
         this.setupAJAXSpinner();
-        MayanApp.setupDropdownDirectionChange();
         this.setupFormElementContentCopy();
         this.setupFormHotkeys();
-        this.setupFullHeightResizing();
         this.setupItemsSelector();
         this.setupMultiItemActions();
         this.setupNavbarCollapse();
         MayanApp.setupNavBarState();
         this.setupNewWindowAnchor();
-        this.setupPanelSelection();
+        this.setupCardSelection();
+        this.setupTableRowSelection();
         this.setupResizePersist();
+        this.setupTooltips();
 
         partialNavigation.initialize();
     }
@@ -221,7 +288,28 @@ class MayanApp {
     async setupAJAXMenus() {
         const app = this;
 
+        
+        
+        
+        
+        
+        app.partialNavigationApp.$ajaxContent.on(
+            app.partialNavigationApp.eventNavigationStart, function () {
+                for (const menuRequest of Array.from(app.menuRefreshRequests)) {
+                    menuRequest.abort();
+                }
+            }
+        );
+
         for (const menuOptions of this.ajaxMenusOptions) {
+            
+            
+            
+            
+            if (!document.querySelector(menuOptions.menuSelector)) {
+                continue;
+            }
+
             menuOptions.app = app;
             app.doRefreshAJAXMenu(menuOptions);
         }
@@ -253,11 +341,18 @@ class MayanApp {
         const cssClassSelectorAttached = `${cssClassSelector}-attached`;
 
         const updateTooltip = function ($this, text) {
-            $this.attr('title', text);
-            $this.tooltip('fixTitle');
-            $this.tooltip('show');
-            $this.attr('title', $this.data('original-title'));
-            $this.tooltip('fixTitle');
+            const element = $this[0];
+            const tooltip = bootstrap.Tooltip.getOrCreateInstance(element);
+            const originalTitle = element.getAttribute('data-bs-original-title') || element.getAttribute('title') || '';
+
+            tooltip.setContent({'.tooltip-inner': text});
+            tooltip.show();
+
+            
+            element.addEventListener('hidden.bs.tooltip', function restore () {
+                tooltip.setContent({'.tooltip-inner': originalTitle});
+                element.removeEventListener('hidden.bs.tooltip', restore);
+            });
         }
 
         app.partialNavigationApp.$ajaxContent.on('updated', function (event) {
@@ -294,16 +389,6 @@ class MayanApp {
         $('body').on('dblclick', '.input-hotkey-double-click', function (event) {
             $(this).parents('form').find('.btn-hotkey-default').click();
             event.preventDefault();
-        });
-    }
-
-    async setupFullHeightResizing () {
-        const app = this;
-
-        this.resizeFullHeight();
-
-        this.window.resize(function() {
-            app.resizeFullHeight();
         });
     }
 
@@ -345,51 +430,20 @@ class MayanApp {
         })
     }
 
-    async setupListToolbar () {
-        const $listToolbar = $('#list-toolbar');
+    navbarCollapseHide () {
+        document.querySelectorAll('.navbar-collapse').forEach(function (element) {
+            bootstrap.Collapse.getOrCreateInstance(
+                element, {toggle: false}
+            ).hide();
+        });
 
-        if ($listToolbar.length !== 0) {
-            const $listToolbarClearfix = $listToolbar.closest('.clearfix');
-            const $listToolbarSpacer = $('#list-toolbar-spacer');
-            const navBarOuterHeight = $('.navbar-fixed-top').outerHeight();
+        document.querySelectorAll('.navbar .offcanvas').forEach(function (element) {
+            const offcanvas = bootstrap.Offcanvas.getInstance(element);
 
-            $listToolbarSpacer.height($listToolbarClearfix.height()).hide();
-
-            $listToolbar.css(
-                {
-                    width: $listToolbarClearfix.width(),
-                }
-            );
-
-            $listToolbar.affix({
-                offset: {
-                    top: $listToolbar.offset().top - navBarOuterHeight,
-                },
-            });
-
-            $listToolbar.on('affix.bs.affix', function () {
-                $listToolbarSpacer.show();
-
-                $listToolbar.css(
-                    {
-                        width: $listToolbarClearfix.width(),
-                    }
-                );
-            });
-
-
-            $listToolbar.on('affix-top.bs.affix', function () {
-                $listToolbarSpacer.hide();
-            });
-
-            this.window.on('resize', function () {
-                $listToolbar.css(
-                    {
-                        width: $listToolbarClearfix.width(),
-                    }
-                );
-            });
-        }
+            if (offcanvas) {
+                offcanvas.hide();
+            }
+        });
     }
 
     async setupNavbarCollapse () {
@@ -397,39 +451,41 @@ class MayanApp {
 
         $(document).keyup(function(e) {
             if (e.keyCode === 27) {
-                $('.navbar-collapse').collapse('hide');
+                app.navbarCollapseHide();
             }
         });
 
         $('body').on('click', 'a', function (event) {
             if (!$(this).hasAnyClass(['dropdown-toggle'])) {
-                $('.navbar-collapse').collapse('hide');
+                app.navbarCollapseHide();
             }
         });
 
-        // Small screen main menu toggle to open.
-        $('body').on('click', '#main-menu-button-open', function (event) {
-            $('#menu-main').addClass('menu-main-opened');
-            $('#ajax-header').addClass('overlay-gray');
+        
+        
+        
+        
+        $('body').on('submit', '.navbar .offcanvas form', function (event) {
+            app.navbarCollapseHide();
         });
 
-        // Inject new function in the app.
+        
+        
+        
+        
         app.doSmallScreenMenuClose = function () {
-            $('#menu-main').removeClass('menu-main-opened');
-            $('#ajax-header').removeClass('overlay-gray');
+            const element = document.getElementById('menu-main');
+
+            if (element) {
+                const offcanvas = bootstrap.Offcanvas.getInstance(element);
+
+                if (offcanvas) {
+                    offcanvas.hide();
+                }
+            }
         }
 
-        // Small screen main menu toggle to close.
-        $('body').on('click', '#menu-main-button-close', function (event) {
-            app.doSmallScreenMenuClose();
-        });
-
-        // Close the menu if the main menu accordion also closes.
-        $('body').on('hide.bs.collapse', function (event) {
-            app.doSmallScreenMenuClose();
-        });
-
-        // Close the menu if a menu anchor is clicked.
+        
         $('body').on('click', '.a-main-menu-accordion-link', function (event) {
             app.doSmallScreenMenuClose();
         });
@@ -438,32 +494,71 @@ class MayanApp {
     async setupNewWindowAnchor () {
         $('body').on('click', 'a.new_window', function (event) {
             event.preventDefault();
-            const newWindow = window.open($(this).attr('href'), '_blank');
-            newWindow.focus();
+
+            const href = $(this).attr('href');
+
+            
+            
+            
+            
+            window.open(href, '_blank', 'noopener,noreferrer');
         });
     }
 
-    async setupPanelSelection () {
+    pointerIsOverText (element, x, y) {
+        
+        
+        
+        
+        
+        
+        const range = document.createRange();
+        const treeWalker = document.createTreeWalker(
+            element, NodeFilter.SHOW_TEXT, null
+        );
+        let textNode = treeWalker.nextNode();
+
+        while (textNode !== null) {
+            range.selectNodeContents(textNode);
+            const rectangleList = range.getClientRects();
+
+            for (let index = 0; index < rectangleList.length; index++) {
+                const rectangle = rectangleList[index];
+                const insideHorizontally = (x >= rectangle.left) && (x <= rectangle.right);
+                const insideVertically = (y >= rectangle.top) && (y <= rectangle.bottom);
+
+                if (insideHorizontally && insideVertically) {
+                    return true;
+                }
+            }
+
+            textNode = treeWalker.nextNode();
+        }
+
+        return false;
+    }
+
+    async setupCardSelection () {
         const app = this;
 
-        // Setup panel highlighting on check.
+        
         $('body').on('change', '.check-all-slave', function (event) {
             const checked = $(event.target).prop('checked');
             if (checked) {
-                $(this).closest('.panel-item').addClass('panel-highlighted');
+                $(this).closest('.card-item').addClass('border-success');
             } else {
-                $(this).closest('.panel-item').removeClass('panel-highlighted');
+                $(this).closest('.card-item').removeClass('border-success');
             }
         });
 
-        // Panel selection.
-        $('body').on('mousedown', '.panel-item', function (event) {
-            app.panelPointerDownPosition = {x: event.clientX, y: event.clientY};
+        
+        $('body').on('mousedown', '.card-item', function (event) {
+            app.cardPointerDownPosition = {x: event.clientX, y: event.clientY};
         });
 
-        $('body').on('click', '.panel-item', function (event) {
-            const pointerDownPosition = app.panelPointerDownPosition;
-            app.panelPointerDownPosition = null;
+        $('body').on('click', '.card-item', function (event) {
+            const pointerDownPosition = app.cardPointerDownPosition;
+            app.cardPointerDownPosition = null;
 
             if (pointerDownPosition && (
                 Math.abs(event.clientX - pointerDownPosition.x) > 5 ||
@@ -473,39 +568,163 @@ class MayanApp {
             }
 
             const $this = $(this);
-            const targetSrc = $(event.target).prop('src');
-            const targetHref = $(event.target).prop('href');
-            const targetIsButton = event.target.tagName === 'BUTTON';
+            const $checkbox = $this.find('.check-all-slave');
 
-            if ((targetSrc === undefined) && (targetHref === undefined) && (targetIsButton === false)) {
-                const $checkbox = $this.find('.check-all-slave');
-                const checked = $checkbox.prop('checked');
-
-                if (checked) {
-                    $checkbox.prop('checked', '');
-                    $checkbox.trigger('change');
-                } else {
-                    $checkbox.prop('checked', 'checked');
-                    $checkbox.trigger('change');
-                }
-
-                if (!app.lastChecked) {
-                    app.lastChecked = $checkbox;
-                }
-
-                if (event.shiftKey) {
-                    const $checkBoxes = $('.check-all-slave');
-
-                    const start = $checkBoxes.index($checkbox);
-                    const end = $checkBoxes.index(app.lastChecked);
-
-                    $checkBoxes.slice(
-                        Math.min(start, end), Math.max(start, end) + 1
-                    ).prop('checked', app.lastChecked.prop('checked')).trigger('change');
-                }
-                app.lastChecked = $checkbox;
-                window.getSelection().removeAllRanges();
+            
+            
+            if ($checkbox.length === 0) {
+                return;
             }
+
+            
+            
+            
+            
+            
+            
+            const $interactive = $(event.target).closest(
+                'a, button, img, input, label, select, textarea'
+            );
+
+            if ($interactive.length) {
+                const interactiveElement = $interactive[0];
+                const isTitleLink = $interactive.hasClass('mayan-card-item-label');
+                const pointerOnText = app.pointerIsOverText(
+                    interactiveElement, event.clientX, event.clientY
+                );
+                
+                
+                
+                
+                
+                const clickIsOnTitleLinkEmptyArea = isTitleLink && (pointerOnText === false);
+
+                if (clickIsOnTitleLinkEmptyArea === false) {
+                    return;
+                }
+
+                
+                
+                
+                event.preventDefault();
+            }
+
+            const checked = $checkbox.prop('checked');
+
+            if (checked) {
+                $checkbox.prop('checked', '');
+                $checkbox.trigger('change');
+            } else {
+                $checkbox.prop('checked', 'checked');
+                $checkbox.trigger('change');
+            }
+
+            if (!app.lastChecked) {
+                app.lastChecked = $checkbox;
+            }
+
+            if (event.shiftKey) {
+                const $checkBoxes = $('.check-all-slave');
+
+                const start = $checkBoxes.index($checkbox);
+                const end = $checkBoxes.index(app.lastChecked);
+
+                $checkBoxes.slice(
+                    Math.min(start, end), Math.max(start, end) + 1
+                ).prop('checked', app.lastChecked.prop('checked')).trigger('change');
+            }
+            app.lastChecked = $checkbox;
+            window.getSelection().removeAllRanges();
+        });
+    }
+
+    async setupTableRowSelection () {
+        const app = this;
+
+        
+        
+        
+        $('body').on('change', '.check-all-slave', function (event) {
+            const checked = $(event.target).prop('checked');
+            const $row = $(this).closest('.mayan-table-item');
+
+            if (checked) {
+                $row.addClass('mayan-table-item-selected');
+            } else {
+                $row.removeClass('mayan-table-item-selected');
+            }
+        });
+
+        
+        
+        $('body').on('mousedown', '.mayan-table-item', function (event) {
+            app.tablePointerDownPosition = {x: event.clientX, y: event.clientY};
+        });
+
+        
+        
+        $('body').on('click', '.mayan-table-item', function (event) {
+            const pointerDownPosition = app.tablePointerDownPosition;
+            app.tablePointerDownPosition = null;
+
+            if (pointerDownPosition) {
+                const movedX = Math.abs(event.clientX - pointerDownPosition.x);
+                const movedY = Math.abs(event.clientY - pointerDownPosition.y);
+
+                if ((movedX > 5) || (movedY > 5)) {
+                    return;
+                }
+            }
+
+            
+            
+            
+            
+            const $interactive = $(event.target).closest(
+                'a, button, input, label, select, textarea'
+            );
+
+            if ($interactive.length) {
+                return;
+            }
+
+            const $row = $(this);
+            const $checkbox = $row.find('.check-all-slave');
+            const checkboxElement = $checkbox[0];
+
+            if (checkboxElement === undefined) {
+                return;
+            }
+
+            const checked = $checkbox.prop('checked');
+
+            if (checked) {
+                $checkbox.prop('checked', '');
+            } else {
+                $checkbox.prop('checked', 'checked');
+            }
+
+            $checkbox.trigger('change');
+
+            if (!app.lastChecked) {
+                app.lastChecked = checkboxElement;
+            }
+
+            if (event.shiftKey) {
+                const $checkBoxes = $('.check-all-slave');
+
+                const start = $checkBoxes.index(checkboxElement);
+                const end = $checkBoxes.index(app.lastChecked);
+
+                const $range = $checkBoxes.slice(
+                    Math.min(start, end), Math.max(start, end) + 1
+                );
+                $range.prop('checked', app.lastChecked.checked);
+                $range.trigger('change');
+            }
+
+            app.lastChecked = checkboxElement;
+            window.getSelection().removeAllRanges();
         });
     }
 
@@ -514,89 +733,166 @@ class MayanApp {
         const cssClassResizePersist = 'appearance-resize-persist';
         const selectorClass = `.${cssClassResizePersist}`;
         const keySelector = `${cssClassResizePersist}-`;
-        const keySelectorLength = keySelector.length;
         const cssClassResizePersistAttached = `${cssClassResizePersist}-attached`;
 
         const resizeObserver = new ResizeObserver(function (entries) {
             for (const entry of entries) {
-                const $this = $(entry.target);
-                const storageKey = `${keySelector}${entry.target.id}`;
-                const height = $this.height();
+                const element = entry.target;
 
-                if (height > 0) {
-                    localStorage.setItem(storageKey, height);
+                if (element.id) {
+                    const height = $(element).height();
+
+                    if (height > 0) {
+                        localStorage.setItem(
+                            `${keySelector}${element.id}`, height
+                        );
+                    }
                 }
             }
         });
 
-        const resizePersistReset = function ($selector) {
-            const heightOriginal = $selector.data('height-original');
-
-            if (heightOriginal) {
-                $selector.css('height', heightOriginal);
-            } else {
-                $selector.css('height', '');
-            };
-        }
-
-        app.partialNavigationApp.$ajaxContent.on('preupdate', function (event) {
-            const $selector = $(selectorClass);
+        
+        
+        
+        
+        const resizePersistSetup = function () {
+            const $selector = $(selectorClass).not(
+                `.${cssClassResizePersistAttached}`
+            );
 
             for (const element of $selector) {
+                if (element.id) {
+                    const height = parseFloat(
+                        localStorage.getItem(`${keySelector}${element.id}`)
+                    );
+
+                    if (height > 0) {
+                        $(element).height(height);
+                    }
+                }
+
+                resizeObserver.observe(element);
+            }
+
+            $selector.addClass(cssClassResizePersistAttached);
+        };
+
+        app.partialNavigationApp.$ajaxContent.on('preupdate', function (event) {
+            for (const element of $(selectorClass)) {
                 resizeObserver.unobserve(element);
             }
         });
 
         app.partialNavigationApp.$ajaxContent.on('updated', function (event) {
-            const $selector = $(selectorClass).not(`.${cssClassResizePersistAttached}`);
-
-            if ($selector.length) {
-                const html = $('#template-appearance-form-element-height-reset').html();
-
-                $selector.siblings('label').after(html);
-                $selector.addClass(cssClassResizePersistAttached);
-
-                for (const key in localStorage) {
-                    if (key.startsWith(keySelector)) {
-                        const elementId = key.substring(keySelectorLength);
-                        const height = localStorage.getItem(key);
-                        const $this = $(`#${elementId}`);
-
-                        if ($this.length) {
-                            $this.height(height);
-                        }
-                    }
-                }
-
-                for (const element of $selector) {
-                    resizeObserver.observe(element);
-                }
-            }
+            resizePersistSetup();
         });
 
-        app.partialNavigationApp.$ajaxContent.on('click', '.appearance-btn-resize-reset', function (event) {
-            const $this = $(this);
-            const $source = $this.parent().siblings('.appearance-resize-persist').first();
+        resizePersistSetup();
+    }
 
-            resizePersistReset($source)
+    async setupTooltips () {
+        const app = this;
 
-            const data_linked_id = $source.data('linked-id');
+         
+        app.partialNavigationApp.$ajaxContent.on('preupdate', function (event) {
+            $(this).find('[data-bs-toggle="tooltip"]').each(function () {
+                const tooltip = bootstrap.Tooltip.getInstance(this);
 
-            if (data_linked_id) {
-                const $linked = $(`#${data_linked_id}`);
-                resizePersistReset($linked);
-            }
+                if (tooltip) {
+                    tooltip.dispose();
+                }
+            });
+        });
 
-            $this.attr('title', gettext('Done!'));
-            $this.tooltip('fixTitle');
-            $this.tooltip('show');
-            $this.attr('title', $this.data('original-title'));
-            $this.tooltip('fixTitle');
+        app.partialNavigationApp.$ajaxContent.on('updated', function (event) {
+             
+            document.querySelectorAll('body > .tooltip').forEach(
+                function (element) {
+                    const owner = document.querySelector(
+                        `[aria-describedby="${element.id}"]`
+                    );
+
+                    if (!owner) {
+                        element.remove();
+                    }
+                }
+            );
         });
     }
 
     async setupScrollView () {
-        $('.scrollable').scrollview();
+         
+        const elementList = document.querySelectorAll('.scrollable');
+
+        elementList.forEach(
+            function (element) {
+                if (element.dataset.grabScrollReady) {
+                    return;
+                }
+                element.dataset.grabScrollReady = 'true';
+                element.style.cursor = 'grab';
+
+                let dragging = false;
+                let pointerStartX = 0;
+                let pointerStartY = 0;
+                let scrollStartLeft = 0;
+                let scrollStartTop = 0;
+
+                 
+                element.addEventListener(
+                    'dragstart', function (event) {
+                        event.preventDefault();
+                    }
+                );
+
+                element.addEventListener(
+                    'pointerdown', function (event) {
+                        if (event.pointerType === 'touch') {
+                            return;
+                        }
+
+                        dragging = true;
+                        pointerStartX = event.clientX;
+                        pointerStartY = event.clientY;
+                        scrollStartLeft = element.scrollLeft;
+                        scrollStartTop = element.scrollTop;
+                        element.style.cursor = 'grabbing';
+                        element.style.userSelect = 'none';
+                        element.setPointerCapture(event.pointerId);
+                    }
+                );
+
+                element.addEventListener(
+                    'pointermove', function (event) {
+                        if (!dragging) {
+                            return;
+                        }
+
+                        const deltaX = event.clientX - pointerStartX;
+                        const deltaY = event.clientY - pointerStartY;
+                        element.scrollLeft = scrollStartLeft - deltaX;
+                        element.scrollTop = scrollStartTop - deltaY;
+                    }
+                );
+
+                const stopDragging = function (event) {
+                    if (!dragging) {
+                        return;
+                    }
+
+                    dragging = false;
+                    element.style.cursor = 'grab';
+                    element.style.userSelect = '';
+
+                    if (element.hasPointerCapture(event.pointerId)) {
+                        element.releasePointerCapture(event.pointerId);
+                    }
+                };
+
+                element.addEventListener('pointerup', stopDragging);
+                element.addEventListener('pointercancel', stopDragging);
+            }
+        );
     }
 
     async setupSelect2 () {
@@ -604,11 +900,5 @@ class MayanApp {
             dropdownAutoWidth: true,
             width: '100%'
         });
-    }
-
-    async resizeFullHeight () {
-        $('.full-height').height(
-            this.window.height() - $('.full-height').data('height-difference')
-        );
     }
 }

@@ -17,7 +17,7 @@ from .transformation_mixins import (
     ImagePasteCoordinatesAbsoluteTransformationMixin,
     ImagePasteCoordinatesPercentTransformationMixin,
     ImagePasteTransformationMixin, ImageWatermarkPercentTransformationMixin,
-    TransformationDrawRectangleMixin
+    TransformationDrawRectangleMixin, TransformationDrawTextMixin
 )
 
 logger = logging.getLogger(name=__name__)
@@ -29,10 +29,6 @@ class BaseTransformationType(type):
 
 
 class BaseTransformation(metaclass=BaseTransformationType):
-    """
-    Transformation can modify the appearance of the document's page preview.
-    Some transformation available are: Rotate, zoom, resize and crop.
-    """
     _layer_transformations = {}
     _registry = {}
     arguments = ()
@@ -137,7 +133,6 @@ class BaseTransformation(metaclass=BaseTransformationType):
                             )
                         )
 
-                # Sort the transformation for each layer group.
                 layer_transformation_choices[layer].sort(
                     key=lambda x: x[1]
                 )
@@ -148,7 +143,6 @@ class BaseTransformation(metaclass=BaseTransformationType):
                 ) for layer, transformations in layer_transformation_choices.items()
             ]
 
-            # Finally sort by transformation layer group.
             return sorted(
                 result, key=lambda x: x[0]
             )
@@ -179,7 +173,6 @@ class BaseTransformation(metaclass=BaseTransformationType):
         string = force_bytes(s=self.name)
         hash_object = hashlib.sha256(string=string)
 
-        # Sort arguments for guaranteed repeatability.
         for key, value in sorted(self.kwargs.items()):
             hash_object.update(
                 force_bytes(s=key)
@@ -296,12 +289,6 @@ class TransformationCrop(BaseTransformation):
         if bottom > self.image.size[1] - 1:
             bottom = self.image.size[1] - 1
 
-        # Invert right value.
-        # Pillow uses left, top, right, bottom to define a viewport
-        # of real coordinates.
-        # We invert the right and bottom to define a viewport
-        # that can crop from the right and bottom borders without
-        # having to know the real dimensions of an image.
         right = self.image.size[0] - right
         bottom = self.image.size[1] - bottom
 
@@ -396,12 +383,6 @@ class TransformationDrawRectangle(
         if bottom > self.image.size[1] - 1:
             bottom = self.image.size[1] - 1
 
-        # Invert right value.
-        # Pillow uses left, top,right, bottom to define a viewport
-        # of real coordinates.
-        # We invert the right and bottom to define a viewport
-        # that can crop from the right and bottom borders without
-        # having to know the real dimensions of an image.
         right = self.image.size[0] - right
         bottom = self.image.size[1] - bottom
 
@@ -416,7 +397,7 @@ class TransformationDrawRectangle(
         self.top = top
         self.right = right
 
-        return super()._execute_on(self, *args, **kwargs)
+        return super()._execute_on(*args, **kwargs)
 
 
 class TransformationDrawRectanglePercent(
@@ -502,12 +483,6 @@ class TransformationDrawRectanglePercent(
         left = left / 100.0 * self.image.size[0]
         top = top / 100.0 * self.image.size[1]
 
-        # Invert right value.
-        # Pillow uses left, top, right, bottom to define a viewport
-        # of real coordinates.
-        # We invert the right and bottom to define a viewport
-        # that can crop from the right and bottom borders without
-        # having to know the real dimensions of an image.
 
         right = self.image.size[0] - (
             right / 100.0 * self.image.size[0]
@@ -521,7 +496,23 @@ class TransformationDrawRectanglePercent(
         self.top = top
         self.right = right
 
-        return super()._execute_on(self, *args, **kwargs)
+        return super()._execute_on(*args, **kwargs)
+
+
+class TransformationDrawText(
+    ImagePasteCoordinatesAbsoluteTransformationMixin,
+    TransformationDrawTextMixin, BaseTransformation
+):
+    label = _(message='Draw text (absolute coordinates)')
+    name = 'draw_text'
+
+
+class TransformationDrawTextPercent(
+    ImagePasteCoordinatesPercentTransformationMixin,
+    TransformationDrawTextMixin, BaseTransformation
+):
+    label = _(message='Draw text (percent coordinates)')
+    name = 'draw_text_percent'
 
 
 class TransformationFlip(BaseTransformation):
@@ -636,12 +627,17 @@ class TransformationResize(BaseTransformation):
         super().execute_on(*args, **kwargs)
 
         width = int(self.width)
+        if width < 1:
+            width = 1
+
         height = int(
             self.height or (1.0 * width / self.aspect)
         )
+        if height < 1:
+            height = 1
 
         factor = 1
-        while self.image.size[0] / factor > 2 * width and self.image.size[1] * 2 / factor > 2 * height:
+        while self.image.size[0] / factor > 2 * width and self.image.size[1] / factor > 2 * height:
             factor *= 2
 
         if factor > 1:
@@ -801,7 +797,6 @@ class TransformationZoom(BaseTransformation):
         )
 
 
-# Decorations
 
 BaseTransformation.register(
     layer=layer_decorations, transformation=TransformationAssetPaste
@@ -821,10 +816,15 @@ BaseTransformation.register(
     transformation=TransformationDrawRectanglePercent
 )
 BaseTransformation.register(
+    layer=layer_decorations, transformation=TransformationDrawText
+)
+BaseTransformation.register(
+    layer=layer_decorations, transformation=TransformationDrawTextPercent
+)
+BaseTransformation.register(
     layer=layer_decorations, transformation=TransformationQRCodePercent
 )
 
-# Saved transformations
 
 BaseTransformation.register(
     layer=layer_saved_transformations, transformation=TransformationCrop

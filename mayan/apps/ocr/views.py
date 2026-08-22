@@ -71,6 +71,7 @@ class DocumentTypeOCRSettingsEditView(
 
 class DocumentTypeOCRSubmitView(FormView):
     extra_context = {
+        'submit_label': _(message='Submit'),
         'title': _(message='Submit all documents of a type for OCR')
     }
     form_class = DocumentTypeFilteredSelectForm
@@ -203,6 +204,7 @@ class DocumentVersionOCRSubmitView(MultipleObjectConfirmActionView):
         queryset = self.object_list
 
         result = {
+            'submit_label': _(message='Submit'),
             'title': ngettext(
                 singular='Submit the selected document version to the OCR queue?',
                 plural='Submit the selected document versions to the OCR queue?',
