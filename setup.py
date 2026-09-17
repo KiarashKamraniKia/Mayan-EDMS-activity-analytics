@@ -66,7 +66,7 @@ Whoosh==2.7.4
 boto3==1.40.24
 celery==5.6.3
 dateparser==1.4.0
-django==5.2.16
+django==5.2.17
 django-activity-stream==2.0.0
 django-auth-ldap==5.3.0
 django-axes[ipware]==8.3.1
@@ -79,7 +79,7 @@ django-qsstats-magic==1.1.0
 django-solo==2.5.1
 django-storages==1.14.6
 django-widget-tweaks==1.5.1
-djangorestframework==3.17.1
+djangorestframework==3.17.2
 djangorestframework-recursive==0.1.2
 drf-spectacular==0.30.0
 drf-spectacular-sidecar==2026.7.1
@@ -147,7 +147,7 @@ setup(
     project_urls={
         'Documentation': 'https://docs.mayan-edms.com/',
         'Forum': 'https://forum.mayan-edms.com/',
-        'Changelog': 'https://gitlab.com/mayan-edms/mayan-edms/-/blob/master/HISTORY.rst',
+        'Changelog': 'https://docs.mayan-edms.com/chapters/releases/index.html',
         'Bug Tracker': 'https://gitlab.com/mayan-edms/mayan-edms/-/issues',
         'Source Code': 'https://gitlab.com/mayan-edms/mayan-edms',
         'Support': 'https://www.mayan-edms.com/support/'

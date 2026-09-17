@@ -1,6 +1,8 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.converter.classes import ThumbnailClickBehaviorBackend
+from mayan.apps.converter.thumbnail_click_behaviors import (
+    ThumbnailClickBehaviorBackend
+)
 from mayan.apps.smart_settings.setting_clusters import setting_cluster
 
 from .literals import (

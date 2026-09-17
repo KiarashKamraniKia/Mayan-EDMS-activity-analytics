@@ -2,14 +2,33 @@ from django.utils.translation import gettext_lazy as _
 
 
 class DependencyEnvironment:
+    _registry = {}
+
+    @classmethod
+    def get(cls, name):
+        return cls._registry[name]
+
+    @classmethod
+    def get_all(cls):
+        environment_list = cls._registry.values()
+
+        return sorted(
+            environment_list, key=lambda environment: environment.name
+        )
+
     def __init__(self, label, name, help_text=None, mark_missing=False):
         self.label = label
         self.help_text = help_text
         self.name = name
         self.mark_missing = mark_missing
 
+        self.__class__._registry[name] = self
+
     def __str__(self):
         return str(self.label)
+
+    def get_requirements_filename(self):
+        return '{}.txt'.format(self.name)
 
 
 environment_build = DependencyEnvironment(

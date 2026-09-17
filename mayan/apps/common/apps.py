@@ -21,7 +21,7 @@ from .initializers import (
 )
 from .links import (
     link_about, link_knowledge_base, link_license, link_separator_information,
-    link_setup, link_support, link_tools
+    link_setup, link_support, link_tools, link_trademark_policy
 )
 from .menus import menu_system, menu_topbar, menu_user
 from .settings import setting_home_view
@@ -98,6 +98,9 @@ class CommonApp(MayanAppConfig):
                 link_tools, link_setup, link_separator_information,
                 link_knowledge_base, link_support, link_about, link_license
             )
+        )
+        menu_system.bind_links(
+            links=(link_trademark_policy,), position=8
         )
         menu_topbar.bind_links(
             links=(menu_system, menu_user),

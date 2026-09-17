@@ -349,6 +349,8 @@ def get_related_field(model, related_field_name):
 def group_iterator(iterable, group_size=None):
     group_size = group_size or 1
 
+    iterable = iter(iterable)
+
     if group_size > 1:
         while True:
             chunk = tuple(

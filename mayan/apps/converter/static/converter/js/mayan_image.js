@@ -159,12 +159,31 @@ class MayanImage {
         this.requestRun = async function (job) {
             self.requestActiveSet.add(job);
 
+            const navigation = mayanApp.partialNavigationApp;
+
             try {
+                 
+                const headers = {
+                    'X-Requested-With': 'XMLHttpRequest'
+                };
+
+                if (navigation && navigation.lastLocation) {
+                    headers[navigation.headerNames.alternateReferer] = (
+                        navigation.lastLocation
+                    );
+                }
+
                 const response = await fetch(
                     job.url, {
-                        credentials: 'same-origin', signal: job.controller.signal
+                        credentials: 'same-origin', headers: headers,
+                        signal: job.controller.signal
                     }
                 );
+
+                 
+                if (navigation && navigation.doResponseRedirect(response)) {
+                    return;
+                }
 
                 const statusDeferred = (
                     response.status === HTTP_STATUS_TOO_MANY_REQUESTS ||

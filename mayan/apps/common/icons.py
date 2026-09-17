@@ -37,8 +37,14 @@ icon_setup = Icon(
     driver_name='fontawesome', symbol='gear'
 )
 icon_source_code = Icon(driver_name='fontawesome', symbol='code-branch')
+icon_trademark_policy = Icon(
+    driver_name='fontawesome', symbol='registered'
+)
 icon_store = Icon(driver_name='fontawesome', symbol='shirt')
 icon_support = Icon(driver_name='fontawesome', symbol='handshake')
 icon_tools = Icon(
     driver_name='fontawesome', symbol='wrench'
+)
+icon_website = Icon(
+    driver_name='fontawesome', symbol='house'
 )

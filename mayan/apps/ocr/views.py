@@ -159,7 +159,7 @@ class DocumentVersionOCRContentView(SingleObjectDetailView):
 
     def dispatch(self, request, *args, **kwargs):
         result = super().dispatch(
-            request, *args, **kwargs
+            request=request, *args, **kwargs
         )
         self.object.document.add_as_recent_document_for_user(
             user=request.user
@@ -230,7 +230,7 @@ class DocumentVersionPageOCRContentDetailView(SingleObjectDetailView):
 
     def dispatch(self, request, *args, **kwargs):
         result = super().dispatch(
-            request, *args, **kwargs
+            request=request, *args, **kwargs
         )
         self.object.document_version.document.add_as_recent_document_for_user(
             user=request.user
@@ -258,7 +258,7 @@ class DocumentVersionPageOCRContentEditView(
 
     def dispatch(self, request, *args, **kwargs):
         result = super().dispatch(
-            request, *args, **kwargs
+            request=request, *args, **kwargs
         )
         self.external_object.document_version.document.add_as_recent_document_for_user(
             user=request.user

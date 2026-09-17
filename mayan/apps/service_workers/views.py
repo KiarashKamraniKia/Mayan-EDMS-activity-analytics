@@ -1,7 +1,9 @@
 import json
 
+from django.contrib.auth.decorators import login_not_required
 from django.template.loader import render_to_string
 from django.urls import reverse
+from django.utils.decorators import method_decorator
 from django.views.generic import TemplateView
 
 import mayan
@@ -12,6 +14,7 @@ from .settings import (
 from .view_mixins import ViewMixinServiceWorkerStylesheet
 
 
+@method_decorator(login_not_required, name='dispatch')
 class ServiceWorkerGatewayErrorView(
     ViewMixinServiceWorkerStylesheet, TemplateView
 ):
@@ -38,6 +41,7 @@ class ServiceWorkerGatewayErrorView(
         return context
 
 
+@method_decorator(login_not_required, name='dispatch')
 class ServiceWorkerScriptView(
     ViewMixinServiceWorkerStylesheet, TemplateView
 ):

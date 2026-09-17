@@ -11,12 +11,25 @@ from mayan.apps.common.utils import get_class_full_name
 
 from .django_authentication_backends import DjangoAuthenticationBackendOIDC
 from .forms import AuthenticationFormOIDC
+from .middleware.session_refresh import SessionRefreshMayan
+from .middleware.session_renewal import SessionRenewalRedirect
+from .setting_validators import validation_function_check_renewal_interval
 from .literals import (
     DEFAULT_HTTP_TIMEOUT, DEFAULT_OIDC_OP_AUTHORIZATION_ENDPOINT,
     DEFAULT_OIDC_OP_JWKS_ENDPOINT, DEFAULT_OIDC_OP_TOKEN_ENDPOINT,
-    DEFAULT_OIDC_OP_USER_ENDPOINT, DEFAULT_OIDC_RP_CLIENT_ID,
+    DEFAULT_OIDC_OP_USER_ENDPOINT,
+    DEFAULT_OIDC_RENEW_ID_TOKEN_EXPIRY_SECONDS, DEFAULT_OIDC_RP_CLIENT_ID,
     DEFAULT_OIDC_RP_CLIENT_SECRET, DEFAULT_OIDC_RP_SIGN_ALGO,
-    DEFAULT_OIDC_USERNAME_ALGO
+    DEFAULT_OIDC_USERNAME_ALGO, PATH_AUTHENTICATION_CLASS_OIDC
+)
+
+MIDDLEWARE_SESSION_REFRESH = get_class_full_name(klass=SessionRefreshMayan)
+MIDDLEWARE_SESSION_RENEWAL_REDIRECT = get_class_full_name(
+    klass=SessionRenewalRedirect
+)
+
+MIDDLEWARE_LIST = (
+    MIDDLEWARE_SESSION_RENEWAL_REDIRECT, MIDDLEWARE_SESSION_REFRESH
 )
 
 
@@ -65,6 +78,12 @@ class AuthenticationBackendOIDC(AuthenticationBackend):
             name='OIDC_OP_USER_ENDPOINT'
         )
         upstream_setting_collection.do_setting_add(
+            data_type=float,
+            default=DEFAULT_OIDC_RENEW_ID_TOKEN_EXPIRY_SECONDS,
+            name='OIDC_RENEW_ID_TOKEN_EXPIRY_SECONDS',
+            validation_function=validation_function_check_renewal_interval
+        )
+        upstream_setting_collection.do_setting_add(
             default=DEFAULT_OIDC_RP_CLIENT_ID,
             name='OIDC_RP_CLIENT_ID'
         )
@@ -90,26 +109,42 @@ class AuthenticationBackendOIDC(AuthenticationBackend):
 
         settings.MIDDLEWARE = tuple(
             [
-                item for item in settings.MIDDLEWARE if item != 'mozilla_django_oidc.middleware.SessionRefresh'
+                item for item in settings.MIDDLEWARE
+                if item not in MIDDLEWARE_LIST
             ]
         )
 
         settings.REST_FRAMEWORK['DEFAULT_AUTHENTICATION_CLASSES'] = tuple(
             [
-                item for item in settings.REST_FRAMEWORK['DEFAULT_AUTHENTICATION_CLASSES'] if item != 'mozilla_django_oidc.contrib.drf.OIDCAuthentication'
+                item for item in settings.REST_FRAMEWORK[
+                    'DEFAULT_AUTHENTICATION_CLASSES'
+                ] if item != PATH_AUTHENTICATION_CLASS_OIDC
             ]
         )
 
     def do_initialize(self):
         super().do_initialize()
 
-        settings.MIDDLEWARE += (
-            'mozilla_django_oidc.middleware.SessionRefresh',
+        middleware_list = tuple(
+            [
+                item for item in settings.MIDDLEWARE
+                if item not in MIDDLEWARE_LIST
+            ]
+        )
+
+        settings.MIDDLEWARE = middleware_list + MIDDLEWARE_LIST
+
+        authentication_class_list = tuple(
+            [
+                item for item in settings.REST_FRAMEWORK[
+                    'DEFAULT_AUTHENTICATION_CLASSES'
+                ] if item != PATH_AUTHENTICATION_CLASS_OIDC
+            ]
         )
 
         settings.REST_FRAMEWORK['DEFAULT_AUTHENTICATION_CLASSES'] = (
-            'mozilla_django_oidc.contrib.drf.OIDCAuthentication',
-        ) + settings.REST_FRAMEWORK['DEFAULT_AUTHENTICATION_CLASSES']
+            PATH_AUTHENTICATION_CLASS_OIDC,
+        ) + authentication_class_list
 
     def get_context_data(self):
         return {

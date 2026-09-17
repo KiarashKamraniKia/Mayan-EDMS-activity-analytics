@@ -144,8 +144,8 @@ class ACLListView(
             'no_results_text': TEXT_ACL_NO_RESULTS,
             'object': self.external_object,
             'title': _(
-                message='Access control lists for: %s' % self.external_object
-            )
+                message='Access control lists for: %s'
+            ) % self.external_object
         }
 
     def get_source_queryset(self):

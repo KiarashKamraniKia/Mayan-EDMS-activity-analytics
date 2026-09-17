@@ -12,7 +12,8 @@ from mayan.apps.common.menus import (
 from mayan.apps.events.classes import EventModelRegistry, ModelEventType
 from mayan.apps.navigation.source_columns import SourceColumn
 
-from .classes import AppImageErrorImage, ThumbnailClickBehaviorBackend
+from .classes import AppImageErrorImage
+from .thumbnail_click_behaviors import ThumbnailClickBehaviorBackend
 from .events import event_asset_edited
 from .handlers import handler_create_asset_cache
 from .links import (

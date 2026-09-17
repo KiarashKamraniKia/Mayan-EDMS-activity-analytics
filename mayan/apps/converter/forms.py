@@ -80,7 +80,7 @@ class LayerTransformationForm(forms.ModelForm):
     def clean(self):
         if self.transformation_template_name:
             try:
-                yaml_load(
+                arguments = yaml_load(
                     stream=self.cleaned_data['arguments']
                 )
             except yaml.YAMLError:
@@ -89,11 +89,20 @@ class LayerTransformationForm(forms.ModelForm):
                         message='"%s" not a valid entry.'
                     ) % self.cleaned_data['arguments']
                 )
+
+            if isinstance(arguments, dict):
+                self.get_transformation_class().validate_arguments(
+                    arguments=arguments
+                )
         else:
             arguments = {}
 
             for argument in self.get_transformation_class().get_arguments():
                 if self.cleaned_data[argument] is not None:
                     arguments[argument] = self.cleaned_data[argument]
+
+            self.get_transformation_class().validate_arguments(
+                arguments=arguments
+            )
 
             self.cleaned_data['arguments'] = yaml_dump(data=arguments)

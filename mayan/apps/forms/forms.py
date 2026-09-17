@@ -23,6 +23,7 @@ from .form_widgets import (
     DisableableSelectWidget, PlainWidget, RadioSelect, Select, SelectMultiple,
     TextAreaDiv, TextInput
 )
+from .literals import DEFAULT_CHOICE_FORM_SELECTION_SIZE
 
 
 class Form(FormMixinFieldsets, DjangoForm):
@@ -66,7 +67,8 @@ class ChoiceForm(Form):
         self.fields['selection'].widget.disabled_choices = disabled_choices
         self.fields['selection'].widget.attrs.update(
             {
-                'class': 'input-hotkey-double-click'
+                'class': 'input-hotkey-double-click',
+                'size': DEFAULT_CHOICE_FORM_SELECTION_SIZE
             }
         )
 

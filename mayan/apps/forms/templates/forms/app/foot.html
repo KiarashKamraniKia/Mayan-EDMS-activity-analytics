@@ -8,6 +8,8 @@
 
 <script src="{% static 'mayan_forms/node_modules/dropzone/dist/dropzone.js' %}" type="text/javascript"></script>
 
+<script src="{% static 'mayan_forms/js/mayan_form_widget_initializer.js' %}" type="text/javascript"></script>
+
 <script src="{% static 'mayan_forms/js/mayan_color.js' %}" type="text/javascript"></script>
 <script src="{% static 'mayan_forms/js/mayan_color_picker.js' %}" type="text/javascript"></script>
 
@@ -16,22 +18,11 @@
 
     /*
      * The color widgets of a form are given their behavior when the form
-     * arrives. Content reaches the page as a fragment loaded into the
-     * content area, and as a modal appended to the body, which is a
-     * different element and raises no event of the content area. Both are
-     * covered here; initialization skips the widgets that already have
-     * their behavior, so covering both costs nothing.
+     * arrives, by whichever route it arrives. Which routes those are is
+     * decided by `MayanFormWidgetInitializer` and not here.
      */
 
-    $('#ajax-content').on('updated', function (event) {
-        MayanColorPicker.doInitializeAll();
-    });
-
-    $(document).on('shown.bs.modal', function (event) {
-        MayanColorPicker.doInitializeAll();
-    });
-
-    jQuery(document).ready(function () {
+    MayanFormWidgetInitializer.doInitializerAdd(function () {
         MayanColorPicker.doInitializeAll();
     });
 </script>
@@ -176,7 +167,7 @@
         return errorMessage;
     }
 
-    $('#ajax-content').on('updated', function (event) {
+    MayanFormWidgetInitializer.doInitializerAdd(function () {
         const $dropzone = $('.dropzone');
         const $dropzoneForm = $dropzone.parents('form')[0];
 
@@ -283,6 +274,9 @@
             });
         }
     });
+
+    // Every widget has registered by this point.
+    MayanFormWidgetInitializer.doBind();
 </script>
 
 <script type="text/x-template" id="previewTemplate">

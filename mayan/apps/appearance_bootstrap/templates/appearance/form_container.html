@@ -10,7 +10,10 @@
         {% endwith %}
     {% endif %}
 
-    <div class="row">
+    
+    
+    
+    <div class="row {% block subtemplates_row_classes %}{% endblock %}">
         {% for subtemplate in subtemplates_list %}
             {% if subtemplate.column_class %}
                 <div class="{{ subtemplate.column_class }}">

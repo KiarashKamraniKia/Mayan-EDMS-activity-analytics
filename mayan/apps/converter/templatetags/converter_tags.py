@@ -8,7 +8,8 @@ from mayan.apps.rest_api.settings import (
     setting_throttling_enabled, setting_throttling_rate_user
 )
 
-from ..classes import AppImageErrorImage, ThumbnailClickBehaviorBackend
+from ..classes import AppImageErrorImage
+from ..thumbnail_click_behaviors import ThumbnailClickBehaviorBackend
 from ..literals import (
     DEFAULT_THUMBNAIL_CLICK_BEHAVIOR, IMAGE_CAROUSEL_REQUEST_RATE_FACTOR
 )

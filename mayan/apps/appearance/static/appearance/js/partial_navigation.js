@@ -16,6 +16,8 @@ class PartialNavigation {
 
         
         this.lastLocation = null;
+         
+        this.responseRedirectPending = false;
 
         
         
@@ -117,6 +119,55 @@ class PartialNavigation {
         this.setupAjaxForm();
         this.setupAjaxRefreshButton();
         this.setupCommunicationErrorRetry();
+    }
+
+    getResponseHeader (response, headerName) {
+         
+        if (!response) {
+            return null;
+        }
+
+        if (response.headers && response.headers.get) {
+            return response.headers.get(headerName);
+        }
+
+        if (response.getResponseHeader) {
+            return response.getResponseHeader(headerName);
+        }
+
+        return null;
+    }
+
+    getResponseRedirectURL (response) {
+         
+        return this.getResponseHeader(
+            response, this.headerNames.redirectLocation
+        );
+    }
+
+    doResponseRedirect (response) {
+         
+        const newLocation = this.getResponseRedirectURL(response);
+
+        if (!newLocation) {
+            return null;
+        }
+
+        if (this.responseRedirectPending) {
+             
+            return newLocation;
+        }
+
+        if (this.getResponseHeader(response, this.headerNames.pageReload)) {
+            this.responseRedirectPending = true;
+            window.location = newLocation;
+
+            return newLocation;
+        }
+
+        this.setLocation(newLocation);
+
+        return newLocation;
     }
 
     registerErrorHandler (handler) {
@@ -353,18 +404,9 @@ class PartialNavigation {
             
             mimeType: 'text/html; charset=utf-8',
             success: function (data, textStatus, response) {
-                const newLocation = response.getResponseHeader(
-                    app.headerNames.redirectLocation
-                );
+                const newLocation = app.doResponseRedirect(response);
 
                 if (newLocation) {
-                    
-                    if (response.getResponseHeader(app.headerNames.pageReload)) {
-                        window.location = newLocation;
-                        return;
-                    }
-
-                    app.setLocation(newLocation);
                     app.lastLocation = newLocation;
                 } else {
                     if (response.getResponseHeader('Content-Disposition')) {
@@ -656,19 +698,9 @@ class PartialNavigation {
             
             mimeType: 'text/html; charset=utf-8',
             success: function(data, textStatus, request) {
-                const newLocation = request.getResponseHeader(
-                    app.headerNames.redirectLocation
-                );
+                const newLocation = app.doResponseRedirect(request);
 
-                if (newLocation) {
-                    
-                    if (request.getResponseHeader(app.headerNames.pageReload)) {
-                        window.location = newLocation;
-                        return;
-                    }
-
-                    app.setLocation(newLocation);
-                } else {
+                if (!newLocation) {
                     const stringLocation = `${lastAjaxFormData.url.pathname}${lastAjaxFormData.url.search}`;
                     const urlCurrent = app.getLocationURL(stringLocation);
 
@@ -694,14 +726,29 @@ class PartialNavigation {
 
                 clearTimeout(app.ajaxRefreshButtonTimer);
                 app.setLocation(window.location.hash.substring(1));
-                $this.addClass('fa-spin');
-                $this.css(
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                const $icon = $this.find('.mayan-icon');
+
+                $icon.addClass('fa-spin');
+                $icon.css(
                     'animation-duration',
                     `${app.ajaxRefreshButtonAnimationSpeed}ms`
                 );
 
                 app.ajaxRefreshButtonTimer = setTimeout(function () {
-                    $this.removeClass('fa-spin');
+                    $icon.removeClass('fa-spin');
                     app.ajaxRefreshButtonEnabled = true;
                 }, app.ajaxRefreshButtonAnimationSpeed);
             }

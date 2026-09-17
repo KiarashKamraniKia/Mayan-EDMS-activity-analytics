@@ -40,7 +40,7 @@ class DocumentVersionPageOCRContentEditForm(forms.ModelForm):
     content = form_fields.CharField(
         label=_(message='Contents'),
         widget=form_widgets.Textarea(
-            attrs={}
+            attrs={'class': 'scrollable'}
         )
     )
 

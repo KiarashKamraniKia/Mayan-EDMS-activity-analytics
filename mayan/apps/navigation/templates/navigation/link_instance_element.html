@@ -8,7 +8,7 @@
     <a
         class="{{ link.html_extra_classes }} {% if link_classes %} {{ link_classes }} {% if 'dangerous' in link.tags %} text-danger {% endif %} {% else %} btn {% if 'dangerous' in link.tags %} btn-danger {% else %} btn-primary {% endif %} btn-sm py-0 px-1 fs-7 {% endif %} {% if link.active %} {{ link_class_active }} {% endif %} {% if 'new_window' in link.tags %} new_window {% endif %}"
         {% for key,value in link.html_data.items %}
-            data-{{ key }}={{ value }}
+            data-{{ key }}="{{ value }}"
         {% endfor %}
     {% if link.url %}href="{{ link.url }}"{% endif %}
     {% if link.title %}title="{{ link.title }}"{% endif %}
@@ -23,7 +23,7 @@
         <button
             class="{{ link.html_extra_classes }} {% if link_classes %}{{ link_classes }} {% if 'dangerous' in link.tags %}text-danger{% endif %} {% else %}btn {% if 'dangerous' in link.tags %}btn-danger{% else %}btn-primary{% endif %} btn-sm fs-7 py-0 px-1 {% endif %} {% if link.active %}{{ link_class_active }}{% endif %}"
             {% for key,value in link.html_data.items %}
-                data-{{ key }}={{ value }}
+                data-{{ key }}="{{ value }}"
             {% endfor %}
             {% if link.title %}title="{{ link.title }}"{% endif %}
             type="submit"

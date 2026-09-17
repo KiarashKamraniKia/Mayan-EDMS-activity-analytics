@@ -34,7 +34,7 @@ from mayan.apps.logging.classes import ErrorLog, ErrorLogDomain
 from mayan.apps.navigation.column_widgets import SourceColumnDateTimeWidget
 from mayan.apps.navigation.source_columns import SourceColumn
 from mayan.apps.rest_api.fields import DynamicSerializerField
-from mayan.apps.templating.classes import AJAXTemplate, ModelTemplating
+from mayan.apps.templating.classes import ModelTemplating
 from mayan.apps.user_management.dashboards import dashboard_user
 
 from .classes import DocumentFileAction, DocumentVersionModification
@@ -828,11 +828,6 @@ class DocumentsApp(MayanAppConfig):
         )
 
     def ready_documents(self):
-        AJAXTemplate(
-            name='invalid_document',
-            template_name='documents/invalid_document.html'
-        )
-
         Document = self.get_model(model_name='Document')
 
         DynamicSerializerField.add_serializer(

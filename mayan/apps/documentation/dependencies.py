@@ -19,5 +19,9 @@ PythonDependency(
 )
 PythonDependency(
     environments=(environment_documentation,), module=__name__,
+    name='sphinxcontrib-mermaid', version_string='==2.1.0'
+)
+PythonDependency(
+    environments=(environment_documentation,), module=__name__,
     name='sphinxcontrib-spelling', version_string='==8.0.2'
 )

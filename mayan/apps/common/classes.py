@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.contrib import contenttypes
+from django.core.exceptions import ImproperlyConfigured
 from django.db import models
 
 import mptt
@@ -348,14 +349,52 @@ class PropertyHelper:
 
 
 class UpstreamSetting:
-    def __init__(self, name, default):
+    def __init__(
+        self, name, default, data_type=None, validation_function=None
+    ):
+        self.data_type = data_type
         self.default = default
         self.name = name
         self.upstream_setting_collection = None
+        self.validation_function = validation_function
 
     def do_kwargs_capture(self, **kwargs):
-        value = kwargs.pop(self.name.lower(), self.default)
+        value_raw = kwargs.pop(self.name.lower(), self.default)
+        value = self.do_value_validate(value=value_raw)
+
         setattr(settings, self.name, value)
+
+    def do_value_validate(self, value):
+        value_coerced = self.get_value_coerced(value=value)
+
+        if self.validation_function:
+            return self.validation_function(
+                raw_value=value_coerced, setting=self
+            )
+
+        return value_coerced
+
+    def get_value_coerced(self, value):
+        if self.data_type is None or value is None:
+            return value
+
+        if isinstance(value, bool) and self.data_type is not bool:
+            raise ImproperlyConfigured(
+                'Setting `{}` must be a {}, not a boolean.'.format(
+                    self.name, self.data_type.__name__
+                )
+            )
+
+        try:
+            value_coerced = self.data_type(value)
+        except (TypeError, ValueError) as exception:
+            raise ImproperlyConfigured(
+                'Unable to read setting `{}` as a {}; value is `{}`.'.format(
+                    self.name, self.data_type.__name__, value
+                )
+            ) from exception
+
+        return value_coerced
 
 
 class UpstreamSettingCollection:

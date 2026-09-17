@@ -23,7 +23,7 @@ class MessageDetailForm(forms.Form):
         label=_(message='Body'),
         widget=form_widgets.TextAreaDiv(
             attrs={
-                'class': 'views-text-wrap'
+                'class': 'scrollable views-text-wrap'
             }
         )
     )

@@ -11,11 +11,15 @@
 {% block title %}{% trans 'About' %}{% endblock %}
 
 {% block content %}
+    {% common_project_information '__author__' as project_author %}
     {% common_project_information '__build_string__' as project_build_number %}
     {% common_project_information '__copyright__' as project_copyright %}
+    {% common_project_information '__copyright_registration__' as project_copyright_registration %}
     {% common_project_information '__description__' as project_description %}
     {% common_project_information '__license__' as license_information %}
     {% common_project_information '__title__' as project_title %}
+    {% common_project_information '__trademark_registration_design__' as project_trademark_registration_design %}
+    {% common_project_information '__trademark_registration_word__' as project_trademark_registration_word %}
     {% common_project_information '__version__' as project_version %}
     {% common_project_information '__website__' as project_website %}
 
@@ -47,6 +51,19 @@
 
                 <p class="text-center">
                     {% trans 'Released under the license:' %} {% trans license_information %}
+                </p>
+
+                
+                
+                
+                <p class="text-center small">
+                    {% blocktrans %}{{ project_title }}&reg; and the {{ project_title }} logo are registered trademarks of {{ project_author }}.{% endblocktrans %}
+                </p>
+
+                <p class="text-center small">
+                    {% blocktrans with project_trademark_registration_word as registration %}Word mark: U.S. Reg. No. {{ registration }}{% endblocktrans %}<br />
+                    {% blocktrans with project_trademark_registration_design as registration %}Design mark: U.S. Reg. No. {{ registration }}{% endblocktrans %}<br />
+                    {% blocktrans with project_copyright_registration as registration %}Software copyright: U.S. Reg. No. {{ registration }}{% endblocktrans %}
                 </p>
 
                 {% appearance_app_templates template_name='about' %}
@@ -103,6 +120,24 @@
                         </div>
                         <div class="flex-grow-1 ms-3">
                             {% blocktrans with link_documentation.url as link_documentation_url %}For questions check the <a class="new_window" href="{{ link_documentation_url }}">Documentation</a>.{% endblocktrans %}
+                        </div>
+                    </li>
+
+                    <li class="d-flex bg-body p-2 mb-1">
+                        <div class="flex-shrink-0">
+                            {% icons_get_icon 'mayan.apps.common.icons.icon_website' %}
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            {% blocktrans %}More more details check the <a class="new_window" href="{{ project_website }}">Website</a>.{% endblocktrans %}
+                        </div>
+                    </li>
+
+                    <li class="d-flex bg-body p-2 mb-1">
+                        <div class="flex-shrink-0">
+                            {% icons_get_icon 'mayan.apps.common.icons.icon_trademark_policy' %}
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            {% url 'common:trademark_policy_view' as url_trademark_policy %}{% blocktrans with url_trademark_policy=url_trademark_policy %}What the marks above permit is set out in the <a href="{{ url_trademark_policy }}">Trademark policy</a>.{% endblocktrans %}
                         </div>
                     </li>
 

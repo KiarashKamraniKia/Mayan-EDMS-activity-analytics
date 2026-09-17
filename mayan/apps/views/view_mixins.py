@@ -31,7 +31,9 @@ from .models import UserConfirmView, UserViewMode
 from .settings import (
     setting_object_list_display_limit, setting_paging_argument
 )
-from .utils import get_request_referer, is_url_query_positive
+from .utils import (
+    get_request_referer, get_safe_redirect_url, is_url_query_positive
+)
 
 
 class ContentTypeViewMixin:
@@ -149,9 +151,9 @@ class ExternalObjectBaseMixin:
 
 
 class ExternalObjectViewMixin(ExternalObjectBaseMixin):
-    def dispatch(self, *args, **kwargs):
+    def dispatch(self, request, *args, **kwargs):
         self.external_object = self.get_external_object()
-        return super().dispatch(*args, **kwargs)
+        return super().dispatch(request=request, *args, **kwargs)
 
 
 class ExternalContentTypeObjectViewMixin(
@@ -628,37 +630,42 @@ class RedirectionViewMixin:
     def get_post_action_redirect(self):
         return self.post_action_redirect
 
+    def get_destination_url(self, argument_name, view_url):
+        url_home = reverse(setting_home_view.value)
+
+        url_referer = get_safe_redirect_url(
+            default_url=url_home, request=self.request,
+            url=get_request_referer(default=url_home, request=self.request)
+        )
+
+        url_view = get_safe_redirect_url(
+            default_url=url_referer, request=self.request, url=view_url
+        )
+
+        url_requested = self.request.POST.get(
+            argument_name, self.request.GET.get(argument_name, None)
+        )
+
+        return get_safe_redirect_url(
+            default_url=url_view, request=self.request, url=url_requested
+        )
+
     def get_next_url(self):
         if self.next_url:
             return self.next_url
         else:
-            post_action_redirect = self.get_post_action_redirect()
-
-            request_referer = get_request_referer(
-                default=reverse(setting_home_view.value), request=self.request
-            )
-
-            return self.request.POST.get(
-                'next', self.request.GET.get(
-                    'next', post_action_redirect if post_action_redirect else request_referer
-                )
+            view_url = self.get_post_action_redirect()
+            return self.get_destination_url(
+                argument_name='next', view_url=view_url
             )
 
     def get_previous_url(self):
         if self.previous_url:
             return self.previous_url
         else:
-            action_cancel_redirect = self.get_action_cancel_redirect()
-
-            request_referer = get_request_referer(
-                default=reverse(setting_home_view.value),
-                request=self.request
-            )
-
-            return self.request.POST.get(
-                'previous', self.request.GET.get(
-                    'previous', action_cancel_redirect if action_cancel_redirect else request_referer
-                )
+            view_url = self.get_action_cancel_redirect()
+            return self.get_destination_url(
+                argument_name='previous', view_url=view_url
             )
 
     def get_success_url(self):
@@ -667,7 +674,7 @@ class RedirectionViewMixin:
 
 class RedirectWithPageReloadViewMixin:
     def dispatch(self, request, *args, **kwargs):
-        response = super().dispatch(request, *args, **kwargs)
+        response = super().dispatch(request=request, *args, **kwargs)
 
         status_code = getattr(response, 'status_code', None)
 
@@ -690,7 +697,7 @@ class ViewMixinModalFragment:
         return MODAL_FRAGMENT_ENABLED and not cls.modal_fragment_disabled
 
     def dispatch(self, request, *args, **kwargs):
-        response = super().dispatch(request, *args, **kwargs)
+        response = super().dispatch(request=request, *args, **kwargs)
 
         if request.method == 'GET' and self.get_modal_fragment_capable():
             patch_vary_headers(

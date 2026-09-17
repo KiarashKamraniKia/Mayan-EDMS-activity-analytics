@@ -1,6 +1,7 @@
 from django.template import Variable
 from django.urls import resolve as django_resolve
 from django.urls.base import get_script_prefix
+from django.utils.http import url_has_allowed_host_and_scheme
 
 from .literals import (
     META_KEY_ALTERNATE_REFERER, META_KEY_REFERER, URL_QUERY_POSITIVE_VALUES
@@ -40,6 +41,22 @@ def get_request_referer(request, default=None):
         return alternate_referer
 
     return request.META.get(META_KEY_REFERER, default)
+
+
+def get_safe_redirect_url(request, url, default_url=None):
+    if not url:
+        return default_url
+
+    is_allowed = url_has_allowed_host_and_scheme(
+        allowed_hosts={
+            request.get_host()
+        }, require_https=request.is_secure(), url=url
+    )
+
+    if is_allowed:
+        return url
+
+    return default_url
 
 
 def get_request_from_context(context):

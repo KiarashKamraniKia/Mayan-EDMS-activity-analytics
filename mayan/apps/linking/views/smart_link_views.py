@@ -69,8 +69,8 @@ class DocumentResolvedSmartLinkDocumentListView(
             else:
                 messages.error(
                     message=_(
-                        message='Resolved smart link query error: %s' % exception
-                    ), request=self.request
+                        message='Resolved smart link query error: %s'
+                    ) % exception, request=self.request
                 )
 
         return queryset
@@ -94,8 +94,8 @@ class DocumentResolvedSmartLinkDocumentListView(
             else:
                 messages.error(
                     message=_(
-                        message='Resolved smart link dynamic label error: %s' % exception
-                    ), request=self.request
+                        message='Resolved smart link dynamic label error: %s'
+                    ) % exception, request=self.request
                 )
 
         title = _(

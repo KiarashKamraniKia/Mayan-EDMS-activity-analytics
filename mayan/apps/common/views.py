@@ -11,10 +11,10 @@ from mayan.apps.views.view_mixins import (
 )
 
 from .classes import ModelCopy
-from .forms import LicenseForm
+from .forms import LicenseForm, TrademarkPolicyForm
 from .icons import (
     icon_about, icon_home, icon_license, icon_object_copy, icon_setup,
-    icon_tools
+    icon_tools, icon_trademark_policy
 )
 from .menus import menu_tools, menu_setup
 from .permissions import permission_object_copy
@@ -53,6 +53,16 @@ class LicenseView(SimpleView):
     }
     template_name = 'appearance/form_container.html'
     view_icon = icon_license
+
+
+class TrademarkPolicyView(SimpleView):
+    extra_context = {
+        'form': TrademarkPolicyForm(),
+        'read_only': True,
+        'title': _(message='Trademark policy')
+    }
+    template_name = 'appearance/form_container.html'
+    view_icon = icon_trademark_policy
 
 
 class ObjectCopyView(

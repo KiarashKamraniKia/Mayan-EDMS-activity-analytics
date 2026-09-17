@@ -37,7 +37,7 @@ PythonDependency(
         ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
         (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
         SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-    ''', module=__name__, name='django', version_string='==5.2.16'
+    ''', module=__name__, name='django', version_string='==5.2.17'
 )
 PythonDependency(
     environments=(environment_production,),
@@ -128,6 +128,10 @@ PythonDependency(
         Author: Christian Theune
         License: LGPL 2.1
     ''', module=__name__, name='pycountry', version_string='==26.2.16'
+)
+PythonDependency(
+    environments=(environment_production,), module=__name__, name='Markdown',
+    version_string='==3.10.2'
 )
 PythonDependency(
     environments=(environment_production,), module=__name__, name='nh3',

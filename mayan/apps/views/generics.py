@@ -161,6 +161,7 @@ class AddRemoveView(
     MultiFormView
 ):
     form_classes = {'form_available': ChoiceForm, 'form_added': ChoiceForm}
+    template_name = 'appearance/add_remove.html'
     list_added_help_text = _(
         message='Select entries to be removed. Hold Control to select '
         'multiple entries. Once the selection is complete, click the button '

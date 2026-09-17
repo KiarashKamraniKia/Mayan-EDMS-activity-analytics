@@ -1,15 +1,15 @@
 @font-face {
-    font-family: "mayan-edms";
+    font-family: 'mayan-edms';
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/mayan-edms.ttf") format("truetype");
+    src: url('../fonts/mayan-edms.ttf') format('truetype');
 }
 
 
 .icon-mayan-edms-logo {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: "mayan-edms";
+    font-family: 'mayan-edms';
     font-size: 90%;
     font-style: normal;
     font-variant: normal;
@@ -19,18 +19,18 @@
 }
 
 .icon-mayan-edms-logo::before {
-    content: "";
+    content: "\e600";
 }
 
 @font-face {
-    font-family: "IM Fell English SC";
+    font-family: 'IM Fell English SC';
     font-style: normal;
     font-weight: normal;
     src:
-        local("IM FELL English SC"),
-        local("IM_FELL_English_SC"),
-        url("../fonts/IM_Fell_English_SC.woff") format("woff"),
-        url("../fonts/IM_Fell_English_SC.ttf") format("truetype");
+        local('IM FELL English SC'),
+        local('IM_FELL_English_SC'),
+        url('../fonts/IM_Fell_English_SC.woff') format('woff'),
+        url('../fonts/IM_Fell_English_SC.ttf') format('truetype');
 }
 
 #appearance-main-viewport {
@@ -250,6 +250,52 @@
         flex: 1 1 0;
         min-height: 0;
     }
+
+    
+    .layout-add-remove-panes {
+        flex: 1 1 0;
+        min-height: 0;
+    }
+    .layout-add-remove-panes > [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+    .layout-add-remove-panes .card {
+        flex: 1 1 auto;
+        min-height: 0;
+    }
+    .layout-add-remove-panes .card > form {
+        display: flex;
+        flex: 1 1 auto;
+        flex-direction: column;
+        min-height: 0;
+    }
+    .layout-add-remove-panes .card > form > .mb-3:has(select[multiple]) {
+        display: flex;
+        flex: 1 1 0;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    
+    .layout-add-remove-panes select[multiple] {
+        flex: 1 1 0;
+        min-height: 0;
+    }
+}
+
+
+.scrollable {
+    max-height: 60dvh;
+    overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+    .scrollable {
+        max-height: calc(100dvh - var(--mayan-navbar-height, 60px) - 180px);
+        min-height: 20rem;
+    }
 }
 
 
@@ -385,11 +431,11 @@
 }
 
 
-select[class*="select2"]:not(.select2-hidden-accessible) {
+select[class*='select2']:not(.select2-hidden-accessible) {
     height: 28px;
     visibility: hidden;
 }
 
-select[class*="select2"][multiple]:not(.select2-hidden-accessible) {
+select[class*='select2'][multiple]:not(.select2-hidden-accessible) {
     height: 32px;
 }

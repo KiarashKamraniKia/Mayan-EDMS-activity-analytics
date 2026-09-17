@@ -4,7 +4,16 @@
 
 {% trans 'Actions' as text_actions %}
 
-<button aria-expanded="false" aria-haspopup="true" class="{{ action_dropdown_classes|default:"btn btn-danger"}} btn-sm dropdown-toggle" data-bs-toggle="dropdown" title="{{ action_dropdown_label|default:text_actions }}" type="button">
+
+
+
+
+
+
+
+
+
+<button aria-expanded="false" aria-haspopup="true" class="{{ action_dropdown_classes|default:"btn btn-danger"}} btn-sm dropdown-toggle" data-bs-popper-config='{"strategy": "fixed"}' data-bs-toggle="dropdown" title="{{ action_dropdown_label|default:text_actions }}" type="button">
     {% if action_dropdown_icon %}
         {{ action_dropdown_icon }}
     {% else %}

@@ -238,15 +238,15 @@ class MayanLogoutView(LogoutView):
 
 
 class MayanPasswordChangeDoneView(PasswordChangeDoneView):
-    def dispatch(self, *args, **kwargs):
+    def dispatch(self, request, *args, **kwargs):
         messages.success(
             message=_(
                 message='Your password has been successfully changed.'
             ),
-            request=self.request
+            request=request
         )
         return redirect(
-            to=self.request.user.get_absolute_url()
+            to=request.user.get_absolute_url()
         )
 
 
@@ -261,7 +261,7 @@ class MayanPasswordChangeView(ViewIconMixin, PasswordChangeView):
     template_name = 'appearance/form_container.html'
     view_icon = icon_password_change
 
-    def dispatch(self, *args, **kwargs):
+    def dispatch(self, request, *args, **kwargs):
         if self.request.user.user_options.block_password_change:
             messages.error(
                 message=_(
@@ -273,7 +273,7 @@ class MayanPasswordChangeView(ViewIconMixin, PasswordChangeView):
                 redirect_to=reverse(viewname=setting_home_view.view)
             )
 
-        return super().dispatch(*args, **kwargs)
+        return super().dispatch(request=request, *args, **kwargs)
 
 
 class UserSetPasswordView(MultipleObjectFormActionView):
@@ -290,26 +290,47 @@ class UserSetPasswordView(MultipleObjectFormActionView):
     view_icon = icon_password_change
 
     def dispatch(self, request, *args, **kwargs):
-        result = super().dispatch(request=request, *args, **kwargs)
+        queryset_requested = self.get_queryset_requested()
 
-        queryset = self.get_queryset(
-            source_queryset=get_all_users_queryset()
+        queryset_allowed = self.get_queryset()
+        pk_list_allowed = queryset_allowed.values('pk')
+
+        queryset_excluded = queryset_requested.exclude(
+            pk__in=pk_list_allowed
         )
 
-        queryset_staff_users = queryset.filter(is_staff=True)
-        queryset_super_users = queryset.filter(is_superuser=True)
+        if queryset_excluded.exists():
+            list_username = list(
+                queryset_excluded.values_list('username', flat=True)
+            )
+            text_username = ', '.join(list_username)
 
-        if queryset_staff_users.exists() or queryset_super_users.exists():
             messages.warning(
-                message=_(
-                    message='Changing the password of staff or super user '
-                    'accounts via the user interface is not allowed. '
-                    'Use administration tools to perform this '
-                    'operation.'
-                ), request=self.request
+                message=ngettext(
+                    singular='The password of the account %(usernames)s '
+                    'was not changed. Changing the password of staff or '
+                    'super user accounts via the user interface is not '
+                    'allowed. Use administration tools to perform this '
+                    'operation.',
+                    plural='The password of the accounts %(usernames)s '
+                    'was not changed. Changing the password of staff or '
+                    'super user accounts via the user interface is not '
+                    'allowed. Use administration tools to perform this '
+                    'operation.',
+                    number=queryset_excluded.count()
+                ) % {'usernames': text_username}, request=request
             )
 
-        return result
+            queryset_included = queryset_requested.filter(
+                pk__in=pk_list_allowed
+            )
+
+            if not queryset_included.exists():
+                return HttpResponseRedirect(
+                    redirect_to=self.get_previous_url()
+                )
+
+        return super().dispatch(request=request, *args, **kwargs)
 
     def get_extra_context(self):
         queryset = self.object_list
@@ -342,6 +363,30 @@ class UserSetPasswordView(MultipleObjectFormActionView):
             return result
         else:
             raise PermissionDenied
+
+    def get_pk_list_requested(self):
+        result = []
+
+        pk = self.kwargs.get(self.pk_url_kwarg)
+
+        if pk is not None:
+            result.append(pk)
+
+        pk_list = self.get_pk_list()
+
+        if pk_list is not None:
+            result.extend(pk_list)
+
+        return result
+
+    def get_queryset_requested(self):
+        pk_list_requested = self.get_pk_list_requested()
+
+        queryset_all_users = self.get_queryset(
+            source_queryset=get_all_users_queryset()
+        )
+
+        return queryset_all_users.filter(pk__in=pk_list_requested)
 
     def object_action(self, form, instance):
         try:

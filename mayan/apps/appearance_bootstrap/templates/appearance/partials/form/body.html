@@ -17,6 +17,10 @@
     {% endfor %}
 {% endfor %}
 
+
+
+
+
 {% if form_display_mode_table %}
     {% for field in form.hidden_fields %}
         {{ field }}
@@ -43,6 +47,20 @@
                             <label class="btn btn-secondary" for="{{ option.id_for_label }}">{{ option.data.label }}</label>
                         {% endfor %}
                     </div>
+                {% elif field|widget_type == 'checkboxinput' %}
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    {{ field|add_class:"form-check-input"|add_error_class:"is-invalid" }}
+                {% elif field|widget_type == 'select' %}
+                    
+                    
+                    
+                    {{ field|add_class:"form-select"|add_error_class:"is-invalid" }}
                 {% else %}
                     {{ field|add_class:"form-control"|add_error_class:"is-invalid" }}
                 {% endif %}

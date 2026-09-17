@@ -59,6 +59,9 @@ class ClientBackendSentry(ClientBackend):
 
         logger.debug('client options: %s', sentry_instance._client.options)
 
+    def get_release(self):
+        return mayan.__build_revision__ or mayan.__version__
+
     def setup_arguments(self):
         logger.debug('raw arguments: %s', self.kwargs)
 
@@ -70,7 +73,7 @@ class ClientBackendSentry(ClientBackend):
             value=self.kwargs.get('debug', False)
         )
 
-        options['release'] = mayan.__build_string__
+        options['release'] = self.get_release()
 
         options['environment'] = self.kwargs.get('environment')
 

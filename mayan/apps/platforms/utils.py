@@ -2,8 +2,6 @@ import yaml
 
 from django.utils.html import mark_safe
 
-import mayan.literals
-
 
 class Dumper(yaml.Dumper):
     def increase_indent(self, flow=False, *args, **kwargs):
@@ -93,6 +91,8 @@ def load_env_file(*args, **kwargs):
 
 
 def load_literals():
+    import mayan.literals
+
     result = {}
 
     for key, value in vars(mayan.literals).items():

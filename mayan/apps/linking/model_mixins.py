@@ -38,10 +38,8 @@ class SmartLinkBusinessLogicMixin:
                 )
             except Exception as exception:
                 return _(
-                    message='Error generating dynamic label; %s' % str(
-                        exception
-                    )
-                )
+                    message='Error generating dynamic label; %s'
+                ) % exception
         else:
             return None
 

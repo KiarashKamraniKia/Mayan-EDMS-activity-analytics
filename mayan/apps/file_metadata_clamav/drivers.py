@@ -48,7 +48,7 @@ class ClamScanDriverMixin:
         if timeout_clamscan is None:
             timeout_clamscan = DEFAULT_TIMEOUT_CLAMSCAN
 
-        self.timeout_clamscan = timeout_clamscan
+        self.timeout_clamscan = int(timeout_clamscan)
 
         argument_list = self._get_argument_list(
             arguments_clamscan=arguments_clamscan

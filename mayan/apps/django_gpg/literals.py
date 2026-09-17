@@ -7,30 +7,19 @@ if platform.system() in ('FreeBSD', 'Darwin', 'OpenBSD'):
 else:
     DEFAULT_GPG_PATH = '/usr/bin/gpg'
 
-DEFAULT_SIGNATURES_BACKEND = 'mayan.apps.django_gpg.backends.python_gnupg.PythonGNUPGBackend'
-DEFAULT_GPG_TIMEOUT = 60
-DEFAULT_GPG_KEYSERVER_TIMEOUT = 120
 DEFAULT_DEFAULT_GPG_PATH = {
     'gpg_path': DEFAULT_GPG_PATH
 }
+DEFAULT_GPG_KEYSERVER_TIMEOUT = 120
+DEFAULT_GPG_TIMEOUT = 60
+DEFAULT_SIGNATURES_BACKEND = 'mayan.apps.django_gpg.backends.python_gnupg.PythonGNUPGBackend'
 DEFAULT_SIGNATURES_KEYSERVER = 'pool.sks-keyservers.net'
 
-KEY_TYPES = {
-    'pub': _(message='Public'),
-    'sec': _(message='Secret')
-}
+KEYSERVER_DEFAULT_PORT = 11371
 
-KEY_TYPE_PUBLIC = 'pub'
-KEY_TYPE_SECRET = 'sec'
-
-KEY_TYPE_CHOICES = (
-    (KEY_TYPE_PUBLIC, _(message='Public')),
-    (KEY_TYPE_SECRET, _(message='Secret'))
-)
-
-KEY_CLASS_RSA = 'RSA'
 KEY_CLASS_DSA = 'DSA'
 KEY_CLASS_ELG = 'ELG-E'
+KEY_CLASS_RSA = 'RSA'
 
 KEY_PRIMARY_CLASSES = (
     (
@@ -50,13 +39,24 @@ KEY_SECONDARY_CLASSES = (
     )
 )
 
-KEYSERVER_DEFAULT_PORT = 11371
+KEY_TYPES = {
+    'pub': _(message='Public'),
+    'sec': _(message='Secret')
+}
+
+KEY_TYPE_PUBLIC = 'pub'
+KEY_TYPE_SECRET = 'sec'
+
+KEY_TYPE_CHOICES = (
+    (KEY_TYPE_PUBLIC, _(message='Public')),
+    (KEY_TYPE_SECRET, _(message='Secret'))
+)
 
 SIGNATURE_STATE_BAD = 'signature bad'
-SIGNATURE_STATE_NONE = None
 SIGNATURE_STATE_ERROR = 'signature error'
-SIGNATURE_STATE_NO_PUBLIC_KEY = 'no public key'
 SIGNATURE_STATE_GOOD = 'signature good'
+SIGNATURE_STATE_NONE = None
+SIGNATURE_STATE_NO_PUBLIC_KEY = 'no public key'
 SIGNATURE_STATE_VALID = 'signature valid'
 
 SIGNATURE_STATES = {

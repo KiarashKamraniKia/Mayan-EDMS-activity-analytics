@@ -47,7 +47,7 @@ class DocumentFileContentForm(forms.Form):
     contents = form_fields.CharField(
         label=_(message='Contents'),
         widget=form_widgets.TextAreaDiv(
-            attrs={}
+            attrs={'class': 'scrollable'}
         )
     )
 
@@ -56,7 +56,7 @@ class DocumentFilePageContentForm(forms.Form):
     contents = form_fields.CharField(
         label=_(message='Contents'),
         widget=form_widgets.TextAreaDiv(
-            attrs={}
+            attrs={'class': 'scrollable'}
         )
     )
 

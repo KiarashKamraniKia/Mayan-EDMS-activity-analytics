@@ -42,7 +42,7 @@ class FileMetadataDriverEXIF(FileMetadataDriver):
         if exiftool_timeout is None:
             exiftool_timeout = DEFAULT_EXIF_TIMEOUT
 
-        self.exiftool_timeout = exiftool_timeout
+        self.exiftool_timeout = int(exiftool_timeout)
 
         try:
             command_exiftool = sh.Command(path=exiftool_path)

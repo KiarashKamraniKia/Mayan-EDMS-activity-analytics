@@ -40,21 +40,6 @@
 }
 
 
-@media (max-width: 767px) {
-    .table-responsive .dropdown-menu {
-        float: none;
-        position: static !important;
-    }
-}
-@media (min-width: 768px) {
-    .table-responsive {
-        overflow: inherit;
-    }
-
-    .table-responsive .dropdown-menu {
-        float: inline-start;
-    }
-}
 
 
 .table > thead {

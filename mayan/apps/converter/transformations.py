@@ -4,6 +4,7 @@ import logging
 from PIL import Image, ImageColor, ImageFilter
 import qrcode
 
+from django.core.exceptions import ValidationError
 from django.utils.encoding import force_bytes
 from django.utils.text import format_lazy
 from django.utils.translation import gettext_lazy as _
@@ -76,6 +77,10 @@ class BaseTransformation(metaclass=BaseTransformationType):
     @classmethod
     def get_arguments(cls):
         return cls.arguments
+
+    @classmethod
+    def validate_arguments(cls, arguments):
+        pass
 
     @classmethod
     def get_assigned_layer(cls):
@@ -409,6 +414,40 @@ class TransformationDrawRectanglePercent(
     )
     label = _(message='Draw rectangle (percent coordinates)')
     name = 'draw_rectangle_percent'
+
+    @classmethod
+    def validate_arguments(cls, arguments):
+        error_list = []
+
+        pair_list = (
+            ('left', 'right'), ('top', 'bottom')
+        )
+
+        for name_start, name_end in pair_list:
+            value_start = arguments.get(name_start)
+            value_end = arguments.get(name_end)
+
+            if value_start is None or value_end is None:
+                continue
+
+            try:
+                total = float(value_start) + float(value_end)
+            except (TypeError, ValueError):
+                continue
+
+            if total >= 100:
+                error_list.append(
+                    _(
+                        message='The "%(name_start)s" and "%(name_end)s" '
+                        'values leave no area to draw. Together they must '
+                        'be less than 100.'
+                    ) % {
+                        'name_end': name_end, 'name_start': name_start
+                    }
+                )
+
+        if error_list:
+            raise ValidationError(message=error_list)
 
     class Form(TransformationDrawRectangleMixin.Form):
         left = form_fields.FloatField(

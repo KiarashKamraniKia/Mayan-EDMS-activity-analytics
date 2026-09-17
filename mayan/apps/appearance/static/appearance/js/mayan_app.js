@@ -16,7 +16,34 @@ class MayanApp {
         
         
         this.menuRefreshRequests = new Set();
+        
+        
+        
+        this.unattendedNavigationDeferrals = 0;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        this.menuRefreshFailures = 0;
         this.window = $(window);
+
+        
+        
+        
+        
+        MayanApp.unattendedNavigationDeferralLimit = 3;
+
+        
+        
+        
+        
+        
+        MayanApp.menuRefreshBackoffLimit = 4;
 
         
         
@@ -133,6 +160,51 @@ class MayanApp {
         }
     }
 
+    getIsReaderEditing () {
+         
+        const element = document.activeElement;
+
+        if (!element) {
+            return false;
+        }
+
+        const tagName = element.tagName;
+
+        return (
+            tagName === 'INPUT' || tagName === 'TEXTAREA' ||
+            tagName === 'SELECT' || element.isContentEditable
+        );
+    }
+
+    getIsUnattendedNavigationDeferred () {
+         
+        if (this.unattendedNavigationDeferrals >= MayanApp.unattendedNavigationDeferralLimit) {
+            return false;
+        }
+
+        if (!this.getIsReaderEditing()) {
+            
+            
+            
+            
+            this.unattendedNavigationDeferrals = 0;
+            return false;
+        }
+
+        this.unattendedNavigationDeferrals++;
+
+        return true;
+    }
+
+    getMenuRefreshInterval (options) {
+         
+        const exponent = Math.min(
+            this.menuRefreshFailures, MayanApp.menuRefreshBackoffLimit
+        );
+
+        return options.interval * Math.pow(2, exponent);
+    }
+
     async doRefreshAJAXMenu (options) {
         const app = this;
 
@@ -147,11 +219,48 @@ class MayanApp {
                     setTimeout(
                         function () {
                             app.doRefreshAJAXMenu(options);
-                        }, options.interval
+                        }, app.getMenuRefreshInterval(options)
                     );
                 }
             },
-            success: function(data) {
+            error: function (jqXHR, textStatus) {
+                 
+                if (textStatus === 'abort') {
+                    
+                    
+                    return;
+                }
+
+                app.menuRefreshFailures++;
+            },
+            success: function (data, textStatus, jqXHR) {
+                
+                app.menuRefreshFailures = 0;
+
+                const partialNavigation = app.partialNavigationApp;
+
+                 
+                if (partialNavigation) {
+                    const newLocation = partialNavigation.getResponseRedirectURL(
+                        jqXHR
+                    );
+
+                    if (newLocation) {
+                        if (app.getIsUnattendedNavigationDeferred()) {
+                            return;
+                        }
+
+                        partialNavigation.doResponseRedirect(jqXHR);
+
+                        return;
+                    }
+                }
+
+                
+                
+                
+                app.unattendedNavigationDeferrals = 0;
+
                 const menuHash = options.app.ajaxMenuHashes[data.name];
 
                 if ((menuHash === undefined) || (menuHash !== data.hex_hash)) {

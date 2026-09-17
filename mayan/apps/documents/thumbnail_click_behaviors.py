@@ -1,6 +1,6 @@
 from django.utils.translation import gettext_lazy as _
 
-from mayan.apps.converter.classes import (
+from mayan.apps.converter.thumbnail_click_behaviors import (
     ThumbnailClickBehaviorBackendRouteToView
 )
 

@@ -18,16 +18,22 @@ class DocumentFileActionAppendNewPages(DocumentFileAction):
 
         annotated_content_object_list = []
 
-        content_object_list = document.version_active.page_content_objects
-        annotated_content_object_list_original = DocumentVersion.annotate_content_object_list(
-            content_object_list=content_object_list
-        )
-        annotated_content_object_list.extend(
-            annotated_content_object_list_original
-        )
+        version_active = document.version_active
+
+        if version_active:
+            content_object_list = version_active.page_content_objects
+            annotated_content_object_list_original = DocumentVersion.annotate_content_object_list(
+                content_object_list=content_object_list
+            )
+            annotated_content_object_list.extend(
+                annotated_content_object_list_original
+            )
+
+            start_page_number = version_active.pages.count() + 1
+        else:
+            start_page_number = 1
 
         content_object_list = document_file.pages.all()
-        start_page_number = document.version_active.pages.count() + 1
         annotated_content_object_list_new = DocumentVersion.annotate_content_object_list(
             content_object_list=content_object_list,
             start_page_number=start_page_number
