@@ -22,3 +22,19 @@ def activity_by_user():
         )
         .order_by('-activity_count')
     )
+
+
+def activity_by_event_type():
+    return (
+        Action.objects
+        .filter(
+            verb__startswith='documents.'
+        )
+        .values(
+            'verb'
+        )
+        .annotate(
+            activity_count=Count('id')
+        )
+        .order_by('-activity_count')
+    )
