@@ -116,6 +116,7 @@ INSTALLED_APPS = (
     'mayan.apps.credentials.apps.CredentialsApp',
     'mayan.apps.credentials_google.apps.CredentialsGoogleApp',
     'mayan.apps.dashboards.apps.DashboardsApp',
+    'mayan.apps.analytics.apps.AnalyticsApp',
     'mayan.apps.databases.apps.DatabasesApp',
     'mayan.apps.dependencies.apps.DependenciesApp',
     'mayan.apps.django_gpg.apps.DjangoGPGApp',
