@@ -1,7 +1,7 @@
 from mayan.apps.app_manager.apps import MayanAppConfig
 from mayan.apps.dashboards.dashboards import dashboard_administrator
 
-from .dashboard_widgets import DashboardWidgetActivityByUser
+from .dashboard_widgets import DashboardWidgetActivityByEventType, DashboardWidgetActivityByUser
 
 
 class AnalyticsApp(MayanAppConfig):
@@ -17,4 +17,7 @@ class AnalyticsApp(MayanAppConfig):
 
         dashboard_administrator.add_widget(
             widget=DashboardWidgetActivityByUser, order=100
+        )
+        dashboard_administrator.add_widget(
+            widget=DashboardWidgetActivityByEventType, order=101
         )
