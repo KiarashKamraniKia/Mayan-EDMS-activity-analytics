@@ -21,3 +21,17 @@ class DashboardWidgetActivityByEventType(BaseDashboardWidget):
         return {
             'object_list': activity_by_event_type()
         }
+
+
+class DashboardWidgetActivityTrend(BaseDashboardWidget):
+    label = 'Activity Trend'
+    template_name = 'statistics/renderers/chartjs/base.html'
+
+    def get_base_context(self):
+        from mayan.apps.mayan_statistics.classes import StatisticType
+
+        statistic = StatisticType.get('activity-trend')
+
+        return {
+            'chart_context': statistic.get_chart_context()
+        }
