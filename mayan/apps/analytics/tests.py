@@ -260,18 +260,43 @@ class ActivityAnalyticsDatabaseTests(TestCase):
 class ActivityDashboardWidgetTests(SimpleTestCase):
     """Check widget context contracts without requiring a database."""
 
-    @patch(
-        'mayan.apps.analytics.analytics.activity_by_user',
-        return_value=sentinel.user_activity_rows
-    )
-    def test_user_widget_provides_query_result(self, mock_function):
+    @patch('django.contrib.auth.get_user_model')
+    @patch('mayan.apps.analytics.analytics.activity_by_user')
+    def test_user_widget_resolves_usernames(
+        self, mock_activity, mock_user_model
+    ):
+        mock_activity.return_value = [
+            {'actor_object_id': '1', 'activity_count': 4},
+            {'actor_object_id': '999', 'activity_count': 2}
+        ]
+
+        user = mock_user_model.return_value.objects.in_bulk
+        from unittest.mock import Mock
+
+        existing_user = Mock()
+        existing_user.get_username.return_value = 'analytics_test'
+        user.return_value = {1: existing_user}
+
         context = DashboardWidgetActivityByUser.get_base_context(None)
 
         self.assertEqual(
-            context,
-            {'object_list': sentinel.user_activity_rows}
+            context['object_list'],
+            [
+                {
+                    'actor_object_id': '1',
+                    'activity_count': 4,
+                    'username': 'analytics_test'
+                },
+                {
+                    'actor_object_id': '999',
+                    'activity_count': 2,
+                    'username': 'Unknown user (999)'
+                }
+            ]
         )
-        mock_function.assert_called_once_with()
+
+        mock_activity.assert_called_once_with()
+        user.assert_called_once_with([1, 999])
 
     @patch(
         'mayan.apps.analytics.analytics.activity_by_event_type',

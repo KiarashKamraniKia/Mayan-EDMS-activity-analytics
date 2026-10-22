@@ -8,14 +8,14 @@
                 <table class="table table-sm table-hover table-striped">
                     <thead>
                         <tr>
-                            <th>User ID</th>
+                            <th>Username</th>
                             <th>Activities</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for object in object_list %}
                             <tr>
-                                <td>{{ object.actor_object_id }}</td>
+                                <td>{{ object.username }}</td>
                                 <td>{{ object.activity_count }}</td>
                             </tr>
                         {% endfor %}
